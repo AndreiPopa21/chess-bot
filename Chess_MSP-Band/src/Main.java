@@ -25,6 +25,10 @@ public class Main {
 
         char[] a = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'};
 
+        Table table = new Table();
+        System.out.println(table.toString());
+
+
         int index = 0;
         Scanner s = new Scanner(System.in);
         s.nextLine();
@@ -41,10 +45,10 @@ public class Main {
         System.out.println("new");
         System.out.flush();
 
-        System.out.println("feature sigint=0 sigterm=0 done=1");
-        System.out.flush();
+     //   System.out.println("feature sigint=0 sigterm=0 done=1");
+      //  System.out.flush();
 
-        s.nextLine();
+       // s.nextLine();
         while (index!=8) {
 
                 s.nextLine();
