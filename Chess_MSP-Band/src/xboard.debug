@@ -10,63 +10,26 @@ recognized 'normal' (-1) as variant normal
 GameEnds(0, (null), 2)
 shuffleOpenings = 0
 StartChildProcess (dir=".") java Main
-188 >first : xboard
+167 >first : xboard
 protover 2
-10190 >first : new
+10174 >first : new
 random
-10190 >first : level 40 5 0
-10190 >first : post
-10190 >first : hard
-10191 <first : xboard
-10191 <first : new
-10191 <first : feature sigint=0 sigterm=0 done=1
-10191 >first : accepted sigint
-10191 >first : accepted sigterm
-10191 >first : accepted done
-10234 <first : move a7a6
-Ignoring extra move from first
+10174 >first : level 40 5 0
+10174 >first : post
+10174 >first : hard
 nps: w=-1, b=-1
 nps: w=-1, b=-1
-11728 >first : time 30000
-11728 >first : otim 30000
+14694 >first : time 30000
+14694 >first : otim 30000
 book hit = (NULL)
-11728 >first : h2h3
-11801 <first : move b7b6
-13272 >first : time 29992
-13272 >first : otim 29853
-book hit = (NULL)
-13272 >first : g2g3
-13345 <first : move c7c6
-14515 >first : time 29985
-14515 >first : otim 29736
-book hit = (NULL)
-14515 >first : f2f3
-14589 <first : move d7d6
-16118 >first : time 29977
-16118 >first : otim 29583
-book hit = (NULL)
-16118 >first : e2e3
-16191 <first : move e7e6
-17935 >first : time 29970
-17935 >first : otim 29408
-book hit = (NULL)
-17935 >first : f1d3
-18033 <first : move f7f6
-20583 >first : time 29960
-20583 >first : otim 29153
-book hit = (NULL)
-20583 >first : c2c3
-20656 <first : move g7g6
-22546 >first : time 29953
-22546 >first : otim 28964
-book hit = (NULL)
-22546 >first : b2b3
-22618 <first : move h7h6
-24980 >first : time 29946
-24980 >first : otim 28728
-book hit = (NULL)
-24980 >first : a2a3
+14694 >first : h2h4
+14695 <first : xboard
+14695 <first : new
+14695 <first : feature sigint=0 sigterm=0 done=1
+14695 >first : accepted sigint
+14695 >first : accepted sigterm
+14695 >first : accepted done
 GameEnds(29, xboard exit, 2)
-37105 >first : result * {xboard exit}
-37105 >first : force
-37105 >first : quit
+21340 >first : result * {xboard exit}
+21340 >first : force
+21340 >first : quit

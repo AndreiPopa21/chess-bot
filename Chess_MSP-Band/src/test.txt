@@ -1,0 +1,4 @@
+xboard
+accepted done
+result * {xboard exit}
+force
