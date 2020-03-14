@@ -9,6 +9,10 @@ public class NoPiece extends Piece {
         this.setName('-');
     }
 
+    public NoPiece(){
+        this(new Position('0',0));
+    }
+
     @Override
     public void move(String command) {
 

@@ -67,6 +67,13 @@ public class Queen extends Piece {
 
     @Override
     public void move(String command) {
-
+        ArrayList<String> allCommands = this.getAllPossibleMoves();
+        if(!allCommands.contains(command)){
+            System.out.println("Invalid command performed by" +
+                    (this.getColor()==Color.WHITE? "White" : "Black") + " Queen at: " +
+                    this.getPosition().letter +
+                    this.getPosition().digit);
+        }
+        getTable().movePiece(this,command);
     }
 }

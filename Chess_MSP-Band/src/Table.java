@@ -1,6 +1,10 @@
+import java.util.ArrayList;
+
 public class Table {
 
     private Piece[][] tableConfig= new Piece[8][8];
+    private ArrayList<Piece> whiteCaptured = new ArrayList<>();
+    private ArrayList<Piece> blackCaptured = new ArrayList<>();
 
     public Table(){
         generateTable();
@@ -18,12 +22,12 @@ public class Table {
 
         tableConfig[1][7] = new Pawn(Color.WHITE,new Piece.Position('a',2),this);
         tableConfig[1][6] = new Pawn(Color.WHITE,new Piece.Position('b',2),this);
-        //tableConfig[1][5] = new Pawn(Color.WHITE,new Piece.Position('c',2));
-        tableConfig[1][5] = new NoPiece(new Piece.Position('0',0));
-        //tableConfig[1][4] = new Pawn(Color.WHITE,new Piece.Position('d',2));
-        tableConfig[1][4] = new NoPiece(new Piece.Position('0',0));
-         //tableConfig[1][3] = new Pawn(Color.WHITE,new Piece.Position('e',2));
-        tableConfig[1][3] = new NoPiece(new Piece.Position('0',0));
+        tableConfig[1][5] = new Pawn(Color.WHITE,new Piece.Position('c',2),this);
+        //tableConfig[1][5] = new NoPiece();
+        tableConfig[1][4] = new Pawn(Color.WHITE,new Piece.Position('d',2),this);
+        //tableConfig[1][4] = new NoPiece();
+        tableConfig[1][3] = new Pawn(Color.WHITE,new Piece.Position('e',2),this);
+        //tableConfig[1][3] = new NoPiece();
         tableConfig[1][2] = new Pawn(Color.WHITE,new Piece.Position('f',2), this);
         tableConfig[1][1] = new Pawn(Color.WHITE,new Piece.Position('g',2), this);
        // tableConfig[1][1] = new NoPiece(new Piece.Position('0',0));
@@ -49,7 +53,7 @@ public class Table {
 
         for(int i = 2; i < 6; i++){
             for(int j = 0;j < 8; j++){
-                tableConfig[i][j] = new NoPiece(new Piece.Position('0',0));
+                tableConfig[i][j] = new NoPiece();
             }
         }
 
@@ -109,5 +113,81 @@ public class Table {
         moveBuilder.append(Table.convertIntToCharCol(newCol));
         moveBuilder.append(newRow);
         return moveBuilder.toString();
+    }
+
+    public void addCapturedWhite(Piece p){
+        if(p.getColor() == Color.BLACK)
+            return;
+        if(p.isCaptured())
+            return;
+        p.setCaptured(true);
+        whiteCaptured.add(p);
+    }
+    public void addCapturedBlack(Piece p){
+        if(p.getColor() == Color.WHITE)
+            return;
+        if(p.isCaptured())
+            return;
+        p.setCaptured(true);
+        blackCaptured.add(p);
+    }
+
+    public ArrayList<Piece> getWhiteCaptured(){return this.whiteCaptured;}
+    public ArrayList<Piece> getBlackCaptured(){return this.blackCaptured;}
+
+    public void movePiece(Piece p,String command){
+        char sourceLetter = command.charAt(0);
+        char sourceDigit = command.charAt(1);
+        char destLetter = command.charAt(2);
+        char destDigit = command.charAt(3);
+
+
+        int sourceColumn = Math.abs((int) sourceLetter  - 104);
+        int sourceRow = sourceDigit - 49;
+
+        int destColumn = Math.abs((int) destLetter - 104);
+        int destRow = destDigit -49;
+
+        //System.out.println(sourceRow + " | " + sourceColumn + " | " + destRow + " | " + destColumn);
+
+        Piece aux = this.getConfiguration()[sourceRow][sourceColumn];
+        this.getConfiguration()[sourceRow][sourceColumn] = new NoPiece();
+
+        Piece destPiece = this.getConfiguration()[destRow][destColumn];
+
+        if(destPiece.getName().equals('-')){
+            //nu am capturat nimic
+            this.getConfiguration()[destRow][destColumn] = aux;
+            this.getConfiguration()[destRow][destColumn]
+                    .setPosition(new Piece.Position(destLetter,destDigit));
+            return;
+        }
+        if(destPiece.getColor() == Color.WHITE) {
+            this.addCapturedWhite(destPiece);
+            destPiece.setCaptured(true);
+            this.getConfiguration()[destRow][destColumn] = aux;
+            this.getConfiguration()[destRow][destColumn]
+                    .setPosition(new Piece.Position(destLetter, destColumn));
+            return;
+        }
+        if(destPiece.getColor() == Color.BLACK) {
+            this.addCapturedBlack(destPiece);
+            destPiece.setCaptured(true);
+            this.getConfiguration()[destRow][destColumn] = aux;
+            this.getConfiguration()[destRow][destColumn]
+                    .setPosition(new Piece.Position(destLetter, destColumn));
+            return;
+        }
+    }
+
+    public void move(String command){
+        char sourceLetter = command.charAt(0);
+        char sourceDigit = command.charAt(1);
+
+        int sourceColumn = Math.abs((int) sourceLetter  - 104);
+        int sourceRow = sourceDigit - 49;
+
+        getConfiguration()[sourceRow][sourceColumn].move(command);
+
     }
 }

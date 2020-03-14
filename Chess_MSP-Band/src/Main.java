@@ -28,9 +28,14 @@ public class Main {
 
         Table table = new Table();
         System.out.println(table.toString());
-        ArrayList<String> moves = table.getConfiguration()[0][4].getAllPossibleMoves();
+        /*ArrayList<String> moves = table.getConfiguration()[1][7].getAllPossibleMoves();
         for(int i = 0; i <moves.size(); i++)
-            System.out.println(moves.get(i));
+            System.out.println(moves.get(i));*/
+        //table.getConfiguration()[0][1].move("g1f3");
+        table.move("g1f3");
+        System.out.println(table.toString());
+        table.move("b1c3");
+        System.out.println(table.toString());
 
         int index = 0;
         Scanner s = new Scanner(System.in);

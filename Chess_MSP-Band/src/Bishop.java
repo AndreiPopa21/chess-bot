@@ -11,7 +11,15 @@ public class Bishop extends Piece {
 
     @Override
     public void move(String command) {
-
+        ArrayList<String> allCommands = this.getAllPossibleMoves();
+        if(!allCommands.contains(command)){
+            System.out.println("Invalid command performed by " +
+                    (this.getColor()==Color.WHITE? "White" : "Black") + " Bishop at: " +
+                    this.getPosition().letter +
+                    this.getPosition().digit);
+            return;
+        }
+        getTable().movePiece(this,command);
     }
 
     @Override

@@ -35,11 +35,11 @@ public class Knight extends Piece {
                 continue;
             }
             if(p.getColor() == Color.WHITE && this.getColor()==Color.WHITE){
-                System.out.println("Mi-am gasit coechipier alb: " + Table.convertIntToCharCol(newCol) + " " + (++newRow));
+               // System.out.println("Mi-am gasit coechipier alb: " + Table.convertIntToCharCol(newCol) + " " + (++newRow));
                 continue;
             }
             if(p.getColor() == Color.BLACK && this.getColor() == Color.BLACK){
-                System.out.println("Mi-am gasit coechipier negru: " + Table.convertIntToCharCol(newCol) + " " + (++newRow));
+               // System.out.println("Mi-am gasit coechipier negru: " + Table.convertIntToCharCol(newCol) + " " + (++newRow));
                 continue;
             }
             if(p.getName().equals('K') || p.getName().equals('k')){
@@ -53,6 +53,15 @@ public class Knight extends Piece {
 
     @Override
     public void move(String command) {
+        ArrayList<String> allCommands = this.getAllPossibleMoves();
 
+        if(!allCommands.contains(command)){
+            System.out.println("Invalid command performed by " +
+                    (this.getColor()==Color.WHITE? "White" : "Black") + " Knight at: " +
+                    this.getPosition().letter +
+                    this.getPosition().digit);
+            return;
+        }
+        getTable().movePiece(this,command);
     }
 }

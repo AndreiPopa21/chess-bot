@@ -21,7 +21,9 @@ public abstract class Piece {
 
     public void setColor(Color color){this.color = color;}
     public void setName(Character name){this.name = name;}
-    public void setCaptured(Boolean captured){this.captured = captured;}
+    public void setCaptured(Boolean captured){
+        this.captured = captured;
+    }
     public void setPosition(Position position){this.position =position;}
     public void setTable(Table table){this.table = table;}
 
