@@ -5,7 +5,7 @@ public class King extends Piece {
         this.setColor(color);
         this.setPosition(initialPosition);
         this.setCaptured(false);
-        this.setName(color==Color.WHITE? "K" : "k");
+        this.setName(color==Color.WHITE? 'K' : 'k');
     }
 
     @Override

@@ -5,7 +5,7 @@ public class Bishop extends Piece {
         this.setColor(color);
         this.setPosition(initialPosition);
         this.setCaptured(false);
-        this.setName(color==Color.WHITE? "B" : "b");
+        this.setName(color==Color.WHITE? 'B' : 'b');
     }
 
     @Override

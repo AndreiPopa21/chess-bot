@@ -5,7 +5,7 @@ public class Pawn extends Piece {
         this.setColor(color);
         this.setPosition(initialPosition);
         this.setCaptured(false);
-        this.setName(color==Color.WHITE? "P" : "p");
+        this.setName(color==Color.WHITE? 'P' : 'p');
     }
 
     @Override

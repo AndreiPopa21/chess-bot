@@ -6,7 +6,7 @@ public class NoPiece extends Piece {
         this.setColor(Color.NOCOLOR);
         this.setCaptured(false);
         this.setPosition(position);
-        this.setName("-");
+        this.setName('-');
     }
 
     @Override

@@ -5,7 +5,7 @@ public class Rook extends Piece {
         this.setColor(color);
         this.setPosition(initialPosition);
         this.setCaptured(false);
-        this.setName(color==Color.WHITE? "R" : "r");
+        this.setName(color==Color.WHITE? 'R' : 'r');
     }
 
     @Override
