@@ -28,7 +28,7 @@ public class Main {
 
         Table table = new Table();
         System.out.println(table.toString());
-        ArrayList<String> moves = table.getConfiguration()[0][1].getAllPossibleMoves();
+        ArrayList<String> moves = table.getConfiguration()[0][4].getAllPossibleMoves();
         for(int i = 0; i <moves.size(); i++)
             System.out.println(moves.get(i));
 

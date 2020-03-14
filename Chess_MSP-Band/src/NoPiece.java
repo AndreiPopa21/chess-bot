@@ -10,6 +10,11 @@ public class NoPiece extends Piece {
     }
 
     @Override
+    public void move(String command) {
+
+    }
+
+    @Override
     public ArrayList<String> getAllPossibleMoves() {
         return null;
     }

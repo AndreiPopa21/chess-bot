@@ -11,6 +11,10 @@ public class Knight extends Piece {
 
     @Override
     public ArrayList<String> getAllPossibleMoves() {
+
+        if(this.isCaptured())
+            return null;
+
         Position currPosition = this.getPosition();
         ArrayList<String> moves = new ArrayList<>();
         int column = Math.abs((int) currPosition.letter - 104); //get matrix row index
@@ -30,11 +34,11 @@ public class Knight extends Piece {
                 moves.add(Table.generateMoveCommand(currPosition,rowOff[i],colOff[i]));
                 continue;
             }
-            if(Character.isUpperCase(p.getName()) && this.getColor()==Color.WHITE){
+            if(p.getColor() == Color.WHITE && this.getColor()==Color.WHITE){
                 System.out.println("Mi-am gasit coechipier alb: " + Table.convertIntToCharCol(newCol) + " " + (++newRow));
                 continue;
             }
-            if(Character.isLowerCase(p.getName())&& this.getColor() == Color.BLACK){
+            if(p.getColor() == Color.BLACK && this.getColor() == Color.BLACK){
                 System.out.println("Mi-am gasit coechipier negru: " + Table.convertIntToCharCol(newCol) + " " + (++newRow));
                 continue;
             }
@@ -43,8 +47,12 @@ public class Knight extends Piece {
             }
             moves.add(Table.generateMoveCommand(currPosition,rowOff[i],colOff[i]));
         }
-
-
         return moves;
+    }
+
+
+    @Override
+    public void move(String command) {
+
     }
 }

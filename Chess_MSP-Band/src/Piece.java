@@ -34,9 +34,6 @@ public abstract class Piece {
         }
     }
 
-    public void movePiece(Integer xOffset, Integer yOffset){
-
-    }
-
+    public abstract void move(String command);
     public abstract ArrayList<String> getAllPossibleMoves();
 }
