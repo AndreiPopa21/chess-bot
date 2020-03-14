@@ -181,12 +181,14 @@ public class Table {
     }
 
     public void move(String command){
+        System.out.println(command);
         char sourceLetter = command.charAt(0);
         char sourceDigit = command.charAt(1);
 
         int sourceColumn = Math.abs((int) sourceLetter  - 104);
         int sourceRow = sourceDigit - 49;
-
+        System.out.println(sourceColumn);
+        System.out.println(sourceRow);
         getConfiguration()[sourceRow][sourceColumn].move(command);
 
     }

@@ -3,6 +3,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Vector;
 
 public class Main {
 
@@ -26,6 +27,24 @@ public class Main {
 
         char[] a = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'};
 
+        Vector<String> coloane = new Vector<String>();
+        coloane.add("a");
+        coloane.add("b");
+        coloane.add("c");
+        coloane.add("d");
+        coloane.add("e");
+        coloane.add("f");
+        coloane.add("g");
+        coloane.add("h");
+
+
+        String[] coloane_litere={"h","g","f","e","d","c","b","a"};
+
+        int[] coloane3={1,2,3,4,5,6,7,8};
+        int[] lini = {1,2,3,4,5,6,7,8};
+
+        String str , str2;
+
         Table table = new Table();
         System.out.println(table.toString());
         /*ArrayList<String> moves = table.getConfiguration()[1][7].getAllPossibleMoves();
@@ -36,6 +55,9 @@ public class Main {
         System.out.println(table.toString());
         table.move("b1c3");
         System.out.println(table.toString());
+
+
+
 
         int index = 0;
         Scanner s = new Scanner(System.in);
@@ -59,16 +81,51 @@ public class Main {
         s.nextLine();
         s.nextLine();
         System.out.flush();
-        while (index!=8) {
-            s.nextLine();
-            System.out.flush();
+
+        String mutare="start";
+        Piece[][] board = table.getConfiguration();
+        while (mutare.compareTo("quit") != 0) {
+
+            mutare= s.nextLine();
+
+            str = String.valueOf(mutare.charAt(0));
+            str2= String.valueOf(mutare.charAt(2));
+            System.out.println(mutare);
+
+            if ((mutare.length() == 4)&&(coloane.contains(str))&&(coloane.contains(str2)))
+            {
+                table.move(mutare);
+                System.out.println(table.toString());
+                board = table.getConfiguration();
+
+                for (int i = 0 ; i <= 7 ; ++i)
+                {
+                    for (int j = 0 ; j <= 7 ; ++j)
+                    {
+                        if (board[i][j].getName().equals('p'))
+                        {
+                            int minus1 = lini[i]-1;
+                            mutare = coloane_litere[j] + lini[i] + coloane_litere[j] + minus1;
+                            table.move(mutare);
+                            System.out.println( "move " + mutare );
+                            System.out.flush();
+                            j=8;
+                            i=8;
+                            System.out.println(table.toString());
+                        }
+                    }
+                }
+            }
+
+           /* mutare = s.nextLine();
+
             System.out.println("move "+a[index]+"7"+a[index]+"6");
             System.out.flush();
             index++;
             s.nextLine();
             System.out.flush();
             s.nextLine();
-            System.out.flush();
+            System.out.flush();*/
         }
     }
 }

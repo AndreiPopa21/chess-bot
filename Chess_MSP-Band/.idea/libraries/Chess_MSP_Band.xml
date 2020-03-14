@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Chess_MSP-Band">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/artifacts/Chess_MSP_Band_jar/Chess_MSP-Band.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
