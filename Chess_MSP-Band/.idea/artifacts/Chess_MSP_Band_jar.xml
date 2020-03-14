@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="Chess_MSP-Band:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/Chess_MSP_Band_jar</output-path>
-    <root id="archive" name="Chess_MSP-Band.jar">
-      <element id="module-output" name="Chess_MSP-Band" />
-    </root>
-  </artifact>
-</component>
