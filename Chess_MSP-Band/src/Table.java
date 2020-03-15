@@ -73,6 +73,7 @@ public class Table {
             sb.append('\n');
         }
         return sb.toString();
+    //return null;
     }
 
     public static Character convertIntToCharCol(int x){
@@ -146,7 +147,7 @@ public class Table {
         int sourceRow = sourceDigit - 49;
 
         int destColumn = Math.abs((int) destLetter - 104);
-        int destRow = destDigit -49;
+        int destRow = destDigit - 49;
 
     //    System.out.println("SE executa mutarea: " + sourceRow + " | " + sourceColumn + " | " + destRow + " | " + destColumn);
      //   System.out.println("SE executa mutarea: " + destLetter + " | " + ((int)destDigit-48));
@@ -173,7 +174,7 @@ public class Table {
             destPiece.setCaptured(true);
             this.getConfiguration()[destRow][destColumn] = aux;
             this.getConfiguration()[destRow][destColumn]
-                    .setPosition(new Piece.Position(destLetter, destColumn));
+                    .setPosition(new Piece.Position(destLetter, destRow+1));
             return;
         }
         if(destPiece.getColor() == Color.BLACK) {

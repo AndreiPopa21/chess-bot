@@ -63,8 +63,8 @@ public class Pawn extends Piece {
             moves.add(Table.generateMoveCommand(this.getPosition(),1,0));
         }
         if(this.getColor() == Color.BLACK){
-            System.out.println(column);
-            System.out.println(row);
+           // System.out.println(column);
+            //System.out.println(row);
             Piece p = getTable().getConfiguration()[row-1][column];
             if(p.getName().equals('-'))
             moves.add(Table.generateMoveCommand(this.getPosition(),-1,0));

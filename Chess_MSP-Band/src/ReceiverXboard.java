@@ -1,3 +1,122 @@
-public class ReceiverXboard {
+import java.util.Vector;
+
+enum EnginColor{
+    WHITE,
+    BLACK,
+    NOSET,
+}
+
+public class ReceiverXboard implements Utilizator_Engine {
+
+    Table table;
+    private EnginColor e_color ;
+
+    public ReceiverXboard(Table table){
+        this.table=table;
+        e_color=EnginColor.NOSET;
+    }
+
+    public EnginColor getE_color(){
+        return e_color;
+    }
+
+    @Override
+    public void xboard() {
+
+    }
+
+    @Override
+    public void New() {
+        System.out.println("feature sigint=0 sigterm=0 done=1");
+        System.out.flush();
+        this.e_color=EnginColor.BLACK;
+    }
+
+    @Override
+    public void force() {
+
+    }
+
+    @Override
+    public void go() {
+
+    }
+
+    @Override
+    public void white() {
+        e_color=EnginColor.BLACK;
+    }
+
+    @Override
+    public void black() {
+        e_color=EnginColor.WHITE;
+    }
+
+    @Override
+    public void quit() {
+
+    }
+
+    @Override
+    public void resign() {
+        if (this.e_color==EnginColor.BLACK)
+        {
+            System.out.println("result 0-1 {White resigns}");
+        }else
+            System.out.println("result 0-1 {Black resigns}");
+    }
+
+    @Override
+    public boolean move() {
+
+        return true;
+    }
+
+    public boolean comandComparer(String command){
+
+
+        Vector<String> coloane = new Vector<String>();
+        coloane.add("a");
+        coloane.add("b");
+        coloane.add("c");
+        coloane.add("d");
+        coloane.add("e");
+        coloane.add("f");
+        coloane.add("g");
+        coloane.add("h");
+
+        String str = String.valueOf(command.charAt(0));
+        String str2= String.valueOf(command.charAt(2));
+
+        if ("xboard".equals(command))
+        {
+            this.xboard();
+        }else if ("new".equals(command))
+        {
+            this.New();
+        }else if ("force".equals(command))
+        {
+            this.force();
+        }else if ("go".equals(command))
+        {
+            this.go();
+        }else if ("white".equals(command))
+        {
+            this.white();
+        }else if ("black".equals(command))
+        {
+            this.black();
+        }else if ("quit".equals(command))
+        {
+            this.quit();
+        }else if ("resign".equals(command))
+        {
+            this.resign();
+        }else if ((command.length() == 4)&&(coloane.contains(str))&&(coloane.contains(str2)))
+        {
+            return this.move();
+        }
+        return false;
+    }
 
 }
