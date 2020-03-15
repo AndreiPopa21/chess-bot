@@ -148,8 +148,8 @@ public class Table {
         int destColumn = Math.abs((int) destLetter - 104);
         int destRow = destDigit -49;
 
-        System.out.println("SE executa mutarea: " + sourceRow + " | " + sourceColumn + " | " + destRow + " | " + destColumn);
-        System.out.println("SE executa mutarea: " + destLetter + " | " + ((int)destDigit-48));
+    //    System.out.println("SE executa mutarea: " + sourceRow + " | " + sourceColumn + " | " + destRow + " | " + destColumn);
+     //   System.out.println("SE executa mutarea: " + destLetter + " | " + ((int)destDigit-48));
 
 
         Piece aux = this.getConfiguration()[sourceRow][sourceColumn];
@@ -162,10 +162,10 @@ public class Table {
             this.getConfiguration()[destRow][destColumn] = aux;
             this.getConfiguration()[destRow][destColumn]
                     .setPosition(new Piece.Position(destLetter,destRow+1));
-            Piece movedPiece = this.getConfiguration()[destRow][destColumn];
+            /*Piece movedPiece = this.getConfiguration()[destRow][destColumn];
             Piece.Position pos = movedPiece.getPosition();
             System.out.println("Noua pozitie a " + movedPiece.getName()+ " este: " +
-                    pos.letter + pos.digit);
+                    pos.letter + pos.digit);*/
             return;
         }
         if(destPiece.getColor() == Color.WHITE) {
@@ -187,14 +187,14 @@ public class Table {
     }
 
     public void move(String command){
-        System.out.println(command);
+        //System.out.println(command);
         char sourceLetter = command.charAt(0);
         char sourceDigit = command.charAt(1);
 
         int sourceColumn = Math.abs((int) sourceLetter  - 104);
         int sourceRow = sourceDigit - 49;
-        System.out.println(sourceColumn);
-        System.out.println(sourceRow);
+        //System.out.println(sourceColumn);
+        //System.out.println(sourceRow);
         getConfiguration()[sourceRow][sourceColumn].move(command);
 
     }
