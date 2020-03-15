@@ -148,7 +148,9 @@ public class Table {
         int destColumn = Math.abs((int) destLetter - 104);
         int destRow = destDigit -49;
 
-        //System.out.println(sourceRow + " | " + sourceColumn + " | " + destRow + " | " + destColumn);
+        System.out.println("SE executa mutarea: " + sourceRow + " | " + sourceColumn + " | " + destRow + " | " + destColumn);
+        System.out.println("SE executa mutarea: " + destLetter + " | " + ((int)destDigit-48));
+
 
         Piece aux = this.getConfiguration()[sourceRow][sourceColumn];
         this.getConfiguration()[sourceRow][sourceColumn] = new NoPiece();
@@ -159,7 +161,11 @@ public class Table {
             //nu am capturat nimic
             this.getConfiguration()[destRow][destColumn] = aux;
             this.getConfiguration()[destRow][destColumn]
-                    .setPosition(new Piece.Position(destLetter,destDigit));
+                    .setPosition(new Piece.Position(destLetter,destRow+1));
+            Piece movedPiece = this.getConfiguration()[destRow][destColumn];
+            Piece.Position pos = movedPiece.getPosition();
+            System.out.println("Noua pozitie a " + movedPiece.getName()+ " este: " +
+                    pos.letter + pos.digit);
             return;
         }
         if(destPiece.getColor() == Color.WHITE) {

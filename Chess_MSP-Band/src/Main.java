@@ -53,7 +53,9 @@ public class Main {
         //table.getConfiguration()[0][1].move("g1f3");
         table.move("g1f3");
         System.out.println(table.toString());
-        table.move("b1c3");
+        table.move("f3g5");
+        System.out.println(table.toString());
+        table.move("g5f7");
         System.out.println(table.toString());
 
 
