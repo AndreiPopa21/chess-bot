@@ -27,7 +27,7 @@ public class ReceiverXboard implements Utilizator_Engine {
 
     @Override
     public void New() {
-        System.out.println("feature sigint=0 sigterm=0 done=1");
+        System.out.println("feature sigint=0 sigterm=0 done=1 ");
         System.out.flush();
         this.e_color=EnginColor.BLACK;
     }
@@ -68,9 +68,10 @@ public class ReceiverXboard implements Utilizator_Engine {
 
     @Override
     public boolean move() {
-
         return true;
     }
+
+
 
     public boolean comandComparer(String command){
 
@@ -85,8 +86,13 @@ public class ReceiverXboard implements Utilizator_Engine {
         coloane.add("g");
         coloane.add("h");
 
+        if (command.equals(".")) {
+            return false;
+        }
         String str = String.valueOf(command.charAt(0));
         String str2= String.valueOf(command.charAt(2));
+
+
 
         if ("xboard".equals(command))
         {
