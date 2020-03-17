@@ -9,19 +9,6 @@ import java.util.Vector;
 
 public class Main {
 
-    public static void print2D(String mat[][]) {
-        // Loop through all rows
-        for (int i = 0; i < mat.length; i++) {
-
-            // Loop through all elements of current row
-            for (int j = 0; j < mat[i].length; j++) {
-                System.out.print(mat[i][j] + " ");
-            }
-            System.out.println();
-
-        }
-    }
-
     public static Piece whiteHorse;
     public static Piece blackHorse;
     public static ReceiverXboard recv;
@@ -64,11 +51,6 @@ public class Main {
 
     public static void moveWhite(){
 
-        if(whiteHorse.isCaptured())
-            System.out.println("[White Horse] Sunt capturat");
-        else
-            System.out.println("[White Horse] Inca nu sunt capturat");
-
         if(whiteHorse.getAllPossibleMoves() != null){
             ArrayList<String> whiteHorseMoves = whiteHorse.getAllPossibleMoves();
             int index = new Random().nextInt(whiteHorseMoves.size());
@@ -82,12 +64,6 @@ public class Main {
     }
 
     public static void moveBlack(){
-        if(blackHorse.isCaptured())
-            System.out.println("[Black Horse] Sunt capturat");
-        else
-            System.out.println("[Black Horse] Inca nu sunt capturat");
-
-        System.out.println(table.toString());
 
         if(blackHorse.getAllPossibleMoves() != null) {
             ArrayList<String> blackHorseMoves = blackHorse.getAllPossibleMoves();

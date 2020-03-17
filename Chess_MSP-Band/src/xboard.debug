@@ -10,122 +10,113 @@ recognized 'normal' (-1) as variant normal
 GameEnds(0, (null), 2)
 shuffleOpenings = 0
 StartChildProcess (dir=".") java Main
-230 >first : xboard
+209 >first : xboard
 protover 2
-10233 >first : new
+10210 >first : new
 random
-10233 >first : level 40 5 0
-10233 >first : post
-10233 >first : hard
-10234 <first : feature sigint=0 sigterm=0 done=1 colors=0
-10234 >first : accepted sigint
-10234 >first : accepted sigterm
-10234 >first : accepted done
-10234 >first : accepted colors
+10210 >first : level 40 5 0
+10210 >first : post
+10210 >first : hard
+10211 <first : feature sigint=0 sigterm=0 done=1 colors=0
+10211 >first : accepted sigint
+10211 >first : accepted sigterm
+10211 >first : accepted done
+10211 >first : accepted colors
 nps: w=-1, b=-1
 nps: w=-1, b=-1
-11504 >first : time 30000
-11504 >first : otim 30000
+12482 >first : time 30000
+12482 >first : otim 30000
 book hit = (NULL)
-11504 >first : d2d4
-11505 <first : [Black Horse] Inca nu sunt capturat
-11508 <first : R N B K Q B N R 
-11508 <first : P P P P - P P P 
-11508 <first : - - - - - - - - 
-11508 <first : - - - - P - - - 
-11508 <first : - - - - - - - - 
-11508 <first : - - - - - - - - 
-11508 <first : p p p p p p p p 
-11508 <first : r n b k q b n r 
-11508 <first : 
-11510 <first : move g8f6
-13680 >first : time 29799
-13680 >first : otim 29999
+12482 >first : e2e3
+12483 <first : [Black Horse] Inca nu sunt capturat
+12489 <first : R N B K Q B N R 
+12489 <first : P P P - P P P P 
+12489 <first : - - - P - - - - 
+12489 <first : - - - - - - - - 
+12489 <first : - - - - - - - - 
+12489 <first : - - - - - - - - 
+12489 <first : p p p p p p p p 
+12489 <first : r n b k q b n r 
+12489 <first : 
+12491 <first : move g8h6
+14628 >first : time 29799
+14628 >first : otim 29999
 book hit = (NULL)
-13680 >first : go
+14628 >first : go
 nps: w=-1, b=-1
-13683 <first : [White Horse] Inca nu sunt capturat
-13683 <first : move g1h3
-14974 >first : time 29900
-14974 >first : otim 29799
+14631 <first : [White Horse] Inca nu sunt capturat
+14631 <first : move g1h3
+15842 >first : time 29899
+15842 >first : otim 29799
 book hit = (NULL)
-14974 >first : go
+15842 >first : go
 nps: w=-1, b=-1
-14976 <first : [Black Horse] Inca nu sunt capturat
-14976 <first : R - B K Q B N R 
-14976 <first : P P P P - P P P 
-14976 <first : N - - - - - - - 
-14976 <first : - - - - P - - - 
-14976 <first : - - - - - - - - 
-14976 <first : - - n - - - - - 
-14976 <first : p p p p p p p p 
-14976 <first : r - b k q b n r 
-14976 <first : 
-14976 <first : move f6h5
-16234 >first : time 29699
-16234 >first : otim 29899
+15844 <first : [Black Horse] Inca nu sunt capturat
+15844 <first : R - B K Q B N R 
+15844 <first : P P P - P P P P 
+15845 <first : N - - P - - - - 
+15845 <first : - - - - - - - - 
+15845 <first : - - - - - - - - 
+15845 <first : n - - - - - - - 
+15845 <first : p p p p p p p p 
+15845 <first : r - b k q b n r 
+15845 <first : 
+15845 <first : move h6g8
+16846 >first : time 29699
+16847 >first : otim 29899
 book hit = (NULL)
-16234 >first : go
+16847 >first : go
 nps: w=-1, b=-1
-16236 <first : [White Horse] Inca nu sunt capturat
-16236 <first : move h3g1
-17575 >first : time 29800
-17575 >first : otim 29699
+16849 <first : [White Horse] Inca nu sunt capturat
+16849 <first : move h3g5
+17948 >first : time 29799
+17948 >first : otim 29699
 book hit = (NULL)
-17575 >first : go
+17948 >first : go
 nps: w=-1, b=-1
-17579 <first : [Black Horse] Inca nu sunt capturat
-17579 <first : R N B K Q B N R 
-17579 <first : P P P P - P P P 
-17579 <first : - - - - - - - - 
-17579 <first : - - - - P - - - 
-17579 <first : n - - - - - - - 
-17579 <first : - - - - - - - - 
-17579 <first : p p p p p p p p 
-17579 <first : r - b k q b n r 
-17579 <first : 
-17579 <first : move h5g3
-19470 >first : time 29600
-19470 >first : otim 29799
+17951 <first : [Black Horse] Inca nu sunt capturat
+17951 <first : R - B K Q B N R 
+17951 <first : P P P - P P P P 
+17951 <first : - - - P - - - - 
+17951 <first : - - - - - - - - 
+17951 <first : - N - - - - - - 
+17951 <first : - - - - - - - - 
+17951 <first : p p p p p p p p 
+17951 <first : r n b k q b n r 
+17951 <first : 
+17951 <first : move g8f6
+21964 >first : time 29799
+21964 >first : otim 29298
 book hit = (NULL)
-19470 >first : go
-nps: w=-1, b=-1
-19472 <first : [White Horse] Inca nu sunt capturat
-19472 <first : move g1f3
-22046 >first : time 29599
-22046 >first : otim 29599
+21964 >first : d1f3
+21966 <first : [Black Horse] Inca nu sunt capturat
+21966 <first : R - B K - B N R 
+21966 <first : P P P - P P P P 
+21966 <first : - - Q P - - - - 
+21966 <first : - - - - - - - - 
+21966 <first : - N - - - - - - 
+21966 <first : - - n - - - - - 
+21966 <first : p p p p p p p p 
+21966 <first : r - b k q b n r 
+21966 <first : 
+21966 <first : move f6g4
+23745 >first : time 29799
+23745 >first : otim 29120
 book hit = (NULL)
-22046 >first : go
-nps: w=-1, b=-1
-22050 <first : [Black Horse] Inca nu sunt capturat
-22050 <first : R - B K Q B N R 
-22050 <first : P P P P - P P P 
-22050 <first : - n N - - - - - 
-22050 <first : - - - - P - - - 
-22050 <first : - - - - - - - - 
-22050 <first : - - - - - - - - 
-22050 <first : p p p p p p p p 
-22050 <first : r - b k q b n r 
-22050 <first : 
-22050 <first : move g3f1
-24724 >first : time 29599
-24724 >first : otim 29332
-book hit = (NULL)
-24724 >first : e1f1
-24726 <first : [e1d2, e1f1]
-24726 <first : [Black Horse] Sunt capturat
-24726 <first : R - K - Q B N R 
-24726 <first : P P P P - P P P 
-24726 <first : - - N - - - - - 
-24726 <first : - - - - P - - - 
-24726 <first : - - - - - - - - 
-24726 <first : - - - - - - - - 
-24726 <first : p p p p p p p p 
-24726 <first : r - b k q b n r 
-24726 <first : 
-24726 <first : 1-0 {Black resigns}
+23745 >first : f3g4
+23748 <first : [Black Horse] Sunt capturat
+23748 <first : R - B K - B N R 
+23748 <first : P P P - P P P P 
+23748 <first : - - - P - - - - 
+23748 <first : - Q - - - - - - 
+23748 <first : - N - - - - - - 
+23748 <first : - - - - - - - - 
+23748 <first : p p p p p p p p 
+23748 <first : r - b k q b n r 
+23748 <first : 
+23748 <first : 1-0 {Black resigns}
 GameEnds(26, Black resigns, 5)
-24726 >first : result 1-0 {Black resigns}
-24726 >first : force
+23748 >first : result 1-0 {Black resigns}
+23748 >first : force
 GameEnds(26, Black resigns, 2)
-27781 >first : quit
+26287 >first : quit
