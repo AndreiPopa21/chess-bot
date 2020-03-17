@@ -18,77 +18,87 @@ public class Main {
                 System.out.print(mat[i][j] + " ");
             }
             System.out.println();
+
         }
     }
 
+    public static Piece whiteHorse;
+    public static Piece blackHorse;
+    public static ReceiverXboard recv;
+    public static Table table;
+
     public static void main(String[] args) throws IOException {
 
-        Vector<String> coloane = new Vector<String>();
-        coloane.add("a");
-        coloane.add("b");
-        coloane.add("c");
-        coloane.add("d");
-        coloane.add("e");
-        coloane.add("f");
-        coloane.add("g");
-        coloane.add("h");
-
-        String[] coloane_litere={"h","g","f","e","d","c","b","a"};
-
-        int[] coloane3={1,2,3,4,5,6,7,8};
-        int[] lini = {1,2,3,4,5,6,7,8};
-
-        //String str , str2;
-
-        Table table = new Table();
-        ReceiverXboard recv = new ReceiverXboard(table);
+        table = new Table();
+        recv = new ReceiverXboard(table);
         Scanner s = new Scanner(System.in);
 
-        int index = 0;
-        int steps_until_go = 0;
         String mutare="start";
 
         Piece[][] board = table.getConfiguration();
-        Piece cal = board[7][1];
+        blackHorse = board[7][1];
+        whiteHorse = board[0][1];
 
         while (mutare.compareTo("quit") != 0)
         {
-
             mutare= s.nextLine();
             boolean verificare_mutare = recv.comandComparer(mutare);
 
-            if (verificare_mutare==true) {
-
+            if (verificare_mutare) {
                 recv.table.move(mutare);
-
-               if (steps_until_go!=4) {
-                   while (cal.getAllPossibleMoves() != null) {
-
-                       ArrayList<String> lista_mutari_pos_cal = cal.getAllPossibleMoves();
-                       index = new Random().nextInt(lista_mutari_pos_cal.size());
-                       recv.table.move(lista_mutari_pos_cal.get(index));
-                       System.out.println(table.toString());
-                       System.out.println("move " + lista_mutari_pos_cal.get(index)) ;
-                       System.out.flush();
-                       steps_until_go++;
-                       System.out.println(cal.getPosition().digit + "--------" + cal.getPosition().letter);
-                       break;
-
-                   }
-               }else
-               {
-                   /*steps_until_go=0;
-                   cal=board[0][1];
-                   System.out.println(cal.getName());
-                   ArrayList<String> lista_mutari_pos_cal = cal.getAllPossibleMoves();
-                   index = new Random().nextInt(lista_mutari_pos_cal.size());
-                   recv.table.move(lista_mutari_pos_cal.get(index));
-                   System.out.println("move " + lista_mutari_pos_cal.get(index));
-
-                    */
+               if (recv.getE_color() == EngineColor.BLACK) {
+                    moveBlack();
+               }else {
+                    moveWhite();
                }
-
             }
+
+            if(mutare.equals("go"))
+                if(recv.getE_color() == EngineColor.WHITE)
+                    moveWhite();
+                else
+                    moveBlack();
+        }
+
+    }
+
+    public static void moveWhite(){
+
+        if(whiteHorse.isCaptured())
+            System.out.println("[White Horse] Sunt capturat");
+        else
+            System.out.println("[White Horse] Inca nu sunt capturat");
+
+        if(whiteHorse.getAllPossibleMoves() != null){
+            ArrayList<String> whiteHorseMoves = whiteHorse.getAllPossibleMoves();
+            int index = new Random().nextInt(whiteHorseMoves.size());
+            recv.table.move(whiteHorseMoves.get(index));
+            System.out.println("move " + whiteHorseMoves.get(index)) ;
+            System.out.flush();
+        }else{
+            //System.out.println("Calul alb a fost capturat");
+            System.out.println("0-1 {White resigns}");
+        }
+    }
+
+    public static void moveBlack(){
+        if(blackHorse.isCaptured())
+            System.out.println("[Black Horse] Sunt capturat");
+        else
+            System.out.println("[Black Horse] Inca nu sunt capturat");
+
+        System.out.println(table.toString());
+
+        if(blackHorse.getAllPossibleMoves() != null) {
+            ArrayList<String> blackHorseMoves = blackHorse.getAllPossibleMoves();
+            int index = new Random().nextInt(blackHorseMoves.size());
+            recv.table.move(blackHorseMoves.get(index));
+            System.out.println("move " + blackHorseMoves.get(index)) ;
+            System.out.flush();
+        }
+        else{
+            //System.out.println("Calul negru a fost capturat");
+            System.out.println("1-0 {Black resigns}");
         }
     }
 }

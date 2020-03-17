@@ -169,7 +169,8 @@ public class Table {
                     pos.letter + pos.digit);*/
             return;
         }
-        if(destPiece.getColor() == Color.WHITE) {
+        if(p.getColor() == Color.BLACK &&
+                destPiece.getColor() == Color.WHITE) {
             this.addCapturedWhite(destPiece);
             destPiece.setCaptured(true);
             this.getConfiguration()[destRow][destColumn] = aux;
@@ -177,14 +178,16 @@ public class Table {
                     .setPosition(new Piece.Position(destLetter, destRow+1));
             return;
         }
-        if(destPiece.getColor() == Color.BLACK) {
+        if(p.getColor() == Color.WHITE &&
+                destPiece.getColor() == Color.BLACK) {
             this.addCapturedBlack(destPiece);
             destPiece.setCaptured(true);
             this.getConfiguration()[destRow][destColumn] = aux;
             this.getConfiguration()[destRow][destColumn]
-                    .setPosition(new Piece.Position(destLetter, destColumn));
+                    .setPosition(new Piece.Position(destLetter, destRow+1));
             return;
         }
+        destPiece.setCaptured(true);
     }
 
     public void move(String command){

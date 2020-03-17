@@ -18,14 +18,12 @@ public class King extends Piece {
         this.setPosition(initialPosition);
         this.setCaptured(false);
         this.setTable(table);
-        this.kingState = KING_STATES.UNCASTLED;
         this.setName(color==Color.WHITE? 'K' : 'k');
     }
 
     @Override
     public ArrayList<String> getAllPossibleMoves() {
-        if(this.kingState == KING_STATES.CHECKMATED)
-            return null;
+
         ArrayList<String> moves = new ArrayList<>();
         int[] rowOff = {-1,-1,0,1,1,1,0,-1};
         int[] colOff = {0,1,1,1,0,-1,-1,-1};
@@ -45,11 +43,11 @@ public class King extends Piece {
                 continue;
             }
             if(p.getColor() == Color.WHITE && this.getColor()==Color.WHITE){
-                System.out.println("Mi-am gasit coechipier alb: " + Table.convertIntToCharCol(newCol) + " " + (++newRow));
+                //System.out.println("Mi-am gasit coechipier alb: " + Table.convertIntToCharCol(newCol) + " " + (++newRow));
                 continue;
             }
             if(p.getColor() == Color.BLACK && this.getColor() == Color.BLACK){
-                System.out.println("Mi-am gasit coechipier negru: " + Table.convertIntToCharCol(newCol) + " " + (++newRow));
+                //System.out.println("Mi-am gasit coechipier negru: " + Table.convertIntToCharCol(newCol) + " " + (++newRow));
                 continue;
             }
             if(p.getName().equals('K') || p.getName().equals('k')){
@@ -57,12 +55,22 @@ public class King extends Piece {
             }
             moves.add(Table.generateMoveCommand(currPosition,rowOff[i],colOff[i]));
         }
+        System.out.println(moves);
         return moves;
     }
 
     @Override
     public void move(String command) {
+        ArrayList<String> allCommands = this.getAllPossibleMoves();
 
+        if(!allCommands.contains(command)){
+            System.out.println("Invalid command performed by " +
+                    (this.getColor()==Color.WHITE? "White" : "Black") + " King at: " +
+                    this.getPosition().letter +
+                    this.getPosition().digit);
+            return;
+        }
+        getTable().movePiece(this,command);
     }
 
 }

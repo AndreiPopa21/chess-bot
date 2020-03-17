@@ -1,22 +1,22 @@
+import java.util.Collection;
 import java.util.Vector;
 
-enum EnginColor{
+enum EngineColor{
     WHITE,
     BLACK,
     NOSET,
 }
 
 public class ReceiverXboard implements Utilizator_Engine {
-
     Table table;
-    private EnginColor e_color ;
+    private EngineColor e_color ;
 
     public ReceiverXboard(Table table){
         this.table=table;
-        e_color=EnginColor.NOSET;
+        e_color=EngineColor.NOSET;
     }
 
-    public EnginColor getE_color(){
+    public EngineColor getE_color(){
         return e_color;
     }
 
@@ -27,9 +27,9 @@ public class ReceiverXboard implements Utilizator_Engine {
 
     @Override
     public void New() {
-        System.out.println("feature sigint=0 sigterm=0 done=1 ");
+        System.out.println("feature sigint=0 sigterm=0 done=1 colors=0");
         System.out.flush();
-        this.e_color=EnginColor.BLACK;
+        this.e_color=EngineColor.BLACK;
     }
 
     @Override
@@ -39,17 +39,20 @@ public class ReceiverXboard implements Utilizator_Engine {
 
     @Override
     public void go() {
-
+        if(this.e_color == EngineColor.BLACK)
+            this.e_color = EngineColor.WHITE;
+        else
+            this.e_color = EngineColor.BLACK;
     }
 
     @Override
     public void white() {
-        e_color=EnginColor.BLACK;
+        e_color=EngineColor.BLACK;
     }
 
     @Override
     public void black() {
-        e_color=EnginColor.WHITE;
+        e_color=EngineColor.WHITE;
     }
 
     @Override
@@ -59,11 +62,11 @@ public class ReceiverXboard implements Utilizator_Engine {
 
     @Override
     public void resign() {
-        if (this.e_color==EnginColor.BLACK)
+        if (this.e_color==EngineColor.BLACK)
         {
-            System.out.println("result 0-1 {White resigns}");
+            System.out.println("0-1 {White resigns}");
         }else
-            System.out.println("result 0-1 {Black resigns}");
+            System.out.println("1-0 {Black resigns}");
     }
 
     @Override
@@ -89,8 +92,7 @@ public class ReceiverXboard implements Utilizator_Engine {
         if (command.equals(".")) {
             return false;
         }
-        String str = String.valueOf(command.charAt(0));
-        String str2= String.valueOf(command.charAt(2));
+
 
 
 
@@ -118,9 +120,12 @@ public class ReceiverXboard implements Utilizator_Engine {
         }else if ("resign".equals(command))
         {
             this.resign();
-        }else if ((command.length() == 4)&&(coloane.contains(str))&&(coloane.contains(str2)))
+        }else
         {
-            return this.move();
+            String str = String.valueOf(command.charAt(0));
+            String str2= String.valueOf(command.charAt(2));
+            if ((command.length() == 4)&&(coloane.contains(str))&&(coloane.contains(str2)))
+                return this.move();
         }
         return false;
     }

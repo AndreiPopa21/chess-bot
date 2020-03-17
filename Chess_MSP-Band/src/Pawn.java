@@ -16,6 +16,7 @@ public class Pawn extends Piece {
         this.setCaptured(false);
         this.setTable(table);
         this.setName(color==Color.WHITE? 'P' : 'p');
+        this.pawnState = PAWN_STATE.NOT_ENPASSANT;
     }
 
     public void setPawnState(PAWN_STATE pawnState){
@@ -32,7 +33,7 @@ public class Pawn extends Piece {
             return;
         }
     }
-
+    public PAWN_STATE getPawnState(){return  this.pawnState;}
 
     @Override
     public void move(String command) {
@@ -42,6 +43,7 @@ public class Pawn extends Piece {
                     (this.getColor()==Color.WHITE? "White" : "Black") + " Pawn at: " +
                     this.getPosition().letter +
                     this.getPosition().digit);
+            System.out.println(allCommands);
             return;
         }
         getTable().movePiece(this,command);
@@ -57,18 +59,62 @@ public class Pawn extends Piece {
         int column = Math.abs((int) currPosition.letter - 104); //get matrix row index
         int row = currPosition.digit-1;
 
-        if(this.getColor() == Color.WHITE){
-            Piece p = getTable().getConfiguration()[row+1][column];
-            if(p.getName().equals('-'))
-            moves.add(Table.generateMoveCommand(this.getPosition(),1,0));
+        if(this.getColor() == Color.WHITE) {
+            Piece p = getTable().getConfiguration()[row + 1][column];
+            if (p.getName().equals('-'))
+                moves.add(Table.generateMoveCommand(this.getPosition(), 1, 0));
+
+            int[] attackRowOff = {1, 1};
+            int[] attackColOff = {1, -1};
+            for (int i = 0; i < attackRowOff.length; i++) {
+
+                int nextRow = row + attackRowOff[i];
+                int nextCol = column + attackColOff[i];
+                if(nextRow < 0 || nextRow >=8 || nextCol < 0 || nextCol >= 8)
+                    continue;
+
+                if (getTable().getConfiguration()[nextRow][nextCol]
+                        .getColor() == Color.BLACK)
+                    moves.add(Table.generateMoveCommand(this.getPosition(),
+                            attackRowOff[i], attackColOff[i]));
+
+            }
         }
+
         if(this.getColor() == Color.BLACK){
-           // System.out.println(column);
-            //System.out.println(row);
             Piece p = getTable().getConfiguration()[row-1][column];
             if(p.getName().equals('-'))
             moves.add(Table.generateMoveCommand(this.getPosition(),-1,0));
+
+            int[] attackRowOff = {-1,-1};
+            int[] attackColOff = {1,-1};
+            for(int i = 0; i < attackRowOff.length; i++){
+                int nextRow = row + attackRowOff[i];
+                int nextCol = column + attackColOff[i];
+                if(nextRow < 0 || nextRow >=8 || nextCol < 0 || nextCol >= 8)
+                    continue;
+                if(getTable().getConfiguration()[row+attackRowOff[i]][column+attackColOff[i]]
+                        .getColor() == Color.WHITE)
+                    moves.add(Table.generateMoveCommand(this.getPosition(),
+                            attackRowOff[i],attackColOff[i]));
+            }
+
         }
+        if(this.getPawnState() == PAWN_STATE.NOT_ENPASSANT){
+            if(this.getColor() == Color.WHITE){
+                Piece p = getTable().getConfiguration()[row+2][column];
+                if(p.getName().equals('-'))
+                    moves.add(Table.generateMoveCommand(this.getPosition(),2, 0));
+            }
+            if(this.getColor() == Color.BLACK){
+                Piece p = getTable().getConfiguration()[row-2][column];
+                if(p.getName().equals('-'))
+                    moves.add(Table.generateMoveCommand(this.getPosition(),-2,0));
+            }
+        }
+
+
+
 
         return moves;
     }
