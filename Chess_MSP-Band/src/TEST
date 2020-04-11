@@ -1,0 +1,50 @@
+locale = LC_CTYPE=en_US.UTF-8;LC_NUMERIC=ro_RO.UTF-8;LC_TIME=ro_RO.UTF-8;LC_COLLATE=en_US.UTF-8;LC_MONETARY=ro_RO.UTF-8;LC_MESSAGES=en_US.UTF-8;LC_PAPER=ro_RO.UTF-8;LC_NAME=ro_RO.UTF-8;LC_ADDRESS=ro_RO.UTF-8;LC_TELEPHONE=ro_RO.UTF-8;LC_MEASUREMENT=ro_RO.UTF-8;LC_IDENTIFICATION=ro_RO.UTF-8
+recognized 'normal' (-1) as variant normal
+recognized 'normal' (-1) as variant normal
+recognized 'normal' (-1) as variant normal
+shuffleOpenings = 0
+shuffleOpenings = 0
+Version: xboard 4.9.1 + java ()
+Reset(1, 0) from gameMode 0
+recognized 'normal' (-1) as variant normal
+GameEnds(0, (null), 2)
+shuffleOpenings = 0
+StartChildProcess (dir=".") java Main
+162 >first : xboard
+protover 2
+10163 >first : new
+random
+10163 >first : level 40 5 0
+10163 >first : post
+10163 >first : hard
+10164 <first : feature sigint=0 sigterm=0 done=1 colors=0
+10164 >first : accepted sigint
+10164 >first : accepted sigterm
+10164 >first : accepted done
+10164 >first : accepted colors
+nps: w=-1, b=-1
+nps: w=-1, b=-1
+12018 >first : time 30000
+12018 >first : otim 30000
+book hit = (NULL)
+12018 >first : g2g3
+12091 <first : move g8h6
+14233 >first : time 29992
+14233 >first : otim 29785
+book hit = (NULL)
+14233 >first : g1f3
+14327 <first : move h6f5
+15871 >first : time 29983
+15871 >first : otim 29631
+book hit = (NULL)
+15871 >first : f3d4
+15965 <first : move f5e3
+17763 >first : time 29973
+17763 >first : otim 29451
+book hit = (NULL)
+17763 >first : f2f4
+17836 <first : move e3d1
+GameEnds(27, White resigns, 2)
+27186 >first : result 0-1 {White resigns}
+27186 >first : force
+GameEnds(27, White resigns, 2)

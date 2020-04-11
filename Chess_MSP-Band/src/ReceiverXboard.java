@@ -29,7 +29,7 @@ public class ReceiverXboard implements Utilizator_Engine {
     public void New() {
         System.out.println("feature sigint=0 sigterm=0 done=1 colors=0");
         System.out.flush();
-        this.e_color=EngineColor.BLACK;
+        //this.e_color=EngineColor.WHITE;
     }
 
     @Override
@@ -39,19 +39,25 @@ public class ReceiverXboard implements Utilizator_Engine {
 
     @Override
     public void go() {
+        System.out.println("Am ajuns aici si culoarea mea curenta este "+this.e_color);
         if(this.e_color == EngineColor.BLACK)
             this.e_color = EngineColor.WHITE;
         else
             this.e_color = EngineColor.BLACK;
+        System.out.println("Am ajuns aici si culoarea mea curenta este "+this.e_color);
+
     }
 
     @Override
     public void white() {
+        System.out.println("Am ajuns in white"+this.e_color);
         e_color=EngineColor.BLACK;
     }
 
     @Override
-    public void black() {
+    public void black()
+    {
+        System.out.println("Am ajuns in black "+this.e_color);
         e_color=EngineColor.WHITE;
     }
 
@@ -92,9 +98,6 @@ public class ReceiverXboard implements Utilizator_Engine {
         if (command.equals(".")) {
             return false;
         }
-
-
-
 
         if ("xboard".equals(command))
         {
