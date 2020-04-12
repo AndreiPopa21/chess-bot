@@ -1,15 +1,19 @@
 import java.util.ArrayList;
 
 public class Queen extends Piece {
-    public Queen(Color color, Position initialPosition, Table table){
+
+    public Queen(Color color, Table table){
         this.setColor(color);
-        this.setPosition(initialPosition);
-        this.setCaptured(false);
         this.setTable(table);
         this.setName(color==Color.WHITE? 'Q' : 'q');
+        this.setValue(Constants.QUEEN_VALUE);
     }
 
-    @Override
+    public ArrayList<Move> searchMoves(int src){
+        return null;
+    }
+
+  /* @Override
     public ArrayList<String> getAllPossibleMoves() {
         if(this.isCaptured())
             return null;
@@ -62,18 +66,7 @@ public class Queen extends Piece {
 
 
         return moves;
-    }
+    }*/
 
 
-    @Override
-    public void move(String command) {
-        ArrayList<String> allCommands = this.getAllPossibleMoves();
-        if(!allCommands.contains(command)){
-            System.out.println("Invalid command performed by" +
-                    (this.getColor()==Color.WHITE? "White" : "Black") + " Queen at: " +
-                    this.getPosition().letter +
-                    this.getPosition().digit);
-        }
-        getTable().movePiece(this,command);
-    }
 }

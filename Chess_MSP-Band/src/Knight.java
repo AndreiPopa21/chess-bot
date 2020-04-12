@@ -29,21 +29,15 @@ public class Knight extends Piece {
 
             Square sq = getTable().getSquares().get(next);
             
-            if(sq == null) {
-                // se verifica daca e vreun patrat invalid
-                continue;
-            }
+            // se verifica daca e vreun patrat invalid
+            if(sq == null) continue;
             
-            if(this.getColor() == sq.getPiece().getColor()) {
-                // se verifica daca mi-am gasit un coechipier
-                continue;
-            }
+            // se verifica daca mi-am gasit un coechipier
+            if(this.getColor() == sq.getPiece().getColor()) continue;
             
-            if(isKing(sq.getPiece())) {
-                // se verifica daca pe patrat sta un rege
-                continue;
-            }
-
+            // se verifica daca pe patrat sta un rege
+            if(isKing(sq.getPiece())) continue;
+            
             moves.add(new Move(src,next, null));
         }
 

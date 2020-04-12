@@ -9,33 +9,31 @@ enum Color{
 public abstract class Piece {
     private Color color;
     private Character name;
-    private Boolean captured;
-    private Position position;
     private Table table;
+    private int value;
 
     public Color getColor(){return this.color;}
     public Character getName(){return this.name;}
-    public Boolean isCaptured(){return this.captured;}
-    public Position getPosition(){return this.position;}
     public Table getTable(){return this.table;}
+    public int getValue(){return this.value;}
 
     public void setColor(Color color){this.color = color;}
     public void setName(Character name){this.name = name;}
-    public void setCaptured(Boolean captured){
-        this.captured = captured;
-    }
-    public void setPosition(Position position){this.position =position;}
+    public void setValue(int value){this.value = value;}
     public void setTable(Table table){this.table = table;}
 
-    public static class Position{
-        public char letter;
-        public int digit;
-        public Position(char letter, int digit){
-            this.letter = letter;
-            this.digit = digit;
-        }
-    }
+    public abstract ArrayList<Move> searchMoves(int src);
 
-    public abstract void move(String command);
-    public abstract ArrayList<String> getAllPossibleMoves();
+    public boolean isKing(Piece piece){
+        if(piece == null) {
+            return false;
+        }
+        if(piece.getName().equals('K')) {
+            return true;
+        }
+        if(piece.getName().equals('k')) {
+            return true;
+        }
+        return false;
+    }
 }

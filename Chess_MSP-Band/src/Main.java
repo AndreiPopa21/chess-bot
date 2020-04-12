@@ -1,7 +1,3 @@
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
@@ -14,9 +10,8 @@ public class Main {
     public static ReceiverXboard recv;
     public static Table table;
 
-    public static void main(String[] args) throws IOException {
-
-        table = new Table();
+    public static void main(String[] args) {
+      /*  table = new Table();
         recv = new ReceiverXboard(table);
         Scanner s = new Scanner(System.in);
 
@@ -45,11 +40,11 @@ public class Main {
                     moveWhite();
                 else
                     moveBlack();
-        }
+        }*/
 
     }
 
-    public static void moveWhite(){
+   /* public static void moveWhite(){
 
         if(whiteHorse.getAllPossibleMoves() != null){
             ArrayList<String> whiteHorseMoves = whiteHorse.getAllPossibleMoves();
@@ -76,5 +71,5 @@ public class Main {
             //System.out.println("Calul negru a fost capturat");
             System.out.println("1-0 {Black resigns}");
         }
-    }
+    }*/
 }

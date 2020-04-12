@@ -1,205 +1,135 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Table {
 
-    private Piece[][] tableConfig= new Piece[8][8];
-    private ArrayList<Piece> whiteCaptured = new ArrayList<>();
-    private ArrayList<Piece> blackCaptured = new ArrayList<>();
+    
+    private Color playerColor;
+    private char kingName;
+    private char queenName;
+    private char bishopName;
+    private char knightName;
+    private char rookName;
+    private char pawnName;
+    private HashMap<Integer,Square> squaresMap = new HashMap<>();
 
-    public Table(){
-        generateTable();
+
+    public Table(Color playerColor){
+        this.playerColor = playerColor;
+        standardGame();
+        setNames(playerColor);
     }
 
-    public void generateTable(){
-        tableConfig[0][7] = new Rook(Color.WHITE,new Piece.Position('a',1),this);
-        tableConfig[0][6] = new Knight(Color.WHITE,new Piece.Position('b',1),this);
-        tableConfig[0][5] = new Bishop(Color.WHITE,new Piece.Position('c',1),this);
-        tableConfig[0][4] = new Queen(Color.WHITE,new Piece.Position('d',1),this);
-        tableConfig[0][3] = new King(Color.WHITE,new Piece.Position('e',1),this);
-        tableConfig[0][2] = new Bishop(Color.WHITE,new Piece.Position('f',1),this);
-        tableConfig[0][1] = new Knight(Color.WHITE,new Piece.Position('g',1),this);
-        tableConfig[0][0]= new Rook(Color.WHITE,new Piece.Position('h',1),this);
-
-        tableConfig[1][7] = new Pawn(Color.WHITE,new Piece.Position('a',2),this);
-        tableConfig[1][6] = new Pawn(Color.WHITE,new Piece.Position('b',2),this);
-        tableConfig[1][5] = new Pawn(Color.WHITE,new Piece.Position('c',2),this);
-        //tableConfig[1][5] = new NoPiece();
-        tableConfig[1][4] = new Pawn(Color.WHITE,new Piece.Position('d',2),this);
-        //tableConfig[1][4] = new NoPiece();
-        tableConfig[1][3] = new Pawn(Color.WHITE,new Piece.Position('e',2),this);
-        //tableConfig[1][3] = new NoPiece();
-        tableConfig[1][2] = new Pawn(Color.WHITE,new Piece.Position('f',2), this);
-        tableConfig[1][1] = new Pawn(Color.WHITE,new Piece.Position('g',2), this);
-       // tableConfig[1][1] = new NoPiece(new Piece.Position('0',0));
-        tableConfig[1][0] = new Pawn(Color.WHITE,new Piece.Position('h',2), this);
-
-        tableConfig[7][7] = new Rook(Color.BLACK,new Piece.Position('a',8),this);
-        tableConfig[7][6] = new Knight(Color.BLACK,new Piece.Position('b',8),this);
-        tableConfig[7][5] = new Bishop(Color.BLACK,new Piece.Position('c',8),this);
-        tableConfig[7][4] = new Queen(Color.BLACK,new Piece.Position('d',8),this);
-        tableConfig[7][3] = new King(Color.BLACK,new Piece.Position('e',8),this);
-        tableConfig[7][2] = new Bishop(Color.BLACK,new Piece.Position('f',8),this);
-        tableConfig[7][1] = new Knight(Color.BLACK,new Piece.Position('g',8),this);
-        tableConfig[7][0]= new Rook(Color.BLACK,new Piece.Position('h',8),this);
-
-        tableConfig[6][7] = new Pawn(Color.BLACK,new Piece.Position('a',7),this);
-        tableConfig[6][6] = new Pawn(Color.BLACK,new Piece.Position('b',7), this);
-        tableConfig[6][5] = new Pawn(Color.BLACK,new Piece.Position('c',7),this);
-        tableConfig[6][4] = new Pawn(Color.BLACK,new Piece.Position('d',7),this);
-        tableConfig[6][3] = new Pawn(Color.BLACK,new Piece.Position('e',7),this);
-        tableConfig[6][2] = new Pawn(Color.BLACK,new Piece.Position('f',7),this);
-        tableConfig[6][1] = new Pawn(Color.BLACK,new Piece.Position('g',7),this);
-        tableConfig[6][0] = new Pawn(Color.BLACK,new Piece.Position('h',7),this);
-
-        for(int i = 2; i < 6; i++){
-            for(int j = 0;j < 8; j++){
-                tableConfig[i][j] = new NoPiece();
-            }
-        }
-
-        //tableConfig[5][0] = new Pawn(Color.BLACK,new Piece.Position('h',6));
-       // tableConfig[5][7] = new Pawn(Color.BLACK,new Piece.Position('a',6));
+    private void setNames(Color color){
+        kingName = (color == Color.WHITE) ? 'K' : 'k';
+        queenName = (color == Color.WHITE) ? 'Q' : 'q';
+        bishopName = (color == Color.WHITE) ? 'B' : 'b';
+        knightName = (color == Color.WHITE) ? 'N' : 'n';
+        rookName = (color == Color.WHITE) ? 'R' : 'r';
+        pawnName = (color == Color.WHITE) ? 'P' : 'p';
     }
 
-    public Piece[][] getConfiguration(){return this.tableConfig;}
+    private void standardGame(){
+        squaresMap.clear();
 
-    public String toString(){
-        StringBuilder sb = new StringBuilder();
-        //tableConfig[0][0].getName();
-        for(int i = 0; i < 8; i++){
-            for(int j = 0 ; j < 8; j++){
-                sb.append(tableConfig[i][j].getName().toString()+' ');
-            }
-            sb.append('\n');
-        }
-        return sb.toString();
-    //return null;
+        //linia 1
+        squaresMap.put(Constants.A1, new Square(Constants.A1, null));
+        squaresMap.put(Constants.B1, new Square(Constants.B1, null));
+        squaresMap.put(Constants.C1, new Square(Constants.C1, null));
+        squaresMap.put(Constants.D1, new Square(Constants.D1, null));
+        squaresMap.put(Constants.E1, new Square(Constants.E1, null));
+        squaresMap.put(Constants.F1, new Square(Constants.F1, null));
+        squaresMap.put(Constants.G1, new Square(Constants.G1, null));
+        squaresMap.put(Constants.H1, new Square(Constants.H1, null));
+
+        //linia 2
+        squaresMap.put(Constants.A2, new Square(Constants.A2, null));
+        squaresMap.put(Constants.B2, new Square(Constants.B2, null));
+        squaresMap.put(Constants.C2, new Square(Constants.C2, null));
+        squaresMap.put(Constants.D2, new Square(Constants.D2, null));
+        squaresMap.put(Constants.E2, new Square(Constants.E2, null));
+        squaresMap.put(Constants.F2, new Square(Constants.F2, null));
+        squaresMap.put(Constants.G2, new Square(Constants.G2, null));
+        squaresMap.put(Constants.H2, new Square(Constants.H2, null));
+
+        //linia 3
+        squaresMap.put(Constants.A3, new Square(Constants.A3, null));
+        squaresMap.put(Constants.B3, new Square(Constants.B3, null));
+        squaresMap.put(Constants.C3, new Square(Constants.C3, null));
+        squaresMap.put(Constants.D3, new Square(Constants.D3, null));
+        squaresMap.put(Constants.E3, new Square(Constants.E3, null));
+        squaresMap.put(Constants.F3, new Square(Constants.F3, null));
+        squaresMap.put(Constants.G3, new Square(Constants.G3, null));
+        squaresMap.put(Constants.H3, new Square(Constants.H3, null));
+
+        //linia 4
+        squaresMap.put(Constants.A4, new Square(Constants.A4, null));
+        squaresMap.put(Constants.B4, new Square(Constants.B4, null));
+        squaresMap.put(Constants.C4, new Square(Constants.C4, null));
+        squaresMap.put(Constants.D4, new Square(Constants.D4, null));
+        squaresMap.put(Constants.E4, new Square(Constants.E4, null));
+        squaresMap.put(Constants.F4, new Square(Constants.F4, null));
+        squaresMap.put(Constants.G4, new Square(Constants.G4, null));
+        squaresMap.put(Constants.H4, new Square(Constants.H4, null));
+
+        //linia 5
+        squaresMap.put(Constants.A5, new Square(Constants.A5, null));
+        squaresMap.put(Constants.B5, new Square(Constants.B5, null));
+        squaresMap.put(Constants.C5, new Square(Constants.C5, null));
+        squaresMap.put(Constants.D5, new Square(Constants.D5, null));
+        squaresMap.put(Constants.E5, new Square(Constants.E5, null));
+        squaresMap.put(Constants.F5, new Square(Constants.F5, null));
+        squaresMap.put(Constants.G5, new Square(Constants.G5, null));
+        squaresMap.put(Constants.H5, new Square(Constants.H5, null));
+
+        //linia 6
+        squaresMap.put(Constants.A6, new Square(Constants.A6, null));
+        squaresMap.put(Constants.B6, new Square(Constants.B6, null));
+        squaresMap.put(Constants.C6, new Square(Constants.C6, null));
+        squaresMap.put(Constants.D6, new Square(Constants.D6, null));
+        squaresMap.put(Constants.E6, new Square(Constants.E6, null));
+        squaresMap.put(Constants.F6, new Square(Constants.F6, null));
+        squaresMap.put(Constants.G6, new Square(Constants.G6, null));
+        squaresMap.put(Constants.H6, new Square(Constants.H6, null));
+
+        //linia 7
+        squaresMap.put(Constants.A7, new Square(Constants.A7, null));
+        squaresMap.put(Constants.B7, new Square(Constants.B7, null));
+        squaresMap.put(Constants.C7, new Square(Constants.C7, null));
+        squaresMap.put(Constants.D7, new Square(Constants.D7, null));
+        squaresMap.put(Constants.E7, new Square(Constants.E7, null));
+        squaresMap.put(Constants.F7, new Square(Constants.F7, null));
+        squaresMap.put(Constants.G7, new Square(Constants.G7, null));
+        squaresMap.put(Constants.H7, new Square(Constants.H7, null));
+
+        //linia 8
+        squaresMap.put(Constants.A8, new Square(Constants.A8, null));
+        squaresMap.put(Constants.B8, new Square(Constants.B8, null));
+        squaresMap.put(Constants.C8, new Square(Constants.C8, null));
+        squaresMap.put(Constants.D8, new Square(Constants.D8, null));
+        squaresMap.put(Constants.E8, new Square(Constants.E8, null));
+        squaresMap.put(Constants.F8, new Square(Constants.F8, null));
+        squaresMap.put(Constants.G8, new Square(Constants.G8, null));
+        squaresMap.put(Constants.H8, new Square(Constants.H8, null));
+
+
     }
 
-    public static Character convertIntToCharCol(int x){
-        if(x<0 || x>=8)
-            return null;
-        switch (x){
-            case 0:
-                return 'h';
-            case 1:
-                return 'g';
-            case 2:
-                return 'f';
-            case 3:
-                return 'e';
-            case 4:
-                return 'd';
-            case 5:
-                return 'c';
-            case 6:
-                return 'b';
-            case 7:
-                return 'a';
-            default:
-                return null;
-        }
-    }
-    public static String generateMoveCommand(Piece.Position currPosition, int rowOff, int colOff){
-        StringBuilder moveBuilder = new StringBuilder();
-        moveBuilder.append(currPosition.letter);
-        moveBuilder.append(currPosition.digit);
-
-        int currCol = Math.abs((int) currPosition.letter - 104);
-        int currRow = currPosition.digit-1;
-
-        int newRow = currRow + rowOff + 1;
-        int newCol = currCol + colOff;
-
-        moveBuilder.append(Table.convertIntToCharCol(newCol));
-        moveBuilder.append(newRow);
-        return moveBuilder.toString();
+  
+    public HashMap<Integer,Square> getSquares(){
+        return this.squaresMap;
     }
 
-    public void addCapturedWhite(Piece p){
-        if(p.getColor() == Color.BLACK)
-            return;
-        if(p.isCaptured())
-            return;
-        p.setCaptured(true);
-        whiteCaptured.add(p);
-    }
-    public void addCapturedBlack(Piece p){
-        if(p.getColor() == Color.WHITE)
-            return;
-        if(p.isCaptured())
-            return;
-        p.setCaptured(true);
-        blackCaptured.add(p);
+    public boolean isKingBinded(int srcPiece, Color pieceColor){
+        return false;
     }
 
-    public ArrayList<Piece> getWhiteCaptured(){return this.whiteCaptured;}
-    public ArrayList<Piece> getBlackCaptured(){return this.blackCaptured;}
-
-    public void movePiece(Piece p,String command){
-        char sourceLetter = command.charAt(0);
-        char sourceDigit = command.charAt(1);
-        char destLetter = command.charAt(2);
-        char destDigit = command.charAt(3);
-
-
-        int sourceColumn = Math.abs((int) sourceLetter  - 104);
-        int sourceRow = sourceDigit - 49;
-
-        int destColumn = Math.abs((int) destLetter - 104);
-        int destRow = destDigit - 49;
-
-    //    System.out.println("SE executa mutarea: " + sourceRow + " | " + sourceColumn + " | " + destRow + " | " + destColumn);
-     //   System.out.println("SE executa mutarea: " + destLetter + " | " + ((int)destDigit-48));
-
-
-        Piece aux = this.getConfiguration()[sourceRow][sourceColumn];
-        this.getConfiguration()[sourceRow][sourceColumn] = new NoPiece();
-
-        Piece destPiece = this.getConfiguration()[destRow][destColumn];
-
-        if(destPiece.getName().equals('-')){
-            //nu am capturat nimic
-            this.getConfiguration()[destRow][destColumn] = aux;
-            this.getConfiguration()[destRow][destColumn]
-                    .setPosition(new Piece.Position(destLetter,destRow+1));
-            /*Piece movedPiece = this.getConfiguration()[destRow][destColumn];
-            Piece.Position pos = movedPiece.getPosition();
-            System.out.println("Noua pozitie a " + movedPiece.getName()+ " este: " +
-                    pos.letter + pos.digit);*/
-            return;
-        }
-        if(p.getColor() == Color.BLACK &&
-                destPiece.getColor() == Color.WHITE) {
-            this.addCapturedWhite(destPiece);
-            destPiece.setCaptured(true);
-            this.getConfiguration()[destRow][destColumn] = aux;
-            this.getConfiguration()[destRow][destColumn]
-                    .setPosition(new Piece.Position(destLetter, destRow+1));
-            return;
-        }
-        if(p.getColor() == Color.WHITE &&
-                destPiece.getColor() == Color.BLACK) {
-            this.addCapturedBlack(destPiece);
-            destPiece.setCaptured(true);
-            this.getConfiguration()[destRow][destColumn] = aux;
-            this.getConfiguration()[destRow][destColumn]
-                    .setPosition(new Piece.Position(destLetter, destRow+1));
-            return;
-        }
-        destPiece.setCaptured(true);
+    public boolean isKingChecked(){
+        return false;
     }
 
-    public void move(String command){
-        //System.out.println(command);
-        char sourceLetter = command.charAt(0);
-        char sourceDigit = command.charAt(1);
 
-        int sourceColumn = Math.abs((int) sourceLetter  - 104);
-        int sourceRow = sourceDigit - 49;
-        //System.out.println(sourceColumn);
-        //System.out.println(sourceRow);
-        getConfiguration()[sourceRow][sourceColumn].move(command);
-
-    }
+/*
+    
+    }*/
 }

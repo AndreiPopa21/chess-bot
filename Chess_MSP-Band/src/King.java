@@ -11,17 +11,18 @@ enum KING_STATES{
 
 public class King extends Piece {
 
-    private KING_STATES kingState = null;
-
-    public King(Color color, Position initialPosition, Table table){
+    public King(Color color, Table table){
         this.setColor(color);
-        this.setPosition(initialPosition);
-        this.setCaptured(false);
         this.setTable(table);
         this.setName(color==Color.WHITE? 'K' : 'k');
+        this.setValue(Constants.KING_VALUE);
     }
 
-    @Override
+    public ArrayList<Move> searchMoves(int src){
+        return null;
+    }
+
+    /*@Override
     public ArrayList<String> getAllPossibleMoves() {
 
         ArrayList<String> moves = new ArrayList<>();
@@ -57,20 +58,7 @@ public class King extends Piece {
         }
         System.out.println(moves);
         return moves;
-    }
+    }*/
 
-    @Override
-    public void move(String command) {
-        ArrayList<String> allCommands = this.getAllPossibleMoves();
-
-        if(!allCommands.contains(command)){
-            System.out.println("Invalid command performed by " +
-                    (this.getColor()==Color.WHITE? "White" : "Black") + " King at: " +
-                    this.getPosition().letter +
-                    this.getPosition().digit);
-            return;
-        }
-        getTable().movePiece(this,command);
-    }
 
 }

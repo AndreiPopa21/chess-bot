@@ -1,27 +1,19 @@
 import java.util.ArrayList;
 
 public class Rook extends Piece {
-    public Rook(Color color, Position initialPosition, Table table){
+    
+    public Rook(Color color, Table table){
         this.setColor(color);
-        this.setPosition(initialPosition);
-        this.setCaptured(false);
         this.setTable(table);
         this.setName(color==Color.WHITE? 'R' : 'r');
+        this.setValue(Constants.ROOK_VALUE);
     }
 
-    @Override
-    public void move(String command) {
-        ArrayList<String> allCommands = this.getAllPossibleMoves();
-        if(!allCommands.contains(command)){
-            System.out.println("Invalid command performed by " +
-                    (this.getColor()==Color.WHITE? "White" : "Black") + " Rook at: " +
-                    this.getPosition().letter +
-                    this.getPosition().digit);
-            return;
-        }
-        getTable().movePiece(this,command);
+    public ArrayList<Move> searchMoves(int src){
+        return null;
     }
 
+/*
     @Override
     public ArrayList<String> getAllPossibleMoves() {
         if(this.isCaptured())
@@ -72,5 +64,5 @@ public class Rook extends Piece {
                     + this.getPosition().letter
                     + this.getPosition().digit);
         return moves;
-    }
+    }*/
 }

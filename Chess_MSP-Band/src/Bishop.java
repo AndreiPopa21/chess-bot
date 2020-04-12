@@ -1,27 +1,20 @@
 import java.util.ArrayList;
 
 public class Bishop extends Piece {
-    public Bishop(Color color, Position initialPosition,Table table){
+
+    public Bishop(Color color, Table table){
         this.setColor(color);
-        this.setPosition(initialPosition);
-        this.setCaptured(false);
         this.setTable(table);
         this.setName(color==Color.WHITE? 'B' : 'b');
+        this.setValue(Constants.BISHOP_VALUE);
     }
 
-    @Override
-    public void move(String command) {
-        ArrayList<String> allCommands = this.getAllPossibleMoves();
-        if(!allCommands.contains(command)){
-            System.out.println("Invalid command performed by " +
-                    (this.getColor()==Color.WHITE? "White" : "Black") + " Bishop at: " +
-                    this.getPosition().letter +
-                    this.getPosition().digit);
-            return;
-        }
-        getTable().movePiece(this,command);
+
+    public ArrayList<Move> searchMoves(int src){
+        return null;
     }
 
+    /*
     @Override
     public ArrayList<String> getAllPossibleMoves() {
         if(isCaptured())
@@ -73,5 +66,5 @@ public class Bishop extends Piece {
                     + this.getPosition().digit);
 
         return moves;
-    }
+    }*/
 }
