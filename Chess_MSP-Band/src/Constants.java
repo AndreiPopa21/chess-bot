@@ -39,41 +39,41 @@ public final class Constants{
     public static final int D7 = 1007;
     public static final int D8 = 1008;
 
-    public static final int E1 = 1101;
-    public static final int E2 = 1102;
-    public static final int E3 = 1103;
-    public static final int E4 = 1104;
-    public static final int E5 = 1105;
-    public static final int E6 = 1106;
-    public static final int E7 = 1107;
-    public static final int E8 = 1108;
+    public static final int E1 = 1011;
+    public static final int E2 = 1012;
+    public static final int E3 = 1013;
+    public static final int E4 = 1014;
+    public static final int E5 = 1015;
+    public static final int E6 = 1016;
+    public static final int E7 = 1017;
+    public static final int E8 = 1018;
 
-    public static final int F1 = 1201;
-    public static final int F2 = 1202;
-    public static final int F3 = 1203;
-    public static final int F4 = 1204;
-    public static final int F5 = 1205;
-    public static final int F6 = 1206;
-    public static final int F7 = 1207;
-    public static final int F8 = 1208;
+    public static final int F1 = 1021;
+    public static final int F2 = 1022;
+    public static final int F3 = 1023;
+    public static final int F4 = 1024;
+    public static final int F5 = 1025;
+    public static final int F6 = 1026;
+    public static final int F7 = 1027;
+    public static final int F8 = 1028;
 
-    public static final int G1 = 1301;
-    public static final int G2 = 1302;
-    public static final int G3 = 1303;
-    public static final int G4 = 1304;
-    public static final int G5 = 1305;
-    public static final int G6 = 1306;
-    public static final int G7 = 1307;
-    public static final int G8 = 1308;
+    public static final int G1 = 1031;
+    public static final int G2 = 1032;
+    public static final int G3 = 1033;
+    public static final int G4 = 1034;
+    public static final int G5 = 1035;
+    public static final int G6 = 1036;
+    public static final int G7 = 1037;
+    public static final int G8 = 1038;
 
-    public static final int H1 = 1401;
-    public static final int H2 = 1402;
-    public static final int H3 = 1403;
-    public static final int H4 = 1404;
-    public static final int H5 = 1405;
-    public static final int H6 = 1406;
-    public static final int H7 = 1407;
-    public static final int H8 = 1408;
+    public static final int H1 = 1041;
+    public static final int H2 = 1042;
+    public static final int H3 = 1043;
+    public static final int H4 = 1044;
+    public static final int H5 = 1045;
+    public static final int H6 = 1046;
+    public static final int H7 = 1047;
+    public static final int H8 = 1048;
 
 
     public static final int PAWN_VALUE = 10;
