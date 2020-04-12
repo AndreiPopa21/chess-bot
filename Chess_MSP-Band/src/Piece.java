@@ -23,6 +23,7 @@ public abstract class Piece {
     public void setTable(Table table){this.table = table;}
 
     public abstract ArrayList<Move> searchMoves(int src);
+    public abstract boolean isChecking(int src, int king);
 
     public boolean isKing(Piece piece){
         if(piece == null) {

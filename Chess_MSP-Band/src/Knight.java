@@ -25,10 +25,6 @@ public class Knight extends Piece {
             return moves;
         }
 
-        if(this.getTable().isKingBinded(src, this.getColor())) {
-            return moves;
-        }
-
         for(int i = 0; i < rowOff.length; i++){
             int next = src + rowOff[i] + colOff[i];
 
@@ -46,7 +42,23 @@ public class Knight extends Piece {
             moves.add(new Move(src,next, null));
         }
 
-        return moves;
+        ArrayList<Move> finalMoves = new ArrayList<>();
+
+        for(int i = 0; i < moves.size(); i++){
+            Move move = moves.get(i);
+            if(!getTable().isKingBinded(move))
+                finalMoves.add(move);
+        }
+
+        return finalMoves;
+    }
+
+    public boolean isChecking(int src, int king){
+        for(int i = 0; i < rowOff.length; i++){
+            int next = src + rowOff[i] + colOff[i];
+            if(next == king) return true;
+        }
+        return false;
     }
 
 }
