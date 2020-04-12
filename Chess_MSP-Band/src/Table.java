@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 public class Table {
 
@@ -12,6 +13,8 @@ public class Table {
     private char rookName;
     private char pawnName;
     private HashMap<Integer,Square> squaresMap = new HashMap<>();
+    private ArrayList<Piece> currBlack = new ArrayList<>();
+    private ArrayList<Piece> currWhite = new ArrayList<>();
 
 
     public Table(Color playerColor){
@@ -33,24 +36,24 @@ public class Table {
         squaresMap.clear();
 
         //linia 1
-        squaresMap.put(Constants.A1, new Square(Constants.A1, null));
-        squaresMap.put(Constants.B1, new Square(Constants.B1, null));
-        squaresMap.put(Constants.C1, new Square(Constants.C1, null));
-        squaresMap.put(Constants.D1, new Square(Constants.D1, null));
-        squaresMap.put(Constants.E1, new Square(Constants.E1, null));
-        squaresMap.put(Constants.F1, new Square(Constants.F1, null));
-        squaresMap.put(Constants.G1, new Square(Constants.G1, null));
-        squaresMap.put(Constants.H1, new Square(Constants.H1, null));
+        squaresMap.put(Constants.A1, new Square(Constants.A1, new Rook(Color.WHITE,this)));
+        squaresMap.put(Constants.B1, new Square(Constants.B1, new Knight(Color.WHITE, this)));
+        squaresMap.put(Constants.C1, new Square(Constants.C1, new Bishop(Color.WHITE,this)));
+        squaresMap.put(Constants.D1, new Square(Constants.D1, new Queen(Color.WHITE, this)));
+        squaresMap.put(Constants.E1, new Square(Constants.E1, new King(Color.WHITE,this)));
+        squaresMap.put(Constants.F1, new Square(Constants.F1, new Bishop(Color.WHITE, this)));
+        squaresMap.put(Constants.G1, new Square(Constants.G1, new Knight(Color.WHITE, this)));
+        squaresMap.put(Constants.H1, new Square(Constants.H1, new Rook(Color.WHITE,this)));
 
         //linia 2
-        squaresMap.put(Constants.A2, new Square(Constants.A2, null));
-        squaresMap.put(Constants.B2, new Square(Constants.B2, null));
-        squaresMap.put(Constants.C2, new Square(Constants.C2, null));
-        squaresMap.put(Constants.D2, new Square(Constants.D2, null));
-        squaresMap.put(Constants.E2, new Square(Constants.E2, null));
-        squaresMap.put(Constants.F2, new Square(Constants.F2, null));
-        squaresMap.put(Constants.G2, new Square(Constants.G2, null));
-        squaresMap.put(Constants.H2, new Square(Constants.H2, null));
+        squaresMap.put(Constants.A2, new Square(Constants.A2, new Pawn(Color.WHITE, this)));
+        squaresMap.put(Constants.B2, new Square(Constants.B2, new Pawn(Color.WHITE, this)));
+        squaresMap.put(Constants.C2, new Square(Constants.C2, new Pawn(Color.WHITE, this)));
+        squaresMap.put(Constants.D2, new Square(Constants.D2, new Pawn(Color.WHITE, this)));
+        squaresMap.put(Constants.E2, new Square(Constants.E2, new Pawn(Color.WHITE, this)));
+        squaresMap.put(Constants.F2, new Square(Constants.F2, new Pawn(Color.WHITE, this)));
+        squaresMap.put(Constants.G2, new Square(Constants.G2, new Pawn(Color.WHITE, this)));
+        squaresMap.put(Constants.H2, new Square(Constants.H2, new Pawn(Color.WHITE, this)));
 
         //linia 3
         squaresMap.put(Constants.A3, new Square(Constants.A3, null));
@@ -93,25 +96,34 @@ public class Table {
         squaresMap.put(Constants.H6, new Square(Constants.H6, null));
 
         //linia 7
-        squaresMap.put(Constants.A7, new Square(Constants.A7, null));
-        squaresMap.put(Constants.B7, new Square(Constants.B7, null));
-        squaresMap.put(Constants.C7, new Square(Constants.C7, null));
-        squaresMap.put(Constants.D7, new Square(Constants.D7, null));
-        squaresMap.put(Constants.E7, new Square(Constants.E7, null));
-        squaresMap.put(Constants.F7, new Square(Constants.F7, null));
-        squaresMap.put(Constants.G7, new Square(Constants.G7, null));
-        squaresMap.put(Constants.H7, new Square(Constants.H7, null));
+        squaresMap.put(Constants.A7, new Square(Constants.A7, new Pawn(Color.BLACK, this)));
+        squaresMap.put(Constants.B7, new Square(Constants.B7, new Pawn(Color.BLACK, this)));
+        squaresMap.put(Constants.C7, new Square(Constants.C7, new Pawn(Color.BLACK, this)));
+        squaresMap.put(Constants.D7, new Square(Constants.D7, new Pawn(Color.BLACK, this)));
+        squaresMap.put(Constants.E7, new Square(Constants.E7, new Pawn(Color.BLACK, this)));
+        squaresMap.put(Constants.F7, new Square(Constants.F7, new Pawn(Color.BLACK, this)));
+        squaresMap.put(Constants.G7, new Square(Constants.G7, new Pawn(Color.BLACK, this)));
+        squaresMap.put(Constants.H7, new Square(Constants.H7, new Pawn(Color.BLACK, this)));
 
         //linia 8
-        squaresMap.put(Constants.A8, new Square(Constants.A8, null));
-        squaresMap.put(Constants.B8, new Square(Constants.B8, null));
-        squaresMap.put(Constants.C8, new Square(Constants.C8, null));
-        squaresMap.put(Constants.D8, new Square(Constants.D8, null));
-        squaresMap.put(Constants.E8, new Square(Constants.E8, null));
-        squaresMap.put(Constants.F8, new Square(Constants.F8, null));
-        squaresMap.put(Constants.G8, new Square(Constants.G8, null));
-        squaresMap.put(Constants.H8, new Square(Constants.H8, null));
+        squaresMap.put(Constants.A8, new Square(Constants.A8, new Rook(Color.BLACK, this)));
+        squaresMap.put(Constants.B8, new Square(Constants.B8, new Knight(Color.BLACK, this)));
+        squaresMap.put(Constants.C8, new Square(Constants.C8, new Bishop(Color.BLACK, this)));
+        squaresMap.put(Constants.D8, new Square(Constants.D8, new Queen(Color.BLACK, this)));
+        squaresMap.put(Constants.E8, new Square(Constants.E8, new King(Color.BLACK, this)));
+        squaresMap.put(Constants.F8, new Square(Constants.F8, new Bishop(Color.BLACK, this)));
+        squaresMap.put(Constants.G8, new Square(Constants.G8, new Knight(Color.BLACK, this)));
+        squaresMap.put(Constants.H8, new Square(Constants.H8, new Rook(Color.BLACK, this)));
 
+        for(Map.Entry<Integer,Square> entry: squaresMap.entrySet()){
+            if(entry.getValue().hasPiece()){
+                if(entry.getValue().getPiece().getColor() == Color.WHITE){
+                    currWhite.add(entry.getValue().getPiece());
+                }else {
+                    currBlack.add(entry.getValue().getPiece());
+                }
+            }
+        }
 
     }
 
@@ -120,16 +132,82 @@ public class Table {
         return this.squaresMap;
     }
 
-    public boolean isKingBinded(int srcPiece, Color pieceColor){
-        return false;
+    public boolean isKingBinded(Move move){
+        Piece initialDest = applyMove(move);
+        boolean isChecked = isKingChecked();
+        undoMove(move, initialDest);
+        return isChecked;
     }
 
     public boolean isKingChecked(){
+
+        Square kingSq = null;
+
+        for(Map.Entry<Integer,Square> entry : squaresMap.entrySet()){
+            if(entry.getValue().hasPiece()){
+                if(entry.getValue().getPiece().getName().equals(kingName)){
+                    kingSq = entry.getValue();
+                    break;
+                }
+            }
+        }
+
+        if(kingSq == null) return false;
+
+        if(this.playerColor == Color.WHITE){
+            for(Map.Entry<Integer,Square> entry : squaresMap.entrySet()) {
+                Square sq = entry.getValue();
+                if(sq.hasPiece()){
+                    if(sq.getPiece().getColor() == Color.BLACK){
+                        Piece black = sq.getPiece();
+                        if(black.isChecking(sq.getPosition(), kingSq.getPosition())){
+                            return true;
+                        }
+                    }
+                }
+            }
+        }else{
+            for(Map.Entry<Integer,Square> entry : squaresMap.entrySet()) {
+                Square sq = entry.getValue();
+                if(sq.hasPiece()){
+                    if(sq.getPiece().getColor() == Color.WHITE){
+                        Piece white = sq.getPiece();
+                        if(white.isChecking(sq.getPosition(), kingSq.getPosition())){
+                            return true;
+                        }
+                    }
+                }
+            }
+        }
+
         return false;
     }
 
+    public void updateTable(Move move){
+        Square src = squaresMap.get(move.source);
+        Square dest = squaresMap.get(move.dest);
 
-/*
-    
-    }*/
+        dest.setPiece(src.getPiece());
+        src.setPiece(null);
+    }
+
+    public void undoMove(Move move, Piece initialDest){
+        Square src = squaresMap.get(move.source);
+        Square dest = squaresMap.get(move.dest);
+
+        src.setPiece(dest.getPiece());
+        dest.setPiece(initialDest);
+    }
+
+    public Piece applyMove(Move move){
+        Square src = squaresMap.get(move.source);
+        Square dest = squaresMap.get(move.dest);
+
+        Piece initialDest = dest.getPiece();
+        dest.setPiece(src.getPiece());
+        src.setPiece(null);
+
+        return initialDest;
+    }
+
 }
