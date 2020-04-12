@@ -2,8 +2,8 @@ import java.util.ArrayList;
 
 public class Rook extends Piece {
     
-    public static int[] rowOff = new int[]{-1,0,1,0};
-    public static int[] colOff = new int[]{0,-10,0,10};
+    public int[] rowOff = new int[]{-1,0,1,0};
+    public int[] colOff = new int[]{0,-10,0,10};
 
 
     public Rook(Color color, Table table){
