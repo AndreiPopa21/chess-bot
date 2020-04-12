@@ -1,67 +1,53 @@
 import java.util.ArrayList;
 
 public class Knight extends Piece {
-    public Knight(Color color, Position initialPosition, Table table){
+
+    public static int[] rowOff = new int[]{-2,-2,-1,1,2,2,1,-1};
+    public static int[] colOff = new int[]{10,-10,-20,-20,-10,10,20,20};
+
+
+    public Knight(Color color, Table table){
         this.setColor(color);
-        this.setPosition(initialPosition);
-        this.setCaptured(false);
         this.setName(color==Color.WHITE? 'N' : 'n');
         this.setTable(table);
+        this.setValue(Constants.KNIGHT_VALUE);
     }
 
     @Override
-    public ArrayList<String> getAllPossibleMoves() {
+    public ArrayList<Move> searchMoves(int src) {
 
-        if(this.isCaptured())
-            return null;
+        ArrayList<Move> moves = new ArrayList<>();
 
-        Position currPosition = this.getPosition();
-        ArrayList<String> moves = new ArrayList<>();
-        int column = Math.abs((int) currPosition.letter - 104); //get matrix row index
-        int row = currPosition.digit-1;
-
-        int[] rowOff = new int[]{-2,-1,1,2,2,1,-1,-2};
-        int[] colOff = new int[]{1,2,2,1,-1,-2,-2,-1};
-
+        // e foarte important de verificat daca o piesa, odata mutata,
+        // lasa regele descoperit pentru un sah
+        if(this.getTable().isKingBinded(src, this.getColor())) {
+            return moves;
+        }
 
         for(int i = 0; i < rowOff.length; i++){
-            int newRow = row + rowOff[i];
-            int newCol = column + colOff[i];
-            if(newRow < 0 || newRow >= 8 || newCol < 0 || newCol>=8)
-                continue;
-            Piece p = getTable().getConfiguration()[newRow][newCol];
-            if(p.getName().equals('-')){
-                moves.add(Table.generateMoveCommand(currPosition,rowOff[i],colOff[i]));
-                continue;
-            }
-            if(p.getColor() == Color.WHITE && this.getColor()==Color.WHITE){
-               // System.out.println("Mi-am gasit coechipier alb: " + Table.convertIntToCharCol(newCol) + " " + (++newRow));
+            int next = src + rowOff[i] + colOff[i];
+
+            Square sq = getTable().getSquares().get(next);
+            
+            if(sq == null) {
+                // se verifica daca e vreun patrat invalid
                 continue;
             }
-            if(p.getColor() == Color.BLACK && this.getColor() == Color.BLACK){
-               // System.out.println("Mi-am gasit coechipier negru: " + Table.convertIntToCharCol(newCol) + " " + (++newRow));
+            
+            if(this.getColor() == sq.getPiece().getColor()) {
+                // se verifica daca mi-am gasit un coechipier
                 continue;
             }
-            if(p.getName().equals('K') || p.getName().equals('k')){
-                continue; //you cannot capture a King
+            
+            if(isKing(sq.getPiece())) {
+                // se verifica daca pe patrat sta un rege
+                continue;
             }
-            moves.add(Table.generateMoveCommand(currPosition,rowOff[i],colOff[i]));
+
+            moves.add(new Move(src,next, null));
         }
+
         return moves;
     }
 
-
-    @Override
-    public void move(String command) {
-        ArrayList<String> allCommands = this.getAllPossibleMoves();
-
-        if(!allCommands.contains(command)){
-            System.out.println("Invalid command performed by " +
-                    (this.getColor()==Color.WHITE? "White" : "Black") + " Knight at: " +
-                    this.getPosition().letter +
-                    this.getPosition().digit);
-            return;
-        }
-        getTable().movePiece(this,command);
-    }
 }
