@@ -2,6 +2,10 @@ import java.util.ArrayList;
 
 public class Rook extends Piece {
     
+    public static int[] rowOff = new int[]{-1,0,1,0};
+    public static int[] colOff = new int[]{0,-10,0,10};
+
+
     public Rook(Color color, Table table){
         this.setColor(color);
         this.setTable(table);
@@ -9,60 +13,43 @@ public class Rook extends Piece {
         this.setValue(Constants.ROOK_VALUE);
     }
 
-    public ArrayList<Move> searchMoves(int src){
-        return null;
+    private void recursiveSeach(int src, int off, int increment, ArrayList<Move> moves){
+      
+        int next = src + (rowOff[off] + colOff[off])*increment;
+        Square nextSq = getTable().getSquares().get(next);
+
+        if(nextSq == null) return;
+
+        if(!nextSq.hasPiece()){
+            moves.add(new Move(src,next,null));
+            recursiveSeach(src, off, increment+1, moves);
+            return;
+        }
+
+        if(nextSq.getPiece().getColor() == this.getColor()){
+            return;
+        }
+
+        moves.add(new Move(src,next,null));
     }
 
-/*
-    @Override
-    public ArrayList<String> getAllPossibleMoves() {
-        if(this.isCaptured())
-            return null;
-        ArrayList<String> moves = new ArrayList<>();
+    public ArrayList<Move> searchMoves(int src){
+        
+        ArrayList<Move> moves = new ArrayList<Move>();
 
-        int rowOff[] = {1, 0, -1, 0};
-        int colOff[] = {0, -1, 0, 1};
-        Position currPosition = this.getPosition();
-        int column = Math.abs((int) currPosition.letter - 104); //get matrix row index
-        int row = currPosition.digit-1;
+        if(this.getTable().isKingChecked()){
+            return moves;
+        }
+
+        if(this.getTable().isKingBinded(src, this.getColor())) {
+            return moves;
+        }
 
         for(int i = 0; i < rowOff.length; i++){
-            int increment = 1;
-            boolean found = false;
-            while(!found){
-                int newRow = row + rowOff[i] * increment;
-                int newCol = column + colOff[i] * increment;
-                if(newRow < 0 || newRow >=8 || newCol < 0 || newCol >= 8){
-                    found = true;
-                    continue;
-                }
-                Piece p = getTable().getConfiguration()[newRow][newCol];
-                if(p.getName().equals('-')){
-                    moves.add(Table.generateMoveCommand(currPosition,rowOff[i]*increment,colOff[i]*increment));
-                    increment++;
-                    continue;
-                }
-                if(p.getColor() == Color.WHITE && this.getColor()==Color.WHITE){
-                    found = true;
-                    continue;
-                }
-                if(p.getColor() == Color.BLACK && this.getColor() == Color.BLACK){
-                    found = true;
-                    continue;
-                }
-                if(p.getName().equals('K') || p.getName().equals('k')){
-                    found = true;
-                    continue;
-                }
-
-                moves.add(Table.generateMoveCommand(currPosition,rowOff[i]*increment,colOff[i]*increment));
-                found = true;
-            }
+            recursiveSeach(src, i, 1, moves);
         }
-        if(moves.isEmpty())
-            System.out.println("Nu s-a gasit nicio mutare pentru tura de pe: "
-                    + this.getPosition().letter
-                    + this.getPosition().digit);
+
         return moves;
-    }*/
+    }
+
 }

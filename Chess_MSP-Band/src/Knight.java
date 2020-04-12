@@ -20,6 +20,11 @@ public class Knight extends Piece {
 
         // e foarte important de verificat daca o piesa, odata mutata,
         // lasa regele descoperit pentru un sah
+
+        if(this.getTable().isKingChecked()) {
+            return moves;
+        }
+
         if(this.getTable().isKingBinded(src, this.getColor())) {
             return moves;
         }
