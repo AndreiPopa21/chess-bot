@@ -2,6 +2,9 @@ import java.util.ArrayList;
 
 public class Pawn extends Piece {
 
+    public int[] rowOff = new int[]{1,1};
+    public int[] colOff = new int[]{-10,10};
+
     public Pawn(Color color, Table table){
         this.setColor(color);       
         this.setTable(table);
@@ -14,32 +17,26 @@ public class Pawn extends Piece {
         
         ArrayList<Move> moves = new ArrayList<>();
 
-        int front = src + 1;
-        int attackLeft = src - 9;
-        int attackRight = src + 11;
+        int increment = (getColor() == Color.WHITE) ? 1 : -1;
+
+        int front = src + increment;
 
         Square frontSq = getTable().getSquares().get(front);
-        Square leftSq = getTable().getSquares().get(attackLeft);
-        Square rightSq = getTable().getSquares().get(attackRight);
 
         if(frontSq != null){
             if(!frontSq.hasPiece()){
                 moves.add(new Move(src,front,null));
             }
         }
-        if(leftSq != null){
-            if(leftSq.hasPiece()){
-                if(leftSq.getPiece().getColor() != this.getColor()){
-                    moves.add(new Move(src,attackLeft,null));
-                }
-            }
-        }
 
-        if(leftSq != null){
-            if(leftSq.hasPiece()){
-                if(leftSq.getPiece().getColor() != this.getColor()){
-                    moves.add(new Move(src,attackLeft,null));
-                }
+        //se verifica pozitiile de atac
+        for(int i = 0 ; i < rowOff.length; i++){
+            int next = src + (rowOff[i] + colOff[i]) * increment;
+            Square nextSq = getTable().getSquares().get(next);
+            if(nextSq == null) continue;
+            if(!nextSq.hasPiece()) continue;
+            if(nextSq.getPiece().getColor() != this.getColor()){
+                moves.add(new Move(src,next, null));
             }
         }
 
@@ -47,7 +44,7 @@ public class Pawn extends Piece {
 
         for(int i = 0; i < moves.size(); i++){
             Move move = moves.get(i);
-            if(!getTable().isKingBinded(move)){
+            if(!getTable().isKingBinded(move, this.getColor())){
                 finalMoves.add(move);
             }else{
                 System.out.println("[Pawn] Cannot perform " + move.toString() + " because king bounded");

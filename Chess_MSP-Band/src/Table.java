@@ -8,31 +8,13 @@ public class Table {
 
     
     private Color playerColor;
-    private char kingName;
-    private char queenName;
-    private char bishopName;
-    private char knightName;
-    private char rookName;
-    private char pawnName;
     private HashMap<Integer,Square> squaresMap = new HashMap<>();
-    private ArrayList<Piece> currBlack = new ArrayList<>();
-    private ArrayList<Piece> currWhite = new ArrayList<>();
-
 
     public Table(Color playerColor){
         this.playerColor = playerColor;
         standardGame();
-        setNames(playerColor);
     }
 
-    private void setNames(Color color){
-        kingName = (color == Color.WHITE) ? 'K' : 'k';
-        queenName = (color == Color.WHITE) ? 'Q' : 'q';
-        bishopName = (color == Color.WHITE) ? 'B' : 'b';
-        knightName = (color == Color.WHITE) ? 'N' : 'n';
-        rookName = (color == Color.WHITE) ? 'R' : 'r';
-        pawnName = (color == Color.WHITE) ? 'P' : 'p';
-    }
 
     private void standardGame(){
         squaresMap.clear();
@@ -117,16 +99,6 @@ public class Table {
         squaresMap.put(Constants.G8, new Square(Constants.G8, new Knight(Color.BLACK, this)));
         squaresMap.put(Constants.H8, new Square(Constants.H8, new Rook(Color.BLACK, this)));
 
-        for(Map.Entry<Integer,Square> entry: squaresMap.entrySet()){
-            if(entry.getValue().hasPiece()){
-                if(entry.getValue().getPiece().getColor() == Color.WHITE){
-                    currWhite.add(entry.getValue().getPiece());
-                }else {
-                    currBlack.add(entry.getValue().getPiece());
-                }
-            }
-        }
-
     }
 
   
@@ -134,16 +106,18 @@ public class Table {
         return this.squaresMap;
     }
 
-    public boolean isKingBinded(Move move){
+    public boolean isKingBinded(Move move, Color kingColor){
         Piece initialDest = applyMove(move);
-        boolean isChecked = isKingChecked();
+        boolean isChecked = isKingChecked(kingColor);
         undoMove(move, initialDest);
         return isChecked;
     }
 
-    public boolean isKingChecked(){
+    public boolean isKingChecked(Color kingColor){
 
         Square kingSq = null;
+
+        char kingName = (kingColor == Color.WHITE) ? 'K' : 'k';
 
         for(Map.Entry<Integer,Square> entry : squaresMap.entrySet()){
             if(entry.getValue().hasPiece()){
@@ -156,7 +130,7 @@ public class Table {
 
         if(kingSq == null) return false;
 
-        if(this.playerColor == Color.WHITE){
+        if(kingColor == Color.WHITE){
             for(Map.Entry<Integer,Square> entry : squaresMap.entrySet()) {
                 Square sq = entry.getValue();
                 if(sq.hasPiece()){

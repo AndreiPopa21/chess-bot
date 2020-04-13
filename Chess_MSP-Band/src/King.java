@@ -33,7 +33,7 @@ public class King extends Piece {
         for(int i = 0; i < moves.size(); i++){
             Move move = moves.get(i);
             Piece initialDest = getTable().applyMove(move);
-            boolean checked = getTable().isKingChecked();
+            boolean checked = getTable().isKingChecked(this.getColor());
             if(!checked) finalMoves.add(move);
             getTable().undoMove(move, initialDest);
         }

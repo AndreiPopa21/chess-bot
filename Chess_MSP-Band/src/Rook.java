@@ -45,7 +45,7 @@ public class Rook extends Piece {
 
         for(int i = 0; i < moves.size(); i++){
             Move move = moves.get(i);
-            if(!getTable().isKingBinded(move)){
+            if(!getTable().isKingBinded(move, this.getColor())){
                 finalMoves.add(move);
             }else{
                 System.out.println("[Rook] Cannot perform " + move.toString() + " because king bounded");
