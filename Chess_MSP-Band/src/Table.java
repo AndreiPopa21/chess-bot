@@ -1,6 +1,8 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class Table {
 
@@ -208,6 +210,30 @@ public class Table {
         src.setPiece(null);
 
         return initialDest;
+    }
+
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        Set<Integer> keys = squaresMap.keySet();
+        ArrayList<Integer> keysList = new ArrayList<>();
+        for(Integer i: keys) keysList.add(i);
+        Collections.sort(keysList);
+
+        int k = 0;
+        sb.append('\n');
+        for(int i = 0; i < 8; i++){
+            for(int j = 0; j < 8; j++){
+                int key = keysList.get(k); k++;
+                Square sq = squaresMap.get(key);
+                if(sq.hasPiece()){
+                    sb.append(sq.getPiece().getName() + " ");
+                }else{
+                    sb.append("- ");
+                }
+            }
+            sb.append('\n');
+        }
+        return sb.toString();
     }
 
 }

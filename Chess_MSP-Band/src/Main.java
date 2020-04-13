@@ -11,6 +11,46 @@ public class Main {
     public static Table table;
 
     public static void main(String[] args) {
+
+        GameManager.newGame(Color.WHITE);
+        GameManager.printTable();
+
+        
+
+        GameManager.executeMove(
+            new Move(Constants.B1,Constants.C3,null)
+        );
+
+        GameManager.executeMove(
+            new Move(Constants.B2,Constants.B3,null)
+        );
+
+        GameManager.executeMove(
+            new Move(Constants.C1,Constants.A3,null)
+        );
+
+        GameManager.executeMove(
+            new Move(Constants.C1,Constants.A3,null)
+        );
+
+        GameManager.executeMove(
+            new Move(Constants.A3,Constants.E7,null)
+        );
+
+        GameManager.executeMove(
+            new Move(Constants.E7,Constants.C5,null)
+        );
+
+        GameManager.executeMove(
+            new Move(Constants.D8,Constants.H4,null)
+        );
+
+        GameManager.executeMove(
+            new Move(Constants.F2,Constants.F3,null)
+        );
+
+        
+
       /*  table = new Table();
         recv = new ReceiverXboard(table);
         Scanner s = new Scanner(System.in);

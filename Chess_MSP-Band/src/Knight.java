@@ -33,21 +33,25 @@ public class Knight extends Piece {
             // se verifica daca e vreun patrat invalid
             if(sq == null) continue;
             
-            // se verifica daca mi-am gasit un coechipier
-            if(this.getColor() == sq.getPiece().getColor()) continue;
-            
-            // se verifica daca pe patrat sta un rege
-            if(isKing(sq.getPiece())) continue;
-            
-            moves.add(new Move(src,next, null));
+            if(sq.hasPiece()){
+                if(sq.getPiece().getColor() == this.getColor()){
+                    continue;
+                }else{
+                    moves.add(new Move(src,next,null));
+                }
+            }else{
+                moves.add(new Move(src,next,null));
+            }
         }
 
         ArrayList<Move> finalMoves = new ArrayList<>();
 
         for(int i = 0; i < moves.size(); i++){
             Move move = moves.get(i);
-            if(!getTable().isKingBinded(move))
+            if(!getTable().isKingBinded(move)){
+            
                 finalMoves.add(move);
+            }
         }
 
         return finalMoves;
