@@ -21,10 +21,6 @@ public class Knight extends Piece {
         // e foarte important de verificat daca o piesa, odata mutata,
         // lasa regele descoperit pentru un sah
 
-        if(this.getTable().isKingChecked()) {
-            return moves;
-        }
-
         for(int i = 0; i < rowOff.length; i++){
             int next = src + rowOff[i] + colOff[i];
 
@@ -49,8 +45,9 @@ public class Knight extends Piece {
         for(int i = 0; i < moves.size(); i++){
             Move move = moves.get(i);
             if(!getTable().isKingBinded(move)){
-            
                 finalMoves.add(move);
+            }else{
+                System.out.println("[Knight] Cannot perform " + move.toString() + " because king bounded");
             }
         }
 

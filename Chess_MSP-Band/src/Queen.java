@@ -36,10 +36,6 @@ public class Queen extends Piece {
         
         ArrayList<Move> moves = new ArrayList<>();
 
-        if(this.getTable().isKingChecked()){
-            return moves;
-        }
-
         for(int i = 0; i < rowOff.length; i++){
             recursiveSeach(src, i, 1, moves);
         }
@@ -48,8 +44,12 @@ public class Queen extends Piece {
         
         for(int i = 0; i < moves.size(); i++){
             Move move = moves.get(i);
-            if(!getTable().isKingBinded(move))
+            if(!getTable().isKingBinded(move)){
                 finalMoves.add(move);
+            }else{
+                System.out.println("[Queen] Cannot perform " + move.toString() + " because king bounded");
+            }
+                
         }
 
         return finalMoves;

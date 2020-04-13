@@ -11,11 +11,8 @@ public class Pawn extends Piece {
 
 
     public ArrayList<Move> searchMoves(int src){
+        
         ArrayList<Move> moves = new ArrayList<>();
-
-        if(this.getTable().isKingChecked()){
-            return moves;
-        }
 
         int front = src + 1;
         int attackLeft = src - 9;
@@ -52,6 +49,8 @@ public class Pawn extends Piece {
             Move move = moves.get(i);
             if(!getTable().isKingBinded(move)){
                 finalMoves.add(move);
+            }else{
+                System.out.println("[Pawn] Cannot perform " + move.toString() + " because king bounded");
             }
         }
 

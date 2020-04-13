@@ -36,10 +36,6 @@ public class Bishop extends Piece {
 
         ArrayList<Move> moves = new ArrayList<Move>();
 
-        if(this.getTable().isKingChecked()){
-            return moves;
-        }
-
         for(int i = 0; i < rowOff.length; i++) {
             recursiveSearch(src, i, 1, moves);
         }
@@ -48,8 +44,12 @@ public class Bishop extends Piece {
 
         for(int i = 0; i < moves.size(); i++){
             Move move = moves.get(i);
-            if(!getTable().isKingBinded(move))
+            if(!getTable().isKingBinded(move)){
                 finalMoves.add(move);
+            }else{
+                System.out.println("[Bishop] Cannot perform " + move.toString() + " because king bounded");
+            }
+                
         }
 
         return finalMoves;
