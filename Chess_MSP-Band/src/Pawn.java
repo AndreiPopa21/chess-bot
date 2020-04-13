@@ -14,6 +14,10 @@ public class Pawn extends Piece {
         return null;
     }
 
+    public boolean isChecking(int src, int king){
+        return false;
+    }
+
     /*
     @Override
     public ArrayList<String> getAllPossibleMoves() {

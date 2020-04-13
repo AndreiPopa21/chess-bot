@@ -1,15 +1,9 @@
 import java.util.ArrayList;
 
-enum KING_STATES{
-    CHECKED,
-    NOT_CHECKED,
-    CASTLED,
-    UNCASTLED,
-    MOVED,
-    CHECKMATED
-}
-
 public class King extends Piece {
+
+    public int[] rowOff = new int[]{-1,-1,0,1,1,1,0,-1};
+    public int[] colOff = new int[]{0,-10,-10,-10,0,10,10,10};
 
     public King(Color color, Table table){
         this.setColor(color);
@@ -18,47 +12,47 @@ public class King extends Piece {
         this.setValue(Constants.KING_VALUE);
     }
 
+
     public ArrayList<Move> searchMoves(int src){
-        return null;
-    }
 
-    /*@Override
-    public ArrayList<String> getAllPossibleMoves() {
-
-        ArrayList<String> moves = new ArrayList<>();
-        int[] rowOff = {-1,-1,0,1,1,1,0,-1};
-        int[] colOff = {0,1,1,1,0,-1,-1,-1};
-        Position currPosition = this.getPosition();
-
-        int column = Math.abs((int) currPosition.letter - 104); //get matrix row index
-        int row = currPosition.digit-1;
+        ArrayList<Move> moves = new ArrayList<>();
 
         for(int i = 0; i < rowOff.length; i++){
-            int newRow = row + rowOff[i];
-            int newCol = column + colOff[i];
-            if(newRow < 0 || newRow >= 8 || newCol < 0 || newCol>=8)
+            int next = src + rowOff[i] + colOff[i];
+            Square nextSq = getTable().getSquares().get(next);
+            if(nextSq == null) continue;
+            if(!nextSq.hasPiece()){
+                moves.add(new Move(src,next,null));
                 continue;
-            Piece p = getTable().getConfiguration()[newRow][newCol];
-            if(p.getName().equals('-')){
-                moves.add(Table.generateMoveCommand(currPosition,rowOff[i],colOff[i]));
-                continue;
-            }
-            if(p.getColor() == Color.WHITE && this.getColor()==Color.WHITE){
-                //System.out.println("Mi-am gasit coechipier alb: " + Table.convertIntToCharCol(newCol) + " " + (++newRow));
-                continue;
-            }
-            if(p.getColor() == Color.BLACK && this.getColor() == Color.BLACK){
-                //System.out.println("Mi-am gasit coechipier negru: " + Table.convertIntToCharCol(newCol) + " " + (++newRow));
-                continue;
-            }
-            if(p.getName().equals('K') || p.getName().equals('k')){
-                continue; //you cannot capture a King
-            }
-            moves.add(Table.generateMoveCommand(currPosition,rowOff[i],colOff[i]));
+            } 
+            if(nextSq.getPiece().getColor() == this.getColor()) continue;
+            moves.add(new Move(src, next, null));
         }
-        System.out.println(moves);
-        return moves;
-    }*/
+
+        ArrayList<Move> finalMoves = new ArrayList<>();
+        for(int i = 0; i < moves.size(); i++){
+            Move move = moves.get(i);
+            Piece initialDest = getTable().applyMove(move);
+            boolean checked = getTable().isKingChecked();
+            if(!checked) finalMoves.add(move);
+            getTable().undoMove(move, initialDest);
+        }
+
+        //daca finalMoves e empty si regele e checked in acest moment, e sah mat
+        //daca finalMoves e empty si nicio alta piesa nu mai poate fi mutata in afara de rege
+        //se considera Pat
+        return finalMoves;
+    }
+
+    // e un sah mai ciudat, dar functia se dovedeste utila pt a evita ca
+    // doi regi sa fie unu langa celalalt
+    public boolean isChecking(int src, int king){
+        for(int i = 0; i < rowOff.length; i++){
+            int next = src + rowOff[i] + colOff[i];
+            if(next == king) return true;
+        }
+        return false;
+    }
 
 
 }
