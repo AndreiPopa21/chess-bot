@@ -21,7 +21,15 @@ public final class GameManager{
         }
         System.out.println(currTable.toString());
     }
-    
+
+    public static void setColor(Color color){
+        currPlayer = color;
+    }
+
+    public static Color getColor(){
+        return currPlayer;
+    }
+
     public static Table getTable(){
         return currTable;
     }

@@ -2,91 +2,99 @@ import java.util.Collection;
 import java.util.Scanner;
 import java.util.Vector;
 
-enum EngineColor{
-    WHITE,
-    BLACK,
-    NOSET,
-}
+public final class ReceiverXboard {
 
-public class ReceiverXboard implements Utilizator_Engine {
-    Table table;
-    private EngineColor e_color ;
+    private ReceiverXboard(){
 
-    public ReceiverXboard(Table table){
-        this.table=table;
-        e_color=EngineColor.NOSET;
     }
 
-    public EngineColor getE_color(){
+   /* public EngineColor getE_color(){
         return e_color;
+    }*/
+
+
+    public static void xboard() {
+
     }
 
-    @Override
-    public void xboard() {
 
-    }
-
-    @Override
-    public void New() {
+    public static void New() {
         System.out.println("feature sigint=0 sigterm=0 done=1 colors=0");
         System.out.flush();
-        //this.e_color=EngineColor.WHITE;
+        GameManager.setColor(Color.BLACK);
     }
 
-    @Override
-    public void force() {
+
+    public static void force() {
 
     }
 
-    @Override
-    public void go() {
-        System.out.println("Am ajuns aici si culoarea mea curenta este "+this.e_color);
-        if(this.e_color == EngineColor.BLACK)
-            this.e_color = EngineColor.WHITE;
+
+    public static void go() {
+      //  System.out.println("Am ajuns aici si culoarea mea curenta este "+this.e_color);
+        if(GameManager.getColor() == Color.BLACK)
+            GameManager.setColor(Color.WHITE);
         else
-            this.e_color = EngineColor.BLACK;
-        System.out.println("Am ajuns aici si culoarea mea curenta este "+this.e_color);
+            GameManager.setColor(Color.BLACK);
+        //System.out.println("Am ajuns aici si culoarea mea curenta este "+this.e_color);
 
     }
 
-    @Override
-    public void white() {
-        System.out.println("Am ajuns in white"+this.e_color);
-        e_color=EngineColor.BLACK;
+    public static void white() {
+        System.out.println("Sa apelat White");
+        GameManager.setColor(Color.BLACK);
     }
 
-    @Override
-    public void black()
-    {
-        System.out.println("Am ajuns in black "+this.e_color);
-        e_color=EngineColor.WHITE;
+
+    public static void black() {
+        System.out.println("Sa apelat Black");
+        GameManager.setColor(Color.WHITE);
     }
 
-    @Override
-    public void quit() {
+
+    public static void quit() {
 
     }
 
-    @Override
-    public void resign() {
-        if (this.e_color==EngineColor.BLACK)
+
+    public static void resign() {
+        if (GameManager.getColor()==Color.BLACK)
         {
             System.out.println("0-1 {White resigns}");
         }else
             System.out.println("1-0 {Black resigns}");
     }
 
-    @Override
-    public boolean move(String mutare) {
-      //  this.table.move(mutare);
-        return true;
+
+    public static boolean move(String mutare) {
+        int a = mutare.charAt(0);
+        int b = mutare.charAt(1) - 48;
+        int c = mutare.charAt(2);
+        int d = mutare.charAt(3) - 48;
+        if (GameManager.validateMove(new Move(a*10+b,c*10+d,null)))
+        {
+            GameManager.getTable().updateTable(new Move(a*10+b,c*10+d,null));
+
+            return true;
+        }else
+        {
+            return false;
+        }
+
     }
+
+
 
    // public String mutare(String move){
     //    return move;
   //  }
 
 
+    //o-o  == rocada mica
+    //o-o-o === rocada mare
+    // e2e4+ === sah
+    //e2e4# === sah mat
+    // promotion
 
 
     public boolean comandComparer(String command){
@@ -147,7 +155,11 @@ public class ReceiverXboard implements Utilizator_Engine {
         String mutare = "start";
         while(mutare.compareTo("quit") != 0) {
             mutare = s.nextLine();
-            this.comandComparer(mutare); 
+
+            if (comandComparer(mutare)){
+                MiniMax;
+            }
+
         }
     }
 
