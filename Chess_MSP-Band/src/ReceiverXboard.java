@@ -147,7 +147,7 @@ public class ReceiverXboard implements Utilizator_Engine {
         String mutare = "start";
         while(mutare.compareTo("quit") != 0) {
             mutare = s.nextLine();
-            this.comandComparer(mutare);
+            this.comandComparer(mutare); 
         }
     }
 
