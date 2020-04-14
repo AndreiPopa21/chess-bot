@@ -78,7 +78,7 @@ public class ReceiverXboard implements Utilizator_Engine {
 
     @Override
     public boolean move(String mutare) {
-        this.table.move(mutare);
+      //  this.table.move(mutare);
         return true;
     }
 
