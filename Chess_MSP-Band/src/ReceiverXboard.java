@@ -1,4 +1,5 @@
 import java.util.Collection;
+import java.util.Scanner;
 import java.util.Vector;
 
 enum EngineColor{
@@ -76,9 +77,15 @@ public class ReceiverXboard implements Utilizator_Engine {
     }
 
     @Override
-    public boolean move() {
+    public boolean move(String mutare) {
+        this.table.move(mutare);
         return true;
     }
+
+   // public String mutare(String move){
+    //    return move;
+  //  }
+
 
 
 
@@ -127,10 +134,21 @@ public class ReceiverXboard implements Utilizator_Engine {
         {
             String str = String.valueOf(command.charAt(0));
             String str2= String.valueOf(command.charAt(2));
-            if ((command.length() == 4)&&(coloane.contains(str))&&(coloane.contains(str2)))
-                return this.move();
+            if ((command.length() == 4)&&(coloane.contains(str))&&(coloane.contains(str2))){
+               // this.move(command);
+                return this.move(command);
+            }
         }
         return false;
+    }
+
+    public void recive(){
+        Scanner s = new Scanner(System.in);
+        String mutare = "start";
+        while(mutare.compareTo("quit") != 0) {
+            mutare = s.nextLine();
+            this.comandComparer(mutare); 
+        }
     }
 
 }

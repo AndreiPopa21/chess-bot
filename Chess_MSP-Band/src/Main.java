@@ -92,27 +92,27 @@ public class Main {
 
       /*  table = new Table();
         recv = new ReceiverXboard(table);
-        Scanner s = new Scanner(System.in);
+        recv.recive();
 
-        String mutare="start";
+       // String mutare="start";
 
         Piece[][] board = table.getConfiguration();
         blackHorse = board[7][1];
         whiteHorse = board[0][1];
 
-        while (mutare.compareTo("quit") != 0)
-        {
-            mutare= s.nextLine();
-            boolean verificare_mutare = recv.comandComparer(mutare);
+     //   while (mutare.compareTo("quit") != 0)
+      //  {
+      //      mutare= s.nextLine();
+       //     boolean verificare_mutare = recv.comandComparer(mutare);
 
-            if (verificare_mutare) {
-                recv.table.move(mutare);
+       //     if (verificare_mutare) {
+             //   recv.table.move(mutare);
                if (recv.getE_color() == EngineColor.BLACK) {
                     moveBlack();
                }else {
                     moveWhite();
                }
-            }
+
 
             if(mutare.equals("go"))
                 if(recv.getE_color() == EngineColor.WHITE)

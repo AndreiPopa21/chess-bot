@@ -8,6 +8,6 @@ public interface Utilizator_Engine {
     public void black();
     public void quit();
     public void resign();
-    public boolean move();
+    public boolean move(String mutare);
 
 }
