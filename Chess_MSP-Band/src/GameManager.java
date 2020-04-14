@@ -11,7 +11,7 @@ public final class GameManager{
 
     public static void newGame(Color playeColor){
         currPlayer = playeColor;
-        currTable = new Table(currPlayer);
+        currTable = new Table();
     }
 
     public static void printTable(){

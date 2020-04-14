@@ -77,6 +77,10 @@ public class Main {
         );
 
         GameManager.executeMove(
+            new Move(Constants.F1,Constants.A6,null)
+        );
+
+        GameManager.executeMove(
             new Move(Constants.E7,Constants.H4,null)
         );
 

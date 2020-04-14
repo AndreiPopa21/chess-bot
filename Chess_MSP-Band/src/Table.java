@@ -6,12 +6,9 @@ import java.util.Set;
 
 public class Table {
 
-    
-    private Color playerColor;
     private HashMap<Integer,Square> squaresMap = new HashMap<>();
 
-    public Table(Color playerColor){
-        this.playerColor = playerColor;
+    public Table(){
         standardGame();
     }
 
