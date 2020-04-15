@@ -66,7 +66,7 @@ public final class GameManager{
 
         ArrayList<Move> moves = srcSq.getPiece().searchMoves(srcSq.getPosition());
         for(int i = 0; i < moves.size(); i++){
-            System.out.println("[GameManager] Valid Move: " + moves.get(i).toString());
+           // System.out.println("[GameManager] Valid Move: " + moves.get(i).toString());
         }
         for(int i = 0; i < moves.size(); i++){
             Move next = moves.get(i);

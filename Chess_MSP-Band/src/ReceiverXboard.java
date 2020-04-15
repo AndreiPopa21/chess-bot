@@ -22,6 +22,7 @@ public final class ReceiverXboard {
         System.out.println("feature sigint=0 sigterm=0 done=1 colors=0");
         System.out.flush();
         GameManager.setColor(Color.BLACK);
+        GameManager.newGame(Color.BLACK);
     }
 
 
@@ -30,14 +31,14 @@ public final class ReceiverXboard {
     }
 
 
-    public static void go() {
+    public static boolean go() {
       //  System.out.println("Am ajuns aici si culoarea mea curenta este "+this.e_color);
         if(GameManager.getColor() == Color.BLACK)
             GameManager.setColor(Color.WHITE);
         else
             GameManager.setColor(Color.BLACK);
         //System.out.println("Am ajuns aici si culoarea mea curenta este "+this.e_color);
-
+        return true;
     }
 
     public static void white() {
@@ -58,11 +59,11 @@ public final class ReceiverXboard {
 
 
     public static void resign() {
-        if (GameManager.getColor()==Color.BLACK)
+       /* if (GameManager.getColor()==Color.BLACK)
         {
             System.out.println("0-1 {White resigns}");
         }else
-            System.out.println("1-0 {Black resigns}");
+            System.out.println("1-0 {Black resigns}");*/
     }
 
 
@@ -74,7 +75,6 @@ public final class ReceiverXboard {
         if (GameManager.validateMove(new Move(a*10+b,c*10+d,null)))
         {
             GameManager.getTable().updateTable(new Move(a*10+b,c*10+d,null));
-
             return true;
         }else
         {
@@ -97,7 +97,7 @@ public final class ReceiverXboard {
     // promotion
 
 
-    public boolean comandComparer(String command){
+    public static boolean comandComparer(String command){
 
 
         Vector<String> coloane = new Vector<String>();
@@ -116,48 +116,47 @@ public final class ReceiverXboard {
 
         if ("xboard".equals(command))
         {
-            this.xboard();
+            xboard();
         }else if ("new".equals(command))
         {
-            this.New();
+            New();
         }else if ("force".equals(command))
         {
-            this.force();
+            force();
         }else if ("go".equals(command))
         {
-            this.go();
+           return go();
         }else if ("white".equals(command))
         {
-            this.white();
+            white();
         }else if ("black".equals(command))
         {
-            this.black();
+            black();
         }else if ("quit".equals(command))
         {
-            this.quit();
+            quit();
         }else if ("resign".equals(command))
         {
-            this.resign();
+            resign();
         }else
         {
             String str = String.valueOf(command.charAt(0));
             String str2= String.valueOf(command.charAt(2));
             if ((command.length() == 4)&&(coloane.contains(str))&&(coloane.contains(str2))){
                // this.move(command);
-                return this.move(command);
+                return move(command);
             }
         }
         return false;
     }
 
-    public void recive(){
+    public static void recive(){
         Scanner s = new Scanner(System.in);
         String mutare = "start";
         while(mutare.compareTo("quit") != 0) {
             mutare = s.nextLine();
-
             if (comandComparer(mutare)){
-                MiniMax;
+                MiniMax.thinkMove();
             }
 
         }

@@ -329,3 +329,306 @@ Na5 Qxa5 {+2,44/2 0,1}
 1. Nh3 Nc6 {+0,15/2 0,1} 2. Nf4 e5 {+0,21/2 0,1} 3. Ng6 hxg6 {+2,47/2 0,1}
 {White resigns} 0-1
 
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.15"]
+[Round "-"]
+[White "cristi"]
+[Black "java"]
+[Result "*"]
+[TimeControl "300+2"]
+
+1. f3 Nc6 2. f4 Ne5 3. e3 Ng4 4. d3 N8h6 5. d4 Ng8 6. e4 N8h6 7. e5 Ng8 8.
+f5 N8f6 9. d5 Nf2 10. c3 Nd3+ 11. Qxd3 Nxd5 12. b3 Nf6 13. g3 Nh5 14. g4
+Nf4 15. c4 Ng6 16. e6 Ne5 17. g5 Ng4 18. h3 Ne5 19. h4 Ng4 20. Ne2 Nh6 21.
+Nf4 Nxf5 22. Nh3 Ne3 23. Nf4 Nc2+
+{xboard exit (Clocks: 302, 345)} *
+
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.15"]
+[Round "-"]
+[White "java"]
+[Black "cristi"]
+[Result "*"]
+[TimeControl "300+2"]
+
+1. f3 Nc6 2. e3 Nb8
+{xboard exit (Clocks: 287, 303)} *
+
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.15"]
+[Round "-"]
+[White "cristi"]
+[Black "java"]
+[Result "*"]
+[TimeControl "300+2"]
+
+1. e3 Nc6 2. d3 Na5 3. c3 Nb3 4. f3 Nc5 5. g3 Na6 6. g4 Nb8 7. f4 Na6 8. e4
+Nb8 9. d4 Na6 10. c4 Nb8 11. b4
+{xboard exit (Clocks: 313, 307)} *
+
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.15"]
+[Round "-"]
+[White "cristi"]
+[Black "java"]
+[Result "*"]
+[TimeControl "300+2"]
+
+1. g3 Nc6 2. f4
+{xboard exit (Clocks: 302, 296)} *
+
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.15"]
+[Round "-"]
+[White "cristi"]
+[Black "java"]
+[Result "1-0"]
+[TimeControl "300+2"]
+
+1. Nf3 Na6 2. g3 Nc5 3. Ng5 Ne6 4. Nxe6 Nf6 5. Nc5 Nh5 6. Nd3 Nf6 7. Ne5
+Ng4 8. Nc6 Ne3 9. Nd4 Nd5 10. Nf5 Nb4 11. Nd4 Nxa2 12. Nb3 Nb4 13. Na5 Na2
+14. Nb3 Nb4 15. Nd4 Na6 16. Nb5 Nc5 17. Nxc7+
+{Black resigns} 1-0
+
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.15"]
+[Round "-"]
+[White "cristi"]
+[Black "java"]
+[Result "*"]
+[TimeControl "300+2"]
+
+1. Nc3 Nc6 2. Ne4 Nd4 3. Ng3 Ne6 4. Nf5 Ng5 5. Nf3 Nh6 6. Nxg5 Ng8 7. Nh3
+Nh6 8. Ng1 Nxf5 9. Nh3 Ne3 10. Ng5 Nxg2+ 11. Bxg2
+{xboard exit (Clocks: 294, 294)} *
+
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.15"]
+[Round "-"]
+[White "cristi"]
+[Black "java"]
+[Result "*"]
+[TimeControl "300+2"]
+
+1. f3 e6 2. e3 e5 3. d3 e4 4. c3 exd3 5. b3 d6 6. b4 d5 7. c4 d4 8. e4
+{xboard exit (Clocks: 307, 306)} *
+
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.15"]
+[Round "-"]
+[White "cristi"]
+[Black "java"]
+[Result "*"]
+[TimeControl "300+2"]
+
+1. f3 Na6 2. e3 Nb8 3. d3 Na6 4. c3 Nc5 5. b3 Na4 6. bxa4 Nf6 7. Qc2 Ne4 8.
+Qb3 Nd2 9. Bxd2
+{xboard exit (Clocks: 301, 160)} *
+
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.15"]
+[Round "-"]
+[White "cristi"]
+[Black "java"]
+[Result "*"]
+[TimeControl "300+2"]
+
+1. Nf3 Na6 2. Nd4 Nb4 3. Nb5 Nd3+ 4. cxd3 Nh6 5. N5c3 Ng8 6. Ne4 Nh6 7. Ng3
+Ng8 8. Nf5 Nh6 9. Nxh6
+{xboard exit (Clocks: 302, 196)} *
+
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.15"]
+[Round "-"]
+[White "cristi"]
+[Black "java"]
+[Result "*"]
+[TimeControl "300+2"]
+
+1. Nc3 Nc6 2. Nd5 Ne5 3. Ne3 Nf3+ 4. gxf3 Nf6 5. Nd5 Ne4 6. fxe4
+{xboard exit (Clocks: 301, 257)} *
+
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.15"]
+[Round "-"]
+[White "cristi"]
+[Black "java"]
+[Result "*"]
+[TimeControl "300+2"]
+
+1. e3 Na6 2. c3 Nc5 3. c4 Nd3+ 4. Ke2 Ne1 5. Qxe1 Nf6 6. e4 Ng8 7. e5 Nf6
+8. exf6
+{xboard exit (Clocks: 243, 305)} *
+
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.15"]
+[Round "-"]
+[White "cristi"]
+[Black "java"]
+[Result "0-1"]
+[TimeControl "300+2"]
+
+1. f3 Na6 2. e3 Nb4 3. a3 Nd3+ 4. cxd3 Nf6 5. e4 Nxe4 6. dxe4 e6 7. Nc3
+{Error writing to first chess program} 0-1
+
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.15"]
+[Round "-"]
+[White "cristi"]
+[Black "java"]
+[Result "0-1"]
+[TimeControl "300+2"]
+
+1. f3 Nc6 2. f4 Ne5 3. fxe5 Nf6 4. exf6 exf6 5. e3
+{Error writing to first chess program} 0-1
+
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.15"]
+[Round "-"]
+[White "cristi"]
+[Black "java"]
+[Result "0-1"]
+[TimeControl "300+2"]
+
+1. f3 Nc6 2. f4 Nb4 3. b3 Nxc2+ 4. Qxc2 Nf6 5. Qf5 Nh5 6. Qxh5 e6 7. Qe5
+{Error writing to first chess program} 0-1
+
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.15"]
+[Round "-"]
+[White "cristi"]
+[Black "java"]
+[Result "*"]
+[TimeControl "300+2"]
+
+1. f3 Na6 2. e3 Nb8 3. d4
+{xboard exit (Clocks: 303, 299)} *
+
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.15"]
+[Round "-"]
+[White "cristi"]
+[Black "java"]
+[Result "0-1"]
+[TimeControl "300+2"]
+
+1. f3 Na6 2. Nc3 Nb8 3. Nb5 Na6 4. Nxa7 Nb4 5. a3 Na6 6. Nc6 Nc5 7. c3 Nb3
+8. Qxb3 Nh6 9. Qe6 Ng4 10. Qxg4 e6 11. Qxe6+
+{Error writing to first chess program} 0-1
+
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.15"]
+[Round "-"]
+[White "cristi"]
+[Black "java"]
+[Result "0-1"]
+[TimeControl "300+2"]
+
+1. f3 Na6 2. c3 Nb8 3. Qa4 Nc6 4. Qxc6 Nh6 5. Qxh6 e6 6. Qg5
+{Error writing to first chess program} 0-1
+
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.15"]
+[Round "-"]
+[White "cristi"]
+[Black "java"]
+[Result "0-1"]
+[TimeControl "300+2"]
+
+1. f3 Nc6 2. e3 Ne5 3. Qe2 Nxf3+ 4. Qxf3 Nh6 5. Qg4 Nxg4 6. g3 Nh6 7. Bd3
+Ng8 8. Be4 Nf6 9. Bf5 Ne4 10. Bxe4 e6 11. Bd3
+{Error writing to first chess program} 0-1
+
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.15"]
+[Round "-"]
+[White "cristi"]
+[Black "java"]
+[Result "0-1"]
+[TimeControl "300+2"]
+
+1. g3 Na6 2. f3 Nb4 3. c3 Nd3+ 4. exd3 Nf6 5. Qb3 Ne4 6. dxe4 e6 7. c4
+{Error writing to first chess program} 0-1
+
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.15"]
+[Round "-"]
+[White "cristi"]
+[Black "java"]
+[Result "0-1"]
+[TimeControl "300+2"]
+
+1. c3 Nc6 2. c4 Na5 3. b3 Nc6 4. b4 Nxb4 5. Qb3 Nd5 6. Qe3 Ndf6 7. Qd3 Nh6
+8. Qd5 Nhg4 9. Qd6 Nxf2 10. Qxf6 Ne4 11. Qf4 Nf2 12. Qxf2 e6 13. Qe3
+{Error writing to first chess program} 0-1
+
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.15"]
+[Round "-"]
+[White "cristi"]
+[Black "java"]
+[Result "0-1"]
+[TimeControl "300+2"]
+
+1. f3 Nc6 2. f4 Ne5 3. fxe5 Nh6 4. e3 Nf5 5. Qg4 Nh4 6. Qxh4 e6 7. Qg3
+{Error writing to first chess program} 0-1
+
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.15"]
+[Round "-"]
+[White "cristi"]
+[Black "java"]
+[Result "*"]
+[TimeControl "300+2"]
+
+1. g3 Nc6 2. e3 Ne5 3. Qh5 Ng6 4. Qxg6 Nh6 5. Qxh6 e6 6. Qg5
+{xboard exit (Clocks: 300, 225)} *
+
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.15"]
+[Round "-"]
+[White "cristi"]
+[Black "java"]
+[Result "*"]
+[TimeControl "300+2"]
+
+1. g3 Nc6 2. c3 Nb4 3. cxb4 Nf6 4. Qb3 Nh5 5. g4 Nf6 6. g5 Nh5 7. Bg2 Ng3
+8. fxg3
+{xboard exit (Clocks: 300, 301)} *
+
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.15"]
+[Round "-"]
+[White "cristi"]
+[Black "java"]
+[Result "0-1"]
+[TimeControl "300+2"]
+
+1. e3 Na6 2. e4 Nb4 3. c3 Nc2+ 4. Qxc2 Nh6 5. Qd3 Nf5 6. Qf3 Nh4 7. Qf4
+Nf3+ 8. Qxf3 e6 9. Qf4
+{Error writing to first chess program} 0-1
+

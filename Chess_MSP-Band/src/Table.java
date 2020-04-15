@@ -12,7 +12,7 @@ public class Table {
         standardGame();
     }
 
-
+// Table -> Square -> Piece
     private void standardGame(){
         squaresMap.clear();
 
