@@ -5,11 +5,14 @@ public class Pawn extends Piece {
     public int[] rowOff = new int[]{1,1};
     public int[] colOff = new int[]{-10,10};
 
+    public boolean movedTwice;
+
     public Pawn(Color color, Table table){
         this.setColor(color);       
         this.setTable(table);
         this.setName(color==Color.WHITE? 'P' : 'p');
         this.setValue(Constants.PAWN_VALUE);
+        this.movedTwice = false;
     }
 
 
@@ -20,12 +23,22 @@ public class Pawn extends Piece {
         int increment = (getColor() == Color.WHITE) ? 1 : -1;
 
         int front = src + increment;
+        int doubleFront = src + 2*increment;
 
         Square frontSq = getTable().getSquares().get(front);
+        Square doubleSq = getTable().getSquares().get(doubleFront);
 
         if(frontSq != null){
             if(!frontSq.hasPiece()){
                 moves.add(new Move(src,front,null));
+            }
+        }
+
+        if(doubleSq != null){
+            if(!doubleSq.hasPiece()){
+                if(!movedTwice){
+                    moves.add(new Move(src,doubleFront,null));
+                }
             }
         }
 
