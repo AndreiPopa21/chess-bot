@@ -207,5 +207,140 @@ public class Table {
     }
 
 
+    public boolean validateSpecialMove(Move move){
+
+        if(move.moveType == Constants.WHITE_KING_SIDE_CASTLING){
+            return castlingWhiteKing();
+        }
+
+        if(move.moveType == Constants.WHITE_QUEEN_SIDE_CASTLING){
+            return castlingWhiteQueen();
+        }
+
+        if(move.moveType == Constants.BLACK_KING_SIDE_CASTLING){
+            return castlingBlackKing();
+        }
+
+        if(move.moveType == Constants.BLACK_QUEEN_SIDE_CASTLING){
+            return castlingBlackQueen();
+        }
+
+        return true;
+    }
+
+
+    public boolean castlingWhiteKing(){
+
+        System.out.println("[Table] Se evalueaza white king-side castling");
+
+        Square e1 = getSquares().get(Constants.E1);
+        Square f1 = getSquares().get(Constants.F1);
+        Square g1 = getSquares().get(Constants.G1);
+        Square h1 = getSquares().get(Constants.H1);
+        
+        //(TODO) searchHistoryFor('K');
+
+        if(e1.hasPiece()){
+            if(!e1.getPiece().getName().equals('K')){
+                return false;
+            }
+        }else{
+            return false;
+        }
+
+        if(h1.hasPiece()){
+            if(!h1.getPiece().getName().equals('R')){
+                return false;
+            }
+        }else{
+            return false;
+        }
+
+        if(f1.hasPiece() || g1.hasPiece()) return false;
+
+        if(isKingChecked(Color.WHITE)) return false;
+
+        Move checkMove = new Move(Constants.E1,Constants.F1,0);
+        applyMove(checkMove);
+        if(isKingChecked(Color.WHITE)){
+            undoMove(checkMove, null);
+            return false;
+        }
+        undoMove(checkMove, null);
+
+        checkMove = new Move(Constants.E1,Constants.G1,0);
+        applyMove(checkMove);
+        if(isKingChecked(Color.WHITE)){
+            undoMove(checkMove, null);
+            return false;
+        }
+        undoMove(checkMove, null);
+
+        return true;
+    }
+
+    public boolean castlingWhiteQueen(){
+
+        System.out.println("[Table] Se evalueaza white queen-side castling");
+
+        return true;
+    }
+
+    public boolean castlingBlackKing(){
+
+        System.out.println("[Table] Se evalueaza black king-side castling");
+
+        Square e8 = getSquares().get(Constants.E8);
+        Square f8 = getSquares().get(Constants.F8);
+        Square g8 = getSquares().get(Constants.G8);
+        Square h8 = getSquares().get(Constants.H8);
+
+        if(e8.hasPiece()){
+            if(!e8.getPiece().getName().equals('k')){
+                return false;
+            }
+        }else{
+            return false;
+        }
+
+        if(h8.hasPiece()){
+            if(!h8.getPiece().getName().equals('r')){
+                return false;
+            }
+        }else{
+            return false;
+        }
+
+        if(f8.hasPiece() || g8.hasPiece()) return false;
+
+        if(isKingChecked(Color.BLACK)) return false;
+
+        Move checkMove = new Move(Constants.E8,Constants.F8,0);
+        applyMove(checkMove);
+        if(isKingChecked(Color.BLACK)){
+            undoMove(checkMove, null);
+            return false;
+        }
+        undoMove(checkMove, null);
+
+        checkMove = new Move(Constants.E8,Constants.G8,0);
+        applyMove(checkMove);
+        if(isKingChecked(Color.BLACK)){
+            undoMove(checkMove, null);
+            return false;
+        }
+        undoMove(checkMove, null);
+
+        return true;
+    }
+
+    public boolean castlingBlackQueen(){
+
+        System.out.println("[Table] Se evalueaza black queen-side castling");
+
+        return true;
+    }
+
+
 
 }
