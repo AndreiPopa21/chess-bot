@@ -10,421 +10,977 @@ recognized 'normal' (-1) as variant normal
 GameEnds(0, (null), 2)
 shuffleOpenings = 0
 StartChildProcess (dir=".") make run
-419 >first : xboard
+151 >first : xboard
 protover 2
-422 <first : make[1]: Entering directory '/home/stefan/proiect-dangerous/l2-pa-project-MSP-Band/Chess_MSP-Band/src'
-422 <first : javac Main.java
-1345 <first : java Main
-10428 >first : new
+153 <first : make[1]: Entering directory '/home/cristi/Documents/Anul 2/Sem 2/PA/Proiect PA/l2-pa-project-MSP-Band/Chess_MSP-Band/src'
+153 <first : javac Main.java
+915 <first : java Main
+10158 >first : new
 random
-10428 >first : level 0 5 2
-10428 >first : post
-10428 >first : hard
-10430 <first : feature sigint=0 sigterm=0 done=1 colors=0
-10430 >first : accepted sigint
-10430 >first : accepted sigterm
-10430 >first : accepted done
-10430 >first : accepted colors
+10158 >first : level 0 5 2
+10158 >first : post
+10158 >first : hard
+10159 <first : feature sigint=0 sigterm=0 done=1 colors=0
+10159 >first : accepted sigint
+10159 >first : accepted sigterm
+10159 >first : accepted done
+10159 >first : accepted colors
 nps: w=-1, b=-1
 nps: w=-1, b=-1
-18874 >first : time 30000
-18874 >first : otim 30200
+24094 >first : time 30000
+24094 >first : otim 30200
 book hit = (NULL)
-18874 >first : f2f3
-18878 <first : n
-18878 <first : n
-18878 <first : n
-18878 <first : n
-18878 <first : n
-18878 <first : n
-18879 <first : n
-18879 <first : n
-18879 <first : n
-18879 <first : n
-18879 <first : n
-18879 <first : n
-18879 <first : n
-18879 <first : n
-18879 <first : n
-18879 <first : n
-18879 <first : n
-18879 <first : n
-18879 <first : n
-18879 <first : n
-18879 <first : n
-18879 <first : n
-18879 <first : n
-18879 <first : n
-18879 <first : n
-18879 <first : n
-18879 <first : n
-18879 <first : n
-18879 <first : n
-18879 <first : n
-18879 <first : n
-18879 <first : n
-18891 <first : 
-18891 <first : R P - - - n p r 
-18891 <first : N P - - - - p - 
-18891 <first : B P - - - - p b 
-18891 <first : Q P - - - - p q 
-18891 <first : K P - - - - p k 
-18891 <first : B - P - - - p b 
-18891 <first : N P - - - - p n 
-18891 <first : R P - - - - p r 
-18891 <first : 
-18922 <first : move b8a6
-20439 >first : time 30195
-20439 >first : otim 30248
+24094 >first : c2c3
+24169 <first : n
+24169 <first : n
+24169 <first : n
+24169 <first : n
+24169 <first : n
+24169 <first : n
+24169 <first : n
+24169 <first : n
+24169 <first : n
+24169 <first : n
+24169 <first : n
+24169 <first : n
+24169 <first : n
+24169 <first : n
+24169 <first : n
+24169 <first : n
+24169 <first : n
+24169 <first : n
+24169 <first : n
+24169 <first : n
+24169 <first : n
+24169 <first : n
+24169 <first : n
+24169 <first : n
+24169 <first : n
+24169 <first : n
+24169 <first : n
+24169 <first : n
+24169 <first : n
+24169 <first : n
+24169 <first : n
+24169 <first : n
+24169 <first : 
+24169 <first : R P - - - n p r 
+24169 <first : N P - - - - p - 
+24169 <first : B - P - - - p b 
+24169 <first : Q P - - - - p q 
+24169 <first : K P - - - - p k 
+24169 <first : B P - - - - p b 
+24169 <first : N P - - - - p n 
+24169 <first : R P - - - - p r 
+24169 <first : 
+24169 <first : move b8a6
+25788 >first : time 30192
+25788 >first : otim 30238
 book hit = (NULL)
-20439 >first : e2e3
-20442 <first : n
-20442 <first : n
-20442 <first : n
-20442 <first : n
-20442 <first : n
-20442 <first : n
-20442 <first : n
-20442 <first : n
-20442 <first : n
-20442 <first : n
-20442 <first : n
-20442 <first : n
-20442 <first : n
-20442 <first : n
-20442 <first : n
-20442 <first : n
-20442 <first : n
-20442 <first : n
-20442 <first : n
-20442 <first : n
-20442 <first : n
-20442 <first : n
-20442 <first : n
-20442 <first : n
-20442 <first : n
-20442 <first : n
-20442 <first : n
-20442 <first : n
-20442 <first : n
-20442 <first : n
-20442 <first : n
-20442 <first : n
-20442 <first : 
-20442 <first : R P - - - - p r 
-20442 <first : N P - n - - p - 
-20442 <first : B P - - - - p b 
-20442 <first : Q P - - - - p q 
-20442 <first : K - P - - - p k 
-20442 <first : B - P - - - p b 
-20442 <first : N P - - - - p n 
-20442 <first : R P - - - - p r 
-20442 <first : 
-20442 <first : move a6b4
-27346 >first : time 30394
-27346 >first : otim 29757
+25788 >first : d1b3
+25885 <first : n
+25885 <first : n
+25885 <first : n
+25885 <first : n
+25885 <first : n
+25885 <first : n
+25885 <first : n
+25885 <first : n
+25885 <first : n
+25885 <first : n
+25885 <first : n
+25885 <first : n
+25885 <first : n
+25885 <first : n
+25885 <first : n
+25885 <first : n
+25885 <first : n
+25885 <first : n
+25885 <first : n
+25885 <first : n
+25885 <first : n
+25885 <first : n
+25885 <first : n
+25885 <first : n
+25885 <first : n
+25885 <first : n
+25885 <first : n
+25885 <first : n
+25885 <first : n
+25885 <first : n
+25885 <first : n
+25885 <first : n
+25885 <first : 
+25885 <first : R P - - - - p r 
+25885 <first : N P Q - - - p - 
+25885 <first : B - P - n - p b 
+25885 <first : - P - - - - p q 
+25885 <first : K P - - - - p k 
+25885 <first : B P - - - - p b 
+25885 <first : N P - - - - p n 
+25885 <first : R P - - - - p r 
+25885 <first : 
+25885 <first : move a6c5
+27518 >first : time 30382
+27518 >first : otim 30274
 book hit = (NULL)
-27346 >first : d2d4
-27350 <first : [Pawn] Moved two positions with: d2d4
-27350 <first : n
-27351 <first : n
-27351 <first : n
-27351 <first : n
-27351 <first : n
-27351 <first : n
-27351 <first : n
-27351 <first : n
-27351 <first : n
-27351 <first : n
-27351 <first : n
-27351 <first : n
-27351 <first : n
-27351 <first : n
-27351 <first : n
-27351 <first : n
-27351 <first : n
-27351 <first : n
-27351 <first : n
-27351 <first : n
-27351 <first : n
-27351 <first : n
-27351 <first : n
-27351 <first : n
-27351 <first : n
-27351 <first : n
-27351 <first : n
-27351 <first : n
-27351 <first : n
-27351 <first : n
-27351 <first : n
-27351 <first : n
-27354 <first : 
-27354 <first : R P - - - n p r 
-27354 <first : N P - - - - p - 
-27354 <first : B P - - - - p b 
-27354 <first : Q - - P - - p q 
-27354 <first : K - P - - - p k 
-27354 <first : B - P - - - p b 
-27354 <first : N P - - - - p n 
-27354 <first : R P - - - - p r 
-27354 <first : 
-27355 <first : move b4a6
-33593 >first : time 30594
-33593 >first : otim 29334
+27518 >first : b3b7
+27614 <first : n
+27614 <first : n
+27614 <first : n
+27614 <first : n
+27614 <first : n
+27614 <first : n
+27614 <first : n
+27614 <first : n
+27614 <first : n
+27614 <first : n
+27614 <first : n
+27614 <first : n
+27614 <first : n
+27614 <first : n
+27614 <first : n
+27614 <first : n
+27614 <first : n
+27614 <first : n
+27614 <first : n
+27614 <first : n
+27614 <first : n
+27614 <first : n
+27614 <first : n
+27614 <first : n
+27614 <first : n
+27614 <first : n
+27614 <first : n
+27614 <first : n
+27614 <first : n
+27614 <first : n
+27614 <first : n
+27614 <first : 
+27614 <first : R P - - - - p r 
+27614 <first : N P - - - - Q - 
+27614 <first : B - P - - - p b 
+27614 <first : - P - - - - p q 
+27614 <first : K P - n - - p k 
+27614 <first : B P - - - - p b 
+27614 <first : N P - - - - p n 
+27614 <first : R P - - - - p r 
+27614 <first : 
+27614 <first : move c5e4
+29221 >first : time 30573
+29221 >first : otim 30314
 book hit = (NULL)
-33593 >first : f1a6
-33601 <first : n
-33601 <first : n
-33601 <first : n
-33601 <first : n
-33601 <first : n
-33601 <first : n
-33601 <first : n
-33601 <first : n
-33601 <first : n
-33601 <first : n
-33601 <first : n
-33601 <first : n
-33601 <first : n
-33601 <first : n
-33601 <first : n
-33601 <first : n
-33601 <first : n
-33601 <first : n
-33601 <first : n
-33601 <first : n
-33601 <first : n
-33601 <first : n
-33601 <first : n
-33601 <first : n
-33601 <first : n
-33601 <first : n
-33601 <first : n
-33601 <first : n
-33601 <first : n
-33601 <first : n
-33601 <first : n
-33601 <first : 
-33601 <first : R P - - - B p r 
-33601 <first : N P - - - - p - 
-33601 <first : B P - - - - p b 
-33601 <first : Q - - P - - p q 
-33601 <first : K - P - - - p k 
-33601 <first : - - P - - n p b 
-33601 <first : N P - - - - p - 
-33601 <first : R P - - - - p r 
-33601 <first : 
-33601 <first : move g8f6
-35878 >first : time 30793
-35878 >first : otim 29306
+29221 >first : b7a7
+29294 <first : n
+29294 <first : n
+29294 <first : n
+29294 <first : n
+29294 <first : n
+29294 <first : n
+29294 <first : n
+29294 <first : n
+29294 <first : n
+29294 <first : n
+29294 <first : n
+29294 <first : n
+29294 <first : n
+29294 <first : n
+29294 <first : n
+29294 <first : n
+29294 <first : n
+29294 <first : n
+29294 <first : n
+29294 <first : n
+29294 <first : n
+29294 <first : n
+29294 <first : n
+29294 <first : n
+29294 <first : n
+29294 <first : n
+29294 <first : n
+29294 <first : n
+29294 <first : n
+29294 <first : n
+29294 <first : 
+29294 <first : R P - - - - Q r 
+29294 <first : N P - - - - - - 
+29294 <first : B - P - - - p b 
+29294 <first : - P - - - - p q 
+29294 <first : K P - - - - p k 
+29294 <first : B P - - - - p b 
+29294 <first : N P - - n - p n 
+29294 <first : R P - - - - p r 
+29294 <first : 
+29294 <first : move e4g5
+30916 >first : time 30765
+30916 >first : otim 30351
 book hit = (NULL)
-35878 >first : b1c3
-35881 <first : n
-35881 <first : n
-35881 <first : n
-35881 <first : n
-35881 <first : n
-35881 <first : n
-35881 <first : n
-35881 <first : n
-35881 <first : n
-35881 <first : n
-35881 <first : n
-35881 <first : n
-35881 <first : n
-35881 <first : n
-35881 <first : n
-35881 <first : n
-35881 <first : n
-35881 <first : n
-35881 <first : n
-35881 <first : n
-35881 <first : n
-35881 <first : n
-35881 <first : n
-35881 <first : n
-35881 <first : n
-35881 <first : n
-35881 <first : n
-35881 <first : n
-35881 <first : n
-35881 <first : n
-35881 <first : n
-35882 <first : 
-35882 <first : R P - - - B p r 
-35882 <first : - P - - - - p - 
-35883 <first : B P N - - - p b 
-35883 <first : Q - - P n - p q 
-35883 <first : K - P - - - p k 
-35883 <first : - - P - - - p b 
-35883 <first : N P - - - - p - 
-35883 <first : R P - - - - p r 
-35883 <first : 
-35883 <first : move f6d5
-38296 >first : time 30992
-38296 >first : otim 29265
+30916 >first : a7c5
+31010 <first : n
+31010 <first : n
+31010 <first : n
+31010 <first : n
+31010 <first : n
+31010 <first : n
+31010 <first : n
+31010 <first : n
+31010 <first : n
+31010 <first : n
+31010 <first : n
+31010 <first : n
+31010 <first : n
+31010 <first : n
+31010 <first : n
+31010 <first : n
+31010 <first : n
+31010 <first : n
+31010 <first : n
+31010 <first : n
+31010 <first : n
+31010 <first : n
+31010 <first : n
+31010 <first : n
+31010 <first : n
+31010 <first : n
+31010 <first : n
+31010 <first : n
+31010 <first : n
+31010 <first : n
+31010 <first : 
+31010 <first : R P - - - - - r 
+31010 <first : N P - - - - - - 
+31010 <first : B - P - Q - p b 
+31010 <first : - P - - - - p q 
+31010 <first : K P - - - - p k 
+31010 <first : B P - - - - p b 
+31010 <first : N P - - n - p - 
+31010 <first : R P - - - n p r 
+31010 <first : 
+31010 <first : move g8h6
+33895 >first : time 30956
+33895 >first : otim 30263
 book hit = (NULL)
-38296 >first : c3d5
-38298 <first : n
-38298 <first : n
-38298 <first : n
-38299 <first : n
-38299 <first : n
-38299 <first : n
-38299 <first : n
-38299 <first : n
-38299 <first : n
-38299 <first : n
-38299 <first : n
-38299 <first : n
-38299 <first : n
-38299 <first : n
-38299 <first : n
-38299 <first : n
-38299 <first : n
-38299 <first : n
-38299 <first : n
-38299 <first : n
-38299 <first : n
-38299 <first : n
-38299 <first : n
-38299 <first : n
-38299 <first : n
-38299 <first : n
-38299 <first : n
-38299 <first : n
-38299 <first : n
-38299 <first : n
-38299 <first : 1
-38299 <first : k
-38299 <first : k
-38299 <first : k
-38299 <first : k
-38299 <first : k
-38299 <first : k
-38299 <first : k
-38300 <first : k
-38300 <first : k
-38300 <first : k
-38300 <first : k
-38300 <first : k
-38300 <first : k
-38300 <first : k
-38300 <first : k
-38300 <first : k
-38300 <first : k
-38300 <first : k
-38300 <first : k
-38300 <first : k
-38301 <first : k
-38301 <first : k
-38301 <first : k
-38301 <first : k
-38301 <first : k
-38301 <first : k
-38301 <first : k
-38301 <first : k
-38301 <first : k
-38301 <first : k
-38301 <first : A intrat in black +++
-38301 <first : 2
-38301 <first : p
-38301 <first : p
-38301 <first : p
-38301 <first : p
-38301 <first : p
-38301 <first : p
-38301 <first : p
-38301 <first : p
-38301 <first : p
-38301 <first : p
-38301 <first : p
-38301 <first : p
-38301 <first : p
-38301 <first : p
-38301 <first : p
-38301 <first : p
-38301 <first : p
-38301 <first : p
-38301 <first : p
-38301 <first : p
-38301 <first : p
-38301 <first : p
-38301 <first : p
-38301 <first : p
-38302 <first : p
-38302 <first : p
-38302 <first : p
-38302 <first : p
-38302 <first : p
-38302 <first : p
-38302 <first : [Pawn] Moved two positions with: e7e5
-38303 <first : 
-38303 <first : R P - - - B p r 
-38303 <first : - P - - - - p - 
-38303 <first : B P - - - - p b 
-38303 <first : Q - - P N - p q 
-38303 <first : K - P - p - - k 
-38303 <first : - - P - - - p b 
-38303 <first : N P - - - - p - 
-38303 <first : R P - - - - p r 
-38303 <first : 
-38303 <first : move e7e5
-38380 <first : Is null get
-38381 <first : p
-38381 <first : p
-38381 <first : p
-38381 <first : p
-38381 <first : p
-38381 <first : p
-38381 <first : p
-38381 <first : p
-38381 <first : p
-38381 <first : p
-38381 <first : p
-38381 <first : p
-38381 <first : p
-38381 <first : p
-38381 <first : p
-38381 <first : p
-38381 <first : p
-38381 <first : p
-38381 <first : p
-38381 <first : p
-38381 <first : p
-38381 <first : p
-38381 <first : p
-38381 <first : p
-38381 <first : p
-38381 <first : p
-38381 <first : p
-38381 <first : p
-38381 <first : p
-38381 <first : p
-38381 <first : 
-38381 <first : R P - - - B p r 
-38381 <first : - P - - - - p - 
-38381 <first : B P - - - - p b 
-38381 <first : Q - - p N - p q 
-38381 <first : K - P - - - - k 
-38381 <first : - - P - - - p b 
-38381 <first : N P - - - - p - 
-38381 <first : R P - - - - p r 
-38381 <first : 
-38381 <first : move e5d4
-Ignoring move out of turn by first, gameMode 2, forwardMost 12
-38381 <first : Exception in thread "main" java.lang.NullPointerException
-38381 <first : 	at MiniMax.moveBlack(MiniMax.java:59)
-38381 <first : 	at MiniMax.thinkMove(MiniMax.java:23)
-38381 <first : 	at ReceiverXboard.recive(ReceiverXboard.java:159)
-38381 <first : 	at Main.main(Main.java:19)
-38381 <first : make[1]: *** [Makefile:6: run] Error 1
-38381 <first : make[1]: Leaving directory '/home/stefan/proiect-dangerous/l2-pa-project-MSP-Band/Chess_MSP-Band/src'
-44338 >first : time 31192
-44340 >first : otim 28861
+33895 >first : c5d5
+33970 <first : n
+33970 <first : n
+33970 <first : n
+33970 <first : n
+33970 <first : n
+33970 <first : n
+33970 <first : n
+33970 <first : n
+33970 <first : n
+33970 <first : n
+33970 <first : n
+33970 <first : n
+33970 <first : n
+33970 <first : n
+33970 <first : n
+33970 <first : n
+33970 <first : n
+33970 <first : n
+33970 <first : n
+33970 <first : n
+33970 <first : n
+33970 <first : n
+33970 <first : n
+33970 <first : n
+33970 <first : n
+33970 <first : n
+33970 <first : n
+33970 <first : n
+33970 <first : n
+33970 <first : n
+33970 <first : 
+33970 <first : R P - - - - - r 
+33970 <first : N P - - - - - - 
+33970 <first : B - P - - - p b 
+33970 <first : - P - - Q - p q 
+33970 <first : K P - - - - p k 
+33970 <first : B P - - - - p b 
+33970 <first : N P - n n - p - 
+33970 <first : R P - - - - p r 
+33970 <first : 
+33970 <first : move h6g4
+35057 >first : time 31149
+35057 >first : otim 30354
 book hit = (NULL)
-44341 >first : d4e5
-GameEnds(27, Error writing to first chess program, 2)
-46384 >first : result 0-1 {Error writing to first chess program}
-46384 >first : force
-46384 >first : quit
+35057 >first : d5f7
+35154 <first : n
+35154 <first : n
+35154 <first : n
+35154 <first : n
+35154 <first : n
+35154 <first : n
+35154 <first : n
+35154 <first : n
+35154 <first : n
+35154 <first : n
+35154 <first : n
+35154 <first : n
+35154 <first : n
+35154 <first : n
+35154 <first : n
+35154 <first : n
+35154 <first : n
+35154 <first : n
+35154 <first : n
+35154 <first : n
+35154 <first : n
+35154 <first : n
+35154 <first : n
+35154 <first : n
+35154 <first : n
+35154 <first : n
+35154 <first : n
+35154 <first : n
+35154 <first : n
+35154 <first : [Knight] Cannot perform g5h3 because king bounded
+35154 <first : [Knight] Cannot perform g5f3 because king bounded
+35154 <first : [Knight] Cannot perform g5e4 because king bounded
+35154 <first : [Knight] Cannot perform g5e6 because king bounded
+35154 <first : 
+35154 <first : R P - - - - - r 
+35154 <first : N P - - - - - - 
+35154 <first : B - P - - - p b 
+35154 <first : - P - - - - p q 
+35154 <first : K P - - - - p k 
+35154 <first : B P - - - - n b 
+35154 <first : N P - n - - p - 
+35154 <first : R P - - - - p r 
+35154 <first : 
+35154 <first : move g5f7
+38715 >first : time 31339
+38715 >first : otim 30198
+book hit = (NULL)
+38715 >first : f2f3
+38789 <first : n
+38790 <first : n
+38790 <first : n
+38790 <first : n
+38790 <first : n
+38790 <first : n
+38790 <first : n
+38790 <first : n
+38790 <first : n
+38790 <first : n
+38790 <first : n
+38790 <first : n
+38790 <first : n
+38790 <first : n
+38790 <first : n
+38790 <first : n
+38790 <first : n
+38790 <first : n
+38790 <first : n
+38790 <first : n
+38790 <first : n
+38790 <first : n
+38790 <first : n
+38790 <first : n
+38790 <first : n
+38790 <first : n
+38790 <first : n
+38790 <first : n
+38790 <first : 
+38790 <first : R P - - - - - r 
+38790 <first : N P - - - - - - 
+38790 <first : B - P - - - p b 
+38790 <first : - P - - - - p q 
+38790 <first : K P - - - - p k 
+38790 <first : B - P - - - n b 
+38790 <first : N P - - - - p - 
+38790 <first : R P - - - n p r 
+38790 <first : 
+38790 <first : move g4h6
+40781 >first : time 31531
+40781 >first : otim 30199
+book hit = (NULL)
+40781 >first : a2a3
+40855 <first : n
+40855 <first : n
+40855 <first : n
+40855 <first : n
+40855 <first : n
+40855 <first : n
+40855 <first : n
+40855 <first : n
+40855 <first : n
+40856 <first : n
+40856 <first : n
+40856 <first : n
+40856 <first : n
+40856 <first : n
+40856 <first : n
+40856 <first : n
+40856 <first : n
+40856 <first : n
+40856 <first : n
+40856 <first : n
+40856 <first : n
+40856 <first : n
+40856 <first : n
+40856 <first : n
+40856 <first : n
+40856 <first : n
+40856 <first : n
+40856 <first : n
+40856 <first : 
+40856 <first : R - P - - - - r 
+40856 <first : N P - - - - - - 
+40856 <first : B - P - - - p b 
+40856 <first : - P - - - - p q 
+40856 <first : K P - - - - p k 
+40856 <first : B - P - - - n b 
+40856 <first : N P - n - - p - 
+40856 <first : R P - - - - p r 
+40856 <first : 
+40856 <first : move h6g4
+42187 >first : time 31724
+42187 >first : otim 30266
+book hit = (NULL)
+42187 >first : a3a4
+42262 <first : n
+42262 <first : n
+42262 <first : n
+42262 <first : n
+42262 <first : n
+42262 <first : n
+42262 <first : n
+42262 <first : n
+42262 <first : n
+42262 <first : n
+42262 <first : n
+42262 <first : n
+42262 <first : n
+42262 <first : n
+42262 <first : n
+42262 <first : n
+42262 <first : n
+42262 <first : n
+42262 <first : n
+42262 <first : n
+42262 <first : n
+42262 <first : n
+42262 <first : n
+42262 <first : n
+42262 <first : n
+42262 <first : n
+42262 <first : n
+42262 <first : n
+42262 <first : 
+42262 <first : R - - P - - - r 
+42262 <first : N P - - - - - - 
+42262 <first : B - P - - - p b 
+42262 <first : - P - - - - p q 
+42262 <first : K P n - - - p k 
+42262 <first : B - P - - - n b 
+42262 <first : N P - - - - p - 
+42262 <first : R P - - - - p r 
+42262 <first : 
+42262 <first : move g4e3
+43557 >first : time 31916
+43557 >first : otim 30337
+book hit = (NULL)
+43557 >first : a1a3
+43631 <first : n
+43631 <first : n
+43631 <first : n
+43631 <first : n
+43631 <first : n
+43631 <first : n
+43631 <first : n
+43631 <first : n
+43631 <first : n
+43631 <first : n
+43631 <first : n
+43631 <first : n
+43631 <first : n
+43631 <first : n
+43631 <first : n
+43631 <first : n
+43631 <first : n
+43631 <first : n
+43631 <first : n
+43631 <first : n
+43631 <first : n
+43631 <first : n
+43631 <first : n
+43631 <first : n
+43631 <first : n
+43631 <first : n
+43631 <first : n
+43631 <first : n
+43631 <first : 
+43631 <first : - - R P - - - r 
+43631 <first : N P - - - - - - 
+43631 <first : B - P - - - p b 
+43631 <first : - P - - - - p q 
+43631 <first : K P - - - - p k 
+43631 <first : B - P - - - n b 
+43631 <first : N n - - - - p - 
+43631 <first : R P - - - - p r 
+43631 <first : 
+43631 <first : move e3g2
+46065 >first : time 32109
+46065 >first : otim 30293
+book hit = (NULL)
+46065 >first : f1g2
+46140 <first : n
+46140 <first : n
+46140 <first : n
+46140 <first : n
+46140 <first : n
+46140 <first : n
+46140 <first : n
+46140 <first : n
+46140 <first : n
+46140 <first : n
+46140 <first : n
+46140 <first : n
+46140 <first : n
+46140 <first : n
+46140 <first : n
+46140 <first : n
+46140 <first : n
+46140 <first : n
+46140 <first : n
+46140 <first : n
+46140 <first : n
+46140 <first : n
+46140 <first : n
+46140 <first : n
+46140 <first : n
+46140 <first : n
+46140 <first : 
+46140 <first : - - R P - - - r 
+46140 <first : N P - - - - - - 
+46140 <first : B - P - - - p b 
+46140 <first : - P - - - - p q 
+46140 <first : K P - - - - p k 
+46140 <first : - - P - - - - b 
+46140 <first : N B - - - - p - 
+46140 <first : R P - - - n p r 
+46140 <first : 
+46140 <first : move f7h6
+47615 >first : time 32301
+47615 >first : otim 30346
+book hit = (NULL)
+47615 >first : a3b3
+47690 <first : n
+47690 <first : n
+47690 <first : n
+47690 <first : n
+47690 <first : n
+47690 <first : n
+47690 <first : n
+47690 <first : n
+47690 <first : n
+47690 <first : n
+47690 <first : n
+47690 <first : n
+47690 <first : n
+47690 <first : n
+47690 <first : n
+47690 <first : n
+47690 <first : n
+47690 <first : n
+47690 <first : n
+47690 <first : n
+47690 <first : n
+47690 <first : n
+47690 <first : n
+47690 <first : n
+47690 <first : n
+47690 <first : n
+47690 <first : 
+47690 <first : - - - P - - - r 
+47690 <first : N P R - - - - - 
+47690 <first : B - P - - - p b 
+47690 <first : - P - - - - p q 
+47690 <first : K P - - - - p k 
+47690 <first : - - P - n - - b 
+47690 <first : N B - - - - p - 
+47690 <first : R P - - - - p r 
+47690 <first : 
+47690 <first : move h6f5
+48526 >first : time 32494
+48527 >first : otim 30462
+book hit = (NULL)
+48527 >first : b3b4
+48603 <first : n
+48603 <first : n
+48603 <first : n
+48603 <first : n
+48603 <first : n
+48603 <first : n
+48603 <first : n
+48603 <first : n
+48603 <first : n
+48603 <first : n
+48603 <first : n
+48603 <first : n
+48603 <first : n
+48603 <first : n
+48603 <first : n
+48603 <first : n
+48603 <first : n
+48603 <first : n
+48603 <first : n
+48603 <first : n
+48603 <first : n
+48603 <first : n
+48603 <first : n
+48603 <first : n
+48603 <first : n
+48603 <first : n
+48603 <first : 
+48603 <first : - - - P - - - r 
+48603 <first : N P - R - - - - 
+48603 <first : B - P - - - p b 
+48603 <first : - P - n - - p q 
+48603 <first : K P - - - - p k 
+48603 <first : - - P - - - - b 
+48603 <first : N B - - - - p - 
+48603 <first : R P - - - - p r 
+48603 <first : 
+48603 <first : move f5d4
+49713 >first : time 32686
+49713 >first : otim 30551
+book hit = (NULL)
+49713 >first : b4b5
+49787 <first : n
+49788 <first : n
+49788 <first : n
+49788 <first : n
+49788 <first : n
+49788 <first : n
+49788 <first : n
+49788 <first : n
+49788 <first : n
+49788 <first : n
+49788 <first : n
+49788 <first : n
+49788 <first : n
+49788 <first : n
+49788 <first : n
+49788 <first : n
+49788 <first : n
+49788 <first : n
+49788 <first : n
+49788 <first : n
+49788 <first : n
+49788 <first : n
+49788 <first : n
+49788 <first : n
+49788 <first : n
+49788 <first : n
+49788 <first : 
+49788 <first : - - - P - - - r 
+49788 <first : N P - - R - - - 
+49788 <first : B - P - - - p b 
+49788 <first : - P - - - - p q 
+49788 <first : K P - - - n p k 
+49788 <first : - - P - - - - b 
+49788 <first : N B - - - - p - 
+49788 <first : R P - - - - p r 
+49788 <first : 
+49788 <first : move d4e6
+51113 >first : time 32879
+51113 >first : otim 30619
+book hit = (NULL)
+51113 >first : b5b6
+51188 <first : n
+51188 <first : n
+51188 <first : n
+51188 <first : n
+51188 <first : n
+51188 <first : n
+51188 <first : n
+51188 <first : n
+51188 <first : n
+51188 <first : n
+51188 <first : n
+51188 <first : n
+51188 <first : n
+51188 <first : n
+51188 <first : n
+51188 <first : n
+51188 <first : n
+51188 <first : n
+51188 <first : n
+51188 <first : n
+51188 <first : n
+51188 <first : n
+51188 <first : n
+51188 <first : n
+51188 <first : n
+51188 <first : n
+51188 <first : 
+51188 <first : - - - P - - - r 
+51188 <first : N P - - - R - - 
+51188 <first : B - P - - - p b 
+51188 <first : - P - - - - p q 
+51188 <first : K P - - - - p k 
+51188 <first : - - P n - - - b 
+51188 <first : N B - - - - p - 
+51188 <first : R P - - - - p r 
+51188 <first : 
+51188 <first : move e6f4
+52053 >first : time 33071
+52053 >first : otim 30732
+book hit = (NULL)
+52053 >first : b6b7
+52128 <first : n
+52128 <first : n
+52128 <first : n
+52128 <first : n
+52128 <first : n
+52128 <first : n
+52128 <first : n
+52128 <first : n
+52128 <first : n
+52128 <first : n
+52128 <first : n
+52128 <first : n
+52128 <first : n
+52128 <first : n
+52128 <first : n
+52129 <first : n
+52129 <first : n
+52129 <first : n
+52129 <first : n
+52129 <first : n
+52129 <first : n
+52129 <first : n
+52129 <first : n
+52129 <first : n
+52129 <first : n
+52129 <first : n
+52129 <first : 
+52129 <first : - - - P - - - r 
+52129 <first : N P - - - - R - 
+52129 <first : B - P - - - p b 
+52129 <first : - P - - - - p q 
+52129 <first : K P - - - - p k 
+52129 <first : - - P - - - - b 
+52129 <first : N n - - - - p - 
+52129 <first : R P - - - - p r 
+52129 <first : 
+52129 <first : move f4g2
+71863 >first : time 33263
+71863 >first : otim 28959
+book hit = (NULL)
+71863 >first : e1f1
+71938 <first : n
+71938 <first : n
+71938 <first : n
+71938 <first : n
+71938 <first : n
+71938 <first : n
+71938 <first : n
+71938 <first : n
+71938 <first : n
+71938 <first : n
+71938 <first : n
+71938 <first : n
+71938 <first : n
+71938 <first : n
+71938 <first : n
+71938 <first : n
+71938 <first : n
+71938 <first : n
+71938 <first : n
+71938 <first : n
+71938 <first : n
+71938 <first : n
+71938 <first : n
+71938 <first : n
+71938 <first : n
+71938 <first : 
+71938 <first : - - - P - - - r 
+71938 <first : N P - - - - R - 
+71938 <first : B - P - - - p b 
+71938 <first : - P - - - - p q 
+71938 <first : - P n - - - p k 
+71938 <first : K - P - - - - b 
+71938 <first : N - - - - - p - 
+71938 <first : R P - - - - p r 
+71938 <first : 
+71938 <first : move g2e3
+80577 >first : time 33456
+80577 >first : otim 28295
+book hit = (NULL)
+80577 >first : d2e3
+80651 <first : [Pawn] Cannot perform d2d3 because king bounded
+80651 <first : [Pawn] Cannot perform d2d4 because king bounded
+80651 <first : n
+80651 <first : n
+80651 <first : n
+80651 <first : n
+80651 <first : n
+80651 <first : n
+80651 <first : n
+80651 <first : n
+80651 <first : n
+80651 <first : n
+80651 <first : n
+80651 <first : n
+80651 <first : n
+80651 <first : n
+80651 <first : n
+80651 <first : n
+80651 <first : n
+80651 <first : n
+80651 <first : n
+80651 <first : n
+80651 <first : n
+80651 <first : n
+80651 <first : n
+80651 <first : n
+80651 <first : 1
+80651 <first : r
+80651 <first : r
+80651 <first : r
+80651 <first : r
+80651 <first : r
+80651 <first : r
+80651 <first : r
+80651 <first : r
+80651 <first : r
+80651 <first : r
+80651 <first : r
+80651 <first : r
+80651 <first : r
+80651 <first : r
+80651 <first : r
+80651 <first : r
+80651 <first : r
+80651 <first : r
+80651 <first : r
+80651 <first : r
+80651 <first : r
+80651 <first : r
+80651 <first : r
+80651 <first : r
+80651 <first : 
+80651 <first : - - - P r - - - 
+80651 <first : N P - - - - R - 
+80651 <first : B - P - - - p b 
+80651 <first : - - - - - - p q 
+80651 <first : - P P - - - p k 
+80651 <first : K - P - - - - b 
+80651 <first : N - - - - - p - 
+80651 <first : R P - - - - p r 
+80651 <first : 
+80651 <first : move a8a5
+80746 <first : Is null get
+80746 <first : r
+80746 <first : r
+80746 <first : r
+80746 <first : r
+80746 <first : r
+80746 <first : r
+80746 <first : r
+80746 <first : r
+80746 <first : r
+80746 <first : r
+80747 <first : r
+80747 <first : r
+80747 <first : r
+80747 <first : r
+80747 <first : r
+80747 <first : r
+80747 <first : r
+80747 <first : r
+80747 <first : r
+80747 <first : r
+80747 <first : r
+80747 <first : r
+80747 <first : r
+80747 <first : r
+80747 <first : 
+80747 <first : - - - P - - - - 
+80747 <first : N P - - - - R - 
+80747 <first : B - P - - - p b 
+80747 <first : - - - - - - p q 
+80747 <first : - P P - r - p k 
+80747 <first : K - P - - - - b 
+80747 <first : N - - - - - p - 
+80747 <first : R P - - - - p r 
+80747 <first : 
+80747 <first : move a5e5
+Ignoring move out of turn by first, gameMode 2, forwardMost 38
+80747 <first : A intrat in black +++
+80747 <first : 2
+80747 <first : q
+80747 <first : q
+80747 <first : q
+80747 <first : q
+80747 <first : q
+80747 <first : q
+80747 <first : q
+80747 <first : q
+80747 <first : q
+80747 <first : q
+80747 <first : q
+80747 <first : q
+80747 <first : q
+80747 <first : q
+80747 <first : q
+80747 <first : q
+80747 <first : q
+80747 <first : q
+80747 <first : q
+80747 <first : q
+80747 <first : q
+80747 <first : q
+80747 <first : q
+80747 <first : q
+80747 <first : A intrat in black +++
+80747 <first : 3
+80747 <first : b
+80747 <first : b
+80747 <first : b
+80747 <first : b
+80747 <first : b
+80747 <first : b
+80747 <first : b
+80747 <first : b
+80747 <first : b
+80747 <first : b
+80747 <first : b
+80747 <first : b
+80747 <first : b
+80747 <first : b
+80747 <first : b
+80747 <first : b
+80747 <first : b
+80747 <first : b
+80747 <first : b
+80747 <first : b
+80747 <first : b
+80747 <first : b
+80747 <first : b
+80747 <first : b
+80747 <first : 
+80747 <first : - - - P - - - - 
+80747 <first : N P - - - - b - 
+80747 <first : B - P - - - p - 
+80747 <first : - - - - - - p q 
+80747 <first : - P P - r - p k 
+80747 <first : K - P - - - - b 
+80747 <first : N - - - - - p - 
+80747 <first : R P - - - - p r 
+80747 <first : 
+80747 <first : move c8b7
+Ignoring move out of turn by first, gameMode 2, forwardMost 38
+83567 >first : time 33648
+83568 >first : otim 28203
+book hit = (NULL)
+83568 >first : b7c7
+GameEnds(27, White resigns, 2)
+105659 >first : result 0-1 {White resigns}
+105659 >first : force
+GameEnds(27, White resigns, 2)
+107424 >first : quit

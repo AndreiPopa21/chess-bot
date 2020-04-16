@@ -4,8 +4,8 @@ import java.util.Random;
 
 public final class MiniMax {
     private static Table currTable = null;
-    static char []balck_piece = {'n','k','p','b','q','r'};
-    static char []white_piece = {'N','P','K','B','Q','R'};
+    static char []balck_piece = {'n','r','q','b','p','k'};
+    static char []white_piece = {'N','R','Q','B','P','K'};
     static int index_black = 0;
     static int index_white = 0;
     private MiniMax(){
@@ -45,7 +45,7 @@ public final class MiniMax {
         {
             index_black++;
             System.out.println(index_black);
-            if (index_black < balck_piece.length)
+            if (index_black <= balck_piece.length)
                 moveBlack();
             else
                 System.out.println("1-0 {Black resigns}");
@@ -55,8 +55,14 @@ public final class MiniMax {
         if (GameManager.getTable().getSquares().get(blackKnight) == null) {
             System.out.println("Is null get");
             moveBlack();
+        }else if (GameManager.getTable().getSquares().get(blackKnight).getPiece() == null){
+            System.out.println("Is null getPiece");
+            moveBlack();
+        }else if ((posibilMoves = GameManager.getTable().getSquares().get(blackKnight).getPiece().searchMoves(blackKnight)) == null){
+            System.out.println("Is null searchMove");
+            moveBlack();
         }
-            posibilMoves = GameManager.getTable().getSquares().get(blackKnight).getPiece().searchMoves(blackKnight);
+        //    posibilMoves = GameManager.getTable().getSquares().get(blackKnight).getPiece().searchMoves(blackKnight);
 
         if (posibilMoves.size()!= 0 ) {
             index = new Random().nextInt(posibilMoves.size());
@@ -98,12 +104,26 @@ public final class MiniMax {
             }
         }
        // System.out.println(whiteKnight);
+
+
         int index;
-        ArrayList<Move> posibilMoves = GameManager.getTable().getSquares().get(whiteKnight).getPiece().searchMoves(whiteKnight);
+        ArrayList<Move> posibilMoves = new ArrayList<Move>();
+        if (GameManager.getTable().getSquares().get(whiteKnight) == null) {
+            System.out.println("Is null get");
+            moveBlack();
+        }else if (GameManager.getTable().getSquares().get(whiteKnight).getPiece() == null){
+            System.out.println("Is null getPiece");
+            moveBlack();
+        }else if ((posibilMoves = GameManager.getTable().getSquares().get(whiteKnight).getPiece().searchMoves(whiteKnight)) == null){
+            System.out.println("Is null searchMove");
+            moveBlack();
+        }
+       // ArrayList<Move> posibilMoves = GameManager.getTable().getSquares().get(whiteKnight).getPiece().searchMoves(whiteKnight);
 
         if (posibilMoves.size() != 0) {
             index = new Random().nextInt(posibilMoves.size());
             GameManager.getTable().updateTable(posibilMoves.get(index));
+            GameManager.printTable();
             Sender.parserMove(posibilMoves.get(index));
         } else {
             index_white++;
