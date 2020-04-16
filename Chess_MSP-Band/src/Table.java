@@ -242,17 +242,21 @@ public class Table {
 
         if(e1.hasPiece()){
             if(!e1.getPiece().getName().equals('K')){
+                System.out.println("[Table] NU E REGE white king-side castling");
                 return false;
             }
         }else{
+            System.out.println("[Table] NU E REGE white king-side castling");
             return false;
         }
 
         if(h1.hasPiece()){
             if(!h1.getPiece().getName().equals('R')){
+                System.out.println("[Table] NU E TURA white king-side castling");
                 return false;
             }
         }else{
+            System.out.println("[Table] NU E TURA white king-side castling");
             return false;
         }
 
@@ -276,12 +280,60 @@ public class Table {
         }
         undoMove(checkMove, null);
 
+        System.out.println("[Table] E posibil white king-side castling");
+
         return true;
     }
 
     public boolean castlingWhiteQueen(){
 
         System.out.println("[Table] Se evalueaza white queen-side castling");
+
+        Square e1 = getSquares().get(Constants.E1);
+        Square d1 = getSquares().get(Constants.D1);
+        Square c1 = getSquares().get(Constants.C1);
+        Square b1 = getSquares().get(Constants.B1);
+        Square a1 = getSquares().get(Constants.A1);
+
+        if(e1.hasPiece()){
+            if(!e1.getPiece().getName().equals('K')){
+                return false;
+            }
+        }else{
+            return false;
+        }
+
+        if(a1.hasPiece()){
+            if(!a1.getPiece().getName().equals('R')){
+                return false;
+            }
+        }else{  
+            return false;
+        }
+
+
+        if(b1.hasPiece() || c1.hasPiece() || d1.hasPiece()) return false;
+
+        if(isKingChecked(Color.WHITE)) return false;
+
+
+        Move checkMove = new Move(Constants.E1,Constants.D1,0);
+        applyMove(checkMove);
+        if(isKingChecked(Color.WHITE)){
+            undoMove(checkMove, null);
+            return false;
+        }
+        undoMove(checkMove, null);
+
+        checkMove = new Move(Constants.E1,Constants.C1,0);
+        applyMove(checkMove);
+        if(isKingChecked(Color.WHITE)){
+            undoMove(checkMove, null);
+            return false;
+        }
+        undoMove(checkMove, null);
+
+        System.out.println("[Table] SE POATE white queen-side castling");
 
         return true;
     }
@@ -331,6 +383,8 @@ public class Table {
         }
         undoMove(checkMove, null);
 
+        System.out.println("[Table] SE POATE black king-side castling");
+
         return true;
     }
 
@@ -338,9 +392,53 @@ public class Table {
 
         System.out.println("[Table] Se evalueaza black queen-side castling");
 
+        Square e8 = getSquares().get(Constants.E8);
+        Square d8 = getSquares().get(Constants.D8);
+        Square c8 = getSquares().get(Constants.C8);
+        Square b8 = getSquares().get(Constants.B8);
+        Square a8 = getSquares().get(Constants.A8);
+
+        if(e8.hasPiece()){
+            if(!e8.getPiece().getName().equals('k')){
+                return false;
+            }
+        }else{
+            return false;
+        }
+
+        if(a8.hasPiece()){
+            if(!a8.getPiece().getName().equals('r')){
+                return false;
+            }
+        }else{  
+            return false;
+        }
+
+
+        if(b8.hasPiece() || c8.hasPiece() || d8.hasPiece()) return false;
+
+        if(isKingChecked(Color.WHITE)) return false;
+
+
+        Move checkMove = new Move(Constants.E8,Constants.D8,0);
+        applyMove(checkMove);
+        if(isKingChecked(Color.BLACK)){
+            undoMove(checkMove, null);
+            return false;
+        }
+        undoMove(checkMove, null);
+
+        checkMove = new Move(Constants.E8,Constants.C8,0);
+        applyMove(checkMove);
+        if(isKingChecked(Color.BLACK)){
+            undoMove(checkMove, null);
+            return false;
+        }
+        undoMove(checkMove, null);
+
+        System.out.println("[Table] SE POATE black queen-side castling");
+
         return true;
     }
-
-
 
 }
