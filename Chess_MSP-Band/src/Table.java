@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
+import jdk.vm.ci.meta.Constant;
+
 public class Table {
 
     private HashMap<Integer,Square> squaresMap = new HashMap<>();
@@ -156,11 +158,40 @@ public class Table {
     }
 
     public void updateTable(Move move){
+
+        if(move.moveType != 0){
+            updateTableSpecial(move);
+            return;
+        }
+
         Square src = squaresMap.get(move.source);
         Square dest = squaresMap.get(move.dest);
 
         dest.setPiece(src.getPiece());
         src.setPiece(null);
+    }
+
+    public void updateTableSpecial(Move move){
+        if(move.moveType == Constants.WHITE_KING_SIDE_CASTLING){
+            updateTable(new Move(Constants.E1,Constants.G1,0));
+            updateTable(new Move(Constants.H1,Constants.F1,0));
+            return;
+        }
+        if(move.moveType == Constants.WHITE_QUEEN_SIDE_CASTLING){
+            updateTable(new Move(Constants.E1,Constants.C1,0));
+            updateTable(new Move(Constants.A1,Constants.D1,0));
+            return;
+        }
+        if(move.moveType == Constants.BLACK_KING_SIDE_CASTLING){
+            updateTable(new Move(Constants.E8, Constants.G8,0));
+            updateTable(new Move(Constants.H8, Constants.F8,0));
+            return;
+        }
+        if(move.moveType == Constants.BLACK_QUEEN_SIDE_CASTLING){
+            updateTable(new Move(Constants.E8,Constants.C8,0));
+            updateTable(new Move(Constants.A8,Constants.D8,0));
+            return;
+        }
     }
 
     public void undoMove(Move move, Piece initialDest){
