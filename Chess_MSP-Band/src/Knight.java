@@ -33,10 +33,10 @@ public class Knight extends Piece {
                 if(sq.getPiece().getColor() == this.getColor()){
                     continue;
                 }else{
-                    moves.add(new Move(src,next,null));
+                    moves.add(new Move(src,next,0));
                 }
             }else{
-                moves.add(new Move(src,next,null));
+                moves.add(new Move(src,next,0));
             }
         }
 

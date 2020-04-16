@@ -98,7 +98,6 @@ public class Table {
 
     }
 
-  
     public HashMap<Integer,Square> getSquares(){
         return this.squaresMap;
     }
@@ -162,20 +161,6 @@ public class Table {
 
         dest.setPiece(src.getPiece());
         src.setPiece(null);
-
-/*
-        char movedPiece = dest.getPiece().getName();
-        if((movedPiece == 'p') || (movedPiece == 'P')){
-            int srcPos = src.getPosition();
-            int destPos = dest.getPosition();
-            int diff = Math.abs(srcPos-destPos);
-            if(diff == 2){
-                System.out.println("[Pawn] Moved two positions with: " + move.toString());
-                Pawn p = (Pawn)dest.getPiece();
-                p.movedTwice = true;
-            }
-        }*/
-
     }
 
     public void undoMove(Move move, Piece initialDest){
@@ -220,5 +205,7 @@ public class Table {
         }
         return sb.toString();
     }
+
+
 
 }

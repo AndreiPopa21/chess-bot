@@ -30,7 +30,7 @@ public class Pawn extends Piece {
 
         if(frontSq != null){
             if(!frontSq.hasPiece()){
-                moves.add(new Move(src,front,null));
+                moves.add(new Move(src,front,0));
             }
         }
 
@@ -38,11 +38,11 @@ public class Pawn extends Piece {
             if(!doubleSq.hasPiece()){
                 if(this.getColor() == Color.BLACK){
                     if(src % 10 == 7){
-                        moves.add(new Move(src,doubleFront,null));
+                        moves.add(new Move(src,doubleFront,0));
                     }
                 }else {
                     if(src % 10 == 2){
-                        moves.add(new Move(src,doubleFront,null));
+                        moves.add(new Move(src,doubleFront,0));
                     }
                 }
             }
@@ -57,7 +57,7 @@ public class Pawn extends Piece {
             if(nextSq == null) continue;
             if(!nextSq.hasPiece()) continue;
             if(nextSq.getPiece().getColor() != this.getColor()){
-                moves.add(new Move(src,next, null));
+                moves.add(new Move(src,next, 0));
             }
         }
 

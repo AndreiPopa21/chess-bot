@@ -22,11 +22,11 @@ public class King extends Piece {
             Square nextSq = getTable().getSquares().get(next);
             if(nextSq == null) continue;
             if(!nextSq.hasPiece()){
-                moves.add(new Move(src,next,null));
+                moves.add(new Move(src,next,0));
                 continue;
             } 
             if(nextSq.getPiece().getColor() == this.getColor()) continue;
-            moves.add(new Move(src, next, null));
+            moves.add(new Move(src, next, 0));
         }
 
         ArrayList<Move> finalMoves = new ArrayList<>();

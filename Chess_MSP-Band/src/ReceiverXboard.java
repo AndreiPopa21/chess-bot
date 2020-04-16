@@ -72,9 +72,9 @@ public final class ReceiverXboard {
         int b = mutare.charAt(1) - 48;
         int c = mutare.charAt(2);
         int d = mutare.charAt(3) - 48;
-        if (GameManager.validateMove(new Move(a*10+b,c*10+d,null)))
+        if (GameManager.validateMove(new Move(a*10+b,c*10+d,0)))
         {
-            GameManager.getTable().updateTable(new Move(a*10+b,c*10+d,null));
+            GameManager.getTable().updateTable(new Move(a*10+b,c*10+d,0));
             return true;
         }else
         {

@@ -20,7 +20,7 @@ public class Bishop extends Piece {
         if(nextSq == null) return;
 
         if(!nextSq.hasPiece()){
-            moves.add(new Move(src,next,null));
+            moves.add(new Move(src,next,0));
             recursiveSearch(src, off, increment + 1, moves);
             return;
         }
@@ -29,7 +29,7 @@ public class Bishop extends Piece {
             return;
         }
 
-        moves.add(new Move(src, next, null));
+        moves.add(new Move(src, next, 0));
     }
 
     public ArrayList<Move> searchMoves(int src){

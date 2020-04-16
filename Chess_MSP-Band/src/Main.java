@@ -23,75 +23,75 @@ public class Main {
         );*/
 
         GameManager.executeMove(
-            new Move(Constants.B7,Constants.B5,null)
+            new Move(Constants.B7,Constants.B5,0)
         );
 
         GameManager.executeMove(
-            new Move(Constants.B5,Constants.B4,null)
+            new Move(Constants.B5,Constants.B4,0)
         );
 
 
         GameManager.executeMove(
-            new Move(Constants.C1,Constants.A3,null)
+            new Move(Constants.C1,Constants.A3,0)
         );
 
         GameManager.executeMove(
-            new Move(Constants.C1,Constants.A3,null)
+            new Move(Constants.C1,Constants.A3,0)
         );
 
         GameManager.executeMove(
-            new Move(Constants.A3,Constants.E7,null)
+            new Move(Constants.A3,Constants.E7,0)
         );
 
     
         GameManager.executeMove(
-            new Move(Constants.D8,Constants.E7,null)
+            new Move(Constants.D8,Constants.E7,0)
         );
 
         GameManager.executeMove(
-            new Move(Constants.F2,Constants.F3,null)
+            new Move(Constants.F2,Constants.F3,0)
         );
 
         GameManager.executeMove(
-            new Move(Constants.E2,Constants.E3,null)
+            new Move(Constants.E2,Constants.E3,0)
         );
 
         GameManager.executeMove(
-            new Move(Constants.E3,Constants.E4,null)
-        );
-
-        
-        GameManager.executeMove(
-            new Move(Constants.D7,Constants.D6,null)
-        );
-
-        GameManager.executeMove(
-            new Move(Constants.D6,Constants.D5,null)
+            new Move(Constants.E3,Constants.E4,0)
         );
 
         
         GameManager.executeMove(
-            new Move(Constants.G1,Constants.F3,null)
+            new Move(Constants.D7,Constants.D6,0)
         );
 
         GameManager.executeMove(
-            new Move(Constants.B8,Constants.C6,null)
+            new Move(Constants.D6,Constants.D5,0)
+        );
+
+        
+        GameManager.executeMove(
+            new Move(Constants.G1,Constants.F3,0)
         );
 
         GameManager.executeMove(
-            new Move(Constants.C6,Constants.D4,null)
+            new Move(Constants.B8,Constants.C6,0)
         );
 
         GameManager.executeMove(
-            new Move(Constants.F1,Constants.A6,null)
+            new Move(Constants.C6,Constants.D4,0)
         );
 
         GameManager.executeMove(
-            new Move(Constants.E7,Constants.H4,null)
+            new Move(Constants.F1,Constants.A6,0)
         );
 
         GameManager.executeMove(
-            new Move(Constants.E1,Constants.E2,null)
+            new Move(Constants.E7,Constants.H4,0)
+        );
+
+        GameManager.executeMove(
+            new Move(Constants.E1,Constants.E2,0)
         );
         
         

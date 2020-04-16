@@ -90,5 +90,18 @@ public final class Constants{
 
 
     
+    public static final int WHITE_KING_SIDE_CASTLING = 6666;
+    public static final int WHITE_QUEEN_SIDE_CASTLING = 7777;
+    public static final int BLACK_KING_SIDE_CASTLING = 8888;
+    public static final int BLACK_QUEEN_SIDE_CASTLING = 9999;
+
+    // noi jucam ALB, adversar Negru
+    // O - O  - Receiver
+
+    // ->
+
+    // new Move (0,0, BlACK_KING_SIDE);
+
+    // new Move (E2, E4, 0);
 
 }
