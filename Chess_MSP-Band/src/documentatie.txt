@@ -1,0 +1,96 @@
+Ideea principala din spatele refactorizarii este sa avem clasele separate pe responsabilitati si sa nu fim nevoiti sa updatam informatiile de mai multe ori in mod nenecesar.
+
+Daca se implementeaza o functionalitate noua, mai degraba se cauta o modalitate de a te folosi de functiile/informatiile curente, decat de a implementa alte metode/variabile. Variabilele sunt cele mai periculoase de implementat pentru ca de ele trebuie tinuit ulterior cont in toate celelalte functionalitati. Nesincronizarea lor duce la bug-uri naspa :(
+
+_________________________________________________________________
+
+Pipeline:
+
+1) Receiver primeste o comanda si o interpreteaza. Receiver nu trebuie sa faca nicio munca logica de validare, el doar se ocupa sa inteleaga daca ce a primit e ceva legal in concordanta cu protocolul. Receiver nu stie sa joace sah, dar stie ca daca e vorba de o mutare, trebuie sa o paseze lui GameManager.
+
+
+-> Comunicarea cu GameManager se face prin obiecte de tip Move.
+
+class Move{
+	int source;  --> o constanta de pozitie 
+	int dest; ----> o constanta de pozitie
+	int moveType;  ----> o constanta in caz ca avem o mutare speciala (ex. Rocada)
+}
+
+E2E4  -> new Move(E2, E4, 0);
+
+-> cand nu ai o mutare speciala, moveType este 0. 
+
+
+
+2) GameManager primeste o mutare si o valideaza din punct de vedere logica. ( validarea poate fi optionala cand primim mutarile pentru ca putem presupune mereu ca vom primi mutari valide dpdv logic ). Dupa ce a validat mutarea, updateaza tabla cu updateTable(Move move). GameManager este cel constint de player-ul nostru si el e entitatea cerebrala care ia toate deciziile. Celelate componente (Table, Minimax, Receiver) sunt doar niste componente de care el se foloseste ca sa ia deciziile respective. Nicio componenta nu ii poate impune ce sa faca, el le cere opinia si pe baza acesteia, decide ce actiune sa ia. 
+
+Table -> administreaza tabla si piesele de pe ea, GameManager se consulta permanent ca sa afle configuratia actuala
+
+Minimax -> e componenta strategica, GameManager ii da o configuratie initiala, player-ul curent, iar Minimax ii spune care este cel mai bun curs de actiune pe care il poate lua. Minimax trebuie sa interactioneze cu Table pentru ca are nevoie de acesta sa inteleaga tabla actuala.
+
+Sender -> dupa ce GameManager face o decizie (mutare, infrangere, etc.) ii transmite lui Sender, iar Sender converteste decizia in conformitate cu protocolul XBoard. Comunicarea cu Sender se poate face tot prin Move, dar aici ai putea avea o plaja mai larga de posibilitati (de analizat!)
+
+
+
+3) Table, ca si Receiver, e un obiect prost, sclav. El face tot ce ii spune GameManager. Table, in schimb, stie regulile la nevoie daca il intrebi. Table nu stie cu ce player suntem noi, nu stie daca noi am mutat de 10 ori inainte consecutiv, functia lui nu este de arbitru. El stie, cand il intrebi, sa iti zica ceva despre tabla. 
+
+	-> standardGame() -> reseteaza tabla interna catre o configuratie basic de inceput
+
+	-> getSquares()  -> folosim un HashMap ca sa stocam tabla interna, cheia este o constanta de tip pozitie, valoarea un obiect de tip Square
+
+	-> updateTable(Move move) -> e o functie cat se poate de dummy, ii dai o mutare si o executa. De exemplu, daca ai nevoie sa faci o rocada, apeleze updateTable() de doua ori consecutiv, o data sa mute regele, o data tura. O situatie mai speciala poate fi en-passant, cand apelezi o data updateTable() sa muti pionul agresor si dupa ar trebui sa iei separat pionul capturat. (pe viitor)
+
+
+	-> applyMove(Move move) -> face exact acelasi lucru ca updateTable, diferenta in schimb fiind ca memoreaza o informatie despre configuratia precedenta a tablei. Metoda intoarce piesa (sau null) care se afla pe campul destinatie al Move-ului dat ca argument. applyMove() e intentionat sa se foloseasca in pereche cu undoMove().
+
+
+	-> undoMove(Move move) -> primeste acelasi obiect mutare pasat functiei applyMove + piesa intoarsa de applyMove. Functia metodei este de a reintoarce tabla la configuratia originala
+
+
+	-> isKingChecked(Color kingColor) -> iti zice daca regele de culoarea kingColor se afla in sah. Ca sa afle acest lucru, face un poll cu toate piesele adverse si le calculeaza acestora toate mutarile posibile din configuratia curenta. Daca o anumita mutare a unei piese are ca patrat destinatie campului regelui, e clar ca regele se afla atunci in sah de la acea piesa. 
+
+	-> isKingBinded(Move move, Color kingColor) -> este important sa ne dam seama daca, facand o mutare, ne punem regele in pericol de sah. Altfel spus, se verifica daca regele este sau nu pe legatura. Ca sa verifice asta, metoda cheama applyMove cu move-ul dat ca argument, dupa aceea cheama isKingChecked(kingColor) ca sa vada daca regele e in sah, si dupa, indiferent de raspuns, cheama undoMove() ca sa reseteze la configuratia reala. Raspunsul lui isKingChecked() este si raspunsul metodei isKingBinded()
+
+	-> toString() -> printeaza tabla
+
+
+
+
+4) Table isi manageriaza tabla prin intermediul obiectelor de tip Square si Piece. Niciun obiect nu trebuie sa aiba informatii despre jocul actual, ele doar sunt constiente de reguli si de stapanul lor, Table. 
+
+-> Square descrie un patrat fix de pe tabla de sah. Inainte, in codul original, foloseam o matrice de tip Piece pentru reprezentarea tablei, dar dezavantajul era ca tineam prea multe informatii intr-un singur obiect Piece. Prin Square, am incercat sa abstractizez patratul de sah cu piesa pe doua nivele logice: patratul si piesa. Square stie la orice moment de timp urmatoarele informatii:
+
+	-> getPosition() -> stie ce patrat reprezinta (E2, A1, H7, etc.) . Un Square nu trebuie sa isi schimbe niciodata pozitia pe care o reprezinta, nici n-ar avea de ce. Intr-un meci, se schimba doar piesele de pe patrate, patratele in schimb stau pe loc.
+
+	-> hasPiece() -> iti spune daca patratul are la acel moment o piesa pe pozitia lui (returneaza TRUE sau FALSE). E super important ca, inainte sa apelam o functie pe o piesa, sa verificam daca patratul respectiv are piesa. (ALTFEL NULL POINTER EXCEPTION)
+
+	-> getPiece() -> de obicei, chemam functia dupa ce am verificat cu hasPiece() ca patratul are o piesa nenula. getPiece() returneaza un obiect de tip Piece sau null.
+	(DACA RETURNEAZA NULL SI TU APELEZI CEVA PE ACEA PIESA, AI NULL POINTER EXCEPTION)
+
+	-> setPiece() -> exact cum am spus, un patrat doar schimba piesele cu alt patrat. De exemplu, in updateTable() de pe Table folosim setPiece() ca sa interschimbam piesele intre doua patrate FIXE.
+
+
+
+-> Piece reprezinta clasa care descrie o piesa de joc. In general, fiecare piesa are regulile ei, dar toate implementeaza un comportament comun. Important si foarte important de retinut este ca o piesa NU STIE niciodata unde se afla pe tabla. O piesa nu isi stie niciodata POZITIA actuala. Ea exista si intruchipeaza regulile de mutare doar. Din nou, e mai bine asa pentru ca daca faceam o mutare, trebuia sa updatam informatia si pe piesa respectiva. Prea multe variabile de sincronizat => risc mai mare de erori.
+
+	-> ArrayList<Move> searchMoves(int src) -> la acest apel, piesa isi primeste pozitia actuala. Piesa se uita la configuratia tablei (getTable().getSquares() ca sa faca asta) si transmite inapoi toate mutarile valide pe care le poate face in acel moment. Mutarile invalide (acelea care ignora ca regele este in sah) sunt filtrate tot in functie.
+
+
+	-> isChecking(int src, int king) -> calculeaza toate mutarile pe care le poate face din pozitia src si verifica daca vreuna dintre ele ataca direct regele de pe pozitia king. Intoarce doar TRUE sau FALSE
+
+
+
+______________________________________________________________
+
+Recomandari
+
+-> daca se doreste a se extinde acest cod, inainte de a implementa noi metode sau noi variabile, vezi daca nu poti deduce unele chestii folosind functiile deja existente.
+
+De exemplu, sah mat. Sah mat poti sa il deduci daca vezi ca nicio piesa de o anumita culoare nu mai are o mutare valida, iar regele tau este in sah. 
+
+
+
+-> a se folosi cat mai putine variabile. daca e nevoie de informatie in plus de retinut (exemplu, istoric), mai bine se face o clasa separata cu responsabilitatile ei.
+
+
