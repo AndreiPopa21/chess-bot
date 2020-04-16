@@ -28,71 +28,57 @@ public final class MiniMax {
 
     public static void moveBlack(){
         int blackKnight = -1 ;
-        for (Map.Entry<Integer,Square> i : GameManager.getTable().getSquares().entrySet())
-        {
-            Square elem = i.getValue();
-            if (elem.hasPiece())
-            {
-                System.out.println(balck_piece[index_black]);
-                if(elem.getPiece().getName().equals(balck_piece[index_black]))
-                {
-                    blackKnight = i.getKey();
-                }
-
-            }
-        }
-
-        if (blackKnight == -1)
-        {
-            index_black++;
-            System.out.println(index_black);
-            if (index_black <= balck_piece.length)
-                moveBlack();
-            else
-                System.out.println("1-0 {Black resigns}");
-        }
-        int index;
+        boolean found = false;
         ArrayList<Move> posibilMoves = new ArrayList<Move>();
-        if (GameManager.getTable().getSquares().get(blackKnight) == null) {
-            System.out.println("[minimax] Is null get");
-            moveBlack();
-        }else if (GameManager.getTable().getSquares().get(blackKnight).getPiece() == null){
-            System.out.println("[minimax] Is null getPiece");
-            moveBlack();
-        }else if ((posibilMoves = GameManager.getTable().getSquares().get(blackKnight).getPiece().searchMoves(blackKnight)) == null){
-            System.out.println("[minimax] makIs null searchMove");
-            moveBlack();
+        while ((index_black < balck_piece.length)&&(!found))
+        {
+            for (Map.Entry<Integer,Square> i : GameManager.getTable().getSquares().entrySet())
+            {
+                Square elem = i.getValue();
+                if (elem.hasPiece())
+                {
+                    System.out.println(balck_piece[index_black]);
+                    if(elem.getPiece().getName().equals(balck_piece[index_black]))
+                    {
+                        blackKnight = i.getKey();
+                        posibilMoves = GameManager.getTable().getSquares().get(blackKnight).getPiece().searchMoves(blackKnight);
+                        if (posibilMoves.size() != 0)
+                        {
+                            found = true;
+                            break ;
+                        }
+
+                    }
+
+                }
+            }
+            if (found)
+            {
+                break;
+            }
+            index_black++;
         }
-        //    posibilMoves = GameManager.getTable().getSquares().get(blackKnight).getPiece().searchMoves(blackKnight);
+
+        if (index_black == balck_piece.length)
+        {
+            Sender.resignPrint();
+            return;
+        }
+
+
+        posibilMoves = GameManager.getTable().getSquares().get(blackKnight).getPiece().searchMoves(blackKnight);
+        int index;
 
         if (posibilMoves.size()!= 0 ) {
             index = new Random().nextInt(posibilMoves.size());
+
             GameManager.record(posibilMoves.get(index));
             GameManager.getTable().updateTable(posibilMoves.get(index));
             System.out.println(GameManager.toStringHistory());
             GameManager.printTable();
             Sender.parserMove(posibilMoves.get(index));
-        }else
-        {
-            System.out.println("A intrat in black +++");
-            index_black++;
-            System.out.println(index_black);
-            if (index_black < balck_piece.length)
-                moveBlack();
-            else
-                System.out.println("1-0 {Black resigns}");
         }
 
-      /*  if(whiteHorse.getAllPossibleMoves() != null){
-            ArrayList<String> whiteHorseMoves = whiteHorse.getAllPossibleMoves();
-            int index = new Random().nextInt(whiteHorseMoves.size());
-            recv.table.move(whiteHorseMoves.get(index));
-            System.out.println("move " + whiteHorseMoves.get(index)) ;
-            System.out.flush();
-        }else{
-            //System.out.println("Calul alb a fost capturat");
-            System.out.println("0-1 {White resigns}");
-        }*/
     }
 
     public static void moveWhite() {
@@ -121,7 +107,8 @@ public final class MiniMax {
             System.out.println("Is null searchMove");
             moveBlack();
         }
-       // ArrayList<Move> posibilMoves = GameManager.getTable().getSquares().get(whiteKnight).getPiece().searchMoves(whiteKnight);
+
+        //posibilMoves = GameManager.getTable().getSquares().get(whiteKnight).getPiece().searchMoves(whiteKnight);
 
         if (posibilMoves.size() != 0) {
             index = new Random().nextInt(posibilMoves.size());

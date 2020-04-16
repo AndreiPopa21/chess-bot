@@ -4,8 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-import jdk.vm.ci.meta.Constant;
-
 public class Table {
 
     private HashMap<Integer,Square> squaresMap = new HashMap<>();

@@ -10,707 +10,976 @@ recognized 'normal' (-1) as variant normal
 GameEnds(0, (null), 2)
 shuffleOpenings = 0
 StartChildProcess (dir=".") make run
-92 >first : xboard
+89 >first : xboard
 protover 2
-94 <first : make[1]: Entering directory '/home/cristi/Documents/Anul 2/Sem 2/PA/Proiect PA/l2-pa-project-MSP-Band/Chess_MSP-Band/src'
-94 <first : javac Main.java
-566 <first : java Main
-10094 >first : new
+91 <first : make[1]: Entering directory '/home/cristi/Documents/Anul 2/Sem 2/PA/Proiect PA/l2-pa-project-MSP-Band/Chess_MSP-Band/src'
+91 <first : javac Main.java
+635 <first : java Main
+10090 >first : new
 random
-10094 >first : level 0 5 2
-10094 >first : post
-10094 >first : hard
-10095 <first : feature sigint=0 sigterm=0 done=1 colors=0
-10095 >first : accepted sigint
-10095 >first : accepted sigterm
-10095 >first : accepted done
-10095 >first : accepted colors
+10090 >first : level 0 5 2
+10090 >first : post
+10090 >first : hard
+10091 <first : feature sigint=0 sigterm=0 done=1 colors=0
+10091 >first : accepted sigint
+10091 >first : accepted sigterm
+10091 >first : accepted done
+10091 >first : accepted colors
 nps: w=-1, b=-1
 nps: w=-1, b=-1
-21332 >first : time 30000
-21332 >first : otim 30200
+19062 >first : time 30000
+19062 >first : otim 30200
 book hit = (NULL)
-21332 >first : c2c3
-21337 <first : n
-21337 <first : n
-21337 <first : n
-21337 <first : n
-21337 <first : n
-21337 <first : n
-21337 <first : n
-21337 <first : n
-21337 <first : n
-21337 <first : n
-21337 <first : n
-21337 <first : n
-21337 <first : n
-21337 <first : n
-21337 <first : n
-21338 <first : n
-21338 <first : n
-21338 <first : n
-21338 <first : n
-21338 <first : n
-21338 <first : n
-21338 <first : n
-21338 <first : n
-21338 <first : n
-21338 <first : n
-21338 <first : n
-21338 <first : n
-21338 <first : n
-21338 <first : n
-21338 <first : n
-21338 <first : n
-21338 <first : n
-21374 <first : 
-21374 <first : R P - - - - p r 
-21374 <first : N P - - - - p - 
-21374 <first : B - P - - n p b 
-21374 <first : Q P - - - - p q 
-21374 <first : K P - - - - p k 
-21374 <first : B P - - - - p b 
-21374 <first : N P - - - - p n 
-21374 <first : R P - - - - p r 
-21374 <first : 
-21397 <first : move b8c6
-22555 >first : time 30193
-22555 >first : otim 30284
+19062 >first : c2c3
+19093 <first : [GameManager] Valid Move: c2c3
+19093 <first : [GameManager] Valid Move: c2c4
+19094 <first : n
+19094 <first : n
+19094 <first : n
+19094 <first : n
+19094 <first : n
+19094 <first : n
+19122 <first : Pc2c3 ng8f6 
+19125 <first : 
+19125 <first : R P - - - - p r 
+19125 <first : N P - - - - p n 
+19125 <first : B - P - - - p b 
+19125 <first : Q P - - - - p q 
+19125 <first : K P - - - - p k 
+19125 <first : B P - - - n p b 
+19125 <first : N P - - - - p - 
+19125 <first : R P - - - - p r 
+19125 <first : 
+19133 <first : move g8f6
+20597 >first : time 30192
+20598 >first : otim 30253
 book hit = (NULL)
-22555 >first : d1b3
-22557 <first : n
-22557 <first : n
-22557 <first : n
-22557 <first : n
-22557 <first : n
-22557 <first : n
-22557 <first : n
-22557 <first : n
-22557 <first : n
-22557 <first : n
-22557 <first : n
-22557 <first : n
-22557 <first : n
-22557 <first : n
-22557 <first : n
-22558 <first : n
-22558 <first : n
-22558 <first : n
-22558 <first : n
-22558 <first : n
-22558 <first : n
-22558 <first : n
-22558 <first : n
-22559 <first : n
-22559 <first : n
-22559 <first : n
-22559 <first : n
-22559 <first : n
-22559 <first : n
-22559 <first : n
-22559 <first : n
-22559 <first : n
-22560 <first : 
-22560 <first : R P - - - - p r 
-22560 <first : N P Q - - - p - 
-22560 <first : B - P - - - p b 
-22560 <first : - P - n - - p q 
-22560 <first : K P - - - - p k 
-22560 <first : B P - - - - p b 
-22560 <first : N P - - - - p n 
-22560 <first : R P - - - - p r 
-22560 <first : 
-22560 <first : move c6d4
-23935 >first : time 30393
-23935 >first : otim 30346
+20598 >first : d1b3
+20599 <first : [GameManager] Valid Move: d1c2
+20600 <first : [GameManager] Valid Move: d1b3
+20600 <first : [GameManager] Valid Move: d1a4
+20600 <first : n
+20602 <first : Pc2c3 ng8f6 Qd1b3 nf6g8 
+20602 <first : 
+20602 <first : R P - - - - p r 
+20602 <first : N P Q - - - p n 
+20602 <first : B - P - - - p b 
+20602 <first : - P - - - - p q 
+20602 <first : K P - - - - p k 
+20602 <first : B P - - - - p b 
+20602 <first : N P - - - - p n 
+20602 <first : R P - - - - p r 
+20602 <first : 
+20602 <first : move f6g8
+21650 >first : time 30392
+21650 >first : otim 30348
 book hit = (NULL)
-23935 >first : b3c4
-23937 <first : n
-23937 <first : n
-23937 <first : n
-23937 <first : n
-23937 <first : n
-23937 <first : n
-23937 <first : n
-23937 <first : n
-23937 <first : n
-23937 <first : n
-23937 <first : n
-23937 <first : n
-23937 <first : n
-23939 <first : n
-23939 <first : n
-23939 <first : n
-23939 <first : n
-23939 <first : n
-23939 <first : n
-23939 <first : n
-23939 <first : n
-23939 <first : n
-23939 <first : n
-23939 <first : n
-23939 <first : n
-23939 <first : n
-23939 <first : n
-23939 <first : n
-23939 <first : n
-23939 <first : n
-23939 <first : n
-23939 <first : n
-23940 <first : 
-23940 <first : R P - - - - p r 
-23940 <first : N P - - - - p - 
-23940 <first : B - P Q - - p b 
-23940 <first : - P - - - - p q 
-23940 <first : K n - - - - p k 
-23940 <first : B P - - - - p b 
-23940 <first : N P - - - - p n 
-23940 <first : R P - - - - p r 
-23940 <first : 
-23940 <first : move d4e2
-27227 >first : time 30592
-27227 >first : otim 30218
+21650 >first : b3a4
+21654 <first : [GameManager] Valid Move: b3a3
+21655 <first : [GameManager] Valid Move: b3a4
+21655 <first : [GameManager] Valid Move: b3b4
+21655 <first : [GameManager] Valid Move: b3b5
+21655 <first : [GameManager] Valid Move: b3b6
+21655 <first : [GameManager] Valid Move: b3b7
+21655 <first : [GameManager] Valid Move: b3c4
+21655 <first : [GameManager] Valid Move: b3d5
+21655 <first : [GameManager] Valid Move: b3e6
+21655 <first : [GameManager] Valid Move: b3f7
+21655 <first : [GameManager] Valid Move: b3c2
+21655 <first : [GameManager] Valid Move: b3d1
+21655 <first : n
+21655 <first : n
+21655 <first : n
+21655 <first : n
+21655 <first : n
+21655 <first : n
+21655 <first : Pc2c3 ng8f6 Qd1b3 nf6g8 Qb3a4 ng8h6 
+21656 <first : 
+21656 <first : R P - Q - - p r 
+21656 <first : N P - - - - p n 
+21656 <first : B - P - - - p b 
+21656 <first : - P - - - - p q 
+21656 <first : K P - - - - p k 
+21656 <first : B P - - - - p b 
+21656 <first : N P - - - - p - 
+21656 <first : R P - - - n p r 
+21656 <first : 
+21656 <first : move g8h6
+22642 >first : time 30591
+22642 >first : otim 30450
 book hit = (NULL)
-27227 >first : c4e2
-27232 <first : n
-27232 <first : n
-27232 <first : n
-27232 <first : n
-27232 <first : n
-27232 <first : n
-27232 <first : n
-27232 <first : n
-27232 <first : n
-27232 <first : n
-27232 <first : n
-27232 <first : n
-27232 <first : n
-27232 <first : n
-27232 <first : n
-27232 <first : n
-27232 <first : n
-27232 <first : n
-27232 <first : n
-27232 <first : n
-27232 <first : n
-27232 <first : n
-27232 <first : n
-27232 <first : n
-27232 <first : n
-27232 <first : n
-27232 <first : n
-27232 <first : n
-27232 <first : n
-27232 <first : n
-27233 <first : 
-27233 <first : R P - - - - p r 
-27233 <first : N P - - - - p - 
-27233 <first : B - P - - - p b 
-27233 <first : - P - - - - p q 
-27233 <first : K Q - - - - p k 
-27233 <first : B P - - - n p b 
-27233 <first : N P - - - - p - 
-27233 <first : R P - - - - p r 
-27233 <first : 
-27234 <first : move g8f6
-28467 >first : time 30791
-28467 >first : otim 30294
+22642 >first : a4d4
+22647 <first : [GameManager] Valid Move: a4a3
+22647 <first : [GameManager] Valid Move: a4a5
+22647 <first : [GameManager] Valid Move: a4a6
+22647 <first : [GameManager] Valid Move: a4a7
+22647 <first : [GameManager] Valid Move: a4b5
+22647 <first : [GameManager] Valid Move: a4c6
+22647 <first : [GameManager] Valid Move: a4d7
+22647 <first : [GameManager] Valid Move: a4b4
+22647 <first : [GameManager] Valid Move: a4c4
+22647 <first : [GameManager] Valid Move: a4d4
+22647 <first : [GameManager] Valid Move: a4e4
+22647 <first : [GameManager] Valid Move: a4f4
+22647 <first : [GameManager] Valid Move: a4g4
+22647 <first : [GameManager] Valid Move: a4h4
+22647 <first : [GameManager] Valid Move: a4b3
+22647 <first : [GameManager] Valid Move: a4c2
+22647 <first : [GameManager] Valid Move: a4d1
+22647 <first : n
+22647 <first : n
+22647 <first : n
+22647 <first : n
+22647 <first : n
+22647 <first : n
+22648 <first : n
+22649 <first : n
+22649 <first : Pc2c3 ng8f6 Qd1b3 nf6g8 Qb3a4 ng8h6 Qa4d4 nh6g8 
+22649 <first : 
+22649 <first : R P - - - - p r 
+22649 <first : N P - - - - p n 
+22649 <first : B - P - - - p b 
+22649 <first : - P - Q - - p q 
+22649 <first : K P - - - - p k 
+22649 <first : B P - - - - p b 
+22649 <first : N P - - - - p n 
+22649 <first : R P - - - - p r 
+22649 <first : 
+22649 <first : move h6g8
+23950 >first : time 30790
+23950 >first : otim 30520
 book hit = (NULL)
-28467 >first : e2e5
-28469 <first : n
-28469 <first : n
-28469 <first : n
-28469 <first : n
-28469 <first : n
-28469 <first : n
-28469 <first : n
-28469 <first : n
-28469 <first : n
-28469 <first : n
-28469 <first : n
-28469 <first : n
-28469 <first : n
-28469 <first : n
-28469 <first : n
-28469 <first : n
-28469 <first : n
-28469 <first : n
-28469 <first : n
-28470 <first : n
-28470 <first : n
-28470 <first : n
-28470 <first : n
-28470 <first : n
-28470 <first : n
-28470 <first : n
-28470 <first : n
-28470 <first : n
-28470 <first : n
-28470 <first : n
-28471 <first : 
-28471 <first : R P - - - - p r 
-28471 <first : N P - - - - p - 
-28471 <first : B - P - - - p b 
-28471 <first : - P - - - - p q 
-28471 <first : K - - - Q - p k 
-28471 <first : B P - - - - p b 
-28471 <first : N P - - - - p - 
-28471 <first : R P - - n - p r 
-28471 <first : 
-28471 <first : move f6h5
-29951 >first : time 30991
-29951 >first : otim 30346
+23950 >first : d4f4
+23953 <first : [GameManager] Valid Move: d4d3
+23953 <first : [GameManager] Valid Move: d4c4
+23953 <first : [GameManager] Valid Move: d4b4
+23953 <first : [GameManager] Valid Move: d4a4
+23953 <first : [GameManager] Valid Move: d4c5
+23953 <first : [GameManager] Valid Move: d4b6
+23953 <first : [GameManager] Valid Move: d4a7
+23953 <first : [GameManager] Valid Move: d4d5
+23954 <first : [GameManager] Valid Move: d4d6
+23954 <first : [GameManager] Valid Move: d4d7
+23954 <first : [GameManager] Valid Move: d4e5
+23954 <first : [GameManager] Valid Move: d4f6
+23954 <first : [GameManager] Valid Move: d4g7
+23954 <first : [GameManager] Valid Move: d4e4
+23954 <first : [GameManager] Valid Move: d4f4
+23954 <first : [GameManager] Valid Move: d4g4
+23954 <first : [GameManager] Valid Move: d4h4
+23954 <first : [GameManager] Valid Move: d4e3
+23955 <first : n
+23955 <first : n
+23955 <first : n
+23955 <first : n
+23955 <first : n
+23955 <first : n
+23955 <first : n
+23955 <first : Pc2c3 ng8f6 Qd1b3 nf6g8 Qb3a4 ng8h6 Qa4d4 nh6g8 Qd4f4 ng8h6 
+23956 <first : 
+23956 <first : R P - - - - p r 
+23956 <first : N P - - - - p n 
+23956 <first : B - P - - - p b 
+23956 <first : - P - - - - p q 
+23956 <first : K P - - - - p k 
+23956 <first : B P - Q - - p b 
+23956 <first : N P - - - - p - 
+23956 <first : R P - - - n p r 
+23956 <first : 
+23956 <first : move g8h6
+24990 >first : time 30990
+24990 >first : otim 30617
 book hit = (NULL)
-29951 >first : e5b5
-29955 <first : n
-29955 <first : n
-29955 <first : n
-29955 <first : n
-29955 <first : n
-29955 <first : n
-29955 <first : n
-29955 <first : n
-29955 <first : n
-29956 <first : n
-29956 <first : n
-29956 <first : n
-29956 <first : n
-29956 <first : n
-29957 <first : n
-29957 <first : n
-29957 <first : n
-29957 <first : n
-29957 <first : n
-29957 <first : n
-29957 <first : n
-29957 <first : n
-29957 <first : n
-29957 <first : n
-29958 <first : n
-29958 <first : n
-29958 <first : n
-29958 <first : n
-29958 <first : n
-29958 <first : n
-29960 <first : 
-29960 <first : R P - - - - p r 
-29960 <first : N P - - Q - p - 
-29960 <first : B - P - - - p b 
-29960 <first : - P - - - - p q 
-29960 <first : K - - - - - p k 
-29961 <first : B P - n - - p b 
-29961 <first : N P - - - - p - 
-29961 <first : R P - - - - p r 
-29961 <first : 
-29961 <first : move h5f4
-31287 >first : time 31190
-31287 >first : otim 30414
+24990 >first : f4f5
+24992 <first : [GameManager] Valid Move: f4f3
+24992 <first : [GameManager] Valid Move: f4e3
+24992 <first : [GameManager] Valid Move: f4e4
+24992 <first : [GameManager] Valid Move: f4d4
+24992 <first : [GameManager] Valid Move: f4c4
+24993 <first : [GameManager] Valid Move: f4b4
+24994 <first : [GameManager] Valid Move: f4a4
+24994 <first : [GameManager] Valid Move: f4e5
+24994 <first : [GameManager] Valid Move: f4d6
+24994 <first : [GameManager] Valid Move: f4c7
+24994 <first : [GameManager] Valid Move: f4f5
+24994 <first : [GameManager] Valid Move: f4f6
+24994 <first : [GameManager] Valid Move: f4f7
+24994 <first : [GameManager] Valid Move: f4g5
+24994 <first : [GameManager] Valid Move: f4h6
+24994 <first : [GameManager] Valid Move: f4g4
+24994 <first : [GameManager] Valid Move: f4h4
+24994 <first : [GameManager] Valid Move: f4g3
+24994 <first : n
+24994 <first : n
+24994 <first : n
+24994 <first : n
+24994 <first : n
+24994 <first : n
+24994 <first : n
+24994 <first : n
+24994 <first : n
+24995 <first : Pc2c3 ng8f6 Qd1b3 nf6g8 Qb3a4 ng8h6 Qa4d4 nh6g8 Qd4f4 ng8h6 Qf4f5 nh6f5 
+24995 <first : 
+24995 <first : R P - - - - p r 
+24995 <first : N P - - - - p n 
+24995 <first : B - P - - - p b 
+24995 <first : - P - - - - p q 
+24995 <first : K P - - - - p k 
+24995 <first : B P - - n - p b 
+24995 <first : N P - - - - p - 
+24995 <first : R P - - - - p r 
+24995 <first : 
+24995 <first : move h6f5
+27009 >first : time 31189
+27009 >first : otim 30615
 book hit = (NULL)
-31287 >first : b5c6
-31289 <first : n
-31289 <first : n
-31289 <first : n
-31289 <first : n
-31289 <first : n
-31289 <first : n
-31289 <first : n
-31289 <first : n
-31289 <first : n
-31289 <first : n
-31289 <first : n
-31289 <first : n
-31289 <first : n
-31289 <first : n
-31289 <first : n
-31289 <first : n
-31289 <first : n
-31289 <first : n
-31289 <first : n
-31289 <first : n
-31289 <first : n
-31289 <first : n
-31289 <first : n
-31289 <first : n
-31289 <first : n
-31289 <first : n
-31289 <first : n
-31289 <first : n
-31289 <first : n
-31289 <first : n
-31291 <first : 
-31291 <first : R P - - - - p r 
-31291 <first : N P - - - - p - 
-31291 <first : B - P - - Q p b 
-31291 <first : - P - - - - p q 
-31291 <first : K n - - - - p k 
-31291 <first : B P - - - - p b 
-31291 <first : N P - - - - p - 
-31291 <first : R P - - - - p r 
-31291 <first : 
-31291 <first : move f4e2
-32562 >first : time 31389
-32563 >first : otim 30487
+27009 >first : d2d4
+27012 <first : [GameManager] Valid Move: d2d3
+27012 <first : [GameManager] Valid Move: d2d4
+27012 <first : n
+27013 <first : Pc2c3 ng8f6 Qd1b3 nf6g8 Qb3a4 ng8h6 Qa4d4 nh6g8 Qd4f4 ng8h6 Qf4f5 nh6f5 Pd2d4 nf5g3 
+27013 <first : 
+27013 <first : R P - - - - p r 
+27013 <first : N P - - - - p n 
+27013 <first : B - P - - - p b 
+27013 <first : - - - P - - p q 
+27014 <first : K P - - - - p k 
+27014 <first : B P - - - - p b 
+27014 <first : N P n - - - p - 
+27014 <first : R P - - - - p r 
+27014 <first : 
+27014 <first : move f5g3
+28321 >first : time 31389
+28322 >first : otim 30685
 book hit = (NULL)
-32563 >first : c6b6
-32565 <first : n
-32565 <first : n
-32565 <first : n
-32565 <first : n
-32565 <first : n
-32565 <first : n
-32565 <first : n
-32565 <first : n
-32565 <first : n
-32565 <first : n
-32565 <first : n
-32566 <first : n
-32566 <first : n
-32566 <first : n
-32566 <first : n
-32566 <first : n
-32566 <first : n
-32566 <first : n
-32566 <first : n
-32566 <first : n
-32566 <first : n
-32566 <first : n
-32566 <first : n
-32566 <first : n
-32566 <first : n
-32566 <first : n
-32566 <first : n
-32566 <first : n
-32566 <first : n
-32566 <first : n
-32568 <first : 
-32568 <first : R P - - - - p r 
-32568 <first : N P - - - Q p - 
-32568 <first : B - P - - - p b 
-32568 <first : - P - - - - p q 
-32568 <first : K - - - - - p k 
-32568 <first : B P - - - - p b 
-32568 <first : N P n - - - p - 
-32568 <first : R P - - - - p r 
-32568 <first : 
-32568 <first : move e2g3
-34043 >first : time 31589
-34043 >first : otim 30539
+28322 >first : f2g3
+28324 <first : [GameManager] Valid Move: f2f3
+28324 <first : [GameManager] Valid Move: f2f4
+28324 <first : [GameManager] Valid Move: f2g3
+28324 <first : n
+28324 <first : n
+28324 <first : n
+28324 <first : n
+28324 <first : n
+28324 <first : n
+28324 <first : n
+28324 <first : n
+28324 <first : n
+28324 <first : n
+28324 <first : n
+28324 <first : n
+28324 <first : n
+28324 <first : n
+28324 <first : n
+28324 <first : n
+28324 <first : n
+28324 <first : n
+28326 <first : Pc2c3 ng8f6 Qd1b3 nf6g8 Qb3a4 ng8h6 Qa4d4 nh6g8 Qd4f4 ng8h6 Qf4f5 nh6f5 Pd2d4 nf5g3 Pf2g3 nb8c6 
+28327 <first : 
+28327 <first : R P - - - - p r 
+28327 <first : N P - - - - p - 
+28327 <first : B - P - - n p b 
+28327 <first : - - - P - - p q 
+28327 <first : K P - - - - p k 
+28327 <first : B - - - - - p b 
+28327 <first : N P P - - - p - 
+28327 <first : R P - - - - p r 
+28327 <first : 
+28327 <first : move b8c6
+30133 >first : time 31588
+30134 >first : otim 30704
 book hit = (NULL)
-34043 >first : b6b7
-34045 <first : n
-34045 <first : n
-34045 <first : n
-34045 <first : n
-34045 <first : n
-34045 <first : n
-34045 <first : n
-34045 <first : n
-34045 <first : n
-34045 <first : n
-34045 <first : n
-34045 <first : n
-34045 <first : n
-34045 <first : n
-34045 <first : n
-34045 <first : n
-34045 <first : n
-34045 <first : n
-34045 <first : n
-34045 <first : n
-34045 <first : n
-34045 <first : n
-34045 <first : n
-34045 <first : n
-34045 <first : n
-34045 <first : n
-34045 <first : n
-34045 <first : n
-34045 <first : n
-34047 <first : 
-34047 <first : R P - - - - p r 
-34047 <first : N P - - - - Q - 
-34047 <first : B - P - - - p b 
-34047 <first : - P - - - - p q 
-34047 <first : K - - n - - p k 
-34047 <first : B P - - - - p b 
-34047 <first : N P - - - - p - 
-34047 <first : R P - - - - p r 
-34047 <first : 
-34047 <first : move g3e4
-35046 >first : time 31788
-35046 >first : otim 30639
+30134 >first : d4d5
+30136 <first : [GameManager] Valid Move: d4d5
+30137 <first : n
+30137 <first : n
+30137 <first : n
+30137 <first : n
+30137 <first : n
+30137 <first : n
+30137 <first : n
+30137 <first : n
+30137 <first : n
+30137 <first : n
+30137 <first : n
+30137 <first : n
+30137 <first : n
+30137 <first : n
+30137 <first : n
+30137 <first : n
+30137 <first : n
+30137 <first : n
+30137 <first : n
+30137 <first : n
+30138 <first : Pc2c3 ng8f6 Qd1b3 nf6g8 Qb3a4 ng8h6 Qa4d4 nh6g8 Qd4f4 ng8h6 Qf4f5 nh6f5 Pd2d4 nf5g3 Pf2g3 nb8c6 Pd4d5 nc6e5 
+30138 <first : 
+30138 <first : R P - - - - p r 
+30138 <first : N P - - - - p - 
+30138 <first : B - P - - - p b 
+30138 <first : - - - - P - p q 
+30138 <first : K P - - n - p k 
+30138 <first : B - - - - - p b 
+30138 <first : N P P - - - p - 
+30138 <first : R P - - - - p r 
+30138 <first : 
+30138 <first : move c6e5
+32762 >first : time 31787
+32762 >first : otim 30642
 book hit = (NULL)
-35046 >first : b7a7
-35047 <first : n
-35047 <first : n
-35047 <first : n
-35047 <first : n
-35048 <first : n
-35048 <first : n
-35048 <first : n
-35048 <first : n
-35048 <first : n
-35048 <first : n
-35048 <first : n
-35048 <first : n
-35048 <first : n
-35048 <first : n
-35048 <first : n
-35048 <first : n
-35048 <first : n
-35048 <first : n
-35048 <first : n
-35048 <first : n
-35048 <first : n
-35048 <first : n
-35048 <first : n
-35048 <first : n
-35048 <first : n
-35048 <first : n
-35048 <first : n
-35048 <first : n
-35048 <first : 
-35048 <first : R P - - - - Q r 
-35048 <first : N P - - - - - - 
-35048 <first : B - P - - - p b 
-35048 <first : - P - - - n p q 
-35048 <first : K - - - - - p k 
-35048 <first : B P - - - - p b 
-35048 <first : N P - - - - p - 
-35048 <first : R P - - - - p r 
-35048 <first : 
-35048 <first : move e4d6
-36118 >first : time 31988
-36119 >first : otim 30732
+32762 >first : c1e3
+32765 <first : [GameManager] Valid Move: c1d2
+32765 <first : [GameManager] Valid Move: c1e3
+32765 <first : [GameManager] Valid Move: c1f4
+32765 <first : [GameManager] Valid Move: c1g5
+32765 <first : [GameManager] Valid Move: c1h6
+32765 <first : n
+32765 <first : n
+32765 <first : n
+32765 <first : n
+32765 <first : n
+32765 <first : n
+32765 <first : n
+32765 <first : n
+32765 <first : n
+32765 <first : n
+32765 <first : n
+32765 <first : n
+32765 <first : n
+32765 <first : n
+32765 <first : n
+32765 <first : n
+32765 <first : n
+32765 <first : n
+32765 <first : n
+32765 <first : n
+32765 <first : n
+32765 <first : n
+32765 <first : n
+32765 <first : n
+32765 <first : n
+32765 <first : n
+32765 <first : n
+32767 <first : Pc2c3 ng8f6 Qd1b3 nf6g8 Qb3a4 ng8h6 Qa4d4 nh6g8 Qd4f4 ng8h6 Qf4f5 nh6f5 Pd2d4 nf5g3 Pf2g3 nb8c6 Pd4d5 nc6e5 Bc1e3 ne5c6 
+32767 <first : 
+32767 <first : R P - - - - p r 
+32767 <first : N P - - - - p - 
+32767 <first : - - P - - n p b 
+32767 <first : - - - - P - p q 
+32767 <first : K P B - - - p k 
+32767 <first : B - - - - - p b 
+32767 <first : N P P - - - p - 
+32767 <first : R P - - - - p r 
+32767 <first : 
+32767 <first : move e5c6
+34705 >first : time 31987
+34706 >first : otim 30648
 book hit = (NULL)
-36119 >first : a7c7
-36120 <first : n
-36121 <first : n
-36121 <first : n
-36121 <first : n
-36121 <first : n
-36121 <first : n
-36121 <first : n
-36121 <first : n
-36121 <first : n
-36121 <first : n
-36121 <first : n
-36121 <first : n
-36121 <first : n
-36121 <first : n
-36121 <first : n
-36121 <first : n
-36121 <first : n
-36121 <first : n
-36121 <first : n
-36121 <first : n
-36121 <first : n
-36121 <first : n
-36121 <first : n
-36121 <first : n
-36121 <first : n
-36121 <first : n
-36121 <first : n
-36121 <first : 
-36121 <first : R P - - - - - r 
-36121 <first : N P - - - - n - 
-36121 <first : B - P - - - Q b 
-36121 <first : - P - - - - p q 
-36121 <first : K - - - - - p k 
-36121 <first : B P - - - - p b 
-36121 <first : N P - - - - p - 
-36121 <first : R P - - - - p r 
-36121 <first : 
-36121 <first : move d6b7
-37142 >first : time 32188
-37143 >first : otim 30830
+34706 >first : e3f4
+34708 <first : [GameManager] Valid Move: e3f2
+34708 <first : [GameManager] Valid Move: e3d2
+34708 <first : [GameManager] Valid Move: e3c1
+34708 <first : [GameManager] Valid Move: e3d4
+34708 <first : [GameManager] Valid Move: e3c5
+34708 <first : [GameManager] Valid Move: e3b6
+34708 <first : [GameManager] Valid Move: e3a7
+34708 <first : [GameManager] Valid Move: e3f4
+34708 <first : [GameManager] Valid Move: e3g5
+34708 <first : [GameManager] Valid Move: e3h6
+34708 <first : n
+34708 <first : n
+34708 <first : n
+34708 <first : n
+34708 <first : n
+34708 <first : n
+34708 <first : n
+34709 <first : n
+34709 <first : n
+34709 <first : n
+34709 <first : n
+34709 <first : n
+34709 <first : n
+34709 <first : n
+34709 <first : n
+34709 <first : n
+34709 <first : n
+34709 <first : n
+34709 <first : n
+34709 <first : n
+34710 <first : Pc2c3 ng8f6 Qd1b3 nf6g8 Qb3a4 ng8h6 Qa4d4 nh6g8 Qd4f4 ng8h6 Qf4f5 nh6f5 Pd2d4 nf5g3 Pf2g3 nb8c6 Pd4d5 nc6e5 Bc1e3 ne5c6 Be3f4 nc6b8 
+34710 <first : 
+34710 <first : R P - - - - p r 
+34710 <first : N P - - - - p n 
+34710 <first : - - P - - - p b 
+34710 <first : - - - - P - p q 
+34710 <first : K P - - - - p k 
+34710 <first : B - - B - - p b 
+34711 <first : N P P - - - p - 
+34711 <first : R P - - - - p r 
+34711 <first : 
+34711 <first : move c6b8
+37053 >first : time 32186
+37053 >first : otim 30614
 book hit = (NULL)
-37143 >first : c7b7
-37145 <first : n
-37145 <first : n
-37145 <first : n
-37145 <first : n
-37145 <first : n
-37145 <first : n
-37145 <first : n
-37145 <first : n
-37145 <first : n
-37145 <first : n
-37145 <first : n
-37145 <first : n
-37145 <first : n
-37145 <first : n
-37145 <first : n
-37145 <first : n
-37145 <first : n
-37145 <first : n
-37145 <first : n
-37145 <first : n
-37145 <first : n
-37145 <first : n
-37145 <first : n
-37145 <first : n
-37145 <first : n
-37145 <first : n
-37145 <first : 1
-37145 <first : r
-37145 <first : r
-37145 <first : r
-37145 <first : r
-37145 <first : r
-37145 <first : r
-37145 <first : r
-37145 <first : r
-37145 <first : r
-37145 <first : r
-37145 <first : r
-37145 <first : r
-37145 <first : r
-37145 <first : r
-37145 <first : r
-37145 <first : r
-37145 <first : r
-37145 <first : r
-37145 <first : r
-37145 <first : r
-37145 <first : r
-37145 <first : r
-37145 <first : r
-37145 <first : r
-37145 <first : r
-37145 <first : r
-37146 <first : 
-37146 <first : R P - - r - - - 
-37146 <first : N P - - - - Q - 
-37146 <first : B - P - - - - b 
-37146 <first : - P - - - - p q 
-37146 <first : K - - - - - p k 
-37146 <first : B P - - - - p b 
-37146 <first : N P - - - - p - 
-37146 <first : R P - - - - p r 
-37146 <first : 
-37146 <first : move a8a5
-37239 <first : Is null get
-37239 <first : r
-37239 <first : r
-37239 <first : r
-37239 <first : r
-37239 <first : r
-37239 <first : r
-37239 <first : r
-37239 <first : r
-37239 <first : r
-37239 <first : r
-37239 <first : r
-37239 <first : r
-37239 <first : r
-37239 <first : r
-37239 <first : r
-37239 <first : r
-37239 <first : r
-37239 <first : r
-37239 <first : r
-37239 <first : r
-37239 <first : r
-37239 <first : r
-37239 <first : r
-37239 <first : r
-37239 <first : r
-37239 <first : r
-37239 <first : 
-37239 <first : R P - r - - - - 
-37239 <first : N P - - - - Q - 
-37239 <first : B - P - - - - b 
-37239 <first : - P - - - - p q 
-37239 <first : K - - - - - p k 
-37239 <first : B P - - - - p b 
-37239 <first : N P - - - - p - 
-37239 <first : R P - - - - p r 
-37239 <first : 
-37239 <first : move a5a4
-Ignoring move out of turn by first, gameMode 2, forwardMost 24
-37239 <first : A intrat in black +++
-37239 <first : 2
-37239 <first : q
-37239 <first : q
-37239 <first : q
-37239 <first : q
-37239 <first : q
-37239 <first : q
-37239 <first : q
-37239 <first : q
-37239 <first : q
-37239 <first : q
-37239 <first : q
-37239 <first : q
-37239 <first : q
-37239 <first : q
-37239 <first : q
-37239 <first : q
-37239 <first : q
-37239 <first : q
-37239 <first : q
-37239 <first : q
-37239 <first : q
-37239 <first : q
-37239 <first : q
-37239 <first : q
-37239 <first : q
-37239 <first : q
-37239 <first : 
-37239 <first : R P - r - - - - 
-37239 <first : N P - - - - Q - 
-37239 <first : B - P - - - q b 
-37239 <first : - P - - - - p - 
-37239 <first : K - - - - - p k 
-37239 <first : B P - - - - p b 
-37239 <first : N P - - - - p - 
-37239 <first : R P - - - - p r 
-37239 <first : 
-37239 <first : move d8c7
-Ignoring move out of turn by first, gameMode 2, forwardMost 24
-38954 >first : time 32387
-38954 >first : otim 30850
+37053 >first : c3c4
+37056 <first : [GameManager] Valid Move: c3c4
+37056 <first : n
+37056 <first : n
+37056 <first : n
+37056 <first : n
+37056 <first : n
+37056 <first : n
+37056 <first : n
+37056 <first : n
+37056 <first : n
+37056 <first : n
+37056 <first : n
+37056 <first : n
+37056 <first : n
+37056 <first : n
+37056 <first : n
+37056 <first : n
+37056 <first : n
+37056 <first : n
+37056 <first : n
+37056 <first : Pc2c3 ng8f6 Qd1b3 nf6g8 Qb3a4 ng8h6 Qa4d4 nh6g8 Qd4f4 ng8h6 Qf4f5 nh6f5 Pd2d4 nf5g3 Pf2g3 nb8c6 Pd4d5 nc6e5 Bc1e3 ne5c6 Be3f4 nc6b8 Pc3c4 nb8c6 
+37057 <first : 
+37057 <first : R P - - - - p r 
+37057 <first : N P - - - - p - 
+37057 <first : - - - P - n p b 
+37057 <first : - - - - P - p q 
+37057 <first : K P - - - - p k 
+37057 <first : B - - B - - p b 
+37057 <first : N P P - - - p - 
+37057 <first : R P - - - - p r 
+37057 <first : 
+37057 <first : move b8c6
+38445 >first : time 32386
+38445 >first : otim 30675
 book hit = (NULL)
-38954 >first : b7e4
-38957 <first : q
-38957 <first : q
-38957 <first : q
-38957 <first : q
-38957 <first : q
-38957 <first : q
-38957 <first : q
-38957 <first : q
-38958 <first : q
-38958 <first : q
-38958 <first : q
-38958 <first : q
-38958 <first : q
-38958 <first : q
-38958 <first : q
-38958 <first : q
-38958 <first : q
-38958 <first : q
-38958 <first : q
-38958 <first : q
-38958 <first : q
-38958 <first : q
-38958 <first : q
-38958 <first : q
-38958 <first : q
-38958 <first : q
-38958 <first : 
-38958 <first : R P - r - - - - 
-38958 <first : N P - - - - - - 
-38958 <first : B - P q - - - b 
-38958 <first : - P - - - - p - 
-38958 <first : K - - Q - - p k 
-38958 <first : B P - - - - p b 
-38958 <first : N P - - - - p - 
-38958 <first : R P - - - - p r 
-38958 <first : 
-38958 <first : move c7c4
-GameEnds(29, xboard exit, 2)
-90815 >first : result * {xboard exit}
-90815 >first : force
-90815 >first : quit
+38445 >first : d5c6
+38446 <first : [GameManager] Valid Move: d5d6
+38447 <first : [GameManager] Valid Move: d5c6
+38447 <first : n
+38447 <first : n
+38447 <first : n
+38447 <first : n
+38447 <first : n
+38447 <first : n
+38447 <first : n
+38447 <first : n
+38447 <first : n
+38447 <first : n
+38447 <first : n
+38447 <first : n
+38447 <first : n
+38447 <first : n
+38447 <first : n
+38447 <first : n
+38447 <first : n
+38447 <first : n
+38447 <first : n
+38447 <first : n
+38447 <first : n
+38447 <first : n
+38447 <first : n
+38447 <first : n
+38447 <first : n
+38447 <first : n
+38447 <first : n
+38447 <first : n
+38447 <first : n
+38447 <first : r
+38447 <first : r
+38447 <first : r
+38447 <first : r
+38447 <first : r
+38447 <first : r
+38447 <first : r
+38447 <first : r
+38447 <first : r
+38447 <first : r
+38447 <first : r
+38447 <first : Pc2c3 ng8f6 Qd1b3 nf6g8 Qb3a4 ng8h6 Qa4d4 nh6g8 Qd4f4 ng8h6 Qf4f5 nh6f5 Pd2d4 nf5g3 Pf2g3 nb8c6 Pd4d5 nc6e5 Bc1e3 ne5c6 Be3f4 nc6b8 Pc3c4 nb8c6 Pd5c6 rh8g8 
+38448 <first : 
+38448 <first : R P - - - - p r 
+38448 <first : N P - - - - p - 
+38448 <first : - - - P - P p b 
+38448 <first : - - - - - - p q 
+38448 <first : K P - - - - p k 
+38448 <first : B - - B - - p b 
+38448 <first : N P P - - - p r 
+38448 <first : R P - - - - p - 
+38448 <first : 
+38448 <first : move h8g8
+41861 >first : time 32585
+41861 >first : otim 30534
+book hit = (NULL)
+41861 >first : f4e5
+41863 <first : [GameManager] Valid Move: f4e3
+41863 <first : [GameManager] Valid Move: f4d2
+41863 <first : [GameManager] Valid Move: f4c1
+41863 <first : [GameManager] Valid Move: f4e5
+41863 <first : [GameManager] Valid Move: f4d6
+41863 <first : [GameManager] Valid Move: f4c7
+41863 <first : [GameManager] Valid Move: f4g5
+41863 <first : [GameManager] Valid Move: f4h6
+41863 <first : r
+41863 <first : r
+41863 <first : r
+41863 <first : r
+41863 <first : r
+41863 <first : r
+41863 <first : r
+41863 <first : Pc2c3 ng8f6 Qd1b3 nf6g8 Qb3a4 ng8h6 Qa4d4 nh6g8 Qd4f4 ng8h6 Qf4f5 nh6f5 Pd2d4 nf5g3 Pf2g3 nb8c6 Pd4d5 nc6e5 Bc1e3 ne5c6 Be3f4 nc6b8 Pc3c4 nb8c6 Pd5c6 rh8g8 Bf4e5 rg8h8 
+41863 <first : 
+41863 <first : R P - - - - p r 
+41863 <first : N P - - - - p - 
+41863 <first : - - - P - P p b 
+41863 <first : - - - - - - p q 
+41863 <first : K P - - B - p k 
+41863 <first : B - - - - - p b 
+41863 <first : N P P - - - p - 
+41863 <first : R P - - - - p r 
+41863 <first : 
+41863 <first : move g8h8
+42917 >first : time 32785
+42917 >first : otim 30628
+book hit = (NULL)
+42917 >first : e5g7
+42920 <first : [GameManager] Valid Move: e5f4
+42920 <first : [GameManager] Valid Move: e5d4
+42920 <first : [GameManager] Valid Move: e5c3
+42920 <first : [GameManager] Valid Move: e5d6
+42920 <first : [GameManager] Valid Move: e5c7
+42920 <first : [GameManager] Valid Move: e5f6
+42920 <first : [GameManager] Valid Move: e5g7
+42920 <first : r
+42920 <first : r
+42920 <first : r
+42920 <first : r
+42920 <first : r
+42920 <first : r
+42920 <first : r
+42920 <first : r
+42920 <first : r
+42920 <first : r
+42920 <first : Pc2c3 ng8f6 Qd1b3 nf6g8 Qb3a4 ng8h6 Qa4d4 nh6g8 Qd4f4 ng8h6 Qf4f5 nh6f5 Pd2d4 nf5g3 Pf2g3 nb8c6 Pd4d5 nc6e5 Bc1e3 ne5c6 Be3f4 nc6b8 Pc3c4 nb8c6 Pd5c6 rh8g8 Bf4e5 rg8h8 Be5g7 rh8g8 
+42920 <first : 
+42920 <first : R P - - - - p r 
+42920 <first : N P - - - - p - 
+42920 <first : - - - P - P p b 
+42920 <first : - - - - - - p q 
+42920 <first : K P - - - - p k 
+42920 <first : B - - - - - p b 
+42920 <first : N P P - - - B r 
+42920 <first : R P - - - - p - 
+42920 <first : 
+42920 <first : move h8g8
+44317 >first : time 32985
+44317 >first : otim 30689
+book hit = (NULL)
+44317 >first : g7e5
+44319 <first : [GameManager] Valid Move: g7h6
+44319 <first : [GameManager] Valid Move: g7f6
+44319 <first : [GameManager] Valid Move: g7e5
+44319 <first : [GameManager] Valid Move: g7d4
+44319 <first : [GameManager] Valid Move: g7c3
+44319 <first : [GameManager] Valid Move: g7f8
+44319 <first : [GameManager] Valid Move: g7h8
+44319 <first : r
+44319 <first : r
+44319 <first : r
+44319 <first : r
+44319 <first : r
+44319 <first : r
+44319 <first : Pc2c3 ng8f6 Qd1b3 nf6g8 Qb3a4 ng8h6 Qa4d4 nh6g8 Qd4f4 ng8h6 Qf4f5 nh6f5 Pd2d4 nf5g3 Pf2g3 nb8c6 Pd4d5 nc6e5 Bc1e3 ne5c6 Be3f4 nc6b8 Pc3c4 nb8c6 Pd5c6 rh8g8 Bf4e5 rg8h8 Be5g7 rh8g8 Bg7e5 rg8g4 
+44319 <first : 
+44319 <first : R P - - - - p r 
+44319 <first : N P - - - - p - 
+44319 <first : - - - P - P p b 
+44319 <first : - - - - - - p q 
+44319 <first : K P - - B - p k 
+44319 <first : B - - - - - p b 
+44319 <first : N P P r - - - - 
+44319 <first : R P - - - - p - 
+44319 <first : 
+44320 <first : move g8g4
+45865 >first : time 33185
+45865 >first : otim 30734
+book hit = (NULL)
+45865 >first : e5g7
+45868 <first : [GameManager] Valid Move: e5f4
+45868 <first : [GameManager] Valid Move: e5d4
+45868 <first : [GameManager] Valid Move: e5c3
+45868 <first : [GameManager] Valid Move: e5d6
+45868 <first : [GameManager] Valid Move: e5c7
+45868 <first : [GameManager] Valid Move: e5f6
+45868 <first : [GameManager] Valid Move: e5g7
+45868 <first : [GameManager] Valid Move: e5h8
+45868 <first : r
+45868 <first : r
+45868 <first : r
+45868 <first : r
+45868 <first : r
+45868 <first : r
+45868 <first : Pc2c3 ng8f6 Qd1b3 nf6g8 Qb3a4 ng8h6 Qa4d4 nh6g8 Qd4f4 ng8h6 Qf4f5 nh6f5 Pd2d4 nf5g3 Pf2g3 nb8c6 Pd4d5 nc6e5 Bc1e3 ne5c6 Be3f4 nc6b8 Pc3c4 nb8c6 Pd5c6 rh8g8 Bf4e5 rg8h8 Be5g7 rh8g8 Bg7e5 rg8g4 Be5g7 rg4g7 
+45868 <first : 
+45868 <first : R P - - - - p r 
+45868 <first : N P - - - - p - 
+45868 <first : - - - P - P p b 
+45868 <first : - - - - - - p q 
+45868 <first : K P - - - - p k 
+45868 <first : B - - - - - p b 
+45868 <first : N P P - - - r - 
+45868 <first : R P - - - - p - 
+45868 <first : 
+45868 <first : move g4g7
+49581 >first : time 33384
+49581 >first : otim 30563
+book hit = (NULL)
+49581 >first : g1f3
+49674 <first : [GameManager] Valid Move: g1f3
+49674 <first : [GameManager] Valid Move: g1h3
+49674 <first : r
+49674 <first : r
+49674 <first : r
+49674 <first : r
+49674 <first : r
+49674 <first : Pc2c3 ng8f6 Qd1b3 nf6g8 Qb3a4 ng8h6 Qa4d4 nh6g8 Qd4f4 ng8h6 Qf4f5 nh6f5 Pd2d4 nf5g3 Pf2g3 nb8c6 Pd4d5 nc6e5 Bc1e3 ne5c6 Be3f4 nc6b8 Pc3c4 nb8c6 Pd5c6 rh8g8 Bf4e5 rg8h8 Be5g7 rh8g8 Bg7e5 rg8g4 Be5g7 rg4g7 Ng1f3 rg7g4 
+49674 <first : 
+49674 <first : R P - - - - p r 
+49674 <first : N P - - - - p - 
+49674 <first : - - - P - P p b 
+49674 <first : - - - - - - p q 
+49674 <first : K P - - - - p k 
+49674 <first : B - N - - - p b 
+49674 <first : - P P r - - - - 
+49674 <first : R P - - - - p - 
+49674 <first : 
+49674 <first : move g7g4
+51898 >first : time 33575
+51898 >first : otim 30540
+book hit = (NULL)
+51898 >first : f3d2
+51993 <first : [GameManager] Valid Move: f3g1
+51993 <first : [GameManager] Valid Move: f3d2
+51993 <first : [GameManager] Valid Move: f3d4
+51993 <first : [GameManager] Valid Move: f3e5
+51993 <first : [GameManager] Valid Move: f3g5
+51993 <first : [GameManager] Valid Move: f3h4
+51993 <first : r
+51993 <first : r
+51993 <first : r
+51993 <first : r
+51993 <first : r
+51993 <first : Pc2c3 ng8f6 Qd1b3 nf6g8 Qb3a4 ng8h6 Qa4d4 nh6g8 Qd4f4 ng8h6 Qf4f5 nh6f5 Pd2d4 nf5g3 Pf2g3 nb8c6 Pd4d5 nc6e5 Bc1e3 ne5c6 Be3f4 nc6b8 Pc3c4 nb8c6 Pd5c6 rh8g8 Bf4e5 rg8h8 Be5g7 rh8g8 Bg7e5 rg8g4 Be5g7 rg4g7 Ng1f3 rg7g4 Nf3d2 rg4g6 
+51993 <first : 
+51993 <first : R P - - - - p r 
+51993 <first : N P - - - - p - 
+51993 <first : - - - P - P p b 
+51993 <first : - N - - - - p q 
+51993 <first : K P - - - - p k 
+51993 <first : B - - - - - p b 
+51993 <first : - P P - - r - - 
+51993 <first : R P - - - - p - 
+51993 <first : 
+51993 <first : move g4g6
+52969 >first : time 33765
+52969 >first : otim 30643
+book hit = (NULL)
+52969 >first : d2b3
+53064 <first : [GameManager] Valid Move: d2b3
+53064 <first : [GameManager] Valid Move: d2e4
+53064 <first : [GameManager] Valid Move: d2f3
+53064 <first : r
+53064 <first : r
+53064 <first : r
+53064 <first : r
+53064 <first : r
+53064 <first : Pc2c3 ng8f6 Qd1b3 nf6g8 Qb3a4 ng8h6 Qa4d4 nh6g8 Qd4f4 ng8h6 Qf4f5 nh6f5 Pd2d4 nf5g3 Pf2g3 nb8c6 Pd4d5 nc6e5 Bc1e3 ne5c6 Be3f4 nc6b8 Pc3c4 nb8c6 Pd5c6 rh8g8 Bf4e5 rg8h8 Be5g7 rh8g8 Bg7e5 rg8g4 Be5g7 rg4g7 Ng1f3 rg7g4 Nf3d2 rg4g6 Nd2b3 rg6g3 
+53064 <first : 
+53064 <first : R P - - - - p r 
+53064 <first : N P N - - - p - 
+53064 <first : - - - P - P p b 
+53064 <first : - - - - - - p q 
+53064 <first : K P - - - - p k 
+53064 <first : B - - - - - p b 
+53064 <first : - P r - - - - - 
+53064 <first : R P - - - - p - 
+53064 <first : 
+53064 <first : move g6g3
+54013 >first : time 33956
+54013 >first : otim 30748
+book hit = (NULL)
+54013 >first : b3a5
+54110 <first : [GameManager] Valid Move: b3c1
+54110 <first : [GameManager] Valid Move: b3a5
+54110 <first : [GameManager] Valid Move: b3c5
+54110 <first : [GameManager] Valid Move: b3d4
+54110 <first : [GameManager] Valid Move: b3d2
+54110 <first : r
+54110 <first : r
+54110 <first : r
+54110 <first : r
+54110 <first : Pc2c3 ng8f6 Qd1b3 nf6g8 Qb3a4 ng8h6 Qa4d4 nh6g8 Qd4f4 ng8h6 Qf4f5 nh6f5 Pd2d4 nf5g3 Pf2g3 nb8c6 Pd4d5 nc6e5 Bc1e3 ne5c6 Be3f4 nc6b8 Pc3c4 nb8c6 Pd5c6 rh8g8 Bf4e5 rg8h8 Be5g7 rh8g8 Bg7e5 rg8g4 Be5g7 rg4g7 Ng1f3 rg7g4 Nf3d2 rg4g6 Nd2b3 rg6g3 Nb3a5 rg3f3 
+54110 <first : 
+54110 <first : R P - - N - p r 
+54110 <first : N P - - - - p - 
+54110 <first : - - - P - P p b 
+54110 <first : - - - - - - p q 
+54110 <first : K P - - - - p k 
+54110 <first : B - r - - - p b 
+54110 <first : - P - - - - - - 
+54110 <first : R P - - - - p - 
+54110 <first : 
+54110 <first : move g3f3
+55157 >first : time 34146
+55157 >first : otim 30843
+book hit = (NULL)
+55157 >first : a5b7
+55250 <first : [GameManager] Valid Move: a5b3
+55251 <first : [GameManager] Valid Move: a5b7
+55251 <first : r
+55251 <first : r
+55251 <first : r
+55251 <first : r
+55251 <first : r
+55251 <first : r
+55251 <first : r
+55251 <first : r
+55251 <first : r
+55251 <first : r
+55251 <first : Pc2c3 ng8f6 Qd1b3 nf6g8 Qb3a4 ng8h6 Qa4d4 nh6g8 Qd4f4 ng8h6 Qf4f5 nh6f5 Pd2d4 nf5g3 Pf2g3 nb8c6 Pd4d5 nc6e5 Bc1e3 ne5c6 Be3f4 nc6b8 Pc3c4 nb8c6 Pd5c6 rh8g8 Bf4e5 rg8h8 Be5g7 rh8g8 Bg7e5 rg8g4 Be5g7 rg4g7 Ng1f3 rg7g4 Nf3d2 rg4g6 Nd2b3 rg6g3 Nb3a5 rg3f3 Na5b7 ra8b8 
+55251 <first : 
+55251 <first : R P - - - - p - 
+55251 <first : N P - - - - N r 
+55251 <first : - - - P - P p b 
+55251 <first : - - - - - - p q 
+55251 <first : K P - - - - p k 
+55251 <first : B - r - - - p b 
+55251 <first : - P - - - - - - 
+55251 <first : R P - - - - p - 
+55251 <first : 
+55251 <first : move a8b8
+56993 >first : time 34337
+56994 >first : otim 30869
+book hit = (NULL)
+56994 >first : b7d8
+57087 <first : [GameManager] Valid Move: b7c5
+57087 <first : [GameManager] Valid Move: b7a5
+57087 <first : [GameManager] Valid Move: b7d8
+57087 <first : [GameManager] Valid Move: b7d6
+57087 <first : r
+57087 <first : r
+57087 <first : r
+57087 <first : r
+57087 <first : r
+57087 <first : r
+57087 <first : r
+57087 <first : r
+57087 <first : r
+57087 <first : r
+57087 <first : r
+57087 <first : r
+57087 <first : Pc2c3 ng8f6 Qd1b3 nf6g8 Qb3a4 ng8h6 Qa4d4 nh6g8 Qd4f4 ng8h6 Qf4f5 nh6f5 Pd2d4 nf5g3 Pf2g3 nb8c6 Pd4d5 nc6e5 Bc1e3 ne5c6 Be3f4 nc6b8 Pc3c4 nb8c6 Pd5c6 rh8g8 Bf4e5 rg8h8 Be5g7 rh8g8 Bg7e5 rg8g4 Be5g7 rg4g7 Ng1f3 rg7g4 Nf3d2 rg4g6 Nd2b3 rg6g3 Nb3a5 rg3f3 Na5b7 ra8b8 Nb7d8 rb8b5 
+57087 <first : 
+57087 <first : R P - - - - p - 
+57087 <first : N P - - r - - - 
+57087 <first : - - - P - P p b 
+57087 <first : - - - - - - p N 
+57087 <first : K P - - - - p k 
+57087 <first : B - r - - - p b 
+57087 <first : - P - - - - - - 
+57087 <first : R P - - - - p - 
+57087 <first : 
+57087 <first : move b8b5
+59213 >first : time 34527
+59213 >first : otim 30857
+book hit = (NULL)
+59213 >first : d8e6
+59310 <first : [GameManager] Valid Move: d8e6
+59310 <first : [GameManager] Valid Move: d8b7
+59310 <first : [GameManager] Valid Move: d8f7
+59310 <first : r
+59310 <first : r
+59310 <first : r
+59310 <first : r
+59310 <first : r
+59310 <first : r
+59310 <first : r
+59310 <first : r
+59310 <first : r
+59310 <first : r
+59310 <first : r
+59310 <first : r
+59310 <first : Pc2c3 ng8f6 Qd1b3 nf6g8 Qb3a4 ng8h6 Qa4d4 nh6g8 Qd4f4 ng8h6 Qf4f5 nh6f5 Pd2d4 nf5g3 Pf2g3 nb8c6 Pd4d5 nc6e5 Bc1e3 ne5c6 Be3f4 nc6b8 Pc3c4 nb8c6 Pd5c6 rh8g8 Bf4e5 rg8h8 Be5g7 rh8g8 Bg7e5 rg8g4 Be5g7 rg4g7 Ng1f3 rg7g4 Nf3d2 rg4g6 Nd2b3 rg6g3 Nb3a5 rg3f3 Na5b7 ra8b8 Nb7d8 rb8b5 Nd8e6 rb5b4 
+59310 <first : 
+59310 <first : R P - - - - p - 
+59310 <first : N P - r - - - - 
+59310 <first : - - - P - P p b 
+59310 <first : - - - - - - p - 
+59310 <first : K P - - - N p k 
+59310 <first : B - r - - - p b 
+59310 <first : - P - - - - - - 
+59310 <first : R P - - - - p - 
+59310 <first : 
+59311 <first : move b5b4
+60438 >first : time 34718
+60438 >first : otim 30944
+book hit = (NULL)
+60439 >first : e6c5
+60533 <first : [GameManager] Valid Move: e6f4
+60533 <first : [GameManager] Valid Move: e6d4
+60533 <first : [GameManager] Valid Move: e6c5
+60533 <first : [GameManager] Valid Move: e6c7
+60533 <first : [GameManager] Valid Move: e6d8
+60533 <first : [GameManager] Valid Move: e6f8
+60533 <first : [GameManager] Valid Move: e6g7
+60533 <first : [GameManager] Valid Move: e6g5
+60533 <first : r
+60533 <first : r
+60533 <first : r
+60533 <first : r
+60533 <first : r
+60533 <first : r
+60533 <first : r
+60533 <first : r
+60533 <first : r
+60533 <first : r
+60533 <first : r
+60533 <first : r
+60533 <first : Pc2c3 ng8f6 Qd1b3 nf6g8 Qb3a4 ng8h6 Qa4d4 nh6g8 Qd4f4 ng8h6 Qf4f5 nh6f5 Pd2d4 nf5g3 Pf2g3 nb8c6 Pd4d5 nc6e5 Bc1e3 ne5c6 Be3f4 nc6b8 Pc3c4 nb8c6 Pd5c6 rh8g8 Bf4e5 rg8h8 Be5g7 rh8g8 Bg7e5 rg8g4 Be5g7 rg4g7 Ng1f3 rg7g4 Nf3d2 rg4g6 Nd2b3 rg6g3 Nb3a5 rg3f3 Na5b7 ra8b8 Nb7d8 rb8b5 Nd8e6 rb5b4 Ne6c5 rb4b2 
+60533 <first : 
+60533 <first : R P - - - - p - 
+60533 <first : N r - - - - - - 
+60533 <first : - - - P N P p b 
+60533 <first : - - - - - - p - 
+60533 <first : K P - - - - p k 
+60533 <first : B - r - - - p b 
+60533 <first : - P - - - - - - 
+60533 <first : R P - - - - p - 
+60533 <first : 
+60533 <first : move b4b2
+64442 >first : time 34908
+64442 >first : otim 30753
+book hit = (NULL)
+64442 >first : b1a3
+64536 <first : [GameManager] Valid Move: b1a3
+64536 <first : [GameManager] Valid Move: b1c3
+64536 <first : [GameManager] Valid Move: b1d2
+64536 <first : r
+64536 <first : r
+64536 <first : r
+64536 <first : r
+64536 <first : r
+64536 <first : r
+64536 <first : r
+64536 <first : r
+64536 <first : r
+64536 <first : r
+64536 <first : r
+64536 <first : Pc2c3 ng8f6 Qd1b3 nf6g8 Qb3a4 ng8h6 Qa4d4 nh6g8 Qd4f4 ng8h6 Qf4f5 nh6f5 Pd2d4 nf5g3 Pf2g3 nb8c6 Pd4d5 nc6e5 Bc1e3 ne5c6 Be3f4 nc6b8 Pc3c4 nb8c6 Pd5c6 rh8g8 Bf4e5 rg8h8 Be5g7 rh8g8 Bg7e5 rg8g4 Be5g7 rg4g7 Ng1f3 rg7g4 Nf3d2 rg4g6 Nd2b3 rg6g3 Nb3a5 rg3f3 Na5b7 ra8b8 Nb7d8 rb8b5 Nd8e6 rb5b4 Ne6c5 rb4b2 Nb1a3 rb2c2 
+64536 <first : 
+64536 <first : R P N - - - p - 
+64536 <first : - - - - - - - - 
+64536 <first : - r - P N P p b 
+64536 <first : - - - - - - p - 
+64536 <first : K P - - - - p k 
+64536 <first : B - r - - - p b 
+64536 <first : - P - - - - - - 
+64536 <first : R P - - - - p - 
+64536 <first : 
+64536 <first : move b2c2
+67325 >first : time 35099
+67325 >first : otim 30674
+book hit = (NULL)
+67325 >first : e1d1
+67399 <first : [GameManager] Valid Move: e1d1
+67399 <first : r
+67399 <first : r
+67399 <first : r
+67399 <first : r
+67399 <first : r
+67399 <first : r
+67399 <first : r
+67399 <first : r
+67399 <first : r
+67399 <first : r
+67399 <first : r
+67399 <first : Pc2c3 ng8f6 Qd1b3 nf6g8 Qb3a4 ng8h6 Qa4d4 nh6g8 Qd4f4 ng8h6 Qf4f5 nh6f5 Pd2d4 nf5g3 Pf2g3 nb8c6 Pd4d5 nc6e5 Bc1e3 ne5c6 Be3f4 nc6b8 Pc3c4 nb8c6 Pd5c6 rh8g8 Bf4e5 rg8h8 Be5g7 rh8g8 Bg7e5 rg8g4 Be5g7 rg4g7 Ng1f3 rg7g4 Nf3d2 rg4g6 Nd2b3 rg6g3 Nb3a5 rg3f3 Na5b7 ra8b8 Nb7d8 rb8b5 Nd8e6 rb5b4 Ne6c5 rb4b2 Nb1a3 rb2c2 Ke1d1 rc2d2 
+67399 <first : 
+67399 <first : R P N - - - p - 
+67399 <first : - - - - - - - - 
+67399 <first : - - - P N P p b 
+67399 <first : K r - - - - p - 
+67399 <first : - P - - - - p k 
+67399 <first : B - r - - - p b 
+67399 <first : - P - - - - - - 
+67399 <first : R P - - - - p - 
+67399 <first : 
+67399 <first : move c2d2
+68289 >first : time 35291
+68289 >first : otim 30785
+book hit = (NULL)
+68289 >first : d1d2
+68364 <first : [GameManager] Valid Move: d1c1
+68364 <first : [GameManager] Valid Move: d1d2
+68364 <first : [GameManager] Valid Move: d1e1
+68364 <first : r
+68364 <first : r
+68364 <first : r
+68364 <first : r
+68364 <first : r
+68364 <first : r
+68364 <first : r
+68364 <first : r
+68364 <first : r
+68364 <first : r
+68364 <first : r
+68364 <first : r
+68364 <first : r
+68364 <first : r
+68364 <first : r
+68364 <first : r
+68364 <first : r
+68364 <first : r
+68364 <first : r
+68364 <first : r
+68364 <first : r
+68364 <first : r
+68364 <first : Pc2c3 ng8f6 Qd1b3 nf6g8 Qb3a4 ng8h6 Qa4d4 nh6g8 Qd4f4 ng8h6 Qf4f5 nh6f5 Pd2d4 nf5g3 Pf2g3 nb8c6 Pd4d5 nc6e5 Bc1e3 ne5c6 Be3f4 nc6b8 Pc3c4 nb8c6 Pd5c6 rh8g8 Bf4e5 rg8h8 Be5g7 rh8g8 Bg7e5 rg8g4 Be5g7 rg4g7 Ng1f3 rg7g4 Nf3d2 rg4g6 Nd2b3 rg6g3 Nb3a5 rg3f3 Na5b7 ra8b8 Nb7d8 rb8b5 Nd8e6 rb5b4 Ne6c5 rb4b2 Nb1a3 rb2c2 Ke1d1 rc2d2 Kd1d2 rf3f4 
+68364 <first : 
+68364 <first : R P N - - - p - 
+68364 <first : - - - - - - - - 
+68364 <first : - - - P N P p b 
+68364 <first : - K - - - - p - 
+68364 <first : - P - - - - p k 
+68364 <first : B - - r - - p b 
+68364 <first : - P - - - - - - 
+68364 <first : R P - - - - p - 
+68364 <first : 
+68364 <first : move f3f4
+70417 >first : time 35484
+70417 >first : otim 30780
+book hit = (NULL)
+70417 >first : e2e3
+70493 <first : [GameManager] Valid Move: e2e3
+70493 <first : [GameManager] Valid Move: e2e4
+70493 <first : r
+70493 <first : Pc2c3 ng8f6 Qd1b3 nf6g8 Qb3a4 ng8h6 Qa4d4 nh6g8 Qd4f4 ng8h6 Qf4f5 nh6f5 Pd2d4 nf5g3 Pf2g3 nb8c6 Pd4d5 nc6e5 Bc1e3 ne5c6 Be3f4 nc6b8 Pc3c4 nb8c6 Pd5c6 rh8g8 Bf4e5 rg8h8 Be5g7 rh8g8 Bg7e5 rg8g4 Be5g7 rg4g7 Ng1f3 rg7g4 Nf3d2 rg4g6 Nd2b3 rg6g3 Nb3a5 rg3f3 Na5b7 ra8b8 Nb7d8 rb8b5 Nd8e6 rb5b4 Ne6c5 rb4b2 Nb1a3 rb2c2 Ke1d1 rc2d2 Kd1d2 rf3f4 Pe2e3 rf4f6 
+70493 <first : 
+70493 <first : R P N - - - p - 
+70493 <first : - - - - - - - - 
+70493 <first : - - - P N P p b 
+70493 <first : - K - - - - p - 
+70493 <first : - - P - - - p k 
+70493 <first : B - - - - r p b 
+70493 <first : - P - - - - - - 
+70493 <first : R P - - - - p - 
+70493 <first : 
+70493 <first : move f4f6
+GameEnds(27, White resigns, 2)
+81513 >first : result 0-1 {White resigns}
+81513 >first : force
+GameEnds(27, White resigns, 2)
+82923 >first : quit

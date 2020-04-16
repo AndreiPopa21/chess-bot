@@ -143,7 +143,7 @@ public final class GameManager{
 
         ArrayList<Move> moves = srcSq.getPiece().searchMoves(srcSq.getPosition());
         for(int i = 0; i < moves.size(); i++){
-           // System.out.println("[GameManager] Valid Move: " + moves.get(i).toString());
+            System.out.println("[GameManager] Valid Move: " + moves.get(i).toString());
         }
         for(int i = 0; i < moves.size(); i++){
             Move next = moves.get(i);
@@ -176,14 +176,14 @@ public final class GameManager{
 
     public static String toStringHistory() {
         String out = "";
-        char a ,b,c,d;
+        String a ,b,c,d;
         for (HistoryPairs i : history)
         {
-            a = (char)(i.startPozition % 10 + 48);
-            b = (char)(i.startPozition / 10);
-            c = (char)(i.finishPozition % 10 + 48);
-            d = (char)(i.finishPozition / 10);
-            out += i.piece+a+b+c+d+" ";
+            a = String.valueOf((char)(i.startPozition % 10 + 48));
+            b = String.valueOf((char)(i.startPozition / 10));
+            c = String.valueOf((char)(i.finishPozition % 10 + 48));
+            d = String.valueOf((char)(i.finishPozition / 10));
+            out += String.valueOf(i.piece)+b+a+d+c+" ";
         }
         return out;
     }
