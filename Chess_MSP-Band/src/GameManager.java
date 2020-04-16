@@ -5,7 +5,7 @@ public final class GameManager{
     
     private static Table currTable = null;
     private static Color currPlayer;
-    private static Vector<HistoryPairs> history;
+    private static Vector<HistoryPairs> history = new Vector<HistoryPairs>();
 
 
     //white king-side castling     King - e1g1 | Rook - h1f1
@@ -170,11 +170,11 @@ public final class GameManager{
 
     public static void record(Move m){
 
-        history.add(new HistoryPairs(m.source,m.dest,currTable.getSquares().get(m.dest).getPiece().getName()));
+        history.add(new HistoryPairs(m.source,m.dest,GameManager.currTable.getSquares().get(m.source).getPiece().getName()));
     }
 
-    @Override
-    public String toString() {
+
+    public static String toStringHistory() {
         String out = "";
         char a ,b,c,d;
         for (HistoryPairs i : history)

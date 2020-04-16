@@ -985,3 +985,88 @@ Kf8 44. d4 Ke7 45. d5 Kd6 46. Ba5 Kc5 47. Bc3 Kd6 48. Bb4+ Kd7 49. Ba5 Ke7
 68. Nc6+ Ka8 69. Bc7
 {Xboard adjudication: Stalemate} 1/2-1/2
 
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.16"]
+[Round "-"]
+[White "cristi"]
+[Black "make"]
+[Result "*"]
+[TimeControl "300+2"]
+
+1. c3
+{xboard exit (Clocks: 302, 288)} *
+
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.16"]
+[Round "-"]
+[White "cristi"]
+[Black "make"]
+[Result "*"]
+[TimeControl "300+2"]
+
+1. c3
+{xboard exit (Clocks: 302, 292)} *
+
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.16"]
+[Round "-"]
+[White "cristi"]
+[Black "make"]
+[Result "*"]
+[TimeControl "300+2"]
+
+1. c3
+{xboard exit (Clocks: 302, 296)} *
+
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.16"]
+[Round "-"]
+[White "cristi"]
+[Black "make"]
+[Result "*"]
+[TimeControl "300+2"]
+
+1. c3
+{xboard exit (Clocks: 302, 293)} *
+
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.16"]
+[Round "-"]
+[White "cristi"]
+[Black "make"]
+[Result "*"]
+[TimeControl "300+2"]
+
+1. c3
+{xboard exit (Clocks: 302, 297)} *
+
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.16"]
+[Round "-"]
+[White "cristi"]
+[Black "make"]
+[Result "0-1"]
+[TimeControl "300+2"]
+
+1. c3 Nc6 2. Qb3 Nd4 3. Qa4 Nc2+ 4. Qxc2 Nf6 5. Qa4 Ng4 6. Qxg4 Rb8 7. Qc4
+{White resigns} 0-1
+
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.16"]
+[Round "-"]
+[White "cristi"]
+[Black "make"]
+[Result "*"]
+[TimeControl "300+2"]
+
+1. c3 Nc6 2. Qb3 Nd4 3. Qc4 Nxe2 4. Qxe2 Nf6 5. Qe5 Nh5 6. Qb5 Nf4 7. Qc6
+Ne2 8. Qb6 Ng3 9. Qxb7 Ne4 10. Qxa7 Nd6 11. Qxc7 Nb7 12. Qxb7 Ra5 13. Qe4
+{xboard exit (Clocks: 308, 272)} *
+
