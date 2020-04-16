@@ -950,3 +950,38 @@ Nxf7 8. f3 Ngh6 9. a3 Ng4 10. a4 Ne3 11. Ra3 Nxg2+ 12. Bxg2 Nh6 13. Rb3 Nf5
 20. Rxc7
 {White resigns} 0-1
 
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.16"]
+[Round "-"]
+[White "cristi"]
+[Black "make"]
+[Result "0-1"]
+[TimeControl "300+2"]
+
+1. e3
+{Error writing to first chess program} 0-1
+
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.16"]
+[Round "-"]
+[White "cristi"]
+[Black "make"]
+[Result "1/2-1/2"]
+[TimeControl "300+2"]
+
+1. e3 Na6 2. Qf3 Nb4 3. Qxf7+ Kxf7 4. e4 Ke6 5. e5 Kd5 6. Bb5 Ke6 7. Bxd7+
+Kxe5 8. Bxc8 Ke4 9. Bxb7+ Kf4 10. Bxa8 Kg4 11. Bd5 Kh5 12. Bxg8 Kg6 13.
+Bxh7+ Kh6 14. Bg8 Kg5 15. Bf7 Kh4 16. Be6 Kh5 17. Bg4+ Kxg4 18. d3 Kh5 19.
+Bd2 Kg4 20. Bxb4 Kf4 21. Ba5 Kf5 22. Bxc7 Ke6 23. Bxd8 Kd6 24. Bxe7+ Kd5
+25. Bxf8 Ke6 26. Bxg7 Kf7 27. Bxh8 Ke6 28. Bc3 Kf7 29. Ba5 Kf8 30. Bb6 Ke7
+31. Bxa7 Kf6 32. Bb8 Kg5 33. Bc7 Kh4 34. Bb6 Kh5 35. h3 Kh4 36. g3+ Kh5 37.
+g4+ Kh6 38. g5+ Kh7 39. g6+ Kg7 40. f4 Kg8 41. f5 Kf8 42. f6 Kg8 43. f7+
+Kf8 44. d4 Ke7 45. d5 Kd6 46. Ba5 Kc5 47. Bc3 Kd6 48. Bb4+ Kd7 49. Ba5 Ke7
+50. Nc3 Kd7 51. Nb5 Kc8 52. Na7+ Kb8 53. Nc6+ Kc8 54. Na7+ Kb8 55. Nc6+ Ka8
+56. Nb4 Kb7 57. Nd3 Ka8 58. Nc5 Kb8 59. Na6+ Ka8 60. Nc7+ Kb8 61. Ne6 Kc8
+62. Rd1 Kb8 63. Rd3 Kb7 64. Rb3+ Ka8 65. Nc5 Ka7 66. Nb7 Ka8 67. Nd8 Ka7
+68. Nc6+ Ka8 69. Bc7
+{Xboard adjudication: Stalemate} 1/2-1/2
+

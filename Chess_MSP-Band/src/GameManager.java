@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Vector;
 
 public final class GameManager{
     
@@ -159,11 +160,11 @@ public final class GameManager{
 
 
 
-    //public static ArrayList<Record> history;
+   // public static Vector<Pair<Integer, Integer>> history;
 
     public static void record(Move move){
         // o scrie in vector
-
+     //   history.add()
         //history.add()
     }
 
