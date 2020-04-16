@@ -36,11 +36,19 @@ public class Pawn extends Piece {
 
         if(doubleSq != null){
             if(!doubleSq.hasPiece()){
-                if(!movedTwice){
-                    moves.add(new Move(src,doubleFront,null));
+                if(this.getColor() == Color.BLACK){
+                    if(src % 10 == 7){
+                        moves.add(new Move(src,doubleFront,null));
+                    }
+                }else {
+                    if(src % 10 == 2){
+                        moves.add(new Move(src,doubleFront,null));
+                    }
                 }
             }
         }
+
+
 
         //se verifica pozitiile de atac
         for(int i = 0 ; i < rowOff.length; i++){

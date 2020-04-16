@@ -163,7 +163,7 @@ public class Table {
         dest.setPiece(src.getPiece());
         src.setPiece(null);
 
-
+/*
         char movedPiece = dest.getPiece().getName();
         if((movedPiece == 'p') || (movedPiece == 'P')){
             int srcPos = src.getPosition();
@@ -174,7 +174,7 @@ public class Table {
                 Pawn p = (Pawn)dest.getPiece();
                 p.movedTwice = true;
             }
-        }
+        }*/
 
     }
 
