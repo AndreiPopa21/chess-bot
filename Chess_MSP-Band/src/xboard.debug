@@ -1,0 +1,196 @@
+locale = LC_CTYPE=en_US.UTF-8;LC_NUMERIC=ro_RO.UTF-8;LC_TIME=ro_RO.UTF-8;LC_COLLATE=en_US.UTF-8;LC_MONETARY=ro_RO.UTF-8;LC_MESSAGES=en_US.UTF-8;LC_PAPER=ro_RO.UTF-8;LC_NAME=ro_RO.UTF-8;LC_ADDRESS=ro_RO.UTF-8;LC_TELEPHONE=ro_RO.UTF-8;LC_MEASUREMENT=ro_RO.UTF-8;LC_IDENTIFICATION=ro_RO.UTF-8
+recognized 'normal' (-1) as variant normal
+recognized 'normal' (-1) as variant normal
+recognized 'normal' (-1) as variant normal
+shuffleOpenings = 0
+shuffleOpenings = 0
+Version: xboard 4.9.1 + make ()
+Reset(1, 0) from gameMode 0
+recognized 'normal' (-1) as variant normal
+GameEnds(0, (null), 2)
+shuffleOpenings = 0
+StartChildProcess (dir=".") make run
+109 >first : xboard
+protover 2
+111 <first : make[1]: Entering directory '/home/cristi/Documents/Anul 2/Sem 2/PA/Proiect PA/l2-pa-project-MSP-Band/Chess_MSP-Band/src'
+111 <first : javac Main.java
+627 <first : java Main
+669 <first : 
+669 <first : R P - - - - p r 
+669 <first : N P - - p - - n 
+669 <first : B P - - - - p b 
+669 <first : Q P - - - - p q 
+669 <first : K P - - - - p k 
+669 <first : B P - - - - p b 
+669 <first : N P - - - - p n 
+669 <first : R P - - - - p r 
+669 <first : 
+670 <first : 
+670 <first : R P - - - - p r 
+670 <first : N P - p - - - n 
+670 <first : B P - - - - p b 
+670 <first : Q P - - - - p q 
+670 <first : K P - - - - p k 
+670 <first : B P - - - - p b 
+670 <first : N P - - - - p n 
+670 <first : R P - - - - p r 
+670 <first : 
+674 <first : [GameManager] Cannot execute illegal move: c1a3
+674 <first : 
+674 <first : R P - - - - p r 
+674 <first : N P - p - - - n 
+674 <first : B P - - - - p b 
+674 <first : Q P - - - - p q 
+674 <first : K P - - - - p k 
+674 <first : B P - - - - p b 
+674 <first : N P - - - - p n 
+674 <first : R P - - - - p r 
+674 <first : 
+674 <first : [GameManager] Cannot execute illegal move: c1a3
+674 <first : 
+674 <first : R P - - - - p r 
+674 <first : N P - p - - - n 
+674 <first : B P - - - - p b 
+674 <first : Q P - - - - p q 
+674 <first : K P - - - - p k 
+674 <first : B P - - - - p b 
+674 <first : N P - - - - p n 
+674 <first : R P - - - - p r 
+674 <first : 
+674 <first : [GameManager] Source square does not have piece: a3e7
+675 <first : [GameManager] Cannot execute illegal move: a3e7
+675 <first : 
+675 <first : R P - - - - p r 
+675 <first : N P - p - - - n 
+675 <first : B P - - - - p b 
+675 <first : Q P - - - - p q 
+675 <first : K P - - - - p k 
+675 <first : B P - - - - p b 
+675 <first : N P - - - - p n 
+675 <first : R P - - - - p r 
+675 <first : 
+675 <first : [GameManager] Cannot execute illegal move: d8e7
+675 <first : 
+675 <first : R P - - - - p r 
+675 <first : N P - p - - - n 
+675 <first : B P - - - - p b 
+675 <first : Q P - - - - p q 
+675 <first : K P - - - - p k 
+675 <first : B P - - - - p b 
+675 <first : N P - - - - p n 
+675 <first : R P - - - - p r 
+675 <first : 
+675 <first : 
+675 <first : R P - - - - p r 
+675 <first : N P - p - - - n 
+675 <first : B P - - - - p b 
+675 <first : Q P - - - - p q 
+675 <first : K P - - - - p k 
+675 <first : B - P - - - p b 
+675 <first : N P - - - - p n 
+675 <first : R P - - - - p r 
+675 <first : 
+676 <first : 
+676 <first : R P - - - - p r 
+676 <first : N P - p - - - n 
+676 <first : B P - - - - p b 
+676 <first : Q P - - - - p q 
+676 <first : K - P - - - p k 
+676 <first : B - P - - - p b 
+676 <first : N P - - - - p n 
+676 <first : R P - - - - p r 
+676 <first : 
+676 <first : 
+676 <first : R P - - - - p r 
+676 <first : N P - p - - - n 
+676 <first : B P - - - - p b 
+676 <first : Q P - - - - p q 
+676 <first : K - - P - - p k 
+676 <first : B - P - - - p b 
+676 <first : N P - - - - p n 
+676 <first : R P - - - - p r 
+676 <first : 
+676 <first : 
+676 <first : R P - - - - p r 
+676 <first : N P - p - - - n 
+676 <first : B P - - - - p b 
+676 <first : Q P - - - p - q 
+676 <first : K - - P - - p k 
+676 <first : B - P - - - p b 
+676 <first : N P - - - - p n 
+676 <first : R P - - - - p r 
+676 <first : 
+677 <first : 
+677 <first : R P - - - - p r 
+677 <first : N P - p - - - n 
+677 <first : B P - - - - p b 
+677 <first : Q P - - p - - q 
+677 <first : K - - P - - p k 
+677 <first : B - P - - - p b 
+677 <first : N P - - - - p n 
+677 <first : R P - - - - p r 
+677 <first : 
+677 <first : [GameManager] Cannot execute illegal move: g1f3
+677 <first : 
+677 <first : R P - - - - p r 
+677 <first : N P - p - - - n 
+677 <first : B P - - - - p b 
+677 <first : Q P - - p - - q 
+677 <first : K - - P - - p k 
+677 <first : B - P - - - p b 
+677 <first : N P - - - - p n 
+677 <first : R P - - - - p r 
+677 <first : 
+677 <first : 
+677 <first : R P - - - - p r 
+677 <first : N P - p - - - - 
+677 <first : B P - - - n p b 
+677 <first : Q P - - p - - q 
+677 <first : K - - P - - p k 
+677 <first : B - P - - - p b 
+677 <first : N P - - - - p n 
+677 <first : R P - - - - p r 
+677 <first : 
+677 <first : 
+678 <first : R P - - - - p r 
+678 <first : N P - p - - - - 
+678 <first : B P - - - - p b 
+678 <first : Q P - n p - - q 
+678 <first : K - - P - - p k 
+678 <first : B - P - - - p b 
+678 <first : N P - - - - p n 
+678 <first : R P - - - - p r 
+678 <first : 
+678 <first : 
+678 <first : R P - - - B p r 
+678 <first : N P - p - - - - 
+678 <first : B P - - - - p b 
+678 <first : Q P - n p - - q 
+678 <first : K - - P - - p k 
+678 <first : - - P - - - p b 
+678 <first : N P - - - - p n 
+678 <first : R P - - - - p r 
+678 <first : 
+678 <first : [GameManager] Cannot execute illegal move: e7h4
+678 <first : 
+678 <first : R P - - - B p r 
+678 <first : N P - p - - - - 
+678 <first : B P - - - - p b 
+678 <first : Q P - n p - - q 
+678 <first : K - - P - - p k 
+678 <first : - - P - - - p b 
+678 <first : N P - - - - p n 
+678 <first : R P - - - - p r 
+678 <first : 
+678 <first : [GameManager] Cannot execute illegal move: e1e2
+678 <first : 
+679 <first : R P - - - B p r 
+679 <first : N P - p - - - - 
+679 <first : B P - - - - p b 
+679 <first : Q P - n p - - q 
+679 <first : K - - P - - p k 
+679 <first : - - P - - - p b 
+679 <first : N P - - - - p n 
+679 <first : R P - - - - p r 
+679 <first : 
+692 <first : make[1]: Leaving directory '/home/cristi/Documents/Anul 2/Sem 2/PA/Proiect PA/l2-pa-project-MSP-Band/Chess_MSP-Band/src'
