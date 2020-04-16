@@ -5,7 +5,7 @@ public final class GameManager{
     
     private static Table currTable = null;
     private static Color currPlayer;
-    private static Vector history;
+    private static Vector<HistoryPairs> history;
 
 
     //white king-side castling     King - e1g1 | Rook - h1f1
@@ -102,9 +102,7 @@ public final class GameManager{
 
 
 
-    public static void record(){
 
-    }
 
 
     // noi -Negru
@@ -164,12 +162,74 @@ public final class GameManager{
 
    // public static Vector<Pair<Integer, Integer>> history;
 
-    public static void record(Move move){
+   // public static void record(Move move){
         // o scrie in vector
      //   history.add()
         //history.add()
+   // }
+
+    public static void record(Move m){
+
+        history.add(new HistoryPairs(m.source,m.dest,currTable.getSquares().get(m.dest).getPiece().getName()));
     }
 
+    @Override
+    public String toString() {
+        String out = "";
+        char a ,b,c,d;
+        for (HistoryPairs i : history)
+        {
+            a = (char)(i.startPozition % 10 + 48);
+            b = (char)(i.startPozition / 10);
+            c = (char)(i.finishPozition % 10 + 48);
+            d = (char)(i.finishPozition / 10);
+            out += i.piece+a+b+c+d+" ";
+        }
+        return out;
+    }
+
+    public static boolean searchHistoryFor(String name) {
+
+        if (name.compareTo("KA") == 0) {
+            for (HistoryPairs i : history) {
+                if (i.startPozition == Constants.E1) {
+                    return true;
+                }
+            }
+        } else if (name.compareTo("kn") == 0) {
+            for (HistoryPairs i : history) {
+                if (i.startPozition == Constants.H1) {
+                    return true;
+                }
+            }
+        } else if (name.compareTo("r1") == 0) {
+            for (HistoryPairs i : history) {
+                if (i.startPozition == Constants.A1) {
+                    return true;
+                }
+            }
+        } else if (name.compareTo("r2") == 0) {
+            for (HistoryPairs i : history) {
+                if (i.startPozition == Constants.E8) {
+                    return true;
+                }
+            }
+        } else if (name.compareTo("R1") == 0) {
+            for (HistoryPairs i : history) {
+                if (i.startPozition == Constants.H8) {
+                    return true;
+                }
+            }
+        } else if (name.compareTo("R2") == 0) {
+            for (HistoryPairs i : history) {
+                if (i.startPozition == Constants.A8) {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
     // class Record{ Move move; String movedPiece;}
 
     
