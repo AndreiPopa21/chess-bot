@@ -5,6 +5,7 @@ public final class GameManager{
     
     private static Table currTable = null;
     private static Color currPlayer;
+    private static Vector history;
 
 
     //white king-side castling     King - e1g1 | Rook - h1f1
@@ -101,7 +102,9 @@ public final class GameManager{
 
 
 
-    
+    public static void record(){
+
+    }
 
 
     // noi -Negru

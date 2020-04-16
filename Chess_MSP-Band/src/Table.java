@@ -238,7 +238,7 @@ public class Table {
         Square g1 = getSquares().get(Constants.G1);
         Square h1 = getSquares().get(Constants.H1);
         
-        //(TODO) searchHistoryFor('K');
+        // (TODO) searchHistoryFor('K');
 
         if(e1.hasPiece()){
             if(!e1.getPiece().getName().equals('K')){
