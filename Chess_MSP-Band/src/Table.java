@@ -190,6 +190,18 @@ public class Table {
             updateTable(new Move(Constants.A8,Constants.D8,0));
             return;
         }
+        if(move.moveType == Constants.QUEEN_PROMOTION){
+            int src = move.source;
+            int dest = move.dest;
+            updateTable(new Move(src,dest,0));
+            Square destSq = getSquares().get(dest);
+            if(destSq.getPiece().getColor() == Color.BLACK){
+                destSq.setPiece(new Queen(Color.BLACK, this));
+            }else{
+                destSq.setPiece(new Queen(Color.WHITE,this));
+            }
+            return;
+        }
     }
 
     public void undoMove(Move move, Piece initialDest){

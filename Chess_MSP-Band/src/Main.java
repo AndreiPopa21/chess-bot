@@ -31,9 +31,9 @@ public class Main {
         );
 
 
-        GameManager.executeMove(
+       /* GameManager.executeMove(
             new Move(Constants.G1,Constants.F3,0)
-        );
+        );*/
 
 
         GameManager.executeMove(
