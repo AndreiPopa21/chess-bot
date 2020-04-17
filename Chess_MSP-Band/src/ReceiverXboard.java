@@ -73,7 +73,7 @@ public final class ReceiverXboard {
 
 
     public static boolean move(String mutare) {
-        System.out.println("[ReciverXboard] Sa primit resign");
+        System.out.println("[ReciverXboard] Sa primit move..........................."+mutare);
         int a = mutare.charAt(0);
         int b = mutare.charAt(1) - 48;
         int c = mutare.charAt(2);
