@@ -1337,3 +1337,16 @@ Nb3 Rxg3 21. Na5 Rf3 22. Nxb7 Rb8 23. Nxd8 Rb5 24. Ne6 Rb4 25. Nc5 Rxb2 26.
 Na3 Rc2 27. Kd1 Rd2+ 28. Kxd2 Rf4 29. e3 Rf6
 {White resigns} 0-1
 
+[Event "Computer Chess Game"]
+[Site "stefan-GL552VW"]
+[Date "2020.04.17"]
+[Round "-"]
+[White "stefan"]
+[Black "make"]
+[Result "1-0"]
+[TimeControl "300+2"]
+
+1. h3 Nh6 2. e4 Ng4 3. Qxg4 Nc6 4. d3 Nd4 5. e5 Nf5 6. Qxf5 Rg8 7. Qxf7+
+Kxf7 8. d4 Kg6 9. Bd3+ Kh5 10. g4+ Kh4 11. Nf3#
+{Xboard adjudication: Checkmate} 1-0
+
