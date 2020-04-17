@@ -1337,3 +1337,23 @@ Nb3 Rxg3 21. Na5 Rf3 22. Nxb7 Rb8 23. Nxd8 Rb5 24. Ne6 Rb4 25. Nc5 Rxb2 26.
 Na3 Rc2 27. Kd1 Rd2+ 28. Kxd2 Rf4 29. e3 Rf6
 {White resigns} 0-1
 
+[Event "Computer Chess Game"]
+[Site "cristi-Lenovo"]
+[Date "2020.04.16"]
+[Round "-"]
+[White "cristi"]
+[Black "make"]
+[Result "1-0"]
+[TimeControl "300+2"]
+
+1. c3 Nh6 2. Qa4 Nf5 3. Qa5 Ne3 4. dxe3 Na6 5. Qxa6 Rg8 6. Qg6 Rh8 7. Qxg7
+Rg8 8. Qxh7 Rxg2 9. Bxg2 Rb8 10. Qxf7+ Kxf7 11. Nf3 Kg7 12. Ne5 Kg8 13. Nc6
+Kh8 14. Nxb8 Kg7 15. Nxd7 Kh6 16. Nxf8 Kh5 17. Ne6 Kg4 18. Nxd8 Kg5 19.
+Nxb7 Kh5 20. Na5 Kg5 21. Nb7 Kh4 22. Nc5 Kg4 23. Na6 Kf5 24. Nxc7 Kg6 25.
+Na6 Kf7 26. Nb8 Kf6 27. Nc6 Kf7 28. Nxa7 Kf8 29. Nxc8 Kf7 30. Nxe7 Kxe7 31.
+Bd2 Ke6 32. Bc1 Kf7 33. Be4 Kf8 34. Bc6 Kg8 35. Bd2 Kh8 36. c4 Kh7 37. Rg1
+Kh6 38. Bd7 Kh7 39. Bb4 Kh8 40. Bd6 Kh7 41. Bf5+ Kh6 42. Bf4+ Kh5 43. Be6
+Kh4 44. Bf7 Kh3 45. Rg8 Kh4 46. Bg5+ Kh3 47. Bf4 Kh4 48. Na3 Kh3 49. Rd1
+Kh4 50. Rd5 Kh3 51. Rh5#
+{Xboard adjudication: Checkmate} 1-0
+
