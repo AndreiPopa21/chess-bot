@@ -79,6 +79,16 @@ public class King extends Piece {
         Square h1 = getTable().getSquares().get(Constants.H1);
         
         // (TODO) searchHistoryFor('K');
+        if(GameManager.searchHistoryFor("KA")){
+            System.out.println("[King] WHITE King a fost mutat, nu se poate face KING-SIDE");
+            return false;
+        } 
+
+        if(GameManager.searchHistoryFor("R2")){
+            System.out.println("[King] Tura H1 a fost mutata, nu se poate face KING-SIDE");
+            return false;
+        } 
+
 
         if(e1.hasPiece()){
             if(!e1.getPiece().getName().equals('K')){
@@ -135,6 +145,16 @@ public class King extends Piece {
         Square b1 = getTable().getSquares().get(Constants.B1);
         Square a1 = getTable().getSquares().get(Constants.A1);
 
+        if(GameManager.searchHistoryFor("KA")){
+            System.out.println("[King] WHITE King a fost mutat, nu se poate face QUEEN-SIDE");
+            return false;
+        }
+
+        if(GameManager.searchHistoryFor("R1")){
+            System.out.println("[King] Tura A1 a fost mutat, nu se poate face QUEEN-SIDE");
+            return false;
+        }
+
         if(e1.hasPiece()){
             if(!e1.getPiece().getName().equals('K')){
                 return false;
@@ -187,6 +207,17 @@ public class King extends Piece {
         Square g8 = getTable().getSquares().get(Constants.G8);
         Square h8 = getTable().getSquares().get(Constants.H8);
 
+
+        if(GameManager.searchHistoryFor("kn")){
+            System.out.println("[King] BLACK King a fost mutat, nu se poate face KING-SIDE");
+            return false;
+        }
+
+        if(GameManager.searchHistoryFor("r2")){
+            System.out.println("[King] Tura H8 a fost mutat, nu se poate face KING-SIDE");
+            return false;
+        }
+
         if(e8.hasPiece()){
             if(!e8.getPiece().getName().equals('k')){
                 return false;
@@ -237,6 +268,19 @@ public class King extends Piece {
         Square c8 = getTable().getSquares().get(Constants.C8);
         Square b8 = getTable().getSquares().get(Constants.B8);
         Square a8 = getTable().getSquares().get(Constants.A8);
+
+
+        if(GameManager.searchHistoryFor("kn")){
+            System.out.println("[King] BLACK King a fost mutat, nu se poate face QUEEN-SIDE");
+            return false;
+        }
+
+        if(GameManager.searchHistoryFor("r1")){
+            System.out.println("[King] Tura A8 a fost mutata, nu se poate face QUEEN-SIDE");
+            return false;
+        }
+
+
 
         if(e8.hasPiece()){
             if(!e8.getPiece().getName().equals('k')){
