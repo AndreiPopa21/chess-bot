@@ -72,6 +72,16 @@ public class Pawn extends Piece {
             }
         }
 
+        //te uiti la toate mutarile valide si observi daca vreuna e de tip promotion
+        //daca e cazul, i se pune un flag de promotion la moveType
+        for(int i = 0; i < finalMoves.size(); i++){
+            if(checkPromotion(finalMoves.get(i))){
+                System.out.println("[Pawn] Mutare de promotion: "
+                 + finalMoves.get(i).toString());
+                finalMoves.get(i).moveType = Constants.QUEEN_PROMOTION;
+            }
+        }
+
         return finalMoves;
     }
 
@@ -83,6 +93,24 @@ public class Pawn extends Piece {
         if(king == attackRight) return true;
 
         return false;
+    }
+
+    public boolean checkPromotion(Move move){
+        
+        int src = move.source;
+        int dest = move.dest;
+
+        if(move.moveType == Constants.EN_PASSANT) return false;
+        
+        if(getColor() == Color.WHITE){
+            if(src % 10 != 7) return false;
+            if(dest % 10 != 8) return false;
+            return true;
+        }else{
+            if(src % 10 != 2) return false;
+            if(src % 10 != 1) return false;
+            return true;
+        }
     }
 
 }

@@ -202,24 +202,28 @@ public final class GameManager{
                     return true;
                 }
             }
+            //r1 tura neagra de pe A8
         } else if (name.compareTo("r1") == 0) {
             for (HistoryPairs i : history) {
                 if (i.startPozition == Constants.A1) {
                     return true;
                 }
             }
+            // r2 tura neagra pentru H8
         } else if (name.compareTo("r2") == 0) {
             for (HistoryPairs i : history) {
                 if (i.startPozition == Constants.E8) {
                     return true;
                 }
             }
+            // R1 tura alba pentru A1
         } else if (name.compareTo("R1") == 0) {
             for (HistoryPairs i : history) {
                 if (i.startPozition == Constants.H8) {
                     return true;
                 }
             }
+            // R2 tura alba pt H1
         } else if (name.compareTo("R2") == 0) {
             for (HistoryPairs i : history) {
                 if (i.startPozition == Constants.A8) {

@@ -95,6 +95,15 @@ public final class Constants{
     public static final int BLACK_KING_SIDE_CASTLING = 8888;
     public static final int BLACK_QUEEN_SIDE_CASTLING = 9999;
 
+
+    public static final int QUEEN_PROMOTION = 11111;
+    public static final int BISHOP_PROMOTION = 22222;
+    public static final int KNIGHT_PROMOTION = 33333;
+    public static final int ROOK_PROMOTION = 44444;
+
+
+    public static final int EN_PASSANT = 55555;
+
     // noi jucam ALB, adversar Negru
     // O - O  - Receiver
 

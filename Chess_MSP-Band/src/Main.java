@@ -12,35 +12,36 @@ public class Main {
 
     public static void main(String[] args) {
 
-       //GameManager.newGame(Color.WHITE);
+       GameManager.newGame(Color.WHITE);
        //
         // GameManager.printTable();
 
-       ReceiverXboard.recive();
+       //ReceiverXboard.recive();
 
      /*   GameManager.executeMove(
             new Move(Constants.B1,Constants.C3,null)
         );*/
-/*
+
         GameManager.executeMove(
-            new Move(Constants.B7,Constants.B5,0)
+            new Move(Constants.E2,Constants.E4,0)
         );
 
         GameManager.executeMove(
-            new Move(Constants.B5,Constants.B4,0)
+            new Move(Constants.F1,Constants.C4,0)
         );
 
 
+       /* GameManager.executeMove(
+            new Move(Constants.G1,Constants.F3,0)
+        );*/
+
+
         GameManager.executeMove(
-            new Move(Constants.C1,Constants.A3,0)
+            new Move(Constants.D1,Constants.E1,0)
         );
 
         GameManager.executeMove(
-            new Move(Constants.C1,Constants.A3,0)
-        );
-
-        GameManager.executeMove(
-            new Move(Constants.A3,Constants.E7,0)
+            new Move(Constants.E1,Constants.E2,0)
         );
 
     
@@ -49,6 +50,24 @@ public class Main {
         );
 
         GameManager.executeMove(
+            new Move(0,0,Constants.BLACK_QUEEN_SIDE_CASTLING)
+        );
+
+      
+        GameManager.executeMove(
+            new Move(Constants.D7,Constants.D5,0)
+        );
+
+        GameManager.executeMove(
+            new Move(Constants.D5,Constants.C4,0)
+        );
+
+
+        GameManager.executeMove(
+            new Move(Constants.D8,Constants.E8,0)
+        );
+
+      /*  GameManager.executeMove(
             new Move(Constants.F2,Constants.F3,0)
         );
 
