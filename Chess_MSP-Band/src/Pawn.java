@@ -31,22 +31,25 @@ public class Pawn extends Piece {
         if(frontSq != null){
             if(!frontSq.hasPiece()){
                 moves.add(new Move(src,front,0));
+
+                if(doubleSq != null){
+                    if(!doubleSq.hasPiece()){
+                        if(this.getColor() == Color.BLACK){
+                            if(src % 10 == 7){
+                                moves.add(new Move(src,doubleFront,0));
+                            }
+                        }else {
+                            if(src % 10 == 2){
+                                moves.add(new Move(src,doubleFront,0));
+                            }
+                        }
+                    }
+                }
+
             }
         }
 
-        if(doubleSq != null){
-            if(!doubleSq.hasPiece()){
-                if(this.getColor() == Color.BLACK){
-                    if(src % 10 == 7){
-                        moves.add(new Move(src,doubleFront,0));
-                    }
-                }else {
-                    if(src % 10 == 2){
-                        moves.add(new Move(src,doubleFront,0));
-                    }
-                }
-            }
-        }
+       
 
 
 
