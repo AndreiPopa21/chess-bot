@@ -123,7 +123,6 @@ public final class GameManager{
 
         int src = move.source;
         int dest = move.dest;
-        
         Square srcSq = getTable().getSquares().get(src);
         Square destSq = getTable().getSquares().get(dest);
 
@@ -169,8 +168,24 @@ public final class GameManager{
    // }
 
     public static void record(Move m){
+        HistoryPairs mv;
+        if (m.moveType == Constants.WHITE_KING_SIDE_CASTLING) {
+            mv = new HistoryPairs(Constants.E1,Constants.G1,'K');
 
-        history.add(new HistoryPairs(m.source,m.dest,GameManager.currTable.getSquares().get(m.source).getPiece().getName()));
+        } else if (m.moveType == Constants.WHITE_QUEEN_SIDE_CASTLING) {
+            mv = new HistoryPairs(Constants.E1,Constants.C1,'K');
+
+        } else if (m.moveType == Constants.BLACK_KING_SIDE_CASTLING) {
+            mv = new HistoryPairs(Constants.E8,Constants.G8,'k');
+
+        } else if (m.moveType == Constants.BLACK_QUEEN_SIDE_CASTLING) {
+            mv = new HistoryPairs(Constants.E8,Constants.C8,'k');
+
+        } else {
+            mv = new HistoryPairs(m.source,m.dest,GameManager.currTable.getSquares().get(m.source).getPiece().getName());
+
+        }
+        history.add(mv);
     }
 
 
@@ -198,35 +213,35 @@ public final class GameManager{
             }
         } else if (name.compareTo("kn") == 0) {
             for (HistoryPairs i : history) {
-                if (i.startPozition == Constants.H1) {
+                if (i.startPozition == Constants.E8) {
                     return true;
                 }
             }
             //r1 tura neagra de pe A8
         } else if (name.compareTo("r1") == 0) {
             for (HistoryPairs i : history) {
-                if (i.startPozition == Constants.A1) {
+                if (i.startPozition == Constants.A8) {
                     return true;
                 }
             }
             // r2 tura neagra pentru H8
         } else if (name.compareTo("r2") == 0) {
             for (HistoryPairs i : history) {
-                if (i.startPozition == Constants.E8) {
+                if (i.startPozition == Constants.H8) {
                     return true;
                 }
             }
             // R1 tura alba pentru A1
         } else if (name.compareTo("R1") == 0) {
             for (HistoryPairs i : history) {
-                if (i.startPozition == Constants.H8) {
+                if (i.startPozition == Constants.A1) {
                     return true;
                 }
             }
             // R2 tura alba pt H1
         } else if (name.compareTo("R2") == 0) {
             for (HistoryPairs i : history) {
-                if (i.startPozition == Constants.A8) {
+                if (i.startPozition == Constants.H1) {
                     return true;
                 }
             }

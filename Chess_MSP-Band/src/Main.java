@@ -12,16 +12,16 @@ public class Main {
 
     public static void main(String[] args) {
 
-       GameManager.newGame(Color.WHITE);
+      // GameManager.newGame(Color.WHITE);
        //
         // GameManager.printTable();
 
-       //ReceiverXboard.recive();
+       ReceiverXboard.recive();
 
      /*   GameManager.executeMove(
             new Move(Constants.B1,Constants.C3,null)
         );*/
-
+/*
         GameManager.executeMove(
             new Move(Constants.E2,Constants.E4,0)
         );
@@ -35,7 +35,7 @@ public class Main {
             new Move(Constants.G1,Constants.F3,0)
         );*/
 
-
+/*
         GameManager.executeMove(
             new Move(Constants.D1,Constants.E1,0)
         );
