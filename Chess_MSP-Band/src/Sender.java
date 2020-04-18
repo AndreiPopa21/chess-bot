@@ -10,6 +10,7 @@ public final class Sender {
     }
 
     public static void printXboardMove(String command){
+        GameManager.nextMove();
         System.out.println("Am timisssssssssssssssss "+command);
         System.out.println("move "+command);
 

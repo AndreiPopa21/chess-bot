@@ -1,4 +1,3 @@
-import java.util.Collection;
 import java.util.Scanner;
 import java.util.Vector;
 
@@ -8,18 +7,15 @@ public final class ReceiverXboard {
 
     }
 
-   /* public EngineColor getE_color(){
-        return e_color;
-    }*/
-
+    private static boolean isForced = false;
 
     public static void xboard() {
-        System.out.println("[ReciverXboard] Sa primit Xboard");
+        System.out.println("[ReceiverXboard] S-a primit XBOARD");
     }
 
 
     public static void New() {
-        System.out.println("[ReciverXboard] Sa primit New");
+        System.out.println("[ReceiverXboard] S-a primit NEW");
         System.out.println("feature sigint=0 sigterm=0 done=1 colors=0");
         System.out.flush();
         MiniMax.index_white = 0;
@@ -30,40 +26,54 @@ public final class ReceiverXboard {
 
 
     public static void force() {
-        System.out.println("[ReciverXboard] Sa primit force");
+        System.out.println("[ReceiverXboard] S-a primit FORCE");
+        isForced = true;
     }
 
 
     public static boolean go() {
-      //  System.out.println("Am ajuns aici si culoarea mea curenta este "+this.e_color);
-        System.out.println("[ReciverXboard]Sa primit GO");
-        if(GameManager.getColor() == Color.BLACK)
-            GameManager.setColor(Color.WHITE);
-        else
-            GameManager.setColor(Color.BLACK);
-        //System.out.println("Am ajuns aici si culoarea mea curenta este "+this.e_color);
-        return true;
+        System.out.println("[ReceiverXboard] S-a primit GO");
+
+        if(isForced){
+            /*if(GameManager.getColor() == Color.BLACK)
+                GameManager.setColor(Color.WHITE);
+            else
+                GameManager.setColor(Color.BLACK);*/
+             //System.out.println("Am ajuns aici si culoarea mea curenta este "+this.e_color);
+
+            if(GameManager.getCurrMove() % 2 == 1){
+                GameManager.setColor(Color.WHITE);
+            }else{
+                GameManager.setColor(Color.BLACK);
+            }
+            
+            isForced = false;
+            return true;
+        }
+        return false;
+    
     }
 
     public static void white() {
-        System.out.println("[ReciverXboard] Sa apelat White");
+        System.out.println("[ReceiverXboard] S-a apelat WHITE");
         GameManager.setColor(Color.BLACK);
     }
 
 
     public static void black() {
-        System.out.println("[ReciverXboard] Sa apelat Black");
+        System.out.println("[ReceiverXboard] S-a apelat BLACK");
         GameManager.setColor(Color.WHITE);
     }
 
 
     public static void quit() {
-
+        System.out.println("[ReceiverXboard] S-a apelat QUIT");
     }
 
 
     public static void resign() {
-        System.out.println("[ReciverXboard] sa primit resign");
+
+        System.out.println("[ReceiverXboard] S-a primit RESIGN");
         if (GameManager.getColor()==Color.BLACK)
         {
             System.out.println("0-1 {White resigns}");
@@ -73,76 +83,51 @@ public final class ReceiverXboard {
 
 
     public static boolean move(String mutare) {
-        System.out.println("[ReciverXboard] Sa primit move..........................."+mutare);
+       
+        System.out.println("[ReceiverXboard] S-a primit MOVE..........................."+mutare);
         int a = mutare.charAt(0);
         int b = mutare.charAt(1) - 48;
         int c = mutare.charAt(2);
         int d = mutare.charAt(3) - 48;
-        Move mv;
+        Move move;
 
         if (mutare.compareTo("e1g1") == 0)
         {
-            mv = new Move(0,0,Constants.WHITE_KING_SIDE_CASTLING);
+            move = new Move(0,0,Constants.WHITE_KING_SIDE_CASTLING);
 
         } else if (mutare.compareTo("e1c1") == 0)
         {
-            mv = new Move(0,0,Constants.WHITE_QUEEN_SIDE_CASTLING);
+            move = new Move(0,0,Constants.WHITE_QUEEN_SIDE_CASTLING);
 
         } else if (mutare.compareTo("e8g8") == 0)
         {
-            mv = new Move(0,0,Constants.BLACK_KING_SIDE_CASTLING);
+            move = new Move(0,0,Constants.BLACK_KING_SIDE_CASTLING);
 
         } else if (mutare.compareTo("e8c8") == 0)
         {
-            mv = new Move(0,0,Constants.BLACK_QUEEN_SIDE_CASTLING);
+            move = new Move(0,0,Constants.BLACK_QUEEN_SIDE_CASTLING);
         } else
         {
-            mv = new Move(a*10+b,c*10+d,0);
+            move = new Move(a*10+b,c*10+d,0);
         }
 
-        if (GameManager.validateMove(mv))
-        {
-                GameManager.record(mv);
-                GameManager.getTable().updateTable(mv);
-                return true;
-        }else
-        {
-            return false;
-        }
-
+        return GameManager.executeMove(move);
     }
 
     public static boolean promotionMove(String mutare) {
-        System.out.println("[ReciverXboard] Sa primit PromotionMove");
+
+        System.out.println("[ReciverXboard] S-a primit PROMOTION");
         int a = mutare.charAt(0);
         int b = mutare.charAt(1) - 48;
         int c = mutare.charAt(2);
         int d = mutare.charAt(3) - 48;
-        Move mv = new Move(a * 10 + b, c * 10 + d, Constants.QUEEN_PROMOTION);
+        Move move = new Move(a * 10 + b, c * 10 + d, Constants.QUEEN_PROMOTION);
 
-        if (GameManager.validateMove(mv))
-        {
-            GameManager.record(mv);
-            GameManager.getTable().updateTable(mv);
-            return true;
-        }
-        return false;
+        return GameManager.executeMove(move);
     }
 
-   // public String mutare(String move){
-    //    return move;
-  //  }
 
-
-    //o-o  == rocada mica
-    //o-o-o === rocada mare
-    // e2e4+ === sah
-    //e2e4# === sah mat
-    // promotion
-
-
-    public static boolean comandComparer(String command){
-
+    public static boolean commandComparer(String command){
 
         Vector<String> coloane = new Vector<String>();
         coloane.add("a");
@@ -153,6 +138,10 @@ public final class ReceiverXboard {
         coloane.add("f");
         coloane.add("g");
         coloane.add("h");
+
+        if(command == null) return false;
+        if(command.isBlank()) return false;
+        if(command.isEmpty()) return false;
 
         if (command.equals(".")) {
             return false;
@@ -183,12 +172,32 @@ public final class ReceiverXboard {
         {
             resign();
         }else
-        {
+        {   
+            if(command.length() < 4) return false;
+
             String str = String.valueOf(command.charAt(0));
             String str2 = String.valueOf(command.charAt(2));
 
+            /*if(command.length() == 4){
+                if(coloane.contains(str)){
+                    if(coloane.contains(str2)){
+                        return move(command);
+                    }
+                }
+            }
+
+            if(command.length() == 5){
+                String strProm = String.valueOf(command.charAt(4));
+                if(coloane.contains(str)){
+                    if(coloane.contains(str2)){
+                        if(strProm.compareTo("q") == 0){
+                            return promotionMove(command);
+                        }
+                    }
+                }
+            }*/
+
             if ((command.length() == 4)&&(coloane.contains(str))&&(coloane.contains(str2))){
-               // this.move(command);
                 return move(command);
             }else if (command.length() == 5)
             {
@@ -197,23 +206,25 @@ public final class ReceiverXboard {
                         &&(coloane.contains(str2))&&(strProm.compareTo("q") == 0))
                 {
                     return promotionMove(command);
-                }
+                }   
             }
 
         }
         return false;
     }
 
-    public static void recive(){
-        Scanner s = new Scanner(System.in);
+    public static void receive(){
+        Scanner sc = new Scanner(System.in);
         String mutare = "start";
         while(mutare.compareTo("quit") != 0) {
-            mutare = s.nextLine();
-            if (comandComparer(mutare)){
-                MiniMax.thinkMove();
+            mutare = sc.nextLine();
+            if (commandComparer(mutare)){
+                if(!isForced)
+                    MiniMax.thinkMove();
             }
 
         }
+        sc.close();
     }
 
 }

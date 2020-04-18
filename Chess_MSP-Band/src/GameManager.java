@@ -7,46 +7,18 @@ public final class GameManager{
     private static Color currPlayer;
     private static Vector<HistoryPairs> history = new Vector<HistoryPairs>();
 
-
-    //white king-side castling     King - e1g1 | Rook - h1f1
-    //white queen-side castling    King - e1c1 | Rook - a1d1
-    //black king-side castling     King - e8g8 | Rook - h2f2
-    //black queen-side castling    King - e8c8 | Rook - a8d8
-
-
-    // e2e4 - new Move(E2,E4, 0);
-
-    // king-side castling   O - O  
-    // queen-side castling  O - O - O
-
-    private static boolean whiteCastled = false;
-    private static boolean blackCastled = false;
-
+    private static int currMove = 1;
     
     private GameManager(){
         //do nothing 
     }
 
 
-
-
-
-
-
     public static void newGame(Color playeColor){
+        currMove = 1;
         currPlayer = playeColor;
         currTable = new Table();
     }
-
-
-
-
-
-
-
-
-
-
 
 
     public static void printTable(){
@@ -58,62 +30,36 @@ public final class GameManager{
     }
 
 
-
-
-
-
     public static void setColor(Color color){
         currPlayer = color;
     }
-
-
-
-
-
-
-
-
-
-
 
 
     public static Color getColor(){
         return currPlayer;
     }
 
+
     public static Table getTable(){
         return currTable;
     }
 
 
-
-    // updateTable(new Move(E1,G1,0)); -- muta regele
-    // updateTable(new Move(H1,F1,0)); -- muta tura
-
-
-    public static void executeMove(Move move){
+    public static boolean executeMove(Move move){
         if(validateMove(move)){
+            record(move);
+            nextMove();
             getTable().updateTable(move);
+            printTable();
+            return true;
         }else{
             System.out.println("[GameManager] Cannot execute illegal move: " + move.toString());
+            printTable();
+            return false;
         }
-        printTable();
     }
 
 
-
-
-
-
-    // noi -Negru
-    // adversa - ALB
-
-    //
-
-    // new Move (0 ,0 , White-QUEEN--side-castling)
-
-
-    // nu tine de cont de cine e la mutare
     public static boolean validateMove(Move move){
 
         if(move.source == 0 && move.dest == 0 && move.moveType != 0){
@@ -156,36 +102,35 @@ public final class GameManager{
     }
 
 
-
-
-
-   // public static Vector<Pair<Integer, Integer>> history;
-
-   // public static void record(Move move){
-        // o scrie in vector
-     //   history.add()
-        //history.add()
-   // }
-
     public static void record(Move m){
-        HistoryPairs mv;
+        HistoryPairs hp;
         if (m.moveType == Constants.WHITE_KING_SIDE_CASTLING) {
-            mv = new HistoryPairs(Constants.E1,Constants.G1,'K');
+            hp = new HistoryPairs(Constants.E1,Constants.G1,'K');
 
         } else if (m.moveType == Constants.WHITE_QUEEN_SIDE_CASTLING) {
-            mv = new HistoryPairs(Constants.E1,Constants.C1,'K');
+            hp = new HistoryPairs(Constants.E1,Constants.C1,'K');
 
         } else if (m.moveType == Constants.BLACK_KING_SIDE_CASTLING) {
-            mv = new HistoryPairs(Constants.E8,Constants.G8,'k');
+            hp = new HistoryPairs(Constants.E8,Constants.G8,'k');
 
         } else if (m.moveType == Constants.BLACK_QUEEN_SIDE_CASTLING) {
-            mv = new HistoryPairs(Constants.E8,Constants.C8,'k');
+            hp = new HistoryPairs(Constants.E8,Constants.C8,'k');
 
         } else {
-            mv = new HistoryPairs(m.source,m.dest,GameManager.currTable.getSquares().get(m.source).getPiece().getName());
+            hp = new HistoryPairs(m.source,m.dest,GameManager.currTable.getSquares().get(m.source).getPiece().getName());
 
         }
-        history.add(mv);
+        history.add(hp);
+    }
+
+
+    public static void nextMove(){
+        currMove += 1;
+    }
+
+
+    public static int getCurrMove(){
+        return currMove;
     }
 
 
@@ -202,6 +147,7 @@ public final class GameManager{
         }
         return out;
     }
+
 
     public static boolean searchHistoryFor(String name) {
 
@@ -249,31 +195,5 @@ public final class GameManager{
 
         return false;
     }
-    // class Record{ Move move; String movedPiece;}
-
-    
-
-
-
-
-
-
-
-    // (..) -
-
-
-
-    // en=passsant
-
-
-
-    
 
 }
-
-
-
-
-
-//PASSED: instantiating new Table
-//PASSED: printing Table
