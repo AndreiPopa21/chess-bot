@@ -1,0 +1,10 @@
+class ScoreManager
+scorul pentru fiecare patratica  
+     ----primeste piesa , pozitia
+     ----apelare din main  
+2 - metode [citire din fisiere scoruri, getScore (piesa,pozitie) -> intorc val.piesa + val.patratel]
+
+
+
+In history salvez elemetul de tip MOVE
+

@@ -8,8 +8,6 @@ public class HistoryPairs {
     HistoryPairs(int startPosition, int finishPosition, char piece) {
         this.startPosition = startPosition;
         this.finishPosition = finishPosition;
-
-
         this.piece = piece;
     }
 
