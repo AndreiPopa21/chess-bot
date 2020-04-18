@@ -49,8 +49,6 @@ public class Pawn extends Piece {
             }
         }
 
-       
-
 
 
         //se verifica pozitiile de atac
@@ -85,6 +83,28 @@ public class Pawn extends Piece {
             }
         }
 
+
+        // TODO: regula en-passant, e nevoie si de istoric
+        if(this.getColor() == Color.WHITE){
+            if(whiteRightEnpassant(src)){
+                finalMoves.add(
+                    new Move(src,src+10+1,Constants.EN_PASSANT));
+            }
+            if(whiteLeftEnpassant(src)){
+                finalMoves.add(
+                    new Move(src,src+1-10,Constants.EN_PASSANT));
+            }
+        }else{
+            if(blackRightEnpassant(src)){
+                finalMoves.add(
+                    new Move(src,src+10-1,Constants.EN_PASSANT));
+            }
+            if(blackLeftEnpassant(src)){
+                finalMoves.add(
+                    new Move(src,src-10-1,Constants.EN_PASSANT));
+            }
+        }
+
         return finalMoves;
     }
 
@@ -114,6 +134,66 @@ public class Pawn extends Piece {
             if(src % 10 != 1) return false;
             return true;
         }
+    }
+
+    public boolean whiteRightEnpassant(int src){
+
+        if(src % 10 == 5) return false;
+
+        int right = src + 10;
+        Square rightSq = getTable().getSquares().get(right);
+        if(rightSq == null) return false;
+        if(!rightSq.hasPiece()) return false;
+        if(!rightSq.getPiece().getName().equals('p')) return false;
+
+        //TODO : search history
+
+        return false;
+    }
+
+    public boolean whiteLeftEnpassant(int src){
+
+        if(src % 10 == 5) return false;
+
+        int left = src - 10;
+        Square leftSq = getTable().getSquares().get(left);
+        if(leftSq == null) return false;
+        if(!leftSq.hasPiece()) return false;
+        if(!leftSq.getPiece().getName().equals('p')) return false;
+
+        //TODO : search history
+
+        return false;
+    }
+
+    public boolean blackRightEnpassant(int src){
+
+        if(src % 10 == 4) return false;
+
+        int right = src + 10;
+        Square rightSq = getTable().getSquares().get(right);
+        if(rightSq == null) return false;
+        if(!rightSq.hasPiece()) return false;
+        if(!rightSq.getPiece().getName().equals('P')) return false;
+
+        //TODO : search history
+
+        return false;
+    }
+
+    public boolean blackLeftEnpassant(int src){
+
+        if(src % 10 == 4) return false;
+
+        int left = src - 10;
+        Square leftSq = getTable().getSquares().get(left);
+        if(leftSq == null) return false;
+        if(!leftSq.hasPiece()) return false;
+        if(!leftSq.getPiece().getName().equals('P')) return false;
+
+        //TODO : search history
+
+        return false;
     }
 
 }

@@ -1,11 +1,13 @@
 public class HistoryPairs {
-    int startPozition;
-    int finishPozition;
+    int startPosition;
+    int finishPosition;
     char piece;
 
-    HistoryPairs(int startPozition, int finishPozition, char piece) {
-        this.startPozition = startPozition;
-        this.finishPozition = finishPozition;
+    //TODO Adauga un camp pentru un obiect de tip Move, ajuta la Minimax
+
+    HistoryPairs(int startPosition, int finishPosition, char piece) {
+        this.startPosition = startPosition;
+        this.finishPosition = finishPosition;
 
 
         this.piece = piece;
