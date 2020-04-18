@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Vector;
 
 public class Pawn extends Piece {
 
@@ -147,6 +148,32 @@ public class Pawn extends Piece {
         if(!rightSq.getPiece().getName().equals('p')) return false;
 
         //TODO : search history
+        Vector<HistoryPairs> hp = GameManager.getHistory();
+        HistoryPairs lastRecord = hp.lastElement();
+        int source = src + 10 + 2;
+        int dest = src + 10;
+
+        if(lastRecord.startPosition == source){
+            if(lastRecord.finishPosition == dest){
+                Move checkMove = new Move(src,dest+1,0);
+                Square targetSq = getTable().getSquares().get(dest);
+                Piece backup = targetSq.getPiece();
+                targetSq.setPiece(null);
+                getTable().applyMove(checkMove);
+                if(getTable().isKingChecked(Color.WHITE)){
+
+                    System.out.println("[Pawn] NU este white-right enpassant");
+                    getTable().undoMove(checkMove, null);
+                    targetSq.setPiece(backup);
+                    return false;
+                }
+
+                System.out.println("[Pawn] ESTE white-right enpassant");
+                getTable().undoMove(checkMove, null);
+                targetSq.setPiece(backup);
+                return true;
+            }
+        }
 
         return false;
     }
@@ -162,6 +189,32 @@ public class Pawn extends Piece {
         if(!leftSq.getPiece().getName().equals('p')) return false;
 
         //TODO : search history
+        Vector<HistoryPairs> hp = GameManager.getHistory();
+        HistoryPairs lastRecord = hp.lastElement();
+        int source = src - 10 + 2;
+        int dest = src - 10;
+
+        if(lastRecord.startPosition == source){
+            if(lastRecord.finishPosition == dest){
+                Move checkMove = new Move(src,dest+1,0);
+                Square targetSq = getTable().getSquares().get(dest);
+                Piece backup = targetSq.getPiece();
+                targetSq.setPiece(null);
+                getTable().applyMove(checkMove);
+                if(getTable().isKingChecked(Color.WHITE)){
+
+                    System.out.println("[Pawn] NU este white-left enpassant");
+                    getTable().undoMove(checkMove, null);
+                    targetSq.setPiece(backup);
+                    return false;
+                }
+
+                System.out.println("[Pawn] ESTE black-left enpassant");
+                getTable().undoMove(checkMove, null);
+                targetSq.setPiece(backup);
+                return true;
+            }
+        }
 
         return false;
     }
@@ -177,6 +230,32 @@ public class Pawn extends Piece {
         if(!rightSq.getPiece().getName().equals('P')) return false;
 
         //TODO : search history
+        Vector<HistoryPairs> hp = GameManager.getHistory();
+        HistoryPairs lastRecord = hp.lastElement();
+        int source = src + 10 - 2;
+        int dest = src + 10;
+
+        if(lastRecord.startPosition == source){
+            if(lastRecord.finishPosition == dest){
+                Move checkMove = new Move(src,dest-1,0);
+                Square targetSq = getTable().getSquares().get(dest);
+                Piece backup = targetSq.getPiece();
+                targetSq.setPiece(null);
+                getTable().applyMove(checkMove);
+                if(getTable().isKingChecked(Color.WHITE)){
+
+                    System.out.println("[Pawn] NU este black-right enpassant");
+                    getTable().undoMove(checkMove, null);
+                    targetSq.setPiece(backup);
+                    return false;
+                }
+
+                System.out.println("[Pawn] ESTE black-right enpassant");
+                getTable().undoMove(checkMove, null);
+                targetSq.setPiece(backup);
+                return true;
+            }
+        }
 
         return false;
     }
@@ -192,6 +271,33 @@ public class Pawn extends Piece {
         if(!leftSq.getPiece().getName().equals('P')) return false;
 
         //TODO : search history
+        Vector<HistoryPairs> hp = GameManager.getHistory();
+        HistoryPairs lastRecord = hp.lastElement();
+        int source = src - 10 - 2;
+        int dest = src - 10;
+
+        if(lastRecord.startPosition == source){
+            if(lastRecord.finishPosition == dest){
+                Move checkMove = new Move(src,dest-1,0);
+                Square targetSq = getTable().getSquares().get(dest);
+                Piece backup = targetSq.getPiece();
+                targetSq.setPiece(null);
+                getTable().applyMove(checkMove);
+                if(getTable().isKingChecked(Color.WHITE)){
+
+                    System.out.println("[Pawn] NU este black-left enpassant");
+
+                    getTable().undoMove(checkMove, null);
+                    targetSq.setPiece(backup);
+                    return false;
+                }
+
+                System.out.println("[Pawn] ESTE black-left enpassant");
+                getTable().undoMove(checkMove, null);
+                targetSq.setPiece(backup);
+                return true;
+            }
+        }
 
         return false;
     }

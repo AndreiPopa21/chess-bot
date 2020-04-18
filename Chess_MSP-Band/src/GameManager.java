@@ -1,4 +1,4 @@
-makimport java.util.ArrayList;
+import java.util.ArrayList;
 import java.util.Vector;
 
 public final class GameManager{
@@ -44,6 +44,10 @@ public final class GameManager{
         return currTable;
     }
 
+    public static Vector<HistoryPairs> getHistory(){
+        return history;
+    }
+
 
     public static boolean executeMove(Move move){
         if(validateMove(move)){
@@ -62,7 +66,7 @@ public final class GameManager{
 
     public static boolean validateMove(Move move){
 
-        if(move.source == 0 && move.dest == 0 && move.moveType != 0){
+        if( move.moveType != 0 && move.moveType!=Constants.QUEEN_PROMOTION){
             return getTable().validateSpecialMove(move);
         }
 

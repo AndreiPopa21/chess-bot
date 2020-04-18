@@ -170,6 +170,7 @@ public class Table {
     }
 
     public void updateTableSpecial(Move move){
+       
         if(move.moveType == Constants.WHITE_KING_SIDE_CASTLING){
             updateTable(new Move(Constants.E1,Constants.G1,0));
             updateTable(new Move(Constants.H1,Constants.F1,0));
@@ -202,6 +203,20 @@ public class Table {
             }
             return;
         }
+        if(move.moveType == Constants.EN_PASSANT){
+            System.out.println("[Table] Se captureaza cu EN Passant : " + move.toString());
+            int src = move.source;
+            int dest = move.dest;
+            Piece pawn = getSquares().get(src).getPiece();
+            updateTable(new Move(src,dest,0));
+            if(pawn.getColor() == Color.WHITE){
+                getSquares().get(dest-1).setPiece(null);
+            }else{
+                getSquares().get(dest+1).setPiece(null);
+            }
+            return;
+        }
+
     }
 
     public void undoMove(Move move, Piece initialDest){
@@ -272,6 +287,31 @@ public class Table {
             Square kingSq = findBlackKing();
             King blackKing = (King)kingSq.getPiece();
             return blackKing.castlingBlackQueen();
+        }
+
+        if(move.moveType == Constants.EN_PASSANT){
+
+            System.out.println("[Table] Se verifica un EN Passant");
+
+            Square pawnSq = getSquares().get(move.source);
+            if(pawnSq == null) return false;
+            if(!pawnSq.hasPiece()) return false;
+            if(pawnSq.getPiece().getName().equals('P') ||
+                pawnSq.getPiece().getName().equals('p')){
+                    ArrayList<Move> moves = pawnSq.getPiece().searchMoves(move.source);
+                    for(int i = 0; i < moves.size(); i++){
+                        Move other = moves.get(i);
+                        if(other.source == move.source){
+                            if(other.dest == move.dest){
+                                if(other.moveType == Constants.EN_PASSANT){
+                                    System.out.println("[Table] Este un EN Passant");
+                                    return true;
+                                }
+                            }
+                        }
+                    }
+            }
+            return false;
         }
 
         return true;
