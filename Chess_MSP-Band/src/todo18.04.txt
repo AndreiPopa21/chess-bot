@@ -8,3 +8,6 @@ scorul pentru fiecare patratica
 
 In history salvez elemetul de tip MOVE
 
+Verificare ennpassant in reciver
+
+

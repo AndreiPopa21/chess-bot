@@ -109,6 +109,9 @@ public final class ReceiverXboard {
         } else
         {
             move = new Move(a*10+b,c*10+d,0);
+        } else 
+        {
+            
         }
 
         return GameManager.executeMove(move);
