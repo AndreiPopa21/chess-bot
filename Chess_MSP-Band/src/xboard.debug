@@ -10,2516 +10,930 @@ recognized 'normal' (-1) as variant normal
 GameEnds(0, (null), 2)
 shuffleOpenings = 0
 StartChildProcess (dir=".") make run
-165 >first : xboard
+178 >first : xboard
 protover 2
-168 <first : make[1]: Entering directory '/home/cristi/Documents/Anul2/Sem2/PA/l2-pa-project-MSP-Band/Chess_MSP-Band/src'
-168 <first : javac Main.java
-962 <first : java Main
-1153 <first : [ReceiverXboard] S-a primit XBOARD
-10167 >first : new
+181 <first : make[1]: Entering directory '/home/cristi/IdeaProjects/l2-pa-project-MSP-Band/Chess_MSP-Band/src'
+181 <first : javac Main.java
+1175 <first : java Main
+1404 <first : [ReceiverXboard] S-a primit XBOARD
+10179 >first : new
 random
-10167 >first : level 0 5 2
-10167 >first : post
-10167 >first : hard
+10179 >first : level 0 5 2
+10179 >first : post
+10179 >first : hard
 Reset(0, 1) from gameMode 0
 recognized 'normal' (-1) as variant normal
 GameEnds(0, (null), 2)
-10167 >first : quit
+10180 >first : quit
 shuffleOpenings = 0
 StartChildProcess (dir=".") make run
-10174 >first : xboard
+10194 >first : xboard
 protover 2
-10174 >first : new
+10194 >first : new
 random
-10174 >first : level 0 5 2
-10174 >first : post
-10174 >first : hard
-10174 >first : force
+10194 >first : level 0 5 2
+10194 >first : post
+10194 >first : hard
+10194 >first : force
 StartChildProcess (dir=".") fairymax
-10176 >second: xboard
+10196 >second: xboard
 protover 2
-10179 <first : make[1]: Entering directory '/home/cristi/Documents/Anul2/Sem2/PA/l2-pa-project-MSP-Band/Chess_MSP-Band/src'
-10179 <first : javac Main.java
-10272 <second: tellics say     Fairy-Max 5.0b
-10272 <second: tellics say     by H.G. Muller
-10272 <second: feature myname="Fairy-Max 5.0b"
-10272 >second: accepted myname
-10273 <second: feature memory=1 exclude=1
-10273 >second: accepted memory
-10273 >second: accepted exclude
-10273 <second: feature setboard=0 xedit=1 ping=1 done=0
-10273 >second: accepted setboard
-10273 >second: accepted xedit
-10273 >second: accepted ping
-10273 >second: accepted done
-10273 <second: feature variants="normal,nocastle,shatranj,asean,makruk,cambodian,ai-wok,courier,knightmate,capablanca,gothic,janus,falcon,cylinder,berolina,super,seirawan,spartan,great,light-brigade,king-of-the-hill,bifurcator,team-mate,los-alamos,ciccolini,mexican,grande-acedrex,roman,almost-wildebeest,fairy"
-10273 >second: accepted variants
-10273 <second: feature option="Resign -check 0"
-10273 >second: accepted option
-10273 <second: feature option="Resign Threshold -spin 800 200 1200"
-10273 >second: accepted option
-10273 <second: feature option="Claim draw after -spin 50 0 200"
-10273 >second: accepted option
-10273 <second: feature option="Ini File -file /usr/share/games/fairymax/fmax.ini"
-10273 >second: accepted option
-10273 <second: feature option="Multi-PV Margin -spin 0 0 1000"
-10273 >second: accepted option
-10273 <second: feature option="Variant fairy selects -combo FIDE-Clobberers /// Clobberers-FIDE /// FIDE-Nutters /// Nutters-FIDE /// Clobberers-Nutters /// Nutters-Clobberers /// FIDE-Rookies /// Rookies-FIDE /// Clobberers-Rookies /// Rookies-Clobberers /// Nutters-Rookies /// Rookies-Nutters"
-10273 >second: accepted option
-10273 <second: feature option="Makruk rules -combo makruk /// Cambodian /// Ai-wok"
-10273 >second: accepted option
-10273 <second: feature option="Dummy Slider Example -slider 20 0 100"
-10273 >second: accepted option
-10273 <second: feature option="Dummy String Example -string happy birthday!"
-10273 >second: accepted option
-10273 <second: feature option="Dummy Path Example -path ."
-10273 >second: accepted option
-10273 <second: feature option="Automatic persistent-hash dialog -check 0"
-10273 >second: accepted option
-10273 <second: feature option="Info -button"
-10273 >second: accepted option
-10273 <second: feature option="Save in hash file -button"
-10273 >second: accepted option
-10273 <second: feature option="Clear Hash -button"
-10273 >second: accepted option
-10273 <second: feature done=1
-10273 >second: accepted done
-10274 >second: memory 68
-10274 >second: new
+10200 <first : make[1]: Entering directory '/home/cristi/IdeaProjects/l2-pa-project-MSP-Band/Chess_MSP-Band/src'
+10200 <first : javac Main.java
+10295 <second: tellics say     Fairy-Max 5.0b
+10295 <second: tellics say     by H.G. Muller
+10295 <second: feature myname="Fairy-Max 5.0b"
+10295 >second: accepted myname
+10295 <second: feature memory=1 exclude=1
+10295 >second: accepted memory
+10295 >second: accepted exclude
+10295 <second: feature setboard=0 xedit=1 ping=1 done=0
+10295 >second: accepted setboard
+10295 >second: accepted xedit
+10295 >second: accepted ping
+10295 >second: accepted done
+10295 <second: feature variants="normal,nocastle,shatranj,asean,makruk,cambodian,ai-wok,courier,knightmate,capablanca,gothic,janus,falcon,cylinder,berolina,super,seirawan,spartan,great,light-brigade,king-of-the-hill,bifurcator,team-mate,los-alamos,ciccolini,mexican,grande-acedrex,roman,almost-wildebeest,fairy"
+10295 >second: accepted variants
+10295 <second: feature option="Resign -check 0"
+10295 >second: accepted option
+10295 <second: feature option="Resign Threshold -spin 800 200 1200"
+10295 >second: accepted option
+10295 <second: feature option="Claim draw after -spin 50 0 200"
+10295 >second: accepted option
+10295 <second: feature option="Ini File -file /usr/share/games/fairymax/fmax.ini"
+10295 >second: accepted option
+10295 <second: feature option="Multi-PV Margin -spin 0 0 1000"
+10295 >second: accepted option
+10295 <second: feature option="Variant fairy selects -combo FIDE-Clobberers /// Clobberers-FIDE /// FIDE-Nutters /// Nutters-FIDE /// Clobberers-Nutters /// Nutters-Clobberers /// FIDE-Rookies /// Rookies-FIDE /// Clobberers-Rookies /// Rookies-Clobberers /// Nutters-Rookies /// Rookies-Nutters"
+10295 >second: accepted option
+10295 <second: feature option="Makruk rules -combo makruk /// Cambodian /// Ai-wok"
+10295 >second: accepted option
+10295 <second: feature option="Dummy Slider Example -slider 20 0 100"
+10295 >second: accepted option
+10295 <second: feature option="Dummy String Example -string happy birthday!"
+10295 >second: accepted option
+10295 <second: feature option="Dummy Path Example -path ."
+10295 >second: accepted option
+10295 <second: feature option="Automatic persistent-hash dialog -check 0"
+10295 >second: accepted option
+10295 <second: feature option="Info -button"
+10295 >second: accepted option
+10295 <second: feature option="Save in hash file -button"
+10295 >second: accepted option
+10295 <second: feature option="Clear Hash -button"
+10295 >second: accepted option
+10295 <second: feature done=1
+10295 >second: accepted done
+10297 >second: memory 68
+10297 >second: new
 random
 sd 2
-10274 >second: level 0 5 2
-10274 >second: post
-10274 >second: hard
-10274 >second: ping 1
-10274 >second: force
-10320 <second: pong 1
+10297 >second: level 0 5 2
+10297 >second: post
+10297 >second: hard
+10297 >second: ping 1
+10297 >second: force
+10336 <second: pong 1
 New game (1): make-Fairy-Max 5.0b (w)
-10326 >first : computer
-10326 >second: computer
-10327 >first : black
-10327 >first : time 30000
-10327 >first : otim 30000
-10327 >first : white
+10338 >first : computer
+10338 >second: computer
+10339 >first : black
+10339 >first : time 30000
+10339 >first : otim 30000
+10339 >first : white
 book hit = (NULL)
-10327 >first : go
+10339 >first : go
 nps: w=-1, b=-1
-10327 <second: Error (unknown command): computer
-10933 <first : java Main
-11078 <first : [ReceiverXboard] S-a primit XBOARD
-11078 <first : [ReceiverXboard] S-a primit NEW
-11078 <first : feature sigint=0 sigterm=0 done=1 colors=0
-11078 >first : accepted sigint
-11078 >first : accepted sigterm
-11078 >first : accepted done
-11078 >first : accepted colors
-11083 <first : [ReceiverXboard] S-a primit FORCE
-11083 <first : [ReceiverXboard] S-a apelat BLACK
-11083 <first : [ReceiverXboard] S-a apelat WHITE
-11083 <first : [ReceiverXboard] S-a primit GO
-11083 <first : N
-11083 <first : N
-11083 <first : N
-11114 <first : Ng1f3 
-11116 <first : 
-11116 <first : R P - - - - p r 
-11116 <first : N P - - - - p n 
-11116 <first : B P - - - - p b 
-11116 <first : Q P - - - - p q 
-11116 <first : K P - - - - p k 
-11116 <first : B P N - - - p b 
-11116 <first : - P - - - - p n 
-11116 <first : R P - - - - p r 
-11116 <first : 
-11125 <first : Am timisssssssssssssssss g1f3
-11125 <first : move g1f3
-11125 >second: time 30000
-11125 >second: otim 30120
+10339 <second: Error (unknown command): computer
+10998 <first : java Main
+11140 <first : [ReceiverXboard] S-a primit XBOARD
+11141 <first : [ReceiverXboard] S-a primit NEW
+11141 <first : feature sigint=0 sigterm=0 done=1 colors=0
+11141 >first : accepted sigint
+11141 >first : accepted sigterm
+11141 >first : accepted done
+11141 >first : accepted colors
+11145 <first : [ReceiverXboard] S-a primit FORCE
+11146 <first : [ReceiverXboard] S-a apelat BLACK
+11146 <first : [ReceiverXboard] S-a apelat WHITE
+11146 <first : [ReceiverXboard] S-a primit GO
+11146 <first : N
+11146 <first : N
+11146 <first : N
+11177 <first : Ng1f3 
+11179 <first : 
+11179 <first : R P - - - - p r 
+11179 <first : N P - - - - p n 
+11179 <first : B P - - - - p b 
+11179 <first : Q P - - - - p q 
+11179 <first : K P - - - - p k 
+11179 <first : B P N - - - p b 
+11179 <first : - P - - - - p n 
+11179 <first : R P - - - - p r 
+11179 <first : 
+11188 <first : Am timisssssssssssssssss g1f3
+11188 <first : move g1f3
+11189 >second: time 30000
+11189 >second: otim 30115
 book hit = (NULL)
-11125 >second: g1f3
-11125 >second: black
-11125 >second: go
-11222 <second: # times @ 2386712836
-11222 <second: # 16+16 pieces, centr = (1,1) R=40
-11222 <second:  1     14        0          3 c7c5
-11222 <second:  1     20        0          5 d7d5
-11222 <second:  1     23        0          7 f7f6
-11222 <second:  2     11        0         15 f7f6 c2c4
-11222 <second: # times @ 2386712837: real=1 cpu=0
-11222 <second: # promo = 0 (`) GT = 0
-11222 <second: move f7f6
-11222 >first : time 30120
-11222 >first : otim 30190
+11189 >second: g1f3
+11189 >second: black
+11189 >second: go
+11283 <second: # times @ 2444408600
+11283 <second: # 16+16 pieces, centr = (1,1) R=40
+11283 <second:  1     14        0          3 c7c5
+11283 <second:  1     19        0          5 d7d5
+11283 <second:  1     22        0          7 f7f5
+11283 <second:  2      5        0         15 f7f5 c2c4
+11283 <second:  2     12        0         24 f7f6 c2c4
+11284 <second:  2     15        0         99 c7c5 c2c4
+11284 <second: # times @ 2444408600: real=0 cpu=0
+11284 <second: # promo = 0 (`) GT = 0
+11284 <second: move c7c5
+11284 >first : time 30115
+11284 >first : otim 30190
 book hit = (NULL)
-11222 >first : f7f6
-11298 <first : [ReceiverXboard] S-a primit MOVE...........................f7f6
-11298 <first : [GameManager] Valid Move: f7f6
-11298 <first : [GameManager] Valid Move: f7f5
-11298 <first : 
-11298 <first : R P - - - - p r 
-11298 <first : N P - - - - p n 
-11298 <first : B P - - - - p b 
-11298 <first : Q P - - - - p q 
-11298 <first : K P - - - - p k 
-11298 <first : B P N - - p - b 
-11298 <first : - P - - - - p n 
-11298 <first : R P - - - - p r 
-11298 <first : 
-11298 <first : N
-11298 <first : N
-11298 <first : N
-11298 <first : N
-11298 <first : N
-11298 <first : N
-11298 <first : N
-11298 <first : N
-11298 <first : N
-11298 <first : N
-11298 <first : N
-11298 <first : N
-11298 <first : N
-11298 <first : N
-11298 <first : Ng1f3 pf7f6 Nb1c3 
-11298 <first : 
-11298 <first : R P - - - - p r 
-11298 <first : - P - - - - p n 
-11298 <first : B P N - - - p b 
-11298 <first : Q P - - - - p q 
-11298 <first : K P - - - - p k 
-11298 <first : B P N - - p - b 
-11298 <first : - P - - - - p n 
-11298 <first : R P - - - - p r 
-11298 <first : 
-11298 <first : Am timisssssssssssssssss b1c3
-11298 <first : move b1c3
+11284 >first : c7c5
+11357 <first : [ReceiverXboard] S-a primit MOVE...........................c7c5
+11357 <first : [GameManager] Valid Move: c7c6
+11357 <first : [GameManager] Valid Move: c7c5
+11357 <first : 
+11357 <first : R P - - - - p r 
+11357 <first : N P - - - - p n 
+11357 <first : B P - - p - - b 
+11357 <first : Q P - - - - p q 
+11357 <first : K P - - - - p k 
+11357 <first : B P N - - - p b 
+11357 <first : - P - - - - p n 
+11357 <first : R P - - - - p r 
+11357 <first : 
+11357 <first : N
+11357 <first : N
+11357 <first : N
+11357 <first : N
+11357 <first : N
+11357 <first : N
+11358 <first : N
+11358 <first : N
+11358 <first : N
+11358 <first : N
+11358 <first : N
+11358 <first : N
+11358 <first : N
+11358 <first : N
+11358 <first : Ng1f3 pc7c5 Nb1c3 
+11358 <first : 
+11358 <first : R P - - - - p r 
+11358 <first : - P - - - - p n 
+11358 <first : B P N - p - - b 
+11358 <first : Q P - - - - p q 
+11358 <first : K P - - - - p k 
+11358 <first : B P N - - - p b 
+11358 <first : - P - - - - p n 
+11358 <first : R P - - - - p r 
+11358 <first : 
+11358 <first : Am timisssssssssssssssss b1c3
+11358 <first : move b1c3
 Interrupting second
-11299 >second: time 30190
-11299 >second: otim 30312
+11358 >second: time 30190
+11358 >second: otim 30307
 book hit = (NULL)
-11299 >second: b1c3
-11394 <second: # times @ 2386713010
-11395 <second: # 16+16 pieces, centr = (1,1) R=40
-11395 <second:  1     15        0          3 c7c5
-11395 <second:  1     29        0          5 b8c6
-11395 <second:  2    -13        0         17 b8c6 d2d4
-11395 <second:  2     -5        0         26 b8a6 d2d4
-11395 <second:  2      1        0         54 a7a6 d2d4
-11395 <second:  2      5        0         79 c7c5 d2d4
-11395 <second: # times @ 2386713011: real=1 cpu=0
-11395 <second: # promo = 0 (`) GT = 0
-11395 <second: move c7c5
-11395 >first : time 30312
-11395 >first : otim 30380
+11358 >second: b1c3
+11452 <second: # times @ 2444408769
+11452 <second: # 16+16 pieces, centr = (1,1) R=40
+11452 <second:  1     15        0          3 d7d5
+11452 <second:  1     20        0          5 d7d6
+11452 <second:  1     22        0          7 f7f5
+11452 <second:  1     24        0          9 f7f6
+11452 <second:  2     -7        0         21 f7f6 d2d4
+11452 <second:  2     12        0         32 f7f5 d2d4
+11452 <second: # times @ 2444408769: real=0 cpu=0
+11452 <second: # promo = 0 (`) GT = 0
+11452 <second: move f7f5
+11452 >first : time 30307
+11452 >first : otim 30381
 book hit = (NULL)
-11395 >first : c7c5
-11470 <first : [ReceiverXboard] S-a primit MOVE...........................c7c5
-11470 <first : [GameManager] Valid Move: c7c6
-11470 <first : [GameManager] Valid Move: c7c5
-11470 <first : 
-11471 <first : R P - - - - p r 
-11471 <first : - P - - - - p n 
-11471 <first : B P N - p - - b 
-11471 <first : Q P - - - - p q 
-11471 <first : K P - - - - p k 
-11471 <first : B P N - - p - b 
-11471 <first : - P - - - - p n 
-11471 <first : R P - - - - p r 
-11471 <first : 
-11471 <first : N
-11471 <first : N
-11471 <first : N
-11471 <first : N
-11471 <first : N
-11471 <first : N
-11471 <first : N
-11471 <first : N
-11471 <first : N
-11471 <first : N
-11471 <first : N
-11471 <first : N
-11471 <first : N
-11471 <first : N
-11471 <first : N
-11471 <first : N
-11471 <first : N
-11471 <first : N
-11471 <first : N
-11471 <first : Ng1f3 pf7f6 Nb1c3 pc7c5 Nc3b5 
-11471 <first : 
-11471 <first : R P - - - - p r 
-11471 <first : - P - - N - p n 
-11471 <first : B P - - p - - b 
-11471 <first : Q P - - - - p q 
-11471 <first : K P - - - - p k 
-11471 <first : B P N - - p - b 
-11471 <first : - P - - - - p n 
-11471 <first : R P - - - - p r 
-11471 <first : 
-11471 <first : Am timisssssssssssssssss c3b5
-11471 <first : move c3b5
+11452 >first : f7f5
+11525 <first : [ReceiverXboard] S-a primit MOVE...........................f7f5
+11525 <first : [GameManager] Valid Move: f7f6
+11525 <first : [GameManager] Valid Move: f7f5
+11525 <first : 
+11525 <first : R P - - - - p r 
+11525 <first : - P - - - - p n 
+11525 <first : B P N - p - - b 
+11525 <first : Q P - - - - p q 
+11525 <first : K P - - - - p k 
+11526 <first : B P N - p - - b 
+11526 <first : - P - - - - p n 
+11526 <first : R P - - - - p r 
+11526 <first : 
+11526 <first : N
+11526 <first : N
+11526 <first : N
+11526 <first : N
+11526 <first : N
+11526 <first : N
+11526 <first : N
+11526 <first : N
+11526 <first : N
+11526 <first : N
+11526 <first : N
+11526 <first : N
+11526 <first : N
+11526 <first : N
+11526 <first : N
+11526 <first : N
+11526 <first : N
+11526 <first : N
+11526 <first : N
+11526 <first : Ng1f3 pc7c5 Nb1c3 pf7f5 Nc3b1 
+11526 <first : 
+11526 <first : R P - - - - p r 
+11526 <first : N P - - - - p n 
+11526 <first : B P - - p - - b 
+11526 <first : Q P - - - - p q 
+11526 <first : K P - - - - p k 
+11526 <first : B P N - p - - b 
+11526 <first : - P - - - - p n 
+11526 <first : R P - - - - p r 
+11526 <first : 
+11526 <first : Am timisssssssssssssssss c3b1
+11526 <first : move c3b1
 Interrupting second
-11471 >second: time 30380
-11471 >second: otim 30505
+11526 >second: time 30381
+11526 >second: otim 30500
 book hit = (NULL)
-11471 >second: c3b5
-11567 <second: # times @ 2386713183
-11567 <second: # 16+16 pieces, centr = (1,1) R=40
-11567 <second:  1     -3        0          3 a7a5
-11567 <second:  1      4        0          3 b7b6
-11567 <second:  1      6        0          3 d7d5
-11567 <second:  1      8        0          9 e7e6
-11567 <second:  1     13        0         19 g7g5
-11567 <second:  1     18        0         25 g8h6
-11567 <second:  2     -3        0         49 g8h6 c2c4
-11567 <second:  2      0        0        345 b8a6 c2c4
-11567 <second:  2     10        0        370 b8c6 c2c4
-11567 <second: # times @ 2386713184: real=1 cpu=10
-11567 <second: # promo = 0 (`) GT = 0
-11567 <second: move b8c6
-11567 >first : time 30505
-11567 >first : otim 30571
+11526 >second: c3b1
+11621 <second: # times @ 2444408937
+11621 <second: # 16+16 pieces, centr = (1,1) R=40
+11621 <second:  1     -4        0          3 a7a5
+11621 <second:  1      6        0          3 b7b5
+11621 <second:  1     10        0          5 b7b6
+11621 <second:  1     15        0          5 b8c6
+11621 <second:  2     12        0         13 b8c6 c2c4
+11621 <second: # times @ 2444408937: real=0 cpu=0
+11621 <second: # promo = 0 (`) GT = 0
+11621 <second: move b8c6
+11621 >first : time 30500
+11621 >first : otim 30571
 book hit = (NULL)
-11567 >first : b8c6
-11662 <first : [ReceiverXboard] S-a primit MOVE...........................b8c6
-11662 <first : [GameManager] Valid Move: b8c6
-11662 <first : [GameManager] Valid Move: b8a6
-11662 <first : 
-11662 <first : R P - - - - p r 
-11662 <first : - P - - N - p - 
-11662 <first : B P - - p n - b 
-11662 <first : Q P - - - - p q 
-11662 <first : K P - - - - p k 
-11662 <first : B P N - - p - b 
-11662 <first : - P - - - - p n 
-11662 <first : R P - - - - p r 
-11662 <first : 
-11662 <first : N
-11662 <first : N
-11662 <first : N
-11662 <first : N
-11662 <first : N
-11663 <first : N
-11663 <first : N
-11663 <first : N
-11663 <first : N
-11663 <first : N
-11663 <first : N
-11663 <first : N
-11663 <first : N
-11663 <first : N
-11663 <first : N
-11663 <first : Ng1f3 pf7f6 Nb1c3 pc7c5 Nc3b5 nb8c6 Nb5a7 
-11663 <first : 
-11663 <first : R P - - - - N r 
-11663 <first : - P - - - - p - 
-11663 <first : B P - - p n - b 
-11663 <first : Q P - - - - p q 
-11663 <first : K P - - - - p k 
-11663 <first : B P N - - p - b 
-11663 <first : - P - - - - p n 
-11663 <first : R P - - - - p r 
-11663 <first : 
-11663 <first : Am timisssssssssssssssss b5a7
-11663 <first : move b5a7
+11622 >first : b8c6
+11717 <first : [ReceiverXboard] S-a primit MOVE...........................b8c6
+11717 <first : [GameManager] Valid Move: b8c6
+11717 <first : [GameManager] Valid Move: b8a6
+11717 <first : 
+11717 <first : R P - - - - p r 
+11717 <first : N P - - - - p - 
+11717 <first : B P - - p n - b 
+11717 <first : Q P - - - - p q 
+11717 <first : K P - - - - p k 
+11717 <first : B P N - p - - b 
+11717 <first : - P - - - - p n 
+11717 <first : R P - - - - p r 
+11717 <first : 
+11717 <first : N
+11717 <first : N
+11717 <first : N
+11717 <first : N
+11717 <first : N
+11717 <first : N
+11717 <first : N
+11717 <first : N
+11717 <first : N
+11717 <first : N
+11717 <first : N
+11717 <first : N
+11717 <first : N
+11717 <first : N
+11717 <first : Ng1f3 pc7c5 Nb1c3 pf7f5 Nc3b1 nb8c6 Nb1a3 
+11717 <first : 
+11717 <first : R P N - - - p r 
+11717 <first : - P - - - - p - 
+11717 <first : B P - - p n - b 
+11717 <first : Q P - - - - p q 
+11717 <first : K P - - - - p k 
+11717 <first : B P N - p - - b 
+11717 <first : - P - - - - p n 
+11717 <first : R P - - - - p r 
+11717 <first : 
+11717 <first : Am timisssssssssssssssss b1a3
+11717 <first : move b1a3
 Interrupting second
-11663 >second: time 30571
-11663 >second: otim 30695
+11717 >second: time 30571
+11717 >second: otim 30690
 book hit = (NULL)
-11663 >second: b5a7
-11759 <second: # times @ 2386713374
-11759 <second: # 16+15 pieces, centr = (1,1) R=40
-11759 <second:  1    206        0          3 c6a7
-11759 <second:  2    154        0         11 c6a7 c2c4
-11759 <second:  2    170        0        105 a8a7 c2c4
-11759 <second: # times @ 2386713375: real=1 cpu=0
-11759 <second: # promo = 0 (`) GT = 0
-11759 <second: move a8a7
-11760 >first : time 30695
-11760 >first : otim 30761
+11717 >second: b1a3
+11811 <second: # times @ 2444409129
+11811 <second: # 16+16 pieces, centr = (1,1) R=40
+11811 <second:  1     -3        0          3 a7a5
+11811 <second:  1      4        0          3 b7b6
+11811 <second:  1      6        0          3 d7d5
+11811 <second:  1     13        0          3 g8f6
+11811 <second:  2     -2        0         17 g8f6 c2c4
+11811 <second: # times @ 2444409130: real=1 cpu=0
+11811 <second: # promo = 0 (`) GT = 0
+11811 <second: move g8f6
+11812 >first : time 30690
+11812 >first : otim 30762
 book hit = (NULL)
-11760 >first : a8a7
-11835 <first : [ReceiverXboard] S-a primit MOVE...........................a8a7
-11835 <first : [GameManager] Valid Move: a8a7
-11835 <first : [GameManager] Valid Move: a8b8
-11835 <first : 
-11835 <first : R P - - - - r - 
-11835 <first : - P - - - - p - 
-11835 <first : B P - - p n - b 
-11835 <first : Q P - - - - p q 
-11835 <first : K P - - - - p k 
-11835 <first : B P N - - p - b 
-11835 <first : - P - - - - p n 
-11835 <first : R P - - - - p r 
-11835 <first : 
-11835 <first : N
-11835 <first : N
-11835 <first : N
-11835 <first : N
-11835 <first : N
-11835 <first : N
-11835 <first : N
-11835 <first : N
-11835 <first : N
-11835 <first : N
-11835 <first : N
-11835 <first : N
-11835 <first : N
-11835 <first : N
-11835 <first : N
-11835 <first : N
-11835 <first : N
-11835 <first : N
-11835 <first : N
-11835 <first : N
-11835 <first : N
-11835 <first : N
-11835 <first : N
-11835 <first : N
-11835 <first : N
-11835 <first : N
-11835 <first : N
-11835 <first : N
-11835 <first : N
-11835 <first : N
-11835 <first : Ng1f3 pf7f6 Nb1c3 pc7c5 Nc3b5 nb8c6 Nb5a7 ra8a7 Nf3g5 
-11835 <first : 
-11836 <first : R P - - - - r - 
-11836 <first : - P - - - - p - 
-11836 <first : B P - - p n - b 
-11836 <first : Q P - - - - p q 
-11836 <first : K P - - - - p k 
-11836 <first : B P - - - p - b 
-11836 <first : - P - - N - p n 
-11836 <first : R P - - - - p r 
-11836 <first : 
-11836 <first : Am timisssssssssssssssss f3g5
-11836 <first : move f3g5
+11812 >first : g8f6
+11905 <first : [ReceiverXboard] S-a primit MOVE...........................g8f6
+11905 <first : [GameManager] Valid Move: g8h6
+11905 <first : [GameManager] Valid Move: g8f6
+11905 <first : 
+11905 <first : R P N - - - p r 
+11905 <first : - P - - - - p - 
+11905 <first : B P - - p n - b 
+11905 <first : Q P - - - - p q 
+11905 <first : K P - - - - p k 
+11905 <first : B P N - p n - b 
+11905 <first : - P - - - - p - 
+11905 <first : R P - - - - p r 
+11905 <first : 
+11905 <first : N
+11905 <first : N
+11905 <first : N
+11905 <first : N
+11905 <first : N
+11905 <first : N
+11905 <first : N
+11905 <first : N
+11905 <first : N
+11905 <first : N
+11905 <first : N
+11905 <first : N
+11905 <first : Ng1f3 pc7c5 Nb1c3 pf7f5 Nc3b1 nb8c6 Nb1a3 ng8f6 Na3b1 
+11905 <first : 
+11905 <first : R P - - - - p r 
+11905 <first : N P - - - - p - 
+11905 <first : B P - - p n - b 
+11905 <first : Q P - - - - p q 
+11905 <first : K P - - - - p k 
+11905 <first : B P N - p n - b 
+11905 <first : - P - - - - p - 
+11905 <first : R P - - - - p r 
+11905 <first : 
+11905 <first : Am timisssssssssssssssss a3b1
+11905 <first : move a3b1
 Interrupting second
-11836 >second: time 30761
-11836 >second: otim 30887
+11905 >second: time 30762
+11905 >second: otim 30881
 book hit = (NULL)
-11836 >second: f3g5
-11931 <second: # times @ 2386713548
-11931 <second: # 15+15 pieces, centr = (1,1) R=38
-11931 <second:  1    435        0          3 f6g5
-11931 <second:  2    419        0         19 f6g5 c2c4
-11931 <second: # times @ 2386713548: real=0 cpu=0
-11931 <second: # promo = 0 (`) GT = 0
-11931 <second: move f6g5
-11931 >first : time 30887
-11931 >first : otim 30951
+11905 >second: a3b1
+11999 <second: # times @ 2444409317
+11999 <second: # 16+16 pieces, centr = (1,1) R=40
+11999 <second:  1      6        0          3 b7b5
+11999 <second:  2     -9        0         35 b7b5 d2d4
+11999 <second:  2      0        0        251 f6g8
+11999 <second: # times @ 2444409317: real=0 cpu=0
+11999 <second: # promo = 0 (`) GT = 0
+11999 <second: move f6g8
+11999 >first : time 30881
+11999 >first : otim 30952
 book hit = (NULL)
-11931 >first : f6g5
-12005 <first : [ReceiverXboard] S-a primit MOVE...........................f6g5
-12005 <first : [GameManager] Valid Move: f6f5
-12005 <first : [GameManager] Valid Move: f6g5
-12005 <first : 
-12005 <first : R P - - - - r - 
-12005 <first : - P - - - - p - 
-12005 <first : B P - - p n - b 
-12005 <first : Q P - - - - p q 
-12005 <first : K P - - - - p k 
-12005 <first : B P - - - - - b 
-12005 <first : - P - - p - p n 
-12005 <first : R P - - - - p r 
-12005 <first : 
-12005 <first : N
-12005 <first : N
-12005 <first : N
-12005 <first : N
-12005 <first : N
-12005 <first : N
-12005 <first : N
-12005 <first : N
-12005 <first : N
-12005 <first : N
-12005 <first : N
-12005 <first : N
-12005 <first : N
-12005 <first : N
-12005 <first : N
-12005 <first : N
-12005 <first : N
-12005 <first : N
-12005 <first : N
-12005 <first : N
-12005 <first : N
-12005 <first : N
-12005 <first : N
-12005 <first : N
-12005 <first : N
-12005 <first : N
-12005 <first : N
-12005 <first : N
-12005 <first : N
-12005 <first : P
-12005 <first : P
-12005 <first : Ng1f3 pf7f6 Nb1c3 pc7c5 Nc3b5 nb8c6 Nb5a7 ra8a7 Nf3g5 pf6g5 Pg2g3 
-12005 <first : 
-12005 <first : R P - - - - r - 
-12005 <first : - P - - - - p - 
-12005 <first : B P - - p n - b 
-12005 <first : Q P - - - - p q 
-12005 <first : K P - - - - p k 
-12005 <first : B P - - - - - b 
-12005 <first : - - P - p - p n 
-12005 <first : R P - - - - p r 
-12005 <first : 
-12005 <first : Am timisssssssssssssssss g2g3
-12005 <first : move g2g3
+11999 >first : f6g8
+12095 <first : [ReceiverXboard] S-a primit MOVE...........................f6g8
+12096 <first : [GameManager] Valid Move: f6g4
+12096 <first : [GameManager] Valid Move: f6e4
+12096 <first : [GameManager] Valid Move: f6d5
+12096 <first : [GameManager] Valid Move: f6g8
+12096 <first : [GameManager] Valid Move: f6h5
+12096 <first : 
+12096 <first : R P - - - - p r 
+12096 <first : N P - - - - p - 
+12096 <first : B P - - p n - b 
+12096 <first : Q P - - - - p q 
+12096 <first : K P - - - - p k 
+12096 <first : B P N - p - - b 
+12096 <first : - P - - - - p n 
+12096 <first : R P - - - - p r 
+12096 <first : 
+12096 <first : N
+12096 <first : N
+12096 <first : N
+12096 <first : N
+12096 <first : N
+12096 <first : N
+12096 <first : N
+12096 <first : N
+12096 <first : N
+12096 <first : N
+12096 <first : N
+12096 <first : N
+12096 <first : N
+12096 <first : N
+12096 <first : Ng1f3 pc7c5 Nb1c3 pf7f5 Nc3b1 nb8c6 Nb1a3 ng8f6 Na3b1 nf6g8 Nb1c3 
+12096 <first : 
+12096 <first : R P - - - - p r 
+12096 <first : - P - - - - p - 
+12096 <first : B P N - p n - b 
+12096 <first : Q P - - - - p q 
+12096 <first : K P - - - - p k 
+12096 <first : B P N - p - - b 
+12096 <first : - P - - - - p n 
+12096 <first : R P - - - - p r 
+12096 <first : 
+12096 <first : Am timisssssssssssssssss b1c3
+12096 <first : move b1c3
 Interrupting second
-12006 >second: time 30951
-12006 >second: otim 31080
+12097 >second: time 30952
+12097 >second: otim 31071
 book hit = (NULL)
-12006 >second: g2g3
-12080 <second: # times @ 2386713717
-12080 <second: # 14+15 pieces, centr = (1,1) R=34
-12080 <second:  1     74        0          3 a7a2
-12080 <second:  1    444        0          3 a7a6
-12080 <second:  1    452        0          3 b7b5
-12080 <second:  1    457        0          3 g8f6
-12080 <second:  2    440        0         27 g8f6 c2c4
-12080 <second: # times @ 2386713718: real=1 cpu=0
-12080 <second: # promo = 0 (`) GT = 0
-12080 <second: move g8f6
-12080 >first : time 31080
-12080 >first : otim 31144
+12097 >second: b1c3
+12191 <second: # times @ 2444409508
+12191 <second: # 16+16 pieces, centr = (1,1) R=40
+12191 <second:  1     -3        0          3 a7a5
+12191 <second:  1      4        0          3 b7b6
+12191 <second:  1      6        0          3 d7d5
+12191 <second:  1     13        0          3 g8f6
+12191 <second:  2     -2        0         25 g8f6 d2d4
+12191 <second: # times @ 2444409509: real=1 cpu=10
+12191 <second: # promo = 0 (`) GT = 0
+12191 <second: move g8f6
+12191 >first : time 31071
+12191 >first : otim 31143
 book hit = (NULL)
-12080 >first : g8f6
-12175 <first : [ReceiverXboard] S-a primit MOVE...........................g8f6
-12175 <first : [GameManager] Valid Move: g8h6
-12175 <first : [GameManager] Valid Move: g8f6
-12175 <first : 
-12175 <first : R P - - - - r - 
-12175 <first : - P - - - - p - 
-12175 <first : B P - - p n - b 
-12175 <first : Q P - - - - p q 
-12175 <first : K P - - - - p k 
-12175 <first : B P - - - n - b 
-12175 <first : - - P - p - p - 
-12175 <first : R P - - - - p r 
-12175 <first : 
-12175 <first : P
-12175 <first : P
-12175 <first : P
-12175 <first : Ng1f3 pf7f6 Nb1c3 pc7c5 Nc3b5 nb8c6 Nb5a7 ra8a7 Nf3g5 pf6g5 Pg2g3 ng8f6 Pg3g4 
-12175 <first : 
-12175 <first : R P - - - - r - 
-12175 <first : - P - - - - p - 
-12175 <first : B P - - p n - b 
-12175 <first : Q P - - - - p q 
-12175 <first : K P - - - - p k 
-12175 <first : B P - - - n - b 
-12175 <first : - - - P p - p - 
-12175 <first : R P - - - - p r 
-12175 <first : 
-12175 <first : Am timisssssssssssssssss g3g4
-12175 <first : move g3g4
+12191 >first : g8f6
+12286 <first : [ReceiverXboard] S-a primit MOVE...........................g8f6
+12286 <first : [GameManager] Valid Move: g8h6
+12286 <first : [GameManager] Valid Move: g8f6
+12286 <first : 
+12286 <first : R P - - - - p r 
+12286 <first : - P - - - - p - 
+12286 <first : B P N - p n - b 
+12286 <first : Q P - - - - p q 
+12286 <first : K P - - - - p k 
+12286 <first : B P N - p n - b 
+12286 <first : - P - - - - p - 
+12286 <first : R P - - - - p r 
+12286 <first : 
+12286 <first : N
+12286 <first : N
+12286 <first : N
+12286 <first : N
+12286 <first : N
+12286 <first : N
+12286 <first : N
+12286 <first : N
+12286 <first : N
+12286 <first : N
+12286 <first : N
+12286 <first : N
+12286 <first : N
+12286 <first : N
+12286 <first : N
+12286 <first : N
+12286 <first : N
+12286 <first : N
+12286 <first : Ng1f3 pc7c5 Nb1c3 pf7f5 Nc3b1 nb8c6 Nb1a3 ng8f6 Na3b1 nf6g8 Nb1c3 ng8f6 Nc3b1 
+12286 <first : 
+12286 <first : R P - - - - p r 
+12286 <first : N P - - - - p - 
+12286 <first : B P - - p n - b 
+12286 <first : Q P - - - - p q 
+12286 <first : K P - - - - p k 
+12286 <first : B P N - p n - b 
+12286 <first : - P - - - - p - 
+12286 <first : R P - - - - p r 
+12286 <first : 
+12286 <first : Am timisssssssssssssssss c3b1
+12286 <first : move c3b1
 Interrupting second
-12176 >second: time 31144
-12176 >second: otim 31270
+12286 >second: time 31143
+12286 >second: otim 31262
 book hit = (NULL)
-12176 >second: g3g4
-12250 <second: # times @ 2386713887
-12250 <second: # 14+15 pieces, centr = (1,1) R=34
-12250 <second:  1    534        0          3 f6g4
-12250 <second:  2    500        0         35 f6g4 c2c4
-12250 <second: # times @ 2386713891: real=4 cpu=0
-12250 <second: # promo = 0 (`) GT = 0
-12250 <second: move f6g4
-12250 >first : time 31270
-12250 >first : otim 31336
+12286 >second: c3b1
+12380 <second: # times @ 2444409697
+12381 <second: # 16+16 pieces, centr = (1,1) R=40
+12381 <second:  1     -9        0          5 c5c4
+12381 <second:  1      0        0          7 a8b8
+12381 <second:  2    -15        0         15 a8b8 c2c4
+12381 <second:  2     -9        0        101 b7b5
+12381 <second:  2      0        0        101 f6g8
+12381 <second: # times @ 2444409698: real=1 cpu=0
+12381 <second: # promo = 0 (`) GT = 0
+12381 <second: move f6g8
+12381 >first : time 31262
+12381 >first : otim 31333
 book hit = (NULL)
-12250 >first : f6g4
-12346 <first : [ReceiverXboard] S-a primit MOVE...........................f6g4
-12346 <first : [GameManager] Valid Move: f6g4
-12346 <first : [GameManager] Valid Move: f6e4
-12346 <first : [GameManager] Valid Move: f6d5
-12346 <first : [GameManager] Valid Move: f6g8
-12346 <first : [GameManager] Valid Move: f6h5
-12346 <first : 
-12346 <first : R P - - - - r - 
-12346 <first : - P - - - - p - 
-12346 <first : B P - - p n - b 
-12346 <first : Q P - - - - p q 
-12346 <first : K P - - - - p k 
-12346 <first : B P - - - - - b 
-12346 <first : - - - n p - p - 
-12346 <first : R P - - - - p r 
-12346 <first : 
-12346 <first : P
-12346 <first : P
-12346 <first : P
-12346 <first : P
-12346 <first : P
-12346 <first : P
-12346 <first : Ng1f3 pf7f6 Nb1c3 pc7c5 Nc3b5 nb8c6 Nb5a7 ra8a7 Nf3g5 pf6g5 Pg2g3 ng8f6 Pg3g4 nf6g4 Ph2h3 
-12346 <first : 
-12346 <first : R P - - - - r - 
-12346 <first : - P - - - - p - 
-12346 <first : B P - - p n - b 
-12346 <first : Q P - - - - p q 
-12346 <first : K P - - - - p k 
-12346 <first : B P - - - - - b 
-12346 <first : - - - n p - p - 
-12346 <first : R - P - - - p r 
-12346 <first : 
-12346 <first : Am timisssssssssssssssss h2h3
-12346 <first : move h2h3
+12381 >first : f6g8
+12476 <first : [ReceiverXboard] S-a primit MOVE...........................f6g8
+12476 <first : [GameManager] Valid Move: f6g4
+12476 <first : [GameManager] Valid Move: f6e4
+12476 <first : [GameManager] Valid Move: f6d5
+12476 <first : [GameManager] Valid Move: f6g8
+12476 <first : [GameManager] Valid Move: f6h5
+12476 <first : 
+12476 <first : R P - - - - p r 
+12476 <first : N P - - - - p - 
+12476 <first : B P - - p n - b 
+12476 <first : Q P - - - - p q 
+12476 <first : K P - - - - p k 
+12476 <first : B P N - p - - b 
+12476 <first : - P - - - - p n 
+12476 <first : R P - - - - p r 
+12476 <first : 
+12476 <first : N
+12476 <first : N
+12476 <first : N
+12476 <first : N
+12476 <first : N
+12476 <first : N
+12476 <first : N
+12476 <first : N
+12476 <first : N
+12476 <first : N
+12476 <first : N
+12476 <first : N
+12476 <first : N
+12476 <first : N
+12476 <first : Ng1f3 pc7c5 Nb1c3 pf7f5 Nc3b1 nb8c6 Nb1a3 ng8f6 Na3b1 nf6g8 Nb1c3 ng8f6 Nc3b1 nf6g8 Nb1c3 
+12476 <first : 
+12476 <first : R P - - - - p r 
+12476 <first : - P - - - - p - 
+12476 <first : B P N - p n - b 
+12476 <first : Q P - - - - p q 
+12476 <first : K P - - - - p k 
+12476 <first : B P N - p - - b 
+12476 <first : - P - - - - p n 
+12476 <first : R P - - - - p r 
+12476 <first : 
+12476 <first : Am timisssssssssssssssss b1c3
+12476 <first : move b1c3
 Interrupting second
-12346 >second: time 31336
-12346 >second: otim 31461
+12477 >second: time 31333
+12477 >second: otim 31452
 book hit = (NULL)
-12346 >second: h2h3
-12421 <second: # times @ 2386714059
-12421 <second: # 13+15 pieces, centr = (1,1) R=34
-12421 <second:  1    345        0          3 g4f2
-12421 <second:  1    511        0          3 g4h6
-12421 <second:  1    519        0          3 g4f6
-12421 <second:  1    522        0          3 g4e5
-12421 <second:  2    505        0         71 g4e5 d2d4
-12421 <second: # times @ 2386714060: real=1 cpu=10
-12421 <second: # promo = 0 (`) GT = 0
-12421 <second: move g4e5
-12421 >first : time 31461
-12421 >first : otim 31529
+12477 >second: b1c3
+12571 <second: # times @ 2444409888
+12571 <second: # 16+16 pieces, centr = (1,1) R=40
+12571 <second:  1     -3        0          5 a7a5
+12571 <second:  1      4        0          7 b7b6
+12571 <second:  2    -11        0         27 b7b6 d2d4
+12571 <second:  2     -9        0         32 d7d5 d2d4
+12571 <second:  2     -8        0        156 c6d4 d2d3
+12571 <second:  2      0        0        286 g8f6
+12571 <second: # times @ 2444409889: real=1 cpu=0
+12571 <second: # promo = 0 (`) GT = 0
+12571 <second: move g8f6
+12571 >first : time 31452
+12571 >first : otim 31524
 book hit = (NULL)
-12421 >first : g4e5
-12516 <first : [ReceiverXboard] S-a primit MOVE...........................g4e5
-12516 <first : [GameManager] Valid Move: g4h2
-12516 <first : [GameManager] Valid Move: g4f2
-12516 <first : [GameManager] Valid Move: g4e3
-12516 <first : [GameManager] Valid Move: g4e5
-12516 <first : [GameManager] Valid Move: g4f6
-12516 <first : [GameManager] Valid Move: g4h6
-12516 <first : 
-12516 <first : R P - - - - r - 
-12516 <first : - P - - - - p - 
-12516 <first : B P - - p n - b 
-12516 <first : Q P - - - - p q 
-12516 <first : K P - - n - p k 
-12516 <first : B P - - - - - b 
-12516 <first : - - - - p - p - 
-12516 <first : R - P - - - p r 
-12516 <first : 
-12516 <first : P
-12516 <first : P
-12516 <first : P
-12516 <first : P
-12516 <first : P
-12516 <first : Ng1f3 pf7f6 Nb1c3 pc7c5 Nc3b5 nb8c6 Nb5a7 ra8a7 Nf3g5 pf6g5 Pg2g3 ng8f6 Pg3g4 nf6g4 Ph2h3 ng4e5 Ph3h4 
-12516 <first : 
-12516 <first : R P - - - - r - 
-12516 <first : - P - - - - p - 
-12516 <first : B P - - p n - b 
-12516 <first : Q P - - - - p q 
-12516 <first : K P - - n - p k 
-12516 <first : B P - - - - - b 
-12516 <first : - - - - p - p - 
-12516 <first : R - - P - - p r 
-12516 <first : 
-12516 <first : Am timisssssssssssssssss h3h4
-12516 <first : move h3h4
+12571 >first : g8f6
+12665 <first : [ReceiverXboard] S-a primit MOVE...........................g8f6
+12665 <first : [GameManager] Valid Move: g8h6
+12665 <first : [GameManager] Valid Move: g8f6
+12665 <first : 
+12665 <first : R P - - - - p r 
+12665 <first : - P - - - - p - 
+12665 <first : B P N - p n - b 
+12665 <first : Q P - - - - p q 
+12665 <first : K P - - - - p k 
+12665 <first : B P N - p n - b 
+12665 <first : - P - - - - p - 
+12665 <first : R P - - - - p r 
+12665 <first : 
+12665 <first : N
+12665 <first : N
+12665 <first : N
+12665 <first : N
+12665 <first : N
+12665 <first : N
+12665 <first : N
+12665 <first : N
+12666 <first : N
+12666 <first : N
+12666 <first : N
+12666 <first : N
+12666 <first : N
+12666 <first : N
+12666 <first : N
+12666 <first : N
+12666 <first : N
+12666 <first : N
+12666 <first : Ng1f3 pc7c5 Nb1c3 pf7f5 Nc3b1 nb8c6 Nb1a3 ng8f6 Na3b1 nf6g8 Nb1c3 ng8f6 Nc3b1 nf6g8 Nb1c3 ng8f6 Nc3e4 
+12666 <first : 
+12666 <first : R P - - - - p r 
+12666 <first : - P - - - - p - 
+12666 <first : B P - - p n - b 
+12666 <first : Q P - - - - p q 
+12666 <first : K P - N - - p k 
+12666 <first : B P N - p n - b 
+12666 <first : - P - - - - p - 
+12666 <first : R P - - - - p r 
+12666 <first : 
+12666 <first : Am timisssssssssssssssss c3e4
+12666 <first : move c3e4
 Interrupting second
-12517 >second: time 31529
-12517 >second: otim 31651
+12666 >second: time 31524
+12666 >second: otim 31643
 book hit = (NULL)
-12517 >second: h3h4
-12592 <second: # times @ 2386714229
-12592 <second: # 13+15 pieces, centr = (1,1) R=34
-12592 <second:  1    506        0          3 g5h4
-12592 <second:  1    511        0          3 g5g4
-12592 <second:  1    515        0          3 e7e6
-12592 <second:  2    498        0        137 e7e6 d2d4
-12592 <second:  2    506        0        496 g5h4 h1h4
-12592 <second: # times @ 2386714230: real=1 cpu=0
-12592 <second: # promo = 0 (`) GT = 0
-12592 <second: move g5h4
-12592 >first : time 31651
-12592 >first : otim 31721
+12666 >second: c3e4
+12761 <second: # times @ 2444410077
+12761 <second: # 16+16 pieces, centr = (1,1) R=40
+12761 <second:  1    256        0          3 f6e4
+12761 <second:  2    247        0         27 f6e4 c2c4
+12761 <second:  2    251        0        156 f5e4 f3g5
+12761 <second: # times @ 2444410078: real=1 cpu=0
+12761 <second: # promo = 0 (`) GT = 0
+12761 <second: move f5e4
+12761 >first : time 31643
+12761 >first : otim 31714
 book hit = (NULL)
-12592 >first : g5h4
-12668 <first : [ReceiverXboard] S-a primit MOVE...........................g5h4
-12668 <first : [GameManager] Valid Move: g5g4
-12668 <first : [GameManager] Valid Move: g5h4
-12668 <first : 
-12668 <first : R P - - - - r - 
-12668 <first : - P - - - - p - 
-12668 <first : B P - - p n - b 
-12668 <first : Q P - - - - p q 
-12668 <first : K P - - n - p k 
-12668 <first : B P - - - - - b 
-12668 <first : - - - - - - p - 
-12668 <first : R - - p - - p r 
-12668 <first : 
-12668 <first : P
-12668 <first : P
-12668 <first : P
-12668 <first : P
-12668 <first : P
-12668 <first : P
-12668 <first : P
-12668 <first : P
-12668 <first : Ng1f3 pf7f6 Nb1c3 pc7c5 Nc3b5 nb8c6 Nb5a7 ra8a7 Nf3g5 pf6g5 Pg2g3 ng8f6 Pg3g4 nf6g4 Ph2h3 ng4e5 Ph3h4 pg5h4 Pa2a4 
-12668 <first : 
-12668 <first : R - - P - - r - 
-12668 <first : - P - - - - p - 
-12668 <first : B P - - p n - b 
-12668 <first : Q P - - - - p q 
-12668 <first : K P - - n - p k 
-12668 <first : B P - - - - - b 
-12668 <first : - - - - - - p - 
-12668 <first : R - - p - - p r 
-12668 <first : 
-12668 <first : Am timisssssssssssssssss a2a4
-12668 <first : move a2a4
+12761 >first : f5e4
+12836 <first : [ReceiverXboard] S-a primit MOVE...........................f5e4
+12836 <first : [GameManager] Valid Move: f5f4
+12836 <first : [GameManager] Valid Move: f5e4
+12836 <first : 
+12836 <first : R P - - - - p r 
+12836 <first : - P - - - - p - 
+12836 <first : B P - - p n - b 
+12836 <first : Q P - - - - p q 
+12836 <first : K P - p - - p k 
+12836 <first : B P N - - n - b 
+12836 <first : - P - - - - p - 
+12836 <first : R P - - - - p r 
+12836 <first : 
+12836 <first : N
+12836 <first : N
+12836 <first : N
+12836 <first : N
+12836 <first : N
+12836 <first : N
+12836 <first : N
+12836 <first : N
+12836 <first : N
+12836 <first : N
+12836 <first : N
+12836 <first : N
+12836 <first : N
+12836 <first : N
+12836 <first : N
+12836 <first : N
+12836 <first : N
+12836 <first : N
+12836 <first : N
+12836 <first : N
+12836 <first : N
+12836 <first : N
+12836 <first : N
+12836 <first : N
+12836 <first : N
+12836 <first : N
+12836 <first : N
+12836 <first : N
+12836 <first : N
+12836 <first : N
+12836 <first : N
+12836 <first : Ng1f3 pc7c5 Nb1c3 pf7f5 Nc3b1 nb8c6 Nb1a3 ng8f6 Na3b1 nf6g8 Nb1c3 ng8f6 Nc3b1 nf6g8 Nb1c3 ng8f6 Nc3e4 pf5e4 Nf3g1 
+12836 <first : 
+12836 <first : R P - - - - p r 
+12836 <first : - P - - - - p - 
+12836 <first : B P - - p n - b 
+12836 <first : Q P - - - - p q 
+12836 <first : K P - p - - p k 
+12836 <first : B P - - - n - b 
+12836 <first : N P - - - - p - 
+12836 <first : R P - - - - p r 
+12836 <first : 
+12836 <first : Am timisssssssssssssssss f3g1
+12836 <first : move f3g1
 Interrupting second
-12668 >second: time 31721
-12668 >second: otim 31844
+12836 >second: time 31714
+12836 >second: otim 31835
 book hit = (NULL)
-12668 >second: a2a4
-12744 <second: # times @ 2386714380
-12744 <second: # 12+15 pieces, centr = (1,1) R=33
-12744 <second:  1    222        0          3 a7a4
-12744 <second:  1    518        0          3 a7a6
-12744 <second:  1    526        0          3 b7b5
-12744 <second:  1    589        0          3 e7e6
-12744 <second:  1    600        0          3 g7g5
-12744 <second:  2    583        0         77 g7g5 d2d4
-12744 <second: # times @ 2386714381: real=1 cpu=0
-12744 <second: # promo = 0 (`) GT = 0
-12744 <second: move g7g5
-12744 >first : time 31844
-12744 >first : otim 31914
+12836 >second: f3g1
+12930 <second: # times @ 2444410248
+12930 <second: # 15+16 pieces, centr = (1,1) R=37
+12930 <second:  1    266        0          3 b7b5
+12930 <second:  2    250        0         33 b7b5 f2f4
+12930 <second: # times @ 2444410248: real=0 cpu=0
+12930 <second: # promo = 0 (`) GT = 0
+12930 <second: move b7b5
+12931 >first : time 31835
+12931 >first : otim 31905
 book hit = (NULL)
-12744 >first : g7g5
-12818 <first : [ReceiverXboard] S-a primit MOVE...........................g7g5
-12818 <first : [GameManager] Valid Move: g7g6
-12818 <first : [GameManager] Valid Move: g7g5
-12818 <first : 
-12818 <first : R - - P - - r - 
-12818 <first : - P - - - - p - 
-12818 <first : B P - - p n - b 
-12818 <first : Q P - - - - p q 
-12818 <first : K P - - n - p k 
-12818 <first : B P - - - - - b 
-12818 <first : - - - - p - - - 
-12818 <first : R - - p - - p r 
-12818 <first : 
-12818 <first : P
-12818 <first : P
-12818 <first : P
-12818 <first : P
-12818 <first : P
-12818 <first : P
-12818 <first : P
-12818 <first : P
-12818 <first : Ng1f3 pf7f6 Nb1c3 pc7c5 Nc3b5 nb8c6 Nb5a7 ra8a7 Nf3g5 pf6g5 Pg2g3 ng8f6 Pg3g4 nf6g4 Ph2h3 ng4e5 Ph3h4 pg5h4 Pa2a4 pg7g5 Pa4a5 
-12818 <first : 
-12818 <first : R - - - P - r - 
-12818 <first : - P - - - - p - 
-12818 <first : B P - - p n - b 
-12818 <first : Q P - - - - p q 
-12818 <first : K P - - n - p k 
-12818 <first : B P - - - - - b 
-12818 <first : - - - - p - - - 
-12818 <first : R - - p - - p r 
-12818 <first : 
-12818 <first : Am timisssssssssssssssss a4a5
-12818 <first : move a4a5
+12931 >first : b7b5
+13004 <first : [ReceiverXboard] S-a primit MOVE...........................b7b5
+13004 <first : [GameManager] Valid Move: b7b6
+13004 <first : [GameManager] Valid Move: b7b5
+13004 <first : 
+13004 <first : R P - - - - p r 
+13004 <first : - P - - p - - - 
+13004 <first : B P - - p n - b 
+13004 <first : Q P - - - - p q 
+13004 <first : K P - p - - p k 
+13004 <first : B P - - - n - b 
+13004 <first : N P - - - - p - 
+13004 <first : R P - - - - p r 
+13004 <first : 
+13004 <first : N
+13005 <first : N
+13005 <first : N
+13005 <first : Ng1f3 pc7c5 Nb1c3 pf7f5 Nc3b1 nb8c6 Nb1a3 ng8f6 Na3b1 nf6g8 Nb1c3 ng8f6 Nc3b1 nf6g8 Nb1c3 ng8f6 Nc3e4 pf5e4 Nf3g1 pb7b5 Ng1h3 
+13005 <first : 
+13005 <first : R P - - - - p r 
+13005 <first : - P - - p - - - 
+13005 <first : B P - - p n - b 
+13005 <first : Q P - - - - p q 
+13005 <first : K P - p - - p k 
+13005 <first : B P - - - n - b 
+13005 <first : - P - - - - p - 
+13005 <first : R P N - - - p r 
+13005 <first : 
+13005 <first : Am timisssssssssssssssss g1h3
+13005 <first : move g1h3
 Interrupting second
-12818 >second: time 31914
-12818 >second: otim 32036
+13005 >second: time 31905
+13005 >second: otim 32028
 book hit = (NULL)
-12818 >second: a4a5
-12893 <second: # times @ 2386714530
-12893 <second: # 12+15 pieces, centr = (1,1) R=33
-12893 <second:  1    672        0          3 a7a5
-12893 <second:  2    666        0         55 a7a5 a1a5 d8a5
-12893 <second: # times @ 2386714530: real=0 cpu=0
-12893 <second: # promo = 0 (`) GT = 0
-12893 <second: move a7a5
-12893 >first : time 32036
-12893 >first : otim 32106
+13005 >second: g1h3
+13100 <second: # times @ 2444410416
+13100 <second: # 15+16 pieces, centr = (1,1) R=37
+13100 <second:  1    251        0          5 b5b4
+13100 <second:  1    259        0          7 a8b8
+13100 <second:  1    260        0          9 c8b7
+13100 <second:  1    264        0          9 g7g6
+13100 <second:  1    265        0          9 c6e5
+13100 <second:  2    249        0         39 c6e5 d2d4
+13100 <second: # times @ 2444410417: real=1 cpu=0
+13100 <second: # promo = 0 (`) GT = 0
+13100 <second: move c6e5
+13100 >first : time 32028
+13100 >first : otim 32095
 book hit = (NULL)
-12893 >first : a7a5
-12967 <first : [ReceiverXboard] S-a primit MOVE...........................a7a5
-12967 <first : [GameManager] Valid Move: a7a6
-12967 <first : [GameManager] Valid Move: a7a5
-12967 <first : [GameManager] Valid Move: a7a8
-12967 <first : 
-12967 <first : R - - - r - - - 
-12967 <first : - P - - - - p - 
-12967 <first : B P - - p n - b 
-12967 <first : Q P - - - - p q 
-12967 <first : K P - - n - p k 
-12967 <first : B P - - - - - b 
-12967 <first : - - - - p - - - 
-12967 <first : R - - p - - p r 
-12967 <first : 
-12967 <first : P
-12967 <first : P
-12967 <first : P
-12967 <first : P
-12967 <first : P
-12967 <first : P
-12967 <first : P
-12967 <first : P
-12967 <first : P
-12967 <first : Ng1f3 pf7f6 Nb1c3 pc7c5 Nc3b5 nb8c6 Nb5a7 ra8a7 Nf3g5 pf6g5 Pg2g3 ng8f6 Pg3g4 nf6g4 Ph2h3 ng4e5 Ph3h4 pg5h4 Pa2a4 pg7g5 Pa4a5 ra7a5 Pb2b3 
-12967 <first : 
-12967 <first : R - - - r - - - 
-12967 <first : - - P - - - p - 
-12967 <first : B P - - p n - b 
-12967 <first : Q P - - - - p q 
-12967 <first : K P - - n - p k 
-12967 <first : B P - - - - - b 
-12967 <first : - - - - p - - - 
-12967 <first : R - - p - - p r 
-12967 <first : 
-12967 <first : Am timisssssssssssssssss b2b3
-12967 <first : move b2b3
+13100 >first : c6e5
+13194 <first : [ReceiverXboard] S-a primit MOVE...........................c6e5
+13194 <first : [GameManager] Valid Move: c6d4
+13194 <first : [GameManager] Valid Move: c6b4
+13194 <first : [GameManager] Valid Move: c6a5
+13194 <first : [GameManager] Valid Move: c6b8
+13194 <first : [GameManager] Valid Move: c6e5
+13194 <first : 
+13194 <first : R P - - - - p r 
+13194 <first : - P - - p - - - 
+13194 <first : B P - - p - - b 
+13194 <first : Q P - - - - p q 
+13194 <first : K P - p n - p k 
+13194 <first : B P - - - n - b 
+13194 <first : - P - - - - p - 
+13194 <first : R P N - - - p r 
+13194 <first : 
+13194 <first : N
+13195 <first : N
+13195 <first : N
+13195 <first : N
+13195 <first : N
+13195 <first : N
+13195 <first : N
+13195 <first : Ng1f3 pc7c5 Nb1c3 pf7f5 Nc3b1 nb8c6 Nb1a3 ng8f6 Na3b1 nf6g8 Nb1c3 ng8f6 Nc3b1 nf6g8 Nb1c3 ng8f6 Nc3e4 pf5e4 Nf3g1 pb7b5 Ng1h3 nc6e5 Nh3g5 
+13195 <first : 
+13195 <first : R P - - - - p r 
+13195 <first : - P - - p - - - 
+13195 <first : B P - - p - - b 
+13195 <first : Q P - - - - p q 
+13195 <first : K P - p n - p k 
+13195 <first : B P - - - n - b 
+13195 <first : - P - - N - p - 
+13195 <first : R P - - - - p r 
+13195 <first : 
+13195 <first : Am timisssssssssssssssss h3g5
+13195 <first : move h3g5
 Interrupting second
-12967 >second: time 32106
-12967 >second: otim 32229
+13195 >second: time 32095
+13195 >second: otim 32218
 book hit = (NULL)
-12967 >second: b2b3
-13041 <second: # times @ 2386714679
-13041 <second: # 11+15 pieces, centr = (1,1) R=33
-13041 <second:  1   1104        0          3 a5a1
-13041 <second:  2   1102        0         31 a5a1 c2c4
-13041 <second: # times @ 2386714680: real=1 cpu=0
-13041 <second: # promo = 0 (`) GT = 0
-13041 <second: move a5a1
-13041 >first : time 32229
-13041 >first : otim 32299
+13195 >second: h3g5
+13289 <second: # times @ 2444410606
+13289 <second: # 15+16 pieces, centr = (1,1) R=37
+13289 <second:  1    264        0          3 g7g6
+13289 <second:  2    248        0         85 g7g6 d2d4
+13289 <second: # times @ 2444410610: real=4 cpu=0
+13289 <second: # promo = 0 (`) GT = 0
+13289 <second: move g7g6
+13289 >first : time 32218
+13289 >first : otim 32286
 book hit = (NULL)
-13041 >first : a5a1
-13136 <first : [ReceiverXboard] S-a primit MOVE...........................a5a1
-13136 <first : [GameManager] Valid Move: a5a4
-13136 <first : [GameManager] Valid Move: a5a3
-13136 <first : [GameManager] Valid Move: a5a2
-13136 <first : [GameManager] Valid Move: a5a1
-13136 <first : [GameManager] Valid Move: a5a6
-13136 <first : [GameManager] Valid Move: a5a7
-13136 <first : [GameManager] Valid Move: a5a8
-13136 <first : [GameManager] Valid Move: a5b5
-13136 <first : 
-13136 <first : r - - - - - - - 
-13136 <first : - - P - - - p - 
-13136 <first : B P - - p n - b 
-13136 <first : Q P - - - - p q 
-13136 <first : K P - - n - p k 
-13136 <first : B P - - - - - b 
-13136 <first : - - - - p - - - 
-13136 <first : R - - p - - p r 
-13136 <first : 
-13136 <first : P
-13136 <first : P
-13136 <first : P
-13137 <first : P
-13137 <first : P
-13137 <first : P
-13137 <first : P
-13137 <first : P
-13137 <first : Ng1f3 pf7f6 Nb1c3 pc7c5 Nc3b5 nb8c6 Nb5a7 ra8a7 Nf3g5 pf6g5 Pg2g3 ng8f6 Pg3g4 nf6g4 Ph2h3 ng4e5 Ph3h4 pg5h4 Pa2a4 pg7g5 Pa4a5 ra7a5 Pb2b3 ra5a1 Pb3b4 
-13137 <first : 
-13137 <first : r - - - - - - - 
-13137 <first : - - - P - - p - 
-13137 <first : B P - - p n - b 
-13137 <first : Q P - - - - p q 
-13137 <first : K P - - n - p k 
-13137 <first : B P - - - - - b 
-13137 <first : - - - - p - - - 
-13137 <first : R - - p - - p r 
-13137 <first : 
-13137 <first : Am timisssssssssssssssss b3b4
-13137 <first : move b3b4
+13289 >first : g7g6
+13364 <first : [ReceiverXboard] S-a primit MOVE...........................g7g6
+13364 <first : [GameManager] Valid Move: g7g6
+13364 <first : 
+13364 <first : R P - - - - p r 
+13364 <first : - P - - p - - - 
+13364 <first : B P - - p - - b 
+13364 <first : Q P - - - - p q 
+13364 <first : K P - p n - p k 
+13364 <first : B P - - - n - b 
+13364 <first : - P - - N p - - 
+13364 <first : R P - - - - p r 
+13364 <first : 
+13364 <first : N
+13364 <first : N
+13364 <first : N
+13364 <first : N
+13364 <first : Ng1f3 pc7c5 Nb1c3 pf7f5 Nc3b1 nb8c6 Nb1a3 ng8f6 Na3b1 nf6g8 Nb1c3 ng8f6 Nc3b1 nf6g8 Nb1c3 ng8f6 Nc3e4 pf5e4 Nf3g1 pb7b5 Ng1h3 nc6e5 Nh3g5 pg7g6 Ng5h3 
+13364 <first : 
+13364 <first : R P - - - - p r 
+13364 <first : - P - - p - - - 
+13364 <first : B P - - p - - b 
+13364 <first : Q P - - - - p q 
+13364 <first : K P - p n - p k 
+13364 <first : B P - - - n - b 
+13364 <first : - P - - - p - - 
+13364 <first : R P N - - - p r 
+13364 <first : 
+13364 <first : Am timisssssssssssssssss g5h3
+13364 <first : move g5h3
 Interrupting second
-13137 >second: time 32299
-13137 >second: otim 32419
+13364 >second: time 32286
+13364 >second: otim 32411
 book hit = (NULL)
-13137 >second: b3b4
-13210 <second: # times @ 2386714848
-13210 <second: # 10+15 pieces, centr = (1,1) R=28
-13210 <second:  1   1184        0          3 c6b4
-13210 <second:  2   1172        0         94 c6b4 f2f4
-13210 <second: # times @ 2386714850: real=2 cpu=0
-13210 <second: # promo = 0 (`) GT = 0
-13210 <second: move c6b4
-13211 >first : time 32419
-13211 >first : otim 32491
+13364 >second: g5h3
+13459 <second: # times @ 2444410776
+13459 <second: # 15+16 pieces, centr = (1,1) R=37
+13459 <second:  1    257        0          3 a7a5
+13459 <second:  1    261        0          3 f6d5
+13459 <second:  1    262        0          3 f8g7
+13459 <second:  2    246        0         33 f8g7 d2d4
+13459 <second: # times @ 2444410777: real=1 cpu=10
+13459 <second: # promo = 0 (`) GT = 0
+13459 <second: move f8g7
+13459 >first : time 32411
+13459 >first : otim 32476
 book hit = (NULL)
-13211 >first : c6b4
-13305 <first : [ReceiverXboard] S-a primit MOVE...........................c6b4
-13305 <first : [GameManager] Valid Move: c6d4
-13305 <first : [GameManager] Valid Move: c6b4
-13305 <first : [GameManager] Valid Move: c6a5
-13305 <first : [GameManager] Valid Move: c6a7
-13305 <first : [GameManager] Valid Move: c6b8
-13305 <first : 
-13305 <first : r - - - - - - - 
-13305 <first : - - - n - - p - 
-13305 <first : B P - - p - - b 
-13305 <first : Q P - - - - p q 
-13305 <first : K P - - n - p k 
-13305 <first : B P - - - - - b 
-13305 <first : - - - - p - - - 
-13305 <first : R - - p - - p r 
-13305 <first : 
-13305 <first : P
-13305 <first : P
-13305 <first : P
-13305 <first : P
-13305 <first : P
-13305 <first : P
-13305 <first : P
-13305 <first : P
-13305 <first : P
-13305 <first : P
-13305 <first : P
-13305 <first : Ng1f3 pf7f6 Nb1c3 pc7c5 Nc3b5 nb8c6 Nb5a7 ra8a7 Nf3g5 pf6g5 Pg2g3 ng8f6 Pg3g4 nf6g4 Ph2h3 ng4e5 Ph3h4 pg5h4 Pa2a4 pg7g5 Pa4a5 ra7a5 Pb2b3 ra5a1 Pb3b4 nc6b4 Pc2c4 
-13305 <first : 
-13305 <first : r - - - - - - - 
-13305 <first : - - - n - - p - 
-13305 <first : B - - P p - - b 
-13305 <first : Q P - - - - p q 
-13305 <first : K P - - n - p k 
-13305 <first : B P - - - - - b 
-13305 <first : - - - - p - - - 
-13305 <first : R - - p - - p r 
-13305 <first : 
-13305 <first : Am timisssssssssssssssss c2c4
-13305 <first : move c2c4
+13459 >first : f8g7
+13534 <first : [ReceiverXboard] S-a primit MOVE...........................f8g7
+13535 <first : [GameManager] Valid Move: f8g7
+13535 <first : [GameManager] Valid Move: f8h6
+13535 <first : 
+13535 <first : R P - - - - p r 
+13535 <first : - P - - p - - - 
+13535 <first : B P - - p - - b 
+13535 <first : Q P - - - - p q 
+13535 <first : K P - p n - p k 
+13535 <first : B P - - - n - b 
+13535 <first : - P - - - p - - 
+13535 <first : R P N - - - p r 
+13535 <first : 
+13535 <first : N
+13535 <first : N
+13535 <first : N
+13535 <first : N
+13535 <first : N
+13535 <first : N
+13535 <first : N
+13535 <first : Ng1f3 pc7c5 Nb1c3 pf7f5 Nc3b1 nb8c6 Nb1a3 ng8f6 Na3b1 nf6g8 Nb1c3 ng8f6 Nc3b1 nf6g8 Nb1c3 ng8f6 Nc3e4 pf5e4 Nf3g1 pb7b5 Ng1h3 nc6e5 Nh3g5 pg7g6 Ng5h3 bf8g7 Nh3g5 
+13535 <first : 
+13535 <first : R P - - - - p r 
+13535 <first : - P - - p - - - 
+13535 <first : B P - - p - - b 
+13535 <first : Q P - - - - p q 
+13535 <first : K P - p n - p k 
+13535 <first : B P - - - n - b 
+13535 <first : - P - - N p - - 
+13535 <first : R P - - - - p r 
+13535 <first : 
+13535 <first : Am timisssssssssssssssss h3g5
+13535 <first : move h3g5
 Interrupting second
-13306 >second: time 32491
-13306 >second: otim 32610
+13535 >second: time 32476
+13535 >second: otim 32603
 book hit = (NULL)
-13306 >second: c2c4
-13381 <second: # times @ 2386715017
-13381 <second: # 9+15 pieces, centr = (1,1) R=27
-13381 <second:  1   1244        0          3 e5c4
-13381 <second:  2   1244        0         90 e5c4 f2f4
-13381 <second:  2   1456        0        441 b4a2 d2d4 a1c1
-13381 <second: # times @ 2386715018: real=1 cpu=10
-13381 <second: # promo = 0 (`) GT = 0
-13381 <second: move b4a2
-13381 >first : time 32610
-13381 >first : otim 32684
+13535 >second: h3g5
+13629 <second: # times @ 2444410947
+13629 <second: # 15+16 pieces, centr = (1,1) R=37
+13629 <second:  1    257        0          3 a7a5
+13629 <second:  1    258        0          3 g7h6
+13629 <second:  1    259        0          3 a8b8
+13629 <second:  1    260        0          3 c8b7
+13629 <second:  1    285        0          3 e8g8
+13629 <second:  2    269        0         85 e8g8 d2d4
+13629 <second: # times @ 2444410949: real=2 cpu=0
+13629 <second: # promo = 0 (`) GT = 0
+13629 <second: move e8g8
+13629 >first : time 32603
+13629 >first : otim 32667
 book hit = (NULL)
-13381 >first : b4a2
-13478 <first : [ReceiverXboard] S-a primit MOVE...........................b4a2
-13478 <first : [GameManager] Valid Move: b4c2
-13478 <first : [GameManager] Valid Move: b4a2
-13478 <first : [GameManager] Valid Move: b4a6
-13478 <first : [GameManager] Valid Move: b4c6
-13478 <first : [GameManager] Valid Move: b4d5
-13478 <first : [GameManager] Valid Move: b4d3
-13478 <first : 
-13478 <first : r n - - - - - - 
-13478 <first : - - - - - - p - 
-13478 <first : B - - P p - - b 
-13478 <first : Q P - - - - p q 
-13478 <first : K P - - n - p k 
-13478 <first : B P - - - - - b 
-13478 <first : - - - - p - - - 
-13478 <first : R - - p - - p r 
-13478 <first : 
-13478 <first : P
-13478 <first : P
-13478 <first : P
-13478 <first : P
-13478 <first : P
-13478 <first : P
-13478 <first : P
-13478 <first : P
-13478 <first : P
-13478 <first : P
-13478 <first : P
-13478 <first : P
-13478 <first : P
-13478 <first : P
-13478 <first : P
-13478 <first : Ng1f3 pf7f6 Nb1c3 pc7c5 Nc3b5 nb8c6 Nb5a7 ra8a7 Nf3g5 pf6g5 Pg2g3 ng8f6 Pg3g4 nf6g4 Ph2h3 ng4e5 Ph3h4 pg5h4 Pa2a4 pg7g5 Pa4a5 ra7a5 Pb2b3 ra5a1 Pb3b4 nc6b4 Pc2c4 nb4a2 Pd2d4 
-13478 <first : 
-13478 <first : r n - - - - - - 
-13478 <first : - - - - - - p - 
-13478 <first : B - - P p - - b 
-13478 <first : Q - - P - - p q 
-13478 <first : K P - - n - p k 
-13478 <first : B P - - - - - b 
-13478 <first : - - - - p - - - 
-13478 <first : R - - p - - p r 
-13478 <first : 
-13478 <first : Am timisssssssssssssssss d2d4
-13478 <first : move d2d4
+13629 >first : e8g8
+13703 <first : [ReceiverXboard] S-a primit MOVE...........................e8g8
+13703 <first : [Table] Se evalueaza black king-side castling
+13703 <first : [GameManager] Cannot execute illegal move: 
+13703 <first : 
+13703 <first : R P - - - - p r 
+13703 <first : - P - - p - - - 
+13703 <first : B P - - p - - b 
+13703 <first : Q P - - - - p q 
+13703 <first : K P - p n - p k 
+13703 <first : B P - - - n - b 
+13703 <first : - P - - N p - - 
+13703 <first : R P - - - - p r 
+13703 <first : 
+GameEnds(29, xboard exit, 2)
+GE(29, xboard exit, 2) bare king k=16 color=66
+24036 >first : result * {xboard exit}
 Interrupting second
-13478 >second: time 32684
-13478 >second: otim 32800
-book hit = (NULL)
-13478 >second: d2d4
-13554 <second: # times @ 2386715190
-13554 <second: # 9+15 pieces, centr = (1,1) R=27
-13554 <second:  1   1457        0         11 a1c1
-13555 <second:  2   1637        0         78 a1c1 d1c1 a2c1 d4e5
-13555 <second: # times @ 2386715191: real=1 cpu=0
-13555 <second: # promo = 0 (`) GT = 0
-13555 <second: move a1c1
-13555 >first : time 32800
-13555 >first : otim 32876
-book hit = (NULL)
-13555 >first : a1c1
-13630 <first : [ReceiverXboard] S-a primit MOVE...........................a1c1
-13630 <first : [GameManager] Valid Move: a1b1
-13630 <first : [GameManager] Valid Move: a1c1
-13630 <first : 
-13630 <first : - n - - - - - - 
-13630 <first : - - - - - - p - 
-13630 <first : r - - P p - - b 
-13630 <first : Q - - P - - p q 
-13630 <first : K P - - n - p k 
-13630 <first : B P - - - - - b 
-13630 <first : - - - - p - - - 
-13630 <first : R - - p - - p r 
-13630 <first : 
-13630 <first : P
-13630 <first : P
-13630 <first : P
-13630 <first : P
-13630 <first : P
-13630 <first : P
-13630 <first : P
-13630 <first : P
-13630 <first : P
-13630 <first : P
-13630 <first : P
-13630 <first : P
-13630 <first : P
-13630 <first : P
-13630 <first : Ng1f3 pf7f6 Nb1c3 pc7c5 Nc3b5 nb8c6 Nb5a7 ra8a7 Nf3g5 pf6g5 Pg2g3 ng8f6 Pg3g4 nf6g4 Ph2h3 ng4e5 Ph3h4 pg5h4 Pa2a4 pg7g5 Pa4a5 ra7a5 Pb2b3 ra5a1 Pb3b4 nc6b4 Pc2c4 nb4a2 Pd2d4 ra1c1 Pd4e5 
-13630 <first : 
-13630 <first : - n - - - - - - 
-13630 <first : - - - - - - p - 
-13630 <first : r - - P p - - b 
-13630 <first : Q - - - - - p q 
-13630 <first : K P - - P - p k 
-13630 <first : B P - - - - - b 
-13630 <first : - - - - p - - - 
-13630 <first : R - - p - - p r 
-13630 <first : 
-13630 <first : Am timisssssssssssssssss d4e5
-13630 <first : move d4e5
-Interrupting second
-13630 >second: time 32876
-13630 >second: otim 32993
-book hit = (NULL)
-13630 >second: d4e5
-13704 <second: # times @ 2386715341
-13704 <second: # 8+14 pieces, centr = (1,1) R=23
-13704 <second:  1   1649        0          3 c1d1
-13704 <second:  2   1665        0         57 c1d1 e1d1 a2c3
-13704 <second:  2 100001        0        134 d8a5
-13704 <second: # times @ 2386715342: real=1 cpu=0
-13704 <second: # promo = 0 (`) GT = 0
-13704 <second: move d8a5
-13704 >first : d8a5
-GameEnds(27, Xboard adjudication: Checkmate, 4)
-GE(27, Xboard adjudication: Checkmate, 4) bare king k=14 color=66
-13704 >first : result 0-1 {Xboard adjudication: Checkmate}
-Interrupting second
-13704 >second: result 0-1 {Xboard adjudication: Checkmate}
-13704 >first : quit
-13721 >second: force
-13721 >second: ping 2
-13815 <second: 0-1 {Black mates}
-13815 <second: Error (unknown command): result
-13815 <second: pong 2
-Reset(0, 0) from gameMode 8
-recognized 'normal' (-1) as variant normal
-GameEnds(0, (null), 2)
-shuffleOpenings = 0
-StartChildProcess (dir=".") make run
-13818 >first : xboard
-protover 2
-13823 <first : make[1]: Entering directory '/home/cristi/Documents/Anul2/Sem2/PA/l2-pa-project-MSP-Band/Chess_MSP-Band/src'
-13823 <first : javac Main.java
-14617 <first : java Main
-14768 <first : [ReceiverXboard] S-a primit XBOARD
-23823 >first : new
-random
-23823 >first : level 0 5 2
-23823 >first : post
-23823 >first : hard
-Feeding moves 0 through 0 to first chess program
-23823 >first : force
-23823 >second: memory 68
-23823 >second: new
-random
-sd 2
-23823 >second: level 0 5 2
-23823 >second: post
-23823 >second: hard
-23823 >second: ping 3
-23823 >second: force
-23824 <first : [ReceiverXboard] S-a primit NEW
-23824 <first : feature sigint=0 sigterm=0 done=1 colors=0
-23824 >first : accepted sigint
-23824 >first : accepted sigterm
-23824 >first : accepted done
-23824 >first : accepted colors
-23835 <first : [ReceiverXboard] S-a primit FORCE
-23850 <second: pong 3
-New game (2): make-Fairy-Max 5.0b (b)
-23856 >first : computer
-23856 >second: computer
-23856 >second: black
-23856 >second: time 30000
-23856 >second: otim 30000
-23856 >second: white
-book hit = (NULL)
-23856 >second: go
-nps: w=-1, b=-1
-23857 <second: Error (unknown command): computer
-23857 <second: # times @ 2386725568
-23857 <second: # 16+16 pieces, centr = (1,1) R=40
-23857 <second:  1      8        0          7 a2a4
-23857 <second:  1     17        0          9 b2b3
-23857 <second:  1     19        0         11 c2c4
-23857 <second:  1     22        0         13 d2d4
-23857 <second:  2     15        0         27 d2d4 d7d5
-23858 <second: # times @ 2386725568: real=0 cpu=0
-23858 <second: # promo = 0 (`) GT = 0
-23858 <second: move d2d4
-23858 >first : time 30000
-23858 >first : otim 30199
-book hit = (NULL)
-23858 >first : d2d4
-23858 >first : go
-23933 <first : [ReceiverXboard] S-a primit MOVE...........................d2d4
-23933 <first : [GameManager] Valid Move: d2d3
-23933 <first : [GameManager] Valid Move: d2d4
-23933 <first : 
-23933 <first : R P - - - - p r 
-23933 <first : N P - - - - p n 
-23933 <first : B P - - - - p b 
-23933 <first : Q - - P - - p q 
-23933 <first : K P - - - - p k 
-23933 <first : B P - - - - p b 
-23933 <first : N P - - - - p n 
-23933 <first : R P - - - - p r 
-23933 <first : 
-23933 <first : [ReceiverXboard] S-a primit GO
-23933 <first : n
-23933 <first : n
-23933 <first : n
-23933 <first : n
-23933 <first : n
-23933 <first : n
-23933 <first : Pd2d4 ng8h6 
-23933 <first : 
-23933 <first : R P - - - - p r 
-23933 <first : N P - - - - p n 
-23933 <first : B P - - - - p b 
-23933 <first : Q - - P - - p q 
-23933 <first : K P - - - - p k 
-23933 <first : B P - - - - p b 
-23933 <first : N P - - - - p - 
-23933 <first : R P - - - n p r 
-23933 <first : 
-23933 <first : Am timisssssssssssssssss g8h6
-23933 <first : move g8h6
-Interrupting second
-23933 >second: time 30199
-23933 >second: otim 30192
-book hit = (NULL)
-23933 >second: g8h6
-24027 <second: # times @ 2386725644
-24027 <second: # 16+16 pieces, centr = (1,1) R=40
-24027 <second:  1    -31        0          3 c1h6
-24027 <second:  1      9        0          3 c1d2
-24027 <second:  1     15        0          3 c1f4
-24027 <second:  1     19        0          5 c2c4
-24027 <second:  1     25        0          7 b1d2
-24027 <second:  2     11        0         21 b1d2 d7d5
-24027 <second:  2     14        0        229 c2c4 d7d5
-24027 <second: # times @ 2386725645: real=1 cpu=0
-24027 <second: # promo = 0 (`) GT = 0
-24027 <second: move c2c4
-24027 >first : time 30192
-24027 >first : otim 30390
-book hit = (NULL)
-24027 >first : c2c4
-24101 <first : [ReceiverXboard] S-a primit MOVE...........................c2c4
-24101 <first : [GameManager] Valid Move: c2c3
-24101 <first : [GameManager] Valid Move: c2c4
-24101 <first : 
-24101 <first : R P - - - - p r 
-24101 <first : N P - - - - p n 
-24101 <first : B - - P - - p b 
-24101 <first : Q - - P - - p q 
-24101 <first : K P - - - - p k 
-24101 <first : B P - - - - p b 
-24101 <first : N P - - - - p - 
-24101 <first : R P - - - n p r 
-24101 <first : 
-24101 <first : n
-24101 <first : n
-24101 <first : n
-24101 <first : n
-24101 <first : n
-24101 <first : n
-24102 <first : n
-24102 <first : n
-24102 <first : Pd2d4 ng8h6 Pc2c4 nh6g4 
-24102 <first : 
-24102 <first : R P - - - - p r 
-24102 <first : N P - - - - p n 
-24102 <first : B - - P - - p b 
-24102 <first : Q - - P - - p q 
-24102 <first : K P - - - - p k 
-24102 <first : B P - - - - p b 
-24102 <first : N P - n - - p - 
-24102 <first : R P - - - - p r 
-24102 <first : 
-24102 <first : Am timisssssssssssssssss h6g4
-24102 <first : move h6g4
-Interrupting second
-24102 >second: time 30390
-24102 >second: otim 30385
-book hit = (NULL)
-24102 >second: h6g4
-24196 <second: # times @ 2386725813
-24196 <second: # 16+16 pieces, centr = (1,1) R=40
-24196 <second:  1     -9        0          3 c4c5
-24196 <second:  1      2        0         13 d4d5
-24196 <second:  1      3        0         23 b2b3
-24196 <second:  1     12        0         33 e2e4
-24196 <second:  1     20        0         39 h2h4
-24196 <second:  2     -8        0         71 h2h4 b8c6
-24196 <second:  2     -6        0        176 h2h3 g4f6
-24196 <second:  2      3        0        226 b1c3 b8c6
-24196 <second:  2      5        0        367 c1g5 b8c6
-24196 <second: # times @ 2386725814: real=1 cpu=0
-24196 <second: # promo = 0 (`) GT = 0
-24196 <second: move c1g5
-24197 >first : time 30385
-24197 >first : otim 30581
-book hit = (NULL)
-24197 >first : c1g5
-24292 <first : [ReceiverXboard] S-a primit MOVE...........................c1g5
-24292 <first : [GameManager] Valid Move: c1d2
-24292 <first : [GameManager] Valid Move: c1e3
-24292 <first : [GameManager] Valid Move: c1f4
-24293 <first : [GameManager] Valid Move: c1g5
-24293 <first : [GameManager] Valid Move: c1h6
-24293 <first : 
-24293 <first : R P - - - - p r 
-24293 <first : N P - - - - p n 
-24293 <first : - - - P - - p b 
-24293 <first : Q - - P - - p q 
-24293 <first : K P - - - - p k 
-24293 <first : B P - - - - p b 
-24293 <first : N P - n B - p - 
-24293 <first : R P - - - - p r 
-24293 <first : 
-24293 <first : n
-24293 <first : n
-24293 <first : n
-24293 <first : n
-24293 <first : n
-24293 <first : Pd2d4 ng8h6 Pc2c4 nh6g4 Bc1g5 ng4e3 
-24293 <first : 
-24293 <first : R P - - - - p r 
-24293 <first : N P - - - - p n 
-24293 <first : - - - P - - p b 
-24293 <first : Q - - P - - p q 
-24293 <first : K P n - - - p k 
-24293 <first : B P - - - - p b 
-24293 <first : N P - - B - p - 
-24293 <first : R P - - - - p r 
-24293 <first : 
-24293 <first : Am timisssssssssssssssss g4e3
-24293 <first : move g4e3
-Interrupting second
-24293 >second: time 30581
-24293 >second: otim 30575
-book hit = (NULL)
-24293 >second: g4e3
-24388 <second: # times @ 2386726004
-24388 <second: # 16+16 pieces, centr = (1,1) R=40
-24388 <second:  1    271        0          3 f2e3
-24388 <second:  2    249        0         37 f2e3 d7d5
-24388 <second: # times @ 2386726006: real=2 cpu=0
-24388 <second: # promo = 0 (`) GT = 0
-24388 <second: move f2e3
-24388 >first : time 30575
-24388 >first : otim 30771
-book hit = (NULL)
-24388 >first : f2e3
-24464 <first : [ReceiverXboard] S-a primit MOVE...........................f2e3
-24464 <first : [GameManager] Valid Move: f2f3
-24464 <first : [GameManager] Valid Move: f2f4
-24464 <first : [GameManager] Valid Move: f2e3
-24464 <first : 
-24464 <first : R P - - - - p r 
-24464 <first : N P - - - - p n 
-24464 <first : - - - P - - p b 
-24464 <first : Q - - P - - p q 
-24464 <first : K P P - - - p k 
-24464 <first : B - - - - - p b 
-24464 <first : N P - - B - p - 
-24464 <first : R P - - - - p r 
-24464 <first : 
-24464 <first : n
-24464 <first : n
-24464 <first : n
-24464 <first : n
-24464 <first : n
-24464 <first : n
-24464 <first : n
-24464 <first : n
-24464 <first : n
-24464 <first : n
-24464 <first : n
-24464 <first : n
-24464 <first : n
-24464 <first : n
-24464 <first : n
-24464 <first : n
-24464 <first : n
-24464 <first : n
-24464 <first : Pd2d4 ng8h6 Pc2c4 nh6g4 Bc1g5 ng4e3 Pf2e3 nb8c6 
-24464 <first : 
-24464 <first : R P - - - - p r 
-24464 <first : N P - - - - p - 
-24464 <first : - - - P - n p b 
-24464 <first : Q - - P - - p q 
-24464 <first : K P P - - - p k 
-24464 <first : B - - - - - p b 
-24464 <first : N P - - B - p - 
-24464 <first : R P - - - - p r 
-24464 <first : 
-24464 <first : Am timisssssssssssssssss b8c6
-24464 <first : move b8c6
-Interrupting second
-24464 >second: time 30771
-24464 >second: otim 30767
-book hit = (NULL)
-24464 >second: b8c6
-24559 <second: # times @ 2386726176
-24559 <second: # 16+15 pieces, centr = (1,1) R=37
-24559 <second:  1     28        0          3 g5e7
-24559 <second:  1    262        0          3 g5f4
-24559 <second:  1    266        0          3 g2g4
-24559 <second:  1    273        0          3 b1d2
-24559 <second:  1    274        0          3 b1c3
-24559 <second:  2    258        0         65 b1c3 f7f5
-24559 <second: # times @ 2386726179: real=3 cpu=0
-24559 <second: # promo = 0 (`) GT = 0
-24559 <second: move b1c3
-24560 >first : time 30767
-24560 >first : otim 30961
-book hit = (NULL)
-24560 >first : b1c3
-24655 <first : [ReceiverXboard] S-a primit MOVE...........................b1c3
-24655 <first : [GameManager] Valid Move: b1a3
-24655 <first : [GameManager] Valid Move: b1c3
-24655 <first : [GameManager] Valid Move: b1d2
-24655 <first : 
-24655 <first : R P - - - - p r 
-24655 <first : - P - - - - p - 
-24655 <first : - - N P - n p b 
-24655 <first : Q - - P - - p q 
-24655 <first : K P P - - - p k 
-24655 <first : B - - - - - p b 
-24655 <first : N P - - B - p - 
-24655 <first : R P - - - - p r 
-24655 <first : 
-24655 <first : n
-24655 <first : n
-24655 <first : n
-24655 <first : n
-24655 <first : n
-24655 <first : n
-24655 <first : n
-24655 <first : n
-24655 <first : n
-24655 <first : n
-24655 <first : n
-24655 <first : n
-24655 <first : n
-24655 <first : n
-24655 <first : n
-24655 <first : n
-24655 <first : n
-24655 <first : n
-24655 <first : n
-24655 <first : Pd2d4 ng8h6 Pc2c4 nh6g4 Bc1g5 ng4e3 Pf2e3 nb8c6 Nb1c3 nc6a5 
-24655 <first : 
-24655 <first : R P - - n - p r 
-24655 <first : - P - - - - p - 
-24655 <first : - - N P - - p b 
-24655 <first : Q - - P - - p q 
-24655 <first : K P P - - - p k 
-24655 <first : B - - - - - p b 
-24655 <first : N P - - B - p - 
-24655 <first : R P - - - - p r 
-24655 <first : 
-24655 <first : Am timisssssssssssssssss c6a5
-24655 <first : move c6a5
-Interrupting second
-24655 >second: time 30961
-24655 >second: otim 30958
-book hit = (NULL)
-24655 >second: c6a5
-24752 <second: # times @ 2386726367
-24752 <second: # 16+15 pieces, centr = (1,1) R=37
-24752 <second:  1     28        0          3 g5e7
-24752 <second:  1    176        0          3 g5f4
-24752 <second:  1    251        0          3 c4c5
-24752 <second:  1    255        0          3 b2b3
-24752 <second:  1    259        0          3 d1d3
-24752 <second:  2    243        0         81 d1d3 f7f5
-24752 <second:  2    245        0        204 d1a4 c7c6
-24752 <second: # times @ 2386726368: real=1 cpu=0
-24752 <second: # promo = 0 (`) GT = 0
-24752 <second: move d1a4
-24752 >first : time 30958
-24752 >first : otim 31152
-book hit = (NULL)
-24752 >first : d1a4
-24847 <first : [ReceiverXboard] S-a primit MOVE...........................d1a4
-24847 <first : [GameManager] Valid Move: d1c1
-24847 <first : [GameManager] Valid Move: d1b1
-24847 <first : [GameManager] Valid Move: d1c2
-24847 <first : [GameManager] Valid Move: d1b3
-24847 <first : [GameManager] Valid Move: d1a4
-24847 <first : [GameManager] Valid Move: d1d2
-24848 <first : [GameManager] Valid Move: d1d3
-24848 <first : 
-24848 <first : R P - Q n - p r 
-24848 <first : - P - - - - p - 
-24848 <first : - - N P - - p b 
-24848 <first : - - - P - - p q 
-24848 <first : K P P - - - p k 
-24848 <first : B - - - - - p b 
-24848 <first : N P - - B - p - 
-24848 <first : R P - - - - p r 
-24848 <first : 
-24848 <first : n
-24848 <first : n
-24848 <first : n
-24848 <first : n
-24848 <first : n
-24848 <first : n
-24848 <first : n
-24848 <first : n
-24848 <first : n
-24848 <first : n
-24848 <first : n
-24848 <first : n
-24848 <first : n
-24848 <first : n
-24848 <first : Pd2d4 ng8h6 Pc2c4 nh6g4 Bc1g5 ng4e3 Pf2e3 nb8c6 Nb1c3 nc6a5 Qd1a4 na5c4 
-24848 <first : 
-24848 <first : R P - Q - - p r 
-24848 <first : - P - - - - p - 
-24848 <first : - - N n - - p b 
-24848 <first : - - - P - - p q 
-24848 <first : K P P - - - p k 
-24848 <first : B - - - - - p b 
-24848 <first : N P - - B - p - 
-24848 <first : R P - - - - p r 
-24848 <first : 
-24848 <first : Am timisssssssssssssssss a5c4
-24848 <first : move a5c4
-Interrupting second
-24848 >second: time 31152
-24848 >second: otim 31148
-book hit = (NULL)
-24848 >second: a5c4
-24943 <second: # times @ 2386726559
-24943 <second: # 15+15 pieces, centr = (1,1) R=38
-24943 <second:  1    432        0          3 a4c4
-24943 <second:  2    428        0         55 a4c4 f7f5
-24943 <second: # times @ 2386726560: real=1 cpu=10
-24943 <second: # promo = 0 (`) GT = 0
-24943 <second: move a4c4
-24943 >first : time 31148
-24943 >first : otim 31342
-book hit = (NULL)
-24943 >first : a4c4
-25018 <first : [ReceiverXboard] S-a primit MOVE...........................a4c4
-25018 <first : [GameManager] Valid Move: a4a3
-25018 <first : [GameManager] Valid Move: a4a5
-25018 <first : [GameManager] Valid Move: a4a6
-25018 <first : [GameManager] Valid Move: a4a7
-25018 <first : [GameManager] Valid Move: a4b5
-25018 <first : [GameManager] Valid Move: a4c6
-25018 <first : [GameManager] Valid Move: a4d7
-25019 <first : [GameManager] Valid Move: a4b4
-25019 <first : [GameManager] Valid Move: a4c4
-25019 <first : [GameManager] Valid Move: a4b3
-25019 <first : [GameManager] Valid Move: a4c2
-25019 <first : [GameManager] Valid Move: a4d1
-25019 <first : 
-25019 <first : R P - - - - p r 
-25019 <first : - P - - - - p - 
-25019 <first : - - N Q - - p b 
-25019 <first : - - - P - - p q 
-25019 <first : K P P - - - p k 
-25019 <first : B - - - - - p b 
-25019 <first : N P - - B - p - 
-25019 <first : R P - - - - p r 
-25019 <first : 
-25019 <first : n
-25019 <first : n
-25019 <first : n
-25019 <first : n
-25019 <first : n
-25019 <first : n
-25019 <first : n
-25019 <first : n
-25019 <first : n
-25019 <first : n
-25019 <first : n
-25019 <first : n
-25019 <first : n
-25019 <first : n
-25019 <first : n
-25019 <first : n
-25019 <first : n
-25019 <first : n
-25019 <first : n
-25019 <first : n
-25019 <first : n
-25019 <first : n
-25019 <first : n
-25019 <first : n
-25019 <first : n
-25019 <first : n
-25019 <first : n
-25019 <first : n
-25019 <first : n
-25019 <first : p
-25019 <first : Pd2d4 ng8h6 Pc2c4 nh6g4 Bc1g5 ng4e3 Pf2e3 nb8c6 Nb1c3 nc6a5 Qd1a4 na5c4 Qa4c4 pf7f6 
-25019 <first : 
-25019 <first : R P - - - - p r 
-25019 <first : - P - - - - p - 
-25019 <first : - - N Q - - p b 
-25019 <first : - - - P - - p q 
-25019 <first : K P P - - - p k 
-25019 <first : B - - - - p - b 
-25019 <first : N P - - B - p - 
-25019 <first : R P - - - - p r 
-25019 <first : 
-25019 <first : Am timisssssssssssssssss f7f6
-25019 <first : move f7f6
-Interrupting second
-25019 >second: time 31342
-25019 >second: otim 31341
-book hit = (NULL)
-25019 >second: f7f6
-25092 <second: # times @ 2386726731
-25092 <second: # 15+14 pieces, centr = (1,1) R=34
-25092 <second:  1    214        0          3 g5f6
-25093 <second:  1    447        0          3 g5f4
-25093 <second:  2    432        0         51 g5f4 c7c6
-25093 <second: # times @ 2386726731: real=0 cpu=0
-25093 <second: # promo = 0 (`) GT = 0
-25093 <second: move g5f4
-25093 >first : time 31341
-25093 >first : otim 31535
-book hit = (NULL)
-25093 >first : g5f4
-25167 <first : [ReceiverXboard] S-a primit MOVE...........................g5f4
-25167 <first : [GameManager] Valid Move: g5h4
-25167 <first : [GameManager] Valid Move: g5f4
-25167 <first : [GameManager] Valid Move: g5f6
-25167 <first : [GameManager] Valid Move: g5h6
-25167 <first : 
-25167 <first : R P - - - - p r 
-25167 <first : - P - - - - p - 
-25167 <first : - - N Q - - p b 
-25167 <first : - - - P - - p q 
-25167 <first : K P P - - - p k 
-25167 <first : B - - B - p - b 
-25167 <first : N P - - - - p - 
-25167 <first : R P - - - - p r 
-25167 <first : 
-25167 <first : p
-25167 <first : p
-25167 <first : Pd2d4 ng8h6 Pc2c4 nh6g4 Bc1g5 ng4e3 Pf2e3 nb8c6 Nb1c3 nc6a5 Qd1a4 na5c4 Qa4c4 pf7f6 Bg5f4 pf6f5 
-25167 <first : 
-25167 <first : R P - - - - p r 
-25167 <first : - P - - - - p - 
-25167 <first : - - N Q - - p b 
-25167 <first : - - - P - - p q 
-25167 <first : K P P - - - p k 
-25167 <first : B - - B p - - b 
-25167 <first : N P - - - - p - 
-25167 <first : R P - - - - p r 
-25167 <first : 
-25167 <first : Am timisssssssssssssssss f6f5
-25167 <first : move f6f5
-Interrupting second
-25167 >second: time 31535
-25167 >second: otim 31533
-book hit = (NULL)
-25167 >second: f6f5
-25242 <second: # times @ 2386726879
-25242 <second: # 15+14 pieces, centr = (1,1) R=34
-25242 <second:  1    513        0          3 f4c7
-25242 <second:  2    571        0        112 f4c7 b7b5 c3b5
-25242 <second: # times @ 2386726880: real=1 cpu=0
-25242 <second: # promo = 0 (`) GT = 0
-25242 <second: move f4c7
-25242 >first : time 31533
-25242 >first : otim 31727
-book hit = (NULL)
-25242 >first : f4c7
-25337 <first : [ReceiverXboard] S-a primit MOVE...........................f4c7
-25337 <first : [GameManager] Valid Move: f4g3
-25337 <first : [GameManager] Valid Move: f4e5
-25337 <first : [GameManager] Valid Move: f4d6
-25337 <first : [GameManager] Valid Move: f4c7
-25337 <first : [GameManager] Valid Move: f4g5
-25337 <first : [GameManager] Valid Move: f4h6
-25337 <first : 
-25337 <first : R P - - - - p r 
-25337 <first : - P - - - - p - 
-25337 <first : - - N Q - - B b 
-25337 <first : - - - P - - p q 
-25337 <first : K P P - - - p k 
-25337 <first : B - - - p - - b 
-25337 <first : N P - - - - p - 
-25337 <first : R P - - - - p r 
-25337 <first : 
-25337 <first : p
-25337 <first : Pd2d4 ng8h6 Pc2c4 nh6g4 Bc1g5 ng4e3 Pf2e3 nb8c6 Nb1c3 nc6a5 Qd1a4 na5c4 Qa4c4 pf7f6 Bg5f4 pf6f5 Bf4c7 pf5f4 
-25337 <first : 
-25337 <first : R P - - - - p r 
-25337 <first : - P - - - - p - 
-25337 <first : - - N Q - - B b 
-25337 <first : - - - P - - p q 
-25337 <first : K P P - - - p k 
-25337 <first : B - - p - - - b 
-25337 <first : N P - - - - p - 
-25337 <first : R P - - - - p r 
-25337 <first : 
-25337 <first : Am timisssssssssssssssss f5f4
-25337 <first : move f5f4
-Interrupting second
-25337 >second: time 31727
-25337 >second: otim 31724
-book hit = (NULL)
-25337 >second: f5f4
-25413 <second: # times @ 2386727049
-25413 <second: # 15+13 pieces, centr = (1,1) R=34
-25413 <second:  1   1166        0          3 c7d8
-25413 <second:  2   1166        0          7 c7d8 e8d8
-25413 <second: # times @ 2386727050: real=1 cpu=0
-25413 <second: # promo = 0 (`) GT = 0
-25413 <second: move c7d8
-25413 >first : time 31724
-25414 >first : otim 31920
-book hit = (NULL)
-25414 >first : c7d8
-25489 <first : [ReceiverXboard] S-a primit MOVE...........................c7d8
-25489 <first : [GameManager] Valid Move: c7d6
-25489 <first : [GameManager] Valid Move: c7e5
-25489 <first : [GameManager] Valid Move: c7f4
-25489 <first : [GameManager] Valid Move: c7b6
-25489 <first : [GameManager] Valid Move: c7a5
-25489 <first : [GameManager] Valid Move: c7b8
-25489 <first : [GameManager] Valid Move: c7d8
-25489 <first : 
-25489 <first : R P - - - - p r 
-25489 <first : - P - - - - p - 
-25489 <first : - - N Q - - - b 
-25489 <first : - - - P - - p B 
-25489 <first : K P P - - - p k 
-25489 <first : B - - p - - - b 
-25489 <first : N P - - - - p - 
-25489 <first : R P - - - - p r 
-25489 <first : 
-25489 <first : p
-25489 <first : Pd2d4 ng8h6 Pc2c4 nh6g4 Bc1g5 ng4e3 Pf2e3 nb8c6 Nb1c3 nc6a5 Qd1a4 na5c4 Qa4c4 pf7f6 Bg5f4 pf6f5 Bf4c7 pf5f4 Bc7d8 pf4e3 
-25489 <first : 
-25489 <first : R P - - - - p r 
-25489 <first : - P - - - - p - 
-25489 <first : - - N Q - - - b 
-25489 <first : - - - P - - p B 
-25489 <first : K P p - - - p k 
-25489 <first : B - - - - - - b 
-25489 <first : N P - - - - p - 
-25489 <first : R P - - - - p r 
-25489 <first : 
-25489 <first : Am timisssssssssssssssss f4e3
-25489 <first : move f4e3
-Interrupting second
-25489 >second: time 31920
-25489 >second: otim 31916
-book hit = (NULL)
-25490 >second: f4e3
-25565 <second: # times @ 2386727202
-25565 <second: # 14+12 pieces, centr = (1,1) R=23
-25565 <second:  1    676        0          3 c4c8
-25565 <second:  1    956        0          3 c4b3
-25565 <second:  1   1094        0          3 c4d3
-25565 <second:  1   1231        0          3 c4c7
-25565 <second:  1   1234        0          3 d8c7
-25565 <second:  2   1223        0         42 d8c7 g7g5
-25565 <second: # times @ 2386727204: real=2 cpu=0
-25565 <second: # promo = 0 (`) GT = 0
-25565 <second: move d8c7
-25565 >first : time 31916
-25565 >first : otim 32112
-book hit = (NULL)
-25565 >first : d8c7
-25642 <first : [ReceiverXboard] S-a primit MOVE...........................d8c7
-25642 <first : [GameManager] Valid Move: d8e7
-25642 <first : [GameManager] Valid Move: d8c7
-25642 <first : [GameManager] Valid Move: d8b6
-25642 <first : [GameManager] Valid Move: d8a5
-25642 <first : 
-25642 <first : R P - - - - p r 
-25642 <first : - P - - - - p - 
-25642 <first : - - N Q - - B b 
-25642 <first : - - - P - - p - 
-25642 <first : K P p - - - p k 
-25642 <first : B - - - - - - b 
-25642 <first : N P - - - - p - 
-25642 <first : R P - - - - p r 
-25642 <first : 
-25642 <first : p
-25642 <first : p
-25642 <first : p
-25642 <first : p
-25642 <first : Pd2d4 ng8h6 Pc2c4 nh6g4 Bc1g5 ng4e3 Pf2e3 nb8c6 Nb1c3 nc6a5 Qd1a4 na5c4 Qa4c4 pf7f6 Bg5f4 pf6f5 Bf4c7 pf5f4 Bc7d8 pf4e3 Bd8c7 pg7g6 
-25642 <first : 
-25642 <first : R P - - - - p r 
-25642 <first : - P - - - - p - 
-25642 <first : - - N Q - - B b 
-25642 <first : - - - P - - p - 
-25642 <first : K P p - - - p k 
-25642 <first : B - - - - - - b 
-25642 <first : N P - - - p - - 
-25642 <first : R P - - - - p r 
-25642 <first : 
-25642 <first : Am timisssssssssssssssss g7g6
-25642 <first : move g7g6
-Interrupting second
-25642 >second: time 32112
-25642 >second: otim 32108
-book hit = (NULL)
-25642 >second: g7g6
-25721 <second: # times @ 2386727354
-25721 <second: # 14+12 pieces, centr = (1,1) R=23
-25721 <second:  1   1227        0          3 d4d5
-25721 <second:  1   1237        0          3 c3e4
-25721 <second:  1   1242        0          3 g2g4
-25721 <second:  1   1257        0          3 e1c1
-25722 <second:  2   1248        0         40 e1c1 b7b6
-25722 <second:  2   1303        0        185 c7e5 b7b5 c4b5
-25722 <second: # times @ 2386727356: real=2 cpu=10
-25722 <second: # promo = 0 (`) GT = 0
-25722 <second: move c7e5
-25722 >first : time 32108
-25722 >first : otim 32304
-book hit = (NULL)
-25722 >first : c7e5
-25817 <first : [ReceiverXboard] S-a primit MOVE...........................c7e5
-25817 <first : [GameManager] Valid Move: c7d6
-25817 <first : [GameManager] Valid Move: c7e5
-25817 <first : [GameManager] Valid Move: c7f4
-25817 <first : [GameManager] Valid Move: c7g3
-25817 <first : [GameManager] Valid Move: c7b6
-25817 <first : [GameManager] Valid Move: c7a5
-25817 <first : [GameManager] Valid Move: c7b8
-25817 <first : [GameManager] Valid Move: c7d8
-25817 <first : 
-25817 <first : R P - - - - p r 
-25817 <first : - P - - - - p - 
-25817 <first : - - N Q - - - b 
-25817 <first : - - - P - - p - 
-25817 <first : K P p - B - p k 
-25817 <first : B - - - - - - b 
-25817 <first : N P - - - p - - 
-25817 <first : R P - - - - p r 
-25817 <first : 
-25818 <first : p
-25818 <first : p
-25818 <first : p
-25818 <first : p
-25818 <first : Pd2d4 ng8h6 Pc2c4 nh6g4 Bc1g5 ng4e3 Pf2e3 nb8c6 Nb1c3 nc6a5 Qd1a4 na5c4 Qa4c4 pf7f6 Bg5f4 pf6f5 Bf4c7 pf5f4 Bc7d8 pf4e3 Bd8c7 pg7g6 Bc7e5 pg6g5 
-25818 <first : 
-25818 <first : R P - - - - p r 
-25818 <first : - P - - - - p - 
-25818 <first : - - N Q - - - b 
-25818 <first : - - - P - - p - 
-25818 <first : K P p - B - p k 
-25818 <first : B - - - - - - b 
-25818 <first : N P - - p - - - 
-25818 <first : R P - - - - p r 
-25818 <first : 
-25818 <first : Am timisssssssssssssssss g6g5
-25818 <first : move g6g5
-Interrupting second
-25818 >second: time 32304
-25818 >second: otim 32299
-book hit = (NULL)
-25818 >second: g6g5
-25891 <second: # times @ 2386727529
-25891 <second: # 14+12 pieces, centr = (1,1) R=23
-25891 <second:  1   1655        0          3 e5h8
-25891 <second:  2   1645        0         35 e5h8 b7b6
-25891 <second: # times @ 2386727530: real=1 cpu=0
-25891 <second: # promo = 0 (`) GT = 0
-25891 <second: move e5h8
-25892 >first : time 32299
-25892 >first : otim 32497
-book hit = (NULL)
-25892 >first : e5h8
-25986 <first : [ReceiverXboard] S-a primit MOVE...........................e5h8
-25986 <first : [GameManager] Valid Move: e5f4
-25986 <first : [GameManager] Valid Move: e5g3
-25986 <first : [GameManager] Valid Move: e5d6
-25986 <first : [GameManager] Valid Move: e5c7
-25986 <first : [GameManager] Valid Move: e5b8
-25986 <first : [GameManager] Valid Move: e5f6
-25986 <first : [GameManager] Valid Move: e5g7
-25986 <first : [GameManager] Valid Move: e5h8
-25986 <first : 
-25986 <first : R P - - - - p r 
-25986 <first : - P - - - - p - 
-25986 <first : - - N Q - - - b 
-25986 <first : - - - P - - p - 
-25986 <first : K P p - - - p k 
-25986 <first : B - - - - - - b 
-25986 <first : N P - - p - - - 
-25986 <first : R P - - - - p B 
-25986 <first : 
-25986 <first : p
-25986 <first : p
-25986 <first : p
-25986 <first : p
-25986 <first : Pd2d4 ng8h6 Pc2c4 nh6g4 Bc1g5 ng4e3 Pf2e3 nb8c6 Nb1c3 nc6a5 Qd1a4 na5c4 Qa4c4 pf7f6 Bg5f4 pf6f5 Bf4c7 pf5f4 Bc7d8 pf4e3 Bd8c7 pg7g6 Bc7e5 pg6g5 Be5h8 pg5g4 
-25986 <first : 
-25986 <first : R P - - - - p r 
-25986 <first : - P - - - - p - 
-25986 <first : - - N Q - - - b 
-25986 <first : - - - P - - p - 
-25986 <first : K P p - - - p k 
-25986 <first : B - - - - - - b 
-25986 <first : N P - p - - - - 
-25986 <first : R P - - - - p B 
-25986 <first : 
-25986 <first : Am timisssssssssssssssss g5g4
-25986 <first : move g5g4
-Interrupting second
-25986 >second: time 32497
-25986 >second: otim 32489
-book hit = (NULL)
-25986 >second: g5g4
-26059 <second: # times @ 2386727697
-26059 <second: # 14+11 pieces, centr = (1,1) R=18
-26059 <second:  1   1120        0          3 c4c8
-26059 <second:  1   1675        0          3 c4b3
-26059 <second:  1   1681        0          3 c3e4
-26059 <second:  1   1685        0          3 g2g3
-26060 <second:  1   1701        0          3 e1c1
-26060 <second:  2   1691        0         43 e1c1 b7b6
-26060 <second:  2   1746        0        200 c4d3 f8h6 d3h7
-26060 <second: # times @ 2386727698: real=1 cpu=0
-26060 <second: # promo = 0 (`) GT = 0
-26060 <second: move c4d3
-26060 >first : time 32489
-26060 >first : otim 32689
-book hit = (NULL)
-26060 >first : c4d3
-26134 <first : [ReceiverXboard] S-a primit MOVE...........................c4d3
-26134 <first : [GameManager] Valid Move: c4b3
-26134 <first : [GameManager] Valid Move: c4b4
-26134 <first : [GameManager] Valid Move: c4a4
-26134 <first : [GameManager] Valid Move: c4b5
-26134 <first : [GameManager] Valid Move: c4a6
-26134 <first : [GameManager] Valid Move: c4c5
-26134 <first : [GameManager] Valid Move: c4c6
-26134 <first : [GameManager] Valid Move: c4c7
-26134 <first : [GameManager] Valid Move: c4c8
-26134 <first : [GameManager] Valid Move: c4d5
-26134 <first : [GameManager] Valid Move: c4e6
-26134 <first : [GameManager] Valid Move: c4f7
-26134 <first : [GameManager] Valid Move: c4g8
-26134 <first : [GameManager] Valid Move: c4d3
-26134 <first : 
-26134 <first : R P - - - - p r 
-26134 <first : - P - - - - p - 
-26134 <first : - - N - - - - b 
-26134 <first : - - Q P - - p - 
-26134 <first : K P p - - - p k 
-26134 <first : B - - - - - - b 
-26134 <first : N P - p - - - - 
-26134 <first : R P - - - - p B 
-26134 <first : 
-26134 <first : p
-26134 <first : p
-26134 <first : p
-26134 <first : p
-26134 <first : Pd2d4 ng8h6 Pc2c4 nh6g4 Bc1g5 ng4e3 Pf2e3 nb8c6 Nb1c3 nc6a5 Qd1a4 na5c4 Qa4c4 pf7f6 Bg5f4 pf6f5 Bf4c7 pf5f4 Bc7d8 pf4e3 Bd8c7 pg7g6 Bc7e5 pg6g5 Be5h8 pg5g4 Qc4d3 pg4g3 
-26134 <first : 
-26134 <first : R P - - - - p r 
-26134 <first : - P - - - - p - 
-26134 <first : - - N - - - - b 
-26134 <first : - - Q P - - p - 
-26134 <first : K P p - - - p k 
-26134 <first : B - - - - - - b 
-26134 <first : N P p - - - - - 
-26134 <first : R P - - - - p B 
-26134 <first : 
-26134 <first : Am timisssssssssssssssss g4g3
-26134 <first : move g4g3
-Interrupting second
-26134 >second: time 32689
-26134 >second: otim 32682
-book hit = (NULL)
-26134 >second: g4g3
-26209 <second: # times @ 2386727845
-26209 <second: # 14+11 pieces, centr = (1,1) R=18
-26209 <second:  1   1759        0          3 h2g3
-26209 <second:  2   1880        0         68 h2g3 b7b5 d3e3
-26209 <second: # times @ 2386727846: real=1 cpu=0
-26209 <second: # promo = 0 (`) GT = 0
-26209 <second: move h2g3
-26209 >first : time 32682
-26209 >first : otim 32882
-book hit = (NULL)
-26209 >first : h2g3
-26284 <first : [ReceiverXboard] S-a primit MOVE...........................h2g3
-26284 <first : [GameManager] Valid Move: h2h3
-26284 <first : [GameManager] Valid Move: h2h4
-26284 <first : [GameManager] Valid Move: h2g3
-26284 <first : 
-26284 <first : R P - - - - p r 
-26284 <first : - P - - - - p - 
-26284 <first : - - N - - - - b 
-26284 <first : - - Q P - - p - 
-26284 <first : K P p - - - p k 
-26284 <first : B - - - - - - b 
-26284 <first : N P P - - - - - 
-26284 <first : R - - - - - p B 
-26284 <first : 
-26284 <first : p
-26284 <first : p
-26284 <first : p
-26284 <first : p
-26284 <first : p
-26284 <first : p
-26284 <first : Pd2d4 ng8h6 Pc2c4 nh6g4 Bc1g5 ng4e3 Pf2e3 nb8c6 Nb1c3 nc6a5 Qd1a4 na5c4 Qa4c4 pf7f6 Bg5f4 pf6f5 Bf4c7 pf5f4 Bc7d8 pf4e3 Bd8c7 pg7g6 Bc7e5 pg6g5 Be5h8 pg5g4 Qc4d3 pg4g3 Ph2g3 ph7h5 
-26284 <first : 
-26284 <first : R P - - - - p r 
-26284 <first : - P - - - - p - 
-26284 <first : - - N - - - - b 
-26284 <first : - - Q P - - p - 
-26284 <first : K P p - - - p k 
-26284 <first : B - - - - - - b 
-26284 <first : N P P - - - - - 
-26284 <first : R - - - p - - B 
-26284 <first : 
-26284 <first : Am timisssssssssssssssss h7h5
-26284 <first : move h7h5
-Interrupting second
-26285 >second: time 32882
-26285 >second: otim 32874
-book hit = (NULL)
-26285 >second: h7h5
-26360 <second: # times @ 2386727996
-26360 <second: # 14+10 pieces, centr = (1,1) R=16
-26360 <second:  1   1884        0          3 d3e3
-26360 <second:  2   1948        0         69 d3e3 b7b5 h1h5
-26360 <second: # times @ 2386727997: real=1 cpu=0
-26360 <second: # promo = 0 (`) GT = 0
-26360 <second: move d3e3
-26360 >first : time 32874
-26360 >first : otim 33074
-book hit = (NULL)
-26360 >first : d3e3
-26434 <first : [ReceiverXboard] S-a primit MOVE...........................d3e3
-26434 <first : [GameManager] Valid Move: d3d2
-26434 <first : [GameManager] Valid Move: d3d1
-26434 <first : [GameManager] Valid Move: d3c2
-26434 <first : [GameManager] Valid Move: d3b1
-26434 <first : [GameManager] Valid Move: d3c4
-26434 <first : [GameManager] Valid Move: d3b5
-26434 <first : [GameManager] Valid Move: d3a6
-26434 <first : [GameManager] Valid Move: d3e4
-26434 <first : [GameManager] Valid Move: d3f5
-26434 <first : [GameManager] Valid Move: d3g6
-26434 <first : [GameManager] Valid Move: d3h7
-26434 <first : [GameManager] Valid Move: d3e3
-26434 <first : 
-26434 <first : R P - - - - p r 
-26434 <first : - P - - - - p - 
-26434 <first : - - N - - - - b 
-26434 <first : - - - P - - p - 
-26434 <first : K P Q - - - p k 
-26434 <first : B - - - - - - b 
-26434 <first : N P P - - - - - 
-26434 <first : R - - - p - - B 
-26434 <first : 
-26434 <first : p
-26434 <first : p
-26434 <first : p
-26434 <first : p
-26434 <first : p
-26434 <first : p
-26434 <first : Pd2d4 ng8h6 Pc2c4 nh6g4 Bc1g5 ng4e3 Pf2e3 nb8c6 Nb1c3 nc6a5 Qd1a4 na5c4 Qa4c4 pf7f6 Bg5f4 pf6f5 Bf4c7 pf5f4 Bc7d8 pf4e3 Bd8c7 pg7g6 Bc7e5 pg6g5 Be5h8 pg5g4 Qc4d3 pg4g3 Ph2g3 ph7h5 Qd3e3 ph5h4 
-26434 <first : 
-26434 <first : R P - - - - p r 
-26434 <first : - P - - - - p - 
-26434 <first : - - N - - - - b 
-26434 <first : - - - P - - p - 
-26434 <first : K P Q - - - p k 
-26434 <first : B - - - - - - b 
-26434 <first : N P P - - - - - 
-26434 <first : R - - p - - - B 
-26434 <first : 
-26434 <first : Am timisssssssssssssssss h5h4
-26434 <first : move h5h4
-Interrupting second
-26434 >second: time 33074
-26434 >second: otim 33067
-book hit = (NULL)
-26434 >second: h5h4
-26508 <second: # times @ 2386728145
-26508 <second: # 14+9 pieces, centr = (1,1) R=15
-26508 <second:  1   1962        0          3 h1h4
-26508 <second:  2   1950        0         27 h1h4 b7b6
-26509 <second: # times @ 2386728146: real=1 cpu=0
-26509 <second: # promo = 0 (`) GT = 0
-26509 <second: move h1h4
-26509 >first : time 33067
-26509 >first : otim 33267
-book hit = (NULL)
-26509 >first : h1h4
-26603 <first : [ReceiverXboard] S-a primit MOVE...........................h1h4
-26603 <first : [GameManager] Valid Move: h1h2
-26603 <first : [GameManager] Valid Move: h1h3
-26603 <first : [GameManager] Valid Move: h1h4
-26603 <first : 
-26603 <first : R P - - - - p r 
-26603 <first : - P - - - - p - 
-26603 <first : - - N - - - - b 
-26603 <first : - - - P - - p - 
-26603 <first : K P Q - - - p k 
-26603 <first : B - - - - - - b 
-26603 <first : N P P - - - - - 
-26603 <first : - - - R - - - B 
-26603 <first : 
-26603 <first : p
-26603 <first : p
-26603 <first : p
-26603 <first : p
-26603 <first : p
-26603 <first : p
-26603 <first : p
-26603 <first : p
-26603 <first : p
-26603 <first : Pd2d4 ng8h6 Pc2c4 nh6g4 Bc1g5 ng4e3 Pf2e3 nb8c6 Nb1c3 nc6a5 Qd1a4 na5c4 Qa4c4 pf7f6 Bg5f4 pf6f5 Bf4c7 pf5f4 Bc7d8 pf4e3 Bd8c7 pg7g6 Bc7e5 pg6g5 Be5h8 pg5g4 Qc4d3 pg4g3 Ph2g3 ph7h5 Qd3e3 ph5h4 Rh1h4 pa7a5 
-26603 <first : 
-26603 <first : R P - - p - - r 
-26603 <first : - P - - - - p - 
-26603 <first : - - N - - - - b 
-26603 <first : - - - P - - p - 
-26603 <first : K P Q - - - p k 
-26603 <first : B - - - - - - b 
-26603 <first : N P P - - - - - 
-26603 <first : - - - R - - - B 
-26603 <first : 
-26603 <first : Am timisssssssssssssssss a7a5
-26603 <first : move a7a5
-Interrupting second
-26603 >second: time 33267
-26603 >second: otim 33258
-book hit = (NULL)
-26603 >second: a7a5
-26677 <second: # times @ 2386728315
-26677 <second: # 14+8 pieces, centr = (1,1) R=14
-26677 <second:  1   1177        0          3 e3e7
-26677 <second:  1   1961        0          3 e3f3
-26677 <second:  1   1965        0          3 a2a4
-26677 <second:  1   1987        0          3 e1c1
-26677 <second:  2   1976        0         25 e1c1 b7b6
-26677 <second: # times @ 2386728316: real=1 cpu=0
-26677 <second: # promo = 0 (`) GT = 0
-26677 <second: move e1c1
-26677 >first : time 33258
-26677 >first : otim 33459
-book hit = (NULL)
-26677 >first : e1c1
-26752 <first : [ReceiverXboard] S-a primit MOVE...........................e1c1
-26752 <first : [Table] Se evalueaza white queen-side castling
-26752 <first : [Table] SE POATE white queen-side castling
-26752 <first : 
-26752 <first : - P - - p - - r 
-26752 <first : - P - - - - p - 
-26752 <first : K - N - - - - b 
-26752 <first : R - - P - - p - 
-26752 <first : - P Q - - - p k 
-26752 <first : B - - - - - - b 
-26752 <first : N P P - - - - - 
-26752 <first : - - - R - - - B 
-26752 <first : 
-26752 <first : p
-26752 <first : p
-26752 <first : p
-26752 <first : p
-26752 <first : p
-26752 <first : p
-26752 <first : p
-26752 <first : p
-26752 <first : Pd2d4 ng8h6 Pc2c4 nh6g4 Bc1g5 ng4e3 Pf2e3 nb8c6 Nb1c3 nc6a5 Qd1a4 na5c4 Qa4c4 pf7f6 Bg5f4 pf6f5 Bf4c7 pf5f4 Bc7d8 pf4e3 Bd8c7 pg7g6 Bc7e5 pg6g5 Be5h8 pg5g4 Qc4d3 pg4g3 Ph2g3 ph7h5 Qd3e3 ph5h4 Rh1h4 pa7a5 Ke1c1 pa5a4 
-26752 <first : 
-26752 <first : - P - p - - - r 
-26752 <first : - P - - - - p - 
-26752 <first : K - N - - - - b 
-26752 <first : R - - P - - p - 
-26752 <first : - P Q - - - p k 
-26752 <first : B - - - - - - b 
-26752 <first : N P P - - - - - 
-26752 <first : - - - R - - - B 
-26752 <first : 
-26752 <first : Am timisssssssssssssssss a5a4
-26752 <first : move a5a4
-Interrupting second
-26752 >second: time 33459
-26752 >second: otim 33450
-book hit = (NULL)
-26752 >second: a5a4
-26827 <second: # times @ 2386728464
-26827 <second: # 14+8 pieces, centr = (1,1) R=14
-26827 <second:  1   1766        0          3 c3a4
-26827 <second:  1   1946        0          3 c3b1
-26827 <second:  1   1967        0          3 c3e4
-26827 <second:  1   1974        0          3 g1f3
-26827 <second:  1   1979        0          3 h8f6
-26827 <second:  1   1982        0          3 h8e5
-26827 <second:  2   1971        0         25 h8e5 b7b6
-26827 <second: # times @ 2386728465: real=1 cpu=10
-26827 <second: # promo = 0 (`) GT = 0
-26827 <second: move h8e5
-26827 >first : time 33450
-26827 >first : otim 33652
-book hit = (NULL)
-26827 >first : h8e5
-26921 <first : [ReceiverXboard] S-a primit MOVE...........................h8e5
-26921 <first : [GameManager] Valid Move: h8g7
-26921 <first : [GameManager] Valid Move: h8f6
-26921 <first : [GameManager] Valid Move: h8e5
-26921 <first : 
-26921 <first : - P - p - - - r 
-26921 <first : - P - - - - p - 
-26921 <first : K - N - - - - b 
-26921 <first : R - - P - - p - 
-26921 <first : - P Q - B - p k 
-26921 <first : B - - - - - - b 
-26921 <first : N P P - - - - - 
-26921 <first : - - - R - - - - 
-26921 <first : 
-26921 <first : p
-26921 <first : p
-26921 <first : p
-26921 <first : p
-26921 <first : p
-26921 <first : p
-26921 <first : p
-26921 <first : Pd2d4 ng8h6 Pc2c4 nh6g4 Bc1g5 ng4e3 Pf2e3 nb8c6 Nb1c3 nc6a5 Qd1a4 na5c4 Qa4c4 pf7f6 Bg5f4 pf6f5 Bf4c7 pf5f4 Bc7d8 pf4e3 Bd8c7 pg7g6 Bc7e5 pg6g5 Be5h8 pg5g4 Qc4d3 pg4g3 Ph2g3 ph7h5 Qd3e3 ph5h4 Rh1h4 pa7a5 Ke1c1 pa5a4 Bh8e5 pa4a3 
-26921 <first : 
-26921 <first : - P p - - - - r 
-26921 <first : - P - - - - p - 
-26921 <first : K - N - - - - b 
-26921 <first : R - - P - - p - 
-26921 <first : - P Q - B - p k 
-26921 <first : B - - - - - - b 
-26921 <first : N P P - - - - - 
-26921 <first : - - - R - - - - 
-26921 <first : 
-26921 <first : Am timisssssssssssssssss a4a3
-26921 <first : move a4a3
-Interrupting second
-26921 >second: time 33652
-26921 >second: otim 33641
-book hit = (NULL)
-26921 >second: a4a3
-26997 <second: # times @ 2386728633
-26997 <second: # 14+8 pieces, centr = (1,1) R=15
-26997 <second:  1   1960        0          3 b2a3
-26997 <second:  2   1960        0          7 b2a3 a8a3
-26997 <second: # times @ 2386728634: real=1 cpu=0
-26997 <second: # promo = 0 (`) GT = 0
-26997 <second: move b2a3
-26997 >first : time 33641
-26997 >first : otim 33844
-book hit = (NULL)
-26997 >first : b2a3
-27072 <first : [ReceiverXboard] S-a primit MOVE...........................b2a3
-27073 <first : [GameManager] Valid Move: b2b3
-27073 <first : [GameManager] Valid Move: b2b4
-27073 <first : [GameManager] Valid Move: b2a3
-27073 <first : 
-27073 <first : - P P - - - - r 
-27073 <first : - - - - - - p - 
-27073 <first : K - N - - - - b 
-27073 <first : R - - P - - p - 
-27073 <first : - P Q - B - p k 
-27073 <first : B - - - - - - b 
-27073 <first : N P P - - - - - 
-27073 <first : - - - R - - - - 
-27073 <first : 
-27073 <first : p
-27073 <first : p
-27073 <first : p
-27073 <first : p
-27073 <first : p
-27073 <first : p
-27073 <first : p
-27073 <first : p
-27073 <first : p
-27073 <first : Pd2d4 ng8h6 Pc2c4 nh6g4 Bc1g5 ng4e3 Pf2e3 nb8c6 Nb1c3 nc6a5 Qd1a4 na5c4 Qa4c4 pf7f6 Bg5f4 pf6f5 Bf4c7 pf5f4 Bc7d8 pf4e3 Bd8c7 pg7g6 Bc7e5 pg6g5 Be5h8 pg5g4 Qc4d3 pg4g3 Ph2g3 ph7h5 Qd3e3 ph5h4 Rh1h4 pa7a5 Ke1c1 pa5a4 Bh8e5 pa4a3 Pb2a3 pb7b6 
-27073 <first : 
-27073 <first : - P P - - - - r 
-27073 <first : - - - - - p - - 
-27073 <first : K - N - - - - b 
-27073 <first : R - - P - - p - 
-27073 <first : - P Q - B - p k 
-27073 <first : B - - - - - - b 
-27073 <first : N P P - - - - - 
-27073 <first : - - - R - - - - 
-27073 <first : 
-27073 <first : Am timisssssssssssssssss b7b6
-27073 <first : move b7b6
-Interrupting second
-27073 >second: time 33844
-27073 >second: otim 33833
-book hit = (NULL)
-27073 >second: b7b6
-27148 <second: # times @ 2386728785
-27148 <second: # 14+7 pieces, centr = (1,1) R=13
-27148 <second:  1   1961        0          7 g3g4 a8a3
-27148 <second:  1   2016        0         25 c1b2
-27148 <second:  1   2032        0         79 e5d6
-27148 <second:  1   2033        0         79 d4d5
-27148 <second:  1   2035        0         79 a3a4
-27148 <second:  1   2041        0         79 c3e4
-27148 <second:  2   2037        0        105 c3e4 d7d5
-27148 <second:  2   2040        0        193 c3d5 a8a6
-27148 <second: # times @ 2386728787: real=2 cpu=0
-27148 <second: # promo = 0 (`) GT = 0
-27148 <second: move c3d5
-27149 >first : time 33833
-27149 >first : otim 34037
-book hit = (NULL)
-27149 >first : c3d5
-27243 <first : [ReceiverXboard] S-a primit MOVE...........................c3d5
-27243 <first : [GameManager] Valid Move: c3b1
-27243 <first : [GameManager] Valid Move: c3a4
-27243 <first : [GameManager] Valid Move: c3b5
-27243 <first : [GameManager] Valid Move: c3d5
-27243 <first : [GameManager] Valid Move: c3e4
-27243 <first : 
-27243 <first : - P P - - - - r 
-27243 <first : - - - - - p - - 
-27243 <first : K - - - - - - b 
-27243 <first : R - - P N - p - 
-27243 <first : - P Q - B - p k 
-27243 <first : B - - - - - - b 
-27243 <first : N P P - - - - - 
-27243 <first : - - - R - - - - 
-27243 <first : 
-27243 <first : p
-27243 <first : p
-27243 <first : p
-27243 <first : p
-27243 <first : p
-27243 <first : p
-27243 <first : p
-27243 <first : p
-27243 <first : p
-27243 <first : Pd2d4 ng8h6 Pc2c4 nh6g4 Bc1g5 ng4e3 Pf2e3 nb8c6 Nb1c3 nc6a5 Qd1a4 na5c4 Qa4c4 pf7f6 Bg5f4 pf6f5 Bf4c7 pf5f4 Bc7d8 pf4e3 Bd8c7 pg7g6 Bc7e5 pg6g5 Be5h8 pg5g4 Qc4d3 pg4g3 Ph2g3 ph7h5 Qd3e3 ph5h4 Rh1h4 pa7a5 Ke1c1 pa5a4 Bh8e5 pa4a3 Pb2a3 pb7b6 Nc3d5 pb6b5 
-27243 <first : 
-27243 <first : - P P - - - - r 
-27243 <first : - - - - p - - - 
-27243 <first : K - - - - - - b 
-27243 <first : R - - P N - p - 
-27243 <first : - P Q - B - p k 
-27243 <first : B - - - - - - b 
-27243 <first : N P P - - - - - 
-27243 <first : - - - R - - - - 
-27243 <first : 
-27243 <first : Am timisssssssssssssssss b6b5
-27243 <first : move b6b5
-Interrupting second
-27243 >second: time 34037
-27243 >second: otim 34024
-book hit = (NULL)
-27243 >second: b6b5
-27317 <second: # times @ 2386728955
-27317 <second: # 14+7 pieces, centr = (1,1) R=13
-27317 <second:  1   1838        0          3 d5e7
-27317 <second:  1   2027        0          3 d5b4
-27317 <second:  1   2035        0          3 d5f4
-27317 <second:  1   2040        0          3 g1h3
-27317 <second:  1   2048        0          3 g1f3
-27317 <second:  2   2047        0         52 g1f3 c8b7
-27317 <second:  2   2466        0        109 d5c7 e8f7 c7a8
-27317 <second: # times @ 2386728956: real=1 cpu=0
-27317 <second: # promo = 0 (`) GT = 0
-27317 <second: move d5c7
-27317 >first : time 34024
-27317 >first : otim 34229
-book hit = (NULL)
-27317 >first : d5c7
-27411 <first : [ReceiverXboard] S-a primit MOVE...........................d5c7
-27411 <first : [GameManager] Valid Move: d5c3
-27411 <first : [GameManager] Valid Move: d5b4
-27411 <first : [GameManager] Valid Move: d5b6
-27411 <first : [GameManager] Valid Move: d5c7
-27411 <first : [GameManager] Valid Move: d5e7
-27411 <first : [GameManager] Valid Move: d5f6
-27411 <first : [GameManager] Valid Move: d5f4
-27411 <first : 
-27411 <first : - P P - - - - r 
-27411 <first : - - - - p - - - 
-27411 <first : K - - - - - N b 
-27411 <first : R - - P - - p - 
-27411 <first : - P Q - B - p k 
-27411 <first : B - - - - - - b 
-27411 <first : N P P - - - - - 
-27411 <first : - - - R - - - - 
-27411 <first : 
-27411 <first : p
-27411 <first : p
-27411 <first : p
-27411 <first : p
-27411 <first : p
-27411 <first : p
-27411 <first : p
-27411 <first : p
-27411 <first : p
-27411 <first : [Pawn] Cannot perform b5b4 because king bounded
-27411 <first : p
-27411 <first : p
-27411 <first : p
-27411 <first : p
-27411 <first : p
-27411 <first : p
-27411 <first : [Pawn] Cannot perform d7d6 because king bounded
-27411 <first : [Pawn] Cannot perform d7d5 because king bounded
-27411 <first : p
-27411 <first : p
-27411 <first : p
-27412 <first : p
-27412 <first : [Pawn] Cannot perform e7e6 because king bounded
-27412 <first : p
-27412 <first : p
-27412 <first : q
-27412 <first : q
-27412 <first : q
-27412 <first : q
-27412 <first : q
-27412 <first : q
-27412 <first : q
-27412 <first : q
-27412 <first : q
-27412 <first : q
-27412 <first : q
-27412 <first : q
-27412 <first : q
-27412 <first : q
-27412 <first : q
-27412 <first : q
-27412 <first : q
-27412 <first : q
-27412 <first : q
-27412 <first : q
-27412 <first : q
-27412 <first : b
-27412 <first : [Bishop] Cannot perform f8g7 because king bounded
-27412 <first : [Bishop] Cannot perform f8h6 because king bounded
-27412 <first : b
-27412 <first : b
-27412 <first : b
-27412 <first : b
-27412 <first : b
-27412 <first : b
-27412 <first : b
-27412 <first : b
-27412 <first : b
-27412 <first : b
-27412 <first : b
-27412 <first : [Bishop] Cannot perform c8b7 because king bounded
-27412 <first : [Bishop] Cannot perform c8a6 because king bounded
-27412 <first : b
-27412 <first : b
-27412 <first : b
-27412 <first : b
-27412 <first : b
-27412 <first : b
-27412 <first : b
-27412 <first : b
-27412 <first : b
-27412 <first : r
-27412 <first : r
-27412 <first : r
-27412 <first : r
-27412 <first : r
-27412 <first : r
-27412 <first : r
-27412 <first : r
-27412 <first : [Rook] Cannot perform a8a7 because king bounded
-27412 <first : [Rook] Cannot perform a8a6 because king bounded
-27412 <first : [Rook] Cannot perform a8a5 because king bounded
-27412 <first : [Rook] Cannot perform a8a4 because king bounded
-27412 <first : [Rook] Cannot perform a8a3 because king bounded
-27412 <first : [Rook] Cannot perform a8b8 because king bounded
-27412 <first : r
-27412 <first : r
-27412 <first : r
-27412 <first : r
-27412 <first : r
-27412 <first : r
-27412 <first : r
-27412 <first : r
-27412 <first : r
-27412 <first : r
-27412 <first : r
-27412 <first : r
-27412 <first : r
-27412 <first : k
-27412 <first : k
-27412 <first : k
-27412 <first : k
-27412 <first : k
-27412 <first : k
-27412 <first : k
-27412 <first : k
-27412 <first : k
-27412 <first : k
-27412 <first : k
-27412 <first : k
-27412 <first : k
-27412 <first : k
-27412 <first : k
-27412 <first : k
-27412 <first : k
-27412 <first : k
-27412 <first : k
-27412 <first : k
-27412 <first : [Table] Se evalueaza black king-side castling
-27412 <first : [King] Tura H8 a fost mutat, nu se poate face KING-SIDE
-27412 <first : [Table] Se evalueaza black queen-side castling
-27412 <first : [Table] Se evalueaza black king-side castling
-27412 <first : [King] Tura H8 a fost mutat, nu se poate face KING-SIDE
-27412 <first : [Table] Se evalueaza black queen-side castling
-27412 <first : Pd2d4 ng8h6 Pc2c4 nh6g4 Bc1g5 ng4e3 Pf2e3 nb8c6 Nb1c3 nc6a5 Qd1a4 na5c4 Qa4c4 pf7f6 Bg5f4 pf6f5 Bf4c7 pf5f4 Bc7d8 pf4e3 Bd8c7 pg7g6 Bc7e5 pg6g5 Be5h8 pg5g4 Qc4d3 pg4g3 Ph2g3 ph7h5 Qd3e3 ph5h4 Rh1h4 pa7a5 Ke1c1 pa5a4 Bh8e5 pa4a3 Pb2a3 pb7b6 Nc3d5 pb6b5 Nd5c7 ke8f7 
-27412 <first : 
-27412 <first : - P P - - - - r 
-27412 <first : - - - - p - - - 
-27412 <first : K - - - - - N b 
-27412 <first : R - - P - - p - 
-27412 <first : - P Q - B - p - 
-27412 <first : B - - - - - k b 
-27412 <first : N P P - - - - - 
-27412 <first : - - - R - - - - 
-27412 <first : 
-27412 <first : Am timisssssssssssssssss e8f7
-27412 <first : move e8f7
-Interrupting second
-27412 >second: time 34229
-27412 >second: otim 34214
-book hit = (NULL)
-27412 >second: e8f7
-27487 <second: # times @ 2386729124
-27487 <second: # 14+7 pieces, centr = (1,1) R=13
-27487 <second:  1   2466        0          3 c7a8
-27487 <second:  2   2457        0          9 c7a8 d7d5
-27487 <second:  2   2479        0        144 h4f4 f7g6 c7a8
-27487 <second:  2   2497        0        224 e3f3 f7g6 f3a8
-27487 <second: # times @ 2386729124: real=0 cpu=0
-27487 <second: # promo = 0 (`) GT = 0
-27487 <second: move e3f3
-27487 >first : time 34214
-27487 >first : otim 34422
-book hit = (NULL)
-27487 >first : e3f3
-27561 <first : [ReceiverXboard] S-a primit MOVE...........................e3f3
-27561 <first : [GameManager] Valid Move: e3d2
-27561 <first : [GameManager] Valid Move: e3d3
-27561 <first : [GameManager] Valid Move: e3c3
-27561 <first : [GameManager] Valid Move: e3b3
-27561 <first : [GameManager] Valid Move: e3e4
-27561 <first : [GameManager] Valid Move: e3f4
-27561 <first : [GameManager] Valid Move: e3g5
-27561 <first : [GameManager] Valid Move: e3h6
-27561 <first : [GameManager] Valid Move: e3f3
-27561 <first : [GameManager] Valid Move: e3f2
-27561 <first : 
-27561 <first : - P P - - - - r 
-27561 <first : - - - - p - - - 
-27561 <first : K - - - - - N b 
-27561 <first : R - - P - - p - 
-27561 <first : - P - - B - p - 
-27561 <first : B - Q - - - k b 
-27561 <first : N P P - - - - - 
-27561 <first : - - - R - - - - 
-27561 <first : 
-27561 <first : k
-27561 <first : [Table] Se evalueaza black king-side castling
-27561 <first : [King] BLACK King a fost mutat, nu se poate face KING-SIDE
-27561 <first : [Table] Se evalueaza black queen-side castling
-27561 <first : [King] BLACK King a fost mutat, nu se poate face QUEEN-SIDE
-27561 <first : [Table] Se evalueaza black king-side castling
-27561 <first : [King] BLACK King a fost mutat, nu se poate face KING-SIDE
-27561 <first : [Table] Se evalueaza black queen-side castling
-27561 <first : [King] BLACK King a fost mutat, nu se poate face QUEEN-SIDE
-27561 <first : Pd2d4 ng8h6 Pc2c4 nh6g4 Bc1g5 ng4e3 Pf2e3 nb8c6 Nb1c3 nc6a5 Qd1a4 na5c4 Qa4c4 pf7f6 Bg5f4 pf6f5 Bf4c7 pf5f4 Bc7d8 pf4e3 Bd8c7 pg7g6 Bc7e5 pg6g5 Be5h8 pg5g4 Qc4d3 pg4g3 Ph2g3 ph7h5 Qd3e3 ph5h4 Rh1h4 pa7a5 Ke1c1 pa5a4 Bh8e5 pa4a3 Pb2a3 pb7b6 Nc3d5 pb6b5 Nd5c7 ke8f7 Qe3f3 kf7g6 
-27561 <first : 
-27561 <first : - P P - - - - r 
-27561 <first : - - - - p - - - 
-27561 <first : K - - - - - N b 
-27561 <first : R - - P - - p - 
-27561 <first : - P - - B - p - 
-27561 <first : B - Q - - - - b 
-27561 <first : N P P - - k - - 
-27561 <first : - - - R - - - - 
-27561 <first : 
-27561 <first : Am timisssssssssssssssss f7g6
-27561 <first : move f7g6
-Interrupting second
-27561 >second: time 34422
-27561 >second: otim 34407
-book hit = (NULL)
-27561 >second: f7g6
-27637 <second: # times @ 2386729273
-27637 <second: # 14+7 pieces, centr = (1,1) R=13
-27637 <second:  1   2497        0          5 f3a8
-27637 <second:  2   2649        0         90 f3a8 f8h6 h4h6 g6h6 a8c8
-27637 <second:  2 100001        0        222 f3h5
-27637 <second: # times @ 2386729273: real=0 cpu=0
-27637 <second: # promo = 0 (`) GT = 0
-27637 <second: move f3h5
-27637 >first : f3h5
-GameEnds(26, Xboard adjudication: Checkmate, 4)
-GE(26, Xboard adjudication: Checkmate, 4) bare king k=14 color=0
-27637 >first : result 1-0 {Xboard adjudication: Checkmate}
-Interrupting second
-27637 >second: result 1-0 {Xboard adjudication: Checkmate}
-27637 >first : quit
-27654 >second: force
-27654 >second: ping 4
-27749 <second: 1-0 {White mates}
-27749 <second: Error (unknown command): result
-27749 <second: pong 4
-GameEnds(26, Xboard adjudication: Checkmate, 2)
-29508 >second: quit
+24036 >second: result * {xboard exit}
+24036 >second: force
+24036 >second: ping 2
+24036 >first : quit
+24047 >second: quit

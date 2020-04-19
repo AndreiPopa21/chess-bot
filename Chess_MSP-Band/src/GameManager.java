@@ -1,4 +1,4 @@
-makimport java.util.ArrayList;
+import java.util.ArrayList;
 import java.util.Vector;
 
 public final class GameManager{
@@ -62,7 +62,7 @@ public final class GameManager{
 
     public static boolean validateMove(Move move){
 
-        if(move.source == 0 && move.dest == 0 && move.moveType != 0){
+        if(move.moveType != 0){
             return getTable().validateSpecialMove(move);
         }
 
@@ -105,19 +105,19 @@ public final class GameManager{
     public static void record(Move m){
         HistoryPairs hp;
         if (m.moveType == Constants.WHITE_KING_SIDE_CASTLING) {
-            hp = new HistoryPairs(Constants.E1,Constants.G1,'K');
+            hp = new HistoryPairs(Constants.E1,Constants.G1,'K',m);
 
         } else if (m.moveType == Constants.WHITE_QUEEN_SIDE_CASTLING) {
-            hp = new HistoryPairs(Constants.E1,Constants.C1,'K');
+            hp = new HistoryPairs(Constants.E1,Constants.C1,'K',m);
 
         } else if (m.moveType == Constants.BLACK_KING_SIDE_CASTLING) {
-            hp = new HistoryPairs(Constants.E8,Constants.G8,'k');
+            hp = new HistoryPairs(Constants.E8,Constants.G8,'k',m);
 
         } else if (m.moveType == Constants.BLACK_QUEEN_SIDE_CASTLING) {
-            hp = new HistoryPairs(Constants.E8,Constants.C8,'k');
+            hp = new HistoryPairs(Constants.E8,Constants.C8,'k',m);
 
         } else {
-            hp = new HistoryPairs(m.source,m.dest,GameManager.currTable.getSquares().get(m.source).getPiece().getName());
+            hp = new HistoryPairs(m.source,m.dest,GameManager.currTable.getSquares().get(m.source).getPiece().getName(),m);
 
         }
         history.add(hp);
