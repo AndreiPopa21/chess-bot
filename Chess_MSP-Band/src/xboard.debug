@@ -1,0 +1,620 @@
+locale = LC_CTYPE=en_US.UTF-8;LC_NUMERIC=ro_RO.UTF-8;LC_TIME=ro_RO.UTF-8;LC_COLLATE=en_US.UTF-8;LC_MONETARY=ro_RO.UTF-8;LC_MESSAGES=en_US.UTF-8;LC_PAPER=ro_RO.UTF-8;LC_NAME=ro_RO.UTF-8;LC_ADDRESS=ro_RO.UTF-8;LC_TELEPHONE=ro_RO.UTF-8;LC_MEASUREMENT=ro_RO.UTF-8;LC_IDENTIFICATION=ro_RO.UTF-8
+recognized 'normal' (-1) as variant normal
+recognized 'normal' (-1) as variant normal
+recognized 'normal' (-1) as variant normal
+shuffleOpenings = 0
+shuffleOpenings = 0
+Version: xboard 4.9.1 + make ()
+Reset(1, 0) from gameMode 0
+recognized 'normal' (-1) as variant normal
+GameEnds(0, (null), 2)
+shuffleOpenings = 0
+StartChildProcess (dir=".") make run
+169 >first : xboard
+protover 2
+174 <first : make[1]: Entering directory '/home/cristi/IdeaProjects/l2-pa-project-MSP-Band/Chess_MSP-Band/src'
+174 <first : javac Main.java
+969 <first : java Main
+1158 <first : [ReceiverXboard] S-a primit XBOARD
+10171 >first : new
+random
+10171 >first : level 0 5 2
+10171 >first : post
+10171 >first : hard
+10172 <first : [ReceiverXboard] S-a primit NEW
+10172 <first : feature sigint=0 sigterm=0 done=1 colors=0
+10172 >first : accepted sigint
+10172 >first : accepted sigterm
+10172 >first : accepted done
+10172 >first : accepted colors
+nps: w=-1, b=-1
+nps: w=-1, b=-1
+22027 >first : time 30000
+22027 >first : otim 30200
+book hit = (NULL)
+22027 >first : b2b4
+22101 <first : [ReceiverXboard] S-a primit MOVE...........................b2b4
+22102 <first : [GameManager] Valid Move: b2b3
+22102 <first : [GameManager] Valid Move: b2b4
+22102 <first : 
+22102 <first : R P - - - - p r 
+22102 <first : N - - P - - p n 
+22102 <first : B P - - - - p b 
+22102 <first : Q P - - - - p q 
+22102 <first : K P - - - - p k 
+22102 <first : B P - - - - p b 
+22102 <first : N P - - - - p n 
+22102 <first : R P - - - - p r 
+22102 <first : 
+22102 <first : n
+22102 <first : n
+22102 <first : n
+22102 <first : n
+22102 <first : n
+22102 <first : n
+22102 <first : Pb2b4 ng8f6 
+22102 <first : 
+22102 <first : R P - - - - p r 
+22102 <first : N - - P - - p n 
+22102 <first : B P - - - - p b 
+22102 <first : Q P - - - - p q 
+22102 <first : K P - - - - p k 
+22102 <first : B P - - - n p b 
+22102 <first : N P - - - - p - 
+22102 <first : R P - - - - p r 
+22102 <first : 
+22102 <first : Am timisssssssssssssssss g8f6
+22102 <first : move g8f6
+26689 >first : time 30192
+26689 >first : otim 29941
+book hit = (NULL)
+26689 >first : b4b5
+26763 <first : [ReceiverXboard] S-a primit MOVE...........................b4b5
+26763 <first : [GameManager] Valid Move: b4b5
+26763 <first : 
+26763 <first : R P - - - - p r 
+26763 <first : N - - - P - p n 
+26763 <first : B P - - - - p b 
+26763 <first : Q P - - - - p q 
+26763 <first : K P - - - - p k 
+26763 <first : B P - - - n p b 
+26763 <first : N P - - - - p - 
+26763 <first : R P - - - - p r 
+26763 <first : 
+26763 <first : n
+26763 <first : Pb2b4 ng8f6 Pb4b5 nf6e4 
+26763 <first : 
+26763 <first : R P - - - - p r 
+26763 <first : N - - - P - p n 
+26763 <first : B P - - - - p b 
+26763 <first : Q P - - - - p q 
+26763 <first : K P - n - - p k 
+26763 <first : B P - - - - p b 
+26763 <first : N P - - - - p - 
+26763 <first : R P - - - - p r 
+26763 <first : 
+26763 <first : Am timisssssssssssssssss f6e4
+26763 <first : move f6e4
+29965 >first : time 30385
+29965 >first : otim 29821
+book hit = (NULL)
+29965 >first : c2c3
+30038 <first : [ReceiverXboard] S-a primit MOVE...........................c2c3
+30038 <first : [GameManager] Valid Move: c2c3
+30038 <first : [GameManager] Valid Move: c2c4
+30038 <first : 
+30038 <first : R P - - - - p r 
+30038 <first : N - - - P - p n 
+30038 <first : B - P - - - p b 
+30038 <first : Q P - - - - p q 
+30038 <first : K P - n - - p k 
+30038 <first : B P - - - - p b 
+30038 <first : N P - - - - p - 
+30038 <first : R P - - - - p r 
+30038 <first : 
+30038 <first : n
+30038 <first : n
+30038 <first : n
+30038 <first : n
+30038 <first : n
+30038 <first : n
+30038 <first : n
+30038 <first : n
+30038 <first : n
+30038 <first : n
+30038 <first : n
+30038 <first : n
+30038 <first : n
+30038 <first : n
+30038 <first : n
+30038 <first : n
+30038 <first : n
+30038 <first : Pb2b4 ng8f6 Pb4b5 nf6e4 Pc2c3 nb8a6 
+30038 <first : 
+30038 <first : R P - - - n p r 
+30038 <first : N - - - P - p - 
+30038 <first : B - P - - - p b 
+30038 <first : Q P - - - - p q 
+30038 <first : K P - n - - p k 
+30038 <first : B P - - - - p b 
+30038 <first : N P - - - - p - 
+30038 <first : R P - - - - p r 
+30038 <first : 
+30038 <first : Am timisssssssssssssssss b8a6
+30038 <first : move b8a6
+32458 >first : time 30577
+32458 >first : otim 29779
+book hit = (NULL)
+32458 >first : d1a4
+32553 <first : [ReceiverXboard] S-a primit MOVE...........................d1a4
+32553 <first : [GameManager] Valid Move: d1c2
+32553 <first : [GameManager] Valid Move: d1b3
+32553 <first : [GameManager] Valid Move: d1a4
+32553 <first : 
+32553 <first : R P - Q - n p r 
+32553 <first : N - - - P - p - 
+32553 <first : B - P - - - p b 
+32553 <first : - P - - - - p q 
+32553 <first : K P - n - - p k 
+32553 <first : B P - - - - p b 
+32553 <first : N P - - - - p - 
+32553 <first : R P - - - - p r 
+32553 <first : 
+32553 <first : n
+32553 <first : n
+32553 <first : n
+32553 <first : n
+32553 <first : n
+32553 <first : n
+32553 <first : n
+32553 <first : n
+32553 <first : n
+32553 <first : n
+32553 <first : n
+32553 <first : n
+32553 <first : n
+32553 <first : Pb2b4 ng8f6 Pb4b5 nf6e4 Pc2c3 nb8a6 Qd1a4 na6c5 
+32553 <first : 
+32553 <first : R P - Q - - p r 
+32553 <first : N - - - P - p - 
+32553 <first : B - P - n - p b 
+32553 <first : - P - - - - p q 
+32553 <first : K P - n - - p k 
+32553 <first : B P - - - - p b 
+32553 <first : N P - - - - p - 
+32553 <first : R P - - - - p r 
+32553 <first : 
+32553 <first : Am timisssssssssssssssss a6c5
+32553 <first : move a6c5
+34510 >first : time 30768
+34510 >first : otim 29783
+book hit = (NULL)
+34510 >first : a4e4
+34605 <first : [ReceiverXboard] S-a primit MOVE...........................a4e4
+34605 <first : [GameManager] Valid Move: a4a3
+34605 <first : [GameManager] Valid Move: a4a5
+34605 <first : [GameManager] Valid Move: a4a6
+34605 <first : [GameManager] Valid Move: a4a7
+34605 <first : [GameManager] Valid Move: a4b4
+34605 <first : [GameManager] Valid Move: a4c4
+34605 <first : [GameManager] Valid Move: a4d4
+34605 <first : [GameManager] Valid Move: a4e4
+34605 <first : [GameManager] Valid Move: a4b3
+34605 <first : [GameManager] Valid Move: a4c2
+34605 <first : [GameManager] Valid Move: a4d1
+34605 <first : 
+34605 <first : R P - - - - p r 
+34605 <first : N - - - P - p - 
+34605 <first : B - P - n - p b 
+34605 <first : - P - - - - p q 
+34605 <first : K P - Q - - p k 
+34605 <first : B P - - - - p b 
+34605 <first : N P - - - - p - 
+34605 <first : R P - - - - p r 
+34605 <first : 
+34605 <first : n
+34605 <first : n
+34605 <first : n
+34605 <first : n
+34606 <first : n
+34606 <first : n
+34606 <first : n
+34606 <first : n
+34606 <first : n
+34606 <first : n
+34606 <first : n
+34606 <first : n
+34606 <first : n
+34606 <first : n
+34606 <first : n
+34606 <first : n
+34606 <first : n
+34606 <first : n
+34606 <first : n
+34606 <first : Pb2b4 ng8f6 Pb4b5 nf6e4 Pc2c3 nb8a6 Qd1a4 na6c5 Qa4e4 nc5a6 
+34606 <first : 
+34606 <first : R P - - - n p r 
+34606 <first : N - - - P - p - 
+34606 <first : B - P - - - p b 
+34606 <first : - P - - - - p q 
+34606 <first : K P - Q - - p k 
+34606 <first : B P - - - - p b 
+34606 <first : N P - - - - p - 
+34606 <first : R P - - - - p r 
+34606 <first : 
+34606 <first : Am timisssssssssssssssss c5a6
+34606 <first : move c5a6
+36208 >first : time 30958
+36208 >first : otim 29823
+book hit = (NULL)
+36208 >first : e4e6
+36281 <first : [ReceiverXboard] S-a primit MOVE...........................e4e6
+36281 <first : [GameManager] Valid Move: e4e3
+36281 <first : [GameManager] Valid Move: e4d3
+36281 <first : [GameManager] Valid Move: e4c2
+36281 <first : [GameManager] Valid Move: e4d4
+36281 <first : [GameManager] Valid Move: e4c4
+36281 <first : [GameManager] Valid Move: e4b4
+36281 <first : [GameManager] Valid Move: e4a4
+36281 <first : [GameManager] Valid Move: e4d5
+36281 <first : [GameManager] Valid Move: e4c6
+36281 <first : [GameManager] Valid Move: e4b7
+36281 <first : [GameManager] Valid Move: e4e5
+36281 <first : [GameManager] Valid Move: e4e6
+36282 <first : [GameManager] Valid Move: e4e7
+36282 <first : [GameManager] Valid Move: e4f5
+36282 <first : [GameManager] Valid Move: e4g6
+36282 <first : [GameManager] Valid Move: e4h7
+36282 <first : [GameManager] Valid Move: e4f4
+36282 <first : [GameManager] Valid Move: e4g4
+36282 <first : [GameManager] Valid Move: e4h4
+36282 <first : [GameManager] Valid Move: e4f3
+36282 <first : 
+36282 <first : R P - - - n p r 
+36282 <first : N - - - P - p - 
+36282 <first : B - P - - - p b 
+36282 <first : - P - - - - p q 
+36282 <first : K P - - - Q p k 
+36282 <first : B P - - - - p b 
+36282 <first : N P - - - - p - 
+36282 <first : R P - - - - p r 
+36282 <first : 
+36282 <first : n
+36282 <first : n
+36282 <first : n
+36282 <first : n
+36282 <first : n
+36282 <first : n
+36282 <first : n
+36282 <first : n
+36282 <first : n
+36282 <first : n
+36282 <first : n
+36282 <first : n
+36282 <first : Pb2b4 ng8f6 Pb4b5 nf6e4 Pc2c3 nb8a6 Qd1a4 na6c5 Qa4e4 nc5a6 Qe4e6 na6b4 
+36282 <first : 
+36282 <first : R P - - - - p r 
+36282 <first : N - - n P - p - 
+36282 <first : B - P - - - p b 
+36282 <first : - P - - - - p q 
+36282 <first : K P - - - Q p k 
+36282 <first : B P - - - - p b 
+36282 <first : N P - - - - p - 
+36282 <first : R P - - - - p r 
+36282 <first : 
+36282 <first : Am timisssssssssssssssss a6b4
+36282 <first : move a6b4
+39549 >first : time 31151
+39549 >first : otim 29696
+book hit = (NULL)
+39549 >first : c3b4
+39622 <first : [ReceiverXboard] S-a primit MOVE...........................c3b4
+39622 <first : [GameManager] Valid Move: c3c4
+39622 <first : [GameManager] Valid Move: c3b4
+39622 <first : 
+39622 <first : R P - - - - p r 
+39622 <first : N - - P P - p - 
+39622 <first : B - - - - - p b 
+39622 <first : - P - - - - p q 
+39622 <first : K P - - - Q p k 
+39622 <first : B P - - - - p b 
+39622 <first : N P - - - - p - 
+39622 <first : R P - - - - p r 
+39622 <first : 
+39622 <first : n
+39622 <first : n
+39622 <first : n
+39622 <first : n
+39622 <first : n
+39622 <first : n
+39622 <first : n
+39622 <first : n
+39622 <first : n
+39622 <first : n
+39622 <first : n
+39622 <first : n
+39622 <first : n
+39622 <first : n
+39622 <first : n
+39622 <first : n
+39622 <first : n
+39622 <first : n
+39622 <first : n
+39622 <first : n
+39622 <first : n
+39622 <first : n
+39622 <first : n
+39622 <first : n
+39622 <first : n
+39622 <first : n
+39622 <first : n
+39622 <first : n
+39622 <first : n
+39622 <first : n
+39622 <first : p
+39622 <first : Pb2b4 ng8f6 Pb4b5 nf6e4 Pc2c3 nb8a6 Qd1a4 na6c5 Qa4e4 nc5a6 Qe4e6 na6b4 Pc3b4 pf7e6 
+39622 <first : 
+39622 <first : R P - - - - p r 
+39622 <first : N - - P P - p - 
+39622 <first : B - - - - - p b 
+39622 <first : - P - - - - p q 
+39622 <first : K P - - - p p k 
+39622 <first : B P - - - - - b 
+39622 <first : N P - - - - p - 
+39622 <first : R P - - - - p r 
+39622 <first : 
+39622 <first : Am timisssssssssssssssss f7e6
+39622 <first : move f7e6
+43793 >first : time 31344
+43793 >first : otim 29479
+book hit = (NULL)
+43793 >first : b1c3
+43888 <first : [ReceiverXboard] S-a primit MOVE...........................b1c3
+43888 <first : [GameManager] Valid Move: b1a3
+43888 <first : [GameManager] Valid Move: b1c3
+43888 <first : 
+43888 <first : R P - - - - p r 
+43888 <first : - - - P P - p - 
+43888 <first : B - N - - - p b 
+43888 <first : - P - - - - p q 
+43888 <first : K P - - - p p k 
+43888 <first : B P - - - - - b 
+43888 <first : N P - - - - p - 
+43888 <first : R P - - - - p r 
+43888 <first : 
+43888 <first : p
+43888 <first : p
+43888 <first : p
+43888 <first : p
+43888 <first : Pb2b4 ng8f6 Pb4b5 nf6e4 Pc2c3 nb8a6 Qd1a4 na6c5 Qa4e4 nc5a6 Qe4e6 na6b4 Pc3b4 pf7e6 Nb1c3 pg7g5 
+43888 <first : 
+43888 <first : R P - - - - p r 
+43888 <first : - - - P P - p - 
+43888 <first : B - N - - - p b 
+43888 <first : - P - - - - p q 
+43888 <first : K P - - - p p k 
+43888 <first : B P - - - - - b 
+43888 <first : N P - - p - - - 
+43888 <first : R P - - - - p r 
+43888 <first : 
+43888 <first : Am timisssssssssssssssss g7g5
+43888 <first : move g7g5
+45058 >first : time 31534
+45058 >first : otim 29562
+book hit = (NULL)
+45058 >first : c3e4
+45152 <first : [ReceiverXboard] S-a primit MOVE...........................c3e4
+45152 <first : [GameManager] Valid Move: c3d1
+45152 <first : [GameManager] Valid Move: c3b1
+45152 <first : [GameManager] Valid Move: c3a4
+45152 <first : [GameManager] Valid Move: c3d5
+45152 <first : [GameManager] Valid Move: c3e4
+45152 <first : 
+45152 <first : R P - - - - p r 
+45152 <first : - - - P P - p - 
+45152 <first : B - - - - - p b 
+45152 <first : - P - - - - p q 
+45152 <first : K P - N - p p k 
+45152 <first : B P - - - - - b 
+45152 <first : N P - - p - - - 
+45152 <first : R P - - - - p r 
+45152 <first : 
+45152 <first : p
+45152 <first : p
+45152 <first : p
+45152 <first : p
+45152 <first : Pb2b4 ng8f6 Pb4b5 nf6e4 Pc2c3 nb8a6 Qd1a4 na6c5 Qa4e4 nc5a6 Qe4e6 na6b4 Pc3b4 pf7e6 Nb1c3 pg7g5 Nc3e4 pg5g4 
+45152 <first : 
+45152 <first : R P - - - - p r 
+45152 <first : - - - P P - p - 
+45152 <first : B - - - - - p b 
+45152 <first : - P - - - - p q 
+45152 <first : K P - N - p p k 
+45152 <first : B P - - - - - b 
+45152 <first : N P - p - - - - 
+45152 <first : R P - - - - p r 
+45152 <first : 
+45152 <first : Am timisssssssssssssssss g5g4
+45152 <first : move g5g4
+46837 >first : time 31725
+46838 >first : otim 29593
+book hit = (NULL)
+46838 >first : e4g5
+46933 <first : [ReceiverXboard] S-a primit MOVE...........................e4g5
+46933 <first : [GameManager] Valid Move: e4c3
+46933 <first : [GameManager] Valid Move: e4c5
+46933 <first : [GameManager] Valid Move: e4d6
+46933 <first : [GameManager] Valid Move: e4f6
+46933 <first : [GameManager] Valid Move: e4g5
+46933 <first : [GameManager] Valid Move: e4g3
+46933 <first : 
+46933 <first : R P - - - - p r 
+46933 <first : - - - P P - p - 
+46933 <first : B - - - - - p b 
+46933 <first : - P - - - - p q 
+46933 <first : K P - - - p p k 
+46933 <first : B P - - - - - b 
+46933 <first : N P - p N - - - 
+46933 <first : R P - - - - p r 
+46933 <first : 
+46933 <first : p
+46933 <first : p
+46933 <first : p
+46933 <first : p
+46933 <first : Pb2b4 ng8f6 Pb4b5 nf6e4 Pc2c3 nb8a6 Qd1a4 na6c5 Qa4e4 nc5a6 Qe4e6 na6b4 Pc3b4 pf7e6 Nb1c3 pg7g5 Nc3e4 pg5g4 Ne4g5 pg4g3 
+46933 <first : 
+46933 <first : R P - - - - p r 
+46933 <first : - - - P P - p - 
+46933 <first : B - - - - - p b 
+46933 <first : - P - - - - p q 
+46933 <first : K P - - - p p k 
+46933 <first : B P - - - - - b 
+46933 <first : N P p - N - - - 
+46933 <first : R P - - - - p r 
+46933 <first : 
+46933 <first : Am timisssssssssssssssss g4g3
+46933 <first : move g4g3
+48665 >first : time 31915
+48665 >first : otim 29620
+book hit = (NULL)
+48665 >first : f2g3
+48741 <first : [ReceiverXboard] S-a primit MOVE...........................f2g3
+48741 <first : [GameManager] Valid Move: f2f3
+48741 <first : [GameManager] Valid Move: f2f4
+48741 <first : [GameManager] Valid Move: f2g3
+48741 <first : 
+48741 <first : R P - - - - p r 
+48741 <first : - - - P P - p - 
+48741 <first : B - - - - - p b 
+48741 <first : - P - - - - p q 
+48741 <first : K P - - - p p k 
+48741 <first : B - - - - - - b 
+48741 <first : N P P - N - - - 
+48741 <first : R P - - - - p r 
+48741 <first : 
+48741 <first : p
+48741 <first : p
+48741 <first : p
+48741 <first : p
+48741 <first : p
+48741 <first : p
+48741 <first : p
+48741 <first : p
+48741 <first : Pb2b4 ng8f6 Pb4b5 nf6e4 Pc2c3 nb8a6 Qd1a4 na6c5 Qa4e4 nc5a6 Qe4e6 na6b4 Pc3b4 pf7e6 Nb1c3 pg7g5 Nc3e4 pg5g4 Ne4g5 pg4g3 Pf2g3 ph7h5 
+48741 <first : 
+48741 <first : R P - - - - p r 
+48741 <first : - - - P P - p - 
+48741 <first : B - - - - - p b 
+48741 <first : - P - - - - p q 
+48741 <first : K P - - - p p k 
+48741 <first : B - - - - - - b 
+48741 <first : N P P - N - - - 
+48741 <first : R P - - p - - r 
+48741 <first : 
+48741 <first : Am timisssssssssssssssss h7h5
+48741 <first : move h7h5
+50386 >first : time 32107
+50386 >first : otim 29656
+book hit = (NULL)
+50386 >first : g5f3
+50479 <first : [ReceiverXboard] S-a primit MOVE...........................g5f3
+50479 <first : [GameManager] Valid Move: g5h3
+50479 <first : [GameManager] Valid Move: g5f3
+50479 <first : [GameManager] Valid Move: g5e4
+50479 <first : [GameManager] Valid Move: g5e6
+50479 <first : [GameManager] Valid Move: g5f7
+50479 <first : [GameManager] Valid Move: g5h7
+50479 <first : 
+50479 <first : R P - - - - p r 
+50479 <first : - - - P P - p - 
+50479 <first : B - - - - - p b 
+50479 <first : - P - - - - p q 
+50479 <first : K P - - - p p k 
+50479 <first : B - N - - - - b 
+50479 <first : N P P - - - - - 
+50479 <first : R P - - p - - r 
+50479 <first : 
+50479 <first : p
+50479 <first : p
+50479 <first : p
+50479 <first : p
+50479 <first : p
+50479 <first : p
+50479 <first : p
+50479 <first : Pb2b4 ng8f6 Pb4b5 nf6e4 Pc2c3 nb8a6 Qd1a4 na6c5 Qa4e4 nc5a6 Qe4e6 na6b4 Pc3b4 pf7e6 Nb1c3 pg7g5 Nc3e4 pg5g4 Ne4g5 pg4g3 Pf2g3 ph7h5 Ng5f3 ph5h4 
+50479 <first : 
+50479 <first : R P - - - - p r 
+50479 <first : - - - P P - p - 
+50479 <first : B - - - - - p b 
+50479 <first : - P - - - - p q 
+50479 <first : K P - - - p p k 
+50479 <first : B - N - - - - b 
+50479 <first : N P P - - - - - 
+50479 <first : R P - p - - - r 
+50479 <first : 
+50479 <first : Am timisssssssssssssssss h5h4
+50479 <first : move h5h4
+51871 >first : time 32298
+51871 >first : otim 29717
+book hit = (NULL)
+51871 >first : f3h4
+51966 <first : [ReceiverXboard] S-a primit MOVE...........................f3h4
+51967 <first : [GameManager] Valid Move: f3d4
+51967 <first : [GameManager] Valid Move: f3e5
+51967 <first : [GameManager] Valid Move: f3g5
+51967 <first : [GameManager] Valid Move: f3h4
+51967 <first : 
+51967 <first : R P - - - - p r 
+51967 <first : - - - P P - p - 
+51967 <first : B - - - - - p b 
+51967 <first : - P - - - - p q 
+51967 <first : K P - - - p p k 
+51967 <first : B - - - - - - b 
+51967 <first : N P P - - - - - 
+51967 <first : R P - N - - - r 
+51967 <first : 
+51967 <first : p
+51967 <first : p
+51967 <first : p
+51967 <first : p
+51967 <first : p
+51967 <first : p
+51967 <first : p
+51967 <first : p
+51967 <first : p
+51967 <first : p
+51967 <first : p
+51967 <first : Pb2b4 ng8f6 Pb4b5 nf6e4 Pc2c3 nb8a6 Qd1a4 na6c5 Qa4e4 nc5a6 Qe4e6 na6b4 Pc3b4 pf7e6 Nb1c3 pg7g5 Nc3e4 pg5g4 Ne4g5 pg4g3 Pf2g3 ph7h5 Ng5f3 ph5h4 Nf3h4 pa7a5 
+51967 <first : 
+51967 <first : R P - - p - - r 
+51967 <first : - - - P P - p - 
+51967 <first : B - - - - - p b 
+51967 <first : - P - - - - p q 
+51967 <first : K P - - - p p k 
+51967 <first : B - - - - - - b 
+51967 <first : N P P - - - - - 
+51967 <first : R P - N - - - r 
+51967 <first : 
+51967 <first : Am timisssssssssssssssss a7a5
+51967 <first : move a7a5
+55177 >first : time 32488
+55177 >first : otim 29596
+book hit = (NULL)
+55177 >first : b5a6
+55252 <first : [ReceiverXboard] S-a primit MOVE...........................b5a6
+55252 <first : [Table] Se verifica un EN Passant
+55252 <first : [GameManager] Cannot execute illegal move: b5a6
+55252 <first : 
+55252 <first : R P - - p - - r 
+55252 <first : - - - P P - p - 
+55252 <first : B - - - - - p b 
+55252 <first : - P - - - - p q 
+55252 <first : K P - - - p p k 
+55252 <first : B - - - - - - b 
+55252 <first : N P P - - - - - 
+55252 <first : R P - N - - - r 
+55252 <first : 
+GameEnds(29, xboard exit, 2)
+71428 >first : result * {xboard exit}
+71428 >first : force
+71428 >first : quit

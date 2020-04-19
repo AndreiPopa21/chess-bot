@@ -89,6 +89,13 @@ public final class ReceiverXboard {
         int b = mutare.charAt(1) - 48;
         int c = mutare.charAt(2);
         int d = mutare.charAt(3) - 48;
+
+        int leftWhiteEnpass = (a + 1) * 10 + (b + 1);
+        int rightWhiteEnpass = (a - 1) * 10 + (b + 1);
+        int leftBlackEnpass = (a + 1) * 10 + (b - 1);
+        int rightBlackEnpass = (a - 1) * 10 + (b - 1);
+        int startPozition = a * 10 + b;
+        int destinationPozition = c * 10 + d;
         Move move;
 
         if (mutare.compareTo("e1g1") == 0) {
@@ -102,11 +109,14 @@ public final class ReceiverXboard {
 
         } else if (mutare.compareTo("e8c8") == 0) {
             move = new Move(0,0,Constants.BLACK_QUEEN_SIDE_CASTLING);
-        } else if (!(GameManager.getTable().getSquares().get((c*10+d)).hasPiece()) &&
-                ((((a+1)*10+(b+1))==(c*10+d) ) || (((a-1)*10+(b+1))==(c*10+d) ) || (((a+1)*10+(b-1))==(c*10+d) ) || (((a-1)*10+(b-1))==(c*10+d)))) {
-            move = new Move(a*10+b,c*10+d, Constants.EN_PASSANT);
+        } else if (!(GameManager.getTable().getSquares().get(destinationPozition).hasPiece()) &&
+                ((GameManager.getTable().getSquares().get(startPozition).getPiece().getName() == 'P') ||
+                        (GameManager.getTable().getSquares().get(startPozition).getPiece().getName() == 'p') )&&
+                ((leftWhiteEnpass == destinationPozition) || (rightWhiteEnpass == destinationPozition)
+                        || (leftBlackEnpass == destinationPozition) || (rightBlackEnpass == destinationPozition))) {
+            move = new Move(startPozition,destinationPozition, Constants.EN_PASSANT);
         } else {
-            move = new Move(a*10+b,c*10+d,0);
+            move = new Move(startPozition,destinationPozition,0);
         }
 
         return GameManager.executeMove(move);
