@@ -291,13 +291,20 @@ public class Table {
 
         if(move.moveType == Constants.EN_PASSANT){
 
-            System.out.println("[Table] Se verifica un EN Passant");
+            System.out.println("[Table] Se verifica un EN Passant pentru mutarea: " + move.toString());
 
             Square pawnSq = getSquares().get(move.source);
-            if(pawnSq == null) return false;
-            if(!pawnSq.hasPiece()) return false;
+            if(pawnSq == null){
+                System.out.println("[Table] Pawn square was found null");
+                return false;
+            } 
+            if(!pawnSq.hasPiece()){
+                System.out.println("[Table] Pawn square nu are o piesa pe el");
+                return false;
+            } 
             if(pawnSq.getPiece().getName().equals('P') ||
                 pawnSq.getPiece().getName().equals('p')){
+                    System.out.println("[Table] Evaluam toate mutarile pionului de pe: " + move.source);
                     ArrayList<Move> moves = pawnSq.getPiece().searchMoves(move.source);
                     for(int i = 0; i < moves.size(); i++){
                         Move other = moves.get(i);
@@ -310,7 +317,10 @@ public class Table {
                             }
                         }
                     }
+                    System.out.println("[Table] Nicio mutare nu s-a gasit care sa corespunda cu enpassant: " + move.toString());
             }
+            System.out.println("[Table] Pawn square are o piesa pe el, dar nu e niciun pion");
+
             return false;
         }
 

@@ -139,7 +139,12 @@ public class Pawn extends Piece {
 
     public boolean whiteRightEnpassant(int src){
 
-        if(src % 10 == 5) return false;
+        System.out.println("[Pawn] Se evalueaza white-right enpassant pentru pionul de pe: " + src);
+
+        if(src % 10 != 5){
+            System.out.println("[Pawn] Nu este linia corespunzatoare: " + src);
+            return false;
+        } 
 
         int right = src + 10;
         Square rightSq = getTable().getSquares().get(right);
@@ -152,6 +157,9 @@ public class Pawn extends Piece {
         HistoryPairs lastRecord = hp.lastElement();
         int source = src + 10 + 2;
         int dest = src + 10;
+        
+        Move cv = new Move(lastRecord.startPosition,lastRecord.finishPosition,0);
+        System.out.println("[Pawn] Last record a aratat ca ultima mutare facuta este: " + cv.toString());
 
         if(lastRecord.startPosition == source){
             if(lastRecord.finishPosition == dest){
@@ -161,7 +169,7 @@ public class Pawn extends Piece {
                 targetSq.setPiece(null);
                 getTable().applyMove(checkMove);
                 if(getTable().isKingChecked(Color.WHITE)){
-
+                    System.out.println("[Pawn] Regele din pacate a fost gasit in sah facand acest enpassant: " + checkMove.toString());
                     System.out.println("[Pawn] NU este white-right enpassant");
                     getTable().undoMove(checkMove, null);
                     targetSq.setPiece(backup);
@@ -180,7 +188,12 @@ public class Pawn extends Piece {
 
     public boolean whiteLeftEnpassant(int src){
 
-        if(src % 10 == 5) return false;
+        System.out.println("[Pawn] Se evalueaza white-right enpassant pentru pionul de pe: " + src);
+
+        if(src % 10 != 5){
+            System.out.println("[Pawn] Nu este linia corespunzatoare: " + src);
+            return false;
+        } 
 
         int left = src - 10;
         Square leftSq = getTable().getSquares().get(left);
@@ -194,6 +207,10 @@ public class Pawn extends Piece {
         int source = src - 10 + 2;
         int dest = src - 10;
 
+          
+        Move cv = new Move(lastRecord.startPosition,lastRecord.finishPosition,0);
+        System.out.println("[Pawn] Last record a aratat ca ultima mutare facuta este: " + cv.toString());
+
         if(lastRecord.startPosition == source){
             if(lastRecord.finishPosition == dest){
                 Move checkMove = new Move(src,dest+1,0);
@@ -202,14 +219,14 @@ public class Pawn extends Piece {
                 targetSq.setPiece(null);
                 getTable().applyMove(checkMove);
                 if(getTable().isKingChecked(Color.WHITE)){
-
+                    System.out.println("[Pawn] Regele din pacate a fost gasit in sah facand acest enpassant: " + checkMove.toString());
                     System.out.println("[Pawn] NU este white-left enpassant");
                     getTable().undoMove(checkMove, null);
                     targetSq.setPiece(backup);
                     return false;
                 }
 
-                System.out.println("[Pawn] ESTE black-left enpassant");
+                System.out.println("[Pawn] ESTE white-left enpassant");
                 getTable().undoMove(checkMove, null);
                 targetSq.setPiece(backup);
                 return true;
@@ -221,7 +238,7 @@ public class Pawn extends Piece {
 
     public boolean blackRightEnpassant(int src){
 
-        if(src % 10 == 4) return false;
+        if(src % 10 != 4) return false;
 
         int right = src + 10;
         Square rightSq = getTable().getSquares().get(right);
@@ -262,7 +279,7 @@ public class Pawn extends Piece {
 
     public boolean blackLeftEnpassant(int src){
 
-        if(src % 10 == 4) return false;
+        if(src % 10 != 4) return false;
 
         int left = src - 10;
         Square leftSq = getTable().getSquares().get(left);
