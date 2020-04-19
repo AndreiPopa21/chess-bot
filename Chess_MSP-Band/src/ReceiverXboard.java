@@ -91,23 +91,21 @@ public final class ReceiverXboard {
         int d = mutare.charAt(3) - 48;
         Move move;
 
-        if (mutare.compareTo("e1g1") == 0)
-        {
+        if (mutare.compareTo("e1g1") == 0) {
             move = new Move(0,0,Constants.WHITE_KING_SIDE_CASTLING);
 
-        } else if (mutare.compareTo("e1c1") == 0)
-        {
+        } else if (mutare.compareTo("e1c1") == 0) {
             move = new Move(0,0,Constants.WHITE_QUEEN_SIDE_CASTLING);
 
-        } else if (mutare.compareTo("e8g8") == 0)
-        {
+        } else if (mutare.compareTo("e8g8") == 0) {
             move = new Move(0,0,Constants.BLACK_KING_SIDE_CASTLING);
 
-        } else if (mutare.compareTo("e8c8") == 0)
-        {
+        } else if (mutare.compareTo("e8c8") == 0) {
             move = new Move(0,0,Constants.BLACK_QUEEN_SIDE_CASTLING);
-        } else
-        {
+        } else if (!(GameManager.getTable().getSquares().get((c*10+d)).hasPiece()) &&
+                ((((a+1)*10+(b+1))==(c*10+d) ) || (((a-1)*10+(b+1))==(c*10+d) ) || (((a+1)*10+(b-1))==(c*10+d) ) || (((a-1)*10+(b-1))==(c*10+d)))) {
+            move = new Move(a*10+b,c*10+d, Constants.EN_PASSANT);
+        } else {
             move = new Move(a*10+b,c*10+d,0);
         }
 
