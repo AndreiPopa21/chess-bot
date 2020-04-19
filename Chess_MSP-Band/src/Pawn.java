@@ -109,9 +109,26 @@ public class Pawn extends Piece {
         return finalMoves;
     }
 
+    public String convert(int a){
+        StringBuilder sb = new StringBuilder();
+        sb.append((char)(a/10));
+        sb.append(a%10); 
+        return sb.toString();
+    }
+
     public boolean isChecking(int src, int king){
-        int attackRight = src + 11;
-        int attackLeft = src - 9;
+        int attackRight = 0;
+        int attackLeft = 0;
+
+        System.out.println("[Pawn] Is checking for src " + convert(src) + " and  " + convert(king));
+
+        if(this.getColor() == Color.WHITE){
+            attackRight = src + 10 + 1;
+            attackLeft = src - 10 + 1;
+        }else{
+            attackRight = src + 10 -1;
+            attackLeft = src - 10 -1 ;
+        }
 
         if(king == attackLeft) return true;
         if(king == attackRight) return true;
@@ -154,6 +171,8 @@ public class Pawn extends Piece {
 
         //TODO : search history
         Vector<HistoryPairs> hp = GameManager.getHistory();
+        if(hp.size() < 4) return false;
+
         HistoryPairs lastRecord = hp.lastElement();
         int source = src + 10 + 2;
         int dest = src + 10;
@@ -188,7 +207,7 @@ public class Pawn extends Piece {
 
     public boolean whiteLeftEnpassant(int src){
 
-        System.out.println("[Pawn] Se evalueaza white-right enpassant pentru pionul de pe: " + src);
+        System.out.println("[Pawn] Se evalueaza white-left enpassant pentru pionul de pe: " + src);
 
         if(src % 10 != 5){
             System.out.println("[Pawn] Nu este linia corespunzatoare: " + src);
@@ -203,6 +222,8 @@ public class Pawn extends Piece {
 
         //TODO : search history
         Vector<HistoryPairs> hp = GameManager.getHistory();
+        if(hp.size() < 4) return false;
+
         HistoryPairs lastRecord = hp.lastElement();
         int source = src - 10 + 2;
         int dest = src - 10;
@@ -238,7 +259,12 @@ public class Pawn extends Piece {
 
     public boolean blackRightEnpassant(int src){
 
-        if(src % 10 != 4) return false;
+        System.out.println("[Pawn] Se evalueaza black-right enpassant pentru pionul de pe: " + src);
+
+        if(src % 10 != 4){
+            System.out.println("[Pawn] Nu este linia corespunzatoare: " + src);
+            return false;
+        } 
 
         int right = src + 10;
         Square rightSq = getTable().getSquares().get(right);
@@ -248,6 +274,8 @@ public class Pawn extends Piece {
 
         //TODO : search history
         Vector<HistoryPairs> hp = GameManager.getHistory();
+        if(hp.size() < 4) return false;
+
         HistoryPairs lastRecord = hp.lastElement();
         int source = src + 10 - 2;
         int dest = src + 10;
@@ -279,7 +307,12 @@ public class Pawn extends Piece {
 
     public boolean blackLeftEnpassant(int src){
 
-        if(src % 10 != 4) return false;
+        System.out.println("[Pawn] Se evalueaza black-left enpassant pentru pionul de pe: " + src);
+
+        if(src % 10 != 4){
+            System.out.println("[Pawn] Nu este linia corespunzatoare: " + src);
+            return false;
+        } 
 
         int left = src - 10;
         Square leftSq = getTable().getSquares().get(left);
@@ -289,6 +322,8 @@ public class Pawn extends Piece {
 
         //TODO : search history
         Vector<HistoryPairs> hp = GameManager.getHistory();
+        if(hp.size() < 4) return false;
+
         HistoryPairs lastRecord = hp.lastElement();
         int source = src - 10 - 2;
         int dest = src - 10;
