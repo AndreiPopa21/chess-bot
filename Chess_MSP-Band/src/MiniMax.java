@@ -4,8 +4,8 @@ import java.util.Random;
 
 public final class MiniMax {
     private static Table currTable = null;
-    static char[] balck_piece = {'n','p','q','b','r','k'};
-    static char[] white_piece = {'N','P','Q','B','R','K'};
+    static char[] balck_piece = {'p','p','q','b','r','k'};
+    static char[] white_piece = {'P','P','Q','B','R','K'};
     public static int index_black = 0;
     public static int index_white = 0;
     private MiniMax(){

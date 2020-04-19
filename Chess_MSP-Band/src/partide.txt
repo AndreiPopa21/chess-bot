@@ -1,18 +1,59 @@
 [Event "Computer Chess Game"]
 [Site "cristi-330-15ICH"]
 [Date "2020.04.19"]
+[Round "-"]
+[White "cristi"]
+[Black "make"]
+[Result "*"]
+[TimeControl "300+2"]
+
+1. c3 Nf6 2. b4 Ng8 3. b5 Nh6 4. Qc2 Ng4 5. Qg6 Ne5
+{xboard exit (Clocks: 286, 309)} *
+
+[Event "Computer Chess Game"]
+[Site "cristi-330-15ICH"]
+[Date "2020.04.19"]
+[Round "-"]
+[White "cristi"]
+[Black "make"]
+[Result "*"]
+[TimeControl "300+2"]
+
+1. b4 f5 2. b5 f4 3. d4 f3 4. exf3 g5 5. d5 g4 6. fxg4 h5 7. f4 hxg4 8. f5
+g3 9. hxg3 a6 10. Bb2 axb5 11. Ba3 b4 12. Bxb4 b5 13. a3 c5 14. dxc6 dxc6
+15. c3 c5 16. Bxc5 b4 17. cxb4 e6 18. fxe6 Qd3 19. Bxd3 Bg7 20. Ra2 Bf8 21.
+Be4 Bh6 22. Qh5+ Kd8 23. Qxh6 Ke8 24. Qh5+ Kd8 25. Qh6 Kc7 26. Qxh8 Kd8 27.
+Qxg8+ Kc7 28. Qxc8+ Kxc8 29. Bxa8 Kd8 30. Bb6+ Ke7
+{xboard exit (Clocks: 253, 357)} *
+
+[Event "Computer Chess Game"]
+[Site "cristi-330-15ICH"]
+[Date "2020.04.19"]
+[Round "-"]
+[White "cristi"]
+[Black "make"]
+[Result "1-0"]
+[TimeControl "300+2"]
+
+1. b4 f5 2. b5 f4 3. d4 f3 4. d5 g5 5. e4 g4 6. e5 g3 7. Qxf3 gxf2+ 8. Qxf2
+h6 9. Bxh6 a5 10. bxa6 bxa6 11. Nc3 a5 12. a3 a4 13. Nxa4 c5 14. dxc6 d5
+15. exd6 e5 16. Qe2 e4 17. Qd2 e3 18. Qd3 e2 19. Qd4 exf1=Q+ 20. Kxf1 Qe7
+21. Qe3 Qe4 22. Qxe4+ Be7 23. Qxe7+
+{Black resigns} 1-0
+
+[Event "Computer Chess Game"]
+[Site "cristi-330-15ICH"]
+[Date "2020.04.19"]
 [Round "1"]
 [White "make"]
 [Black "Fairy-Max 5.0b"]
 [Result "0-1"]
 [TimeControl "300+2"]
 
-1. Nh3 c6 {+0,12/2 0,1} 2. Ng1 h5 {+0,05/2 0,1} 3. Nh3 Rh7 {+0,00/2 0,1} 4.
-Ng5 Rh6 {-0,15/2 0,1} 5. Nxf7 Kxf7 {+1,55/2 0,1} 6. Na3 Nf6 {+1,82/2 0,1}
-7. Nb1 b5 {+1,76/2 0,1} 8. Nc3 b4 {+1,86/2 0,1} 9. Ne4 Nxe4 {+4,31/2 0,1}
-10. g3 e5 {+4,35/2 0,1} 11. g4 hxg4 {+4,99/2 0,1} 12. h4 Rxh4 {+5,92/2 0,1}
-13. a3 Rxh1 {+10,19/2 0,1} 14. a4 Qh4 {+10,91/2 0,1} 15. a5 Qxf2#
-{+1000,01/2 0,1}
+1. g4 Nc6 {+0,15/2 0,1} 2. g5 d5 {+0,07/2 0,1} 3. g6 hxg6 {+0,81/2 0,1} 4.
+h4 Bf5 {+0,73/2 0,1} 5. h5 Nf6 {+1,38/2 0,1} 6. h6 Rxh6 {+1,43/2 0,1} 7. a4
+Rxh1 {+5,79/2 0,1} 8. a5 Rxg1 {+8,34/2 0,1} 9. a6 Bh3 {+9,37/2 0,1} 10.
+axb7 Rxf1# {+1000,01/2 0,1}
 {Xboard adjudication: Checkmate} 0-1
 
 [Event "Computer Chess Game"]
@@ -24,51 +65,158 @@ Ng5 Rh6 {-0,15/2 0,1} 5. Nxf7 Kxf7 {+1,55/2 0,1} 6. Na3 Nf6 {+1,82/2 0,1}
 [Result "1-0"]
 [TimeControl "300+2"]
 
-1. b4 {+0,06/2} Nf6 2. c3 {+0,07/2 0,1} Ng4 3. f3 {+0,06/2 0,1} Ne3 4. dxe3
-{+2,40/2 0,1} Nc6 5. Nd2 {+2,57/2 0,1} Na5 6. bxa5 {+4,87/2 0,1} f5 7. g4
-{+5,09/2 0,1} fxg4 8. fxg4 {+4,93/2 0,1} g5 9. Ngf3 {+5,14/2 0,1} h6 10.
-Ne4 {+5,08/2 0,1} h5 11. Qd4 {+5,87/2 0,1} h4 12. Qxh8 {+10,11/2 0,1} h3
-13. Qh5# {+1000,01/2 0,1}
+1. f3 {+0,10/2} f5 2. d3 {+0,03/2 0,1} f4 3. Bxf4 {+0,79/2 0,1} g6 4. c4
+{+0,74/2 0,1} g5 5. Bxg5 {+1,30/2 0,1} h5 6. Nc3 {+1,48/2 0,1} h4 7. Ne4
+{+1,39/2 0,1} h3 8. Nxh3 {+2,12/2 0,1} a5 9. Nf4 {+2,17/2 0,1} a4 10. Ng6
+{+2,67/2 0,1} a3 11. Nxh8 {+4,64/2 0,1} axb2 12. Rb1 {+3,90/2 0,1} b6 13.
+Rxb2 {+6,51/2 0,1} b5 14. Ng6 {+7,28/2 0,1} b4 15. Nxf8 {+7,97/2 0,1} b3
+16. Nxd7 {+8,49/2 0,1} bxa2 17. Rxa2 {+8,37/2 0,1} c6 18. Nd6+
+{+12,32/2 0,1} exd6 19. Bxd8 {+12,34/2 0,1} c5 20. Rxa8 {+18,28/2 0,1} d5
+21. Nxc5 {+21,12/2 0,1} dxc4 22. dxc4 {+23,96/2 0,1} Bg4 23. fxg4
+{+24,25/2 0,1} Kf7 24. Qd5+ {+26,99/2 0,1} Kg7 25. Ne6+ {+26,98/2 0,1} Kf7
+26. Nf4+ {+27,04/2 0,1} Kg7 27. Qe5+ {+26,97/2 0,1} Kf8 28. Bg5
+{+26,97/2 0,1} Kf7 29. Rxb8 {+29,47/2 0,1}
+{Black resigns} 1-0
+
+[Event "Computer Chess Game"]
+[Site "cristi-330-15ICH"]
+[Date "2020.04.19"]
+[Round "3"]
+[White "make"]
+[Black "Fairy-Max 5.0b"]
+[Result "0-1"]
+[TimeControl "300+2"]
+
+1. g3 d5 {+0,13/2 0,1} 2. g4 Bxg4 {+0,61/2 0,1} 3. h4 c6 {+0,77/2 0,1} 4.
+h5 Nf6 {+1,40/2 0,1} 5. h6 gxh6 {+1,32/2 0,1} 6. a4 Nbd7 {+1,46/2 0,1} 7.
+a5 Ne5 {+1,39/2 0,1} 8. a6 bxa6 {+1,54/2 0,1} 9. b3 a5 {+2,10/2 0,1} 10. b4
+axb4 {+2,84/2 0,1} 11. c4 Nd3+ {+6,14/2 0,1} 12. exd3 Bxd1 {+6,15/2 0,1}
+13. c5 Bg4 {+8,87/2 0,1} 14. d4 b3 {+9,30/2 0,1} 15. d3 h5 {+9,34/2 0,1}
+16. f4 h6 {+9,45/2 0,1} 17. f5 Bxf5 {+10,14/2 0,1} 18. Bxh6 Bxh6
+{+12,35/2 0,1} 19. Bg2 Bxd3 {+13,05/2 0,1} 20. Be4 dxe4 {+16,52/2 0,1} 21.
+Rh4 Qxd4 {+19,35/2 0,1} 22. Rg4 Qxa1 {+23,94/2 0,1} 23. Rh4 Qxb1+
+{+24,69/2 0,1} 24. Kf2 Qf1+ {+26,52/2 0,1} 25. Kg3 Qxg1+ {+27,32/2 0,1}
+{Xboard: Forfeit due to invalid move: g3f3 (g3f3 via `0, `0) res=24} 0-1
+
+[Event "Computer Chess Game"]
+[Site "cristi-330-15ICH"]
+[Date "2020.04.19"]
+[Round "4"]
+[White "Fairy-Max 5.0b"]
+[Black "make"]
+[Result "1-0"]
+[TimeControl "300+2"]
+
+1. c3 {+0,11/2} f6 2. f3 {+0,02/2 0,1} f5 3. Nh3 {+0,05/2 0,1} f4 4. Nxf4
+{+0,69/2 0,1} g6 5. b4 {+0,65/2 0,1} g5 6. Nh3 {+0,62/2 0,1} g4 7. fxg4
+{+1,23/2 0,1} h6 8. Nf4 {+1,43/2 0,1} h5 9. Nxh5 {+1,99/2 0,1} a5 10. Nf4
+{+2,15/2 0,1} a4 11. Ng6 {+2,67/2 0,1} a3 12. Nxh8 {+5,84/2 0,1} b5 13. Ng6
+{+7,54/2 0,1} c5 14. Nxf8 {+8,01/2 0,1} cxb4 15. Nh7 {+8,39/2 0,1} bxc3 16.
+dxc3 {+8,89/2 0,1} b4 17. Qd5 {+10,67/2 0,1} bxc3 18. Qh5# {+1000,01/2 0,1}
 {Xboard adjudication: Checkmate} 1-0
 
 [Event "Computer Chess Game"]
 [Site "cristi-330-15ICH"]
 [Date "2020.04.19"]
-[Round "-"]
-[White "cristi"]
-[Black "make"]
-[Result "*"]
+[Round "5"]
+[White "make"]
+[Black "Fairy-Max 5.0b"]
+[Result "0-1"]
 [TimeControl "300+2"]
 
-1. c3 Nh6 2. Qc2
-{xboard exit (Clocks: 302, 291)} *
+1. g4 c6 {+0,08/2 0,1} 2. g5 h5 {+0,06/2 0,1} 3. g6 fxg6 {+0,55/2 0,1} 4.
+h4 Nf6 {+0,71/2 0,1} 5. a4 d5 {+0,65/2 0,1} 6. a5 Bf5 {+0,73/2 0,1} 7. a6
+Nxa6 {+1,35/2 0,1} 8. b3 Nb4 {+1,50/2 0,1} 9. c4 Nc2+ {+7,29/2 0,1} 10.
+Qxc2 Bxc2 {+7,31/2 0,1} 11. Bb2 Bxb3 {+8,17/2 0,1} 12. Bc3 Bxc4
+{+8,82/2 0,1} 13. Bd4 a5 {+8,74/2 0,1} 14. Bb2 Ne4 {+8,76/2 0,1} 15. Bf6
+gxf6 {+11,80/2 0,1} 16. Bg2 Bh6 {+11,73/2 0,1} 17. Bh3 O-O {+11,97/2 0,1}
+18. Bd7 Qxd7 {+14,67/2 0,1} 19. Rh2 Bf4 {+14,90/2 0,1} 20. Rh3 Qg4
+{+14,80/2 0,1} 21. Rf3 Qxg1# {+1000,01/2 0,1}
+{Xboard adjudication: Checkmate} 0-1
 
 [Event "Computer Chess Game"]
 [Site "cristi-330-15ICH"]
 [Date "2020.04.19"]
-[Round "-"]
-[White "cristi"]
+[Round "6"]
+[White "Fairy-Max 5.0b"]
 [Black "make"]
-[Result "*"]
+[Result "1-0"]
 [TimeControl "300+2"]
 
-1. c3 Nh6 2. Qc2 Ng4 3. Qb3 Nxh2 4. Qc4 Nxf1 5. Kxf1 Nc6 6. Qxc6 f6 7. Qd6
-f5 8. Qe6 f4 9. e4 f3 10. Qc4 g6 11. e5 g5 12. Qf4 gxf4 13. a3 h6 14. a4 h5
-15. a5 h4 16. a6 h3 17. gxh3 b6 18. h4 b5 19. h5 b4 20. h6 bxc3 21. dxc3 c6
-22. c4 c5 23. Na3 d6 24. Nb5 dxe5
-{xboard exit (Clocks: 254, 347)} *
+1. c4 {+0,13/2} f5 2. Qc2 {+0,08/2 0,1} f4 3. Qf5 {+0,61/2 0,1} f3 4. Nxf3
+{+0,72/2 0,1} g6 5. Qe5 {+0,61/2 0,1} g5 6. Qxh8 {+5,77/2 0,1} g4 7. Qxg8
+{+6,15/2 0,1} g3 8. hxg3 {+9,18/2 0,1} h6 9. Qg6# {+1000,01/2 0,1}
+{Xboard adjudication: Checkmate} 1-0
 
 [Event "Computer Chess Game"]
 [Site "cristi-330-15ICH"]
 [Date "2020.04.19"]
-[Round "-"]
-[White "cristi"]
-[Black "make"]
-[Result "*"]
+[Round "7"]
+[White "make"]
+[Black "Fairy-Max 5.0b"]
+[Result "0-1"]
 [TimeControl "300+2"]
 
-1. b4 Nf6 2. b5 Ne4 3. c3 Na6 4. Qa4 Nac5 5. Qxe4 Na6 6. Qe6 Nb4 7. cxb4
-fxe6 8. Nc3 g5 9. Ne4 g4 10. Ng5 g3 11. fxg3 h5 12. N5f3 h4 13. Nxh4 a5 14.
-bxa6
-{xboard exit (Clocks: 295, 308)} *
+1. g3 f6 {+0,12/2 0,1} 2. g4 c6 {+0,11/2 0,1} 3. g5 fxg5 {+0,46/2 0,1} 4.
+h4 gxh4 {+0,60/2 0,1} 5. a3 g5 {+1,39/2 0,1} 6. a4 Nf6 {+1,46/2 0,1} 7. a5
+b5 {+1,39/2 0,1} 8. a6 Bh6 {+2,11/2 0,1} 9. b3 O-O {+2,35/2 0,1} 10. b4
+Nxa6 {+2,21/2 0,1} 11. c3 Nc7 {+2,17/2 0,1} 12. c4 bxc4 {+2,78/2 0,1} 13.
+b5 Nxb5 {+3,57/2 0,1} 14. d4 c3 {+4,10/2 0,1} 15. d5 Nxd5 {+4,97/2 0,1} 16.
+e3 Nd6 {+5,01/2 0,1} 17. e4 Nxe4 {+5,72/2 0,1} 18. f4 Nxf4 {+6,42/2 0,1}
+19. Qg4 c2 {+6,77/2 0,1} 20. Qxg5+ Bxg5 {+14,90/2 0,1} 21. Ba3 Qa5+
+{+17,40/2 0,1} 22. Bb4 c1=Q# {+1000,01/2 0,1}
+{Xboard adjudication: Checkmate} 0-1
+
+[Event "Computer Chess Game"]
+[Site "cristi-330-15ICH"]
+[Date "2020.04.19"]
+[Round "8"]
+[White "Fairy-Max 5.0b"]
+[Black "make"]
+[Result "1-0"]
+[TimeControl "300+2"]
+
+1. c4 {+0,15/2} f5 2. f4 {+0,13/2 0,1} g6 3. Nf3 {+0,07/2 0,1} g5 4. Nxg5
+{+0,58/2 0,1} h6 5. Nf3 {+0,60/2 0,1} h5 6. Nc3 {+0,74/2 0,1} h4 7. Nd4
+{+0,71/2 0,1} h3 8. gxh3 {+1,42/2 0,1} a5 9. Nxf5 {+2,07/2 0,1} a4 10. Nxa4
+{+2,71/2 0,1} b5 11. cxb5 {+3,44/2 0,1} c5 12. Nxc5 {+4,43/2 0,1} d5 13.
+Qc2 {+4,30/2 0,1} d4 14. Bg2 {+4,47/2 0,1} d3 15. Qc3 {+5,49/2 0,1} dxe2
+16. Qxh8 {+7,84/2 0,1} e6 17. Qh5# {+1000,01/2 0,1}
+{Xboard adjudication: Checkmate} 1-0
+
+[Event "Computer Chess Game"]
+[Site "cristi-330-15ICH"]
+[Date "2020.04.19"]
+[Round "9"]
+[White "make"]
+[Black "Fairy-Max 5.0b"]
+[Result "0-1"]
+[TimeControl "300+2"]
+
+1. g4 Nc6 {+0,12/2 0,1} 2. g5 e5 {+0,05/2 0,1} 3. g6 hxg6 {+0,68/2 0,1} 4.
+h3 d5 {+0,75/2 0,1} 5. h4 Rxh4 {+1,43/2 0,1} 6. a4 Rxh1 {+5,79/2 0,1} 7. a5
+Rxg1 {+8,36/2 0,1} 8. a6 Bh3 {+9,52/2 0,1} 9. axb7 Rxf1# {+1000,01/2 0,1}
+{Xboard adjudication: Checkmate} 0-1
+
+[Event "Computer Chess Game"]
+[Site "cristi-330-15ICH"]
+[Date "2020.04.19"]
+[Round "10"]
+[White "Fairy-Max 5.0b"]
+[Black "make"]
+[Result "1-0"]
+[TimeControl "300+2"]
+
+1. Nf3 {+0,11/2} f5 2. Nc3 {+0,06/2 0,1} f4 3. d3 {+0,94/2 0,1} g6 4. Bxf4
+{+0,74/2 0,1} g5 5. Be5 {+1,34/2 0,1} g4 6. Bxh8 {+3,37/2 0,1} g3 7. hxg3
+{+5,98/2 0,1} h6 8. Bd4 {+5,97/2 0,1} h5 9. Rxh5 {+6,51/2 0,1} a5 10. a4
+{+6,59/2 0,1} b6 11. e4 {+6,59/2 0,1} b5 12. axb5 {+7,27/2 0,1} a4 13. Rxa4
+{+8,04/2 0,1} c5 14. Rxa8 {+10,46/2 0,1} cxd4 15. Rxb8 {+10,46/2 0,1} dxc3
+16. Rc5 {+10,68/2 0,1} cxb2 17. Rbxc8 {+12,62/2 0,1} b1=Q 18. Rxd8+
+{+16,80/2 0,1} Kxd8 19. Qxb1 {+16,47/2 0,1} Ke8 20. b6 {+17,10/2 0,1} Kf7
+21. b7 {+17,72/2 0,1} Ke6 22. b8=Q {+24,42/2 0,1} Kf7 23. Rc8
+{+26,98/2 0,1} Ke6 24. Nd4+ {+27,41/2 0,1} Kf6 25. Rxf8+ {+29,98/2 0,1} Kg5
+26. f4+ {+30,04/2 0,1} Kg6 27. Qe8+ {+30,01/2 0,1} Kg7 28. Rxg8+
+{+30,02/2 0,1} Kh7 29. Qg6# {+1000,01/2 0,1}
+{Xboard adjudication: Checkmate} 1-0
 
