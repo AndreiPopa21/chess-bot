@@ -12,6 +12,84 @@ public class Table {
         standardGame();
     }
 
+
+    public Table(Table table){
+
+        this.squaresMap.clear();
+        for(Map.Entry<Integer,Square> entry: table.getSquares().entrySet()){
+
+            int squareCode = entry.getKey();
+            Square sq = entry.getValue();
+
+            if(!sq.hasPiece()){
+                this.squaresMap.put(squareCode,new Square(squareCode,null));
+            }else{
+                Piece p = sq.getPiece();
+                
+                if(p.getName().equals('P')){
+                    this.squaresMap.put(squareCode, new Square(squareCode, new Pawn(Color.WHITE, this)));
+                    continue;
+                }
+
+                if(p.getName().equals('p')){
+                    this.squaresMap.put(squareCode, new Square(squareCode, new Pawn(Color.BLACK, this)));
+                    continue;
+                }
+
+                if(p.getName().equals('N')){
+                    this.squaresMap.put(squareCode, new Square(squareCode, new Knight(Color.WHITE, this)));
+                    continue;
+                }
+
+                if(p.getName().equals('n')){
+                    this.squaresMap.put(squareCode, new Square(squareCode, new Knight(Color.BLACK, this)));
+                    continue;
+                }
+
+                if(p.getName().equals('B')){
+                    this.squaresMap.put(squareCode, new Square(squareCode, new Bishop(Color.WHITE, this)));
+                    continue;
+                }
+
+                if(p.getName().equals('b')){
+                    this.squaresMap.put(squareCode, new Square(squareCode, new Bishop(Color.BLACK, this)));
+                    continue;
+                }
+
+                if(p.getName().equals('R')){
+                    this.squaresMap.put(squareCode, new Square(squareCode, new Rook(Color.WHITE, this)));
+                    continue;
+                }
+
+                if(p.getName().equals('r')){
+                    this.squaresMap.put(squareCode, new Square(squareCode, new Rook(Color.BLACK, this)));
+                    continue;
+                }
+
+                if(p.getName().equals('Q')){
+                    this.squaresMap.put(squareCode, new Square(squareCode, new Queen(Color.WHITE, this)));
+                    continue;
+                }
+
+                if(p.getName().equals('q')){
+                    this.squaresMap.put(squareCode, new Square(squareCode, new Queen(Color.BLACK, this)));
+                    continue;
+                }
+
+                if(p.getName().equals('K')){
+                    this.squaresMap.put(squareCode, new Square(squareCode, new King(Color.WHITE, this)));
+                    continue;
+                }
+
+                if(p.getName().equals('k')){
+                    this.squaresMap.put(squareCode, new Square(squareCode, new King(Color.BLACK, this)));
+                    continue;
+                }
+            }
+        }
+    }
+
+
 // Table -> Square -> Piece
     private void standardGame(){
         squaresMap.clear();
@@ -252,9 +330,9 @@ public class Table {
                 int key = keysList.get(k); k++;
                 Square sq = squaresMap.get(key);
                 if(sq.hasPiece()){
-                    sb.append(sq.getPiece().getName() + " ");
+                    sb.append(sq.getPiece().getName() + "  ");
                 }else{
-                    sb.append("- ");
+                    sb.append("-  ");
                 }
             }
             sb.append('\n');
