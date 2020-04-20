@@ -70,7 +70,7 @@ public class Pawn extends Piece {
             if(!getTable().isKingBinded(move, this.getColor())){
                 finalMoves.add(move);
             }else{
-                System.out.println("[Pawn] Cannot perform " + move.toString() + " because king bounded");
+                //System.out.println("[Pawn] Cannot perform " + move.toString() + " because king bounded");
             }
         }
 
@@ -78,8 +78,8 @@ public class Pawn extends Piece {
         //daca e cazul, i se pune un flag de promotion la moveType
         for(int i = 0; i < finalMoves.size(); i++){
             if(checkPromotion(finalMoves.get(i))){
-                System.out.println("[Pawn] Mutare de promotion: "
-                 + finalMoves.get(i).toString());
+               // System.out.println("[Pawn] Mutare de promotion: "
+               //  + finalMoves.get(i).toString());
                 finalMoves.get(i).moveType = Constants.QUEEN_PROMOTION;
             }
         }
@@ -178,7 +178,7 @@ public class Pawn extends Piece {
         int dest = src + 10;
         
         Move cv = new Move(lastRecord.startPosition,lastRecord.finishPosition,0);
-        System.out.println("[Pawn] Last record a aratat ca ultima mutare facuta este: " + cv.toString());
+        //System.out.println("[Pawn] Last record a aratat ca ultima mutare facuta este: " + cv.toString());
 
         if(lastRecord.startPosition == source){
             if(lastRecord.finishPosition == dest){
@@ -188,14 +188,14 @@ public class Pawn extends Piece {
                 targetSq.setPiece(null);
                 getTable().applyMove(checkMove);
                 if(getTable().isKingChecked(Color.WHITE)){
-                    System.out.println("[Pawn] Regele din pacate a fost gasit in sah facand acest enpassant: " + checkMove.toString());
-                    System.out.println("[Pawn] NU este white-right enpassant");
+                  //  System.out.println("[Pawn] Regele din pacate a fost gasit in sah facand acest enpassant: " + checkMove.toString());
+                  //  System.out.println("[Pawn] NU este white-right enpassant");
                     getTable().undoMove(checkMove, null);
                     targetSq.setPiece(backup);
                     return false;
                 }
 
-                System.out.println("[Pawn] ESTE white-right enpassant");
+              //  System.out.println("[Pawn] ESTE white-right enpassant");
                 getTable().undoMove(checkMove, null);
                 targetSq.setPiece(backup);
                 return true;
@@ -230,7 +230,7 @@ public class Pawn extends Piece {
 
           
         Move cv = new Move(lastRecord.startPosition,lastRecord.finishPosition,0);
-        System.out.println("[Pawn] Last record a aratat ca ultima mutare facuta este: " + cv.toString());
+       // System.out.println("[Pawn] Last record a aratat ca ultima mutare facuta este: " + cv.toString());
 
         if(lastRecord.startPosition == source){
             if(lastRecord.finishPosition == dest){
@@ -240,14 +240,14 @@ public class Pawn extends Piece {
                 targetSq.setPiece(null);
                 getTable().applyMove(checkMove);
                 if(getTable().isKingChecked(Color.WHITE)){
-                    System.out.println("[Pawn] Regele din pacate a fost gasit in sah facand acest enpassant: " + checkMove.toString());
-                    System.out.println("[Pawn] NU este white-left enpassant");
+             //       System.out.println("[Pawn] Regele din pacate a fost gasit in sah facand acest enpassant: " + checkMove.toString());
+              //      System.out.println("[Pawn] NU este white-left enpassant");
                     getTable().undoMove(checkMove, null);
                     targetSq.setPiece(backup);
                     return false;
                 }
 
-                System.out.println("[Pawn] ESTE white-left enpassant");
+            //    System.out.println("[Pawn] ESTE white-left enpassant");
                 getTable().undoMove(checkMove, null);
                 targetSq.setPiece(backup);
                 return true;
@@ -289,13 +289,13 @@ public class Pawn extends Piece {
                 getTable().applyMove(checkMove);
                 if(getTable().isKingChecked(Color.WHITE)){
 
-                    System.out.println("[Pawn] NU este black-right enpassant");
+                 //   System.out.println("[Pawn] NU este black-right enpassant");
                     getTable().undoMove(checkMove, null);
                     targetSq.setPiece(backup);
                     return false;
                 }
 
-                System.out.println("[Pawn] ESTE black-right enpassant");
+               // System.out.println("[Pawn] ESTE black-right enpassant");
                 getTable().undoMove(checkMove, null);
                 targetSq.setPiece(backup);
                 return true;
@@ -337,14 +337,14 @@ public class Pawn extends Piece {
                 getTable().applyMove(checkMove);
                 if(getTable().isKingChecked(Color.WHITE)){
 
-                    System.out.println("[Pawn] NU este black-left enpassant");
+                 //   System.out.println("[Pawn] NU este black-left enpassant");
 
                     getTable().undoMove(checkMove, null);
                     targetSq.setPiece(backup);
                     return false;
                 }
 
-                System.out.println("[Pawn] ESTE black-left enpassant");
+               // System.out.println("[Pawn] ESTE black-left enpassant");
                 getTable().undoMove(checkMove, null);
                 targetSq.setPiece(backup);
                 return true;

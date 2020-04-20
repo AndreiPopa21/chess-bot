@@ -3254,3 +3254,444 @@ axb5 {+24,43/2 0,1} 27. Be2 Ra8 {+25,06/2 0,1} 28. Bf3 Rxa3 {+25,09/2 0,1}
 {+30,09/2 0,1} 32. f5 Ra1# {+1000,01/2 0,1}
 {Xboard adjudication: Checkmate} 0-1
 
+[Event "Computer Chess Game"]
+[Site "stefan-GL552VW"]
+[Date "2020.04.20"]
+[Round "-"]
+[White "stefan"]
+[Black "make"]
+[Result "*"]
+[TimeControl "300+2"]
+
+1. e4 Nf6 2. Nf3 Nxe4 3. Qe2 Nc5 4. d4 Na4 5. b3 Nb6 6. c4 Nc6 7. Bf4 d6 8.
+d5 Nb4 9. Qd3 Nxd3+ 10. Bxd3 Bg4 11. h3 Bxf3 12. gxf3 e6 13. O-O exd5 14.
+Re1+ Kd7 15. Bf5+ Kc6 16. b4 Nxc4 17. Rc1 Be7 18. Nd2 Bf6 19. Nxc4 dxc4 20.
+Re1 c3 21. Be4+ Kd7 22. Rec1 d5 23. Rxc3 Bxc3 24. Rc1
+{Game aborted (Clocks: 171, 327)} *
+
+[Event "Computer Chess Game"]
+[Site "stefan-GL552VW"]
+[Date "2020.04.20"]
+[Round "-"]
+[White "stefan"]
+[Black "make"]
+[Result "0-1"]
+[TimeControl "300+2"]
+
+1. Nf3 Nf6 2. Nc3 Nc6 3. e4 d6 4. d4 Be6 5. d5 Nxd5 6. exd5 Bxd5 7. Qxd5
+Nb4 8. Qd1 e6 9. a3 Nc6 10. Bb5 d5 11. O-O Bxa3 12. Re1 Bxb2 13. Bxb2 O-O
+14. Na4 Nb4 15. c3 Na6 16. Bxa6 bxa6 17. Rxe6 fxe6 18. c4 e5 19. Nxe5 d4
+20. Qxd4 Qxd4 21. Bxd4 Rfe8 22. Re1 Rad8 23. Nc6 Rxe1#
+{Xboard adjudication: Checkmate} 0-1
+
+[Event "Computer Chess Game"]
+[Site "stefan-GL552VW"]
+[Date "2020.04.20"]
+[Round "-"]
+[White "stefan"]
+[Black "make"]
+[Result "1-0"]
+[TimeControl "300+2"]
+
+1. d4 Nf6 2. d5 d6 3. c4 Nbd7 4. f4 Ne4 5. f5 Ne5 6. e3 Bxf5 7. Nf3 Nxf3+
+8. Qxf3 e5 9. Qxf5 Qh4+ 10. g3 Nxg3 11. hxg3 Qxh1 12. Ke2 Qh2+ 13. Kd3 Qxg3
+14. Bh3 Be7 15. Qd7+ Kf8 16. Qg4 Qxg4 17. Bxg4 Kg8 18. e4 Bf6 19. Be3 a6
+20. Nc3 Rd8 21. Na4 Re8 22. c5 dxc5 23. Nxc5 b5 24. Nxa6 c6 25. dxc6 Rd8+
+26. Ke2 Re8 27. c7 Rc8 28. Bxc8 h5 29. Bf5 h4 30. c8=Q+ Bd8 31. Qxd8#
+{Xboard adjudication: Checkmate} 1-0
+
+[Event "Computer Chess Game"]
+[Site "stefan-GL552VW"]
+[Date "2020.04.20"]
+[Round "-"]
+[White "stefan"]
+[Black "make"]
+[Result "*"]
+[TimeControl "300+2"]
+
+1. e4 Nf6 2. e5 Ne4 3. Qe2 Nc5 4. d4 Ne6 5. d5 Nd4 6. Be3 Nxe2 7. Bxe2 a5
+8. Nf3 a4 9. O-O Rg8 10. Rd1 Rh8 11. d6 exd6 12. exd6 cxd6 13. Rxd6 Bxd6
+14. Bc4 Nc6 15. Ng5 f5 16. Nf7 Bxh2+ 17. Kxh2 Qc7+ 18. Kg1 Rg8 19. Nd6+
+Qxd6 20. Bxg8 Qd1+ 21. Kh2 Qxc2 22. Nd2 Qxb2 23. Rb1 Qe5+ 24. g3 d6 25. Bf4
+Qd4 26. Kg2 Bd7 27. Nf3 Qd3 28. Re1+
+{xboard exit (Clocks: 142, 331)} *
+
+[Event "Computer Chess Game"]
+[Site "stefan-GL552VW"]
+[Date "2020.04.20"]
+[Round "-"]
+[White "stefan"]
+[Black "make"]
+[Result "1-0"]
+[TimeControl "300+2"]
+
+1. e4 Nf6 2. e5 Ne4 3. Qe2 Nc5 4. d4 Ne6 5. d5 Nd4 6. Qd2 Nf5 7. Nf3 Rg8 8.
+Bd3 Nc6 9. dxc6 dxc6 10. Bxf5 Qxd2+ 11. Bxd2 Bxf5 12. O-O Bxc2 13. Nc3 e6
+14. Nd4 Bd3 15. Rfe1 Bc5 16. Nf3 O-O-O 17. Be3 Bxe3 18. Rxe3 Bf5 19. h3 Kb8
+20. Na4 Rge8 21. g4 Bg6 22. h4 h6 23. h5 Bc2 24. Rc1 Bxa4 25. b3 Bb5 26. g5
+hxg5 27. Nxg5 c5 28. Nxf7 Rd2 29. h6 gxh6 30. Nxh6 Rxa2 31. Rd1 Bc6 32. f4
+Rg2+ 33. Kf1 Rc2 34. f5 Bg2+ 35. Kg1 exf5 36. Nxf5 Bc6 37. Nh6 Rg2+ 38. Kh1
+Rf2+ 39. Kg1 Rg2+ 40. Kf1 Rc2 41. Nf7 Rg2 42. Red3 a6 43. Rd8+ Rxd8 44.
+Rxd8+ Ka7 45. e6 Rc2 46. e7 Rc1+ 47. Kf2 Rc2+ 48. Ke3 Rc3+ 49. Kd2 Rd3+ 50.
+Kxd3 Bb5+ 51. Kc3 Be8 52. Rxe8 a5 53. Ra8+ Kxa8 54. e8=Q+ Ka7 55. Qe3 Kb8
+56. Qxc5 a4 57. Qa5 axb3 58. Kxb3 c6 59. Nd6 c5 60. Qb5 c4+ 61. Kxc4 b6 62.
+Qxb6+ Ka8 63. Qb7#
+{Xboard adjudication: Checkmate} 1-0
+
+[Event "Computer Chess Game"]
+[Site "stefan-GL552VW"]
+[Date "2020.04.20"]
+[Round "-"]
+[White "stefan"]
+[Black "make"]
+[Result "0-1"]
+[TimeControl "300+2"]
+
+1. d4 Nf6 2. e4 Nxe4 3. Qe2 Nd6 4. Nf3 Nc6 5. c4 Rg8 6. Nc3 Rh8 7. d5 Nb4
+8. a3 Na6 9. b4 Rg8 10. c5 Nxc5 11. bxc5 Nf5 12. Qc4 Rh8 13. d6 exd6 14.
+cxd6 Bxd6 15. Qd5 Qe7+ 16. Be2 Bxh2 17. Rxh2 d6 18. Kf1 Be6 19. Qxb7 Rd8
+20. Qxa7 d5 21. Qa4+ Kf8 22. Bb2 Kg8 23. Nb5 h6 24. Rc1 c5 25. Ne5 Qf6 26.
+Na7 Ne3+ 27. Ke1 Nf5 28. Nac6 Re8 29. Qa7 c4 30. Qd7 Bxd7 31. Nxd7 Qxc6 32.
+Ne5 Qc5 33. Rh5 Qa5+ 34. Bc3 Qxa3 35. Rxf5 Qxc1+ 36. Bd1 Qxc3+ 37. Kf1 d4
+38. Rf3 Qb2 39. Nxc4 Qb4 40. Nd2 Qxd2 41. Be2 Qxe2+ 42. Kg1 Qe1+ 43. Kh2
+Qe5+ 44. g3 Qh5+ 45. Kg2 Qd5 46. Kg1 Qxf3 47. Kf1 Qh1#
+{Xboard adjudication: Checkmate} 0-1
+
+[Event "Computer Chess Game"]
+[Site "stefan-GL552VW"]
+[Date "2020.04.20"]
+[Round "-"]
+[White "stefan"]
+[Black "make"]
+[Result "*"]
+[TimeControl "300+2"]
+
+1. e4
+{Game aborted (Clocks: 302, 249)} *
+
+[Event "Computer Chess Game"]
+[Site "stefan-GL552VW"]
+[Date "2020.04.20"]
+[Round "-"]
+[White "stefan"]
+[Black "make"]
+[Result "1-0"]
+[TimeControl "300+2"]
+
+1. e4 Nf6 2. e5 Ne4 3. Qe2 Nc5 4. Nf3 Nc6 5. e6 dxe6 6. d4 Nd7 7. Be3 Nf6
+8. Nc3 Bd7 9. Nb5 Ne4 10. Qd3 Nf6 11. Be2 Nd5 12. O-O Nxe3 13. Qxe3 h6 14.
+Ne5 Nxe5 15. Qxe5 Bxb5 16. Qxb5+ c6 17. Qxb7 Qxd4 18. Qxc6+ Kd8 19. Qxa8+
+Kd7 20. Qb7+ Kd8 21. Qb8+ Kd7 22. Bb5#
+{Xboard adjudication: Checkmate} 1-0
+
+[Event "Computer Chess Game"]
+[Site "stefan-GL552VW"]
+[Date "2020.04.20"]
+[Round "-"]
+[White "stefan"]
+[Black "make"]
+[Result "*"]
+[TimeControl "300+2"]
+
+1. e4 Nf6 2. e5 Ne4 3. Qe2 Nc5 4. Qf3 d6 5. Bc4 dxe5 6. Qxf7+ Kd7
+{xboard exit (Clocks: 281, 311)} *
+
+[Event "Computer Chess Game"]
+[Site "stefan-GL552VW"]
+[Date "2020.04.20"]
+[Round "-"]
+[White "stefan"]
+[Black "make"]
+[Result "1-0"]
+[TimeControl "300+2"]
+
+1. e4 Nf6 2. Qf3 Ng8 3. Bc4 d6 4. Qxf7+ Kd7 5. Qf5+ e6 6. Qxe6+ Kc6 7. Bd5+
+Kb6 8. Qf7 Nc6 9. d3 Nge7 10. Be3+ Ka6 11. Bc4+ Ka5 12. a3 d5 13. b4+ Nxb4
+14. axb4+ Kxb4 15. Bd2+ Kc5 16. Ra5+ Kb6 17. Rb5+ Ka6 18. Rxd5+ Kb6 19.
+Rxd8 Nc6 20. Be3+ Ka5 21. Qd5+ Bc5 22. Qxc5+ Ka4 23. Bb3#
+{Xboard adjudication: Checkmate} 1-0
+
+[Event "Computer Chess Game"]
+[Site "stefan-GL552VW"]
+[Date "2020.04.20"]
+[Round "-"]
+[White "stefan"]
+[Black "make"]
+[Result "0-1"]
+[TimeControl "300+2"]
+
+1. e4 Nf6 2. e5 Ne4 3. Qf3 Nc5 4. Bc4 d6 5. Qxf7+ Kd7 6. e6+ Nxe6 7. Qxe6+
+Ke8 8. Bb5+ Nd7 9. Nf3 d5 10. Qxd5 e5 11. Qxe5+ Be7 12. Qxg7 Bf6 13. Qxh8+
+Bxh8 14. Ng5 Qxg5 15. d3 Qxc1+ 16. Ke2 Qxh1 17. f3 Qxg2+ 18. Ke3 Qg5+ 19.
+Kf2 Qxb5 20. Nd2 Bxb2 21. Rb1 Bd4+ 22. Kg2 Qg5+ 23. Kf1 Qxd2 24. Re1+ Kf8
+25. h4 Qf2#
+{Xboard adjudication: Checkmate} 0-1
+
+[Event "Computer Chess Game"]
+[Site "stefan-GL552VW"]
+[Date "2020.04.20"]
+[Round "1"]
+[White "make"]
+[Black "Fairy-Max 5.0b"]
+[Result "0-1"]
+[TimeControl "300+2"]
+
+1. Nf3 Nc6 {+0,04/2 0,1} 2. Nc3 f6 {+0,11/2 0,1} 3. e4 Ne5 {+0,04/2 0,1} 4.
+Nxe5 fxe5 {-0,21/2 0,1} 5. Qh5+ g6 {-0,56/2 0,1} 6. Qxe5 Nf6 {-0,77/2 0,1}
+7. d4 d6 {-0,73/2 0,1} 8. Bb5+ c6 {+1,50/2 0,1} 9. Bxc6+ bxc6 {+1,49/2 0,1}
+10. Qf4 Qb6 {+1,48/2 0,1} 11. O-O Qxd4 {+2,08/2 0,1} 12. Ne2 Qxe4
+{+2,91/2 0,1} 13. Qxe4 Nxe4 {+2,84/2 0,1} 14. f4 Bg4 {+3,03/2 0,1} 15. Nd4
+c5 {+2,94/2 0,1} 16. Nc6 Bd7 {+3,02/2 0,1} 17. Na5 O-O-O {+3,08/2 0,1} 18.
+Nc4 Be6 {+2,99/2 0,1} 19. Ne3 Bg7 {+2,88/2 0,1} 20. Re1 Bh6 {+2,96/2 0,1}
+21. h3 Bxf4 {+3,69/2 0,1} 22. Bd2 Nxd2 {+6,48/2 0,1} 23. Nd1 Be5
+{+6,55/2 0,1} 24. Ne3 Bxb2 {+7,25/2 0,1} 25. Rad1 Bc3 {+7,37/2 0,1} 26. a3
+Nc4 {+8,02/2 0,1} 27. Nxc4 Bxe1 {+8,11/2 0,1} 28. Rxe1 Bxc4 {+8,12/2 0,1}
+29. Rxe7 Rd7 {+8,14/2 0,1} 30. Rxd7 Kxd7 {+8,14/2 0,1} 31. h4 a5
+{+8,12/2 0,1} 32. a4 h5 {+8,12/2 0,1} 33. Kh2 Ke6 {+8,10/2 0,1} 34. Kg1 Rf8
+{+8,09/2 0,1} 35. Kh2 Rf2 {+8,09/2 0,1} 36. Kg1 Rxc2 {+8,87/2 0,1} 37. g3
+Ra2 {+9,64/2 0,1} 38. Kh1 d5 {+9,59/2 0,1} 39. Kg1 Ke5 {+9,66/2 0,1} 40.
+Kh1 d4 {+9,57/2 0,1} 41. Kg1 d3 {+10,21/2 0,1} 42. Kh1 d2 {+10,75/2 0,1}
+43. Kg1 d1=Q# {+1000,01/2 0,1}
+{Xboard adjudication: Checkmate} 0-1
+
+[Event "Computer Chess Game"]
+[Site "stefan-GL552VW"]
+[Date "2020.04.20"]
+[Round "2"]
+[White "Fairy-Max 5.0b"]
+[Black "make"]
+[Result "1-0"]
+[TimeControl "300+2"]
+
+1. d4 {+0,15/2} Nf6 2. Be3 {+0,12/2 0,1} Nc6 3. Nd2 {+0,07/2 0,1} d5 4. c4
+{+0,00/2 0,1} dxc4 5. Nxc4 {-0,12/2 0,1} Be6 6. Rc1 {-0,06/2 0,1} Bxc4 7.
+Rxc4 {+0,30/2 0,1} Na5 8. Rc3 {+0,23/2 0,1} e5 9. Qa4+ {+0,93/2 0,1} Ke7
+10. Qxa5 {+2,94/2 0,1} exd4 11. Qe5+ {+3,17/2 0,1} Kd7 12. Qxd4+
+{+2,98/2 0,1} Bd6 13. Qa4+ {+3,43/2 0,1} Kc8 14. Bxa7 {+3,42/2 0,1} Nd5 15.
+Qg4+ {+4,35/2 0,1} f5 16. Qxf5+ {+4,54/2 0,1} Qd7 17. Qxd5 {+4,07/2 0,1}
+Rxa7 18. Nf3 {+4,20/2 0,1} Kb8 19. h4 {+4,16/2 0,1} Re8 20. g3
+{+4,14/2 0,1} Ra8 21. Bg2 {+4,10/2 0,1} h6 22. Nd4 {+4,09/2 0,1} Ra7 23.
+O-O {+4,33/2 0,1} Qe7 24. Nb5 {+4,72/2 0,1} Bxg3 25. Nxa7 {+7,65/2 0,1}
+Bxf2+ 26. Rxf2 {+8,35/2 0,1} c5 27. Nb5 {+10,12/2 0,1} c4 28. Rxc4
+{+10,71/2 0,1} h5 29. Qxh5 {+11,47/2 0,1} Rd8 30. Be4 {+11,57/2 0,1} Rd1+
+31. Kg2 {+11,33/2 0,1} b6 32. Nc3 {+11,50/2 0,1} Rd2 33. Nd5 {+11,52/2 0,1}
+Qe6 34. Qh8+ {+12,34/2 0,1} Kb7 35. Nf4+ {+17,01/2 0,1} Qxe4+ 36. Rxe4
+{+17,02/2 0,1} Rxb2 37. Qxg7+ {+21,36/2 0,1} Ka6 38. Qxb2 {+21,43/2 0,1}
+Ka7 39. Rb4 {+22,12/2 0,1} Kb8 40. a4 {+22,15/2 0,1} b5 41. e4
+{+22,23/2 0,1} Kb7 42. Kf3 {+22,25/2 0,1} Kb8 43. Qg7 {+22,22/2 0,1} Ka8
+44. axb5 {+22,21/2 0,1} Kb8 45. b6 {+22,77/2 0,1} Ka8 46. Qa7#
+{+1000,01/2 0,1}
+{Xboard adjudication: Checkmate} 1-0
+
+[Event "Computer Chess Game"]
+[Site "stefan-GL552VW"]
+[Date "2020.04.20"]
+[Round "3"]
+[White "make"]
+[Black "Fairy-Max 5.0b"]
+[Result "0-1"]
+[TimeControl "300+2"]
+
+1. Nf3 Nc6 {+0,12/2 0,1} 2. Nc3 f5 {+0,03/2 0,1} 3. d3 a5 {+0,05/2 0,1} 4.
+Be3 Nf6 {+0,07/2 0,1} 5. Qd2 Ng4 {-0,02/2 0,1} 6. Bf4 e5 {+0,08/2 0,1} 7.
+Bg3 Bc5 {+0,03/2 0,1} 8. O-O-O Nxf2 {+0,73/2 0,1} 9. Bxf2 Bxf2
+{+0,92/2 0,1} 10. Kb1 O-O {+1,21/2 0,1} 11. Nd5 b5 {+1,02/2 0,1} 12. Qc3 b4
+{+1,03/2 0,1} 13. Qb3 a4 {+1,03/2 0,1} 14. Nf6+ Kh8 {+3,44/2 0,1} 15. Qc4
+Ba6 {+3,66/2 0,1} 16. Qd5 gxf6 {+3,53/2 0,1} 17. e3 Bxe3 {+4,42/2 0,1} 18.
+Be2 Ne7 {+5,32/2 0,1} 19. Qa5 Bxd3 {+6,34/2 0,1} 20. Qxb4 Bxe2
+{+7,37/2 0,1} 21. Rde1 Nd5 {+7,45/2 0,1} 22. Qb7 Bc4 {+7,35/2 0,1} 23. a3
+Rb8 {+10,38/2 0,1} 24. Qxb8 Qxb8 {+11,47/2 0,1} 25. h3 Nc3+ {+11,73/2 0,1}
+26. Ka1 Nd5 {+11,49/2 0,1} 27. Kb1 e4 {+11,49/2 0,1} 28. Nh4 Bf2
+{+12,02/2 0,1} 29. Ng6+ hxg6 {+14,03/2 0,1} 30. Rd1 Nc3+ {+15,93/2 0,1} 31.
+Ka1 Nxd1 {+16,11/2 0,1} 32. Rxd1 d5 {+15,89/2 0,1} 33. Kb1 e3
+{+16,47/2 0,1} 34. b3 e2 {+17,93/2 0,1} 35. Rc1 e1=Q {+19,54/2 0,1} 36.
+Rxe1 Bxe1 {+19,58/2 0,1} 37. h4 Kg7 {+20,50/2 0,1} 38. h5 axb3
+{+20,45/2 0,1} 39. cxb3 Qxb3+ {+21,08/2 0,1} 40. Kc1 gxh5 {+21,82/2 0,1}
+41. a4 f4 {+22,01/2 0,1} 42. a5 Bxa5 {+23,10/2 0,1} 43. g4 Qc3+
+{+22,64/2 0,1} 44. Kb1 Rb8# {+1000,01/2 0,1}
+{Xboard adjudication: Checkmate} 0-1
+
+[Event "Computer Chess Game"]
+[Site "stefan-GL552VW"]
+[Date "2020.04.20"]
+[Round "4"]
+[White "Fairy-Max 5.0b"]
+[Black "make"]
+[Result "1-0"]
+[TimeControl "300+2"]
+
+1. d4 {+0,08/2} Nf6 2. Bf4 {+0,13/2 0,1} Nc6 3. c3 {+0,12/2 0,1} d5 4. Nd2
+{-0,01/2 0,1} Be6 5. Ngf3 {+0,07/2 0,1} Qd7 6. Ng5 {-0,02/2 0,1} Bf5 7. h4
+{+0,00/2 0,1} e5 8. dxe5 {+0,66/2 0,1} Ng4 9. Ndf3 {+0,52/2 0,1} Bc5 10.
+Bg3 {+0,43/2 0,1} O-O 11. e4 {+0,88/2 0,1} Bg6 12. h5 {+2,21/2 0,1} Ngxe5
+13. Nxe5 {+2,92/2 0,1} Nxe5 14. Bxe5 {+3,56/2 0,1} Bxf2+ 15. Kxf2
+{+5,23/2 0,1} Bxh5 16. Rxh5 {+6,96/2 0,1} Rfe8 17. Nxh7 {+7,48/2 0,1} Rad8
+18. Qd4 {+7,67/2 0,1} Qc6 19. Ng5 {+7,78/2 0,1} a6 20. Bd3 {+7,86/2 0,1} a5
+21. Bxg7 {+8,27/2 0,1} f6 22. Bxf6 {+9,32/2 0,1} Qxf6+ 23. Qxf6
+{+14,79/2 0,1} a4 24. Qf7# {+1000,01/2 0,1}
+{Xboard adjudication: Checkmate} 1-0
+
+[Event "Computer Chess Game"]
+[Site "stefan-GL552VW"]
+[Date "2020.04.20"]
+[Round "5"]
+[White "make"]
+[Black "Fairy-Max 5.0b"]
+[Result "0-1"]
+[TimeControl "300+2"]
+
+1. Nf3 Nc6 {+0,08/2 0,1} 2. Nc3 Nf6 {+0,09/2 0,1} 3. d3 h5 {+0,02/2 0,1} 4.
+Be3 d5 {+0,09/2 0,1} 5. Qd2 d4 {+1,60/2 0,1} 6. Bxd4 Nxd4 {+2,01/2 0,1} 7.
+Nxd4 Qxd4 {+2,15/2 0,1} 8. Nb5 Qxb2 {+2,26/2 0,1} 9. Nxc7+ Kd7
+{+2,24/2 0,1} 10. Nxa8 Qxa1+ {+2,95/2 0,1} 11. Qd1 Qxa2 {+2,86/2 0,1} 12.
+e4 Qa5+ {+3,10/2 0,1} 13. Ke2 e5 {+2,96/2 0,1} 14. d4 Nxe4 {+3,16/2 0,1}
+15. dxe5+ Ke6 {+2,73/2 0,1} 16. Qd3 Qxe5 {+3,52/2 0,1} 17. Qb3+ Kf6
+{+3,41/2 0,1} 18. Qf3+ Bf5 {+3,85/2 0,1} 19. Rg1 Qxh2 {+5,90/2 0,1} 20. Nb6
+Qxg1 {+8,78/2 0,1} 21. Nd5+ Ke6 {+8,52/2 0,1} 22. Nf4+ Ke5 {+8,49/2 0,1}
+23. Nd3+ Kf6 {+8,63/2 0,1} 24. Nf4 Qh2 {+8,86/2 0,1} 25. Nd5+ Ke5
+{+8,71/2 0,1} 26. Qd3 Nxf2 {+9,55/2 0,1} 27. Qb3 Be4 {+9,61/2 0,1} 28. Kxf2
+Bxd5 {+9,59/2 0,1} 29. Qc3+ Kf5 {+9,12/2 0,1} 30. Bd3+ Kg5 {+9,24/2 0,1}
+31. Qd2+ Kh4 {+9,55/2 0,1} 32. Kf1 Qh1+ {+10,48/2 0,1} 33. Ke2 Qxg2+
+{+10,76/2 0,1} 34. Ke1 Qxd2+ {+10,61/2 0,1} 35. Kxd2 Bd6 {+10,40/2 0,1} 36.
+Kc1 Bf4+ {+10,35/2 0,1} 37. Kb1 a5 {+10,36/2 0,1} 38. Bb5 f5 {+10,36/2 0,1}
+39. Bd3 Kg4 {+10,35/2 0,1} 40. Bb5 h4 {+10,39/2 0,1} 41. Bd3 h3
+{+10,92/2 0,1} 42. Be2+ Bf3 {+10,95/2 0,1} 43. Bxf3+ Kxf3 {+10,94/2 0,1}
+44. Ka1 h2 {+11,48/2 0,1} 45. Kb1 h1=Q+ {+18,07/2 0,1} 46. Ka2 b5
+{+18,14/2 0,1} 47. Kb2 g5 {+18,16/2 0,1} 48. Ka2 a4 {+18,12/2 0,1} 49. Kb2
+Be5+ {+18,14/2 0,1} 50. Ka3 Qh4 {+18,21/2 0,1} 51. Ka2 Qb4 {+18,86/2 0,1}
+52. c3 Qb3+ {+18,97/2 0,1} 53. Ka1 Rh1# {+1000,01/2 0,1}
+{Xboard adjudication: Checkmate} 0-1
+
+[Event "Computer Chess Game"]
+[Site "stefan-GL552VW"]
+[Date "2020.04.20"]
+[Round "1"]
+[White "make"]
+[Black "Fairy-Max 5.0b"]
+[Result "0-1"]
+[TimeControl "300+2"]
+
+1. Nf3 Nc6 {+0,06/2 0,1} 2. Nc3 f5 {+0,10/2 0,1} 3. d3 Nf6 {+0,07/2 0,1} 4.
+Be3 a5 {+0,00/2 0,1} 5. Qd2 Ng4 {-0,02/2 0,1} 6. Bf4 e5 {+0,08/2 0,1} 7.
+Bg3 Bc5 {+0,03/2 0,1} 8. O-O-O Nxf2 {+0,73/2 0,1} 9. Bxf2 Bxf2
+{+0,92/2 0,1} 10. Kb1 O-O {+1,21/2 0,1} 11. Nd5 b5 {+1,02/2 0,1} 12. Qc3 b4
+{+1,03/2 0,1} 13. Qb3 a4 {+1,03/2 0,1} 14. Nf6+ Kh8 {+3,44/2 0,1} 15. Qc4
+Ba6 {+3,66/2 0,1} 16. Qd5 gxf6 {+3,53/2 0,1} 17. e3 Bxe3 {+4,42/2 0,1} 18.
+Be2 Ne7 {+5,32/2 0,1} 19. Qa5 Bxd3 {+6,34/2 0,1} 20. Qxb4 Bxe2
+{+7,37/2 0,1} 21. Rde1 Nd5 {+7,45/2 0,1} 22. Qb7 Bc4 {+7,35/2 0,1} 23. a3
+Rb8 {+10,38/2 0,1} 24. Qxb8 Qxb8 {+11,47/2 0,1} 25. h3 Nc3+ {+11,73/2 0,1}
+26. Ka1 Nd5 {+11,49/2 0,1} 27. Kb1 e4 {+11,49/2 0,1} 28. Nh4 Bf2
+{+12,02/2 0,1} 29. Ng6+ hxg6 {+14,03/2 0,1} 30. Rd1 Nc3+ {+15,93/2 0,1} 31.
+Ka1 Nxd1 {+16,11/2 0,1} 32. Rxd1 d5 {+15,89/2 0,1} 33. Kb1 e3
+{+16,47/2 0,1} 34. b3 e2 {+17,93/2 0,1} 35. Rc1 e1=Q {+19,54/2 0,1} 36.
+Rxe1 Bxe1 {+19,58/2 0,1} 37. h4 Kg7 {+20,50/2 0,1} 38. h5 axb3
+{+20,45/2 0,1} 39. cxb3 Qxb3+ {+21,08/2 0,1} 40. Kc1 gxh5 {+21,82/2 0,1}
+41. a4 f4 {+22,01/2 0,1} 42. a5 Bxa5 {+23,10/2 0,1} 43. g4 Qc3+
+{+22,64/2 0,1} 44. Kb1 Rb8# {+1000,01/2 0,1}
+{Xboard adjudication: Checkmate} 0-1
+
+[Event "Computer Chess Game"]
+[Site "stefan-GL552VW"]
+[Date "2020.04.20"]
+[Round "2"]
+[White "Fairy-Max 5.0b"]
+[Black "make"]
+[Result "1-0"]
+[TimeControl "300+2"]
+
+1. d4 {+0,12/2} Nf6 2. c4 {+0,15/2 0,1} Nc6 3. Be3 {+0,08/2 0,1} d6 4. Nc3
+{+0,00/2 0,1} Be6 5. d5 {+1,60/2 0,1} Nxd5 6. cxd5 {+3,48/2 0,1} Bxd5 7.
+Nxd5 {+4,05/2 0,1} e5 8. Nf3 {+4,12/2 0,1} e4 9. Nd4 {+4,01/2 0,1} Nxd4 10.
+Bxd4 {+4,00/2 0,1} Qd7 11. Qc2 {+4,54/2 0,1} O-O-O 12. Qxe4 {+4,72/2 0,1}
+Kb8 13. O-O-O {+4,98/2 0,1} Qc6+ 14. Nc3 {+4,76/2 0,1} Qxe4 15. Nxe4
+{+4,77/2 0,1} d5 16. Be5 {+4,70/2 0,1} Bb4 17. Nc3 {+5,06/2 0,1} Bxc3 18.
+bxc3 {+5,14/2 0,1} Rhe8 19. Bxg7 {+5,69/2 0,1} h6 20. Bxh6 {+6,52/2 0,1} a6
+21. f4 {+6,75/2 0,1} a5 22. g4 {+6,75/2 0,1} a4 23. Bg5 {+6,73/2 0,1} Rd7
+24. Bg2 {+6,67/2 0,1} Rxe2 25. Rxd5 {+6,66/2 0,1} Rxd5 26. Bxd5
+{+6,75/2 0,1} a3 27. Bxf7 {+6,64/2 0,1} Rb2 28. Be7 {+7,25/2 0,1} Re2 29.
+Bxa3 {+7,97/2 0,1} Rf2 30. f5 {+8,09/2 0,1} Re2 31. f6 {+8,71/2 0,1} Rf2
+32. Be7 {+8,84/2 0,1} Re2 33. Kd1 {+8,81/2 0,1} Rb2 34. a4 {+8,79/2 0,1}
+Rb1+ 35. Ke2 {+4,41/2 0,1} Rxh1 36. h4 {+3,66/2 0,1} Rxh4 37. Be6
+{+3,61/2 0,1} Rh2+ 38. Ke3 {+3,60/2 0,1} Rg2 39. f7 {+4,16/2 0,1} Rg3+ 40.
+Kd4 {+4,21/2 0,1} c5+ 41. Bxc5 {+4,89/2 0,1} Rxg4+ 42. Bxg4 {+8,55/2 0,1}
+b5 43. f8=Q+ {+15,88/2 0,1} Kb7 44. Qc8# {+1000,01/2 0,1}
+{Xboard adjudication: Checkmate} 1-0
+
+[Event "Computer Chess Game"]
+[Site "stefan-GL552VW"]
+[Date "2020.04.20"]
+[Round "3"]
+[White "make"]
+[Black "Fairy-Max 5.0b"]
+[Result "0-1"]
+[TimeControl "300+2"]
+
+1. Nf3 Nc6 {+0,14/2 0,1} 2. Nc3 Nh6 {+0,05/2 0,1} 3. e4 f6 {+0,10/2 0,1} 4.
+d3 Ng4 {-0,08/2 0,1} 5. Bf4 e5 {+0,10/2 0,1} 6. Bg3 Bd6 {+0,03/2 0,1} 7.
+Nd5 O-O {+0,19/2 0,1} 8. Be2 Nb4 {-0,11/2 0,1} 9. Nxb4 Bxb4+ {-0,08/2 0,1}
+10. Kf1 a5 {+0,00/2 0,1} 11. Kg1 b5 {+0,00/2 0,1} 12. h3 Nh6 {-0,14/2 0,1}
+13. Rb1 Bd6 {+0,01/2 0,1} 14. Qd2 Nf7 {-0,01/2 0,1} 15. Rd1 Bb7
+{-0,04/2 0,1} 16. d4 Bxe4 {+0,24/2 0,1} 17. Ne1 Qb8 {+0,65/2 0,1} 18. dxe5
+Nxe5 {+0,72/2 0,1} 19. Bxe5 fxe5 {+0,98/2 0,1} 20. f4 Qb6+ {+2,01/2 0,1}
+21. Kh2 Rxf4 {+1,76/2 0,1} 22. Qc3 Rf2 {+1,82/2 0,1} 23. Qb3+ Rf7
+{+1,14/2 0,1} 24. Rf1 Rf8 {+1,14/2 0,1} 25. Rxf7 Rxf7 {+1,14/2 0,1} 26. Kh1
+b4 {+1,70/2 0,1} 27. Bc4 Bg6 {+0,33/2 0,1} 28. Bxf7+ Bxf7 {+0,25/2 0,1} 29.
+Qd3 Bxa2 {+0,87/2 0,1} 30. Nf3 Be6 {+1,29/2 0,1} 31. h4 h5 {+1,11/2 0,1}
+32. Kh2 e4+ {+6,64/2 0,1} 33. Qxd6 cxd6 {+6,68/2 0,1} 34. Nd2 e3
+{+7,20/2 0,1} 35. Ne4 d5 {+7,34/2 0,1} 36. Ng5 Qc7+ {+8,00/2 0,1} 37. Kg1
+Qxc2 {+8,04/2 0,1} 38. Re1 Qf2+ {+12,11/2 0,1} 39. Kh2 Qxh4+ {+13,22/2 0,1}
+40. Kg1 Qxe1+ {+13,21/2 0,1} 41. Kh2 b3 {+13,50/2 0,1} 42. Nf3 Qc1
+{+14,27/2 0,1} 43. Nd4 Qxb2 {+14,28/2 0,1} 44. Nxe6 Qe5+ {+14,21/2 0,1} 45.
+Nf4 Qxf4+ {+14,18/2 0,1} 46. Kg1 b2 {+14,88/2 0,1} 47. Kh1 b1=Q#
+{+1000,01/2 0,1}
+{Xboard adjudication: Checkmate} 0-1
+
+[Event "Computer Chess Game"]
+[Site "stefan-GL552VW"]
+[Date "2020.04.20"]
+[Round "4"]
+[White "Fairy-Max 5.0b"]
+[Black "make"]
+[Result "1-0"]
+[TimeControl "300+2"]
+
+1. Nf3 {+0,12/2} Nf6 2. d4 {+0,07/2 0,1} Nc6 3. Bg5 {+0,11/2 0,1} Ne4 4.
+Bf4 {-0,12/2 0,1} d5 5. Nc3 {+0,05/2 0,1} Nxc3 6. bxc3 {-0,14/2 0,1} Be6 7.
+a4 {+0,00/2 0,1} Qd7 8. Ng5 {-0,02/2 0,1} Bf5 9. h4 {+0,00/2 0,1} e5 10.
+dxe5 {+0,41/2 0,1} Bc5 11. e4 {+0,69/2 0,1} Bg6 12. exd5 {+1,39/2 0,1} Ne7
+13. d6 {+1,83/2 0,1} cxd6 14. Bb5 {+2,05/2 0,1} Bxf2+ 15. Kxf2
+{+4,08/2 0,1} Nc6 16. exd6 {+3,98/2 0,1} Bxc2 17. Qe2+ {+6,49/2 0,1} Kf8
+18. Qxc2 {+6,47/2 0,1} Kg8 19. Bc4 {+6,61/2 0,1} Rd8 20. Nxf7 {+8,66/2 0,1}
+Re8 21. Ne5+ {+12,93/2 0,1} Re6 22. Nxd7 {+17,19/2 0,1} Nd4 23. cxd4
+{+20,17/2 0,1} g5 24. Bxe6+ {+23,76/2 0,1} Kg7 25. Be5+ {+27,08/2 0,1} Kh6
+26. Bxh8 {+27,12/2 0,1} gxh4 27. Rxh4+ {+27,94/2 0,1} Kg5 28. Bf6#
+{+1000,01/2 0,1}
+{Xboard adjudication: Checkmate} 1-0
+
+[Event "Computer Chess Game"]
+[Site "stefan-GL552VW"]
+[Date "2020.04.20"]
+[Round "5"]
+[White "make"]
+[Black "Fairy-Max 5.0b"]
+[Result "0-1"]
+[TimeControl "300+2"]
+
+1. Nf3 f5 {+0,15/2 0,1} 2. Nc3 a6 {-0,02/2 0,1} 3. d4 Nc6 {+0,06/2 0,1} 4.
+d5 Nb4 {-0,18/2 0,1} 5. e4 e6 {-0,08/2 0,1} 6. dxe6 dxe6 {-0,03/2 0,1} 7.
+Qxd8+ Kxd8 {-0,45/2 0,1} 8. exf5 Nxc2+ {+4,38/2 0,1} 9. Kd1 Nxa1
+{+4,14/2 0,1} 10. fxe6 Bxe6 {+4,43/2 0,1} 11. Bg5+ Nf6 {+4,54/2 0,1} 12.
+Bxf6+ gxf6 {+4,73/2 0,1} 13. a4 Bb3+ {+5,02/2 0,1} 14. Kc1 Bh6+
+{+5,04/2 0,1} 15. Kb1 Nc2 {+4,86/2 0,1} 16. a5 Bf4 {+4,78/2 0,1} 17. h3 c5
+{+4,75/2 0,1} 18. Bd3 Nd4 {+4,84/2 0,1} 19. Nxd4 cxd4 {+4,76/2 0,1} 20. Ne4
+Bd5 {+4,85/2 0,1} 21. Nxf6 Bxg2 {+4,82/2 0,1} 22. Re1 Bxh3 {+4,92/2 0,1}
+23. Ne4 Bf5 {+5,62/2 0,1} 24. Bxa6 Rxa6 {+7,80/2 0,1} 25. Rd1 Bxe4+
+{+11,11/2 0,1} 26. Ka2 Rxa5+ {+10,99/2 0,1} 27. Kb3 d3 {+11,65/2 0,1} 28.
+Kc3 Be5+ {+11,77/2 0,1} 29. Kd2 Bxb2 {+12,26/2 0,1} 30. Re1 Re5
+{+12,41/2 0,1} 31. Rd1 Bd4 {+12,55/2 0,1} 32. f4 Rf5 {+12,48/2 0,1} 33. Kc1
+Be3+ {+13,20/2 0,1} 34. Kb1 d2+ {+13,77/2 0,1} 35. Ka1 Bf3 {+13,82/2 0,1}
+36. Rb1 d1=Q {+15,44/2 0,1} 37. Rxd1+ Bxd1 {+16,10/2 0,1} 38. Kb1 Rb5+
+{+16,34/2 0,1} 39. Ka1 Bf3 {+16,37/2 0,1} 40. Ka2 Ke7 {+16,36/2 0,1} 41. f5
+Ra8# {+1000,01/2 0,1}
+{Xboard adjudication: Checkmate} 0-1
+

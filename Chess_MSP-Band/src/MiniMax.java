@@ -72,7 +72,7 @@ public final class MiniMax {
         return new MinimaxData(moves.get(index), 0);*/
         Color maxColor = color;
         Color minColor = (color == Color.WHITE) ? Color.BLACK : Color.WHITE;
-        return MiniMax.maxi(table, null, maxColor, minColor, DEPTH);
+        return MiniMax.maxi(table, new Move(0,0,0), maxColor, minColor, DEPTH);
     }
 
 
@@ -130,7 +130,7 @@ public final class MiniMax {
 
                 if(feedbackScore > maxScore){
                     maxScore = feedbackScore;
-                    maxMove = feedbackMove;
+                    maxMove = currMove;
                 }
 
             }
@@ -190,7 +190,7 @@ public final class MiniMax {
 
                 if(feedbackScore < minScore){
                     minScore = feedbackScore;
-                    minMove = feedbackMove;
+                    minMove = currMove;
                 }
 
             }

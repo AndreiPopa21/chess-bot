@@ -83,33 +83,33 @@ public class King extends Piece {
         
         // (TODO) searchHistoryFor('K');
         if(GameManager.searchHistoryFor("KA")){
-            System.out.println("[King] WHITE King a fost mutat, nu se poate face KING-SIDE");
+          //  System.out.println("[King] WHITE King a fost mutat, nu se poate face KING-SIDE");
             return false;
         } 
 
         if(GameManager.searchHistoryFor("R2")){
-            System.out.println("[King] Tura H1 a fost mutata, nu se poate face KING-SIDE");
+        //    System.out.println("[King] Tura H1 a fost mutata, nu se poate face KING-SIDE");
             return false;
         } 
 
 
         if(e1.hasPiece()){
             if(!e1.getPiece().getName().equals('K')){
-                System.out.println("[Table] NU E REGE white king-side castling");
+        //        System.out.println("[Table] NU E REGE white king-side castling");
                 return false;
             }
         }else{
-            System.out.println("[Table] NU E REGE white king-side castling");
+      //      System.out.println("[Table] NU E REGE white king-side castling");
             return false;
         }
 
         if(h1.hasPiece()){
             if(!h1.getPiece().getName().equals('R')){
-                System.out.println("[Table] NU E TURA white king-side castling");
+        //        System.out.println("[Table] NU E TURA white king-side castling");
                 return false;
             }
         }else{
-            System.out.println("[Table] NU E TURA white king-side castling");
+     //       System.out.println("[Table] NU E TURA white king-side castling");
             return false;
         }
 
@@ -133,7 +133,7 @@ public class King extends Piece {
         }
         getTable().undoMove(checkMove, null);
 
-        System.out.println("[Table] E posibil white king-side castling");
+       // System.out.println("[Table] E posibil white king-side castling");
 
         return true;
     }
@@ -149,12 +149,12 @@ public class King extends Piece {
         Square a1 = getTable().getSquares().get(Constants.A1);
 
         if(GameManager.searchHistoryFor("KA")){
-            System.out.println("[King] WHITE King a fost mutat, nu se poate face QUEEN-SIDE");
+        //    System.out.println("[King] WHITE King a fost mutat, nu se poate face QUEEN-SIDE");
             return false;
         }
 
         if(GameManager.searchHistoryFor("R1")){
-            System.out.println("[King] Tura A1 a fost mutat, nu se poate face QUEEN-SIDE");
+       //     System.out.println("[King] Tura A1 a fost mutat, nu se poate face QUEEN-SIDE");
             return false;
         }
 
@@ -196,7 +196,7 @@ public class King extends Piece {
         }
         getTable().undoMove(checkMove, null);
 
-        System.out.println("[Table] SE POATE white queen-side castling");
+      //  System.out.println("[Table] SE POATE white queen-side castling");
 
         return true;
     }
@@ -212,12 +212,12 @@ public class King extends Piece {
 
 
         if(GameManager.searchHistoryFor("kn")){
-            System.out.println("[King] BLACK King a fost mutat, nu se poate face KING-SIDE");
+          //  System.out.println("[King] BLACK King a fost mutat, nu se poate face KING-SIDE");
             return false;
         }
 
         if(GameManager.searchHistoryFor("r2")){
-            System.out.println("[King] Tura H8 a fost mutat, nu se poate face KING-SIDE");
+       //     System.out.println("[King] Tura H8 a fost mutat, nu se poate face KING-SIDE");
             return false;
         }
 
@@ -257,7 +257,7 @@ public class King extends Piece {
         }
         getTable().undoMove(checkMove, null);
 
-        System.out.println("[Table] SE POATE black king-side castling");
+      //  System.out.println("[Table] SE POATE black king-side castling");
 
         return true;
     }
@@ -274,12 +274,12 @@ public class King extends Piece {
 
 
         if(GameManager.searchHistoryFor("kn")){
-            System.out.println("[King] BLACK King a fost mutat, nu se poate face QUEEN-SIDE");
+      //      System.out.println("[King] BLACK King a fost mutat, nu se poate face QUEEN-SIDE");
             return false;
         }
 
         if(GameManager.searchHistoryFor("r1")){
-            System.out.println("[King] Tura A8 a fost mutata, nu se poate face QUEEN-SIDE");
+   //         System.out.println("[King] Tura A8 a fost mutata, nu se poate face QUEEN-SIDE");
             return false;
         }
 
@@ -304,7 +304,7 @@ public class King extends Piece {
 
         if(b8.hasPiece() || c8.hasPiece() || d8.hasPiece()) return false;
 
-        if(getTable().isKingChecked(Color.WHITE)) return false;
+        if(getTable().isKingChecked(Color.BLACK)) return false;
 
 
         Move checkMove = new Move(Constants.E8,Constants.D8,0);
@@ -323,7 +323,7 @@ public class King extends Piece {
         }
         getTable().undoMove(checkMove, null);
 
-        System.out.println("[Table] SE POATE black queen-side castling");
+      //  System.out.println("[Table] SE POATE black queen-side castling");
 
         return true;
     }

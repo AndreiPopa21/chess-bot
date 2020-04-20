@@ -47,7 +47,7 @@ public class Queen extends Piece {
             if(!getTable().isKingBinded(move, this.getColor())){
                 finalMoves.add(move);
             }else{
-                System.out.println("[Queen] Cannot perform " + move.toString() + " because king bounded");
+               // System.out.println("[Queen] Cannot perform " + move.toString() + " because king bounded");
             }
                 
         }

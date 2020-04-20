@@ -68,6 +68,14 @@ public final class GameManager{
     public static void manageTurn(){
         MinimaxData result = MiniMax.
             computeMove(GameManager.getTable(), GameManager.getColor());
+        
+        Move resultMove = result.move;
+        if(resultMove.source == 0 
+            && resultMove.dest == 0 
+            && resultMove.moveType == 0){
+            System.out.println("[GameManager] Jocul s-a terminat");
+
+        }   
         GameManager.executeMove(result.move);
         Sender.parserMove(result.move);
     }
@@ -129,9 +137,14 @@ public final class GameManager{
             hp = new HistoryPairs(Constants.E8,Constants.C8,'k',move);
 
         } else {
-            hp = new HistoryPairs(move.source,move.dest,
+            Square sq = GameManager.getTable().getSquares()
+                .get(move.source);
+            if(sq == null) return;
+            if(sq.hasPiece())
+             hp = new HistoryPairs(move.source,move.dest,
                      GameManager.currTable.getSquares().
                         get(move.source).getPiece().getName(),move);
+            else return;
         }
         history.add(hp);
     }

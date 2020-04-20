@@ -4,9 +4,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-       //ReceiverXboard.receive();
-        GameManager.newGame(Color.WHITE);
-        MinimaxData bestMove = MiniMax.computeMove(
+       ReceiverXboard.receive();
+       // GameManager.newGame(Color.WHITE);
+        /*GameManager.executeMove(new Move(
+            Constants.E2, Constants.E4, 0
+        ));
+
+        GameManager.executeMove(new Move(
+            Constants.D7, Constants.D6, 0
+        ));*/
+
+        /*MinimaxData bestMove = MiniMax.computeMove(
             GameManager.getTable(), GameManager.getColor());
         
         System.out.println(bestMove);

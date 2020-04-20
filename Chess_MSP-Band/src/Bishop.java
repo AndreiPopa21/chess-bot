@@ -47,7 +47,7 @@ public class Bishop extends Piece {
             if(!getTable().isKingBinded(move, this.getColor())){
                 finalMoves.add(move);
             }else{
-                System.out.println("[Bishop] Cannot perform " + move.toString() + " because king bounded");
+              //  System.out.println("[Bishop] Cannot perform " + move.toString() + " because king bounded");
             }
                 
         }
