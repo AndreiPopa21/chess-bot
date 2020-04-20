@@ -65,6 +65,13 @@ public final class GameManager{
     }
 
 
+    public static void manageTurn(){
+        MinimaxData result = MiniMax.
+            computeMove(GameManager.getTable(), GameManager.getColor());
+        GameManager.executeMove(result.move);
+        Sender.parserMove(result.move);
+    }
+
     public static boolean validateMove(Move move){
 
         if( move.moveType != 0 && move.moveType!=Constants.QUEEN_PROMOTION){
@@ -154,8 +161,7 @@ public final class GameManager{
         return out;
     }
 
-    //TODO defineste cu supraincarcare inca o metoda searchHistoryFor
-    // cu parametru de Move, in loc sa caut dupa un string, sa caut dupa un obiect Move
+
     public static boolean searchHistoryFor(String name) {
 
         if (name.compareTo("KA") == 0) {

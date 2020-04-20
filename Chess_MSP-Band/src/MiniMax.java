@@ -58,6 +58,38 @@ public final class MiniMax {
         currTable = GameManager.getTable();
     }
 
+
+    public static MinimaxData computeMove(Table table, Color color){
+        ArrayList<Move> moves = MiniMax.allMoves(table.getSquares(), color);
+        if(moves.size() == 0){
+            Sender.resignPrint();
+        }
+        int index = new Random().nextInt(moves.size());
+        return new MinimaxData(moves.get(index), 0);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     public static void thinkMove() {
 
         if (GameManager.getColor() == Color.BLACK) {

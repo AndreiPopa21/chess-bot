@@ -1,6 +1,31 @@
 public final class Sender {
 
     public static  void parserMove(Move m){
+
+        if(m.moveType == Constants.WHITE_KING_SIDE_CASTLING){
+            printXboardMove("e1g1");
+            return;
+        }
+
+
+        if(m.moveType == Constants.WHITE_QUEEN_SIDE_CASTLING){
+            printXboardMove("e1c1");
+            return;
+        }
+
+
+        if(m.moveType == Constants.BLACK_KING_SIDE_CASTLING){
+            printXboardMove("e8g8");
+            return;
+        }
+
+
+        if(m.moveType == Constants.BLACK_QUEEN_SIDE_CASTLING){
+            printXboardMove("e8c8");
+            return;
+        }
+
+
         char sursaCifra = (char)(m.source % 10 + 48);
         char sursaLitera = (char)(m.source / 10 );
         char destinatieCifra = (char)(m.dest % 10 + 48);

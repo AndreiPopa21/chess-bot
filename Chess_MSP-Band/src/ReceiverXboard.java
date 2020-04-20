@@ -228,7 +228,8 @@ public final class ReceiverXboard {
             mutare = sc.nextLine();
             if (commandComparer(mutare)){
                 if(!isForced)
-                    MiniMax.thinkMove();
+                   // MiniMax.thinkMove();
+                   GameManager.manageTurn();
             }
 
         }
