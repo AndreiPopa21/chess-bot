@@ -137,14 +137,14 @@ public final class GameManager{
             hp = new HistoryPairs(Constants.E8,Constants.C8,'k',move);
 
         } else {
-            Square sq = GameManager.getTable().getSquares()
-                .get(move.source);
-            if(sq == null) return;
-            if(sq.hasPiece())
+          //  Square sq = GameManager.getTable().getSquares()
+           //     .get(move.source);
+           // if(sq == null) return;
+            //if(sq.hasPiece())
              hp = new HistoryPairs(move.source,move.dest,
                      GameManager.currTable.getSquares().
                         get(move.source).getPiece().getName(),move);
-            else return;
+            
         }
         history.add(hp);
     }

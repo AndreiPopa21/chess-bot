@@ -72,7 +72,9 @@ public final class MiniMax {
         return new MinimaxData(moves.get(index), 0);*/
         Color maxColor = color;
         Color minColor = (color == Color.WHITE) ? Color.BLACK : Color.WHITE;
-        return MiniMax.maxi(table, new Move(0,0,0), maxColor, minColor, DEPTH);
+        return MiniMax.maxi(
+            table, new Move(0,0,0), maxColor, minColor,
+            Integer.MIN_VALUE+100000, Integer.MAX_VALUE-100000, DEPTH);
     }
 
 
@@ -82,6 +84,8 @@ public final class MiniMax {
         Move appliedMove,
         Color maxColor,
         Color minColor,
+        int alpha,
+        int beta,
         int curr_depth){
 
             ArrayList<Move> possibleMoves = MiniMax.allMoves(table.getSquares(), maxColor);
@@ -107,7 +111,7 @@ public final class MiniMax {
             }
             
             
-            int maxScore = Integer.MIN_VALUE;
+           // int maxScore = Integer.MIN_VALUE;
             Move maxMove = new Move(0,0,0);
 
             for(int i = 0; i < possibleMoves.size(); i++){
@@ -120,22 +124,31 @@ public final class MiniMax {
                 GameManager.record(currMove);
 
                 MinimaxData feedback = MiniMax.mini(
-                    newTable, currMove, maxColor, minColor, curr_depth-1);
+                    newTable, currMove, maxColor, minColor,
+                     alpha, beta, curr_depth-1);
                 
                 //sterge de pe istoric mutarea
                 GameManager.getHistory().remove(GameManager.getHistory().size()-1);
 
                 int feedbackScore = feedback.score;
-                Move feedbackMove = feedback.move;
 
-                if(feedbackScore > maxScore){
+              /*  if(feedbackScore > maxScore){
                     maxScore = feedbackScore;
+                    maxMove = currMove;
+                }*/
+
+                if (feedbackScore >= beta ){
+                    return new MinimaxData(maxMove, beta);
+                }
+
+                if (feedbackScore > alpha){
+                    alpha = feedbackScore;
                     maxMove = currMove;
                 }
 
             }
 
-            return new MinimaxData(maxMove, maxScore);
+            return new MinimaxData(maxMove, alpha);
     }
 
     public static MinimaxData mini(
@@ -143,6 +156,8 @@ public final class MiniMax {
         Move appliedMove,
         Color maxColor,
         Color minColor,
+        int alpha,
+        int beta,
         int curr_depth){
 
             ArrayList<Move> possibleMoves = MiniMax.allMoves(table.getSquares(), minColor);
@@ -167,7 +182,7 @@ public final class MiniMax {
                 return new MinimaxData(appliedMove, score);
             }
 
-            int minScore = Integer.MAX_VALUE;
+            //int minScore = Integer.MAX_VALUE;
             Move minMove = new Move(0,0,0);
 
             for(int i = 0; i < possibleMoves.size(); i++){
@@ -180,22 +195,33 @@ public final class MiniMax {
                 GameManager.record(currMove);
 
                 MinimaxData feedback = MiniMax.maxi(
-                    newTable, currMove, maxColor, minColor, curr_depth-1);
+                    newTable, currMove, maxColor, minColor,
+                    alpha, beta, curr_depth-1);
                 
                 //sterge de pe istoric mutarea
-                GameManager.getHistory().remove(GameManager.getHistory().size()-1);
+                if(GameManager.getHistory().size() > 0)
+                    GameManager.getHistory().remove(GameManager.getHistory().size()-1);
 
                 int feedbackScore = feedback.score;
-                Move feedbackMove = feedback.move;
+               // Move feedbackMove = feedback.move;
 
-                if(feedbackScore < minScore){
+                /*if(feedbackScore < minScore){
                     minScore = feedbackScore;
+                    minMove = currMove;
+                }*/
+
+                if (feedbackScore <= alpha){
+                    return new MinimaxData(minMove, alpha);
+                }
+
+                if (feedbackScore < beta){
+                    beta = feedbackScore;
                     minMove = currMove;
                 }
 
             }
 
-            return new MinimaxData(minMove, minScore);
+            return new MinimaxData(minMove, beta);
     }
 
 

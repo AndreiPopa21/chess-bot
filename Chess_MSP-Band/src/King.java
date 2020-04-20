@@ -42,11 +42,17 @@ public class King extends Piece {
         }
 
         if(this.getColor() == Color.WHITE){
+
+            if(src != Constants.E1) return finalMoves;
+
             if(castlingWhiteKing()) finalMoves.add(
                 new Move(0,0,Constants.WHITE_KING_SIDE_CASTLING));
             if(castlingWhiteQueen()) finalMoves.add(
                 new Move(0,0,Constants.WHITE_QUEEN_SIDE_CASTLING));
         }else{
+
+            if(src != Constants.E8) return finalMoves;
+
             if(castlingBlackKing()) finalMoves.add(
                 new Move(0,0,Constants.BLACK_KING_SIDE_CASTLING));
             if(castlingBlackQueen()) finalMoves.add(

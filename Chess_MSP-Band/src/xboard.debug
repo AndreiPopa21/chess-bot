@@ -1,0 +1,117 @@
+locale = LC_CTYPE=en_US.UTF-8;LC_NUMERIC=ro_RO.UTF-8;LC_TIME=ro_RO.UTF-8;LC_COLLATE=en_US.UTF-8;LC_MONETARY=ro_RO.UTF-8;LC_MESSAGES=en_US.UTF-8;LC_PAPER=ro_RO.UTF-8;LC_NAME=ro_RO.UTF-8;LC_ADDRESS=ro_RO.UTF-8;LC_TELEPHONE=ro_RO.UTF-8;LC_MEASUREMENT=ro_RO.UTF-8;LC_IDENTIFICATION=ro_RO.UTF-8
+recognized 'normal' (-1) as variant normal
+recognized 'normal' (-1) as variant normal
+recognized 'normal' (-1) as variant normal
+shuffleOpenings = 0
+shuffleOpenings = 0
+Version: xboard 4.9.1 + make ()
+Reset(1, 0) from gameMode 0
+recognized 'normal' (-1) as variant normal
+GameEnds(0, (null), 2)
+shuffleOpenings = 0
+StartChildProcess (dir=".") make run
+174 >first : xboard
+protover 2
+180 <first : make[1]: Entering directory '/home/stefan/chess-bot/l2-pa-project-MSP-Band/Chess_MSP-Band/src'
+180 <first : javac Main.java
+1078 <first : java Main
+1162 <first : [ReceiverXboard] S-a primit XBOARD
+10176 >first : new
+random
+10176 >first : level 0 5 2
+10176 >first : post
+10176 >first : hard
+10176 <first : [ReceiverXboard] S-a primit NEW
+10176 <first : feature sigint=0 sigterm=0 done=1 colors=0
+10176 >first : accepted sigint
+10176 >first : accepted sigterm
+10176 >first : accepted done
+10176 >first : accepted colors
+nps: w=-1, b=-1
+nps: w=-1, b=-1
+14449 >first : time 30000
+14449 >first : otim 30200
+book hit = (NULL)
+14449 >first : e2e4
+14454 <first : [ReceiverXboard] S-a primit MOVE...........................e2e4
+14459 <first : 
+14459 <first : R  P  -  -  -  -  p  r  
+14459 <first : N  P  -  -  -  -  p  n  
+14459 <first : B  P  -  -  -  -  p  b  
+14459 <first : Q  P  -  -  -  -  p  q  
+14459 <first : K  -  -  P  -  -  p  k  
+14459 <first : B  P  -  -  -  -  p  b  
+14459 <first : N  P  -  -  -  -  p  n  
+14459 <first : R  P  -  -  -  -  p  r  
+14459 <first : 
+14566 <first : 
+14566 <first : R  P  -  -  -  -  p  r  
+14566 <first : N  P  -  -  -  -  p  n  
+14566 <first : B  P  -  -  -  -  p  b  
+14566 <first : Q  P  -  -  -  -  p  q  
+14566 <first : K  -  -  P  -  -  p  k  
+14566 <first : B  P  -  -  -  n  p  b  
+14566 <first : N  P  -  -  -  -  p  -  
+14566 <first : R  P  -  -  -  -  p  r  
+14566 <first : 
+14607 <first : Am timisssssssssssssssss g8f6
+14608 <first : move g8f6
+15987 >first : time 30184
+15987 >first : otim 30262
+book hit = (NULL)
+15988 >first : e4e5
+15990 <first : [ReceiverXboard] S-a primit MOVE...........................e4e5
+15990 <first : 
+15990 <first : R  P  -  -  -  -  p  r  
+15990 <first : N  P  -  -  -  -  p  n  
+15990 <first : B  P  -  -  -  -  p  b  
+15990 <first : Q  P  -  -  -  -  p  q  
+15990 <first : K  -  -  -  P  -  p  k  
+15990 <first : B  P  -  -  -  n  p  b  
+15990 <first : N  P  -  -  -  -  p  -  
+15990 <first : R  P  -  -  -  -  p  r  
+15990 <first : 
+16023 <first : 
+16023 <first : R  P  -  -  -  -  p  r  
+16023 <first : N  P  -  -  -  -  p  n  
+16023 <first : B  P  -  -  -  -  p  b  
+16023 <first : Q  P  -  -  -  -  p  q  
+16023 <first : K  -  -  n  P  -  p  k  
+16023 <first : B  P  -  -  -  -  p  b  
+16023 <first : N  P  -  -  -  -  p  -  
+16023 <first : R  P  -  -  -  -  p  r  
+16023 <first : 
+16023 <first : Am timisssssssssssssssss f6e4
+16023 <first : move f6e4
+19327 >first : time 30380
+19327 >first : otim 30131
+book hit = (NULL)
+19327 >first : d1e2
+19330 <first : [ReceiverXboard] S-a primit MOVE...........................d1e2
+19330 <first : 
+19330 <first : R  P  -  -  -  -  p  r  
+19330 <first : N  P  -  -  -  -  p  n  
+19330 <first : B  P  -  -  -  -  p  b  
+19330 <first : -  P  -  -  -  -  p  q  
+19330 <first : K  Q  -  n  P  -  p  k  
+19330 <first : B  P  -  -  -  -  p  b  
+19330 <first : N  P  -  -  -  -  p  -  
+19330 <first : R  P  -  -  -  -  p  r  
+19330 <first : 
+19343 <first : [Table] Se captureaza cu EN Passant : e5f6
+19442 <first : 
+19442 <first : R  P  -  -  -  -  p  r  
+19442 <first : N  P  -  -  -  -  p  n  
+19442 <first : B  P  -  -  n  -  p  b  
+19442 <first : -  P  -  -  -  -  p  q  
+19442 <first : K  Q  -  -  P  -  p  k  
+19442 <first : B  P  -  -  -  -  p  b  
+19442 <first : N  P  -  -  -  -  p  -  
+19442 <first : R  P  -  -  -  -  p  r  
+19442 <first : 
+19442 <first : Am timisssssssssssssssss e4c5
+19442 <first : move e4c5
+GameEnds(29, xboard exit, 2)
+21715 >first : result * {xboard exit}
+21715 >first : force
+21715 >first : quit
