@@ -51,17 +51,17 @@ public final class GameManager{
 
 
     public static boolean executeMove(Move move){
-        if(validateMove(move)){
+       // if(validateMove(move)){
             record(move);
             nextMove();
             getTable().updateTable(move);
             printTable();
             return true;
-        }else{
+        /*}else{
             System.out.println("[GameManager] Cannot execute illegal move: " + move.toString());
             printTable();
             return false;
-        }
+        }*/
     }
 
 
