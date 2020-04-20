@@ -35,7 +35,7 @@ public class King extends Piece {
             Piece initialDest = getTable().applyMove(move);
             boolean checked = getTable().isKingChecked(this.getColor());
             if(!checked){
-                System.out.println("[King] This is a final move: " + move.toString());
+              //  System.out.println("[King] This is a final move: " + move.toString());
                 finalMoves.add(move);
             } 
             getTable().undoMove(move, initialDest);
@@ -74,7 +74,7 @@ public class King extends Piece {
 
     public boolean castlingWhiteKing(){
 
-        System.out.println("[Table] Se evalueaza white king-side castling");
+//        System.out.println("[Table] Se evalueaza white king-side castling");
 
         Square e1 = getTable().getSquares().get(Constants.E1);
         Square f1 = getTable().getSquares().get(Constants.F1);
@@ -140,7 +140,7 @@ public class King extends Piece {
 
     public boolean castlingWhiteQueen(){
 
-        System.out.println("[Table] Se evalueaza white queen-side castling");
+    //    System.out.println("[Table] Se evalueaza white queen-side castling");
 
         Square e1 = getTable().getSquares().get(Constants.E1);
         Square d1 = getTable().getSquares().get(Constants.D1);
@@ -203,7 +203,7 @@ public class King extends Piece {
 
     public boolean castlingBlackKing(){
 
-        System.out.println("[Table] Se evalueaza black king-side castling");
+   //     System.out.println("[Table] Se evalueaza black king-side castling");
 
         Square e8 = getTable().getSquares().get(Constants.E8);
         Square f8 = getTable().getSquares().get(Constants.F8);
@@ -264,7 +264,7 @@ public class King extends Piece {
 
     public boolean castlingBlackQueen(){
 
-        System.out.println("[Table] Se evalueaza black queen-side castling");
+  //      System.out.println("[Table] Se evalueaza black queen-side castling");
 
         Square e8 = getTable().getSquares().get(Constants.E8);
         Square d8 = getTable().getSquares().get(Constants.D8);

@@ -156,10 +156,10 @@ public class Pawn extends Piece {
 
     public boolean whiteRightEnpassant(int src){
 
-        System.out.println("[Pawn] Se evalueaza white-right enpassant pentru pionul de pe: " + src);
+      //  System.out.println("[Pawn] Se evalueaza white-right enpassant pentru pionul de pe: " + src);
 
         if(src % 10 != 5){
-            System.out.println("[Pawn] Nu este linia corespunzatoare: " + src);
+           // System.out.println("[Pawn] Nu este linia corespunzatoare: " + src);
             return false;
         } 
 
@@ -207,10 +207,10 @@ public class Pawn extends Piece {
 
     public boolean whiteLeftEnpassant(int src){
 
-        System.out.println("[Pawn] Se evalueaza white-left enpassant pentru pionul de pe: " + src);
+     //   System.out.println("[Pawn] Se evalueaza white-left enpassant pentru pionul de pe: " + src);
 
         if(src % 10 != 5){
-            System.out.println("[Pawn] Nu este linia corespunzatoare: " + src);
+       //     System.out.println("[Pawn] Nu este linia corespunzatoare: " + src);
             return false;
         } 
 
@@ -259,10 +259,10 @@ public class Pawn extends Piece {
 
     public boolean blackRightEnpassant(int src){
 
-        System.out.println("[Pawn] Se evalueaza black-right enpassant pentru pionul de pe: " + src);
+       // System.out.println("[Pawn] Se evalueaza black-right enpassant pentru pionul de pe: " + src);
 
         if(src % 10 != 4){
-            System.out.println("[Pawn] Nu este linia corespunzatoare: " + src);
+         //   System.out.println("[Pawn] Nu este linia corespunzatoare: " + src);
             return false;
         } 
 
@@ -307,10 +307,10 @@ public class Pawn extends Piece {
 
     public boolean blackLeftEnpassant(int src){
 
-        System.out.println("[Pawn] Se evalueaza black-left enpassant pentru pionul de pe: " + src);
+     //   System.out.println("[Pawn] Se evalueaza black-left enpassant pentru pionul de pe: " + src);
 
         if(src % 10 != 4){
-            System.out.println("[Pawn] Nu este linia corespunzatoare: " + src);
+       //     System.out.println("[Pawn] Nu este linia corespunzatoare: " + src);
             return false;
         } 
 

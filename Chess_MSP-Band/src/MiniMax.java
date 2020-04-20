@@ -30,19 +30,19 @@ public final class MiniMax {
         return (scoremaxi - scoremini);
     }
 
-    public static ArrayList<Move> allMoves(HashMap<Integer,Square> h, Color c){
-        ArrayList<Move> allMV = new ArrayList<>();
-        int tablePozition;
-        for (Map.Entry<Integer,Square> i : h.entrySet()) {
-            Square elem = i.getValue();
+    public static ArrayList<Move> allMoves(HashMap<Integer,Square> map, Color color){
+        ArrayList<Move> allMoves = new ArrayList<>();
+        int tablePosition;
+        for (Map.Entry<Integer,Square> entry : map.entrySet()) {
+            Square elem = entry.getValue();
             if (elem.hasPiece()) {
-                tablePozition = i.getKey();
-                if (elem.getPiece().getColor() == c) {
-                    allMV.addAll(elem.getPiece().searchMoves(tablePozition));
+                tablePosition = entry.getKey();
+                if (elem.getPiece().getColor() == color) {
+                    allMoves.addAll(elem.getPiece().searchMoves(tablePosition));
                 }
             }
         }
-        return allMV;
+        return allMoves;
     }
 
     public static String allMovesToString(ArrayList<Move> allMV){
