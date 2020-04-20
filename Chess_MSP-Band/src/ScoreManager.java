@@ -8,7 +8,6 @@ public final class ScoreManager{
 
     static HashMap<Integer,StorageValue> valueMap = new HashMap<Integer,StorageValue>();
 
-
     public static void readValue() {
         valueMap.put(Constants.A1,new StorageValue(-30,0,0,-50,-20,-20,20,0,0,-50,-20,-20));
         valueMap.put(Constants.A2,new StorageValue(-30,50,5,-40,-10,-10,20,5,-5,-40,-10,-10));
@@ -85,7 +84,7 @@ public final class ScoreManager{
 
     }
     public static int getScore(Piece p, int pozition){
-
+        //readValue();
        if (p.getName() == 'p') {
            return p.getValue()+ valueMap.get(pozition).pawnValN;
        } else if (p.getName() == 'n') {

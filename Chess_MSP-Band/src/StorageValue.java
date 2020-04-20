@@ -1,34 +1,33 @@
-import java.util.Vector;
 
 class StorageValue{
-    int KingVal;
-    int pawnVal;
-    int RookVal;
-    int KnightVal;
-    int QueenVal;
-    int BishopVal;
     int KingValN;
     int pawnValN;
     int RookValN;
     int KnightValN;
     int QueenValN;
     int BishopValN;
+    int KingVal;
+    int pawnVal;
+    int RookVal;
+    int KnightVal;
+    int QueenVal;
+    int BishopVal;
 
    /* Vector<Pair> whitePair = new Vector<Pair>();
     Vector<Pair> balckPair = new Vector<Pair>();*/
 
-    StorageValue( int KingVal,
-                  int pawnVal,
-                  int RookVal,
-                  int KnightVal,
-                  int QueenVal,
-                  int BishopVal,
-                  int KingValN,
+    StorageValue( int KingValN,
                   int pawnValN,
                   int RookValN,
                   int KnightValN,
                   int QueenValN,
-                  int BishopValN){
+                  int BishopValN,
+                  int KingVal,
+                  int pawnVal,
+                  int RookVal,
+                  int KnightVal,
+                  int QueenVal,
+                  int BishopVal){
 
         this.KingVal = KingVal;
         this.pawnVal = pawnVal;

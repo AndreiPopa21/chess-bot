@@ -18,6 +18,7 @@ public final class GameManager{
         currMove = 1;
         currPlayer = playeColor;
         currTable = new Table();
+        ScoreManager.readValue();
     }
 
 

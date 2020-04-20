@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
@@ -12,13 +13,53 @@ public final class MiniMax {
 
     }
 
+    public static int evaluate(HashMap<Integer,Square> h,Color maxi, Color mini) {
+        int scoremaxi = 0,scoremini = 0;
+        int tablePozition;
+        for (Map.Entry<Integer,Square> i : h.entrySet()) {
+            Square elem = i.getValue();
+            if (elem.hasPiece()) {
+                tablePozition = i.getKey();
+                if (elem.getPiece().getColor() == maxi) {
+                    scoremaxi += ScoreManager.getScore(elem.getPiece(),tablePozition);
+                } else if (elem.getPiece().getColor() == mini) {
+                    scoremini += ScoreManager.getScore(elem.getPiece(),tablePozition);
+                }
+            }
+        }
+        return (scoremaxi - scoremini);
+    }
+
+    public static ArrayList<Move> allMoves(HashMap<Integer,Square> h, Color c){
+        ArrayList<Move> allMV = new ArrayList<>();
+        int tablePozition;
+        for (Map.Entry<Integer,Square> i : h.entrySet()) {
+            Square elem = i.getValue();
+            if (elem.hasPiece()) {
+                tablePozition = i.getKey();
+                if (elem.getPiece().getColor() == c) {
+                    allMV.addAll(elem.getPiece().searchMoves(tablePozition));
+                }
+            }
+        }
+        return allMV;
+    }
+
+    public static String allMovesToString(ArrayList<Move> allMV){
+        String out="";
+        for(Move m : allMV){
+
+            out += m.toString()+GameManager.getTable().getSquares().get(m.source).getPiece().getName()+" ";
+        }
+        return out;
+    }
+
     public static void setTable (){
         currTable = GameManager.getTable();
     }
 
     public static void thinkMove() {
-       /* Piece blackHorse = board[7][1];
-        Piece whiteHorse = board[0][1];*/
+
         if (GameManager.getColor() == Color.BLACK) {
             moveBlack();
         }else {

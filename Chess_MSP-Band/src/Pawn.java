@@ -120,7 +120,7 @@ public class Pawn extends Piece {
         int attackRight = 0;
         int attackLeft = 0;
 
-        System.out.println("[Pawn] Is checking for src " + convert(src) + " and  " + convert(king));
+       // System.out.println("[Pawn] Is checking for src " + convert(src) + " and  " + convert(king));
 
         if(this.getColor() == Color.WHITE){
             attackRight = src + 10 + 1;

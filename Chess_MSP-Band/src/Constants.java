@@ -76,12 +76,12 @@ public final class Constants{
     public static final int H8 = 1048;
 
 
-    public static final int PAWN_VALUE = 10;
-    public static final int KNIGHT_VALUE = 30;
-    public static final int BISHOP_VALUE = 30;
-    public static final int ROOK_VALUE = 50;
-    public static final int QUEEN_VALUE = 90;
-    public static final int KING_VALUE = 900;
+    public static final int PAWN_VALUE = 100;
+    public static final int KNIGHT_VALUE = 300;
+    public static final int BISHOP_VALUE = 300;
+    public static final int ROOK_VALUE = 500;
+    public static final int QUEEN_VALUE = 900;
+    public static final int KING_VALUE = 9000;
 
 
     public static final int WHITE_COLOR = 1;
