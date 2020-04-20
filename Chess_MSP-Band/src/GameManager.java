@@ -55,7 +55,8 @@ public final class GameManager{
             record(move);
             nextMove();
             getTable().updateTable(move);
-            printTable();
+            //printTable();
+            toStringHistory();
             return true;
         /*}else{
             System.out.println("[GameManager] Cannot execute illegal move: " + move.toString());
@@ -72,10 +73,18 @@ public final class GameManager{
         Move resultMove = result.move;
         if(resultMove.source == 0 
             && resultMove.dest == 0 
-            && resultMove.moveType == 0){
-            System.out.println("[GameManager] Jocul s-a terminat");
-
+            && resultMove.moveType == Constants.WE_ARE_CHECKMATED){
+            System.out.println("[GameManager] Jocul s-a terminat, am luat sah mat");
+            return;
         }   
+
+        if(resultMove.source == 0 
+            && resultMove.dest == 0 
+            && resultMove.moveType == Constants.WE_ARE_CHECKMATED){
+            System.out.println("[GameManager] Jocul s-a terminat, am luat STALEMATE");
+            return;
+        }   
+
         GameManager.executeMove(result.move);
         Sender.parserMove(result.move);
     }
@@ -141,9 +150,18 @@ public final class GameManager{
            //     .get(move.source);
            // if(sq == null) return;
             //if(sq.hasPiece())
-             hp = new HistoryPairs(move.source,move.dest,
-                     GameManager.currTable.getSquares().
-                        get(move.source).getPiece().getName(),move);
+            try{
+                hp = new HistoryPairs(move.source,move.dest,
+                GameManager.currTable.getSquares().
+                   get(move.source).getPiece().getName(),move);
+            }
+            catch(Exception ex){
+             //   System.out.println(ex.toString());
+              //  System.out.println(move.toString());
+            }
+
+            hp = new HistoryPairs(Constants.A1,Constants.A2,'P',
+                new Move(Constants.A1, Constants.A2, 0));
             
         }
         history.add(hp);

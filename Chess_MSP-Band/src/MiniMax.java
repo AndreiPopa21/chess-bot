@@ -10,7 +10,7 @@ public final class MiniMax {
     public static int index_black = 0;
     public static int index_white = 0;
 
-    public static final int DEPTH = 2;
+    public static final int DEPTH = 4;
 
 
     private MiniMax(){
@@ -72,9 +72,24 @@ public final class MiniMax {
         return new MinimaxData(moves.get(index), 0);*/
         Color maxColor = color;
         Color minColor = (color == Color.WHITE) ? Color.BLACK : Color.WHITE;
+    
+
+
+        ArrayList<Move> possibleMoves = MiniMax.allMoves(table.getSquares(), maxColor);
+        if(possibleMoves.size() == 0){
+            if(table.isKingChecked(maxColor)){
+                return new MinimaxData(new Move(0,0,Constants.WE_ARE_CHECKMATED),0);
+            }
+            else{
+                return new MinimaxData(new Move(0,0,Constants.WE_ARE_STALLED), 0);
+            }
+        }
+
+
         return MiniMax.maxi(
             table, new Move(0,0,0), maxColor, minColor,
             Integer.MIN_VALUE+100000, Integer.MAX_VALUE-100000, DEPTH);
+        
     }
 
 

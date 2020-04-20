@@ -10,108 +10,4080 @@ recognized 'normal' (-1) as variant normal
 GameEnds(0, (null), 2)
 shuffleOpenings = 0
 StartChildProcess (dir=".") make run
-174 >first : xboard
+162 >first : xboard
 protover 2
-180 <first : make[1]: Entering directory '/home/stefan/chess-bot/l2-pa-project-MSP-Band/Chess_MSP-Band/src'
-180 <first : javac Main.java
-1078 <first : java Main
-1162 <first : [ReceiverXboard] S-a primit XBOARD
-10176 >first : new
+165 <first : make[1]: Entering directory '/home/stefan/chess-bot/l2-pa-project-MSP-Band/Chess_MSP-Band/src'
+165 <first : javac Main.java
+1027 <first : java Main
+1104 <first : [ReceiverXboard] S-a primit XBOARD
+10164 >first : new
 random
-10176 >first : level 0 5 2
-10176 >first : post
-10176 >first : hard
-10176 <first : [ReceiverXboard] S-a primit NEW
-10176 <first : feature sigint=0 sigterm=0 done=1 colors=0
-10176 >first : accepted sigint
-10176 >first : accepted sigterm
-10176 >first : accepted done
-10176 >first : accepted colors
+10164 >first : level 0 5 2
+10164 >first : post
+10164 >first : hard
+Reset(0, 1) from gameMode 0
+recognized 'normal' (-1) as variant normal
+GameEnds(0, (null), 2)
+10165 >first : quit
+shuffleOpenings = 0
+StartChildProcess (dir=".") make run
+10173 >first : xboard
+protover 2
+10173 >first : new
+random
+10173 >first : level 0 5 2
+10173 >first : post
+10173 >first : hard
+10173 >first : force
+StartChildProcess (dir=".") fairymax
+10174 >second: xboard
+protover 2
+10176 <first : make[1]: Entering directory '/home/stefan/chess-bot/l2-pa-project-MSP-Band/Chess_MSP-Band/src'
+10176 <first : javac Main.java
+10275 <second: tellics say     Fairy-Max 5.0b
+10275 <second: tellics say     by H.G. Muller
+10276 <second: feature myname="Fairy-Max 5.0b"
+10276 >second: accepted myname
+10276 <second: feature memory=1 exclude=1
+10276 >second: accepted memory
+10276 >second: accepted exclude
+10276 <second: feature setboard=0 xedit=1 ping=1 done=0
+10276 >second: accepted setboard
+10276 >second: accepted xedit
+10276 >second: accepted ping
+10276 >second: accepted done
+10276 <second: feature variants="normal,nocastle,shatranj,asean,makruk,cambodian,ai-wok,courier,knightmate,capablanca,gothic,janus,falcon,cylinder,berolina,super,seirawan,spartan,great,light-brigade,king-of-the-hill,bifurcator,team-mate,los-alamos,ciccolini,mexican,grande-acedrex,roman,almost-wildebeest,fairy"
+10276 >second: accepted variants
+10276 <second: feature option="Resign -check 0"
+10276 >second: accepted option
+10276 <second: feature option="Resign Threshold -spin 800 200 1200"
+10276 >second: accepted option
+10276 <second: feature option="Claim draw after -spin 50 0 200"
+10276 >second: accepted option
+10276 <second: feature option="Ini File -file /usr/share/games/fairymax/fmax.ini"
+10276 >second: accepted option
+10276 <second: feature option="Multi-PV Margin -spin 0 0 1000"
+10276 >second: accepted option
+10276 <second: feature option="Variant fairy selects -combo FIDE-Clobberers /// Clobberers-FIDE /// FIDE-Nutters /// Nutters-FIDE /// Clobberers-Nutters /// Nutters-Clobberers /// FIDE-Rookies /// Rookies-FIDE /// Clobberers-Rookies /// Rookies-Clobberers /// Nutters-Rookies /// Rookies-Nutters"
+10276 >second: accepted option
+10276 <second: feature option="Makruk rules -combo makruk /// Cambodian /// Ai-wok"
+10276 >second: accepted option
+10276 <second: feature option="Dummy Slider Example -slider 20 0 100"
+10276 >second: accepted option
+10276 <second: feature option="Dummy String Example -string happy birthday!"
+10276 >second: accepted option
+10276 <second: feature option="Dummy Path Example -path ."
+10276 >second: accepted option
+10276 <second: feature option="Automatic persistent-hash dialog -check 0"
+10276 >second: accepted option
+10276 <second: feature option="Info -button"
+10276 >second: accepted option
+10276 <second: feature option="Save in hash file -button"
+10276 >second: accepted option
+10276 <second: feature option="Clear Hash -button"
+10276 >second: accepted option
+10276 <second: feature done=1
+10276 >second: accepted done
+10278 >second: memory 68
+10278 >second: new
+random
+sd 2
+10278 >second: level 0 5 2
+10278 >second: post
+10278 >second: hard
+10278 >second: ping 1
+10278 >second: force
+10330 <second: pong 1
+New game (1): make-Fairy-Max 5.0b (w)
+10331 >first : computer
+10331 >second: computer
+10332 >first : black
+10332 >first : time 30000
+10332 >first : otim 30000
+10332 >first : white
+book hit = (NULL)
+10332 >first : go
 nps: w=-1, b=-1
+10332 <second: Error (unknown command): computer
+11011 <first : java Main
+11096 <first : [ReceiverXboard] S-a primit XBOARD
+11097 <first : [ReceiverXboard] S-a primit NEW
+11097 <first : feature sigint=0 sigterm=0 done=1 colors=0
+11097 >first : accepted sigint
+11097 >first : accepted sigterm
+11097 >first : accepted done
+11097 >first : accepted colors
+11103 <first : [ReceiverXboard] S-a primit FORCE
+11103 <first : [ReceiverXboard] S-a apelat BLACK
+11103 <first : [ReceiverXboard] S-a apelat WHITE
+11103 <first : [ReceiverXboard] S-a primit GO
+12143 <first : Am timisssssssssssssssss g1f3
+12144 <first : move g1f3
+12144 >second: time 30000
+12144 >second: otim 30018
+book hit = (NULL)
+12144 >second: g1f3
+12144 >second: black
+12144 >second: go
+12239 <second: # times @ 2567424054
+12239 <second: # 16+16 pieces, centr = (1,1) R=40
+12239 <second:  1     14        0          3 c7c5
+12239 <second:  1     27        0          5 d7d5
+12239 <second:  1     28        0          7 f7f6
+12239 <second:  2      0        0         15 f7f6 c2c4
+12239 <second:  2     12        0         24 f7f5 c2c4
+12239 <second:  2     13        0        104 c7c6 c2c4
+12239 <second: # times @ 2567424055: real=1 cpu=0
+12239 <second: # promo = 0 (`) GT = 0
+12239 <second: move c7c6
+12239 >first : time 30018
+12239 >first : otim 30190
+book hit = (NULL)
+12239 >first : c7c6
+12315 <first : [ReceiverXboard] S-a primit MOVE...........................c7c6
+14322 <first : Am timisssssssssssssssss b1c3
+14322 <first : move b1c3
+Interrupting second
+14322 >second: time 30190
+14322 >second: otim 30010
+book hit = (NULL)
+14322 >second: b1c3
+14415 <second: # times @ 2567426232
+14415 <second: # 16+16 pieces, centr = (1,1) R=40
+14415 <second:  1     15        0          3 d7d5
+14415 <second:  1     25        0          5 d7d6
+14416 <second:  2    -16        0         13 d7d6 d2d4
+14416 <second:  2     -2        0         44 d7d5 d2d4
+14416 <second:  2      7        0         76 f7f6 d2d4
+14416 <second:  2      9        0        158 g8f6 d2d4
+14416 <second: # times @ 2567426233: real=1 cpu=0
+14416 <second: # promo = 0 (`) GT = 0
+14416 <second: move g8f6
+14416 >first : time 30010
+14416 >first : otim 30381
+book hit = (NULL)
+14416 >first : g8f6
+14510 <first : [ReceiverXboard] S-a primit MOVE...........................g8f6
+16827 <first : Am timisssssssssssssssss d2d4
+16827 <first : move d2d4
+Interrupting second
+16827 >second: time 30381
+16827 >second: otim 29969
+book hit = (NULL)
+16827 >second: d2d4
+16900 <second: # times @ 2567428738
+16900 <second: # 16+16 pieces, centr = (1,1) R=40
+16900 <second:  1     14        0          3 d7d5
+16900 <second:  1     28        0          5 d7d6
+16900 <second:  2     -4        0         53 d7d6 c1f4
+16900 <second:  2      2        0        416 d8b6 a2a4
+16900 <second: # times @ 2567428738: real=0 cpu=10
+16900 <second: # promo = 0 (`) GT = 0
+16900 <second: move d8b6
+16900 >first : time 29969
+16901 >first : otim 30573
+book hit = (NULL)
+16901 >first : d8b6
+16994 <first : [ReceiverXboard] S-a primit MOVE...........................d8b6
+23530 <first : Am timisssssssssssssssss a2a3
+23530 <first : move a2a3
+Interrupting second
+23531 >second: time 30573
+23531 >second: otim 29506
+book hit = (NULL)
+23531 >second: a2a3
+23606 <second: # times @ 2567435441
+23606 <second: # 16+16 pieces, centr = (1,1) R=40
+23606 <second:  1   -778        0          3 b6b2
+23606 <second:  1   -601        0          3 b6b5
+23606 <second:  1      0        0          3 b6a5
+23606 <second:  1      3        0          3 b8a6
+23606 <second:  1     15        0          3 d7d5
+23606 <second:  2      9        0        262 d7d5 h2h4
+23606 <second: # times @ 2567435442: real=1 cpu=0
+23606 <second: # promo = 0 (`) GT = 0
+23606 <second: move d7d5
+23607 >first : time 29506
+23607 >first : otim 30766
+book hit = (NULL)
+23607 >first : d7d5
+23681 <first : [ReceiverXboard] S-a primit MOVE...........................d7d5
+32056 <first : Am timisssssssssssssssss f3e5
+32056 <first : move f3e5
+Interrupting second
+32056 >second: time 30766
+32056 >second: otim 28861
+book hit = (NULL)
+32056 >second: f3e5
+32150 <second: # times @ 2567443967
+32150 <second: # 16+16 pieces, centr = (1,1) R=40
+32150 <second:  1   -778        0          3 b6b2
+32150 <second:  1   -601        0          3 b6b5
+32150 <second:  1      0        0          3 b6a5
+32150 <second:  1      3        0          3 b8a6
+32150 <second:  1     14        0          3 b8d7
+32150 <second:  1     15        0          3 c8f5
+32150 <second:  2      9        0        780 c8f5 f2f4
+32150 <second:  2     14        0       1439 b8d7 f2f4 d7e5 d4e5
+32150 <second: # times @ 2567443969: real=2 cpu=0
+32150 <second: # promo = 0 (`) GT = 0
+32150 <second: move b8d7
+32150 >first : time 28861
+32150 >first : otim 30956
+book hit = (NULL)
+32150 >first : b8d7
+32243 <first : [ReceiverXboard] S-a primit MOVE...........................b8d7
+45612 <first : Am timisssssssssssssssss e2e3
+45612 <first : move e2e3
+Interrupting second
+45612 >second: time 30956
+45613 >second: otim 27715
+book hit = (NULL)
+45613 >second: e2e3
+45687 <second: # times @ 2567457524
+45687 <second: # 16+16 pieces, centr = (1,1) R=40
+45687 <second:  1     11        0          3 d7e5
+45687 <second:  2     12        0          7 d7e5 d4e5
+45687 <second: # times @ 2567457525: real=1 cpu=0
+45687 <second: # promo = 0 (`) GT = 0
+45687 <second: move d7e5
+45687 >first : time 27715
+45687 >first : otim 31149
+book hit = (NULL)
+45687 >first : d7e5
+45781 <first : [ReceiverXboard] S-a primit MOVE...........................d7e5
+54984 <first : Am timisssssssssssssssss d4e5
+54984 <first : move d4e5
+Interrupting second
+54984 >second: time 31149
+54984 >second: otim 26985
+book hit = (NULL)
+54984 >second: d4e5
+55057 <second: # times @ 2567466895
+55057 <second: # 15+15 pieces, centr = (1,1) R=36
+55057 <second:  1   -778        0          3 b6b2
+55057 <second:  1   -166        0          3 b6a5
+55057 <second:  1    -10        0          3 f6e4
+55057 <second:  1     -1        0          3 f6g4
+55057 <second:  1     12        0          3 c8g4
+55058 <second:  2      5        0         65 c8g4 f1e2
+55058 <second: # times @ 2567466895: real=0 cpu=0
+55058 <second: # promo = 0 (`) GT = 0
+55058 <second: move c8g4
+55058 >first : time 26985
+55058 >first : otim 31341
+book hit = (NULL)
+55058 >first : c8g4
+55151 <first : [ReceiverXboard] S-a primit MOVE...........................c8g4
+61917 <first : Am timisssssssssssssssss d1d4
+61917 <first : move d1d4
+Interrupting second
+61917 >second: time 31341
+61917 >second: otim 26499
+book hit = (NULL)
+61917 >second: d1d4
+62012 <second: # times @ 2567473828
+62012 <second: # 15+15 pieces, centr = (1,1) R=36
+62012 <second:  1      7        0          3 b6d4
+62012 <second:  2      7        0          7 b6d4 e3d4
+62012 <second: # times @ 2567473828: real=0 cpu=0
+62012 <second: # promo = 0 (`) GT = 0
+62012 <second: move b6d4
+62012 >first : time 26499
+62012 >first : otim 31532
+book hit = (NULL)
+62012 >first : b6d4
+62106 <first : [ReceiverXboard] S-a primit MOVE...........................b6d4
+72533 <first : Am timisssssssssssssssss e3d4
+72533 <first : move e3d4
+Interrupting second
+72533 >second: time 31532
+72533 >second: otim 25647
+book hit = (NULL)
+72533 >second: e3d4
+72607 <second: # times @ 2567484444
+72607 <second: # 14+14 pieces, centr = (1,1) R=24
+72607 <second:  1   -165        0          3 a7a5
+72607 <second:  1   -156        0          3 h7h5
+72607 <second:  1     -7        0          3 f6e4
+72607 <second:  1     -6        0          3 f6h5
+72607 <second:  1     -4        0          3 f6d7
+72607 <second:  2    -19        0         87 f6d7 c1f4
+72607 <second:  2    -12        0        118 f6e4 c1f4
+72607 <second: # times @ 2567484444: real=0 cpu=0
+72607 <second: # promo = 0 (`) GT = 0
+72608 <second: move f6e4
+72608 >first : time 25647
+72608 >first : otim 31724
+book hit = (NULL)
+72608 >first : f6e4
+72704 <first : [ReceiverXboard] S-a primit MOVE...........................f6e4
+81003 <first : Am timisssssssssssssssss c3e4
+81003 <first : move c3e4
+Interrupting second
+81003 >second: time 31724
+81004 >second: otim 25008
+book hit = (NULL)
+81004 >second: c3e4
+81098 <second: # times @ 2567492914
+81098 <second: # 14+13 pieces, centr = (1,1) R=21
+81098 <second:  1     -7        0          3 d5e4
+81098 <second:  2    -18        0         35 d5e4 c1f4
+81098 <second: # times @ 2567492914: real=0 cpu=0
+81098 <second: # promo = 0 (`) GT = 0
+81098 <second: move d5e4
+81098 >first : time 25008
+81098 >first : otim 31915
+book hit = (NULL)
+81098 >first : d5e4
+81171 <first : [ReceiverXboard] S-a primit MOVE...........................d5e4
+82672 <first : Am timisssssssssssssssss f1e2
+82673 <first : move f1e2
+Interrupting second
+82673 >second: time 31915
+82673 >second: otim 25050
+book hit = (NULL)
+82673 >second: f1e2
+82746 <second: # times @ 2567494583
+82746 <second: # 13+13 pieces, centr = (1,1) R=20
+82746 <second:  1      5        0          3 g4e2
+82746 <second:  1     10        0          3 h7h5
+82746 <second:  2      2        0         63 h7h5 f2f3
+82746 <second:  2      6        0         92 g4e2 e1e2
+82746 <second: # times @ 2567494584: real=1 cpu=10
+82746 <second: # promo = 0 (`) GT = 0
+82746 <second: move g4e2
+82746 >first : time 25050
+82746 >first : otim 32108
+book hit = (NULL)
+82746 >first : g4e2
+82839 <first : [ReceiverXboard] S-a primit MOVE...........................g4e2
+86605 <first : Am timisssssssssssssssss e1e2
+86606 <first : move e1e2
+Interrupting second
+86606 >second: time 32108
+86606 >second: otim 24864
+book hit = (NULL)
+86606 >second: e1e2
+86680 <second: # times @ 2567498516
+86681 <second: # 12+12 pieces, centr = (1,1) R=16
+86681 <second:  1      3        0          3 a7a5
+86681 <second:  1     12        0          3 f7f5
+86681 <second:  1     26        0          3 e8c8
+86681 <second:  2     12        0         73 e8c8 c1e3
+86681 <second: # times @ 2567498517: real=1 cpu=0
+86681 <second: # promo = 0 (`) GT = 0
+86681 <second: move e8c8
+86681 >first : time 24864
+86681 >first : otim 32300
+book hit = (NULL)
+86681 >first : e8c8
+86756 <first : [ReceiverXboard] S-a primit MOVE...........................e8c8
+91174 <first : Am timisssssssssssssssss c1e3
+91174 <first : move c1e3
+Interrupting second
+91174 >second: time 32300
+91174 >second: otim 24615
+book hit = (NULL)
+91174 >second: c1e3
+91270 <second: # times @ 2567503085
+91271 <second: # 12+12 pieces, centr = (1,1) R=16
+91271 <second:  1   -371        0          3 d8d4
+91271 <second:  1      0        0          3 d8e8
+91271 <second:  1      3        0          3 a7a5
+91271 <second:  1     10        0          3 e7e6
+91271 <second:  1     12        0          3 f7f5
+91271 <second:  2    -47        0         19 f7f5 e5e6
+91271 <second:  2      0        0         97 g7g5 h2h4
+91271 <second: # times @ 2567503085: real=0 cpu=0
+91271 <second: # promo = 0 (`) GT = 0
+91271 <second: move g7g5
+91272 >first : time 24615
+91272 >first : otim 32490
+book hit = (NULL)
+91272 >first : g7g5
+91345 <first : [ReceiverXboard] S-a primit MOVE...........................g7g5
+94643 <first : Am timisssssssssssssssss e3g5
+94643 <first : move e3g5
+Interrupting second
+94643 >second: time 32490
+94643 >second: otim 24478
+book hit = (NULL)
+94643 >second: e3g5
+94739 <second: # times @ 2567506553
+94739 <second: # 12+11 pieces, centr = (1,1) R=16
+94739 <second:  1     13        0          3 d8d4
+94739 <second:  2    -12        0         23 d8d4 f2f4
+94740 <second: # times @ 2567506554: real=1 cpu=0
+94740 <second: # promo = 0 (`) GT = 0
+94740 <second: move d8d4
+94740 >first : time 24478
+94740 >first : otim 32681
+book hit = (NULL)
+94740 >first : d8d4
+94834 <first : [ReceiverXboard] S-a primit MOVE...........................d8d4
+97577 <first : Am timisssssssssssssssss g5e3
+97577 <first : move g5e3
+Interrupting second
+97577 >second: time 32681
+97577 >second: otim 24394
+book hit = (NULL)
+97577 >second: g5e3
+97672 <second: # times @ 2567509488
+97672 <second: # 11+11 pieces, centr = (1,1) R=16
+97672 <second:  1   -442        0          3 a7a5
+97672 <second:  1   -433        0          3 f7f5
+97672 <second:  1   -150        0          3 c6c5
+97672 <second:  1      0        0          3 d4c4
+97672 <second:  2     -1        0         87 d4c4 c2c3
+97672 <second: # times @ 2567509488: real=0 cpu=0
+97672 <second: # promo = 0 (`) GT = 0
+97672 <second: move d4c4
+97672 >first : time 24394
+97672 >first : otim 32871
+book hit = (NULL)
+97672 >first : d4c4
+97746 <first : [ReceiverXboard] S-a primit MOVE...........................d4c4
+102717 <first : Am timisssssssssssssssss c2c3
+102717 <first : move c2c3
+Interrupting second
+102717 >second: time 32871
+102717 >second: otim 24089
+book hit = (NULL)
+102717 >second: c2c3
+102792 <second: # times @ 2567514628
+102792 <second: # 11+11 pieces, centr = (1,1) R=16
+102792 <second:  1   -376        0          3 c4c3
+102792 <second:  1      0        0          3 c4a4
+102792 <second:  1      3        0          3 f8g7
+102792 <second:  2      2        0         63 f8g7 e3f4
+102792 <second: # times @ 2567514628: real=0 cpu=0
+102792 <second: # promo = 0 (`) GT = 0
+102792 <second: move f8g7
+102792 >first : time 24089
+102792 >first : otim 33064
+book hit = (NULL)
+102792 >first : f8g7
+102866 <first : [ReceiverXboard] S-a primit MOVE...........................f8g7
+104937 <first : Am timisssssssssssssssss e3a7
+104937 <first : move e3a7
+Interrupting second
+104937 >second: time 33064
+104937 >second: otim 24075
+book hit = (NULL)
+104937 >second: e3a7
+105031 <second: # times @ 2567516847
+105031 <second: # 11+10 pieces, centr = (1,1) R=16
+105031 <second:  1     32        0          3 g7e5
+105031 <second:  2    -10        0         99 g7e5 a7e3
+105031 <second: # times @ 2567516849: real=2 cpu=0
+105031 <second: # promo = 0 (`) GT = 0
+105031 <second: move g7e5
+105031 >first : time 24075
+105031 >first : otim 33254
+book hit = (NULL)
+105031 >first : g7e5
+105125 <first : [ReceiverXboard] S-a primit MOVE...........................g7e5
+108713 <first : Am timisssssssssssssssss a7d4
+108713 <first : move a7d4
+Interrupting second
+108714 >second: time 33254
+108714 >second: otim 23907
+book hit = (NULL)
+108714 >second: a7d4
+108808 <second: # times @ 2567520624
+108808 <second: # 10+10 pieces, centr = (1,1) R=16
+108808 <second:  1     41        0          3 e5d4
+108808 <second:  2     41        0          7 e5d4 c3d4
+108808 <second: # times @ 2567520625: real=1 cpu=0
+108808 <second: # promo = 0 (`) GT = 0
+108808 <second: move e5d4
+108808 >first : time 23907
+108808 >first : otim 33445
+book hit = (NULL)
+108808 >first : e5d4
+108882 <first : [ReceiverXboard] S-a primit MOVE...........................e5d4
+112864 <first : Am timisssssssssssssssss c3d4
+112864 <first : move c3d4
+Interrupting second
+112864 >second: time 33445
+112864 >second: otim 23701
+book hit = (NULL)
+112864 >second: c3d4
+112939 <second: # times @ 2567524775
+112939 <second: # 9+9 pieces, centr = (1,1) R=12
+112939 <second:  1     41        0          3 c4d4
+112939 <second:  2     61        0         25 c4d4 f2f4
+112939 <second:  2     89        0        100 c4c2 e2e3 c2b2
+112939 <second: # times @ 2567524775: real=0 cpu=0
+112939 <second: # promo = 0 (`) GT = 0
+112939 <second: move c4c2
+112939 >first : time 23701
+112939 >first : otim 33637
+book hit = (NULL)
+112939 >first : c4c2
+113012 <first : [ReceiverXboard] S-a primit MOVE...........................c4c2
+113457 <first : Am timisssssssssssssssss e2e3
+113457 <first : move e2e3
+Interrupting second
+113457 >second: time 33637
+113457 >second: otim 23849
+book hit = (NULL)
+113457 >second: e2e3
+113531 <second: # times @ 2567525368
+113531 <second: # 9+9 pieces, centr = (1,1) R=12
+113531 <second:  1     89        0          3 c2b2
+113531 <second:  2     61        0         45 c2b2 h2h4
+113531 <second: # times @ 2567525368: real=0 cpu=0
+113531 <second: # promo = 0 (`) GT = 0
+113531 <second: move c2b2
+113531 >first : time 23849
+113531 >first : otim 33830
+book hit = (NULL)
+113531 >first : c2b2
+113604 <first : [ReceiverXboard] S-a primit MOVE...........................c2b2
+114924 <first : Am timisssssssssssssssss h1b1
+114924 <first : move h1b1
+Interrupting second
+114925 >second: time 33830
+114925 >second: otim 23910
+book hit = (NULL)
+114925 >second: h1b1
+115019 <second: # times @ 2567526835
+115020 <second: # 8+9 pieces, centr = (1,1) R=12
+115020 <second:  1     74        0          3 b2b1
+115020 <second:  2     74        0          7 b2b1 a1b1
+115020 <second: # times @ 2567526835: real=0 cpu=0
+115020 <second: # promo = 0 (`) GT = 0
+115020 <second: move b2b1
+115020 >first : time 23910
+115020 >first : otim 34020
+book hit = (NULL)
+115020 >first : b2b1
+115093 <first : [ReceiverXboard] S-a primit MOVE...........................b2b1
+115596 <first : Am timisssssssssssssssss a1b1
+115596 <first : move a1b1
+Interrupting second
+115596 >second: time 34020
+115596 >second: otim 24052
+book hit = (NULL)
+115596 >second: a1b1
+115669 <second: # times @ 2567527507
+115669 <second: # 7+8 pieces, centr = (1,1) R=6
+115669 <second:  1     89        0          3 f7f5
+115669 <second:  2     74        0         19 f7f5 f2f4
+115670 <second: # times @ 2567527507: real=0 cpu=0
+115670 <second: # promo = 0 (`) GT = 0
+115670 <second: move f7f5
+115670 >first : time 24052
+115670 >first : otim 34213
+book hit = (NULL)
+115670 >first : f7f5
+115743 <first : [ReceiverXboard] S-a primit MOVE...........................f7f5
+116219 <first : Am timisssssssssssssssss f2f3
+116219 <first : move f2f3
+Interrupting second
+116219 >second: time 34213
+116219 >second: otim 24197
+book hit = (NULL)
+116219 >second: f2f3
+116292 <second: # times @ 2567528129
+116292 <second: # 7+8 pieces, centr = (1,1) R=6
+116292 <second:  1     55        0          3 e4f3
+116292 <second:  1     71        0          3 h8g8
+116292 <second:  2     68        0         58 h8g8 h2h4
+116292 <second: # times @ 2567528129: real=0 cpu=0
+116292 <second: # promo = 0 (`) GT = 0
+116292 <second: move h8g8
+116292 >first : time 24197
+116292 >first : otim 34406
+book hit = (NULL)
+116292 >first : h8g8
+116366 <first : [ReceiverXboard] S-a primit MOVE...........................h8g8
+117065 <first : Am timisssssssssssssssss f3e4
+117065 <first : move f3e4
+Interrupting second
+117066 >second: time 34406
+117066 >second: otim 24320
+book hit = (NULL)
+117066 >second: f3e4
+117139 <second: # times @ 2567528976
+117139 <second: # 7+7 pieces, centr = (1,1) R=6
+117139 <second:  1     71        0          3 g8g2
+117139 <second:  2     68        0         71 g8g2 h2h4
+117139 <second:  2     69        0        330 f5e4 h2h4
+117139 <second: # times @ 2567528977: real=1 cpu=0
+117139 <second: # promo = 0 (`) GT = 0
+117139 <second: move f5e4
+117139 >first : time 24320
+117139 >first : otim 34598
+book hit = (NULL)
+117139 >first : f5e4
+117212 <first : [ReceiverXboard] S-a primit MOVE...........................f5e4
+117536 <first : Am timisssssssssssssssss h2h3
+117536 <first : move h2h3
+Interrupting second
+117536 >second: time 34598
+117536 >second: otim 24480
+book hit = (NULL)
+117536 >second: h2h3
+117609 <second: # times @ 2567529447
+117609 <second: # 6+7 pieces, centr = (1,1) R=6
+117609 <second:  1     72        0          3 g8g2
+117609 <second:  1     78        0          3 b7b5
+117609 <second:  2     74        0         13 b7b5 g2g4
+117609 <second:  2     78        0         97 h7h5 e3e4
+117609 <second: # times @ 2567529447: real=0 cpu=0
+117609 <second: # promo = 0 (`) GT = 0
+117609 <second: move h7h5
+117609 >first : time 24480
+117609 >first : otim 34791
+book hit = (NULL)
+117609 >first : h7h5
+117683 <first : [ReceiverXboard] S-a primit MOVE...........................h7h5
+118152 <first : Am timisssssssssssssssss e3e4
+118152 <first : move e3e4
+Interrupting second
+118152 >second: time 34791
+118152 >second: otim 24626
+book hit = (NULL)
+118152 >second: e3e4
+118225 <second: # times @ 2567530062
+118225 <second: # 6+6 pieces, centr = (1,1) R=6
+118225 <second:  1     77        0          3 g8g2
+118225 <second:  2     72        0         15 g8g2 a3a4
+118225 <second: # times @ 2567530063: real=1 cpu=0
+118225 <second: # promo = 0 (`) GT = 0
+118225 <second: move g8g2
+118225 >first : time 24626
+118225 >first : otim 34984
+book hit = (NULL)
+118225 >first : g8g2
+118319 <first : [ReceiverXboard] S-a primit MOVE...........................g8g2
+118707 <first : Am timisssssssssssssssss b1f1
+118707 <first : move b1f1
+Interrupting second
+118707 >second: time 34984
+118708 >second: otim 24778
+book hit = (NULL)
+118708 >second: b1f1
+118801 <second: # times @ 2567530618
+118801 <second: # 5+6 pieces, centr = (1,1) R=6
+118801 <second:  1     80        0          3 b7b5
+118801 <second:  1     83        0          3 c8d7
+118801 <second:  2     81        0         19 c8d7 a3a4
+118801 <second: # times @ 2567530618: real=0 cpu=0
+118801 <second: # promo = 0 (`) GT = 0
+118801 <second: move c8d7
+118801 >first : time 24778
+118801 >first : otim 35174
+book hit = (NULL)
+118801 >first : c8d7
+118876 <first : [ReceiverXboard] S-a primit MOVE...........................c8d7
+119421 <first : Am timisssssssssssssssss f1f5
+119421 <first : move f1f5
+Interrupting second
+119421 >second: time 35174
+119421 >second: otim 24916
+book hit = (NULL)
+119421 >second: f1f5
+119515 <second: # times @ 2567531332
+119515 <second: # 5+6 pieces, centr = (1,1) R=6
+119515 <second:  1     74        0          3 h5h4
+119515 <second:  2     72        0         21 h5h4 a3a4
+119515 <second:  2     74        0         70 g2e2 e4f4
+119515 <second: # times @ 2567531332: real=0 cpu=0
+119515 <second: # promo = 0 (`) GT = 0
+119515 <second: move g2e2
+119515 >first : time 24916
+119515 >first : otim 35365
+book hit = (NULL)
+119515 >first : g2e2
+119589 <first : [ReceiverXboard] S-a primit MOVE...........................g2e2
+119675 <first : Am timisssssssssssssssss e4d3
+119676 <first : move e4d3
+Interrupting second
+119676 >second: time 35365
+119676 >second: otim 25100
+book hit = (NULL)
+119676 >second: e4d3
+119748 <second: # times @ 2567531586
+119748 <second: # 5+6 pieces, centr = (1,1) R=6
+119748 <second:  1   -361        0          3 b7b5
+119749 <second:  1      5        0          3 d7e6
+119749 <second:  1     74        0          3 e2a2
+119749 <second:  2     71        0         27 e2a2 d3e4
+119749 <second: # times @ 2567531586: real=0 cpu=0
+119749 <second: # promo = 0 (`) GT = 0
+119749 <second: move e2a2
+119749 >first : time 25100
+119749 >first : otim 35558
+book hit = (NULL)
+119749 >first : e2a2
+119843 <first : [ReceiverXboard] S-a primit MOVE...........................e2a2
+119903 <first : Am timisssssssssssssssss f5h5
+119904 <first : move f5h5
+Interrupting second
+119904 >second: time 35558
+119904 >second: otim 25284
+book hit = (NULL)
+119904 >second: f5h5
+119976 <second: # times @ 2567531814
+119977 <second: # 5+5 pieces, centr = (1,1) R=6
+119977 <second:  1     74        0          3 a2a3
+119977 <second:  2     71        0         22 a2a3 d3e4
+119977 <second:  2     76        0        152 b7b5 d3e4 a2a3
+119977 <second: # times @ 2567531814: real=0 cpu=0
+119977 <second: # promo = 0 (`) GT = 0
+119977 <second: move b7b5
+119977 >first : time 25284
+119977 >first : otim 35750
+book hit = (NULL)
+119977 >first : b7b5
+120052 <first : [ReceiverXboard] S-a primit MOVE...........................b7b5
+120072 <first : Am timisssssssssssssssss h3h4
+120072 <first : move h3h4
+Interrupting second
+120072 >second: time 35750
+120072 >second: otim 25475
+book hit = (NULL)
+120072 >second: h3h4
+120145 <second: # times @ 2567531982
+120145 <second: # 5+5 pieces, centr = (1,1) R=6
+120145 <second:  1     72        0          3 a2a3
+120145 <second:  2     71        0         22 a2a3 d3e4
+120145 <second: # times @ 2567531983: real=1 cpu=0
+120145 <second: # promo = 0 (`) GT = 0
+120145 <second: move a2a3
+120145 >first : time 25475
+120145 >first : otim 35943
+book hit = (NULL)
+120145 >first : a2a3
+120218 <first : [ReceiverXboard] S-a primit MOVE...........................a2a3
+120223 <first : Am timisssssssssssssssss d3c2
+120223 <first : move d3c2
+Interrupting second
+120223 >second: time 35943
+120223 >second: otim 25667
+book hit = (NULL)
+120223 >second: d3c2
+120296 <second: # times @ 2567532134
+120297 <second: # 4+5 pieces, centr = (1,1) R=6
+120297 <second:  1      5        0          3 e7e5
+120297 <second:  1     78        0          3 e7e6
+120297 <second:  1     79        0          3 d7e6
+120297 <second:  2     76        0         17 d7e6 c2d2
+120297 <second: # times @ 2567532134: real=0 cpu=0
+120297 <second: # promo = 0 (`) GT = 0
+120297 <second: move d7e6
+120297 >first : time 25667
+120297 >first : otim 36136
+book hit = (NULL)
+120297 >first : d7e6
+120370 <first : [ReceiverXboard] S-a primit MOVE...........................d7e6
+120518 <first : Am timisssssssssssssssss c2b2
+120518 <first : move c2b2
+Interrupting second
+120518 >second: time 36136
+120518 >second: otim 25845
+book hit = (NULL)
+120518 >second: c2b2
+120592 <second: # times @ 2567532428
+120592 <second: # 4+5 pieces, centr = (1,1) R=6
+120592 <second:  1     74        0          3 b5b4
+120592 <second:  2     69        0         10 b5b4 b2c2
+120592 <second:  2     74        0         62 a3d3 h5e5
+120592 <second: # times @ 2567532429: real=1 cpu=0
+120592 <second: # promo = 0 (`) GT = 0
+120592 <second: move a3d3
+120592 >first : time 25845
+120593 >first : otim 36328
+book hit = (NULL)
+120593 >first : a3d3
+120687 <first : [ReceiverXboard] S-a primit MOVE...........................a3d3
+120768 <first : Am timisssssssssssssssss h5e5
+120768 <first : move h5e5
+Interrupting second
+120768 >second: time 36328
+120768 >second: otim 26027
+book hit = (NULL)
+120768 >second: h5e5
+120862 <second: # times @ 2567532678
+120862 <second: # 4+5 pieces, centr = (1,1) R=6
+120862 <second:  1     73        0          3 e6f6
+120862 <second:  2     73        0         45 e6f6 e5e4
+120862 <second: # times @ 2567532678: real=0 cpu=0
+120862 <second: # promo = 0 (`) GT = 0
+120862 <second: move e6f6
+120862 >first : time 26027
+120862 >first : otim 36519
+book hit = (NULL)
+120862 >first : e6f6
+120935 <first : [ReceiverXboard] S-a primit MOVE...........................e6f6
+121170 <first : Am timisssssssssssssssss e5e4
+121170 <first : move e5e4
+Interrupting second
+121170 >second: time 36519
+121170 >second: otim 26196
+book hit = (NULL)
+121170 >second: e5e4
+121242 <second: # times @ 2567533080
+121243 <second: # 4+5 pieces, centr = (1,1) R=6
+121243 <second:  1   -296        0          3 d3d4
+121243 <second:  1     74        0          3 d3f3
+121243 <second:  1     78        0          3 e7e6
+121243 <second:  2     73        0         21 e7e6 b2c2
+121243 <second:  2     76        0         60 f6f5 e4e7 d3d4
+121243 <second: # times @ 2567533080: real=0 cpu=0
+121243 <second: # promo = 0 (`) GT = 0
+121243 <second: move f6f5
+121243 >first : time 26196
+121243 >first : otim 36712
+book hit = (NULL)
+121243 >first : f6f5
+121315 <first : [ReceiverXboard] S-a primit MOVE...........................f6f5
+121432 <first : Am timisssssssssssssssss e4e7
+121432 <first : move e4e7
+Interrupting second
+121432 >second: time 36712
+121432 >second: otim 26378
+book hit = (NULL)
+121432 >second: e4e7
+121526 <second: # times @ 2567533343
+121526 <second: # 4+4 pieces, centr = (1,1) R=6
+121526 <second:  1     75        0          3 d3d4
+121526 <second:  2     74        0         21 d3d4 h4h5
+121526 <second: # times @ 2567533343: real=0 cpu=0
+121526 <second: # promo = 0 (`) GT = 0
+121526 <second: move d3d4
+121526 >first : time 26378
+121526 >first : otim 36902
+book hit = (NULL)
+121526 >first : d3d4
+121600 <first : [ReceiverXboard] S-a primit MOVE...........................d3d4
+121700 <first : Am timisssssssssssssssss h4h5
+121700 <first : move h4h5
+Interrupting second
+121700 >second: time 36902
+121700 >second: otim 26560
+book hit = (NULL)
+121700 >second: h4h5
+121773 <second: # times @ 2567533610
+121773 <second: # 3+4 pieces, centr = (1,1) R=6
+121773 <second:  1     76        0          3 c6c5
+121773 <second:  2     14        0          9 c6c5 h5h6
+121773 <second:  2     62        0         55 f5g5 b2c3
+121773 <second:  2     63        0        110 f5f6 b2c3
+121773 <second:  2     74        0        143 d4e4 e7f7
+121773 <second: # times @ 2567533611: real=1 cpu=0
+121773 <second: # promo = 0 (`) GT = 0
+121773 <second: move d4e4
+121773 >first : time 26560
+121773 >first : otim 37095
+book hit = (NULL)
+121773 >first : d4e4
+121845 <first : [ReceiverXboard] S-a primit MOVE...........................d4e4
+122070 <first : Am timisssssssssssssssss e7e4
+122070 <first : move e7e4
+Interrupting second
+122070 >second: time 37095
+122070 >second: otim 26730
+book hit = (NULL)
+122070 >second: e7e4
+122165 <second: # times @ 2567533980
+122165 <second: # 3+3 pieces, centr = (1,1) R=2
+122165 <second:  1     75        0          5 f5e4
+122165 <second:  2     12        0         11 f5e4 h5h6
+122165 <second: # times @ 2567533989: real=9 cpu=10
+122165 <second: # promo = 0 (`) GT = 0
+122165 <second: move f5e4
+122165 >first : time 26730
+122165 >first : otim 37285
+book hit = (NULL)
+122165 >first : f5e4
+122239 <first : [ReceiverXboard] S-a primit MOVE...........................f5e4
+122239 <first : Am timisssssssssssssssss h5h6
+122239 <first : move h5h6
+Interrupting second
+122239 >second: time 37285
+122239 >second: otim 26923
+book hit = (NULL)
+122239 >second: h5h6
+122312 <second: # times @ 2567534149
+122312 <second: # 2+3 pieces, centr = (1,1) R=0
+122312 <second:  1     14        0          3 c6c5
+122312 <second:  2    -48        0          9 c6c5 h6h7
+122312 <second: # times @ 2567534149: real=0 cpu=0
+122312 <second: # promo = 0 (`) GT = 0
+122312 <second: move c6c5
+122312 >first : time 26923
+122312 >first : otim 37478
+book hit = (NULL)
+122312 >first : c6c5
+122387 <first : [ReceiverXboard] S-a primit MOVE...........................c6c5
+122387 <first : Am timisssssssssssssssss h6h7
+122387 <first : move h6h7
+Interrupting second
+122387 >second: time 37478
+122387 >second: otim 27116
+book hit = (NULL)
+122387 >second: h6h7
+122460 <second: # times @ 2567534297
+122460 <second: # 2+3 pieces, centr = (1,1) R=0
+122460 <second:  1    -53        0          3 b5b4
+122460 <second:  2   -703        0          9 b5b4 h7h8
+122460 <second: # times @ 2567534297: real=0 cpu=0
+122460 <second: # promo = 0 (`) GT = 0
+122460 <second: move b5b4
+122460 >first : time 27116
+122460 >first : otim 37671
+book hit = (NULL)
+122460 >first : b5b4
+122533 <first : [ReceiverXboard] S-a primit MOVE...........................b5b4
+122533 <first : Am timisssssssssssssssss h7h8
+122533 <first : move h7h8
+Interrupting second
+122533 >second: time 37671
+122533 >second: otim 27308
+book hit = (NULL)
+122533 >second: h7h8q
+122605 <second: # times @ 2567534443
+122606 <second: # 2+3 pieces, centr = (1,1) R=0
+122606 <second:  1   -708        0          3 c5c4
+122606 <second:  2   -713        0         10 c5c4 b2c2
+122606 <second: # times @ 2567534443: real=0 cpu=0
+122606 <second: # promo = 0 (`) GT = 0
+122606 <second: move c5c4
+122606 >first : time 27308
+122606 >first : otim 37863
+book hit = (NULL)
+122606 >first : c5c4
+122680 <first : [ReceiverXboard] S-a primit MOVE...........................c5c4
+122680 <first : Am timisssssssssssssssss h8h4
+122680 <first : move h8h4
+Interrupting second
+122680 >second: time 37863
+122680 >second: otim 27501
+book hit = (NULL)
+122680 >second: h8h4
+122776 <second: # times @ 2567534591
+122776 <second: # 2+3 pieces, centr = (1,1) R=0
+122776 <second:  1   -785        0          3 e4e3
+122776 <second:  1   -712        0          3 e4d3
+122776 <second:  1   -710        0          3 e4d5
+122776 <second:  2   -715        0         16 e4d5 b2c2
+122776 <second:  2   -712        0         29 e4d3 h4h3
+122776 <second: # times @ 2567534591: real=0 cpu=0
+122776 <second: # promo = 0 (`) GT = 0
+122776 <second: move e4d3
+122776 >first : time 27501
+122776 >first : otim 38054
+book hit = (NULL)
+122776 >first : e4d3
+122852 <first : [ReceiverXboard] S-a primit MOVE...........................e4d3
+122852 <first : Am timisssssssssssssssss b2b1
+122852 <first : move b2b1
+Interrupting second
+122852 >second: time 38054
+122852 >second: otim 27693
+book hit = (NULL)
+122852 >second: b2b1
+122925 <second: # times @ 2567534762
+122925 <second: # 2+3 pieces, centr = (1,1) R=0
+122925 <second:  1   -646        0          3 b4b3
+122925 <second:  2   -652        0         18 b4b3 b1b2
+122925 <second: # times @ 2567534763: real=1 cpu=0
+122925 <second: # promo = 0 (`) GT = 0
+122925 <second: move b4b3
+122925 >first : time 27693
+122925 >first : otim 38247
+book hit = (NULL)
+122925 >first : b4b3
+122998 <first : [ReceiverXboard] S-a primit MOVE...........................b4b3
+122999 <first : Am timisssssssssssssssss b1b2
+122999 <first : move b1b2
+Interrupting second
+122999 >second: time 38247
+122999 >second: otim 27886
+book hit = (NULL)
+122999 >second: b1b2
+123071 <second: # times @ 2567534909
+123071 <second: # 2+3 pieces, centr = (1,1) R=0
+123071 <second:  1   -724        0          3 c4c3
+123071 <second:  1   -718        0          3 d3e3
+123071 <second:  2   -718        0          7 d3e3 h4c4
+123071 <second: # times @ 2567534909: real=0 cpu=0
+123071 <second: # promo = 0 (`) GT = 0
+123071 <second: move d3e3
+123071 >first : time 27886
+123071 >first : otim 38439
+book hit = (NULL)
+123071 >first : d3e3
+123144 <first : [ReceiverXboard] S-a primit MOVE...........................d3e3
+123144 <first : Am timisssssssssssssssss h4c4
+123144 <first : move h4c4
+Interrupting second
+123144 >second: time 38439
+123144 >second: otim 28079
+book hit = (NULL)
+123144 >second: h4c4
+123237 <second: # times @ 2567535055
+123238 <second: # 2+2 pieces, centr = (1,1) R=0
+123238 <second:  1   -862        0          3 e3f3
+123238 <second:  2   -862        0          7 e3f3 b2b3
+123238 <second: # times @ 2567535055: real=0 cpu=0
+123238 <second: # promo = 0 (`) GT = 0
+123238 <second: move e3f3
+123238 >first : time 28079
+123238 >first : otim 38630
+book hit = (NULL)
+123238 >first : e3f3
+123311 <first : [ReceiverXboard] S-a primit MOVE...........................e3f3
+123311 <first : Am timisssssssssssssssss b2b1
+123311 <first : move b2b1
+Interrupting second
+123311 >second: time 38630
+123311 >second: otim 28271
+book hit = (NULL)
+123311 >second: b2b1
+123384 <second: # times @ 2567535222
+123384 <second: # 2+2 pieces, centr = (1,1) R=0
+123384 <second:  1   -866        0          3 b3b2
+123384 <second:  1   -860        0          3 f3g3
+123384 <second:  1   -856        0          3 f3e3
+123384 <second:  2   -856        0          7 f3e3 c4b3
+123384 <second: # times @ 2567535222: real=0 cpu=0
+123384 <second: # promo = 0 (`) GT = 0
+123384 <second: move f3e3
+123384 >first : time 28271
+123384 >first : otim 38823
+book hit = (NULL)
+123384 >first : f3e3
+123457 <first : [ReceiverXboard] S-a primit MOVE...........................f3e3
+123457 <first : Am timisssssssssssssssss c4b3
+123457 <first : move c4b3
+Interrupting second
+123457 >second: time 38823
+123457 >second: otim 28464
+book hit = (NULL)
+123457 >second: c4b3
+123530 <second: # times @ 2567535368
+123530 <second: # 2+1 pieces, centr = (1,1) R=4
+123530 <second:  1   -861        0          5 e3e2
+123530 <second:  1   -855        0          7 e3e4
+123530 <second:  2   -866        0         17 e3e4 b1c2
+123530 <second: # times @ 2567535377: real=9 cpu=10
+123530 <second: # promo = 0 (`) GT = 0
+123530 <second: move e3e4
+123530 >first : time 28464
+123530 >first : otim 39015
+book hit = (NULL)
+123530 >first : e3e4
+123603 <first : [ReceiverXboard] S-a primit MOVE...........................e3e4
+123621 <first : Am timisssssssssssssssss b3b5
+123621 <first : move b3b5
+Interrupting second
+123621 >second: time 39015
+123621 >second: otim 28655
+book hit = (NULL)
+123621 >second: b3b5
+123694 <second: # times @ 2567535531
+123694 <second: # 2+1 pieces, centr = (1,1) R=4
+123694 <second:  1   -858        1          7 e4f4
+123694 <second:  2   -869        1         17 e4f4 b1c2
+123694 <second: # times @ 2567535544: real=13 cpu=10
+123694 <second: # promo = 0 (`) GT = 0
+123694 <second: move e4f4
+123694 >first : time 28655
+123694 >first : otim 39208
+book hit = (NULL)
+123694 >first : e4f4
+123772 <first : [ReceiverXboard] S-a primit MOVE...........................e4f4
+123809 <first : Am timisssssssssssssssss b5a5
+123810 <first : move b5a5
+Interrupting second
+123810 >second: time 39208
+123810 >second: otim 28843
+book hit = (NULL)
+123810 >second: b5a5
+123885 <second: # times @ 2567535720
+123885 <second: # 2+1 pieces, centr = (1,1) R=4
+123885 <second:  1   -860        1          7 f4g4
+123885 <second:  1   -859        1          9 f4f3
+123885 <second:  1   -858        1         11 f4e3
+123885 <second:  1   -856        1         13 f4e4
+123885 <second:  2   -867        1         23 f4e4 b1c2
+123885 <second: # times @ 2567535738: real=18 cpu=20
+123885 <second: # promo = 0 (`) GT = 0
+123885 <second: move f4e4
+123886 >first : time 28843
+123886 >first : otim 39401
+book hit = (NULL)
+123886 >first : f4e4
+123961 <first : [ReceiverXboard] S-a primit MOVE...........................f4e4
+124033 <first : Am timisssssssssssssssss a5b5
+124033 <first : move a5b5
+Interrupting second
+124033 >second: time 39401
+124033 >second: otim 29028
+book hit = (NULL)
+124033 >second: a5b5
+124107 <second: # times @ 2567535944
+124107 <second: # 2+1 pieces, centr = (1,1) R=4
+124107 <second:  1      0        1          5 e4f4
+124107 <second:  2      0        1          6 e4f4
+124107 <second: # times @ 2567535962: real=18 cpu=20
+124107 <second: # promo = 0 (`) GT = 0
+124107 <second: move e4f4
+124107 >first : time 29028
+124107 >first : otim 39593
+book hit = (NULL)
+124107 >first : e4f4
+124180 <first : [ReceiverXboard] S-a primit MOVE...........................e4f4
+124230 <first : Am timisssssssssssssssss b5a5
+124230 <first : move b5a5
+Interrupting second
+124230 >second: time 39593
+124230 >second: otim 29216
+book hit = (NULL)
+124230 >second: b5a5
+124305 <second: # times @ 2567536140
+124305 <second: # 2+1 pieces, centr = (1,1) R=4
+124305 <second:  1   -860        1          7 f4g4
+124305 <second:  1   -859        1          9 f4f3
+124305 <second:  1   -858        1         11 f4e3
+124305 <second:  1      0        1         11 f4e4
+124305 <second:  2      0        1         12 f4e4
+124305 <second: # times @ 2567536158: real=18 cpu=20
+124306 <second: # promo = 0 (`) GT = 0
+124306 <second: move f4e4
+124306 >first : time 29216
+124306 >first : otim 39786
+book hit = (NULL)
+124306 >first : f4e4
+124382 <first : [ReceiverXboard] S-a primit MOVE...........................f4e4
+124437 <first : Am timisssssssssssssssss a5b5
+124437 <first : move a5b5
+Interrupting second
+124437 >second: time 39786
+124437 >second: otim 29403
+book hit = (NULL)
+124437 >second: a5b5
+124511 <second: 1/2-1/2 {Draw by repetition}
+GameEnds(28, Draw by repetition, 6)
+124511 >first : result 1/2-1/2 {Draw by repetition}
+Interrupting second
+124511 >second: result 1/2-1/2 {Draw by repetition}
+124511 >first : quit
+124525 >second: force
+124525 >second: ping 2
+124525 <second: Error (unknown command): result
+124526 <second: pong 2
+Reset(0, 0) from gameMode 8
+recognized 'normal' (-1) as variant normal
+GameEnds(0, (null), 2)
+shuffleOpenings = 0
+StartChildProcess (dir=".") make run
+124539 >first : xboard
+protover 2
+124543 <first : make[1]: Entering directory '/home/stefan/chess-bot/l2-pa-project-MSP-Band/Chess_MSP-Band/src'
+124543 <first : javac Main.java
+125318 <first : java Main
+125392 <first : [ReceiverXboard] S-a primit XBOARD
+134548 >first : new
+random
+134548 >first : level 0 5 2
+134548 >first : post
+134548 >first : hard
+Feeding moves 0 through 0 to first chess program
+134548 >first : force
+134548 >second: memory 68
+134548 >second: new
+random
+sd 2
+134548 >second: level 0 5 2
+134548 >second: post
+134548 >second: hard
+134548 >second: ping 3
+134548 >second: force
+134549 <first : [ReceiverXboard] S-a primit NEW
+134549 <first : feature sigint=0 sigterm=0 done=1 colors=0
+134549 >first : accepted sigint
+134549 >first : accepted sigterm
+134549 >first : accepted done
+134549 >first : accepted colors
+134558 <first : [ReceiverXboard] S-a primit FORCE
+134567 <second: pong 3
+New game (2): make-Fairy-Max 5.0b (b)
+134572 >first : computer
+134572 >second: computer
+134573 >second: black
+134573 >second: time 30000
+134573 >second: otim 30000
+134573 >second: white
+book hit = (NULL)
+134573 >second: go
 nps: w=-1, b=-1
-14449 >first : time 30000
-14449 >first : otim 30200
+134574 <second: Error (unknown command): computer
+134574 <second: # times @ 2567546484
+134574 <second: # 16+16 pieces, centr = (1,1) R=40
+134574 <second:  1     -6        0          7 a2a4
+134574 <second:  1     16        0          9 a2a3
+134574 <second:  1     17        0         11 d2d4
+134574 <second:  1     21        0         13 e2e4
+134574 <second:  1     30        0         15 b1c3
+134574 <second:  2    -15        0         23 b1c3 c7c5
+134574 <second:  2     -1        0         32 b1a3 c7c5
+134574 <second:  2      5        0         53 a2a4 c7c5
+134574 <second:  2     11        0        105 d2d4 d7d5
+134574 <second: # times @ 2567546484: real=0 cpu=0
+134574 <second: # promo = 0 (`) GT = 0
+134574 <second: move d2d4
+134574 >first : time 30000
+134574 >first : otim 30200
 book hit = (NULL)
-14449 >first : e2e4
-14454 <first : [ReceiverXboard] S-a primit MOVE...........................e2e4
-14459 <first : 
-14459 <first : R  P  -  -  -  -  p  r  
-14459 <first : N  P  -  -  -  -  p  n  
-14459 <first : B  P  -  -  -  -  p  b  
-14459 <first : Q  P  -  -  -  -  p  q  
-14459 <first : K  -  -  P  -  -  p  k  
-14459 <first : B  P  -  -  -  -  p  b  
-14459 <first : N  P  -  -  -  -  p  n  
-14459 <first : R  P  -  -  -  -  p  r  
-14459 <first : 
-14566 <first : 
-14566 <first : R  P  -  -  -  -  p  r  
-14566 <first : N  P  -  -  -  -  p  n  
-14566 <first : B  P  -  -  -  -  p  b  
-14566 <first : Q  P  -  -  -  -  p  q  
-14566 <first : K  -  -  P  -  -  p  k  
-14566 <first : B  P  -  -  -  n  p  b  
-14566 <first : N  P  -  -  -  -  p  -  
-14566 <first : R  P  -  -  -  -  p  r  
-14566 <first : 
-14607 <first : Am timisssssssssssssssss g8f6
-14608 <first : move g8f6
-15987 >first : time 30184
-15987 >first : otim 30262
+134574 >first : d2d4
+134574 >first : go
+134649 <first : [ReceiverXboard] S-a primit MOVE...........................d2d4
+134649 <first : [ReceiverXboard] S-a primit GO
+136045 <first : Am timisssssssssssssssss b8c6
+136045 <first : move b8c6
+Interrupting second
+136045 >second: time 30200
+136046 >second: otim 30052
 book hit = (NULL)
-15988 >first : e4e5
-15990 <first : [ReceiverXboard] S-a primit MOVE...........................e4e5
-15990 <first : 
-15990 <first : R  P  -  -  -  -  p  r  
-15990 <first : N  P  -  -  -  -  p  n  
-15990 <first : B  P  -  -  -  -  p  b  
-15990 <first : Q  P  -  -  -  -  p  q  
-15990 <first : K  -  -  -  P  -  p  k  
-15990 <first : B  P  -  -  -  n  p  b  
-15990 <first : N  P  -  -  -  -  p  -  
-15990 <first : R  P  -  -  -  -  p  r  
-15990 <first : 
-16023 <first : 
-16023 <first : R  P  -  -  -  -  p  r  
-16023 <first : N  P  -  -  -  -  p  n  
-16023 <first : B  P  -  -  -  -  p  b  
-16023 <first : Q  P  -  -  -  -  p  q  
-16023 <first : K  -  -  n  P  -  p  k  
-16023 <first : B  P  -  -  -  -  p  b  
-16023 <first : N  P  -  -  -  -  p  -  
-16023 <first : R  P  -  -  -  -  p  r  
-16023 <first : 
-16023 <first : Am timisssssssssssssssss f6e4
-16023 <first : move f6e4
-19327 >first : time 30380
-19327 >first : otim 30131
+136046 >second: b8c6
+136140 <second: # times @ 2567547956
+136140 <second: # 16+16 pieces, centr = (1,1) R=40
+136140 <second:  1     15        0          3 c2c4
+136140 <second:  1     16        0          9 c2c3
+136140 <second:  1     19        0         15 g2g4
+136140 <second:  1     23        0         21 b1c3
+136140 <second:  1     25        0         27 c1e3
+136141 <second:  1     27        0         33 g1f3
+136141 <second:  2    -10        0         55 g1f3 d7d5
+136141 <second:  2      1        0         82 g1h3 d7d5
+136141 <second:  2      4        0        184 a2a4 d7d5
+136141 <second:  2      8        0        469 b1c3 d7d5
+136141 <second: # times @ 2567547957: real=1 cpu=0
+136141 <second: # promo = 0 (`) GT = 0
+136141 <second: move b1c3
+136141 >first : time 30052
+136141 >first : otim 30390
 book hit = (NULL)
-19327 >first : d1e2
-19330 <first : [ReceiverXboard] S-a primit MOVE...........................d1e2
-19330 <first : 
-19330 <first : R  P  -  -  -  -  p  r  
-19330 <first : N  P  -  -  -  -  p  n  
-19330 <first : B  P  -  -  -  -  p  b  
-19330 <first : -  P  -  -  -  -  p  q  
-19330 <first : K  Q  -  n  P  -  p  k  
-19330 <first : B  P  -  -  -  -  p  b  
-19330 <first : N  P  -  -  -  -  p  -  
-19330 <first : R  P  -  -  -  -  p  r  
-19330 <first : 
-19343 <first : [Table] Se captureaza cu EN Passant : e5f6
-19442 <first : 
-19442 <first : R  P  -  -  -  -  p  r  
-19442 <first : N  P  -  -  -  -  p  n  
-19442 <first : B  P  -  -  n  -  p  b  
-19442 <first : -  P  -  -  -  -  p  q  
-19442 <first : K  Q  -  -  P  -  p  k  
-19442 <first : B  P  -  -  -  -  p  b  
-19442 <first : N  P  -  -  -  -  p  -  
-19442 <first : R  P  -  -  -  -  p  r  
-19442 <first : 
-19442 <first : Am timisssssssssssssssss e4c5
-19442 <first : move e4c5
-GameEnds(29, xboard exit, 2)
-21715 >first : result * {xboard exit}
-21715 >first : force
-21715 >first : quit
+136141 >first : b1c3
+136235 <first : [ReceiverXboard] S-a primit MOVE...........................b1c3
+138867 <first : Am timisssssssssssssssss e7e5
+138867 <first : move e7e5
+Interrupting second
+138867 >second: time 30390
+138867 >second: otim 29980
+book hit = (NULL)
+138867 >second: e7e5
+138941 <second: # times @ 2567550778
+138942 <second: # 16+16 pieces, centr = (1,1) R=40
+138942 <second:  1    -14        0          3 d4e5
+138942 <second:  1    -10        0          3 d4d5
+138942 <second:  1     -4        0         11 c3b5
+138942 <second:  1     12        0         43 g1f3
+138942 <second:  2      0        0        181 g1f3 f7f6
+138942 <second: # times @ 2567550779: real=1 cpu=0
+138942 <second: # promo = 0 (`) GT = 0
+138942 <second: move g1f3
+138942 >first : time 29980
+138942 >first : otim 30582
+book hit = (NULL)
+138942 >first : g1f3
+139036 <first : [ReceiverXboard] S-a primit MOVE...........................g1f3
+151752 <first : Am timisssssssssssssssss e5d4
+151752 <first : move e5d4
+Interrupting second
+151752 >second: time 30582
+151752 >second: otim 28899
+book hit = (NULL)
+151752 >second: e5d4
+151825 <second: # times @ 2567563662
+151825 <second: # 15+16 pieces, centr = (1,1) R=40
+151825 <second:  1     19        0          3 f3d4
+151825 <second:  2    -13        0         77 f3d4 d7d5
+151825 <second: # times @ 2567563664: real=2 cpu=0
+151825 <second: # promo = 0 (`) GT = 0
+151825 <second: move f3d4
+151825 >first : time 28899
+151825 >first : otim 30775
+book hit = (NULL)
+151825 >first : f3d4
+151918 <first : [ReceiverXboard] S-a primit MOVE...........................f3d4
+161853 <first : Am timisssssssssssssssss g8e7
+161853 <first : move g8e7
+Interrupting second
+161853 >second: time 30775
+161853 >second: otim 28096
+book hit = (NULL)
+161853 >second: g8e7
+161946 <second: # times @ 2567573764
+161946 <second: # 15+15 pieces, centr = (1,1) R=40
+161946 <second:  1    -14        0          3 d4c6
+161946 <second:  1    -10        0          3 d4b3
+161946 <second:  1     -2        0          3 d4f3
+161946 <second:  1      1        0          3 c3e4
+161946 <second:  1     10        0          3 c1e3
+161946 <second:  2     -1        0         52 c1e3 d7d5
+161946 <second:  2      0        0        128 c1f4 d7d5
+161946 <second: # times @ 2567573764: real=0 cpu=0
+161946 <second: # promo = 0 (`) GT = 0
+161946 <second: move c1f4
+161947 >first : time 28096
+161947 >first : otim 30966
+book hit = (NULL)
+161947 >first : c1f4
+162040 <first : [ReceiverXboard] S-a primit MOVE...........................c1f4
+166896 <first : Am timisssssssssssssssss d7d6
+166896 <first : move d7d6
+Interrupting second
+166896 >second: time 30966
+166896 >second: otim 27801
+book hit = (NULL)
+166896 >second: d7d6
+166971 <second: # times @ 2567578807
+166971 <second: # 15+15 pieces, centr = (1,1) R=40
+166971 <second:  1     -5        0          3 d4c6
+166971 <second:  1     -2        0          3 d4f3
+166972 <second:  1      1        0          3 c3e4
+166972 <second:  2     -6        0         89 c3e4 c8g4
+166972 <second:  2     -3        0        388 e2e4 c8d7
+166972 <second: # times @ 2567578808: real=1 cpu=10
+166972 <second: # promo = 0 (`) GT = 0
+166972 <second: move e2e4
+166972 >first : time 27801
+166972 >first : otim 31158
+book hit = (NULL)
+166972 >first : e2e4
+167044 <first : [ReceiverXboard] S-a primit MOVE...........................e2e4
+178194 <first : Am timisssssssssssssssss c6d4
+178194 <first : move c6d4
+Interrupting second
+178194 >second: time 31158
+178194 >second: otim 26879
+book hit = (NULL)
+178194 >second: c6d4
+178288 <second: # times @ 2567590104
+178288 <second: # 14+15 pieces, centr = (1,1) R=37
+178288 <second:  1      0        0          3 d1d4
+178288 <second:  2    -14        0         61 d1d4 c8e6
+178288 <second: # times @ 2567590105: real=1 cpu=0
+178288 <second: # promo = 0 (`) GT = 0
+178288 <second: move d1d4
+178288 >first : time 26879
+178288 >first : otim 31349
+book hit = (NULL)
+178288 >first : d1d4
+178381 <first : [ReceiverXboard] S-a primit MOVE...........................d1d4
+186178 <first : Am timisssssssssssssssss c8d7
+186178 <first : move c8d7
+Interrupting second
+186178 >second: time 31349
+186178 >second: otim 26290
+book hit = (NULL)
+186178 >second: c8d7
+186253 <second: # times @ 2567598090
+186253 <second: # 14+14 pieces, centr = (1,1) R=36
+186253 <second:  1   -158        0          3 f4d6
+186253 <second:  1     -1        0          3 f4e3
+186253 <second:  1      0        0          3 c3e2
+186253 <second:  1      7        0          3 a2a4
+186253 <second:  1     26        0          3 e1c1
+186253 <second:  2     19        0         21 e1c1 a7a5
+186253 <second: # times @ 2567598092: real=2 cpu=0
+186253 <second: # promo = 0 (`) GT = 0
+186253 <second: move e1c1
+186254 >first : time 26290
+186254 >first : otim 31541
+book hit = (NULL)
+186254 >first : e1c1
+186327 <first : [ReceiverXboard] S-a primit MOVE...........................e1c1
+193145 <first : Am timisssssssssssssssss e7g6
+193145 <first : move e7g6
+Interrupting second
+193146 >second: time 31541
+193146 >second: otim 25801
+book hit = (NULL)
+193146 >second: e7g6
+193242 <second: # times @ 2567605056
+193242 <second: # 14+14 pieces, centr = (1,1) R=36
+193242 <second:  1   -232        0          3 f4d6
+193242 <second:  1     -1        0          3 f4e3
+193242 <second:  2     -8        0         17 f4e3 a7a5
+193242 <second: # times @ 2567605057: real=1 cpu=0
+193242 <second: # promo = 0 (`) GT = 0
+193242 <second: move f4e3
+193242 >first : time 25801
+193242 >first : otim 31732
+book hit = (NULL)
+193242 >first : f4e3
+193315 <first : [ReceiverXboard] S-a primit MOVE...........................f4e3
+203114 <first : Am timisssssssssssssssss c7c5
+203115 <first : move c7c5
+Interrupting second
+203115 >second: time 31732
+203115 >second: otim 25013
+book hit = (NULL)
+203115 >second: c7c5
+203188 <second: # times @ 2567615025
+203188 <second: # 14+14 pieces, centr = (1,1) R=36
+203188 <second:  1   -491        0          3 d4d6
+203188 <second:  1      0        0          3 d4d3
+203188 <second:  2     -7        0         95 d4d3 h7h5
+203188 <second:  2     -3        0        605 d4d5 d7g4
+203188 <second: # times @ 2567615026: real=1 cpu=0
+203188 <second: # promo = 0 (`) GT = 0
+203188 <second: move d4d5
+203188 >first : time 25013
+203188 >first : otim 31924
+book hit = (NULL)
+203188 >first : d4d5
+203261 <first : [ReceiverXboard] S-a primit MOVE...........................d4d5
+217872 <first : Am timisssssssssssssssss d7c6
+217872 <first : move d7c6
+Interrupting second
+217873 >second: time 31924
+217873 >second: otim 23745
+book hit = (NULL)
+217873 >second: d7c6
+217945 <second: # times @ 2567629784
+217945 <second: # 14+14 pieces, centr = (1,1) R=36
+217945 <second:  1   -484        0          3 d5c6
+217945 <second:  1      0        0          3 d5f5
+217945 <second:  1      4        0          3 f1b5
+217946 <second:  2      4        0        292 f1b5 c6b5 c3b5
+217946 <second: # times @ 2567629787: real=3 cpu=0
+217946 <second: # promo = 0 (`) GT = 0
+217946 <second: move f1b5
+217946 >first : time 23745
+217946 >first : otim 32117
+book hit = (NULL)
+217946 >first : f1b5
+218040 <first : [ReceiverXboard] S-a primit MOVE...........................f1b5
+230172 <first : Am timisssssssssssssssss f8e7
+230172 <first : move f8e7
+Interrupting second
+230173 >second: time 32117
+230173 >second: otim 22722
+book hit = (NULL)
+230173 >second: f8e7
+230248 <second: # times @ 2567642085
+230248 <second: # 14+14 pieces, centr = (1,1) R=36
+230248 <second:  1     69        0          3 b5c6
+230248 <second:  2     69        0        100 b5c6 b7c6
+230248 <second: # times @ 2567642087: real=2 cpu=0
+230248 <second: # promo = 0 (`) GT = 0
+230248 <second: move b5c6
+230248 >first : time 22722
+230248 >first : otim 32309
+book hit = (NULL)
+230248 >first : b5c6
+230321 <first : [ReceiverXboard] S-a primit MOVE...........................b5c6
+232033 <first : Am timisssssssssssssssss e8f8
+232033 <first : move e8f8
+Interrupting second
+232033 >second: time 32309
+232033 >second: otim 22744
+book hit = (NULL)
+232033 >second: e8f8
+232106 <second: # times @ 2567643943
+232106 <second: # 14+13 pieces, centr = (1,1) R=33
+232106 <second:  1    381        0          3 c6b7
+232106 <second:  2    361        0        198 c6b7 a8b8
+232106 <second: # times @ 2567643945: real=2 cpu=0
+232106 <second: # promo = 0 (`) GT = 0
+232106 <second: move c6b7
+232106 >first : time 22744
+232106 >first : otim 32502
+book hit = (NULL)
+232106 >first : c6b7
+232179 <first : [ReceiverXboard] S-a primit MOVE...........................c6b7
+236414 <first : Am timisssssssssssssssss a8b8
+236414 <first : move a8b8
+Interrupting second
+236414 >second: time 32502
+236414 >second: otim 22513
+book hit = (NULL)
+236414 >second: a8b8
+236487 <second: # times @ 2567648325
+236487 <second: # 14+12 pieces, centr = (1,1) R=33
+236487 <second:  1    154        0          3 e3c5
+236487 <second:  1    365        0          3 e3d2
+236487 <second:  1    378        0          3 a2a4
+236487 <second:  1    379        0          3 b7c6
+236487 <second:  2    371        0        119 b7c6 h7h5
+236487 <second: # times @ 2567648328: real=3 cpu=10
+236487 <second: # promo = 0 (`) GT = 0
+236487 <second: move b7c6
+236487 >first : time 22513
+236487 >first : otim 32695
+book hit = (NULL)
+236487 >first : b7c6
+236561 <first : [ReceiverXboard] S-a primit MOVE...........................b7c6
+245842 <first : Am timisssssssssssssssss d8c7
+245842 <first : move d8c7
+Interrupting second
+245842 >second: time 32695
+245842 >second: otim 21777
+book hit = (NULL)
+245842 >second: d8c7
+245918 <second: # times @ 2567657753
+245919 <second: # 14+12 pieces, centr = (1,1) R=33
+245919 <second:  1    154        0          3 e3c5
+245919 <second:  1    365        0          3 e3d2
+245919 <second:  1    378        0          3 a2a4
+245919 <second:  2    370        0         94 a2a4 h7h5
+245919 <second:  2    372        0       1843 c3b5 c7b6 b5d6 b6b2
+245919 <second: # times @ 2567657757: real=4 cpu=0
+245919 <second: # promo = 0 (`) GT = 0
+245919 <second: move c3b5
+245919 >first : time 21777
+245920 >first : otim 32887
+book hit = (NULL)
+245920 >first : c3b5
+246014 <first : [ReceiverXboard] S-a primit MOVE...........................c3b5
+252608 <first : Am timisssssssssssssssss c7b6
+252608 <first : move c7b6
+Interrupting second
+252609 >second: time 32887
+252609 >second: otim 21308
+book hit = (NULL)
+252609 >second: c7b6
+252681 <second: # times @ 2567664519
+252681 <second: # 14+12 pieces, centr = (1,1) R=33
+252681 <second:  1    373        0          3 b5d6
+252682 <second:  1    378        0          3 a2a4
+252682 <second:  2    372        0        198 a2a4 g6e5
+252682 <second:  2    376        0       1904 f2f4 h7h5 b5d6 b6b2
+252682 <second: # times @ 2567664527: real=8 cpu=10
+252682 <second: # promo = 0 (`) GT = 0
+252682 <second: move f2f4
+252682 >first : time 21308
+252682 >first : otim 33080
+book hit = (NULL)
+252682 >first : f2f4
+252755 <first : [ReceiverXboard] S-a primit MOVE...........................f2f4
+255800 <first : Am timisssssssssssssssss a7a6
+255800 <first : move a7a6
+Interrupting second
+255801 >second: time 33080
+255801 >second: otim 21197
+book hit = (NULL)
+255801 >second: a7a6
+255873 <second: # times @ 2567667712
+255873 <second: # 14+12 pieces, centr = (1,1) R=33
+255873 <second:  1    379        0          3 b5d6
+255873 <second:  2    379        0          7 b5d6 b6b2
+255873 <second: # times @ 2567667718: real=6 cpu=10
+255873 <second: # promo = 0 (`) GT = 0
+255873 <second: move b5d6
+255873 >first : time 21197
+255873 >first : otim 33273
+book hit = (NULL)
+255873 >first : b5d6
+255967 <first : [ReceiverXboard] S-a primit MOVE...........................b5d6
+263928 <first : Am timisssssssssssssssss b6b2
+263928 <first : move b6b2
+Interrupting second
+263929 >second: time 33273
+263929 >second: otim 20591
+book hit = (NULL)
+263929 >second: b6b2
+264023 <second: # times @ 2567675840
+264023 <second: # 13+11 pieces, centr = (1,1) R=33
+264023 <second:  1    359        0          3 c1d2
+264023 <second:  2    360        0       1334 c1d2 b2f6 d6f5
+264023 <second: # times @ 2567675842: real=2 cpu=0
+264023 <second: # promo = 0 (`) GT = 0
+264023 <second: move c1d2
+264024 >first : time 20591
+264024 >first : otim 33463
+book hit = (NULL)
+264024 >first : c1d2
+264097 <first : [ReceiverXboard] S-a primit MOVE...........................c1d2
+271951 <first : Am timisssssssssssssssss b2b4
+271951 <first : move b2b4
+Interrupting second
+271951 >second: time 33463
+271951 >second: otim 19998
+book hit = (NULL)
+271951 >second: b2b4
+272025 <second: # times @ 2567683863
+272026 <second: # 13+11 pieces, centr = (1,1) R=33
+272026 <second:  1    365        0          3 c2c3
+272026 <second:  2    361        0       1554 c2c3 b4b2 d2d3 b2g2 d5f7
+272026 <second: # times @ 2567683867: real=4 cpu=10
+272026 <second: # promo = 0 (`) GT = 0
+272026 <second: move c2c3
+272026 >first : time 19998
+272026 >first : otim 33656
+book hit = (NULL)
+272026 >first : c2c3
+272099 <first : [ReceiverXboard] S-a primit MOVE...........................c2c3
+275666 <first : Am timisssssssssssssssss b4b2
+275666 <first : move b4b2
+Interrupting second
+275666 >second: time 33656
+275666 >second: otim 19834
+book hit = (NULL)
+275666 >second: b4b2
+275740 <second: # times @ 2567687579
+275740 <second: # 13+11 pieces, centr = (1,1) R=33
+275740 <second:  1    277        0          3 d2e1
+275740 <second:  1    359        0          3 d2d3
+275740 <second:  2    358        0       1030 d2d3 b2g2 d5f7
+275740 <second: # times @ 2567687581: real=2 cpu=0
+275740 <second: # promo = 0 (`) GT = 0
+275740 <second: move d2d3
+275740 >first : time 19834
+275740 >first : otim 33848
+book hit = (NULL)
+275740 >first : d2d3
+275812 <first : [ReceiverXboard] S-a primit MOVE...........................d2d3
+290007 <first : Am timisssssssssssssssss c5c4
+290007 <first : move c5c4
+Interrupting second
+290007 >second: time 33848
+290008 >second: otim 18608
+book hit = (NULL)
+290008 >second: c5c4
+290082 <second: # times @ 2567701919
+290083 <second: # 13+11 pieces, centr = (1,1) R=33
+290083 <second:  1    340        0          3 d3c4
+290083 <second:  1    369        0          3 d6c4
+290083 <second:  2    369        0          7 d6c4 b2g2
+290083 <second: # times @ 2567701921: real=2 cpu=10
+290083 <second: # promo = 0 (`) GT = 0
+290083 <second: move d6c4
+290083 >first : time 18608
+290083 >first : otim 34041
+book hit = (NULL)
+290083 >first : d6c4
+290177 <first : [ReceiverXboard] S-a primit MOVE...........................d6c4
+292349 <first : Am timisssssssssssssssss b2a2
+292349 <first : move b2a2
+Interrupting second
+292350 >second: time 34041
+292350 >second: otim 18581
+book hit = (NULL)
+292350 >second: b2a2
+292424 <second: # times @ 2567704260
+292424 <second: # 12+10 pieces, centr = (1,1) R=33
+292424 <second:  1   -393        0          3 d5f7
+292424 <second:  1   -298        0          3 d5e5
+292424 <second:  1    296        0          3 d5f5
+292424 <second:  1    358        0          3 d5a5
+292424 <second:  1    367        0          3 c4d2
+292424 <second:  1    369        0          3 g2g4
+292424 <second:  1    370        0          3 d1g1
+292424 <second:  2    362        0        103 d1g1 h7h5
+292424 <second:  2    370        0        270 d1d2 a2b3
+292424 <second: # times @ 2567704262: real=2 cpu=0
+292424 <second: # promo = 0 (`) GT = 0
+292424 <second: move d1d2
+292425 >first : time 18581
+292425 >first : otim 34233
+book hit = (NULL)
+292425 >first : d1d2
+292498 <first : [ReceiverXboard] S-a primit MOVE...........................d1d2
+295707 <first : Am timisssssssssssssssss a2b3
+295707 <first : move a2b3
+Interrupting second
+295707 >second: time 34233
+295707 >second: otim 18453
+book hit = (NULL)
+295707 >second: a2b3
+295780 <second: # times @ 2567707618
+295780 <second: # 12+10 pieces, centr = (1,1) R=33
+295780 <second:  1   -393        0          3 d5f7
+295780 <second:  1   -224        0          3 d5e5
+295780 <second:  1    370        0          3 d5f5
+295780 <second:  2    362        0        106 d5f5 h7h5
+295780 <second:  2    364        0        227 d5h5 h7h6
+295780 <second:  2    367        0        536 d5a5 e7f6
+295780 <second:  2    506        0       1621 d2b2 b3b2 c4b2 b8b2
+295780 <second: # times @ 2567707620: real=2 cpu=0
+295780 <second: # promo = 0 (`) GT = 0
+295780 <second: move d2b2
+295780 >first : time 18453
+295780 >first : otim 34426
+book hit = (NULL)
+295780 >first : d2b2
+295853 <first : [ReceiverXboard] S-a primit MOVE...........................d2b2
+298075 <first : Am timisssssssssssssssss b3b2
+298075 <first : move b3b2
+Interrupting second
+298075 >second: time 34426
+298075 >second: otim 18423
+book hit = (NULL)
+298075 >second: b3b2
+298149 <second: # times @ 2567709985
+298149 <second: # 11+10 pieces, centr = (1,1) R=31
+298149 <second:  1    507        0          3 c4b2
+298149 <second:  2    507        0          7 c4b2 b8b2
+298149 <second: # times @ 2567709986: real=1 cpu=0
+298149 <second: # promo = 0 (`) GT = 0
+298149 <second: move c4b2
+298149 >first : time 18423
+298149 >first : otim 34618
+book hit = (NULL)
+298149 >first : c4b2
+298242 <first : [ReceiverXboard] S-a primit MOVE...........................c4b2
+299686 <first : Am timisssssssssssssssss b8b2
+299686 <first : move b8b2
+Interrupting second
+299686 >second: time 34618
+299686 >second: otim 18470
+book hit = (NULL)
+299686 >second: b8b2
+299780 <second: # times @ 2567711597
+299780 <second: # 10+9 pieces, centr = (1,1) R=21
+299780 <second:  1   -245        0          3 d5f7
+299780 <second:  1   -157        0          3 d5e5
+299780 <second:  1    444        0          3 d5f5
+299780 <second:  1    518        0          3 d5c4
+299780 <second:  1    520        0          3 g2g4
+299780 <second:  2    511        0         87 g2g4 h7h6
+299780 <second:  2    516        0        606 f4f5 g6h4
+299780 <second: # times @ 2567711597: real=0 cpu=0
+299780 <second: # promo = 0 (`) GT = 0
+299780 <second: move f4f5
+299780 >first : time 18470
+299780 >first : otim 34809
+book hit = (NULL)
+299780 >first : f4f5
+299853 <first : [ReceiverXboard] S-a primit MOVE...........................f4f5
+300813 <first : Am timisssssssssssssssss b2g2
+300813 <first : move b2g2
+Interrupting second
+300813 >second: time 34809
+300813 >second: otim 18566
+book hit = (NULL)
+300813 >second: b2g2
+300907 <second: # times @ 2567712723
+300907 <second: # 9+9 pieces, centr = (1,1) R=21
+300907 <second:  1    602        0          3 f5g6
+300907 <second:  2    603        0          7 f5g6 h7g6
+300907 <second: # times @ 2567712725: real=2 cpu=0
+300907 <second: # promo = 0 (`) GT = 0
+300907 <second: move f5g6
+300907 >first : time 18566
+300907 >first : otim 35000
+book hit = (NULL)
+300907 >first : f5g6
+300980 <first : [ReceiverXboard] S-a primit MOVE...........................f5g6
+303550 <first : Am timisssssssssssssssss g2g6
+303550 <first : move g2g6
+Interrupting second
+303550 >second: time 35000
+303550 >second: otim 18502
+book hit = (NULL)
+303550 >second: g2g6
+303647 <second: # times @ 2567715460
+303647 <second: # 8+8 pieces, centr = (1,1) R=17
+303647 <second:  1   -134        0          3 d5f7
+303647 <second:  1    333        0          3 d5e5
+303647 <second:  1    629        0          3 d5c4
+303647 <second:  1    630        0          3 e3f4
+303647 <second:  1    632        0          3 h2h4
+303647 <second:  2    620        0         53 h2h4 h7h5
+303647 <second:  2    626        0        213 h1f1 e7f6
+303647 <second:  2    629        0        503 h1a1 g6g2
+303647 <second: # times @ 2567715461: real=1 cpu=10
+303647 <second: # promo = 0 (`) GT = 0
+303647 <second: move h1a1
+303648 >first : time 18502
+303648 >first : otim 35190
+book hit = (NULL)
+303648 >first : h1a1
+303742 <first : [ReceiverXboard] S-a primit MOVE...........................h1a1
+305371 <first : Am timisssssssssssssssss g6d6
+305371 <first : move g6d6
+Interrupting second
+305371 >second: time 35190
+305371 >second: otim 18530
+book hit = (NULL)
+305371 >second: g6d6
+305464 <second: # times @ 2567717282
+305464 <second: # 8+8 pieces, centr = (1,1) R=17
+305464 <second:  1    231        0          3 d5d6
+305464 <second:  1    301        0          3 a1a6
+305464 <second:  2    301        0          7 a1a6 d6d5
+305464 <second: # times @ 2567717282: real=0 cpu=0
+305464 <second: # promo = 0 (`) GT = 0
+305464 <second: move a1a6
+305464 >first : time 18530
+305464 >first : otim 35381
+book hit = (NULL)
+305464 >first : a1a6
+305558 <first : [ReceiverXboard] S-a primit MOVE...........................a1a6
+306073 <first : Am timisssssssssssssssss d6d5
+306073 <first : move d6d5
+Interrupting second
+306073 >second: time 35381
+306073 >second: otim 18669
+book hit = (NULL)
+306073 >second: d6d5
+306147 <second: # times @ 2567717983
+306147 <second: # 7+7 pieces, centr = (1,1) R=14
+306147 <second:  1    301        0          3 c6d5
+306147 <second:  2    288        0         33 c6d5 h7h5
+306147 <second: # times @ 2567717983: real=0 cpu=0
+306147 <second: # promo = 0 (`) GT = 0
+306147 <second: move c6d5
+306147 >first : time 18669
+306147 >first : otim 35573
+book hit = (NULL)
+306147 >first : c6d5
+306222 <first : [ReceiverXboard] S-a primit MOVE...........................c6d5
+306819 <first : Am timisssssssssssssssss f8g8
+306819 <first : move f8g8
+Interrupting second
+306819 >second: time 35573
+306819 >second: otim 18801
+book hit = (NULL)
+306819 >second: f8g8
+306893 <second: # times @ 2567718730
+306893 <second: # 7+6 pieces, centr = (1,1) R=10
+306893 <second:  1     79        0          3 d5f7
+306893 <second:  1    293        0          3 d5c4
+306893 <second:  1    295        0          3 e4e5
+306893 <second:  1    297        0          3 c3c4
+306893 <second:  1    299        0          3 h2h3
+306893 <second:  2    285        0         25 h2h3 h7h5
+306893 <second:  2    312        0        289 a6a7 g8f8
+306893 <second: # times @ 2567718730: real=0 cpu=0
+306893 <second: # promo = 0 (`) GT = 0
+306893 <second: move a6a7
+306893 >first : time 18801
+306893 >first : otim 35766
+book hit = (NULL)
+306893 >first : a6a7
+306966 <first : [ReceiverXboard] S-a primit MOVE...........................a6a7
+307378 <first : Am timisssssssssssssssss e7d6
+307378 <first : move e7d6
+Interrupting second
+307378 >second: time 35766
+307378 >second: otim 18953
+book hit = (NULL)
+307378 >second: e7d6
+307451 <second: # times @ 2567719288
+307451 <second: # 7+6 pieces, centr = (1,1) R=10
+307451 <second:  1    361        0          3 d5f7
+307451 <second:  2    385        0        126 d5f7 g8f8 h2h4
+307451 <second: # times @ 2567719288: real=0 cpu=0
+307451 <second: # promo = 0 (`) GT = 0
+307451 <second: move d5f7
+307451 >first : time 18953
+307451 >first : otim 35958
+book hit = (NULL)
+307451 >first : d5f7
+307545 <first : [ReceiverXboard] S-a primit MOVE...........................d5f7
+307552 <first : Am timisssssssssssssssss g8f8
+307552 <first : move g8f8
+Interrupting second
+307552 >second: time 35958
+307552 >second: otim 19143
+book hit = (NULL)
+307552 >second: g8f8
+307627 <second: # times @ 2567719462
+307627 <second: # 7+5 pieces, centr = (1,1) R=10
+307627 <second:  1    385        0          3 h2h4
+307627 <second:  2    370        0         37 h2h4 h7h5
+307627 <second:  2    531        0        294 a7a8 f8f7 a8h8
+307627 <second: # times @ 2567719462: real=0 cpu=0
+307627 <second: # promo = 0 (`) GT = 0
+307627 <second: move a7a8
+307627 >first : time 19143
+307627 >first : otim 36151
+book hit = (NULL)
+307627 >first : a7a8
+307700 <first : [ReceiverXboard] S-a primit MOVE...........................a7a8
+307885 <first : Am timisssssssssssssssss f8f7
+307885 <first : move f8f7
+Interrupting second
+307885 >second: time 36151
+307885 >second: otim 19317
+book hit = (NULL)
+307885 >second: f8f7
+307958 <second: # times @ 2567719795
+307958 <second: # 6+5 pieces, centr = (1,1) R=9
+307958 <second:  1    531        0          3 a8h8
+307958 <second:  2    515        0         95 a8h8 h7h6
+307958 <second: # times @ 2567719796: real=1 cpu=0
+307958 <second: # promo = 0 (`) GT = 0
+307958 <second: move a8h8
+307958 >first : time 19317
+307958 >first : otim 36344
+book hit = (NULL)
+307958 >first : a8h8
+308052 <first : [ReceiverXboard] S-a primit MOVE...........................a8h8
+308130 <first : Am timisssssssssssssssss h7h6
+308130 <first : move h7h6
+Interrupting second
+308130 >second: time 36344
+308130 >second: otim 19500
+book hit = (NULL)
+308130 >second: h7h6
+308204 <second: # times @ 2567720041
+308204 <second: # 6+4 pieces, centr = (1,1) R=4
+308204 <second:  1    362        1         23 e3h6 g7h6 h8h6
+308204 <second:  1    451        1         35 e3d2 d6h2
+308204 <second:  1    504        1         57 e3g1
+308204 <second:  1    524        1         91 h2h4
+308204 <second:  2    519        1        167 h2h4 f7e6
+308204 <second: # times @ 2567720056: real=15 cpu=20
+308204 <second: # promo = 0 (`) GT = 0
+308204 <second: move h2h4
+308204 >first : time 19500
+308204 >first : otim 36536
+book hit = (NULL)
+308204 >first : h2h4
+308277 <first : [ReceiverXboard] S-a primit MOVE...........................h2h4
+308465 <first : Am timisssssssssssssssss d6g3
+308465 <first : move d6g3
+Interrupting second
+308465 >second: time 36536
+308465 >second: otim 19674
+book hit = (NULL)
+308465 >second: d6g3
+308559 <second: # times @ 2567720375
+308559 <second: # 6+4 pieces, centr = (1,1) R=4
+308559 <second:  1    362        0          3 e3h6
+308559 <second:  1    442        0          3 e3d2
+308559 <second:  1    448        0          3 e3d4
+308559 <second:  1    512        0          3 h8h7
+308559 <second:  1    518        0          3 h4h5
+308559 <second:  2    512        0         59 h4h5 g3e5
+308559 <second: # times @ 2567720376: real=1 cpu=0
+308559 <second: # promo = 0 (`) GT = 0
+308559 <second: move h4h5
+308559 >first : time 19674
+308559 >first : otim 36727
+book hit = (NULL)
+308559 >first : h4h5
+308632 <first : [ReceiverXboard] S-a primit MOVE...........................h4h5
+308776 <first : Am timisssssssssssssssss f7e7
+308776 <first : move f7e7
+Interrupting second
+308776 >second: time 36727
+308776 >second: otim 19852
+book hit = (NULL)
+308776 >second: f7e7
+308849 <second: # times @ 2567720686
+308849 <second: # 6+4 pieces, centr = (1,1) R=4
+308849 <second:  1    362        0          3 e3h6
+308849 <second:  1    513        0          3 e3d2
+308849 <second:  1    519        0          3 e3d4
+308849 <second:  1    520        0          3 c3c4
+308849 <second:  2    514        0         51 c3c4 g3e5
+308849 <second:  2    516        0        269 d3d4 e7e6
+308849 <second:  2    519        0        482 e3d4 e7f7
+308849 <second: # times @ 2567720687: real=1 cpu=0
+308849 <second: # promo = 0 (`) GT = 0
+308849 <second: move e3d4
+308849 >first : time 19852
+308849 >first : otim 36920
+book hit = (NULL)
+308849 >first : e3d4
+308923 <first : [ReceiverXboard] S-a primit MOVE...........................e3d4
+309220 <first : Am timisssssssssssssssss e7f7
+309220 <first : move e7f7
+Interrupting second
+309220 >second: time 36920
+309220 >second: otim 20015
+book hit = (NULL)
+309220 >second: e7f7
+309294 <second: # times @ 2567721130
+309294 <second: # 6+4 pieces, centr = (1,1) R=4
+309294 <second:  1    290        0          3 d4g7
+309294 <second:  1    503        0          3 d4g1
+309294 <second:  1    515        0          3 d4c5
+309294 <second:  1    518        0          3 e4e5
+309294 <second:  1    520        0          3 c3c4
+309294 <second:  2    515        0         65 c3c4 g3f4
+309294 <second:  2    516        0        137 d3e3 g3d6
+309294 <second:  2    586        0        506 h8h7 g3f4 h7g7
+309294 <second: # times @ 2567721131: real=1 cpu=0
+309294 <second: # promo = 0 (`) GT = 0
+309294 <second: move h8h7
+309294 >first : time 20015
+309294 >first : otim 37112
+book hit = (NULL)
+309294 >first : h8h7
+309366 <first : [ReceiverXboard] S-a primit MOVE...........................h8h7
+309536 <first : Am timisssssssssssssssss g3d6
+309536 <first : move g3d6
+Interrupting second
+309536 >second: time 37112
+309536 >second: otim 20191
+book hit = (NULL)
+309536 >second: g3d6
+309630 <second: # times @ 2567721447
+309630 <second: # 6+4 pieces, centr = (1,1) R=4
+309630 <second:  1    589        0          3 h7g7
+309630 <second:  2    587        0          9 h7g7 f7e6
+309630 <second:  2    651        0        224 d4g7 f7e6 h7h6
+309630 <second: # times @ 2567721447: real=0 cpu=0
+309630 <second: # promo = 0 (`) GT = 0
+309630 <second: move d4g7
+309631 >first : time 20191
+309631 >first : otim 37303
+book hit = (NULL)
+309631 >first : d4g7
+309725 <first : [ReceiverXboard] S-a primit MOVE...........................d4g7
+309725 <first : Am timisssssssssssssssss f7g8
+309725 <first : move f7g8
+Interrupting second
+309725 >second: time 37303
+309725 >second: otim 20381
+book hit = (NULL)
+309725 >second: f7g8
+309802 <second: # times @ 2567721635
+309802 <second: # 6+3 pieces, centr = (1,1) R=3
+309802 <second:  1    668        0          3 h7h6
+309802 <second:  2    660        0         13 h7h6 g8f7 h6d6 f7g7
+309802 <second: # times @ 2567721635: real=0 cpu=0
+309802 <second: # promo = 0 (`) GT = 0
+309802 <second: move h7h6
+309802 >first : time 20381
+309802 >first : otim 37495
+book hit = (NULL)
+309802 >first : h7h6
+309875 <first : [ReceiverXboard] S-a primit MOVE...........................h7h6
+309875 <first : Am timisssssssssssssssss g8g7
+309875 <first : move g8g7
+Interrupting second
+309875 >second: time 37495
+309875 >second: otim 20574
+book hit = (NULL)
+309875 >second: g8g7
+309948 <second: # times @ 2567721785
+309948 <second: # 5+2 pieces, centr = (1,1) R=3
+309948 <second:  1    668        0          3 h6d6
+309948 <second:  2    663        0         12 h6d6 g7f7
+309948 <second: # times @ 2567721785: real=0 cpu=0
+309948 <second: # promo = 0 (`) GT = 0
+309948 <second: move h6d6
+309949 >first : time 20574
+309949 >first : otim 37688
+book hit = (NULL)
+309949 >first : h6d6
+310041 <first : [ReceiverXboard] S-a primit MOVE...........................h6d6
+310041 <first : Am timisssssssssssssssss g7f7
+310041 <first : move g7f7
+Interrupting second
+310041 >second: time 37688
+310041 >second: otim 20765
+book hit = (NULL)
+310041 >second: g7f7
+310114 <second: # times @ 2567721952
+310114 <second: # 5+1 pieces, centr = (1,1) R=4
+310114 <second:  1    728        1          7 h5h6
+310114 <second:  2    727        1         17 h5h6 f7e7
+310114 <second: # times @ 2567721966: real=14 cpu=10
+310114 <second: # promo = 0 (`) GT = 0
+310114 <second: move h5h6
+310114 >first : time 20765
+310114 >first : otim 37880
+book hit = (NULL)
+310114 >first : h5h6
+310188 <first : [ReceiverXboard] S-a primit MOVE...........................h5h6
+310188 <first : Am timisssssssssssssssss f7g8
+310188 <first : move f7g8
+Interrupting second
+310188 >second: time 37880
+310188 >second: otim 20957
+book hit = (NULL)
+310188 >second: f7g8
+310262 <second: # times @ 2567722099
+310262 <second: # 5+1 pieces, centr = (1,1) R=4
+310262 <second:  1    732        1          7 c3c4
+310262 <second:  2    723        1         20 c3c4 g8f7
+310262 <second:  2    729        1        102 d6f6 g8h7
+310262 <second: # times @ 2567722112: real=13 cpu=20
+310262 <second: # promo = 0 (`) GT = 0
+310262 <second: move d6f6
+310262 >first : time 20957
+310262 >first : otim 38073
+book hit = (NULL)
+310262 >first : d6f6
+310335 <first : [ReceiverXboard] S-a primit MOVE...........................d6f6
+310335 <first : Am timisssssssssssssssss g8h8
+310335 <first : move g8h8
+Interrupting second
+310335 >second: time 38073
+310335 >second: otim 21150
+book hit = (NULL)
+310335 >second: g8h8
+310409 <second: # times @ 2567722246
+310409 <second: # 5+1 pieces, centr = (1,1) R=4
+310409 <second:  1    732        1          7 c3c4
+310409 <second:  2    734        1        228 c3c4 h8h7 c4c5 h7g8
+310410 <second:  2    785        1       2103 e4e5 h8h7 e5e6 h7g8
+310410 <second: # times @ 2567722262: real=16 cpu=10
+310410 <second: # promo = 0 (`) GT = 0
+310410 <second: move e4e5
+310410 >first : time 21150
+310410 >first : otim 38266
+book hit = (NULL)
+310410 >first : e4e5
+310483 <first : [ReceiverXboard] S-a primit MOVE...........................e4e5
+310484 <first : Am timisssssssssssssssss h8h7
+310484 <first : move h8h7
+Interrupting second
+310484 >second: time 38266
+310484 >second: otim 21343
+book hit = (NULL)
+310484 >second: h8h7
+310556 <second: # times @ 2567722394
+310557 <second: # 5+1 pieces, centr = (1,1) R=4
+310557 <second:  1    792        1          7 e5e6
+310557 <second:  2    792        1         15 e5e6 h7g8
+310557 <second: # times @ 2567722410: real=16 cpu=10
+310557 <second: # promo = 0 (`) GT = 0
+310557 <second: move e5e6
+310557 >first : time 21343
+310557 >first : otim 38458
+book hit = (NULL)
+310557 >first : e5e6
+310629 <first : [ReceiverXboard] S-a primit MOVE...........................e5e6
+310629 <first : Am timisssssssssssssssss h7g8
+310629 <first : move h7g8
+Interrupting second
+310629 >second: time 38458
+310629 >second: otim 21535
+book hit = (NULL)
+310629 >second: h7g8
+310703 <second: # times @ 2567722539
+310703 <second: # 5+1 pieces, centr = (1,1) R=4
+310703 <second:  1    854        1          7 e6e7
+310703 <second:  2    853        1         18 e6e7 g8h7
+310703 <second: # times @ 2567722550: real=11 cpu=10
+310703 <second: # promo = 0 (`) GT = 0
+310703 <second: move e6e7
+310703 >first : time 21535
+310703 >first : otim 38651
+book hit = (NULL)
+310703 >first : e6e7
+310776 <first : [ReceiverXboard] S-a primit MOVE...........................e6e7
+310777 <first : Am timisssssssssssssssss g8h7
+310777 <first : move g8h7
+Interrupting second
+310777 >second: time 38651
+310777 >second: otim 21728
+book hit = (NULL)
+310777 >second: g8h7
+310850 <second: # times @ 2567722687
+310850 <second: # 5+1 pieces, centr = (1,1) R=4
+310850 <second:  1   1507        2          7 e7e8
+310850 <second:  2      0        2         15 e7e8
+310850 <second:  2    405        2         22 f6g6 h7g6
+310850 <second:  2    716        2         29 f6f5 h7h6
+310850 <second:  2    858        2         69 f6e6 h7g8
+310850 <second:  2    860        2        142 c3c4 h7g8
+310850 <second:  2    861        2        208 d3e4 h7g8
+310850 <second: # times @ 2567722708: real=21 cpu=20
+310850 <second: # promo = 0 (`) GT = 0
+310850 <second: move d3e4
+310850 >first : time 21728
+310850 >first : otim 38844
+book hit = (NULL)
+310850 >first : d3e4
+310922 <first : [ReceiverXboard] S-a primit MOVE...........................d3e4
+310922 <first : Am timisssssssssssssssss h7g8
+310922 <first : move h7g8
+Interrupting second
+310922 >second: time 38844
+310922 >second: otim 21921
+book hit = (NULL)
+310922 >second: h7g8
+310995 <second: # times @ 2567722833
+310995 <second: # 5+1 pieces, centr = (1,1) R=4
+310995 <second:  1   1507        1          7 e7e8
+310995 <second:  2   1506        1         16 e7e8 g8h7
+310995 <second: # times @ 2567722846: real=13 cpu=20
+310995 <second: # promo = 7 (q) GT = 0
+310995 <second: move e7e8q
+310995 >first : time 21921
+310995 >first : otim 39036
+book hit = (NULL)
+310995 >first : e7e8q
+311069 <first : [ReciverXboard] S-a primit PROMOTION
+311069 <first : Am timisssssssssssssssss g8h7
+311069 <first : move g8h7
+Interrupting second
+311070 >second: time 39036
+311070 >second: otim 22113
+book hit = (NULL)
+311070 >second: g8h7
+311144 <second: # times @ 2567722980
+311145 <second: # 5+1 pieces, centr = (1,1) R=4
+311145 <second:  1   1515        2          7 c3c4
+311145 <second:  2      0        2         15 c3c4
+311145 <second:  2    663        2         31 e8g8 h7g8
+311145 <second:  2    668        2         37 e8h8 h7h8
+311145 <second:  2   1513        2         48 e8e7 h7g8
+311145 <second:  2   1518        2         59 e8e6 h7h8
+311145 <second: # times @ 2567723004: real=24 cpu=20
+311145 <second: # promo = 0 (`) GT = 0
+311145 <second: move e8e6
+311145 >first : time 22113
+311145 >first : otim 39229
+book hit = (NULL)
+311146 >first : e8e6
+311220 <first : [ReceiverXboard] S-a primit MOVE...........................e8e6
+311220 <first : Am timisssssssssssssssss h7h8
+311220 <first : move h7h8
+Interrupting second
+311220 >second: time 39229
+311220 >second: otim 22306
+book hit = (NULL)
+311220 >second: h7h8
+311293 <second: # times @ 2567723131
+311293 <second: # 5+1 pieces, centr = (1,1) R=4
+311293 <second:  1   1515        0          7 c3c4
+311293 <second:  2   1514        1        333 c3c4 h8h7 c4c5 h7h8
+311293 <second:  2 100002        1       1897 e6f5 h8g8 f6f8
+311293 <second: # times @ 2567723142: real=11 cpu=10
+311293 <second: # promo = 0 (`) GT = 0
+311293 <second: move e6f5
+311293 >first : time 22306
+311293 >first : otim 39421
+book hit = (NULL)
+311293 >first : e6f5
+311367 <first : [ReceiverXboard] S-a primit MOVE...........................e6f5
+311367 <first : Am timisssssssssssssssss h8g8
+311367 <first : move h8g8
+Interrupting second
+311367 >second: time 39421
+311367 >second: otim 22498
+book hit = (NULL)
+311367 >second: h8g8
+311441 <second: # times @ 2567723277
+311442 <second: # 5+1 pieces, centr = (1,1) R=4
+311442 <second:  1   1573        1          5 h6h7
+311442 <second:  2   1567        1         11 h6h7 g8g7
+311442 <second:  2 100001        1        224 f6f8
+311442 <second: # times @ 2567723296: real=19 cpu=20
+311442 <second: # promo = 0 (`) GT = 0
+311442 <second: move f6f8
+311442 >first : f6f8
+GameEnds(26, Xboard adjudication: Checkmate, 4)
+GE(26, Xboard adjudication: Checkmate, 4) bare king k=5 color=0
+311443 >first : result 1-0 {Xboard adjudication: Checkmate}
+Interrupting second
+311443 >second: result 1-0 {Xboard adjudication: Checkmate}
+311443 >first : quit
+311471 >second: force
+311471 >second: ping 4
+311543 <second: 1-0 {White mates}
+311543 <second: Error (unknown command): result
+311543 <second: pong 4
+Reset(0, 0) from gameMode 8
+recognized 'normal' (-1) as variant normal
+GameEnds(0, (null), 2)
+shuffleOpenings = 0
+StartChildProcess (dir=".") make run
+311546 >first : xboard
+protover 2
+311551 <first : make[1]: Entering directory '/home/stefan/chess-bot/l2-pa-project-MSP-Band/Chess_MSP-Band/src'
+311551 <first : javac Main.java
+312294 <first : java Main
+312377 <first : [ReceiverXboard] S-a primit XBOARD
+321556 >first : new
+random
+321556 >first : level 0 5 2
+321556 >first : post
+321556 >first : hard
+Feeding moves 0 through 0 to first chess program
+321556 >first : force
+321556 >second: memory 68
+321556 >second: new
+random
+sd 2
+321556 >second: level 0 5 2
+321556 >second: post
+321556 >second: hard
+321556 >second: ping 5
+321556 >second: force
+321557 <first : [ReceiverXboard] S-a primit NEW
+321557 <first : feature sigint=0 sigterm=0 done=1 colors=0
+321557 >first : accepted sigint
+321557 >first : accepted sigterm
+321557 >first : accepted done
+321557 >first : accepted colors
+321566 <first : [ReceiverXboard] S-a primit FORCE
+321579 <second: pong 5
+New game (3): make-Fairy-Max 5.0b (w)
+321580 >first : computer
+321580 >second: computer
+321580 >first : time 30000
+321580 >first : otim 30000
+book hit = (NULL)
+321580 >first : go
+nps: w=-1, b=-1
+321581 <second: Error (unknown command): computer
+321581 <first : [ReceiverXboard] S-a primit GO
+322773 <first : Am timisssssssssssssssss g1f3
+322773 <first : move g1f3
+322773 >second: time 30000
+322773 >second: otim 30080
+book hit = (NULL)
+322773 >second: g1f3
+322773 >second: black
+322773 >second: go
+322869 <second: # times @ 2567734684
+322869 <second: # 16+16 pieces, centr = (1,1) R=40
+322869 <second:  1     15        0          3 c7c5
+322869 <second:  1     29        0          5 f7f5
+322869 <second:  2     -9        0         13 f7f5 c2c4
+322869 <second:  2      1        0         22 f7f6 c2c4
+322869 <second:  2      3        0         45 h7h5 c2c4
+322869 <second:  2      4        0         77 g8f6 c2c4
+322869 <second:  2      7        0        143 d7d5 d2d4
+322869 <second: # times @ 2567734684: real=0 cpu=0
+322869 <second: # promo = 0 (`) GT = 0
+322869 <second: move d7d5
+322869 >first : time 30080
+322869 >first : otim 30190
+book hit = (NULL)
+322869 >first : d7d5
+322944 <first : [ReceiverXboard] S-a primit MOVE...........................d7d5
+324896 <first : Am timisssssssssssssssss b1c3
+324896 <first : move b1c3
+Interrupting second
+324896 >second: time 30190
+324896 >second: otim 30078
+book hit = (NULL)
+324896 >second: b1c3
+324989 <second: # times @ 2567736806
+324989 <second: # 16+16 pieces, centr = (1,1) R=40
+324989 <second:  1     15        0          3 c7c5
+324989 <second:  1     19        0          9 c7c6
+324989 <second:  1     27        0         15 b8c6
+324989 <second:  1     29        0         21 c8f5
+324989 <second:  2      7        0         69 c8f5 d2d4
+324989 <second:  2     11        0        398 c7c6 d2d4
+324989 <second:  2     14        0        715 b8c6 d2d4
+324989 <second: # times @ 2567736807: real=1 cpu=0
+324989 <second: # promo = 0 (`) GT = 0
+324989 <second: move b8c6
+324989 >first : time 30078
+324989 >first : otim 30381
+book hit = (NULL)
+324989 >first : b8c6
+325083 <first : [ReceiverXboard] S-a primit MOVE...........................b8c6
+329345 <first : Am timisssssssssssssssss d2d3
+329345 <first : move d2d3
+Interrupting second
+329346 >second: time 30381
+329346 >second: otim 29842
+book hit = (NULL)
+329346 >second: d2d3
+329418 <second: # times @ 2567741256
+329418 <second: # 16+16 pieces, centr = (1,1) R=40
+329418 <second:  1      5        0          3 a7a5
+329418 <second:  1     19        0         13 e7e5
+329418 <second:  1     21        0         19 f7f5
+329418 <second:  2    -24        0         53 f7f5 c1f4
+329418 <second:  2    -20        0         94 f7f6 c1f4
+329418 <second:  2      4        0        144 g7g6 c1f4
+329418 <second: # times @ 2567741257: real=1 cpu=0
+329418 <second: # promo = 0 (`) GT = 0
+329418 <second: move g7g6
+329418 >first : time 29842
+329418 >first : otim 30573
+book hit = (NULL)
+329418 >first : g7g6
+329497 <first : [ReceiverXboard] S-a primit MOVE...........................g7g6
+333200 <first : Am timisssssssssssssssss c1f4
+333200 <first : move c1f4
+Interrupting second
+333201 >second: time 30573
+333201 >second: otim 29664
+book hit = (NULL)
+333201 >second: c1f4
+333294 <second: # times @ 2567745111
+333294 <second: # 16+16 pieces, centr = (1,1) R=40
+333294 <second:  1      6        0          3 a7a5
+333294 <second:  1     14        0          3 c8e6
+333294 <second:  1     15        0          3 c8f5
+333294 <second:  2      9        0         69 c8f5 a2a4
+333294 <second: # times @ 2567745113: real=2 cpu=10
+333294 <second: # promo = 0 (`) GT = 0
+333294 <second: move c8f5
+333294 >first : time 29664
+333294 >first : otim 30764
+book hit = (NULL)
+333294 >first : c8f5
+333388 <first : [ReceiverXboard] S-a primit MOVE...........................c8f5
+338642 <first : Am timisssssssssssssssss f4e5
+338642 <first : move f4e5
+Interrupting second
+338642 >second: time 30764
+338642 >second: otim 29329
+book hit = (NULL)
+338642 >second: f4e5
+338715 <second: # times @ 2567750553
+338715 <second: # 16+16 pieces, centr = (1,1) R=40
+338715 <second:  1     39        0          3 c6e5
+338715 <second:  2     40        0          7 c6e5 f3e5
+338715 <second: # times @ 2567750554: real=1 cpu=0
+338715 <second: # promo = 0 (`) GT = 0
+338715 <second: move c6e5
+338715 >first : time 29329
+338715 >first : otim 30957
+book hit = (NULL)
+338715 >first : c6e5
+338808 <first : [ReceiverXboard] S-a primit MOVE...........................c6e5
+346495 <first : Am timisssssssssssssssss f3e5
+346495 <first : move f3e5
+Interrupting second
+346495 >second: time 30957
+346495 >second: otim 28751
+book hit = (NULL)
+346495 >second: f3e5
+346588 <second: # times @ 2567758405
+346589 <second: # 15+15 pieces, centr = (1,1) R=36
+346589 <second:  1   -204        0          3 f5d3
+346589 <second:  1     36        0          3 f5e6
+346589 <second:  1     37        0          3 a8b8
+346589 <second:  1     40        0          3 f8g7
+346589 <second:  1     50        0          3 g8f6
+346589 <second:  1     53        0          3 c7c5
+346589 <second:  2     46        0         53 c7c5 a2a4
+346589 <second: # times @ 2567758406: real=1 cpu=0
+346589 <second: # promo = 0 (`) GT = 0
+346589 <second: move c7c5
+346589 >first : time 28751
+346589 >first : otim 31147
+book hit = (NULL)
+346589 >first : c7c5
+346668 <first : [ReceiverXboard] S-a primit MOVE...........................c7c5
+349415 <first : Am timisssssssssssssssss g2g4
+349415 <first : move g2g4
+Interrupting second
+349415 >second: time 31147
+349415 >second: otim 28668
+book hit = (NULL)
+349415 >second: g2g4
+349488 <second: # times @ 2567761326
+349488 <second: # 15+15 pieces, centr = (1,1) R=36
+349488 <second:  1   -204        0          3 f5d3
+349488 <second:  1   -184        0          3 f5g4
+349488 <second:  1     36        0          3 f5e6
+349488 <second:  2     29        0         75 f5e6 a2a4
+349488 <second: # times @ 2567761327: real=1 cpu=0
+349488 <second: # promo = 0 (`) GT = 0
+349488 <second: move f5e6
+349488 >first : time 28668
+349488 >first : otim 31340
+book hit = (NULL)
+349489 >first : f5e6
+349561 <first : [ReceiverXboard] S-a primit MOVE...........................f5e6
+351581 <first : Am timisssssssssssssssss d3d4
+351581 <first : move d3d4
+Interrupting second
+351581 >second: time 31340
+351581 >second: otim 28659
+book hit = (NULL)
+351581 >second: d3d4
+351655 <second: # times @ 2567763492
+351655 <second: # 15+15 pieces, centr = (1,1) R=36
+351655 <second:  1     32        0          3 c5d4
+351655 <second:  1     37        0          3 a8c8
+351655 <second:  1     40        0          3 f8g7
+351655 <second:  1     42        0          3 f7f6
+351655 <second:  1     44        0          3 h7h5
+351655 <second:  2     37        0        227 h7h5 f2f4
+351655 <second:  2     46        0       1564 d8b6 c3a4
+351655 <second:  2     53        0       2517 f7f6 e5f3 e6g4 d4c5
+351655 <second: # times @ 2567763496: real=4 cpu=0
+351656 <second: # promo = 0 (`) GT = 0
+351656 <second: move f7f6
+351656 >first : time 28659
+351656 >first : otim 31532
+book hit = (NULL)
+351656 >first : f7f6
+351728 <first : [ReceiverXboard] S-a primit MOVE...........................f7f6
+354894 <first : Am timisssssssssssssssss e5g6
+354894 <first : move e5g6
+Interrupting second
+354894 >second: time 31532
+354894 >second: otim 28535
+book hit = (NULL)
+354894 >second: e5g6
+354988 <second: # times @ 2567766805
+354988 <second: # 15+14 pieces, centr = (1,1) R=36
+354988 <second:  1    160        0          3 h7g6
+354988 <second:  2    160        0          7 h7g6 d4c5
+354988 <second: # times @ 2567766806: real=1 cpu=10
+354988 <second: # promo = 0 (`) GT = 0
+354988 <second: move h7g6
+354988 >first : time 28535
+354988 >first : otim 31723
+book hit = (NULL)
+354988 >first : h7g6
+355063 <first : [ReceiverXboard] S-a primit MOVE...........................h7g6
+362495 <first : Am timisssssssssssssssss d1d3
+362495 <first : move d1d3
+Interrupting second
+362495 >second: time 31723
+362495 >second: otim 27985
+book hit = (NULL)
+362495 >second: d1d3
+362569 <second: # times @ 2567774408
+362569 <second: # 14+14 pieces, centr = (1,1) R=33
+362569 <second:  1    218        0          3 c5d4
+362569 <second:  1    220        0          3 e6g4
+362569 <second:  2    220        0          7 e6g4 d3g6
+362569 <second: # times @ 2567774408: real=0 cpu=0
+362569 <second: # promo = 0 (`) GT = 0
+362569 <second: move e6g4
+362570 >first : time 27985
+362570 >first : otim 31916
+book hit = (NULL)
+362570 >first : e6g4
+362664 <first : [ReceiverXboard] S-a primit MOVE...........................e6g4
+366734 <first : Am timisssssssssssssssss d3g6
+366734 <first : move d3g6
+Interrupting second
+366735 >second: time 31916
+366735 >second: otim 27768
+book hit = (NULL)
+366735 >second: d3g6
+366828 <second: # times @ 2567778645
+366828 <second: # 13+13 pieces, centr = (1,1) R=33
+366828 <second:  1    -89        0          3 e8d7
+366828 <second:  2   -130        0        467 e8d7 g6g4 d7d6 e1c1
+366828 <second: # times @ 2567778647: real=2 cpu=0
+366828 <second: # promo = 0 (`) GT = 0
+366828 <second: move e8d7
+366828 >first : time 27768
+366828 >first : otim 32106
+book hit = (NULL)
+366828 >first : e8d7
+366901 <first : [ReceiverXboard] S-a primit MOVE...........................e8d7
+367239 <first : Am timisssssssssssssssss g6g4
+367239 <first : move g6g4
+Interrupting second
+367239 >second: time 32106
+367239 >second: otim 27927
+book hit = (NULL)
+367240 >second: g6g4
+367313 <second: # times @ 2567779150
+367313 <second: # 13+12 pieces, centr = (1,1) R=32
+367313 <second:  1   -131        0          3 d7d6
+367313 <second:  2   -127        0       1420 d7d6 d4c5 d6c5 e1c1
+367313 <second: # times @ 2567779153: real=3 cpu=0
+367313 <second: # promo = 0 (`) GT = 0
+367313 <second: move d7d6
+367313 >first : time 27927
+367313 >first : otim 32299
+book hit = (NULL)
+367313 >first : d7d6
+367389 <first : [ReceiverXboard] S-a primit MOVE...........................d7d6
+371057 <first : Am timisssssssssssssssss d4c5
+371057 <first : move d4c5
+Interrupting second
+371057 >second: time 32299
+371057 >second: otim 27753
+book hit = (NULL)
+371057 >second: d4c5
+371130 <second: # times @ 2567782967
+371130 <second: # 13+11 pieces, centr = (1,1) R=32
+371130 <second:  1   -127        0          3 d6c5
+371130 <second:  2   -138        0       1362 d6c5 b2b4 c5d6 e1c1
+371130 <second: # times @ 2567782970: real=3 cpu=10
+371130 <second: # promo = 0 (`) GT = 0
+371130 <second: move d6c5
+371130 >first : time 27753
+371130 >first : otim 32492
+book hit = (NULL)
+371130 >first : d6c5
+371203 <first : [ReceiverXboard] S-a primit MOVE...........................d6c5
+373865 <first : Am timisssssssssssssssss g4e6
+373865 <first : move g4e6
+Interrupting second
+373865 >second: time 32492
+373865 >second: otim 27679
+book hit = (NULL)
+373865 >second: g4e6
+373958 <second: # times @ 2567785775
+373958 <second: # 12+11 pieces, centr = (1,1) R=32
+373958 <second:  1   -444        0          3 h8h2
+373958 <second:  1   -353        0          3 h8h7
+373958 <second:  1   -333        0          3 h8h4
+373959 <second:  1    -75        0          3 a7a5
+373959 <second:  1    -74        0          3 a8b8
+373959 <second:  1    -71        0          3 f8g7
+373959 <second:  1    -69        0          3 g8h6
+373959 <second:  2    -95        0         39 g8h6 e1c1
+373959 <second:  2    -78        0        831 d8d6 e6d6
+373959 <second: # times @ 2567785777: real=2 cpu=0
+373959 <second: # promo = 0 (`) GT = 0
+373959 <second: move d8d6
+373959 >first : time 27679
+373959 >first : otim 32682
+book hit = (NULL)
+373959 >first : d8d6
+374032 <first : [ReceiverXboard] S-a primit MOVE...........................d8d6
+382925 <first : Am timisssssssssssssssss c3a4
+382925 <first : move c3a4
+Interrupting second
+382925 >second: time 32682
+382925 >second: otim 26983
+book hit = (NULL)
+382925 >second: c3a4
+383020 <second: # times @ 2567794836
+383020 <second: # 12+11 pieces, centr = (1,1) R=32
+383020 <second:  1    -98        0          3 c5c4
+383020 <second:  2   -130        0       1247 c5c4 b2b3 c4b4 c2c3
+383020 <second:  2   -115        0       2253 c5b4 e6g4 d5d4 a4c3
+383020 <second:  2   -103        0       2732 c5b5 e6d6 e7d6
+383020 <second:  2   -100        0       3290 c5c6 e6d6 e7d6
+383020 <second: # times @ 2567794841: real=5 cpu=10
+383020 <second: # promo = 0 (`) GT = 0
+383020 <second: move c5c6
+383021 >first : time 26983
+383021 >first : otim 32873
+book hit = (NULL)
+383021 >first : c5c6
+383096 <first : [ReceiverXboard] S-a primit MOVE...........................c5c6
+395115 <first : Am timisssssssssssssssss e6d6
+395115 <first : move e6d6
+Interrupting second
+395115 >second: time 32873
+395115 >second: otim 25973
+book hit = (NULL)
+395115 >second: e6d6
+395188 <second: # times @ 2567807025
+395188 <second: # 12+10 pieces, centr = (1,1) R=22
+395188 <second:  1   -100        0          3 e7d6
+395188 <second:  2   -101        0         29 e7d6 e1c1
+395188 <second: # times @ 2567807025: real=0 cpu=0
+395188 <second: # promo = 0 (`) GT = 0
+395188 <second: move e7d6
+395188 >first : time 25973
+395188 >first : otim 33065
+book hit = (NULL)
+395188 >first : e7d6
+395261 <first : [ReceiverXboard] S-a primit MOVE...........................e7d6
+396656 <first : Am timisssssssssssssssss a4c3
+396657 <first : move a4c3
+Interrupting second
+396657 >second: time 33065
+396657 >second: otim 26026
+book hit = (NULL)
+396657 >second: a4c3
+396751 <second: # times @ 2567808567
+396751 <second: # 11+10 pieces, centr = (1,1) R=20
+396751 <second:  1   -444        0          3 h8h2
+396751 <second:  1    -74        0          3 h8h7
+396751 <second:  1    -72        0          3 a7a5
+396751 <second:  1    -67        0          3 f6f5
+396751 <second:  1    -64        0          3 g8e7
+396751 <second:  2    -90        0         45 g8e7 e1c1
+396751 <second:  2    -84        0        573 d5d4 c3e4
+396751 <second:  2    -83        0        859 f8h6 a2a4
+396751 <second: # times @ 2567808568: real=1 cpu=0
+396751 <second: # promo = 0 (`) GT = 0
+396751 <second: move f8h6
+396751 >first : time 26026
+396751 >first : otim 33256
+book hit = (NULL)
+396751 >first : f8h6
+396845 <first : [ReceiverXboard] S-a primit MOVE...........................f8h6
+397779 <first : Am timisssssssssssssssss e2e4
+397779 <first : move e2e4
+Interrupting second
+397779 >second: time 33256
+397779 >second: otim 26123
+book hit = (NULL)
+397779 >second: e2e4
+397854 <second: # times @ 2567809689
+397854 <second: # 11+10 pieces, centr = (1,1) R=20
+397854 <second:  1    -83        0          3 d5e4
+397854 <second:  1    -78        0          3 d5d4
+397854 <second:  1    -74        0          3 g8e7
+397854 <second:  2    -75        0         14 g8e7 a2a4
+397854 <second: # times @ 2567809690: real=1 cpu=0
+397854 <second: # promo = 0 (`) GT = 0
+397854 <second: move g8e7
+397855 >first : time 26123
+397855 >first : otim 33448
+book hit = (NULL)
+397855 >first : g8e7
+397951 <first : [ReceiverXboard] S-a primit MOVE...........................g8e7
+402209 <first : Am timisssssssssssssssss c3d5
+402209 <first : move c3d5
+Interrupting second
+402209 >second: time 33448
+402209 >second: otim 25888
+book hit = (NULL)
+402209 >second: c3d5
+402303 <second: # times @ 2567814119
+402303 <second: # 11+9 pieces, centr = (1,1) R=20
+402303 <second:  1    -75        0          3 e7d5
+402303 <second:  2    -75        0          7 e7d5 e4d5
+402303 <second: # times @ 2567814120: real=1 cpu=0
+402303 <second: # promo = 0 (`) GT = 0
+402303 <second: move e7d5
+402303 >first : time 25888
+402303 >first : otim 33639
+book hit = (NULL)
+402303 >first : e7d5
+402397 <first : [ReceiverXboard] S-a primit MOVE...........................e7d5
+403970 <first : Am timisssssssssssssssss e4d5
+403970 <first : move e4d5
+Interrupting second
+403970 >second: time 33639
+403970 >second: otim 25921
+book hit = (NULL)
+403970 >second: e4d5
+404043 <second: # times @ 2567815881
+404043 <second: # 10+8 pieces, centr = (1,1) R=16
+404043 <second:  1   -101        0          3 c6d5
+404043 <second:  2   -179        0        395 c6d5 f1g2 d5e5 g2b7
+404043 <second:  2   -168        0        547 c6c5 c2c4 h6f4
+404043 <second: # times @ 2567815882: real=1 cpu=0
+404043 <second: # promo = 0 (`) GT = 0
+404043 <second: move c6c5
+404043 >first : time 25921
+404043 >first : otim 33832
+book hit = (NULL)
+404043 >first : c6c5
+404116 <first : [ReceiverXboard] S-a primit MOVE...........................c6c5
+405941 <first : Am timisssssssssssssssss f1g2
+405941 <first : move f1g2
+Interrupting second
+405941 >second: time 33832
+405941 >second: otim 25931
+book hit = (NULL)
+405941 >second: f1g2
+406014 <second: # times @ 2567817851
+406014 <second: # 10+8 pieces, centr = (1,1) R=16
+406014 <second:  1   -168        0          3 c5c4
+406014 <second:  1   -165        0          3 c5d4
+406014 <second:  1   -148        0          3 a8c8
+406014 <second:  1   -145        0          3 a7a5
+406014 <second:  1   -140        0          3 f6f5
+406014 <second:  1   -138        0          3 h6f4
+406014 <second:  2   -150        0        107 h6f4 h2h4
+406014 <second:  2   -118        0        280 a8e8 e1f1 h6f4
+406014 <second: # times @ 2567817852: real=1 cpu=0
+406014 <second: # promo = 0 (`) GT = 0
+406014 <second: move a8e8
+406014 >first : time 25931
+406014 >first : otim 34024
+book hit = (NULL)
+406014 >first : a8e8
+406111 <first : [ReceiverXboard] S-a primit MOVE...........................a8e8
+406487 <first : Am timisssssssssssssssss e1f1
+406487 <first : move e1f1
+Interrupting second
+406487 >second: time 34024
+406487 >second: otim 26084
+book hit = (NULL)
+406487 >second: e1f1
+406560 <second: # times @ 2567818397
+406560 <second: # 10+8 pieces, centr = (1,1) R=16
+406560 <second:  1   -148        0          3 c5c4
+406560 <second:  1   -125        0          3 a7a5
+406560 <second:  2   -157        0         10 a7a5 a2a4
+406560 <second:  2   -152        0         45 f6f5 a2a4
+406560 <second:  2   -150        0        146 h6f4 h2h4
+406560 <second: # times @ 2567818398: real=1 cpu=0
+406560 <second: # promo = 0 (`) GT = 0
+406560 <second: move h6f4
+406560 >first : time 26084
+406560 >first : otim 34217
+book hit = (NULL)
+406560 >first : h6f4
+406654 <first : [ReceiverXboard] S-a primit MOVE...........................h6f4
+407053 <first : Am timisssssssssssssssss g2f3
+407053 <first : move g2f3
+Interrupting second
+407053 >second: time 34217
+407053 >second: otim 26235
+book hit = (NULL)
+407053 >second: g2f3
+407126 <second: # times @ 2567818964
+407126 <second: # 10+8 pieces, centr = (1,1) R=16
+407126 <second:  1    -95        0          3 f4h2
+407126 <second:  2   -100        0         65 f4h2 a2a4
+407126 <second:  2    -88        0        448 h8h2 h1h2
+407126 <second: # times @ 2567818964: real=0 cpu=0
+407126 <second: # promo = 0 (`) GT = 0
+407126 <second: move h8h2
+407126 >first : time 26235
+407126 >first : otim 34410
+book hit = (NULL)
+407126 >first : h8h2
+407220 <first : [ReceiverXboard] S-a primit MOVE...........................h8h2
+407555 <first : Am timisssssssssssssssss h1h2
+407555 <first : move h1h2
+Interrupting second
+407555 >second: time 34410
+407555 >second: otim 26392
+book hit = (NULL)
+407555 >second: h1h2
+407628 <second: # times @ 2567819465
+407628 <second: # 9+7 pieces, centr = (1,1) R=11
+407628 <second:  1    -88        0          3 f4h2
+407628 <second:  2   -102        0         10 f4h2 a2a4
+407628 <second: # times @ 2567819465: real=0 cpu=0
+407628 <second: # promo = 0 (`) GT = 0
+407628 <second: move f4h2
+407628 >first : time 26392
+407628 >first : otim 34603
+book hit = (NULL)
+407628 >first : f4h2
+407732 <first : [ReceiverXboard] S-a primit MOVE...........................f4h2
+407944 <first : Am timisssssssssssssssss a1b1
+407945 <first : move a1b1
+Interrupting second
+407945 >second: time 34603
+407945 >second: otim 26560
+book hit = (NULL)
+407945 >second: a1b1
+408017 <second: # times @ 2567819855
+408017 <second: # 8+7 pieces, centr = (1,1) R=10
+408017 <second:  1    -94        0          3 c5c4
+408017 <second:  1    -91        0          3 c5d4
+408017 <second:  1    -60        0          3 h2f4
+408017 <second:  1    -59        0          3 h2e5
+408017 <second:  2    -73        0         14 h2e5 a2a4
+408017 <second: # times @ 2567819855: real=0 cpu=0
+408017 <second: # promo = 0 (`) GT = 0
+408017 <second: move h2e5
+408017 >first : time 26560
+408017 >first : otim 34795
+book hit = (NULL)
+408017 >first : h2e5
+408112 <first : [ReceiverXboard] S-a primit MOVE...........................h2e5
+408413 <first : Am timisssssssssssssssss b2b4
+408413 <first : move b2b4
+Interrupting second
+408413 >second: time 34795
+408413 >second: otim 26721
+book hit = (NULL)
+408413 >second: b2b4
+408487 <second: # times @ 2567820323
+408487 <second: # 8+7 pieces, centr = (1,1) R=10
+408487 <second:  1   -108        0          3 c5c4
+408487 <second:  1   -105        0          3 c5d4
+408487 <second:  2    -95        0        277 c5d4 a2a4 f6f5
+408487 <second: # times @ 2567820324: real=1 cpu=0
+408487 <second: # promo = 0 (`) GT = 0
+408487 <second: move c5d4
+408488 >first : time 26721
+408488 >first : otim 34988
+book hit = (NULL)
+408488 >first : c5d4
+408561 <first : [ReceiverXboard] S-a primit MOVE...........................c5d4
+408661 <first : Am timisssssssssssssssss f1g1
+408661 <first : move f1g1
+Interrupting second
+408661 >second: time 34988
+408661 >second: otim 26903
+book hit = (NULL)
+408661 >second: f1g1
+408735 <second: # times @ 2567820571
+408735 <second: # 8+7 pieces, centr = (1,1) R=10
+408735 <second:  1    -99        0          3 d4c3
+408735 <second:  1    -97        0          3 d4c4
+408735 <second:  1    -74        0          3 e8f8
+408735 <second:  1    -71        0          3 a7a6
+408735 <second:  1    -69        0          3 b7b5
+408735 <second:  1    -64        0          3 f6f5
+408735 <second:  2    -78        0         17 f6f5 a2a4
+408735 <second:  2    -58        0        152 e8g8 f3g2 f6f5
+408735 <second: # times @ 2567820572: real=1 cpu=0
+408735 <second: # promo = 0 (`) GT = 0
+408735 <second: move e8g8
+408735 >first : time 26903
+408735 >first : otim 35181
+book hit = (NULL)
+408736 >first : e8g8
+408809 <first : [ReceiverXboard] S-a primit MOVE...........................e8g8
+408852 <first : Am timisssssssssssssssss g1h1
+408852 <first : move g1h1
+Interrupting second
+408852 >second: time 35181
+408852 >second: otim 27091
+book hit = (NULL)
+408852 >second: g1h1
+408927 <second: # times @ 2567820762
+408927 <second: # 8+7 pieces, centr = (1,1) R=10
+408927 <second:  1    -75        0          3 d4c3
+408927 <second:  1    -50        0          3 g8h8
+408927 <second:  2    -56        0         79 g8h8 h1g2 f6f5
+408927 <second: # times @ 2567820763: real=1 cpu=0
+408927 <second: # promo = 0 (`) GT = 0
+408927 <second: move g8h8
+408928 >first : time 27091
+408928 >first : otim 35373
+book hit = (NULL)
+408928 >first : g8h8
+409003 <first : [ReceiverXboard] S-a primit MOVE...........................g8h8
+409048 <first : Am timisssssssssssssssss h1g1
+409048 <first : move h1g1
+Interrupting second
+409048 >second: time 35373
+409048 >second: otim 27279
+book hit = (NULL)
+409048 >second: h1g1
+409121 <second: # times @ 2567820959
+409122 <second: # 8+7 pieces, centr = (1,1) R=10
+409122 <second:  1    -85        0          3 d4c3
+409122 <second:  1    -60        0          3 h8h7
+409122 <second:  2    -88        0         17 h8h7 a2a4
+409122 <second:  2    -74        0        109 h8h3 b1d1
+409122 <second:  2      0        0        128 h8g8
+409122 <second: # times @ 2567820959: real=0 cpu=10
+409122 <second: # promo = 0 (`) GT = 0
+409122 <second: move h8g8
+409122 >first : time 27279
+409122 >first : otim 35566
+book hit = (NULL)
+409122 >first : h8g8
+409196 <first : [ReceiverXboard] S-a primit MOVE...........................h8g8
+409225 <first : Am timisssssssssssssssss g1h1
+409225 <first : move g1h1
+Interrupting second
+409225 >second: time 35566
+409225 >second: otim 27469
+book hit = (NULL)
+409225 >second: g1h1
+409299 <second: # times @ 2567821135
+409299 <second: # 8+7 pieces, centr = (1,1) R=10
+409299 <second:  1    -99        0          5 d4c3
+409300 <second:  1    -97        0          7 d4c4
+409300 <second:  1      0        0          7 g8h8
+409300 <second:  2      0        0          8 g8h8
+409300 <second: # times @ 2567821135: real=0 cpu=0
+409300 <second: # promo = 0 (`) GT = 0
+409300 <second: move g8h8
+409300 >first : time 27469
+409300 >first : otim 35758
+book hit = (NULL)
+409300 >first : g8h8
+409374 <first : [ReceiverXboard] S-a primit MOVE...........................g8h8
+409386 <first : Am timisssssssssssssssss h1g1
+409386 <first : move h1g1
+Interrupting second
+409386 >second: time 35758
+409386 >second: otim 27660
+book hit = (NULL)
+409386 >second: h1g1
+409459 <second: # times @ 2567821296
+409460 <second: # 8+7 pieces, centr = (1,1) R=10
+409460 <second:  1    -99        0          5 d4c3
+409460 <second:  1    -97        0          7 d4c4
+409460 <second:  1    -88        0          7 h8h7
+409460 <second:  1    -74        0          7 h8h3
+409460 <second:  1    -71        0         13 a7a6
+409460 <second:  1    -69        0         15 b7b5
+409460 <second:  1    -64        0         17 f6f5
+409460 <second:  2    -78        0         31 f6f5 a2a4
+409460 <second:  2    -62        0        121 e5h2 g1g2 h2f4
+409460 <second:  2      0        0        142 h8g8
+409460 <second: # times @ 2567821297: real=1 cpu=0
+409460 <second: # promo = 0 (`) GT = 0
+409460 <second: move h8g8
+409460 >first : time 27660
+409460 >first : otim 35951
+book hit = (NULL)
+409460 >first : h8g8
+409533 <second: 1/2-1/2 {Draw by repetition}
+GameEnds(28, Draw by repetition, 6)
+409533 >first : result 1/2-1/2 {Draw by repetition}
+Interrupting second
+409533 >second: result 1/2-1/2 {Draw by repetition}
+409533 >first : quit
+409571 >second: force
+409571 >second: ping 6
+409571 <second: Error (unknown command): result
+409571 <second: pong 6
+Reset(0, 0) from gameMode 8
+recognized 'normal' (-1) as variant normal
+GameEnds(0, (null), 2)
+shuffleOpenings = 0
+StartChildProcess (dir=".") make run
+409585 >first : xboard
+protover 2
+409588 <first : make[1]: Entering directory '/home/stefan/chess-bot/l2-pa-project-MSP-Band/Chess_MSP-Band/src'
+409589 <first : javac Main.java
+410352 <first : java Main
+410479 <first : [ReceiverXboard] S-a primit XBOARD
+419593 >first : new
+random
+419593 >first : level 0 5 2
+419593 >first : post
+419593 >first : hard
+Feeding moves 0 through 0 to first chess program
+419593 >first : force
+419593 >second: memory 68
+419593 >second: new
+random
+sd 2
+419593 >second: level 0 5 2
+419593 >second: post
+419593 >second: hard
+419593 >second: ping 7
+419593 >second: force
+419594 <first : [ReceiverXboard] S-a primit NEW
+419594 <first : feature sigint=0 sigterm=0 done=1 colors=0
+419594 >first : accepted sigint
+419594 >first : accepted sigterm
+419594 >first : accepted done
+419594 >first : accepted colors
+419607 <first : [ReceiverXboard] S-a primit FORCE
+419616 <second: pong 7
+New game (4): make-Fairy-Max 5.0b (b)
+419618 >first : computer
+419618 >second: computer
+419619 >second: black
+419619 >second: time 30000
+419619 >second: otim 30000
+419619 >second: white
+book hit = (NULL)
+419619 >second: go
+nps: w=-1, b=-1
+419620 <second: Error (unknown command): computer
+419621 <second: # times @ 2567831531
+419621 <second: # 16+16 pieces, centr = (1,1) R=40
+419621 <second:  1      5        0          7 a2a4
+419621 <second:  1     20        0          9 b2b4
+419621 <second:  1     25        0         11 d2d4
+419621 <second:  1     28        0         13 d2d3
+419621 <second:  2      8        0         21 d2d3 c7c5
+419621 <second:  2     13        0         34 d2d4 d7d5
+419621 <second: # times @ 2567831531: real=0 cpu=0
+419621 <second: # promo = 0 (`) GT = 0
+419621 <second: move d2d4
+419621 >first : time 30000
+419622 >first : otim 30199
+book hit = (NULL)
+419622 >first : d2d4
+419622 >first : go
+419698 <first : [ReceiverXboard] S-a primit MOVE...........................d2d4
+419698 <first : [ReceiverXboard] S-a primit GO
+421046 <first : Am timisssssssssssssssss b8c6
+421046 <first : move b8c6
+Interrupting second
+421046 >second: time 30199
+421046 >second: otim 30057
+book hit = (NULL)
+421047 >second: b8c6
+421142 <second: # times @ 2567832957
+421142 <second: # 16+16 pieces, centr = (1,1) R=40
+421142 <second:  1     14        0          3 c2c4
+421142 <second:  1     19        0          9 g2g4
+421142 <second:  1     24        0         19 b1c3
+421142 <second:  1     27        0         25 c1e3
+421142 <second:  2     -9        0         47 c1e3 d7d5
+421142 <second:  2      3        0        101 c1f4 d7d5
+421142 <second: # times @ 2567832958: real=1 cpu=0
+421142 <second: # promo = 0 (`) GT = 0
+421142 <second: move c1f4
+421143 >first : time 30057
+421143 >first : otim 30390
+book hit = (NULL)
+421143 >first : c1f4
+421238 <first : [ReceiverXboard] S-a primit MOVE...........................c1f4
+423665 <first : Am timisssssssssssssssss g8f6
+423665 <first : move g8f6
+Interrupting second
+423665 >second: time 30390
+423665 >second: otim 30005
+book hit = (NULL)
+423665 >second: g8f6
+423759 <second: # times @ 2567835576
+423759 <second: # 16+16 pieces, centr = (1,1) R=40
+423759 <second:  1   -231        0          3 f4c7
+423759 <second:  1     -2        0          3 f4e3
+423759 <second:  1      6        0          3 a2a4
+423759 <second:  1     14        0          3 c2c4
+423759 <second:  1     25        0          9 c2c3
+423759 <second:  1     30        0         15 b1c3
+423759 <second:  2      5        0         75 b1c3 d7d5
+423759 <second: # times @ 2567835577: real=1 cpu=0
+423759 <second: # promo = 0 (`) GT = 0
+423759 <second: move b1c3
+423759 >first : time 30005
+423759 >first : otim 30580
+book hit = (NULL)
+423759 >first : b1c3
+423853 <first : [ReceiverXboard] S-a primit MOVE...........................b1c3
+426306 <first : Am timisssssssssssssssss f6h5
+426306 <first : move f6h5
+Interrupting second
+426306 >second: time 30580
+426306 >second: otim 29950
+book hit = (NULL)
+426306 >second: f6h5
+426402 <second: # times @ 2567838216
+426402 <second: # 16+16 pieces, centr = (1,1) R=40
+426402 <second:  1   -231        0          3 f4c7
+426402 <second:  1     -1        0          3 f4e3
+426402 <second:  2    -16        0         35 f4e3 d7d5
+426402 <second: # times @ 2567838216: real=0 cpu=0
+426402 <second: # promo = 0 (`) GT = 0
+426402 <second: move f4e3
+426403 >first : time 29950
+426403 >first : otim 30771
+book hit = (NULL)
+426403 >first : f4e3
+426477 <first : [ReceiverXboard] S-a primit MOVE...........................f4e3
+428653 <first : Am timisssssssssssssssss h5f6
+428653 <first : move h5f6
+Interrupting second
+428653 >second: time 30771
+428653 >second: otim 29925
+book hit = (NULL)
+428653 >second: h5f6
+428749 <second: # times @ 2567840563
+428750 <second: # 16+16 pieces, centr = (1,1) R=40
+428750 <second:  1     -9        0          3 d4d5
+428750 <second:  1     -3        0          3 c3b5
+428750 <second:  1      0        0          3 e3f4
+428750 <second:  1      6        0          3 a2a4
+428750 <second:  1     13        0          3 g1f3
+428750 <second:  2     -2        0         39 g1f3 d7d5
+428750 <second:  2      0        0        298 e3f4
+428750 <second: # times @ 2567840565: real=2 cpu=0
+428750 <second: # promo = 0 (`) GT = 0
+428750 <second: move e3f4
+428751 >first : time 29925
+428751 >first : otim 30961
+book hit = (NULL)
+428751 >first : e3f4
+428825 <first : [ReceiverXboard] S-a primit MOVE...........................e3f4
+431367 <first : Am timisssssssssssssssss f6h5
+431367 <first : move f6h5
+Interrupting second
+431367 >second: time 30961
+431367 >second: otim 29863
+book hit = (NULL)
+431367 >second: f6h5
+431462 <second: # times @ 2567843277
+431462 <second: # 16+16 pieces, centr = (1,1) R=40
+431462 <second:  1   -231        0          5 f4c7 d8c7
+431462 <second:  1      0        0          5 f4e3
+431462 <second:  2      0        0          6 f4e3
+431462 <second: # times @ 2567843277: real=0 cpu=0
+431462 <second: # promo = 0 (`) GT = 0
+431462 <second: move f4e3
+431462 >first : time 29863
+431462 >first : otim 31152
+book hit = (NULL)
+431462 >first : f4e3
+431534 <first : [ReceiverXboard] S-a primit MOVE...........................f4e3
+433693 <first : Am timisssssssssssssssss h5f6
+433693 <first : move h5f6
+Interrupting second
+433694 >second: time 31152
+433694 >second: otim 29840
+book hit = (NULL)
+433694 >second: h5f6
+433787 <second: # times @ 2567845604
+433787 <second: # 16+16 pieces, centr = (1,1) R=40
+433787 <second:  1      6        0          5 a2a4
+433787 <second:  2     -9        0         15 a2a4 d7d5
+433787 <second:  2     -2        0        393 g1f3
+433787 <second:  2      0        0        393 e3f4
+433787 <second: # times @ 2567845605: real=1 cpu=0
+433787 <second: # promo = 0 (`) GT = 0
+433787 <second: move e3f4
+433787 >first : time 29840
+433787 >first : otim 31342
+book hit = (NULL)
+433787 >first : e3f4
+433861 <second: 1/2-1/2 {Draw by repetition}
+GameEnds(28, Draw by repetition, 6)
+433861 >first : result 1/2-1/2 {Draw by repetition}
+Interrupting second
+433861 >second: result 1/2-1/2 {Draw by repetition}
+433861 >first : quit
+434862 >second: force
+434862 >second: ping 8
+434862 <second: Error (unknown command): result
+434862 <second: pong 8
+Reset(0, 0) from gameMode 8
+recognized 'normal' (-1) as variant normal
+GameEnds(0, (null), 2)
+shuffleOpenings = 0
+StartChildProcess (dir=".") make run
+434874 >first : xboard
+protover 2
+434877 <first : make[1]: Entering directory '/home/stefan/chess-bot/l2-pa-project-MSP-Band/Chess_MSP-Band/src'
+434877 <first : javac Main.java
+435682 <first : java Main
+435767 <first : [ReceiverXboard] S-a primit XBOARD
+444881 >first : new
+random
+444881 >first : level 0 5 2
+444881 >first : post
+444881 >first : hard
+Feeding moves 0 through 0 to first chess program
+444881 >first : force
+444881 >second: memory 68
+444881 >second: new
+random
+sd 2
+444881 >second: level 0 5 2
+444881 >second: post
+444881 >second: hard
+444881 >second: ping 9
+444881 >second: force
+444882 <first : [ReceiverXboard] S-a primit NEW
+444882 <first : feature sigint=0 sigterm=0 done=1 colors=0
+444882 >first : accepted sigint
+444882 >first : accepted sigterm
+444882 >first : accepted done
+444882 >first : accepted colors
+444890 <first : [ReceiverXboard] S-a primit FORCE
+444901 <second: pong 9
+New game (5): make-Fairy-Max 5.0b (w)
+444905 >first : computer
+444905 >second: computer
+444906 >first : time 30000
+444906 >first : otim 30000
+book hit = (NULL)
+444906 >first : go
+nps: w=-1, b=-1
+444906 <second: Error (unknown command): computer
+444907 <first : [ReceiverXboard] S-a primit GO
+445973 <first : Am timisssssssssssssssss g1f3
+445973 <first : move g1f3
+445973 >second: time 30000
+445973 >second: otim 30093
+book hit = (NULL)
+445973 >second: g1f3
+445973 >second: black
+445973 >second: go
+446069 <second: # times @ 2567857884
+446069 <second: # 16+16 pieces, centr = (1,1) R=40
+446069 <second:  1     15        0          3 c7c5
+446069 <second:  1     18        0          5 c7c6
+446069 <second:  1     19        0          7 e7e6
+446069 <second:  1     21        0          9 f7f5
+446070 <second:  2     -7        0         17 f7f5 c2c4
+446070 <second:  2      8        0         26 f7f6 c2c4
+446070 <second: # times @ 2567857884: real=0 cpu=0
+446070 <second: # promo = 0 (`) GT = 0
+446070 <second: move f7f6
+446070 >first : time 30093
+446070 >first : otim 30190
+book hit = (NULL)
+446070 >first : f7f6
+446145 <first : [ReceiverXboard] S-a primit MOVE...........................f7f6
+447014 <first : Am timisssssssssssssssss b1c3
+447014 <first : move b1c3
+Interrupting second
+447014 >second: time 30190
+447014 >second: otim 30198
+book hit = (NULL)
+447014 >second: b1c3
+447110 <second: # times @ 2567858924
+447110 <second: # 16+16 pieces, centr = (1,1) R=40
+447110 <second:  1     14        0          3 c7c5
+447111 <second:  1     15        0          5 c7c6
+447111 <second:  1     21        0         11 e7e5
+447111 <second:  1     28        0         13 b8c6
+447111 <second:  2    -11        0         25 b8c6 d2d4
+447111 <second:  2      3        0         34 b8a6 d2d4
+447111 <second:  2      9        0         79 c7c5 d2d4
+447111 <second: # times @ 2567858925: real=1 cpu=0
+447111 <second: # promo = 0 (`) GT = 0
+447111 <second: move c7c5
+447111 >first : time 30198
+447111 >first : otim 30380
+book hit = (NULL)
+447111 >first : c7c5
+447187 <first : [ReceiverXboard] S-a primit MOVE...........................c7c5
+449690 <first : Am timisssssssssssssssss e2e4
+449690 <first : move e2e4
+Interrupting second
+449690 >second: time 30380
+449690 >second: otim 30141
+book hit = (NULL)
+449690 >second: e2e4
+449763 <second: # times @ 2567861600
+449763 <second: # 16+16 pieces, centr = (1,1) R=40
+449763 <second:  1     -3        0          3 a7a5
+449763 <second:  1      3        0          3 b7b6
+449763 <second:  1     12        0          5 d7d6
+449763 <second:  2    -19        0         31 d7d6 d2d4
+449763 <second:  2    -17        0         79 e7e5 d2d3
+449763 <second:  2     -1        0        117 g7g5 d2d4
+449763 <second:  2      0        0        140 g7g6 d2d4
+449763 <second: # times @ 2567861601: real=1 cpu=0
+449763 <second: # promo = 0 (`) GT = 0
+449763 <second: move g7g6
+449763 >first : time 30141
+449763 >first : otim 30573
+book hit = (NULL)
+449763 >first : g7g6
+449836 <first : [ReceiverXboard] S-a primit MOVE...........................g7g6
+452500 <first : Am timisssssssssssssssss f1c4
+452500 <first : move f1c4
+Interrupting second
+452500 >second: time 30573
+452500 >second: otim 30067
+book hit = (NULL)
+452500 >second: f1c4
+452595 <second: # times @ 2567864411
+452595 <second: # 16+16 pieces, centr = (1,1) R=40
+452595 <second:  1     -3        0          3 a7a5
+452595 <second:  1      4        0          3 b7b6
+452596 <second:  1     15        0          3 b8c6
+452596 <second:  2    -11        0         47 b8c6 e1g1
+452596 <second: # times @ 2567864412: real=1 cpu=0
+452596 <second: # promo = 0 (`) GT = 0
+452596 <second: move b8c6
+452596 >first : time 30067
+452596 >first : otim 30763
+book hit = (NULL)
+452596 >first : b8c6
+452693 <first : [ReceiverXboard] S-a primit MOVE...........................b8c6
+458716 <first : Am timisssssssssssssssss c4d5
+458716 <first : move c4d5
+Interrupting second
+458716 >second: time 30763
+458716 >second: otim 29655
+book hit = (NULL)
+458716 >second: c4d5
+458789 <second: # times @ 2567870627
+458789 <second: # 16+16 pieces, centr = (1,1) R=40
+458789 <second:  1     -3        0          3 a7a5
+458789 <second:  1      4        0          3 b7b6
+458789 <second:  1      5        0          3 g8h6
+458789 <second:  2    -21        0         71 g8h6 e1g1
+458789 <second:  2    -12        0        528 e7e6 d5c4
+458789 <second:  2     -1        0        831 c6b4 d5c4
+458789 <second: # times @ 2567870628: real=1 cpu=0
+458789 <second: # promo = 0 (`) GT = 0
+458789 <second: move c6b4
+458789 >first : time 29655
+458789 >first : otim 30956
+book hit = (NULL)
+458789 >first : c6b4
+458883 <first : [ReceiverXboard] S-a primit MOVE...........................c6b4
+461941 <first : Am timisssssssssssssssss a2a3
+461941 <first : move a2a3
+Interrupting second
+461942 >second: time 30956
+461942 >second: otim 29540
+book hit = (NULL)
+461942 >second: a2a3
+462015 <second: # times @ 2567873853
+462015 <second: # 16+16 pieces, centr = (1,1) R=40
+462015 <second:  1     36        0          3 b4d5
+462015 <second:  2     37        0          7 b4d5 c3d5
+462015 <second: # times @ 2567873854: real=1 cpu=0
+462015 <second: # promo = 0 (`) GT = 0
+462015 <second: move b4d5
+462015 >first : time 29540
+462015 >first : otim 31149
+book hit = (NULL)
+462015 >first : b4d5
+462109 <first : [ReceiverXboard] S-a primit MOVE...........................b4d5
+464169 <first : Am timisssssssssssssssss c3d5
+464169 <first : move c3d5
+Interrupting second
+464169 >second: time 31149
+464169 >second: otim 29524
+book hit = (NULL)
+464169 >second: c3d5
+464264 <second: # times @ 2567876080
+464264 <second: # 15+15 pieces, centr = (1,1) R=36
+464264 <second:  1     44        0          3 b7b5
+464264 <second:  2     18        0         55 b7b5 e1g1
+464265 <second:  2     24        0        345 e7e6 d5f4
+464265 <second: # times @ 2567876081: real=1 cpu=10
+464265 <second: # promo = 0 (`) GT = 0
+464265 <second: move e7e6
+464265 >first : time 29524
+464265 >first : otim 31339
+book hit = (NULL)
+464265 >first : e7e6
+464341 <first : [ReceiverXboard] S-a primit MOVE...........................e7e6
+471982 <first : Am timisssssssssssssssss d5e3
+471982 <first : move d5e3
+Interrupting second
+471982 >second: time 31339
+471982 >second: otim 28952
+book hit = (NULL)
+471982 >second: d5e3
+472076 <second: # times @ 2567883893
+472076 <second: # 15+15 pieces, centr = (1,1) R=36
+472076 <second:  1     35        0          3 a7a5
+472076 <second:  1     44        0          3 b7b5
+472076 <second:  1     47        0          3 f8d6
+472076 <second:  2     21        0         93 f8d6 e1g1
+472076 <second:  2     39        0        841 d7d5 d2d3 d5e4 d3e4 d8d1 e3d1
+472076 <second: # times @ 2567883894: real=1 cpu=0
+472076 <second: # promo = 0 (`) GT = 0
+472076 <second: move d7d5
+472076 >first : time 28952
+472076 >first : otim 31530
+book hit = (NULL)
+472076 >first : d7d5
+472148 <first : [ReceiverXboard] S-a primit MOVE...........................d7d5
+477207 <first : Am timisssssssssssssssss e4d5
+477207 <first : move e4d5
+Interrupting second
+477207 >second: time 31530
+477207 >second: otim 28639
+book hit = (NULL)
+477207 >second: e4d5
+477280 <second: # times @ 2567889117
+477280 <second: # 15+14 pieces, centr = (1,1) R=36
+477280 <second:  1     54        0          3 e6d5
+477280 <second:  2     13        0         59 e6d5 e1g1
+477280 <second: # times @ 2567889118: real=1 cpu=0
+477280 <second: # promo = 0 (`) GT = 0
+477280 <second: move e6d5
+477280 >first : time 28639
+477280 >first : otim 31722
+book hit = (NULL)
+477280 >first : e6d5
+477354 <first : [ReceiverXboard] S-a primit MOVE...........................e6d5
+480290 <first : Am timisssssssssssssssss d1e2
+480291 <first : move d1e2
+Interrupting second
+480291 >second: time 31722
+480291 >second: otim 28538
+book hit = (NULL)
+480291 >second: d1e2
+480364 <second: # times @ 2567892202
+480364 <second: # 14+14 pieces, centr = (1,1) R=36
+480364 <second:  1    -40        0          3 a7a5
+480364 <second:  1     29        0          3 d5d4
+480364 <second:  1     51        0          3 c8e6
+480365 <second:  2     25        0        133 c8e6 e1g1
+480365 <second:  2     28        0        574 d5d4 e3f5
+480365 <second: # times @ 2567892203: real=1 cpu=0
+480365 <second: # promo = 0 (`) GT = 0
+480365 <second: move d5d4
+480365 >first : time 28538
+480365 >first : otim 31915
+book hit = (NULL)
+480365 >first : d5d4
+480439 <first : [ReceiverXboard] S-a primit MOVE...........................d5d4
+491677 <first : Am timisssssssssssssssss e3c4
+491677 <first : move e3c4
+Interrupting second
+491677 >second: time 31915
+491677 >second: otim 27607
+book hit = (NULL)
+491677 >second: e3c4
+491771 <second: # times @ 2567903589
+491771 <second: # 14+14 pieces, centr = (1,1) R=36
+491771 <second:  1   -245        0          3 c8e6
+491771 <second:  1     36        0          3 d8e7
+491771 <second:  2      8        0        790 d8e7 c4d6 e8d7 e2e7
+491771 <second:  2     11        0       1711 e8f7 e1g1 c8f5
+491771 <second:  2     33        0       2408 f8e7 e1g1 c8f5
+491771 <second:  2     36        0       2975 g8e7 e1g1 c8f5
+491771 <second: # times @ 2567903595: real=6 cpu=10
+491771 <second: # promo = 0 (`) GT = 0
+491771 <second: move g8e7
+491771 >first : time 27607
+491771 >first : otim 32106
+book hit = (NULL)
+491771 >first : g8e7
+491865 <first : [ReceiverXboard] S-a primit MOVE...........................g8e7
+496520 <first : Am timisssssssssssssssss e2e4
+496520 <first : move e2e4
+Interrupting second
+496521 >second: time 32106
+496521 >second: otim 27332
+book hit = (NULL)
+496521 >second: e2e4
+496594 <second: # times @ 2567908431
+496594 <second: # 14+14 pieces, centr = (1,1) R=36
+496594 <second:  1     35        0          3 a7a5
+496594 <second:  1     37        0          3 a8b8
+496594 <second:  1     43        0          3 c8f5
+496594 <second:  2     43        0         15 c8f5 e4b7
+496594 <second: # times @ 2567908432: real=1 cpu=0
+496594 <second: # promo = 0 (`) GT = 0
+496594 <second: move c8f5
+496594 >first : time 27332
+496594 >first : otim 32298
+book hit = (NULL)
+496594 >first : c8f5
+496688 <first : [ReceiverXboard] S-a primit MOVE...........................c8f5
+500587 <first : Am timisssssssssssssssss e4b7
+500587 <first : move e4b7
+Interrupting second
+500587 >second: time 32298
+500587 >second: otim 27133
+book hit = (NULL)
+500587 >second: e4b7
+500682 <second: # times @ 2567912498
+500682 <second: # 14+13 pieces, centr = (1,1) R=36
+500682 <second:  1     42        0          3 f5c2
+500682 <second:  2      2        0        105 f5c2 e1g1
+500682 <second: # times @ 2567912499: real=1 cpu=0
+500682 <second: # promo = 0 (`) GT = 0
+500682 <second: move f5c2
+500682 >first : time 27133
+500682 >first : otim 32489
+book hit = (NULL)
+500682 >first : f5c2
+500779 <first : [ReceiverXboard] S-a primit MOVE...........................f5c2
+502717 <first : Am timisssssssssssssssss c4d6
+502717 <first : move c4d6
+Interrupting second
+502717 >second: time 32489
+502717 >second: otim 27129
+book hit = (NULL)
+502717 >second: c4d6
+502810 <second: # times @ 2567914627
+502810 <second: # 13+13 pieces, centr = (1,1) R=36
+502810 <second:  1   -148        0          3 d8d6
+502810 <second:  2   -148        0          7 d8d6 b7a8
+502810 <second: # times @ 2567914627: real=0 cpu=0
+502810 <second: # promo = 0 (`) GT = 0
+502810 <second: move d8d6
+502811 >first : time 27129
+502811 >first : otim 32679
+book hit = (NULL)
+502811 >first : d8d6
+502884 <first : [ReceiverXboard] S-a primit MOVE...........................d8d6
+506464 <first : Am timisssssssssssssssss b7a8
+506464 <first : move b7a8
+Interrupting second
+506465 >second: time 32679
+506465 >second: otim 26964
+book hit = (NULL)
+506465 >second: b7a8
+506540 <second: # times @ 2567918375
+506540 <second: # 12+12 pieces, centr = (1,1) R=31
+506540 <second:  1   -222        0          3 d6d8
+506540 <second:  2   -217        0        577 d6d8 a8a7 e7d5
+506540 <second:  2   -182        0       1714 e8f7 e1g1 c2d3
+506540 <second: # times @ 2567918377: real=2 cpu=0
+506540 <second: # promo = 0 (`) GT = 0
+506540 <second: move e8f7
+506541 >first : time 26964
+506541 >first : otim 32872
+book hit = (NULL)
+506541 >first : e8f7
+506614 <first : [ReceiverXboard] S-a primit MOVE...........................e8f7
+512647 <first : Am timisssssssssssssssss a8a7
+512647 <first : move a8a7
+Interrupting second
+512647 >second: time 32872
+512647 >second: otim 26553
+book hit = (NULL)
+512647 >second: a8a7
+512720 <second: # times @ 2567924558
+512720 <second: # 12+11 pieces, centr = (1,1) R=30
+512720 <second:  1   -999        0          9 d6h2 h1h2
+512720 <second:  1   -222        0         14 d6e6
+512720 <second:  1   -181        0         14 d4d3
+512720 <second:  2   -192        0         66 d4d3 e1g1
+512720 <second: # times @ 2567924558: real=0 cpu=0
+512720 <second: # promo = 0 (`) GT = 0
+512720 <second: move d4d3
+512720 >first : time 26553
+512720 >first : otim 33064
+book hit = (NULL)
+512720 >first : d4d3
+512793 <first : [ReceiverXboard] S-a primit MOVE...........................d4d3
+520485 <first : Am timisssssssssssssssss e1g1
+520486 <first : move e1g1
+Interrupting second
+520486 >second: time 33064
+520486 >second: otim 25977
+book hit = (NULL)
+520486 >second: e1g1
+520559 <second: # times @ 2567932396
+520559 <second: # 12+11 pieces, centr = (1,1) R=31
+520559 <second:  1   -923        0         15 d6h2 f3h2
+520559 <second:  1   -232        0         23 d6e6 a7c5
+520559 <second:  1   -158        0         33 d6d5
+520559 <second:  1   -155        0         43 f8g7
+520559 <second:  2   -164        0        107 f8g7 h2h4
+520559 <second: # times @ 2567932397: real=1 cpu=10
+520559 <second: # promo = 0 (`) GT = 0
+520559 <second: move f8g7
+520559 >first : time 25977
+520559 >first : otim 33257
+book hit = (NULL)
+520559 >first : f8g7
+520631 <first : [ReceiverXboard] S-a primit MOVE...........................f8g7
+526715 <first : Am timisssssssssssssssss f3e1
+526715 <first : move f3e1
+Interrupting second
+526715 >second: time 33257
+526715 >second: otim 25561
+book hit = (NULL)
+526715 >second: f3e1
+526811 <second: # times @ 2567938626
+526811 <second: # 12+11 pieces, centr = (1,1) R=31
+526811 <second:  1   -916        0          3 d6h2
+526811 <second:  1   -232        0          3 d6e6
+526811 <second:  1   -158        0          3 d6d5
+526811 <second:  2   -176        0         23 d6d5 f2f4
+526811 <second:  2   -167        0         71 d6d4 e1f3
+526811 <second: # times @ 2567938627: real=1 cpu=0
+526811 <second: # promo = 0 (`) GT = 0
+526811 <second: move d6d4
+526812 >first : time 25561
+526812 >first : otim 33448
+book hit = (NULL)
+526812 >first : d6d4
+526885 <first : [ReceiverXboard] S-a primit MOVE...........................d6d4
+532337 <first : Am timisssssssssssssssss e1c2
+532337 <first : move e1c2
+Interrupting second
+532338 >second: time 33448
+532338 >second: otim 25208
+book hit = (NULL)
+532338 >second: e1c2
+532431 <second: # times @ 2567944248
+532431 <second: # 12+10 pieces, centr = (1,1) R=27
+532431 <second:  1   -146        0          3 d3c2
+532431 <second:  2   -160        0         60 d3c2 d2d3
+532431 <second: # times @ 2567944249: real=1 cpu=0
+532431 <second: # promo = 0 (`) GT = 0
+532431 <second: move d3c2
+532431 >first : time 25208
+532431 >first : otim 33638
+book hit = (NULL)
+532431 >first : d3c2
+532505 <first : [ReceiverXboard] S-a primit MOVE...........................d3c2
+535330 <first : Am timisssssssssssssssss a7b6
+535330 <first : move a7b6
+Interrupting second
+535330 >second: time 33638
+535331 >second: otim 25119
+book hit = (NULL)
+535331 >second: a7b6
+535403 <second: # times @ 2567947241
+535404 <second: # 11+10 pieces, centr = (1,1) R=27
+535404 <second:  1   -917        0          3 d4d2
+535404 <second:  1   -205        0          3 d4e4
+535404 <second:  1   -131        0          3 d4c4
+535404 <second:  1   -126        0          3 e7d5
+535404 <second:  2   -126        0         49 e7d5 b6c6
+535404 <second: # times @ 2567947242: real=1 cpu=0
+535404 <second: # promo = 0 (`) GT = 0
+535404 <second: move e7d5
+535404 >first : time 25119
+535404 >first : otim 33831
+book hit = (NULL)
+535404 >first : e7d5
+535498 <first : [ReceiverXboard] S-a primit MOVE...........................e7d5
+541999 <first : Am timisssssssssssssssss b6b7
+541999 <first : move b6b7
+Interrupting second
+542000 >second: time 33831
+542000 >second: otim 24659
+book hit = (NULL)
+542000 >second: b6b7
+542073 <second: # times @ 2567953910
+542073 <second: # 11+10 pieces, centr = (1,1) R=27
+542073 <second:  1   -442        0          3 f7e6
+542073 <second:  1   -167        0          3 f7f8
+542073 <second:  1   -144        0          3 d5e7
+542073 <second:  2   -332        0        442 d5e7 b7b3 e7d5 b3c2
+542073 <second:  2   -169        0       1091 f7f8 b7b8 f8e7 b8b7
+542073 <second: # times @ 2567953912: real=2 cpu=0
+542073 <second: # promo = 0 (`) GT = 0
+542073 <second: move f7f8
+542073 >first : time 24659
+542073 >first : otim 34023
+book hit = (NULL)
+542073 >first : f7f8
+542146 <first : [ReceiverXboard] S-a primit MOVE...........................f7f8
+542907 <first : Am timisssssssssssssssss b7b3
+542907 <first : move b7b3
+Interrupting second
+542907 >second: time 34023
+542907 >second: otim 24776
+book hit = (NULL)
+542907 >second: b7b3
+543000 <second: # times @ 2567954818
+543000 <second: # 11+10 pieces, centr = (1,1) R=27
+543000 <second:  1   -917        0          3 d4d2
+543000 <second:  1   -131        0          3 d4e4
+543000 <second:  2   -148        0         81 d4e4 d2d3
+543000 <second: # times @ 2567954818: real=0 cpu=0
+543000 <second: # promo = 0 (`) GT = 0
+543000 <second: move d4e4
+543000 >first : time 24776
+543000 >first : otim 34214
+book hit = (NULL)
+543000 >first : d4e4
+543078 <first : [ReceiverXboard] S-a primit MOVE...........................d4e4
+545012 <first : Am timisssssssssssssssss d2d3
+545012 <first : move d2d3
+Interrupting second
+545012 >second: time 34214
+545012 >second: otim 24774
+book hit = (NULL)
+545012 >second: d2d3
+545085 <second: # times @ 2567956923
+545085 <second: # 11+10 pieces, centr = (1,1) R=27
+545085 <second:  1   -908        0          3 e4d3
+545085 <second:  1   -903        0          3 e4f4
+545085 <second:  1   -390        0          3 e4g4
+545085 <second:  1   -333        0          3 e4d4
+545085 <second:  2   -333        0          7 e4d4 b3c2
+545085 <second: # times @ 2567956923: real=0 cpu=0
+545085 <second: # promo = 0 (`) GT = 0
+545085 <second: move e4d4
+545085 >first : time 24774
+545085 >first : otim 34407
+book hit = (NULL)
+545085 >first : e4d4
+545158 <first : [ReceiverXboard] S-a primit MOVE...........................e4d4
+546087 <first : Am timisssssssssssssssss b3c2
+546087 <first : move b3c2
+Interrupting second
+546087 >second: time 34407
+546087 >second: otim 24874
+book hit = (NULL)
+546087 >second: b3c2
+546161 <second: # times @ 2567957998
+546161 <second: # 11+9 pieces, centr = (1,1) R=25
+546161 <second:  1  -1110        0          3 d4d3
+546161 <second:  1   -977        0          3 d4f4
+546161 <second:  1   -407        0          3 d4g4
+546161 <second:  1   -356        0          3 f8g8
+546161 <second:  1   -347        0          3 f8f7
+546161 <second:  1   -346        0          3 f8e7
+546161 <second:  1   -333        0          3 h8g8
+546161 <second:  1   -332        0          3 h7h5
+546161 <second:  2   -342        0         58 h7h5 h2h4
+546161 <second: # times @ 2567957998: real=0 cpu=0
+546161 <second: # promo = 0 (`) GT = 0
+546161 <second: move h7h5
+546161 >first : time 24874
+546161 >first : otim 34599
+book hit = (NULL)
+546161 >first : h7h5
+546234 <first : [ReceiverXboard] S-a primit MOVE...........................h7h5
+548100 <first : Am timisssssssssssssssss c2c4
+548100 <first : move c2c4
+Interrupting second
+548100 >second: time 34599
+548100 >second: otim 24880
+book hit = (NULL)
+548100 >second: c2c4
+548174 <second: # times @ 2567960011
+548174 <second: # 11+9 pieces, centr = (1,1) R=25
+548174 <second:  1   -327        0          3 d4c4
+548174 <second:  2   -327        0          7 d4c4 d3c4
+548174 <second: # times @ 2567960011: real=0 cpu=0
+548174 <second: # promo = 0 (`) GT = 0
+548174 <second: move d4c4
+548174 >first : time 24880
+548174 >first : otim 34792
+book hit = (NULL)
+548174 >first : d4c4
+548248 <first : [ReceiverXboard] S-a primit MOVE...........................d4c4
+550229 <first : Am timisssssssssssssssss d3c4
+550229 <first : move d3c4
+Interrupting second
+550230 >second: time 34792
+550230 >second: otim 24875
+book hit = (NULL)
+550230 >second: d3c4
+550302 <second: # times @ 2567962140
+550302 <second: # 10+8 pieces, centr = (1,1) R=13
+550302 <second:  1   -595        0          7 h5h4 c4d5
+550302 <second:  1   -593        0         27 h8h7 c4d5
+550302 <second:  1   -540        0         47 d5b4
+550302 <second:  1   -338        0         47 d5e7
+550302 <second:  2   -353        0         65 d5e7 c1f4
+550303 <second:  2   -348        0        159 d5b6 c1e3 b6c4 e3c5
+550303 <second: # times @ 2567962140: real=0 cpu=0
+550303 <second: # promo = 0 (`) GT = 0
+550303 <second: move d5b6
+550303 >first : time 24875
+550303 >first : otim 34985
+book hit = (NULL)
+550303 >first : d5b6
+550396 <first : [ReceiverXboard] S-a primit MOVE...........................d5b6
+550783 <first : Am timisssssssssssssssss c1e3
+550783 <first : move c1e3
+Interrupting second
+550783 >second: time 34985
+550783 >second: otim 25027
+book hit = (NULL)
+550783 >second: c1e3
+550877 <second: # times @ 2567962693
+550877 <second: # 10+8 pieces, centr = (1,1) R=13
+550877 <second:  1   -348        0          3 b6c4
+550877 <second:  1   -338        0          3 b6a4
+550877 <second:  1   -329        0          3 b6d7
+550877 <second:  2   -342        0         23 b6d7 f2f4
+550877 <second: # times @ 2567962694: real=1 cpu=0
+550877 <second: # promo = 0 (`) GT = 0
+550877 <second: move b6d7
+550877 >first : time 25027
+550877 >first : otim 35175
+book hit = (NULL)
+550877 >first : b6d7
+550970 <first : [ReceiverXboard] S-a primit MOVE...........................b6d7
+551131 <first : Am timisssssssssssssssss a1d1
+551131 <first : move a1d1
+Interrupting second
+551131 >second: time 35175
+551131 >second: otim 25201
+book hit = (NULL)
+551131 >second: a1d1
+551227 <second: # times @ 2567963041
+551227 <second: # 10+8 pieces, centr = (1,1) R=13
+551227 <second:  1   -592        0          3 f6f5
+551227 <second:  1   -346        0          3 f8e7
+551227 <second:  2   -359        0         29 f8e7 f2f4
+551227 <second: # times @ 2567963041: real=0 cpu=0
+551227 <second: # promo = 0 (`) GT = 0
+551227 <second: move f8e7
+551227 >first : time 25201
+551227 >first : otim 35366
+book hit = (NULL)
+551227 >first : f8e7
+551301 <first : [ReceiverXboard] S-a primit MOVE...........................f8e7
+551902 <first : Am timisssssssssssssssss f1e1
+551902 <first : move f1e1
+Interrupting second
+551902 >second: time 35366
+551902 >second: otim 25334
+book hit = (NULL)
+551902 >second: f1e1
+551977 <second: # times @ 2567963813
+551977 <second: # 10+8 pieces, centr = (1,1) R=13
+551977 <second:  1   -405        0          3 f6f5
+551977 <second:  1   -398        0          3 d7e5
+551977 <second:  2   -398        0          7 d7e5 e3c5
+551977 <second: # times @ 2567963813: real=0 cpu=0
+551977 <second: # promo = 0 (`) GT = 0
+551977 <second: move d7e5
+551978 >first : time 25334
+551978 >first : otim 35558
+book hit = (NULL)
+551978 >first : d7e5
+552071 <first : [ReceiverXboard] S-a primit MOVE...........................d7e5
+553007 <first : Am timisssssssssssssssss e3c5
+553007 <first : move e3c5
+Interrupting second
+553007 >second: time 35558
+553007 >second: otim 25431
+book hit = (NULL)
+553007 >second: e3c5
+553102 <second: # times @ 2567964918
+553102 <second: # 10+7 pieces, centr = (1,1) R=12
+553102 <second:  1   -430        0          3 e7f7
+553103 <second:  2   -430        0        286 e7f7 b2b3 h8h7
+553103 <second: # times @ 2567964918: real=0 cpu=0
+553103 <second: # promo = 0 (`) GT = 0
+553103 <second: move e7f7
+553103 >first : time 25431
+553103 >first : otim 35749
+book hit = (NULL)
+553103 >first : e7f7
+553176 <first : [ReceiverXboard] S-a primit MOVE...........................e7f7
+556103 <first : Am timisssssssssssssssss b2b3
+556103 <first : move b2b3
+Interrupting second
+556103 >second: time 35749
+556103 >second: otim 25331
+book hit = (NULL)
+556103 >second: b2b3
+556176 <second: # times @ 2567968013
+556176 <second: # 10+7 pieces, centr = (1,1) R=12
+556176 <second:  1   -624        0          3 e5c4
+556176 <second:  1   -434        0          3 e5g4
+556176 <second:  1   -413        0          9 e5c6
+556176 <second:  1   -407        0         15 h8h6
+556176 <second:  2   -420        0         41 h8h6 f2f4
+556176 <second:  2   -410        0        235 h8c8 c5d4
+556176 <second: # times @ 2567968014: real=1 cpu=0
+556176 <second: # promo = 0 (`) GT = 0
+556176 <second: move h8c8
+556176 >first : time 25331
+556176 >first : otim 35941
+book hit = (NULL)
+556176 >first : h8c8
+556271 <first : [ReceiverXboard] S-a primit MOVE...........................h8c8
+558020 <first : Am timisssssssssssssssss b3b4
+558020 <first : move b3b4
+Interrupting second
+558020 >second: time 35941
+558020 >second: otim 25346
+book hit = (NULL)
+558020 >second: b3b4
+558093 <second: # times @ 2567969930
+558093 <second: # 10+7 pieces, centr = (1,1) R=12
+558093 <second:  1   -337        0          3 e5c4
+558094 <second:  2   -337        0         65 e5c4 a3a4
+558094 <second: # times @ 2567969931: real=1 cpu=0
+558094 <second: # promo = 0 (`) GT = 0
+558094 <second: move e5c4
+558094 >first : time 25346
+558094 >first : otim 36134
+book hit = (NULL)
+558094 >first : e5c4
+558188 <first : [ReceiverXboard] S-a primit MOVE...........................e5c4
+559400 <first : Am timisssssssssssssssss a3a4
+559400 <first : move a3a4
+Interrupting second
+559400 >second: time 36134
+559400 >second: otim 25416
+book hit = (NULL)
+559400 >second: a3a4
+559472 <second: # times @ 2567971310
+559473 <second: # 9+7 pieces, centr = (1,1) R=13
+559473 <second:  1   -484        0          3 c8c5
+559473 <second:  1   -358        0          3 c8e8
+559473 <second:  1   -333        0          3 c8g8
+559473 <second:  1   -329        0          3 c4e5
+559473 <second:  2   -342        0         25 c4e5 f2f4
+559473 <second:  2   -333        0        316 c8a8 d1c1
+559473 <second: # times @ 2567971311: real=1 cpu=0
+559473 <second: # promo = 0 (`) GT = 0
+559473 <second: move c8a8
+559473 >first : time 25416
+559473 >first : otim 36327
+book hit = (NULL)
+559473 >first : c8a8
+559546 <first : [ReceiverXboard] S-a primit MOVE...........................c8a8
+561369 <first : Am timisssssssssssssssss d1c1
+561370 <first : move d1c1
+Interrupting second
+561370 >second: time 36327
+561370 >second: otim 25426
+book hit = (NULL)
+561370 >second: d1c1
+561444 <second: # times @ 2567973280
+561444 <second: # 9+7 pieces, centr = (1,1) R=13
+561444 <second:  1   -518        0          3 a8a4
+561444 <second:  1   -347        0          3 c4a3
+561444 <second:  1   -344        0          3 c4b2
+561444 <second:  1   -336        0          3 c4d2
+561444 <second:  1   -329        0          3 c4e5
+561444 <second:  2   -342        0        123 c4e5 f2f4
+561444 <second:  2   -338        0        194 c4d2 c5e3
+561444 <second: # times @ 2567973281: real=1 cpu=0
+561444 <second: # promo = 0 (`) GT = 0
+561444 <second: move c4d2
+561445 >first : time 25426
+561445 >first : otim 36519
+book hit = (NULL)
+561445 >first : c4d2
+561539 <first : [ReceiverXboard] S-a primit MOVE...........................c4d2
+562454 <first : Am timisssssssssssssssss c1c2
+562454 <first : move c1c2
+Interrupting second
+562454 >second: time 36519
+562454 >second: otim 25525
+book hit = (NULL)
+562454 >second: c1c2
+562528 <second: # times @ 2567974364
+562528 <second: # 9+7 pieces, centr = (1,1) R=13
+562528 <second:  1   -518        0          3 a8a4
+562528 <second:  1   -333        0          3 a8d8
+562528 <second:  2   -346        0         15 a8d8 f2f4
+562529 <second:  2   -336        0        179 g7h6 c5e3
+562529 <second: # times @ 2567974365: real=1 cpu=0
+562529 <second: # promo = 0 (`) GT = 0
+562529 <second: move g7h6
+562529 >first : time 25525
+562529 >first : otim 36712
+book hit = (NULL)
+562529 >first : g7h6
+562603 <first : [ReceiverXboard] S-a primit MOVE...........................g7h6
+564001 <first : Am timisssssssssssssssss c5d4
+564001 <first : move c5d4
+Interrupting second
+564001 >second: time 36712
+564001 >second: otim 25578
+book hit = (NULL)
+564001 >second: c5d4
+564075 <second: # times @ 2567975911
+564075 <second: # 9+7 pieces, centr = (1,1) R=13
+564076 <second:  1   -262        0          3 a8a4
+564076 <second:  2   -259        0         85 a8a4 c2b2
+564076 <second: # times @ 2567975912: real=1 cpu=0
+564076 <second: # promo = 0 (`) GT = 0
+564076 <second: move a8a4
+564076 >first : time 25578
+564076 >first : otim 36904
+book hit = (NULL)
+564076 >first : a8a4
+564170 <first : [ReceiverXboard] S-a primit MOVE...........................a8a4
+565729 <first : Am timisssssssssssssssss c2c7
+565730 <first : move c2c7
+Interrupting second
+565730 >second: time 36904
+565730 >second: otim 25613
+book hit = (NULL)
+565730 >second: c2c7
+565826 <second: # times @ 2567977640
+565826 <second: # 8+7 pieces, centr = (1,1) R=13
+565826 <second:  1   -296        0          3 f7f8
+565826 <second:  2   -317        0        788 f7f8 d4c5 f8g8 h2h4
+565826 <second:  2   -300        0       1460 f7g8 e1e8 h6f8 h2h4 a4b4 d4f6
+565826 <second: # times @ 2567977641: real=1 cpu=0
+565826 <second: # promo = 0 (`) GT = 0
+565826 <second: move f7g8
+565827 >first : time 25613
+565827 >first : otim 37095
+book hit = (NULL)
+565827 >first : f7g8
+565905 <first : [ReceiverXboard] S-a primit MOVE...........................f7g8
+567892 <first : Am timisssssssssssssssss d4c3
+567892 <first : move d4c3
+Interrupting second
+567893 >second: time 37095
+567893 >second: otim 25606
+book hit = (NULL)
+567893 >second: d4c3
+567966 <second: # times @ 2567979803
+567966 <second: # 8+7 pieces, centr = (1,1) R=13
+567966 <second:  1   -626        0          3 a4b4
+567966 <second:  1   -336        0          3 a4a3
+567966 <second:  1   -259        0          3 a4a6
+567966 <second:  1   -252        0          3 h6g5
+567966 <second:  1   -249        0          3 h6f4
+567966 <second:  2   -249        0        155 h6f4 e1e8
+567966 <second: # times @ 2567979803: real=0 cpu=0
+567966 <second: # promo = 0 (`) GT = 0
+567966 <second: move h6f4
+567966 >first : time 25606
+567966 >first : otim 37287
+book hit = (NULL)
+567966 >first : h6f4
+568061 <first : [ReceiverXboard] S-a primit MOVE...........................h6f4
+569255 <first : Am timisssssssssssssssss e1e8
+569255 <first : move e1e8
+Interrupting second
+569255 >second: e1e8
+GameEnds(26, Xboard adjudication: Checkmate, 4)
+GE(26, Xboard adjudication: Checkmate, 4) bare king k=8 color=0
+569255 >first : result 1-0 {Xboard adjudication: Checkmate}
+569255 >second: result 1-0 {Xboard adjudication: Checkmate}
+569255 >first : quit
+569267 >second: force
+569267 >second: ping 10
+569362 <second: 1-0 {White mates}
+569362 <second: Error (unknown command): result
+569362 <second: pong 10
+GameEnds(26, Xboard adjudication: Checkmate, 2)
+578925 >second: quit

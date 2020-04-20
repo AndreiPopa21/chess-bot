@@ -110,6 +110,13 @@ public final class Constants{
     public static final int MAXI_STALEMATE = 5000;
     public static final int MINI_STALEMATE = -5000;
 
+
+
+    public static final int WE_ARE_CHECKMATED = 172617;
+    public static final int THEY_ARE_CHECKMATED = 281199;
+    public static final int WE_ARE_STALLED = 78112;
+    public static final int THEY_ARE_STALLED = 991891;
+
     // noi jucam ALB, adversar Negru
     // O - O  - Receiver
 
