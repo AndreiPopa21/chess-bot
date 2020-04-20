@@ -104,6 +104,12 @@ public final class Constants{
 
     public static final int EN_PASSANT = 55555;
 
+
+    public static final int MINI_CHECKMATED = 100000;
+    public static final int MAXI_CHECKMATED = -100000;
+    public static final int MAXI_STALEMATE = 5000;
+    public static final int MINI_STALEMATE = -5000;
+
     // noi jucam ALB, adversar Negru
     // O - O  - Receiver
 

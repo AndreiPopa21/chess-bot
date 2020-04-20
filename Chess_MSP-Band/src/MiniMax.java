@@ -9,6 +9,10 @@ public final class MiniMax {
     static char[] white_piece = {'P','P','Q','B','R','K'};
     public static int index_black = 0;
     public static int index_white = 0;
+
+    public static final int DEPTH = 2;
+
+
     private MiniMax(){
 
     }
@@ -60,17 +64,139 @@ public final class MiniMax {
 
 
     public static MinimaxData computeMove(Table table, Color color){
-        ArrayList<Move> moves = MiniMax.allMoves(table.getSquares(), color);
+       /*ArrayList<Move> moves = MiniMax.allMoves(table.getSquares(), color);
         if(moves.size() == 0){
             Sender.resignPrint();
         }
         int index = new Random().nextInt(moves.size());
-        return new MinimaxData(moves.get(index), 0);
+        return new MinimaxData(moves.get(index), 0);*/
+        Color maxColor = color;
+        Color minColor = (color == Color.WHITE) ? Color.BLACK : Color.WHITE;
+        return MiniMax.maxi(table, null, maxColor, minColor, DEPTH);
     }
 
 
 
+    public static MinimaxData maxi(
+        Table table,
+        Move appliedMove,
+        Color maxColor,
+        Color minColor,
+        int curr_depth){
 
+            ArrayList<Move> possibleMoves = MiniMax.allMoves(table.getSquares(), maxColor);
+
+            if(possibleMoves.size() == 0){
+                if(table.isKingChecked(maxColor)){
+                    //practic e sah - mat
+                    return new MinimaxData(
+                        appliedMove, Constants.MAXI_CHECKMATED);
+                }
+                else{
+                    //se considera pat pentru jucatorul curent (STALEMATE)
+                    return new MinimaxData(
+                        appliedMove, Constants.MAXI_STALEMATE);
+                }
+            }
+
+
+            if(curr_depth == 0){
+                int score = MiniMax.evaluate(
+                    table.getSquares(), maxColor, minColor);
+                return new MinimaxData(appliedMove, score);
+            }
+            
+            
+            int maxScore = Integer.MIN_VALUE;
+            Move maxMove = new Move(0,0,0);
+
+            for(int i = 0; i < possibleMoves.size(); i++){
+
+                Table newTable = new Table(table);
+                Move currMove = possibleMoves.get(i);
+                newTable.updateTable(currMove);
+
+                //persista mutarea in istoric - a se sterge cand se revine
+                GameManager.record(currMove);
+
+                MinimaxData feedback = MiniMax.mini(
+                    newTable, currMove, maxColor, minColor, curr_depth-1);
+                
+                //sterge de pe istoric mutarea
+                GameManager.getHistory().remove(GameManager.getHistory().size()-1);
+
+                int feedbackScore = feedback.score;
+                Move feedbackMove = feedback.move;
+
+                if(feedbackScore > maxScore){
+                    maxScore = feedbackScore;
+                    maxMove = feedbackMove;
+                }
+
+            }
+
+            return new MinimaxData(maxMove, maxScore);
+    }
+
+    public static MinimaxData mini(
+        Table table,
+        Move appliedMove,
+        Color maxColor,
+        Color minColor,
+        int curr_depth){
+
+            ArrayList<Move> possibleMoves = MiniMax.allMoves(table.getSquares(), minColor);
+
+            if(possibleMoves.size() == 0){
+                if(table.isKingChecked(minColor)){
+                    //practic e sah - mat
+                    return new MinimaxData(
+                        appliedMove, Constants.MINI_CHECKMATED);
+                }
+                else{
+                    //se considera pat pentru jucatorul curent (STALEMATE)
+                    return new MinimaxData(
+                        appliedMove, Constants.MINI_STALEMATE);
+                }
+            }
+
+
+            if(curr_depth == 0){
+                int score = MiniMax.evaluate(
+                    table.getSquares(), maxColor, minColor);
+                return new MinimaxData(appliedMove, score);
+            }
+
+            int minScore = Integer.MAX_VALUE;
+            Move minMove = new Move(0,0,0);
+
+            for(int i = 0; i < possibleMoves.size(); i++){
+
+                Table newTable = new Table(table);
+                Move currMove = possibleMoves.get(i);
+                newTable.updateTable(currMove);
+
+                //persista mutarea in istoric - a se sterge cand se revine
+                GameManager.record(currMove);
+
+                MinimaxData feedback = MiniMax.maxi(
+                    newTable, currMove, maxColor, minColor, curr_depth-1);
+                
+                //sterge de pe istoric mutarea
+                GameManager.getHistory().remove(GameManager.getHistory().size()-1);
+
+                int feedbackScore = feedback.score;
+                Move feedbackMove = feedback.move;
+
+                if(feedbackScore < minScore){
+                    minScore = feedbackScore;
+                    minMove = feedbackMove;
+                }
+
+            }
+
+            return new MinimaxData(minMove, minScore);
+    }
 
 
 

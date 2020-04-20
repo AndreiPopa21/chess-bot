@@ -5,4 +5,12 @@
             this.move = move;
             this.score = score;
         }
+
+        public String toString(){
+            StringBuilder sb = new StringBuilder();
+            sb.append(move.toString());
+            sb.append(" - ");
+            sb.append(score);
+            return sb.toString();
+        }
     }
