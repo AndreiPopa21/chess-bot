@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class King extends Piece {
 
+    //codificarile de directii atunci cand se cauta mutari valide
     public int[] rowOff = new int[]{-1,-1,0,1,1,1,0,-1};
     public int[] colOff = new int[]{0,-10,-10,-10,0,10,10,10};
 
@@ -76,8 +77,7 @@ public class King extends Piece {
     }
 
 
-
-
+    //metoda care verifica pentru un rege alb posibilitatea de rocada scurta
     public boolean castlingWhiteKing(){
 
 //        System.out.println("[Table] Se evalueaza white king-side castling");
@@ -144,6 +144,9 @@ public class King extends Piece {
         return true;
     }
 
+
+
+    //metoda care verifica pentru un rege alb posibilitatea de rocada lunga
     public boolean castlingWhiteQueen(){
 
     //    System.out.println("[Table] Se evalueaza white queen-side castling");
@@ -207,6 +210,9 @@ public class King extends Piece {
         return true;
     }
 
+
+
+    //metoda care verifica pentru un rege negru posibilitatea de rocada scurta
     public boolean castlingBlackKing(){
 
    //     System.out.println("[Table] Se evalueaza black king-side castling");
@@ -268,6 +274,8 @@ public class King extends Piece {
         return true;
     }
 
+
+    //metoda care verifica pentru un rege negru posibilitatea de rocada lunga
     public boolean castlingBlackQueen(){
 
   //      System.out.println("[Table] Se evalueaza black queen-side castling");

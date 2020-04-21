@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class Queen extends Piece {
 
+    //codificarile de directii atunci cand se cauta mutari valide
     public int[] rowOff = new int[]{-1,-1,0,1,1,1,0,-1};
     public int[] colOff = new int[]{0,-10,-10,-10,0,10,10,10};
 
@@ -12,6 +13,8 @@ public class Queen extends Piece {
         this.setValue(Constants.QUEEN_VALUE);
     }
 
+
+    //mutarile valide se cauta in mod recursiv
     private void recursiveSeach(int src, int off, int increment, ArrayList<Move> moves){
       
         int next = src + (rowOff[off] + colOff[off])*increment;

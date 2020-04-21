@@ -1,3 +1,5 @@
+    //clasa MinimaxData este utilizata de Minimax pentru encapsula informatii
+    //clasa retine o mutare si scorul obtinut aplicandu-se acea mutare
     public class MinimaxData{
         public Move move;
         public int score;

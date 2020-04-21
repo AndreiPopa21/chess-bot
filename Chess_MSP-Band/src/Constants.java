@@ -1,8 +1,15 @@
+
+//clasa Constants e de tip Singleton
+//stocheaza toate constantele folosite in programul nostru
 public final class Constants{
+
+    //consstructor privat
     private Constants(){
         // do nothing
     }
 
+    //constante care reprezinta o codificare pentru fiecare patrat de pe tabla
+    //formula de codificare  ab = (valoare ASCII) a * 10 + b
     public static final int A1 = 971;
     public static final int A2 = 972;
     public static final int A3 = 973;
@@ -76,6 +83,7 @@ public final class Constants{
     public static final int H8 = 1048;
 
 
+    //valorile predefinite pentru fiecare piesa in parte
     public static final int PAWN_VALUE = 100;
     public static final int KNIGHT_VALUE = 300;
     public static final int BISHOP_VALUE = 300;
@@ -84,12 +92,14 @@ public final class Constants{
     public static final int KING_VALUE = 9000;
 
 
+    //constante de culori
     public static final int WHITE_COLOR = 1;
     public static final int BLACK_COLOR = 2;
     public static final int NON_COLOR = -1;
 
 
-    
+    //codificare pentru tipurile speciale de mutari
+    //Rocade, En-Passant, Promotion
     public static final int WHITE_KING_SIDE_CASTLING = 6666;
     public static final int WHITE_QUEEN_SIDE_CASTLING = 7777;
     public static final int BLACK_KING_SIDE_CASTLING = 8888;
@@ -105,6 +115,7 @@ public final class Constants{
     public static final int EN_PASSANT = 55555;
 
 
+    //constante de end-game utilizate de Minimax
     public static final int MINI_CHECKMATED = 100000;
     public static final int MAXI_CHECKMATED = -100000;
     public static final int MAXI_STALEMATE = 5000;
@@ -116,14 +127,5 @@ public final class Constants{
     public static final int THEY_ARE_CHECKMATED = 281199;
     public static final int WE_ARE_STALLED = 78112;
     public static final int THEY_ARE_STALLED = 991891;
-
-    // noi jucam ALB, adversar Negru
-    // O - O  - Receiver
-
-    // ->
-
-    // new Move (0,0, BlACK_KING_SIDE);
-
-    // new Move (E2, E4, 0);
 
 }

@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class Knight extends Piece {
 
+    //codificarile de directii atunci cand se cauta mutari valide
     public static int[] rowOff = new int[]{-2,-2,-1,1,2,2,1,-1};
     public static int[] colOff = new int[]{10,-10,-20,-20,-10,10,20,20};
 

@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class Bishop extends Piece {
 
+    //codificarile de directii atunci cand se cauta mutari valide
     public int[] rowOff = new int[]{-1,-1,1,1};
     public int[] colOff = new int[]{10,-10,-10,10};
 

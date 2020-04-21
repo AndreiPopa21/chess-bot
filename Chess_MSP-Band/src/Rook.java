@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class Rook extends Piece {
     
+    //codificarile de directii atunci cand se cauta mutari valide
     public int[] rowOff = new int[]{-1,0,1,0};
     public int[] colOff = new int[]{0,-10,0,10};
 
