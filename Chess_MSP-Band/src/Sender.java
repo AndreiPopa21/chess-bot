@@ -36,7 +36,7 @@ public final class Sender {
 
     public static void printXboardMove(String command){
         GameManager.nextMove();
-        System.out.println("Am timisssssssssssssssss "+command);
+       // System.out.println("Am timisssssssssssssssss "+command);
         System.out.println("move "+command);
 
     }
@@ -48,4 +48,8 @@ public final class Sender {
             System.out.println("1-0 {White resigns}");
     }
 
+
+    public static void sendFeatures(){
+        System.out.println("feature sigint=0 sigterm=0 san=0 done=1 colors=0");
+    }
 }

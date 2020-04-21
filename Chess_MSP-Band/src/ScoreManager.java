@@ -88,7 +88,8 @@ public final class ScoreManager{
     public static int getScore(Piece p, int pozition){
         //readValue();
 
-        int factor = 20 - new Random().nextInt(40);
+       // int factor = 20 - new Random().nextInt(40);
+        int factor = 0;
 
        if (p.getName() == 'p') {
            return p.getValue()+ valueMap.get(pozition).pawnValN + factor;

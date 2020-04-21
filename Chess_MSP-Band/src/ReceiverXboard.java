@@ -11,14 +11,25 @@ public final class ReceiverXboard {
     private static boolean isProtover = false;
 
     public static void xboard() {
-        System.out.println("[ReceiverXboard] S-a primit XBOARD");
+       // System.out.println("[ReceiverXboard] S-a primit XBOARD");
     }
 
 
     public static void New() {
-        System.out.println("[ReceiverXboard] S-a primit NEW");
-        System.out.println("feature sigint=0 sigterm=0 done=1 colors=0");
+       // System.out.println("[ReceiverXboard] S-a primit NEW");
+        Sender.sendFeatures(); 
+
         System.out.flush();
+        MiniMax.index_white = 0;
+        MiniMax.index_black = 0;
+        GameManager.setColor(Color.BLACK);
+        GameManager.newGame(Color.BLACK);
+    }
+
+    public static void protover(){
+
+        Sender.sendFeatures(); 
+
         MiniMax.index_white = 0;
         MiniMax.index_black = 0;
         GameManager.setColor(Color.BLACK);
@@ -27,13 +38,13 @@ public final class ReceiverXboard {
 
 
     public static void force() {
-        System.out.println("[ReceiverXboard] S-a primit FORCE");
+      //  System.out.println("[ReceiverXboard] S-a primit FORCE");
         isForced = true;
     }
 
 
     public static boolean go() {
-        System.out.println("[ReceiverXboard] S-a primit GO");
+      //  System.out.println("[ReceiverXboard] S-a primit GO");
 
         if(isForced){
             /*if(GameManager.getColor() == Color.BLACK)
@@ -56,25 +67,25 @@ public final class ReceiverXboard {
     }
 
     public static void white() {
-        System.out.println("[ReceiverXboard] S-a apelat WHITE");
+       // System.out.println("[ReceiverXboard] S-a apelat WHITE");
         GameManager.setColor(Color.BLACK);
     }
 
 
     public static void black() {
-        System.out.println("[ReceiverXboard] S-a apelat BLACK");
+      //  System.out.println("[ReceiverXboard] S-a apelat BLACK");
         GameManager.setColor(Color.WHITE);
     }
 
 
     public static void quit() {
-        System.out.println("[ReceiverXboard] S-a apelat QUIT");
+       // System.out.println("[ReceiverXboard] S-a apelat QUIT");
     }
 
 
     public static void resign() {
 
-        System.out.println("[ReceiverXboard] S-a primit RESIGN");
+       // System.out.println("[ReceiverXboard] S-a primit RESIGN");
         if (GameManager.getColor()==Color.BLACK)
         {
             System.out.println("0-1 {White resigns}");
@@ -85,7 +96,7 @@ public final class ReceiverXboard {
 
     public static boolean move(String mutare) {
        
-        System.out.println("[ReceiverXboard] S-a primit MOVE..........................."+mutare);
+       // System.out.println("[ReceiverXboard] S-a primit MOVE..........................."+mutare);
         int a = mutare.charAt(0);
         int b = mutare.charAt(1) - 48;
         int c = mutare.charAt(2);
@@ -156,6 +167,9 @@ public final class ReceiverXboard {
             return false;
         }
 
+        String upToNCharacters = command.substring(0, Math.min(command.length(), 7));
+
+
         if ("xboard".equals(command))
         {
             xboard();
@@ -165,6 +179,9 @@ public final class ReceiverXboard {
         }else if ("force".equals(command))
         {
             force();
+        }else if("protover".equals(upToNCharacters)){
+
+            protover();
         }else if ("go".equals(command))
         {
            return go();

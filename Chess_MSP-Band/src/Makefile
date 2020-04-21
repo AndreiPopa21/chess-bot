@@ -1,17 +1,22 @@
+JAVAC = javac
+JAVA = java
+XBOARD = xboard -debug
+
 build:
-	javac *.java
-	rm -f xboard.debug
+	$(JAVAC) *.java
 
 run: Main
-	java Main
+	$(JAVA) Main
 first: 
-	xboard -debug -fcp "make run" -scp "fairymax" -secondInitString "new\nrandom\nsd 2\n" -tc 5 -inc 2 -autoCallFlag true -mg 10 -sgf partide.txt -reuseFirst false
+	$(XBOARD) -fcp "make run" -scp "fairymax" -secondInitString "new\nrandom\nsd 2\n" -tc 5 -inc 2 -autoCallFlag true -mg 10 -sgf partide.txt -reuseFirst false
 
 second:
-	xboard -debug -fcp "make run"
+	$(XBOARD) -fcp "make run"
 
 Main: Main.java
-	javac Main.java
+	$(JAVAC) Main.java
 
 clean:
 	rm -f *.class
+	rm -f xboard.debug
+	rm -f partide.txt
