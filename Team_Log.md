@@ -27,8 +27,27 @@ ______________________________________________________________________________
 
 Etapa 2
 
-[Ilie-Cristian Sandu] : am implementat metodele din minimax de evaluare a configuratiei tablei si de returnare a tuturor mutarior posibile 
+[Ilie-Cristian Sandu] : am implementat metodele din MiniMax de evaluare a configuratiei tablei si de returnare a tuturor mutarior posibile 
                         am implementat clasa ScoreManager care salveaza intr-o tabela de dispersie toate valorile mutarilor fiecarei piese alaturi de o metoda care returneaza valoarea piesei adaugata la valoarea patratelului pe care se afla pentru piesa respectiva 
                         am implementat in GameManager istoricul alaturi de metodele record, searchHistoryFor.
                         am testat functionalitatea pe parcurs
-             
+
+[Stefan-Andrei Popa] : am implementat metodele mini si maxi din MiniMax si le-am conectat cu celelalte metode auxiliare de evaluare si cautare
+					   am contribuit la implementarea regulilor si a mutarilor speciale: Rocada, Promotion, En-Passant
+					   am contribuit la refactorizarea codului pentru fiecare piesa
+					   am implementat functionalitatea de cautare de mutari valide pentru fiecare piesa in parte
+					   am implementat clasa Table si toate clasele auxiliare de care are nevoie si am conectat-o cu celelalte componente
+					   am ajutat la testare si depanare, precum si la organizarea workflow-ului cu Git
+
+
+
+In stadiul actual, programul este capabil sa nu mai dea mutari invalide, implementand in mod corespunzator toate regulile jocului. Mai mult, programul e capabil sa 
+efectueze decizii cu ajutorul unui algoritm bazat pe Minimax si sa bata in unele cazuri fairymax (acesta rulat cu adancime 2, in timp ce programul nostru reuseste
+sa exploreze configuratii pana la adancime 4). Algoritmul de cautare este optimizat prin Alpha-Beta Pruning. 
+
+Echipa per total si-a imbunatatit workflow-ul pe Git, iar acum, de fiecare data cand este nevoie sa depanam sau sa proiectam un nou feature, ne organizam pe 
+branchuri separate si ulterior, facem merge cu branch-ul principal cand avem un produs functional. Acest tip de lucru ne permite sa lucram armonios, in paralel si
+faciliteaza comunicarea eficienta intre membrii echipei.
+
+Avem in acest moment multe clase care abstractizeaza toate componentele jocului si care sunt proiectate in asa masura incat sa fie cat mai independente una de 
+cealalta. Codul este atat bine organizat, cat si bine documentat, fiind descris in mod clar functia fiecarei clase si a fiecarei metode.
