@@ -1,19 +1,28 @@
 import java.util.ArrayList;
 import java.util.Vector;
 
+//clasa de tip Singleton 
+//GameManager este clasa care leaga toate celelalte componente independente
+//este abstractizarea jucatorului
+
 public final class GameManager{
     
     private static Table currTable = null;
     private static Color currPlayer;
+
+    //vector care stocheaza dinamic istoricul mutarilor
     private static Vector<HistoryPairs> history = new Vector<HistoryPairs>();
 
+    //variabila care se incrementeaza odata cu fiecare tura
     private static int currMove = 1;
     
+
+    //constructor privat, clasa GameManager urmeaza pattern-ul de Singleton
     private GameManager(){
         //do nothing 
     }
 
-
+    //metoda care initializeaza parametrii unui joc nou
     public static void newGame(Color playeColor){
         currMove = 1;
         currPlayer = playeColor;
@@ -22,6 +31,7 @@ public final class GameManager{
     }
 
 
+    //metoda care apeleaza configuratia actuala a tablei
     public static void printTable(){
         if(currTable == null){
             System.out.println("NULL table, nothing to be printed");
@@ -31,25 +41,31 @@ public final class GameManager{
     }
 
 
+    //metoda care seteaza culoarea jucatorului nostru
     public static void setColor(Color color){
         currPlayer = color;
     }
 
 
+    //metoda care returneaza culoarea jucatorului nostru
     public static Color getColor(){
         return currPlayer;
     }
 
 
+    //metoda care returneaza tabla principala
     public static Table getTable(){
         return currTable;
     }
 
+
+    //metoda care returneaza istoricul jocului
     public static Vector<HistoryPairs> getHistory(){
         return history;
     }
 
 
+    //metoda care primeste o mutare si o executa (in prezent fara a valida mutarea primita)
     public static boolean executeMove(Move move){
        // if(validateMove(move)){
             record(move, currTable);
@@ -66,6 +82,7 @@ public final class GameManager{
     }
 
 
+    //metoda care ia actiune pentru tura curenta, porneste Minimax sa gandeasca
     public static void manageTurn(){
         MinimaxData result = MiniMax.
             computeMove(GameManager.getTable(), GameManager.getColor());
@@ -89,6 +106,7 @@ public final class GameManager{
         Sender.parserMove(result.move);
     }
 
+    //metoda care se ocupa cu validarea unei mutari raportat la configuratia curenta
     public static boolean validateMove(Move move){
 
         if( move.moveType != 0 && move.moveType!=Constants.QUEEN_PROMOTION){
@@ -116,9 +134,9 @@ public final class GameManager{
         }
 
         ArrayList<Move> moves = srcSq.getPiece().searchMoves(srcSq.getPosition());
-        for(int i = 0; i < moves.size(); i++){
+        /*for(int i = 0; i < moves.size(); i++){
             System.out.println("[GameManager] Valid Move: " + moves.get(i).toString());
-        }
+        }*/
         for(int i = 0; i < moves.size(); i++){
             Move next = moves.get(i);
             if((next.source == move.source) 
@@ -131,6 +149,7 @@ public final class GameManager{
     }
 
 
+    //metoda care primeste o mutare si o tabla si inregistreaza mutarea in istoric
     public static void record(Move move, Table table){
         HistoryPairs hp;
         if (move.moveType == Constants.WHITE_KING_SIDE_CASTLING) {
@@ -158,16 +177,19 @@ public final class GameManager{
     }
 
 
+    //metoda care incrementeaza variabila de tura
     public static void nextMove(){
         currMove += 1;
     }
 
 
+    //metoda care intoarce numarul curent de ture jucate
     public static int getCurrMove(){
         return currMove;
     }
 
 
+    //metoda care formateaza intr-un String istoricul actual
     public static String toStringHistory() {
         String out = "";
         String a ,b,c,d;
@@ -183,6 +205,10 @@ public final class GameManager{
     }
 
 
+    //metoda care cauta in istoricul lui GameManager dupa numele unei piese
+    //metoda este folosita in determinarea posibilitatii de rocada
+    //daca un rege are o mutare inregistrata, respectiv tura corespondenta de rocada,
+    //atunci rocada nu poate avea lor
     public static boolean searchHistoryFor(String name) {
 
         if (name.compareTo("KA") == 0) {

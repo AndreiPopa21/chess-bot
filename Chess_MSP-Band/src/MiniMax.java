@@ -1,23 +1,23 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Random;
 
+//clasa Minimax e de tip Singleton si reprezinta componenta logica de joc
+//GameManager paseaza o configuratie lui Minimax, iar acesta cea mai buna miscare
+//in prezent, clasa implementeaza cu succes un algoritm Minimax cu Alpha-Beta
 public final class MiniMax {
-
-    private static Table currTable = null;
-    static char[] balck_piece = {'p','p','q','b','r','k'};
-    static char[] white_piece = {'P','P','Q','B','R','K'};
-    public static int index_black = 0;
-    public static int index_white = 0;
-
+    
+    //constanta care seteaza adancimea de cautat pentru algoritmul Minimax
+    //pentru valori DEPTH >= 5 , cautarea e mult prea costisitoare ca timp
     public static final int DEPTH = 4;
 
 
+    //constructor privat
     private MiniMax(){
 
     }
 
+    //metoda se foloseste de ce este in ScoreManager pentru a evalua o configuratie
     public static int evaluate(HashMap<Integer,Square> h,Color maxi, Color mini) {
         int scoremaxi = 0,scoremini = 0;
         int tablePozition;
@@ -35,6 +35,9 @@ public final class MiniMax {
         return (scoremaxi - scoremini);
     }
 
+
+    //metoda care intoarce toate mutarile valide pe care poate sa le faca un jucator
+    //pe o configuratie valida
     public static ArrayList<Move> allMoves(HashMap<Integer,Square> map, Color color){
         ArrayList<Move> allMoves = new ArrayList<>();
         int tablePosition;
@@ -50,6 +53,8 @@ public final class MiniMax {
         return allMoves;
     }
 
+
+    //converteste intr-un format String lista de mutari valide
     public static String allMovesToString(ArrayList<Move> allMV){
         String out="";
         for(Move m : allMV){
@@ -59,11 +64,9 @@ public final class MiniMax {
         return out;
     }
 
-    public static void setTable (){
-        currTable = GameManager.getTable();
-    }
 
-
+    //metoda care este apelata de GameManager pentru a intoarce cea mai buna mutare
+    //pentru configuratia curenta si pentru playerul dati ca argumente
     public static MinimaxData computeMove(Table table, Color color){
       
         Color maxColor = color;
@@ -88,7 +91,7 @@ public final class MiniMax {
     }
 
 
-
+    //metoda maxi din Minimax
     public static MinimaxData maxi(
         Table table,
         Move appliedMove,
@@ -143,10 +146,6 @@ public final class MiniMax {
 
                 int feedbackScore = feedback.score;
 
-              /*  if(feedbackScore > maxScore){
-                    maxScore = feedbackScore;
-                    maxMove = currMove;
-                }*/
 
                 if (feedbackScore >= beta ){
                     return new MinimaxData(maxMove, beta);
@@ -162,6 +161,7 @@ public final class MiniMax {
             return new MinimaxData(maxMove, alpha);
     }
 
+    //metoda mini din Minimax
     public static MinimaxData mini(
         Table table,
         Move appliedMove,
@@ -214,12 +214,7 @@ public final class MiniMax {
                     GameManager.getHistory().remove(GameManager.getHistory().size()-1);
 
                 int feedbackScore = feedback.score;
-               // Move feedbackMove = feedback.move;
-
-                /*if(feedbackScore < minScore){
-                    minScore = feedbackScore;
-                    minMove = currMove;
-                }*/
+              
 
                 if (feedbackScore <= alpha){
                     return new MinimaxData(minMove, alpha);
@@ -234,142 +229,4 @@ public final class MiniMax {
 
             return new MinimaxData(minMove, beta);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    public static void thinkMove() {
-
-        if (GameManager.getColor() == Color.BLACK) {
-            moveBlack();
-        }else {
-            moveWhite();
-        }
-    }
-
-    public static void moveBlack(){
-        int blackKnight = -1 ;
-        boolean found = false;
-        ArrayList<Move> posibilMoves = new ArrayList<Move>();
-        while ((index_black < balck_piece.length)&&(!found))
-        {
-            for (Map.Entry<Integer,Square> i : GameManager.getTable().getSquares().entrySet())
-            {
-                Square elem = i.getValue();
-                if (elem.hasPiece())
-                {
-                    System.out.println(balck_piece[index_black]);
-                    if(elem.getPiece().getName().equals(balck_piece[index_black]))
-                    {
-                        blackKnight = i.getKey();
-                        posibilMoves = GameManager.getTable().getSquares().get(blackKnight).getPiece().searchMoves(blackKnight);
-                        if (posibilMoves.size() != 0)
-                        {
-                            found = true;
-                            break ;
-                        }
-
-                    }
-
-                }
-            }
-            if (found)
-            {
-                break;
-            }
-            index_black++;
-        }
-
-        if (index_black == balck_piece.length)
-        {
-            Sender.resignPrint();
-            return;
-        }
-
-
-        posibilMoves = GameManager.getTable().getSquares().get(blackKnight).getPiece().searchMoves(blackKnight);
-        int index;
-
-        if (posibilMoves.size()!= 0 ) {
-            index = new Random().nextInt(posibilMoves.size());
-
-            GameManager.record(posibilMoves.get(index), GameManager.getTable());
-            GameManager.getTable().updateTable(posibilMoves.get(index));
-            System.out.println(GameManager.toStringHistory());
-            GameManager.printTable();
-            Sender.parserMove(posibilMoves.get(index));
-        }
-
-    }
-
-    public static void moveWhite() {
-
-        int blackKnight = -1 ;
-        boolean found = false;
-        ArrayList<Move> posibilMoves = new ArrayList<Move>();
-        while ((index_white < white_piece.length)&&(!found))
-        {
-            for (Map.Entry<Integer,Square> i : GameManager.getTable().getSquares().entrySet())
-            {
-                Square elem = i.getValue();
-                if (elem.hasPiece())
-                {
-                    System.out.println(white_piece[index_white]);
-                    if(elem.getPiece().getName().equals(white_piece[index_white]))
-                    {
-                        blackKnight = i.getKey();
-                        posibilMoves = GameManager.getTable().getSquares().get(blackKnight).getPiece().searchMoves(blackKnight);
-                        if (posibilMoves.size() != 0)
-                        {
-                            found = true;
-                            break ;
-                        }
-
-                    }
-
-                }
-            }
-            if (found)
-            {
-                break;
-            }
-            index_white++;
-        }
-
-        if (index_white == white_piece.length)
-        {
-            Sender.resignPrint();
-            return;
-        }
-
-
-        posibilMoves = GameManager.getTable().getSquares().get(blackKnight).getPiece().searchMoves(blackKnight);
-        int index;
-
-        if (posibilMoves.size()!= 0 ) {
-            index = new Random().nextInt(posibilMoves.size());
-
-            GameManager.record(posibilMoves.get(index), GameManager.getTable());
-            GameManager.getTable().updateTable(posibilMoves.get(index));
-            System.out.println(GameManager.toStringHistory());
-            GameManager.printTable();
-            Sender.parserMove(posibilMoves.get(index));
-        }
-    }
-
 }

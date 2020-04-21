@@ -1,58 +1,66 @@
 import java.util.Scanner;
 import java.util.Vector;
 
+//clasa ReceiverXboard e de tip Singleton
+//aceasta se ocupa de primirea si interpretarea comenzilor de la Xboard
+//clasa comunica mai departe cu GameManager 
 public final class ReceiverXboard {
 
+
+    //constructoru privat, pattern Singleton
     private ReceiverXboard(){
 
     }
 
+    //variabile care ne spune daca suntem in Force-Mode
+    //in acest timp, noi putem doar primi si executa mutari, fara sa trimitem 
     private static boolean isForced = false;
-    private static boolean isProtover = false;
 
+
+    //metoda pentru comanda xboard
     public static void xboard() {
        // System.out.println("[ReceiverXboard] S-a primit XBOARD");
     }
 
 
+    //metoda pentru comanda new
+    //am presupus ca pentru versiunea de protocol 1, mi se va trimite new
+    //si de aici voi trimite toate celelalte features
     public static void New() {
        // System.out.println("[ReceiverXboard] S-a primit NEW");
         Sender.sendFeatures(); 
 
         System.out.flush();
-        MiniMax.index_white = 0;
-        MiniMax.index_black = 0;
         GameManager.setColor(Color.BLACK);
         GameManager.newGame(Color.BLACK);
     }
 
+
+    //metoda pentru comanda protover
+    //am presupus ca pentru versiunile de protocol >= 2 mi se va trimite protover
+    //si de aici voi trimite toate celelate features
     public static void protover(){
 
         Sender.sendFeatures(); 
 
-        MiniMax.index_white = 0;
-        MiniMax.index_black = 0;
         GameManager.setColor(Color.BLACK);
         GameManager.newGame(Color.BLACK);
     }
 
 
+    //metoda care pune jocul in Force-Mode
     public static void force() {
       //  System.out.println("[ReceiverXboard] S-a primit FORCE");
         isForced = true;
     }
 
 
+    //metoda care deblocheaza Force-Mode si seteaza culoarea corespunzatoare
     public static boolean go() {
       //  System.out.println("[ReceiverXboard] S-a primit GO");
 
         if(isForced){
-            /*if(GameManager.getColor() == Color.BLACK)
-                GameManager.setColor(Color.WHITE);
-            else
-                GameManager.setColor(Color.BLACK);*/
-             //System.out.println("Am ajuns aici si culoarea mea curenta este "+this.e_color);
-
+           
             if(GameManager.getCurrMove() % 2 == 1){
                 GameManager.setColor(Color.WHITE);
             }else{
@@ -66,23 +74,28 @@ public final class ReceiverXboard {
     
     }
 
+
+    //metoda pentru comanda white
     public static void white() {
        // System.out.println("[ReceiverXboard] S-a apelat WHITE");
         GameManager.setColor(Color.BLACK);
     }
 
 
+    //metoda pentru comanda black
     public static void black() {
       //  System.out.println("[ReceiverXboard] S-a apelat BLACK");
         GameManager.setColor(Color.WHITE);
     }
 
 
+    //metoda pentru comanda quit
     public static void quit() {
        // System.out.println("[ReceiverXboard] S-a apelat QUIT");
     }
 
 
+    //metoda pentru comanda resign
     public static void resign() {
 
        // System.out.println("[ReceiverXboard] S-a primit RESIGN");
@@ -94,6 +107,7 @@ public final class ReceiverXboard {
     }
 
 
+    //metoda care interpreteaza tipul de mutare primit
     public static boolean move(String mutare) {
        
        // System.out.println("[ReceiverXboard] S-a primit MOVE..........................."+mutare);
@@ -134,9 +148,11 @@ public final class ReceiverXboard {
         return GameManager.executeMove(move);
     }
 
+
+    //metoda care verifica daca o mutare e de tip Promotion
     public static boolean promotionMove(String mutare) {
 
-        System.out.println("[ReciverXboard] S-a primit PROMOTION");
+        //System.out.println("[ReciverXboard] S-a primit PROMOTION");
         int a = mutare.charAt(0);
         int b = mutare.charAt(1) - 48;
         int c = mutare.charAt(2);
@@ -147,6 +163,7 @@ public final class ReceiverXboard {
     }
 
 
+    //metoda care decide ce comanda s-a primit de la xboard
     public static boolean commandComparer(String command){
 
         Vector<String> coloane = new Vector<String>();
@@ -167,7 +184,7 @@ public final class ReceiverXboard {
             return false;
         }
 
-        String upToNCharacters = command.substring(0, Math.min(command.length(), 7));
+        String upToNCharacters = command.substring(0, Math.min(command.length(), 8));
 
 
         if ("xboard".equals(command))
@@ -239,6 +256,8 @@ public final class ReceiverXboard {
         return false;
     }
 
+
+    //metoda care citeste intr-un while input-urile de la xboard
     public static void receive(){
         Scanner sc = new Scanner(System.in);
         String mutare = "start";
@@ -246,10 +265,8 @@ public final class ReceiverXboard {
             mutare = sc.nextLine();
             if (commandComparer(mutare)){
                 if(!isForced)
-                   // MiniMax.thinkMove();
                    GameManager.manageTurn();
             }
-
         }
         sc.close();
     }

@@ -22,3 +22,13 @@ Am incercat sa versionam codul in mod constant folosind Git si sa ne creem branc
 In general, am incercat sa facem codul clar si sa realizam clase de sine statatoare. Codul consideram ca este lizibil si usor de inteles. Pentru rularea programului, am facut un Makefile care build-uieste clasele Java si face run direct cu comanda de xboard. Comanda de clean sterge fisierele .class. Pentru testare, atasam un folder separat cu fisierele .java si cu Makefile-ul. 
 
 ______________________________________________________________________________
+
+
+
+Etapa 2
+
+[Ilie-Cristian Sandu] : am implementat metodele din minimax de evaluare a configuratiei tablei si de returnare a tuturor mutarior posibile 
+                        am implementat clasa ScoreManager care salveaza intr-o tabela de dispersie toate valorile mutarilor fiecarei piese alaturi de o metoda care returneaza valoarea piesei adaugata la valoarea patratelului pe care se afla pentru piesa respectiva 
+                        am implementat in GameManager istoricul alaturi de metodele record, searchHistoryFor.
+                        am testat functionalitatea pe parcurs
+             

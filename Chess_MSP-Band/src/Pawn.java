@@ -16,7 +16,7 @@ public class Pawn extends Piece {
         this.movedTwice = false;
     }
 
-
+    //metoda care cauta toate mutarile posibile pentru pion
     public ArrayList<Move> searchMoves(int src){
         
         ArrayList<Move> moves = new ArrayList<>();
@@ -65,12 +65,11 @@ public class Pawn extends Piece {
 
         ArrayList<Move> finalMoves = new ArrayList<>();
 
+        //se filtreaza mutarile gasite, o mutare care pune regele in pericol de sah e invalida
         for(int i = 0; i < moves.size(); i++){
             Move move = moves.get(i);
             if(!getTable().isKingBinded(move, this.getColor())){
                 finalMoves.add(move);
-            }else{
-                //System.out.println("[Pawn] Cannot perform " + move.toString() + " because king bounded");
             }
         }
 
@@ -85,7 +84,7 @@ public class Pawn extends Piece {
         }
 
 
-        // TODO: regula en-passant, e nevoie si de istoric
+        
         if(this.getColor() == Color.WHITE){
             if(whiteRightEnpassant(src)){
                 finalMoves.add(
@@ -109,18 +108,11 @@ public class Pawn extends Piece {
         return finalMoves;
     }
 
-    public String convert(int a){
-        StringBuilder sb = new StringBuilder();
-        sb.append((char)(a/10));
-        sb.append(a%10); 
-        return sb.toString();
-    }
 
+    //metoda din clasa de baza care verifica daca pionul da sah regelui advers
     public boolean isChecking(int src, int king){
         int attackRight = 0;
         int attackLeft = 0;
-
-       // System.out.println("[Pawn] Is checking for src " + convert(src) + " and  " + convert(king));
 
         if(this.getColor() == Color.WHITE){
             attackRight = src + 10 + 1;
@@ -136,6 +128,7 @@ public class Pawn extends Piece {
         return false;
     }
 
+    //metoda care evalueaza daca prin mutarea data ca argument se face promovarea pionului
     public boolean checkPromotion(Move move){
         
         int src = move.source;
@@ -154,6 +147,8 @@ public class Pawn extends Piece {
         }
     }
 
+
+    //metoda care evalueaza posibilitatea pentru un pion alb de a lua en-passant prin dreapta
     public boolean whiteRightEnpassant(int src){
 
       //  System.out.println("[Pawn] Se evalueaza white-right enpassant pentru pionul de pe: " + src);
@@ -205,6 +200,8 @@ public class Pawn extends Piece {
         return false;
     }
 
+
+    //metoda care evalueaza posibilitatea pentru un pion alb de a lua en-passant prin stanga
     public boolean whiteLeftEnpassant(int src){
 
      //   System.out.println("[Pawn] Se evalueaza white-left enpassant pentru pionul de pe: " + src);
@@ -257,6 +254,8 @@ public class Pawn extends Piece {
         return false;
     }
 
+
+    //metoda care evalueaza posibilitatea pentru un pion negru de a lua en-passant prin dreapta
     public boolean blackRightEnpassant(int src){
 
        // System.out.println("[Pawn] Se evalueaza black-right enpassant pentru pionul de pe: " + src);
@@ -305,6 +304,8 @@ public class Pawn extends Piece {
         return false;
     }
 
+
+    //metoda care evalueaza posibilitatea pentru un pion negru de a lua en-passant prin stanga
     public boolean blackLeftEnpassant(int src){
 
      //   System.out.println("[Pawn] Se evalueaza black-left enpassant pentru pionul de pe: " + src);
