@@ -1,0 +1,187 @@
+Echipa: MSP-Band
+Studenti: Popa Stefan-Andrei , Sandu Ilie-Cristian
+
+
+
+
+-> Descriere etapa
+In aceasta etapa, am reusit sa implementam toate regulile si, de
+asemenea, sa conectam programul initial cu un algoritm de Minimax.
+In acest README, vom explica cum am refactorizat codul existent din
+prima etapa, cum a contribuit fiecare membru in realizarea proiectului
+final si vom explica deciziile de implementare pe care le-am luat.
+
+
+
+
+
+
+-> Structura proiect
+Inca de la inceput, am discutat sa structuram proiectul pe clase
+cat mai independente si cat mai "loosely-coupled" cu putinta. Prin 
+aceasta abordare, ne permitem sa scalam oricand codul existent, sa
+facem modificari mari si sa depanam cat mai usor eventualele bug-uri.
+Altfel spus, ne-am imaginat clasele ca fiind componente separate care
+comunica prin diferite metode una cu cealalta. Clasele noastre principale
+urmeaza design-patternul de Singleton si indeplinesc urmatoarele
+functii:
+
+-> ReceiverXboard -> primeste comenzile de la Xboard si le interpreteaza
+-> GameManager -> componenta principala a programului care leaga toate
+				 celelate clase, el abstractizeaza jucatorul
+-> Sender -> componenta de comunicare care trimite comenzi la Xboard
+-> MiniMax -> componenta logica care implementeaza algoritmul
+-> Constants -> componenta care centralizeaza toate constantele 
+
+
+Pe langa aceste clase, se numara multe alte clase care descriu piesele,
+tabla, patratele de pe tabla, istoricul de mutari, etc. Pentru a lucra mai
+usor cu patratele de pe tabla, ne-am imaginat o codificare pentru fiecare
+in parte definita in fisierul Constants.java. Avantajul este ca in loc sa 
+ne referim la un patrat dupa linie-coloana, ne referim dupa un numar:
+ex. A1 -> 971, B2 -> 982.  Strategia de codificare este de a inmulti 
+valorea ASCII a coloanei cu 10 si de a insuma-o cu valoarea liniei.
+
+
+In mare, pipeline-ul de joc este urmatorul: 
+
+-> ReceiverXboard primeste o comanda si o interpreteaza, mutarile le 
+paseaza lui GameManager
+
+-> GameManager updateaza tabla in functie de mutare si cheama Minimax
+pentru a procesa mutarea de pe tura actuala
+
+-> Minimax apeleaza algoritmul si intoarce cel mai bun rezultat
+
+-> GameManager updateaza tabla si trimite mutarea la Sender
+
+-> Sender comunica inapoi la Xboard mutarea/decizia luata
+
+
+In realizarea proiectului, am utilizat in mod intensiv Git si am facut
+commit-uri/ branch-uri noi ori de cate ori fixam un bug sau implementam
+un nou feature. Acest workflow ne-a permis sa lucram in paralel si sa ne
+depanam reciproc bug-urile. 
+
+Toate clasele, precum si metodele acestora, sunt bine documentate in surse.
+
+
+
+
+
+
+-> Contributie membrii
+Amandoi membrii am discutat intensiv despre modul de organizare al proiectului
+si ne-am delegat diferite taskuri. Detalii mai specifice despre ce a facut 
+fiecare se gasesc in Team_Log.md. In realizarea proiectului, fiecare a incercat
+sa se ocupe de anumite componente. In timp ce un om se ocupa de implementarea
+protocolului de comunicare, celalalt lucra la codarea regulilor jocului. Un om
+se ocupa de implementarea algoritmului, altul testa si depana bug-urile logice
+aparute. Inainte de realizarea oricarui feature, aveam discutii online si puneam
+in comparatie diferite metode de abordare a unei probleme. Dialogul in echipa
+s-a dovedit a fi uneori vital in rezolvarea unor probleme complicate.
+
+In final, fiecare a avut o contributie importanta, nu doar in scrierea efectiva 
+de cod, dar si in tot procesul de testare, depanare si proiectare. 
+
+
+
+
+
+
+
+
+-> Minimax
+Pentru aceasta etapa, am implementat algoritmul Minimax cu Alpha-Beta pruning.
+In medie, branching-factor-ul la sah este de 35, iar pentru o cautare simpla,
+nivelul de adancime limita fiabil pe care l-am observat pe statiile noastre
+s-a dovedit a fi 2. In teorie, asta inseamna aproximativ 1000 de stari posibile.
+Optimizarea cu alpha-beta ne-a permis sa extindam cautarea pana la adancime 4,
+rezultand intr-o filtrare a circa 1.500.000 de stari posibile. Pentru
+o astfel de cautare, algoritmul petrece pe statiile noastre intre 2-12 secunde
+aproximativ. In toate testele noastre, nu am pierdut niciodata din cauza 
+terminarii timpului. 
+
+Functia noastra de evaluare se uita dupa 2 parametrii importanti:
+	-> valoarea standard a unei piesa
+	-> valoarea standard a unei anumite piese pe un anumit patrat
+
+Toate aceste valori le avem stocate intr-o clasa de constante si ca referinta
+le-am luat de la urmatoarea sursa: 
+https://www.freecodecamp.org/news/simple-chess-ai-step-by-step-1d55a9266977/
+
+In evaluarea noastra, parcurgem tabla liniar si calculam pentru fiecare jucator
+(ALB sau NEGRU) suma totala a partii sale. Valoarea unei piese este data de suma
+valorii standard a piesei si a valorii acelei piese pe patrat. Functia de evaluare
+tine cont de cine e jucatorul MAXI si cine e jucatorul MINI si scade scorul
+celui de-al doilea din scorul primului, obtind scorul pentru o configuratie.
+
+Pentru situatii speciale cum ar fi sah-mat am atribuit scoruri mai mari pentru
+a inclina cautarea catre astfel de scenarii.
+
+Specificatii calculator/membru:
+
+Membru 1 -> IntelCore i5-8300H, 2.30GHz
+		 -> GeForce GTX 1500
+		 -> 12 GB Ram
+
+Membru 2 -> IntelCore i7-6700HQ, 2.60 GHZ
+		 -> GeForce GTX 960M
+		 -> 8 GB Ram 
+
+In stadiul actual, din 10 meciuri, programul obtine urmatoarele rezultate:
+
+->  ( Victorii   \     Pierderi     \       Remize )
+
+-> 		5				  2					 3
+->		3				  2					 5
+-> 		3				  4					 3
+->		5				  2					 3
+
+
+Acestea sunt cateva din rezultatele obtinute, iar pentru validarea lor, am
+atasat in folderul screenshots/ capturi de ecran corespunzatoare.
+
+
+
+
+
+
+->Instructiuni de compilare
+Pentru a compila sursele, punem la dispozitie un Makefile cu diferite reguli:
+-> make (make build) -> compileaza toate sursele *.java
+-> make clean -> curata fisierele *.class, precum si fisierele de log-uri
+-> make run -> este utilizat de Xboard pentru rularea programului
+-> make first -> comanda de testare pentru aceasta etapa
+			  -> incarca programul si joaca 10 meciuri cu fairymax
+-> make second -> comanda care pune bot-ul sa joace cu noi, folosit in 
+				  testari personale
+
+
+O nelamurire care speram sa nu afecteze testarea proiectului nostru este 
+versiunea de protocol. Pe local, noi primim intotdeauna comanda "new" pentru
+a incepe un joc si o tratam corespunzator, dar am inteles ca pentru versiuni
+mai noi de protocol, in loc de "new" se trimite "protover N". 
+In clasa ReceiverXboard.java avem o metoda care interpreteaza comanda "protover",
+dar de care nu suntem siguri ca functioneaza perfect cu versiuni mai noi.
+Ce este sigur este ca pe local, testand cu "new", proiectul este rulat corespunzator.
+
+Programul a fost testat de multe ori local cu comanda de evaluare din documentatie.
+
+
+
+
+
+
+
+-> Concluzii
+Proiectul este rulat cu succes pe masinile locale, iar botul reuseste in multe
+cazuri sa bata fairymax cu scor mare din 10 meciuri. Ca surse de inspiratie,
+ne-am folosit de diferite articole publicate, atat pe parte de algoritmica, cat
+si de reguli:
+
+https://www.freecodecamp.org/news/simple-chess-ai-step-by-step-1d55a9266977/
+
+https://www.chess.com/article/view/how-to-capture-en-passant
+
+https://www.chessable.com/blog/2019/05/17/how-to-castle-in-chess/
