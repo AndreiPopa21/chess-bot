@@ -82,11 +82,9 @@ public final class ScoreManager{
         valueMap.put(Constants.H6,new StorageValue(-10,5,-5,-30,-10,-10,-30,10,-5,-30,-10,-10));
         valueMap.put(Constants.H7,new StorageValue(20,5,-5,-40,-10,-10,-30,50,5,-40,-10,-10));
         valueMap.put(Constants.H8,new StorageValue(20,0,0,-50,-20,-20,-30,0,0,-50,-20,-20));
-
-
     }
+
     public static int getScore(Piece p, int pozition){
-        //readValue();
 
        // int factor = 20 - new Random().nextInt(40);
         int factor = 0;
@@ -119,36 +117,5 @@ public final class ScoreManager{
         return 0;
 
     }
-   /* public static void readFromFile(String piesa,String fconfiguratie,String fvalori_alb,String fvalori_negre) {
-
-        File file = new File(fconfiguratie);
-        File file1 = new File(fvalori_alb);
-        File file2 = new File(fvalori_negre);
-        String str1,str2,str3;
-        int valoare_alb,valoare_negru,configuratie_t;
-        try {
-            BufferedReader pozition = new BufferedReader(new FileReader(file));
-            BufferedReader scoreWhite = new BufferedReader(new FileReader(file1));
-            BufferedReader scoreBlack = new BufferedReader(new FileReader(file2));
-
-            while (((str1 = scoreWhite.readLine()) != null) && ((str2 = scoreBlack.readLine())!= null) && ((str3 = pozition.readLine())!= null)){
-                valoare_alb = Integer.parseInt(str1);
-                valoare_negru = Integer.parseInt(str2);
-                configuratie_t = Integer.parseInt(str3);
-                picesWhite.add(new StorageValue(piesa,configuratie_t,valoare_alb,valoare_negru));
-            }
-
-        }catch (Exception e)
-        {
-            e.getStackTrace();
-        }
-        String st;
-
-    }*/
-
-    /*public static void addPices(){
-
-    }*/
-
 
 } 
