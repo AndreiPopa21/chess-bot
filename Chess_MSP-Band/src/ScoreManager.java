@@ -3,6 +3,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 import java.util.Vector;
+import java.util.Random; 
+
 
 public final class ScoreManager{
 
@@ -85,30 +87,33 @@ public final class ScoreManager{
     }
     public static int getScore(Piece p, int pozition){
         //readValue();
+
+        int factor = 20 - new Random().nextInt(40);
+
        if (p.getName() == 'p') {
-           return p.getValue()+ valueMap.get(pozition).pawnValN;
+           return p.getValue()+ valueMap.get(pozition).pawnValN + factor;
        } else if (p.getName() == 'n') {
-           return p.getValue()+ valueMap.get(pozition).KnightValN;
+           return p.getValue()+ valueMap.get(pozition).KnightValN + factor;
        } else if (p.getName() == 'k') {
-           return p.getValue()+ valueMap.get(pozition).KingValN;
+           return p.getValue()+ valueMap.get(pozition).KingValN + factor;
        } else  if (p.getName() == 'b') {
-           return p.getValue()+ valueMap.get(pozition).BishopValN;
+           return p.getValue()+ valueMap.get(pozition).BishopValN + factor;
        } else  if (p.getName() == 'q') {
-           return p.getValue()+ valueMap.get(pozition).QueenValN;
+           return p.getValue()+ valueMap.get(pozition).QueenValN + factor;
        } else  if (p.getName() == 'r') {
-           return p.getValue()+ valueMap.get(pozition).RookValN;
+           return p.getValue()+ valueMap.get(pozition).RookValN + factor;
        } else if (p.getName() == 'P') {
-           return p.getValue()+ valueMap.get(pozition).pawnVal;
+           return p.getValue()+ valueMap.get(pozition).pawnVal + factor;
        } else if (p.getName() == 'N') {
-           return p.getValue()+ valueMap.get(pozition).KnightVal;
+           return p.getValue()+ valueMap.get(pozition).KnightVal + factor;
        } else if (p.getName() == 'K') {
-           return p.getValue()+ valueMap.get(pozition).KingVal;
+           return p.getValue()+ valueMap.get(pozition).KingVal + factor;
        } else  if (p.getName() == 'B') {
-           return p.getValue()+ valueMap.get(pozition).BishopVal;
+           return p.getValue()+ valueMap.get(pozition).BishopVal + factor;
        } else  if (p.getName() == 'Q') {
-           return p.getValue()+ valueMap.get(pozition).QueenVal;
+           return p.getValue()+ valueMap.get(pozition).QueenVal + factor;
        } else  if (p.getName() == 'R') {
-           return p.getValue()+ valueMap.get(pozition).RookVal;
+           return p.getValue()+ valueMap.get(pozition).RookVal + factor;
        }
         return 0;
 
