@@ -8,6 +8,7 @@ public final class ReceiverXboard {
     }
 
     private static boolean isForced = false;
+    private static boolean isProtover = false;
 
     public static void xboard() {
         System.out.println("[ReceiverXboard] S-a primit XBOARD");

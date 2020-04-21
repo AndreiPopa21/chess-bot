@@ -52,11 +52,11 @@ public final class GameManager{
 
     public static boolean executeMove(Move move){
        // if(validateMove(move)){
-            record(move);
+            record(move, currTable);
             nextMove();
             getTable().updateTable(move);
             //printTable();
-            toStringHistory();
+           // toStringHistory();
             return true;
         /*}else{
             System.out.println("[GameManager] Cannot execute illegal move: " + move.toString());
@@ -131,7 +131,7 @@ public final class GameManager{
     }
 
 
-    public static void record(Move move){
+    public static void record(Move move, Table table){
         HistoryPairs hp;
         if (move.moveType == Constants.WHITE_KING_SIDE_CASTLING) {
             hp = new HistoryPairs(Constants.E1,Constants.G1,'K',move);
@@ -146,22 +146,12 @@ public final class GameManager{
             hp = new HistoryPairs(Constants.E8,Constants.C8,'k',move);
 
         } else {
-          //  Square sq = GameManager.getTable().getSquares()
-           //     .get(move.source);
-           // if(sq == null) return;
-            //if(sq.hasPiece())
-            try{
-                hp = new HistoryPairs(move.source,move.dest,
-                GameManager.currTable.getSquares().
-                   get(move.source).getPiece().getName(),move);
-            }
-            catch(Exception ex){
-             //   System.out.println(ex.toString());
-              //  System.out.println(move.toString());
-            }
-
-            hp = new HistoryPairs(Constants.A1,Constants.A2,'P',
-                new Move(Constants.A1, Constants.A2, 0));
+       
+            int src = move.source;
+            int dest = move.dest;
+            Square sq = table.getSquares().get(move.source);
+            char name = sq.getPiece().getName();
+            hp = new HistoryPairs(src, dest, name, move);
             
         }
         history.add(hp);
