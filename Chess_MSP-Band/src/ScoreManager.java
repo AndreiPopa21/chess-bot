@@ -118,4 +118,10 @@ public final class ScoreManager{
 
     }
 
+    //table
+    public static int kingSaftey(){
+
+        return 0;
+    }
+
 } 

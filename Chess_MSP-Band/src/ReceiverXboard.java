@@ -33,6 +33,11 @@ public final class ReceiverXboard {
         System.out.flush();
         GameManager.setColor(Color.BLACK);
         GameManager.newGame(Color.BLACK);
+
+        if(isForced){
+            isForced = false;
+        }
+
     }
 
 
@@ -45,6 +50,8 @@ public final class ReceiverXboard {
 
         GameManager.setColor(Color.BLACK);
         GameManager.newGame(Color.BLACK);
+
+
     }
 
 
