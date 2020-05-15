@@ -10,6 +10,8 @@ public final class ScoreManager{
 
     static HashMap<Integer,StorageValue> valueMap = new HashMap<Integer,StorageValue>();
 
+    //startValueMap, middleMap, lateM
+
     public static void readValue() {
         valueMap.put(Constants.A1,new StorageValue(-30,0,0,-50,-20,-20,20,0,0,-50,-20,-20));
         valueMap.put(Constants.A2,new StorageValue(-30,50,5,-40,-10,-10,20,5,-5,-40,-10,-10));
@@ -83,6 +85,35 @@ public final class ScoreManager{
         valueMap.put(Constants.H7,new StorageValue(20,5,-5,-40,-10,-10,-30,50,5,-40,-10,-10));
         valueMap.put(Constants.H8,new StorageValue(20,0,0,-50,-20,-20,-30,0,0,-50,-20,-20));
     }
+
+    public static int greatEvaluate(HashMap<Integer,Square> h, Color player){
+
+        //TODO: phase game - inca 2 mape de scoruri
+        // King Safety +10, +10, -10 | + 10 + phase_factor
+        // Bishops  - daca are amandoi nebuni +bonus
+        // ? Q-search
+        // three-fold move
+
+        //int late_score = getScore(pozitie) + phase
+
+       // int[] pawnsSpace = new int[8]; //pozitiile pionilor
+       // int kingSpace; //pozitia regelui
+        //->King Safety
+        //981 991 1021
+        //ArrayList<Integer> myPieces
+       
+        //score_curent += kingSafty()
+
+       // int[] bishops  = new int[2];
+            //int[] knights = new int[2];
+       // int score = //functie scor in functie de pozitie
+       // score = //functie kong-safety (score)
+         return 0;
+    }
+
+    //int king-Safety(int kingSpace, int[] pawnSpaces)
+
+
 
     public static int getScore(Piece p, int pozition){
 
