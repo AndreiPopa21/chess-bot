@@ -2,6 +2,7 @@ JAVAC = javac
 JAVA = java
 XBOARD = xboard -debug
 
+
 build:
 	$(JAVAC) *.java
 
@@ -21,3 +22,10 @@ clean:
 	rm -f *.class
 	rm -f xboard.debug
 	rm -f partide.txt
+
+bcpp:
+	g++ parse_scores.cpp -o parser
+rcpp:
+	./parser
+ccpp:
+	rm -f parser
