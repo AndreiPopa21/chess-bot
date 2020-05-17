@@ -1,9 +1,7 @@
+import jdk.jfr.StackTrace;
+
 import java.io.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Scanner;
-import java.util.Vector;
-import java.util.Random; 
+import java.util.*;
 
 
 public final class ScoreManager{
@@ -86,6 +84,45 @@ public final class ScoreManager{
         valueMap.put(Constants.H8,new StorageValue(20,0,0,-50,-20,-20,-30,0,0,-50,-20,-20));
     }
 
+
+    public static int kingSaftey(HashMap<Integer,Square> h, int kingSpace, Color color){
+        int score = 0;
+        try {
+            if (color == Color.BLACK) {
+                if (h.get(kingSpace - 1).getPiece().getName() == 'p')
+                    score += 20;
+                else
+                    score -= 10;
+                if (h.get((kingSpace - 10) - 1).getPiece().getName() == 'p')
+                    score += 10;
+                else
+                    score -= 10;
+                if (h.get((kingSpace + 10) - 1).getPiece().getName() == 'p')
+                    score += 10;
+                else
+                    score -= 10;
+            } else {
+                if (h.get(kingSpace + 1).getPiece().getName() == 'P')
+                    score += 10;
+                else
+                    score -= 10;
+                if (h.get((kingSpace - 10) + 1).getPiece().getName() == 'P')
+                    score += 10;
+                else
+                    score -= 10;
+                if (h.get((kingSpace + 10) + 1).getPiece().getName() == 'P')
+                    score += 10;
+                else
+                    score -= 10;
+            }
+        }catch (Exception out){
+            System.out.println("Eroare");
+
+        }
+
+        return score;
+    }
+
     public static int greatEvaluate(HashMap<Integer,Square> h, Color player){
 
         //TODO: phase game - inca 2 mape de scoruri
@@ -108,7 +145,73 @@ public final class ScoreManager{
             //int[] knights = new int[2];
        // int score = //functie scor in functie de pozitie
        // score = //functie kong-safety (score)
-         return 0;
+
+        int kingSpaceBlk = 0, kingSpaceWhi = 0;
+        int score = 0 ;
+
+        ArrayList<Integer> pons_pozition = new ArrayList<Integer>();
+        ArrayList<Integer> bishop_pozition = new ArrayList<Integer>();
+        ArrayList<Integer> queen_pozition = new ArrayList<Integer>();
+        ArrayList<Integer> knight_pozition = new ArrayList<Integer>();
+        ArrayList<Integer> rook_pozition = new ArrayList<Integer>();
+
+        ArrayList<Integer> pons_pozition_whi = new ArrayList<Integer>();
+        ArrayList<Integer> bishop_pozition_whi = new ArrayList<Integer>();
+        ArrayList<Integer> queen_pozition_whi = new ArrayList<Integer>();
+        ArrayList<Integer> knight_pozition_whi = new ArrayList<Integer>();
+        ArrayList<Integer> rook_pozition_whi = new ArrayList<Integer>();
+
+
+        int nrblk = 0, nrwhi = 0;
+        int scoremaxi = 0,scoremini = 0;
+        int tablePozition;
+        for (Map.Entry<Integer,Square> i : h.entrySet()) {
+            Square elem = i.getValue();
+            if (elem.hasPiece()) {
+                tablePozition = i.getKey();
+                if (elem.getPiece().getColor() == player.BLACK){
+                    if (elem.getPiece().getName() == 'k') {
+                        kingSpaceBlk = elem.getPosition();
+                    } else if (elem.getPiece().getName() == 'p') {
+                        pons_pozition.add(elem.getPosition());
+                    } else if (elem.getPiece().getName() == 'b') {
+                        bishop_pozition.add(elem.getPosition());
+                    }
+                    nrblk++;
+                    score += ScoreManager.getScore(elem.getPiece(),tablePozition);
+                } else if (elem.getPiece().getColor() == player.WHITE) {
+                    if (elem.getPiece().getName() == 'K') {
+                        kingSpaceWhi = elem.getPosition();
+                    } else if (elem.getPiece().getName() == 'P') {
+                        pons_pozition_whi.add(elem.getPosition());
+                    } else if (elem.getPiece().getName() == 'B') {
+                        bishop_pozition_whi.add(elem.getPosition());
+                    }
+                    score += ScoreManager.getScore(elem.getPiece(),tablePozition);
+                    nrwhi++;
+                }
+            }
+        }
+
+        if (player == Color.BLACK) {
+            System.out.println(kingSpaceBlk);
+            score += kingSaftey(h, kingSpaceBlk, player);
+            if (bishop_pozition.size() == 2) {
+                score += 10;
+            }else if (bishop_pozition.size() == 1)
+                score += 5;
+        } else {
+            System.out.println(kingSpaceWhi);
+            score += kingSaftey(h, kingSpaceWhi, player);
+            if (bishop_pozition_whi.size() == 2) {
+                score += 10;
+            } else if (bishop_pozition_whi.size() == 1) {
+                score += 5;
+            }
+        }
+
+        return score;
+
     }
 
     //int king-Safety(int kingSpace, int[] pawnSpaces)
@@ -150,9 +253,6 @@ public final class ScoreManager{
     }
 
     //table
-    public static int kingSaftey(){
 
-        return 0;
-    }
 
 } 
