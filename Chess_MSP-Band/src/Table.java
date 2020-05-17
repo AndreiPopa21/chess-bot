@@ -7,6 +7,9 @@ import java.util.Set;
 public class Table {
 
     private HashMap<Integer,Square> squaresMap = new HashMap<>();
+    private int remainingWhite = 16;
+    private int remainingBlack = 16;
+
 
     public Table(){
         standardGame();
@@ -87,6 +90,16 @@ public class Table {
                 }
             }
         }
+
+        this.remainingWhite = table.getRemainingWhite();
+        this.remainingBlack = table.getRemainingBlack();
+    }
+
+    public int getRemainingWhite() {
+        return this.remainingWhite;
+    }
+    public int getRemainingBlack() {
+        return this.remainingBlack;
     }
 
 
@@ -242,6 +255,16 @@ public class Table {
 
         Square src = squaresMap.get(move.source);
         Square dest = squaresMap.get(move.dest);
+
+        if (dest.hasPiece()){
+            Piece p = dest.getPiece();
+            if (p.getColor() == Color.WHITE) {
+                this.remainingWhite -= 1;
+            }
+            else {
+                this.remainingBlack -= 1;
+            }
+        }
 
         dest.setPiece(src.getPiece());
         src.setPiece(null);
