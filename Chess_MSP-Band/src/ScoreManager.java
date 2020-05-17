@@ -93,27 +93,36 @@ public final class ScoreManager{
                     score += 20;
                 else
                     score -= 10;
-                if (h.get((kingSpace - 10) - 1).getPiece().getName() == 'p')
-                    score += 10;
-                else
-                    score -= 10;
-                if (h.get((kingSpace + 10) - 1).getPiece().getName() == 'p')
-                    score += 10;
-                else
-                    score -= 10;
+                if ((h.get((kingSpace - 10) - 1) != null)&&(h.get((kingSpace - 10) - 1).hasPiece())) {
+                    if (h.get((kingSpace - 10) - 1).getPiece().getName() == 'p')
+                        score += 10;
+                    else
+                        score -= 10;
+                }
+                if ((h.get((kingSpace + 10) - 1)!= null)&&(h.get((kingSpace + 10) - 1).hasPiece())) {
+                    if ((h.get((kingSpace + 10) - 1) != null) && (h.get((kingSpace + 10) - 1).getPiece().getName() == 'p'))
+                        score += 10;
+                    else
+                        score -= 10;
+                }
             } else {
                 if (h.get(kingSpace + 1).getPiece().getName() == 'P')
                     score += 10;
                 else
                     score -= 10;
-                if (h.get((kingSpace - 10) + 1).getPiece().getName() == 'P')
+
+                if ((h.get((kingSpace - 10) + 1) != null)&&(h.get((kingSpace - 10) + 1).hasPiece())) {
+                    if (h.get((kingSpace - 10) + 1).getPiece().getName() == 'P')
                     score += 10;
-                else
+                    else
                     score -= 10;
-                if (h.get((kingSpace + 10) + 1).getPiece().getName() == 'P')
-                    score += 10;
-                else
-                    score -= 10;
+                }
+                if ((h.get((kingSpace + 10) + 1) != null)&&(h.get((kingSpace + 10) + 1).hasPiece())) {
+                    if ((h.get((kingSpace + 10) + 1) != null) && (h.get((kingSpace + 10) + 1).getPiece().getName() == 'P'))
+                        score += 10;
+                    else
+                        score -= 10;
+                }
             }
         }catch (Exception out){
             System.out.println("Eroare");
