@@ -18,12 +18,9 @@ public final class MiniMax {
     }
 
     //metoda se foloseste de ce este in ScoreManager pentru a evalua o configuratie
-    public static int evaluate(HashMap<Integer,Square> h,Color maxi, Color mini) {
+    public static int evaluate(Table h,Color maxi, Color mini) {
         
-        int scor_maxi = ScoreManager.greatEvaluate(h, maxi);
-        int scor_mini = ScoreManager.greatEvaluate(h, mini);
-
-        return scor_maxi - scor_mini;
+       return ScoreManager.greatEvaluate(h,maxi,mini);
 
         /*
         int scoremaxi = 0,scoremini = 0;
@@ -39,6 +36,7 @@ public final class MiniMax {
                 }
             }
         }
+
         return (scoremaxi - scoremini);
         */
     }
@@ -127,7 +125,7 @@ public final class MiniMax {
 
             if(curr_depth == 0){
                 int score = MiniMax.evaluate(
-                    table.getSquares(), maxColor, minColor);
+                    table, maxColor, minColor);
                 return new MinimaxData(appliedMove, score);
             }
             
@@ -197,7 +195,7 @@ public final class MiniMax {
 
             if(curr_depth == 0){
                 int score = MiniMax.evaluate(
-                    table.getSquares(), maxColor, minColor);
+                    table, maxColor, minColor);
                 return new MinimaxData(appliedMove, score);
             }
 

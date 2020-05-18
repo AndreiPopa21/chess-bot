@@ -87,52 +87,68 @@ public final class ScoreManager{
 
     public static int kingSaftey(HashMap<Integer,Square> h, int kingSpace, Color color){
         int score = 0;
-        try {
-            if (color == Color.BLACK) {
-                if (h.get(kingSpace - 1).getPiece().getName() == 'p')
-                    score += 20;
-                else
-                    score -= 10;
-                if ((h.get((kingSpace - 10) - 1) != null)&&(h.get((kingSpace - 10) - 1).hasPiece())) {
-                    if (h.get((kingSpace - 10) - 1).getPiece().getName() == 'p')
-                        score += 10;
-                    else
-                        score -= 10;
+        if (kingSpace != 0 ) {
+            try {
+                if (color == Color.BLACK) {
+                    if (h.get(kingSpace - 1) != null){
+                        if (h.get(kingSpace - 1).hasPiece()) {
+                            if (h.get(kingSpace - 1).getPiece().getName() == 'p')
+                                score += 20;
+                            else
+                                score -= 20;
+                        }
                 }
-                if ((h.get((kingSpace + 10) - 1)!= null)&&(h.get((kingSpace + 10) - 1).hasPiece())) {
-                    if ((h.get((kingSpace + 10) - 1) != null) && (h.get((kingSpace + 10) - 1).getPiece().getName() == 'p'))
-                        score += 10;
-                    else
-                        score -= 10;
+                    if (h.get((kingSpace - 10) - 1) != null) {
+                        if  (h.get((kingSpace - 10) - 1).hasPiece()) {
+                            if (h.get((kingSpace - 10) - 1).getPiece().getName() == 'p')
+                                score += 20;
+                            else
+                                score -= 20;
+                        }
+                    }
+                    if (h.get((kingSpace + 10) - 1) != null) {
+                        if  (h.get((kingSpace + 10) - 1).hasPiece()) {
+                            if ((h.get((kingSpace + 10) - 1) != null) && (h.get((kingSpace + 10) - 1).getPiece().getName() == 'p'))
+                                score += 20;
+                            else
+                                score -= 20;
+                        }
+                    }
+                } else {
+                    if (h.get(kingSpace + 1)!= null) {
+                        if (h.get(kingSpace + 1).hasPiece()) {
+                            if (h.get(kingSpace + 1).getPiece().getName() == 'P')
+                                score += 20;
+                            else
+                                score -= 20;
+                        }
+                    }
+                    if (h.get((kingSpace - 10) + 1) != null){
+                        if  (h.get((kingSpace - 10) + 1).hasPiece()) {
+                            if (h.get((kingSpace - 10) + 1).getPiece().getName() == 'P')
+                                score += 20;
+                            else
+                                score -= 20;
+                        }
+                    }
+                    if (h.get((kingSpace + 10) + 1) != null) {
+                        if  (h.get((kingSpace + 10) + 1).hasPiece()) {
+                            if ((h.get((kingSpace + 10) + 1) != null) && (h.get((kingSpace + 10) + 1).getPiece().getName() == 'P'))
+                                score += 20;
+                            else
+                                score -= 20;
+                        }
+                    }
                 }
-            } else {
-                if (h.get(kingSpace + 1).getPiece().getName() == 'P')
-                    score += 10;
-                else
-                    score -= 10;
+            } catch (Exception out) {
+                System.out.println("Eroare: " + out);
 
-                if ((h.get((kingSpace - 10) + 1) != null)&&(h.get((kingSpace - 10) + 1).hasPiece())) {
-                    if (h.get((kingSpace - 10) + 1).getPiece().getName() == 'P')
-                    score += 10;
-                    else
-                    score -= 10;
-                }
-                if ((h.get((kingSpace + 10) + 1) != null)&&(h.get((kingSpace + 10) + 1).hasPiece())) {
-                    if ((h.get((kingSpace + 10) + 1) != null) && (h.get((kingSpace + 10) + 1).getPiece().getName() == 'P'))
-                        score += 10;
-                    else
-                        score -= 10;
-                }
             }
-        }catch (Exception out){
-            System.out.println("Eroare");
-
         }
-
         return score;
     }
 
-    public static int greatEvaluate(HashMap<Integer,Square> h, Color player){
+    public static int greatEvaluate(Table h, Color maxi, Color mini){
 
         //TODO: phase game - inca 2 mape de scoruri
         // King Safety +10, +10, -10 | + 10 + phase_factor
@@ -156,7 +172,7 @@ public final class ScoreManager{
        // score = //functie kong-safety (score)
 
         int kingSpaceBlk = 0, kingSpaceWhi = 0;
-        int score = 0 ;
+        int scoremaxi = 0, scoremini = 0 ;
 
         ArrayList<Integer> pons_pozition = new ArrayList<Integer>();
         ArrayList<Integer> bishop_pozition = new ArrayList<Integer>();
@@ -172,91 +188,196 @@ public final class ScoreManager{
 
 
         int nrblk = 0, nrwhi = 0;
-        int scoremaxi = 0,scoremini = 0;
         int tablePozition;
-        for (Map.Entry<Integer,Square> i : h.entrySet()) {
+        for (Map.Entry<Integer,Square> i : h.getSquares().entrySet()) {
             Square elem = i.getValue();
             if (elem.hasPiece()) {
                 tablePozition = i.getKey();
-                if (elem.getPiece().getColor() == player.BLACK){
-                    if (elem.getPiece().getName() == 'k') {
-                        kingSpaceBlk = elem.getPosition();
-                    } else if (elem.getPiece().getName() == 'p') {
-                        pons_pozition.add(elem.getPosition());
-                    } else if (elem.getPiece().getName() == 'b') {
-                        bishop_pozition.add(elem.getPosition());
+                if (elem.getPiece().getColor() == maxi){
+                  //  System.out.println("QWERTYUIO");
+                    if (maxi == Color.BLACK) {
+                        if (elem.getPiece().getName() == 'k') {
+
+                            kingSpaceBlk = elem.getPosition();
+                            //  System.out.println("Rege NEGRU gasit pe ==="+kingSpaceWhi);
+
+                        } else if (elem.getPiece().getName() == 'p') {
+                            pons_pozition.add(elem.getPosition());
+                        } else if (elem.getPiece().getName() == 'b') {
+                            bishop_pozition.add(elem.getPosition());
+                        }
+                    } else {
+                        if (elem.getPiece().getName() == 'K') {
+
+                            kingSpaceWhi = elem.getPosition();
+                            //  System.out.println("Rege NEGRU gasit pe ==="+kingSpaceWhi);
+
+                        } else if (elem.getPiece().getName() == 'P') {
+                            pons_pozition_whi.add(elem.getPosition());
+                        } else if (elem.getPiece().getName() == 'B') {
+                            bishop_pozition_whi.add(elem.getPosition());
+                        }
                     }
                     nrblk++;
-                    score += ScoreManager.getScore(elem.getPiece(),tablePozition);
-                } else if (elem.getPiece().getColor() == player.WHITE) {
-                    if (elem.getPiece().getName() == 'K') {
-                        kingSpaceWhi = elem.getPosition();
-                    } else if (elem.getPiece().getName() == 'P') {
-                        pons_pozition_whi.add(elem.getPosition());
-                    } else if (elem.getPiece().getName() == 'B') {
-                        bishop_pozition_whi.add(elem.getPosition());
+                    scoremaxi += ScoreManager.getScore(elem.getPiece(),tablePozition,h.getRemainingBlack()+h.getRemainingWhite());
+                } else if (elem.getPiece().getColor() == mini) {
+                  //  System.out.println("QWERTYUIO");
+                    if (mini == Color.BLACK) {
+                        if (elem.getPiece().getName() == 'k') {
+
+                            kingSpaceBlk = elem.getPosition();
+                            //  System.out.println("Rege NEGRU gasit pe ==="+kingSpaceWhi);
+
+                        } else if (elem.getPiece().getName() == 'p') {
+                            pons_pozition.add(elem.getPosition());
+                        } else if (elem.getPiece().getName() == 'b') {
+                            bishop_pozition.add(elem.getPosition());
+                        }
+                    } else {
+                        if (elem.getPiece().getName() == 'K') {
+
+                            kingSpaceWhi = elem.getPosition();
+                            //  System.out.println("Rege NEGRU gasit pe ==="+kingSpaceWhi);
+
+                        } else if (elem.getPiece().getName() == 'P') {
+                            pons_pozition_whi.add(elem.getPosition());
+                        } else if (elem.getPiece().getName() == 'B') {
+                            bishop_pozition_whi.add(elem.getPosition());
+                        }
                     }
-                    score += ScoreManager.getScore(elem.getPiece(),tablePozition);
+                    scoremini += ScoreManager.getScore(elem.getPiece(),tablePozition,h.getRemainingBlack()+h.getRemainingWhite());
                     nrwhi++;
                 }
             }
         }
 
-        if (player == Color.BLACK) {
-            System.out.println(kingSpaceBlk);
-            score += kingSaftey(h, kingSpaceBlk, player);
+        //System.out.println("nr alb nr negru"+nrblk+"---"+nrblk);
+          //  System.out.println(kingSpaceBlk+"   "+"Rege negru");
+        if (maxi == Color.BLACK) {
+            scoremaxi += kingSaftey(h.getSquares(), kingSpaceBlk, maxi);
             if (bishop_pozition.size() == 2) {
-                score += 10;
+                scoremaxi += 10;
             }else if (bishop_pozition.size() == 1)
-                score += 5;
+                scoremaxi += 5;
+
         } else {
-            System.out.println(kingSpaceWhi);
-            score += kingSaftey(h, kingSpaceWhi, player);
+            scoremaxi += kingSaftey(h.getSquares(), kingSpaceWhi, maxi);
             if (bishop_pozition_whi.size() == 2) {
-                score += 10;
-            } else if (bishop_pozition_whi.size() == 1) {
-                score += 5;
-            }
+                scoremaxi += 10;
+            }else if (bishop_pozition_whi.size() == 1)
+                scoremaxi += 5;
+
         }
 
-        return score;
 
+        if (mini == Color.BLACK) {
+            scoremini += kingSaftey(h.getSquares(), kingSpaceBlk, maxi);
+            if (bishop_pozition.size() == 2) {
+                scoremini += 10;
+            }else if (bishop_pozition.size() == 1)
+                scoremini += 5;
+
+        } else {
+            scoremini += kingSaftey(h.getSquares(), kingSpaceWhi, maxi);
+            if (bishop_pozition_whi.size() == 2) {
+                scoremini += 10;
+            }else if (bishop_pozition_whi.size() == 1)
+                scoremini += 5;
+
+        }
+
+        return scoremaxi - scoremini ;
     }
 
     //int king-Safety(int kingSpace, int[] pawnSpaces)
 
 
 
-    public static int getScore(Piece p, int pozition){
+    public static int getScore(Piece p, int pozition, int nrpiese){
 
-       // int factor = 20 - new Random().nextInt(40);
-        int factor = 0;
+       int factor = 20 - new Random().nextInt(40);
+        //int factor = 0;
+        int start = 28,middle = 18 ;
 
-       if (p.getName() == 'p') {
-           return p.getValue()+ valueMap.get(pozition).pawnValN + factor;
-       } else if (p.getName() == 'n') {
-           return p.getValue()+ valueMap.get(pozition).KnightValN + factor;
-       } else if (p.getName() == 'k') {
-           return p.getValue()+ valueMap.get(pozition).KingValN + factor;
-       } else  if (p.getName() == 'b') {
-           return p.getValue()+ valueMap.get(pozition).BishopValN + factor;
-       } else  if (p.getName() == 'q') {
-           return p.getValue()+ valueMap.get(pozition).QueenValN + factor;
-       } else  if (p.getName() == 'r') {
-           return p.getValue()+ valueMap.get(pozition).RookValN + factor;
-       } else if (p.getName() == 'P') {
-           return p.getValue()+ valueMap.get(pozition).pawnVal + factor;
-       } else if (p.getName() == 'N') {
-           return p.getValue()+ valueMap.get(pozition).KnightVal + factor;
-       } else if (p.getName() == 'K') {
-           return p.getValue()+ valueMap.get(pozition).KingVal + factor;
-       } else  if (p.getName() == 'B') {
-           return p.getValue()+ valueMap.get(pozition).BishopVal + factor;
-       } else  if (p.getName() == 'Q') {
-           return p.getValue()+ valueMap.get(pozition).QueenVal + factor;
-       } else  if (p.getName() == 'R') {
-           return p.getValue()+ valueMap.get(pozition).RookVal + factor;
-       }
+        if (nrpiese > start) {
+            if (p.getName() == 'p') {
+                return p.getValue() + PhaseScores.startValueMap.get(pozition).pawnValN + factor;
+            } else if (p.getName() == 'n') {
+                return p.getValue() + PhaseScores.startValueMap.get(pozition).KnightValN + factor;
+            } else if (p.getName() == 'k') {
+                return p.getValue() + PhaseScores.startValueMap.get(pozition).KingValN + factor;
+            } else if (p.getName() == 'b') {
+                return p.getValue() + PhaseScores.startValueMap.get(pozition).BishopValN + factor;
+            } else if (p.getName() == 'q') {
+                return p.getValue() + PhaseScores.startValueMap.get(pozition).QueenValN + factor;
+            } else if (p.getName() == 'r') {
+                return p.getValue() + PhaseScores.startValueMap.get(pozition).RookValN + factor;
+            } else if (p.getName() == 'P') {
+                return p.getValue() + PhaseScores.startValueMap.get(pozition).pawnVal + factor;
+            } else if (p.getName() == 'N') {
+                return p.getValue() + PhaseScores.startValueMap.get(pozition).KnightVal + factor;
+            } else if (p.getName() == 'K') {
+                return p.getValue() + PhaseScores.startValueMap.get(pozition).KingVal + factor;
+            } else if (p.getName() == 'B') {
+                return p.getValue() + PhaseScores.startValueMap.get(pozition).BishopVal + factor;
+            } else if (p.getName() == 'Q') {
+                return p.getValue() + PhaseScores.startValueMap.get(pozition).QueenVal + factor;
+            } else if (p.getName() == 'R') {
+                return p.getValue() + PhaseScores.startValueMap.get(pozition).RookVal + factor;
+            }
+        } else if ((nrpiese <=start )&& (nrpiese >middle)) {
+            if (p.getName() == 'p') {
+                return p.getValue() + PhaseScores.middleValueMap.get(pozition).pawnValN + factor;
+            } else if (p.getName() == 'n') {
+                return p.getValue() + PhaseScores.middleValueMap.get(pozition).KnightValN + factor;
+            } else if (p.getName() == 'k') {
+                return p.getValue() + PhaseScores.middleValueMap.get(pozition).KingValN + factor;
+            } else if (p.getName() == 'b') {
+                return p.getValue() + PhaseScores.middleValueMap.get(pozition).BishopValN + factor;
+            } else if (p.getName() == 'q') {
+                return p.getValue() + PhaseScores.middleValueMap.get(pozition).QueenValN + factor;
+            } else if (p.getName() == 'r') {
+                return p.getValue() + PhaseScores.middleValueMap.get(pozition).RookValN + factor;
+            } else if (p.getName() == 'P') {
+                return p.getValue() + PhaseScores.middleValueMap.get(pozition).pawnVal + factor;
+            } else if (p.getName() == 'N') {
+                return p.getValue() + PhaseScores.middleValueMap.get(pozition).KnightVal + factor;
+            } else if (p.getName() == 'K') {
+                return p.getValue() + PhaseScores.middleValueMap.get(pozition).KingVal + factor;
+            } else if (p.getName() == 'B') {
+                return p.getValue() + PhaseScores.middleValueMap.get(pozition).BishopVal + factor;
+            } else if (p.getName() == 'Q') {
+                return p.getValue() + PhaseScores.middleValueMap.get(pozition).QueenVal + factor;
+            } else if (p.getName() == 'R') {
+                return p.getValue() + PhaseScores.middleValueMap.get(pozition).RookVal + factor;
+            }
+        } else if (nrpiese <= middle){
+            if (p.getName() == 'p') {
+                return p.getValue() + PhaseScores.lateValueMap.get(pozition).pawnValN + factor;
+            } else if (p.getName() == 'n') {
+                return p.getValue() + PhaseScores.lateValueMap.get(pozition).KnightValN + factor;
+            } else if (p.getName() == 'k') {
+                return p.getValue() + PhaseScores.lateValueMap.get(pozition).KingValN + factor;
+            } else if (p.getName() == 'b') {
+                return p.getValue() + PhaseScores.lateValueMap.get(pozition).BishopValN + factor;
+            } else if (p.getName() == 'q') {
+                return p.getValue() + PhaseScores.lateValueMap.get(pozition).QueenValN + factor;
+            } else if (p.getName() == 'r') {
+                return p.getValue() + PhaseScores.lateValueMap.get(pozition).RookValN + factor;
+            } else if (p.getName() == 'P') {
+                return p.getValue() + PhaseScores.lateValueMap.get(pozition).pawnVal + factor;
+            } else if (p.getName() == 'N') {
+                return p.getValue() + PhaseScores.lateValueMap.get(pozition).KnightVal + factor;
+            } else if (p.getName() == 'K') {
+                return p.getValue() + PhaseScores.lateValueMap.get(pozition).KingVal + factor;
+            } else if (p.getName() == 'B') {
+                return p.getValue() + PhaseScores.lateValueMap.get(pozition).BishopVal + factor;
+            } else if (p.getName() == 'Q') {
+                return p.getValue() + PhaseScores.lateValueMap.get(pozition).QueenVal + factor;
+            } else if (p.getName() == 'R') {
+                return p.getValue() + PhaseScores.lateValueMap.get(pozition).RookVal + factor;
+            }
+        }
         return 0;
 
     }

@@ -265,7 +265,7 @@ public final class ReceiverXboard {
 
 
     //metoda care citeste intr-un while input-urile de la xboard
-    public static void receive(){
+    public static void  receive(){
         Scanner sc = new Scanner(System.in);
         String mutare = "start";
         while(mutare.compareTo("quit") != 0) {
