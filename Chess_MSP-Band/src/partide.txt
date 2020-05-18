@@ -346,3 +346,21 @@ Kf2 Qxd1 {+12,44/4 0,1} 35. Nf3 Qa1 {+12,51/4 0,1} 36. b5 f4 {+12,67/4 0,1}
 {+15,90/4 0,1} 40. Kf1 Rxg1# {+1000,01/4 0,1}
 {Xboard adjudication: Checkmate} 0-1
 
+[Event "Computer Chess Game"]
+[Site "cristi-330-15ICH"]
+[Date "2020.05.18"]
+[Round "4"]
+[White "Fairy-Max 5.0b"]
+[Black "make"]
+[Result "1/2-1/2"]
+[TimeControl "300+2"]
+[Annotator "1. +0,15"]
+
+1. f4 {+0,15/4} Nf6 2. Nh3 {+0,05/4 0,1} h6 3. Nc3 {+0,06/4 0,1} Nc6 4. d4
+{-0,09/4 0,1} d6 5. d5 {+0,09/4 0,1} Nb4 6. a3 {+0,12/4 0,1} Na6 7. e3
+{-0,09/4 0,1} Bd7 8. Bc4 {-0,01/4 0,1} Nc5 9. O-O {+0,16/4 0,1} Nfe4 10.
+Nxe4 {+0,06/4 0,1} Nxe4 11. Qf3 {-0,03/4 0,1} Nc5 12. b4 {+0,07/4 0,1} Na4
+13. Bd2 {-0,09/4 0,1} Nb2 14. Be2 {-0,15/4 0,1} Na4 15. Bc4 {+0,00/4 0,1}
+Nb2 16. Be2 {+0,00/4 0,1} Na4 17. Bc4 {+0,00/4 0,1}
+{Draw by repetition} 1/2-1/2
+
