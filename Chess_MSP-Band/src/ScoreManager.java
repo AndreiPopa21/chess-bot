@@ -84,9 +84,10 @@ public final class ScoreManager{
         valueMap.put(Constants.H8,new StorageValue(20,0,0,-50,-20,-20,-30,0,0,-50,-20,-20));
     }
 
-
+    // verificam daca in fata regelui se afla pioni care sa il protejeze daca da , aduman +20 la scor daca nu -20
     public static int kingSaftey(HashMap<Integer,Square> h, int kingSpace, Color color){
         int score = 0;
+
         if (kingSpace != 0 ) {
             try {
                 if (color == Color.BLACK) {
@@ -148,28 +149,9 @@ public final class ScoreManager{
         return score;
     }
 
+    //parcurge toate piesele de pe tabla si calculeaza scorul pentru pentru fiecare player
+    //pe langa asta salveaza si pozitile nebunilor , pozitia regelui
     public static int greatEvaluate(Table h, Color maxi, Color mini){
-
-        //TODO: phase game - inca 2 mape de scoruri
-        // King Safety +10, +10, -10 | + 10 + phase_factor
-        // Bishops  - daca are amandoi nebuni +bonus
-        // ? Q-search
-        // three-fold move
-
-        //int late_score = getScore(pozitie) + phase
-
-       // int[] pawnsSpace = new int[8]; //pozitiile pionilor
-       // int kingSpace; //pozitia regelui
-        //->King Safety
-        //981 991 1021
-        //ArrayList<Integer> myPieces
-       
-        //score_curent += kingSafty()
-
-       // int[] bishops  = new int[2];
-            //int[] knights = new int[2];
-       // int score = //functie scor in functie de pozitie
-       // score = //functie kong-safety (score)
 
         int kingSpaceBlk = 0, kingSpaceWhi = 0;
         int scoremaxi = 0, scoremini = 0 ;
@@ -187,19 +169,16 @@ public final class ScoreManager{
         ArrayList<Integer> rook_pozition_whi = new ArrayList<Integer>();
 
 
-        int nrblk = 0, nrwhi = 0;
         int tablePozition;
         for (Map.Entry<Integer,Square> i : h.getSquares().entrySet()) {
             Square elem = i.getValue();
             if (elem.hasPiece()) {
                 tablePozition = i.getKey();
                 if (elem.getPiece().getColor() == maxi){
-                  //  System.out.println("QWERTYUIO");
                     if (maxi == Color.BLACK) {
                         if (elem.getPiece().getName() == 'k') {
 
                             kingSpaceBlk = elem.getPosition();
-                            //  System.out.println("Rege NEGRU gasit pe ==="+kingSpaceWhi);
 
                         } else if (elem.getPiece().getName() == 'p') {
                             pons_pozition.add(elem.getPosition());
@@ -210,7 +189,6 @@ public final class ScoreManager{
                         if (elem.getPiece().getName() == 'K') {
 
                             kingSpaceWhi = elem.getPosition();
-                            //  System.out.println("Rege NEGRU gasit pe ==="+kingSpaceWhi);
 
                         } else if (elem.getPiece().getName() == 'P') {
                             pons_pozition_whi.add(elem.getPosition());
@@ -218,15 +196,12 @@ public final class ScoreManager{
                             bishop_pozition_whi.add(elem.getPosition());
                         }
                     }
-                    nrblk++;
                     scoremaxi += ScoreManager.getScore(elem.getPiece(),tablePozition,h.getRemainingBlack()+h.getRemainingWhite());
                 } else if (elem.getPiece().getColor() == mini) {
-                  //  System.out.println("QWERTYUIO");
                     if (mini == Color.BLACK) {
                         if (elem.getPiece().getName() == 'k') {
 
                             kingSpaceBlk = elem.getPosition();
-                            //  System.out.println("Rege NEGRU gasit pe ==="+kingSpaceWhi);
 
                         } else if (elem.getPiece().getName() == 'p') {
                             pons_pozition.add(elem.getPosition());
@@ -237,7 +212,6 @@ public final class ScoreManager{
                         if (elem.getPiece().getName() == 'K') {
 
                             kingSpaceWhi = elem.getPosition();
-                            //  System.out.println("Rege NEGRU gasit pe ==="+kingSpaceWhi);
 
                         } else if (elem.getPiece().getName() == 'P') {
                             pons_pozition_whi.add(elem.getPosition());
@@ -246,13 +220,10 @@ public final class ScoreManager{
                         }
                     }
                     scoremini += ScoreManager.getScore(elem.getPiece(),tablePozition,h.getRemainingBlack()+h.getRemainingWhite());
-                    nrwhi++;
                 }
             }
         }
 
-        //System.out.println("nr alb nr negru"+nrblk+"---"+nrblk);
-          //  System.out.println(kingSpaceBlk+"   "+"Rege negru");
         if (maxi == Color.BLACK) {
             scoremaxi += kingSaftey(h.getSquares(), kingSpaceBlk, maxi);
             if (bishop_pozition.size() == 2) {
@@ -289,15 +260,15 @@ public final class ScoreManager{
         return scoremaxi - scoremini ;
     }
 
-    //int king-Safety(int kingSpace, int[] pawnSpaces)
 
 
+    // in functei de starea jocului folosim table de evaluare diferite
 
     public static int getScore(Piece p, int pozition, int nrpiese){
 
-        //int factor = 100 - new Random().nextInt(200);
+       //int factor = 80 - new Random().nextInt(160);
         int factor = 0;
-        int start = 20, middle = 10;
+        int start = 20,middle = 10 ;
 
         if (nrpiese > start) {
             if (p.getName() == 'p') {
@@ -378,8 +349,6 @@ public final class ScoreManager{
                 return p.getValue() + PhaseScores.startValueMap.get(pozition).RookVal + factor;
             }
         }
-
-        
         return 0;
 
     }
