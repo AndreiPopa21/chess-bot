@@ -295,11 +295,11 @@ public final class ScoreManager{
 
     public static int getScore(Piece p, int pozition, int nrpiese){
 
-       int factor = 20 - new Random().nextInt(40);
-        //int factor = 0;
+       //int factor = 80 - new Random().nextInt(160);
+        int factor = 0;
         int start = 28,middle = 18 ;
 
-        if (nrpiese > start) {
+        //if (nrpiese > start) {
             if (p.getName() == 'p') {
                 return p.getValue() + PhaseScores.startValueMap.get(pozition).pawnValN + factor;
             } else if (p.getName() == 'n') {
@@ -325,8 +325,8 @@ public final class ScoreManager{
             } else if (p.getName() == 'R') {
                 return p.getValue() + PhaseScores.startValueMap.get(pozition).RookVal + factor;
             }
-        } else if ((nrpiese <=start )&& (nrpiese >middle)) {
-            if (p.getName() == 'p') {
+      //  } else if ((nrpiese <=start )&& (nrpiese >middle)) {
+        /*    if (p.getName() == 'p') {
                 return p.getValue() + PhaseScores.middleValueMap.get(pozition).pawnValN + factor;
             } else if (p.getName() == 'n') {
                 return p.getValue() + PhaseScores.middleValueMap.get(pozition).KnightValN + factor;
@@ -353,31 +353,31 @@ public final class ScoreManager{
             }
         } else if (nrpiese <= middle){
             if (p.getName() == 'p') {
-                return p.getValue() + PhaseScores.lateValueMap.get(pozition).pawnValN + factor;
+                return p.getValue() + PhaseScores.startValueMap.get(pozition).pawnValN + factor;
             } else if (p.getName() == 'n') {
-                return p.getValue() + PhaseScores.lateValueMap.get(pozition).KnightValN + factor;
+                return p.getValue() + PhaseScores.startValueMap.get(pozition).KnightValN + factor;
             } else if (p.getName() == 'k') {
-                return p.getValue() + PhaseScores.lateValueMap.get(pozition).KingValN + factor;
+                return p.getValue() + PhaseScores.startValueMap.get(pozition).KingValN + factor;
             } else if (p.getName() == 'b') {
-                return p.getValue() + PhaseScores.lateValueMap.get(pozition).BishopValN + factor;
+                return p.getValue() + PhaseScores.startValueMap.get(pozition).BishopValN + factor;
             } else if (p.getName() == 'q') {
-                return p.getValue() + PhaseScores.lateValueMap.get(pozition).QueenValN + factor;
+                return p.getValue() + PhaseScores.startValueMap.get(pozition).QueenValN + factor;
             } else if (p.getName() == 'r') {
-                return p.getValue() + PhaseScores.lateValueMap.get(pozition).RookValN + factor;
+                return p.getValue() + PhaseScores.startValueMap.get(pozition).RookValN + factor;
             } else if (p.getName() == 'P') {
-                return p.getValue() + PhaseScores.lateValueMap.get(pozition).pawnVal + factor;
+                return p.getValue() + PhaseScores.startValueMap.get(pozition).pawnVal + factor;
             } else if (p.getName() == 'N') {
-                return p.getValue() + PhaseScores.lateValueMap.get(pozition).KnightVal + factor;
+                return p.getValue() + PhaseScores.startValueMap.get(pozition).KnightVal + factor;
             } else if (p.getName() == 'K') {
-                return p.getValue() + PhaseScores.lateValueMap.get(pozition).KingVal + factor;
+                return p.getValue() + PhaseScores.startValueMap.get(pozition).KingVal + factor;
             } else if (p.getName() == 'B') {
-                return p.getValue() + PhaseScores.lateValueMap.get(pozition).BishopVal + factor;
+                return p.getValue() + PhaseScores.startValueMap.get(pozition).BishopVal + factor;
             } else if (p.getName() == 'Q') {
-                return p.getValue() + PhaseScores.lateValueMap.get(pozition).QueenVal + factor;
+                return p.getValue() + PhaseScores.startValueMap.get(pozition).QueenVal + factor;
             } else if (p.getName() == 'R') {
-                return p.getValue() + PhaseScores.lateValueMap.get(pozition).RookVal + factor;
+                return p.getValue() + PhaseScores.startValueMap.get(pozition).RookVal + factor;
             }
-        }
+        }*/
         return 0;
 
     }
