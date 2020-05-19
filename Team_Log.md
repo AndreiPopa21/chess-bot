@@ -58,6 +58,12 @@ ______________________________________________________________________________
 
 Etapa 3
 
-[Ilie-Cristian Sandu] : am implementat noi functii de evaluare care iau in calucl daca regele este in siguranta si daca are 2 nebuni ramasi
+[Ilie-Cristian Sandu] : am implementat noi functii de evaluare care iau in calcul daca regele este in siguranta si daca are 2 nebuni ramasi
 						am testat functionalitatea algoritmilor 
-						 
+
+[Stefan-Andrei Popa] : am adagat noi tabele de scoruri pentru Tappered Evaluation
+					   am realizat mai multe testari pentru euristicile implementate
+
+
+In stadiul actul, programul este capabil sa joace cel putin la fel de bine ca la etapa trecuta,
+combinand in functia de evaluare cateva euristici. Pentru aceasta etapa, inainte sa implementam propriu-zis, ne-am documentat mult legat de algoritmi, metode populare implementate in boti ca DeepBlue sau Stockfish si am incercat sa adaugam intuitiei actuale a botului cateva imbunatatiri. In aceasta etapa, am experimentat si am testat mai mult, incercand sa ajungem la o functie de evaluare mai eficienta.
