@@ -7,7 +7,6 @@ build:
 	$(JAVAC) *.java
 
 run: 
-	$(JAVAC) *.java
 	$(JAVA) Main
 
 first: 
