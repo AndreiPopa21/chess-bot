@@ -295,7 +295,11 @@ public final class ScoreManager{
 
     public static int getScore(Piece p, int pozition, int nrpiese){
 
+<<<<<<< HEAD
        //int factor = 80 - new Random().nextInt(160);
+=======
+        //int factor = 100 - new Random().nextInt(200);
+>>>>>>> final-test-stefan
         int factor = 0;
         int start = 28,middle = 18 ;
 

@@ -1,0 +1,131 @@
+Echipa: MSP-Band
+Studentii: Popa Stefan-Andrei, Sandu Ilie-Cristian
+
+-> Descriere etapa
+In aceasta etapa, am incercat sa imbunatatim AI-ul curent
+cu cateva euristici si am lucrat in mare la functiile care
+realizeaza evaluarea unei configuratii. In acest punct,
+programul foloseste cu succes Minimax cu Alpha-Beta, iar
+in continuare, vom descrie ce eurisitici am incercat sa 
+utilizam si cate observatii din testele noastre.
+
+__________________________________________________________
+
+-> Euristici utilizate
+
+1) Diferite functii de evaluare al unei pozitii in functie
+de stadiul jocului (Tappered evaluation)
+
+-> Aceasta euristica se uita la o configuratie si in functie
+de ce pozitie ocupa o anuma piesa, creste sau scade scorul total
+cu o valoare. In etapa trecuta, am avut o singura tabla de scoruri
+valabila pe tot parcursul jocului, iar de data aceasta, am incercat
+sa avem trei table diferite, cate una pentru fiecare stadiu al 
+jocului (start, middle, late).
+
+-> De exemplu, fata de configuratia
+de start, tabla de late polarizeaza toate piesele importante
+spre centru, iar pionilor le da scoruri din ce in ce mai mari
+cu cat se apropie de promotion. In opozitie, daca o piesa 
+importanta sta pe marginea jocului in stadiul de late, piesa este
+penalizata mai sever. 
+
+-> Aceste table sunt implementate in clasa PhaseScores.java, iar 
+pentru a face fetch la o valoare anume, se face fetch dupa pozitie,
+tipul piesei, respectiv faza actuala a jocului.
+
+
+-> Pentru a avea o intuitie buna despre stadiul unui joc, am 
+numarat piesele de pe tabla de ambele parti. Daca sunt in jur de
+20 - 32 de piese, jocul e pe la inceput, nerealizandu-se multe 
+schimburi de piese. Stadiul middle am apreciat ca ar fi pe la 
+10 - 20 de piese, iar cel final, de la 10 piese in jos. 
+
+-> Atat la aceasta euristica, cat si la celelalte, am incercat mai 
+multe valori si prin testari repetate si am ales configuratiile
+mai avantajoase. 
+
+-> Orientativ, scorurile pentru pozitii se incadreaza intre (-40,60),
+"-40" fiind pozitiile inactive si dezavantajoase, iar 60 pozitiile
+puternic polarizante pentru un avantaj strategic.
+
+________________________________________
+
+2) Random factor care scade sau aduna o valoare random intr-un interval
+scorurilor obtinute anterior prin Tappered Evaluation.
+
+-> Nu este o euristica, ci mai mult o solutie pe care am probat-o
+in incercarea de combate cazurile repetitive de Three-Fold Draw.
+Astfel, chiar daca doua configuratii arata identic, el pot sa aiba
+scoruri usor diferite, ceea ce ar trebui sa minimizeze riscul unor
+mutari repetate. 
+
+-> Valorile de random probate au fost (-20,20), (-40,40),.., pana la
+(-100,100) sau chiar (-120,120).
+
+-> Valorile mici gen (-20,20) sau (-40,40) nu aveau efecte vizibile,
+iar la valori mai mari, gen (-80,80) sau (-100,100), bot-ul parea sa
+joace usor mai bine cu Fairymax de depth=2.
+
+-> Concluzia a fost ca pentru Fairymax cu depth=3 sau 4, random nu 
+imbunatateste stilul de joc, ba chiar botul pierdea mai des.
+
+-> Un efect interesant a fost totusi o diversitate mai mare de deschideri,
+sacrificii de piese, maturi, etc.
+
+
+_________________________________________
+
+3) King Safety, euristica care adauga scor in plus daca regele este
+bine protejat intr-o configuratie
+
+-> Euristica analizeaza tabla si se uita daca regele are in jurul sau 
+piese care sa il protejeze. Cu cat are mai multe piese, cu atat se 
+ofera un scor mai mare in plus.
+
+-> Pe de alta parte, daca regele e expus, euristica penalizeaza punctajul
+
+__________________________________________
+
+4) Bishop Pair, euristica care adauga scor in plus daca pe tabla se
+afla o pereche de nebuni. Pereche de nebuni controleaza toate culorile
+si impreuna ofera un avantaj strategic semnificativ.
+
+
+__________________________________________
+
+
+-> Instructiuni de compilare
+
+Pentru a compila sursele, punem la dispozitie un Makefile cu diferite reguli:
+-> make (make build) -> compileaza toate sursele *.java
+-> make clean -> curata fisierele *.class, precum si fisierele de log-uri
+-> make run -> este utilizat de Xboard pentru rularea programului
+-> make first -> comanda de testare pentru aceasta etapa
+			  -> incarca programul si joaca 10 meciuri cu fairymax
+-> make second -> comanda care pune bot-ul sa joace cu noi, folosit in 
+				  testari personale
+
+
+___________________________________________
+
+-> Concluzii
+
+Consideram ca proiectul a fost de succes si ca reuseste sa implementeze
+o intuitie foarte buna in jocul de sah. In testele noastre, programul
+nu prezinta erori, toate regulile fiind implementate corect si cu
+strictete. In stadiul actual, bot-ul se bate cot la cot cu Fairymax
+depth=2 si ocazional, mai obtine cate o victorie la depth=3 sau 4.
+Credem ca proiectul a fost un exercitiu bun pe echipa si la final, 
+putem spune ca stapanim mult mai bine Git-ul.
+
+
+-> In foldersul screenshots/ am atasat cate capturi cu rezultatele
+mai multor teste. Numele folderelor denota parametrii cu care a fost
+rulat botul.
+
+-> random X -> random factor cu valoare (-X,X)
+-> diffeval -> Tappered Evaluation
+-> ks -> King Safety/ Bishop Evaluation
+-> fairyX -> Fairymax cu depth = X
+-> noiX -> botul nostru cu depth = X

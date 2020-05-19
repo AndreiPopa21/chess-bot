@@ -6,7 +6,8 @@ XBOARD = xboard -debug
 build:
 	$(JAVAC) *.java
 
-run: Main
+run: 
+	$(JAVAC) *.java
 	$(JAVA) Main
 
 first: 
