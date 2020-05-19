@@ -295,11 +295,7 @@ public final class ScoreManager{
 
     public static int getScore(Piece p, int pozition, int nrpiese){
 
-<<<<<<< HEAD
-       //int factor = 80 - new Random().nextInt(160);
-=======
         //int factor = 100 - new Random().nextInt(200);
->>>>>>> final-test-stefan
         int factor = 0;
         int start = 28,middle = 18 ;
 
@@ -329,8 +325,8 @@ public final class ScoreManager{
             } else if (p.getName() == 'R') {
                 return p.getValue() + PhaseScores.startValueMap.get(pozition).RookVal + factor;
             }
-      //  } else if ((nrpiese <=start )&& (nrpiese >middle)) {
-        /*    if (p.getName() == 'p') {
+        } else if ((nrpiese <=start )&& (nrpiese >middle)) {
+            if (p.getName() == 'p') {
                 return p.getValue() + PhaseScores.middleValueMap.get(pozition).pawnValN + factor;
             } else if (p.getName() == 'n') {
                 return p.getValue() + PhaseScores.middleValueMap.get(pozition).KnightValN + factor;
@@ -381,7 +377,9 @@ public final class ScoreManager{
             } else if (p.getName() == 'R') {
                 return p.getValue() + PhaseScores.startValueMap.get(pozition).RookVal + factor;
             }
-        }*/
+        }
+
+        
         return 0;
 
     }
