@@ -297,9 +297,9 @@ public final class ScoreManager{
 
         //int factor = 100 - new Random().nextInt(200);
         int factor = 0;
-        int start = 28,middle = 18 ;
+        int start = 20, middle = 10;
 
-        //if (nrpiese > start) {
+        if (nrpiese > start) {
             if (p.getName() == 'p') {
                 return p.getValue() + PhaseScores.startValueMap.get(pozition).pawnValN + factor;
             } else if (p.getName() == 'n') {
