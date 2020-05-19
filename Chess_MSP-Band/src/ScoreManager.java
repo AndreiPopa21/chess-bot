@@ -295,8 +295,8 @@ public final class ScoreManager{
 
     public static int getScore(Piece p, int pozition, int nrpiese){
 
-       int factor = 20 - new Random().nextInt(40);
-        //int factor = 0;
+        //int factor = 100 - new Random().nextInt(200);
+        int factor = 0;
         int start = 28,middle = 18 ;
 
         if (nrpiese > start) {
