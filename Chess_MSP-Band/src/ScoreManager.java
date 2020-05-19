@@ -378,6 +378,8 @@ public final class ScoreManager{
                 return p.getValue() + PhaseScores.lateValueMap.get(pozition).RookVal + factor;
             }
         }
+
+        
         return 0;
 
     }
