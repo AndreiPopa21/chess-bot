@@ -51,3 +51,13 @@ faciliteaza comunicarea eficienta intre membrii echipei.
 
 Avem in acest moment multe clase care abstractizeaza toate componentele jocului si care sunt proiectate in asa masura incat sa fie cat mai independente una de 
 cealalta. Codul este atat bine organizat, cat si bine documentat, fiind descris in mod clar functia fiecarei clase si a fiecarei metode.
+
+______________________________________________________________________________
+
+
+
+Etapa 3
+
+[Ilie-Cristian Sandu] : am implementat noi functii de evaluare care iau in calucl daca regele este in siguranta si daca are 2 nebuni ramasi
+						am testat functionalitatea algoritmilor 
+						 
