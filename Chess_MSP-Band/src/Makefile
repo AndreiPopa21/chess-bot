@@ -11,7 +11,7 @@ run:
 	$(JAVA) Main
 
 first: 
-	$(XBOARD) -fcp "make run" -scp "fairymax" -secondInitString "new\nrandom\nsd 3\n" -tc 5 -inc 2 -autoCallFlag true -mg 10 -sgf partide.txt -reuseFirst false
+	$(XBOARD) -fcp "make run" -scp "fairymax" -secondInitString "new\nrandom\nsd 3\n" -tc 5 -inc 2 -autoCallFlag true -mg 4 -sgf partide.txt -reuseFirst false
 
 second:
 	$(XBOARD) -fcp "make run"
