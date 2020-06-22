@@ -1,9 +1,0 @@
-User Guide XBoard - https://www.gnu.org/software/xboard/user_guide/UserGuide.html
-
-Simple Usage Protocol - https://www.youtube.com/watch?v=DZwW-st4Jl8
-
-Chess Engine Playlist - https://www.youtube.com/playlist?list=PLZ1QII7yudbc-Ky058TEaOstZHVbT-2hg
-
-Chess Engine Communication Protocol - https://www.chessprogramming.org/Chess_Engine_Communication_Protocol
-
-Chess Engine Communication Protocol - http://www.open-aurec.com/wbforum/WinBoard/engine-intf.html
